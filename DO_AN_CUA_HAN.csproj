@@ -214,6 +214,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="View\FormBillDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormBillDetail.Designer.cs">
+      <DependentUpon>FormBillDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FormSurgicalDetail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -280,6 +286,9 @@
     <Compile Include="View\FormRoleFunctionDetail.Designer.cs">
       <DependentUpon>FormRoleFunctionDetail.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\FormBillDetail.resx">
+      <DependentUpon>FormBillDetail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\FormSurgicalDetail.resx">
       <DependentUpon>FormSurgicalDetail.cs</DependentUpon>
     </EmbeddedResource>
@@ -635,6 +644,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\2001.i105.001_isometric_surgeon_doctor_flowchart-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OL1V2Q0-removebg-preview.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
