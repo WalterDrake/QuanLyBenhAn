@@ -60,10 +60,16 @@ namespace DO_AN_CUA_HAN.View
             Staff loginStaff;
 
             // If fields are not validated then do nothing
-            /*if (!superValidator1.Validate())
+            if (string.IsNullOrEmpty(bunifuTextBoxUsername.Text))
             {
-                return;
-            }*/
+                bunifuSnackbar1.Show(this, "Nhập tài khoản", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+
+            }
+            if (string.IsNullOrEmpty(bunifuTextBoxPassword.Text))
+            {
+                bunifuSnackbar1.Show(this, "Nhập mật khẩu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+
+            }
 
             try
             {
@@ -94,7 +100,7 @@ namespace DO_AN_CUA_HAN.View
             }
             catch
             {
-                MessageBox.Show("Không thể kết nối với cơ sở dữ liệu. Vui lòng kiểm tra lại tùy chỉnh", "Lỗi dữ liệu", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                bunifuSnackbar1.Show(this, "Không thể kết nối với cơ sở dữ liệu. Vui lòng kiểm tra lại tùy chỉnh", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
             }
         }
 
