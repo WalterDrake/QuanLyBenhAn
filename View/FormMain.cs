@@ -1,4 +1,6 @@
 ﻿using Bunifu.Framework.UI;
+using Bunifu.UI.WinForms;
+using DO_AN_CUA_HAN.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,6 +16,7 @@ namespace DO_AN_CUA_HAN.View
     
     public partial class FormMain : Form
     {
+        private Staff loginStaff { get; set; }
 
         private Timer timer;
         private int objectX;
@@ -27,6 +30,11 @@ namespace DO_AN_CUA_HAN.View
 
             
 
+        }
+        public FormMain(Staff staff)
+        {
+            InitializeComponent();
+            loginStaff = staff;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -102,6 +110,7 @@ namespace DO_AN_CUA_HAN.View
             // Thiết lập vị trí ban đầu của đối tượng và vị trí đích
             objectX = 1148;
             targetX = 280;
+
             timer.Start(); // Bắt đầu Timer để bắt đầu di chuyển đối tượng
         }
 

@@ -16,5 +16,10 @@ namespace DO_AN_CUA_HAN.View
         {
             InitializeComponent();
         }
+
+        private void bunifuButton10_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

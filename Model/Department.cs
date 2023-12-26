@@ -6,7 +6,7 @@ using System.Data;
 using DO_AN_CUA_HAN.Functional;
 using System.Data.SqlClient;
 
-namespace Hospital.Model
+namespace DO_AN_CUA_HAN.Model
 {
     public class Department
     {

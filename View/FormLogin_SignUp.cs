@@ -11,6 +11,10 @@ using System.Windows.Forms;
 using System.Drawing.Drawing2D;
 using DevComponents.DotNetBar.Metro;
 using System.Drawing.Text;
+using Bunifu.Framework.UI;
+using Bunifu.UI.WinForms;
+using DevComponents.DotNetBar.Validator;
+using DO_AN_CUA_HAN.Model;
 
 namespace DO_AN_CUA_HAN.View
 {
@@ -24,14 +28,76 @@ namespace DO_AN_CUA_HAN.View
 
         private void bunifuButton2_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void bunifuTextBox2_TextChanged(object sender, EventArgs e)
         {
 
         }
-        
+
+        private void bunifuButton3_Click(object sender, EventArgs e)
+        {
+            FormDatabase formDatabase = new FormDatabase();
+            formDatabase.FormClosed += new FormClosedEventHandler(FormLogin_FormClosed);
+            formDatabase.Show();
+            this.Hide();
+        }
+
+        private void bunifuButton1_Click(object sender, EventArgs e)
+        {
+            Login();
+            bunifuTextBoxUsername.Clear();
+            bunifuTextBoxPassword.Clear();
+        }
+        private void FormLogin_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Close();
+        }
+        private void Login()
+        {
+            int staffID;
+            Staff loginStaff;
+
+            // If fields are not validated then do nothing
+            /*if (!superValidator1.Validate())
+            {
+                return;
+            }*/
+
+            try
+            {
+                // Check if username is number only
+                if (int.TryParse(bunifuTextBoxUsername.Text, out staffID))
+                {
+                    loginStaff = Staff.GetStaff(staffID);
+
+                    // Check if username and password is valid
+                    if ((loginStaff.StaffID != 0) && (loginStaff.Password.Trim().Equals(bunifuTextBoxPassword.Text)))
+                    {
+                        // Show FormMain and hide FormLogin
+                        FormMain mainForm = new FormMain(loginStaff);
+                        mainForm.FormClosed += new FormClosedEventHandler(FormLogin_FormClosed);
+                        bunifuSnackbar1.Show(this, "Đăng nhập thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000,null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                        mainForm.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        bunifuSnackbar1.Show(this, "Tài khoản không hợp lệ", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000, "Sai mật khẩu", Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                    }
+                }
+                else
+                {
+                    bunifuSnackbar1.Show(this, "Tài khoản không hợp lệ", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000, "Lỗi đăng nhập", Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Không thể kết nối với cơ sở dữ liệu. Vui lòng kiểm tra lại tùy chỉnh", "Lỗi dữ liệu", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
     }
 }
 
