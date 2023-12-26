@@ -3078,7 +3078,7 @@
         A5fenoV6eHkCLL0By5OPPjj/kqDy40eXX+wol+nduPH/20BEDHgTLOQAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="bunifuLabel8.BaseStylesheet" xml:space="preserve">
+  <data name="labelX5.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Cambria'; font-size: 11.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(47, 79, 79); text-align: left; }</value>
   </data>
   <data name="bunifuTextBox6.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -3089,10 +3089,10 @@
         Y6MeC8QSAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="bunifuLabel3.BaseStylesheet" xml:space="preserve">
+  <data name="labelAddress.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Cambria'; font-size: 11.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(47, 79, 79); text-align: left; }</value>
   </data>
-  <data name="bunifuTextBox2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="textBoxPatientState.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAakAAAAkCAYAAAAzdcXpAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABbSURBVHhe7cMBCQBACASw71/Ka6bGeGSDPQAAAAAAAAAA
@@ -3126,7 +3126,7 @@
         HVH0DVI8w0lfRj0PAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="bunifuDatePicker1.Icon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="dateCreate.Icon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGASURBVFhH7ZZNTsMwEIWDuAGNkLgAS5asOQAXyY4blBMg
@@ -3139,19 +3139,19 @@
         AAAASUVORK5CYII=
 </value>
   </data>
-  <data name="bunifuLabel7.BaseStylesheet" xml:space="preserve">
+  <data name="labelX4.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Cambria'; font-size: 11.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(47, 79, 79); text-align: left; }</value>
   </data>
-  <data name="bunifuLabel6.BaseStylesheet" xml:space="preserve">
+  <data name="labelX3.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Cambria'; font-size: 11.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(47, 79, 79); text-align: left; }</value>
   </data>
-  <data name="bunifuLabel5.BaseStylesheet" xml:space="preserve">
+  <data name="labelX2.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Cambria'; font-size: 11.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(47, 79, 79); text-align: left; }</value>
   </data>
-  <data name="bunifuLabel4.BaseStylesheet" xml:space="preserve">
+  <data name="lableX1.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Cambria'; font-size: 11.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(47, 79, 79); text-align: left; }</value>
   </data>
-  <data name="bunifuTextBox4.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="textBoxPrehistory.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAakAAAAkCAYAAAAzdcXpAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABbSURBVHhe7cMBCQBACASw71/Ka6bGeGSDPQAAAAAAAAAA
@@ -3159,7 +3159,7 @@
         Y6MeC8QSAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="bunifuTextBox3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="textBoxPatientID.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAakAAAAkCAYAAAAzdcXpAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABbSURBVHhe7cMBCQBACASw71/Ka6bGeGSDPQAAAAAAAAAA
@@ -3167,7 +3167,7 @@
         Y6MeC8QSAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="bunifuTextBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="textBoxHFID.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAakAAAAkCAYAAAAzdcXpAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABbSURBVHhe7cMBCQBACASw71/Ka6bGeGSDPQAAAAAAAAAA
@@ -3183,7 +3183,7 @@
         Y6MeC8QSAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="bunifuLabel2.BaseStylesheet" xml:space="preserve">
+  <data name="labelHCID.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Cambria'; font-size: 11.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(47, 79, 79); text-align: left; }</value>
   </data>
   <data name="bunifuLabel1.BaseStylesheet" xml:space="preserve">
