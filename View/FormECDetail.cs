@@ -84,10 +84,10 @@ namespace DO_AN_CUA_HAN.View
                 try
                 {
 
-                    if (!superValidator1.Validate())
+                    /*if (!superValidator1.Validate())
                     {
                         return;
-                    }
+                    }*/
                     if (this.UserAction.Equals("edit"))
                     {
                         ExaminationCertificate newEC = new ExaminationCertificate();
@@ -126,9 +126,9 @@ namespace DO_AN_CUA_HAN.View
                         newEC.Result = textBoxResult.Text;
                         if (ExaminationCertificate.InsertEC(newEC) > 0)
                         {
-                            FormReport reportForm = new FormReport();
+                        /*FormReport reportForm = new FormReport();
 
-                            reportForm.ReportType = "EC";
+                        reportForm.ReportType = "EC";
                             reportForm.ObjectID = ExaminationCertificate.GetCurrentECID();
                             reportForm.ShowDialog();
 
@@ -138,7 +138,7 @@ namespace DO_AN_CUA_HAN.View
 
                             Bill newBill = new Bill(Bill.SERVICEBILL, patientID, staffID);
                             FormBillDetail billDetailForm = new FormBillDetail("insertExamination", newBill);
-                            billDetailForm.ShowDialog();
+                            billDetailForm.ShowDialog();*/
                         }
                     }
 
