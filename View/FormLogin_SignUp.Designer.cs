@@ -745,7 +745,7 @@
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.bunifuTextBoxPassword.OnIdleState = stateProperties12;
             this.bunifuTextBoxPassword.Padding = new System.Windows.Forms.Padding(3);
-            this.bunifuTextBoxPassword.PasswordChar = '\0';
+            this.bunifuTextBoxPassword.PasswordChar = '*';
             this.bunifuTextBoxPassword.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(20)))), ((int)(((byte)(59)))));
             this.bunifuTextBoxPassword.PlaceholderText = "Nhập mật khẩu";
             this.bunifuTextBoxPassword.ReadOnly = false;

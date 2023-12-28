@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using DO_AN_CUA_HAN.Model;
+using Bunifu.UI.WinForms;
 
 namespace DO_AN_CUA_HAN.View
 {
@@ -104,7 +105,7 @@ namespace DO_AN_CUA_HAN.View
             int selectedStaff = listBoxSystemStaff.SelectedIndex;
             if (CheckStaffInAssign(listStaff[selectedStaff].StaffID))
             {
-                MessageBox.Show("Nhân viên đã có trong danh sách phân công chăm sóc bệnh nhân", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                bunifuSnackbar1.Show(this, "Nhân viên đã có trong danh sách phân công chăm sóc bệnh nhân", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, "Thông báo", Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
             }
             else
             {
@@ -152,7 +153,7 @@ namespace DO_AN_CUA_HAN.View
                                         AssignmentDetail.InsertAssignmentDetails(newAD);
                                     }
                                     listAD.Clear();
-                                    MessageBox.Show("Cập nhập thông tin bảng phân công thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                    bunifuSnackbar1.Show(this,"Cập nhập thông tin bảng phân công thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success,1000,null,Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                                 }
                             }
                         }
@@ -167,46 +168,30 @@ namespace DO_AN_CUA_HAN.View
                                     listAD[i].AssignID = curAssignID;
                                     AssignmentDetail.InsertAssignmentDetails(listAD[i]);
                                 }
-                                MessageBox.Show("Thêm bảng phân công thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                bunifuSnackbar1.Show(this, "Thêm bảng phân công thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                             }
                         }
                     }
                     catch
                     {
-                        MessageBox.Show("Lỗi dữ liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        bunifuSnackbar1.Show(this, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                     }
                     listAD.Clear();
                     this.Close();
                 }
                 else
                 {
-                    MessageBox.Show("Ngày xuất viện phải sau ngày nhập viện", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    bunifuSnackbar1.Show(this, "Ngày xuất viện phải sau ngày nhập viện", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                 }
             }
             else
             {
-                MessageBox.Show("Chưa có nhân viên nào tham gia phân công chăm sóc bệnh nhân", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                bunifuSnackbar1.Show(this, "Chưa có nhân viên nào tham gia phân công chăm sóc bệnh nhân", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
             }
         }
-
         private void buttonClose_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void FormAssignDetail_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupPanel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBoxAssignID_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

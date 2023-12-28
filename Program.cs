@@ -17,7 +17,7 @@ namespace DO_AN_CUA_HAN
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormLogin_SignUp());
+            Application.Run(new FormDiseaseDetail());
         }
     }
 }
