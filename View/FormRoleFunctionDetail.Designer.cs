@@ -353,7 +353,7 @@
             this.bunifuTextBoxFunctionID.PasswordChar = '\0';
             this.bunifuTextBoxFunctionID.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.bunifuTextBoxFunctionID.PlaceholderText = "Nhập mã phòng ban";
-            this.bunifuTextBoxFunctionID.ReadOnly = false;
+            this.bunifuTextBoxFunctionID.ReadOnly = true;
             this.bunifuTextBoxFunctionID.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.bunifuTextBoxFunctionID.SelectedText = "";
             this.bunifuTextBoxFunctionID.SelectionLength = 0;
@@ -372,6 +372,7 @@
             // 
             // bunifuButton2
             // 
+            this.bunifuButton2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.bunifuButton2.AllowAnimations = true;
             this.bunifuButton2.AllowMouseEffects = true;
             this.bunifuButton2.AllowToggling = false;
@@ -462,6 +463,7 @@
             // 
             // bunifuButton1
             // 
+            this.bunifuButton1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.bunifuButton1.AllowAnimations = true;
             this.bunifuButton1.AllowMouseEffects = true;
             this.bunifuButton1.AllowToggling = false;

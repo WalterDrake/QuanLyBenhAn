@@ -416,6 +416,7 @@
             // 
             // bunifuButtonEdit
             // 
+            this.bunifuButtonEdit.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.bunifuButtonEdit.AllowAnimations = true;
             this.bunifuButtonEdit.AllowMouseEffects = true;
             this.bunifuButtonEdit.AllowToggling = false;

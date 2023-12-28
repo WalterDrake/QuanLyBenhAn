@@ -260,7 +260,7 @@
             this.bunifuTextBoxPatientID.PasswordChar = '\0';
             this.bunifuTextBoxPatientID.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.bunifuTextBoxPatientID.PlaceholderText = "Nhập mã bệnh nhân";
-            this.bunifuTextBoxPatientID.ReadOnly = false;
+            this.bunifuTextBoxPatientID.ReadOnly = true;
             this.bunifuTextBoxPatientID.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.bunifuTextBoxPatientID.SelectedText = "";
             this.bunifuTextBoxPatientID.SelectionLength = 0;
@@ -354,6 +354,7 @@
             // 
             // bunifuButtonClose
             // 
+            this.bunifuButtonClose.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.bunifuButtonClose.AllowAnimations = true;
             this.bunifuButtonClose.AllowMouseEffects = true;
             this.bunifuButtonClose.AllowToggling = false;
@@ -444,6 +445,7 @@
             // 
             // bunifuButtonOK
             // 
+            this.bunifuButtonOK.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.bunifuButtonOK.AllowAnimations = true;
             this.bunifuButtonOK.AllowMouseEffects = true;
             this.bunifuButtonOK.AllowToggling = false;
@@ -675,7 +677,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormHICDetail";
-            this.Text = "FormDepartmentDetail";
+            this.Text = "FormHICDetail";
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuShadowPanel1.ResumeLayout(false);
             this.bunifuShadowPanel1.PerformLayout();

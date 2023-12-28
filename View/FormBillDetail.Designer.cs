@@ -280,7 +280,7 @@
             this.bunifuTextBoxBillID.PasswordChar = '\0';
             this.bunifuTextBoxBillID.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.bunifuTextBoxBillID.PlaceholderText = "Nhập số hoá đơn";
-            this.bunifuTextBoxBillID.ReadOnly = false;
+            this.bunifuTextBoxBillID.ReadOnly = true;
             this.bunifuTextBoxBillID.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.bunifuTextBoxBillID.SelectedText = "";
             this.bunifuTextBoxBillID.SelectionLength = 0;
@@ -456,6 +456,7 @@
             // 
             // bunifuButtonPay
             // 
+            this.bunifuButtonPay.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.bunifuButtonPay.AllowAnimations = true;
             this.bunifuButtonPay.AllowMouseEffects = true;
             this.bunifuButtonPay.AllowToggling = false;
@@ -546,6 +547,7 @@
             // 
             // bunifuButtonDelete
             // 
+            this.bunifuButtonDelete.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.bunifuButtonDelete.AllowAnimations = true;
             this.bunifuButtonDelete.AllowMouseEffects = true;
             this.bunifuButtonDelete.AllowToggling = false;
@@ -636,6 +638,7 @@
             // 
             // bunifuButtonAdd
             // 
+            this.bunifuButtonAdd.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.bunifuButtonAdd.AllowAnimations = true;
             this.bunifuButtonAdd.AllowMouseEffects = true;
             this.bunifuButtonAdd.AllowToggling = false;
@@ -857,7 +860,7 @@
             this.bunifuTextBoxStaffID.PasswordChar = '\0';
             this.bunifuTextBoxStaffID.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.bunifuTextBoxStaffID.PlaceholderText = "Nhập mã nhân viên";
-            this.bunifuTextBoxStaffID.ReadOnly = false;
+            this.bunifuTextBoxStaffID.ReadOnly = true;
             this.bunifuTextBoxStaffID.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.bunifuTextBoxStaffID.SelectedText = "";
             this.bunifuTextBoxStaffID.SelectionLength = 0;
@@ -932,7 +935,7 @@
             this.bunifuTextBoxStaffName.PasswordChar = '\0';
             this.bunifuTextBoxStaffName.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.bunifuTextBoxStaffName.PlaceholderText = "Nhập tên nhân viên";
-            this.bunifuTextBoxStaffName.ReadOnly = false;
+            this.bunifuTextBoxStaffName.ReadOnly = true;
             this.bunifuTextBoxStaffName.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.bunifuTextBoxStaffName.SelectedText = "";
             this.bunifuTextBoxStaffName.SelectionLength = 0;
@@ -1024,7 +1027,7 @@
             this.bunifuTextBoxPatientName.PasswordChar = '\0';
             this.bunifuTextBoxPatientName.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.bunifuTextBoxPatientName.PlaceholderText = "Nhập tên bệnh nhân";
-            this.bunifuTextBoxPatientName.ReadOnly = false;
+            this.bunifuTextBoxPatientName.ReadOnly = true;
             this.bunifuTextBoxPatientName.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.bunifuTextBoxPatientName.SelectedText = "";
             this.bunifuTextBoxPatientName.SelectionLength = 0;
@@ -1086,6 +1089,7 @@
             // 
             // bunifuButtonClose
             // 
+            this.bunifuButtonClose.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.bunifuButtonClose.AllowAnimations = true;
             this.bunifuButtonClose.AllowMouseEffects = true;
             this.bunifuButtonClose.AllowToggling = false;
@@ -1172,10 +1176,11 @@
             this.bunifuButtonClose.TextMarginLeft = 0;
             this.bunifuButtonClose.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButtonClose.UseDefaultRadiusAndThickness = true;
-            this.bunifuButtonClose.Click += new System.EventHandler(this.bunifuButtonClose_Click) ;
+            this.bunifuButtonClose.Click += new System.EventHandler(this.bunifuButtonClose_Click);
             // 
             // bunifuButtonSave
             // 
+            this.bunifuButtonSave.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.bunifuButtonSave.AllowAnimations = true;
             this.bunifuButtonSave.AllowMouseEffects = true;
             this.bunifuButtonSave.AllowToggling = false;
@@ -1626,7 +1631,7 @@
             this.bunifuTextBoxPatientID.PasswordChar = '\0';
             this.bunifuTextBoxPatientID.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.bunifuTextBoxPatientID.PlaceholderText = "Nhập mã bệnh nhân";
-            this.bunifuTextBoxPatientID.ReadOnly = false;
+            this.bunifuTextBoxPatientID.ReadOnly = true;
             this.bunifuTextBoxPatientID.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.bunifuTextBoxPatientID.SelectedText = "";
             this.bunifuTextBoxPatientID.SelectionLength = 0;

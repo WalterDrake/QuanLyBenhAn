@@ -858,6 +858,7 @@
             // 
             // bunifuButtonClose
             // 
+            this.bunifuButtonClose.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.bunifuButtonClose.AllowAnimations = true;
             this.bunifuButtonClose.AllowMouseEffects = true;
             this.bunifuButtonClose.AllowToggling = false;
@@ -948,6 +949,7 @@
             // 
             // bunifuButtonLogin
             // 
+            this.bunifuButtonLogin.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.bunifuButtonLogin.AllowAnimations = true;
             this.bunifuButtonLogin.AllowMouseEffects = true;
             this.bunifuButtonLogin.AllowToggling = false;

@@ -123,6 +123,16 @@ namespace DO_AN_CUA_HAN.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _5413809_effects_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("_5413809_effects_removebg_preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _5l61_4oxe_180209_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("5l61_4oxe_180209-removebg-preview", resourceCulture);

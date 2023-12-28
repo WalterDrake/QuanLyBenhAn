@@ -49,6 +49,8 @@
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.bunifuShadowPanel1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.listBoxCurrentStaff = new System.Windows.Forms.ListBox();
+            this.listBoxSystemStaff = new System.Windows.Forms.ListBox();
             this.bunifuDropdownState = new Bunifu.UI.WinForms.BunifuDropdown();
             this.bunifuTextBoxDescription = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuImageButtonInsertFunction = new Bunifu.UI.WinForms.BunifuImageButton();
@@ -69,8 +71,6 @@
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuImageButtonRemoveFunction = new Bunifu.UI.WinForms.BunifuImageButton();
             this.bunifuTextBoxSurgicalID = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.listBoxSystemStaff = new System.Windows.Forms.ListBox();
-            this.listBoxCurrentStaff = new System.Windows.Forms.ListBox();
             this.bunifuSnackbar1 = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
             this.bunifuGradientPanel1.SuspendLayout();
             this.bunifuShadowPanel1.SuspendLayout();
@@ -144,6 +144,22 @@
             this.bunifuShadowPanel1.Size = new System.Drawing.Size(596, 687);
             this.bunifuShadowPanel1.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.bunifuShadowPanel1.TabIndex = 0;
+            // 
+            // listBoxCurrentStaff
+            // 
+            this.listBoxCurrentStaff.FormattingEnabled = true;
+            this.listBoxCurrentStaff.Location = new System.Drawing.Point(30, 384);
+            this.listBoxCurrentStaff.Name = "listBoxCurrentStaff";
+            this.listBoxCurrentStaff.Size = new System.Drawing.Size(227, 238);
+            this.listBoxCurrentStaff.TabIndex = 65;
+            // 
+            // listBoxSystemStaff
+            // 
+            this.listBoxSystemStaff.FormattingEnabled = true;
+            this.listBoxSystemStaff.Location = new System.Drawing.Point(349, 385);
+            this.listBoxSystemStaff.Name = "listBoxSystemStaff";
+            this.listBoxSystemStaff.Size = new System.Drawing.Size(228, 238);
+            this.listBoxSystemStaff.TabIndex = 64;
             // 
             // bunifuDropdownState
             // 
@@ -844,7 +860,7 @@
             this.bunifuTextBoxPatientID.PasswordChar = '\0';
             this.bunifuTextBoxPatientID.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.bunifuTextBoxPatientID.PlaceholderText = "Nhập mã bệnh nhân";
-            this.bunifuTextBoxPatientID.ReadOnly = false;
+            this.bunifuTextBoxPatientID.ReadOnly = true;
             this.bunifuTextBoxPatientID.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.bunifuTextBoxPatientID.SelectedText = "";
             this.bunifuTextBoxPatientID.SelectionLength = 0;
@@ -1010,7 +1026,7 @@
             this.bunifuTextBoxSurgicalID.PasswordChar = '\0';
             this.bunifuTextBoxSurgicalID.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.bunifuTextBoxSurgicalID.PlaceholderText = "Nhập mã ca phẩu thuật";
-            this.bunifuTextBoxSurgicalID.ReadOnly = false;
+            this.bunifuTextBoxSurgicalID.ReadOnly = true;
             this.bunifuTextBoxSurgicalID.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.bunifuTextBoxSurgicalID.SelectedText = "";
             this.bunifuTextBoxSurgicalID.SelectionLength = 0;
@@ -1026,22 +1042,6 @@
             this.bunifuTextBoxSurgicalID.TextPlaceholder = "Nhập mã ca phẩu thuật";
             this.bunifuTextBoxSurgicalID.UseSystemPasswordChar = false;
             this.bunifuTextBoxSurgicalID.WordWrap = true;
-            // 
-            // listBoxSystemStaff
-            // 
-            this.listBoxSystemStaff.FormattingEnabled = true;
-            this.listBoxSystemStaff.Location = new System.Drawing.Point(349, 385);
-            this.listBoxSystemStaff.Name = "listBoxSystemStaff";
-            this.listBoxSystemStaff.Size = new System.Drawing.Size(228, 238);
-            this.listBoxSystemStaff.TabIndex = 64;
-            // 
-            // listBoxCurrentStaff
-            // 
-            this.listBoxCurrentStaff.FormattingEnabled = true;
-            this.listBoxCurrentStaff.Location = new System.Drawing.Point(30, 384);
-            this.listBoxCurrentStaff.Name = "listBoxCurrentStaff";
-            this.listBoxCurrentStaff.Size = new System.Drawing.Size(227, 238);
-            this.listBoxCurrentStaff.TabIndex = 65;
             // 
             // bunifuSnackbar1
             // 

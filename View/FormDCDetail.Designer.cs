@@ -175,6 +175,7 @@
             // 
             // bunifuButton2
             // 
+            this.bunifuButton2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.bunifuButton2.AllowAnimations = true;
             this.bunifuButton2.AllowMouseEffects = true;
             this.bunifuButton2.AllowToggling = false;
@@ -265,6 +266,7 @@
             // 
             // bunifuButton1
             // 
+            this.bunifuButton1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.bunifuButton1.AllowAnimations = true;
             this.bunifuButton1.AllowMouseEffects = true;
             this.bunifuButton1.AllowToggling = false;
@@ -412,7 +414,7 @@
             this.bunifuTextBoxPatientID.PasswordChar = '\0';
             this.bunifuTextBoxPatientID.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.bunifuTextBoxPatientID.PlaceholderText = "Nhập mã bệnh nhân";
-            this.bunifuTextBoxPatientID.ReadOnly = false;
+            this.bunifuTextBoxPatientID.ReadOnly = true;
             this.bunifuTextBoxPatientID.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.bunifuTextBoxPatientID.SelectedText = "";
             this.bunifuTextBoxPatientID.SelectionLength = 0;
@@ -488,7 +490,7 @@
             this.bunifuTextBoxStaffID.PasswordChar = '\0';
             this.bunifuTextBoxStaffID.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.bunifuTextBoxStaffID.PlaceholderText = "Nhập mã nhân viên phụ trách";
-            this.bunifuTextBoxStaffID.ReadOnly = false;
+            this.bunifuTextBoxStaffID.ReadOnly = true;
             this.bunifuTextBoxStaffID.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.bunifuTextBoxStaffID.SelectedText = "";
             this.bunifuTextBoxStaffID.SelectionLength = 0;
@@ -590,7 +592,7 @@
             this.bunifuTextBoxDCID.PasswordChar = '\0';
             this.bunifuTextBoxDCID.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.bunifuTextBoxDCID.PlaceholderText = "Nhập mã phiếu xuất viện";
-            this.bunifuTextBoxDCID.ReadOnly = false;
+            this.bunifuTextBoxDCID.ReadOnly = true;
             this.bunifuTextBoxDCID.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.bunifuTextBoxDCID.SelectedText = "";
             this.bunifuTextBoxDCID.SelectionLength = 0;
