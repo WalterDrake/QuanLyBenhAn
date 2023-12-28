@@ -99,10 +99,11 @@ namespace DO_AN_CUA_HAN.View
                         if (dialogResult == DialogResult.Yes)
                         {
                             if (ExaminationCertificate.UpdateEC(newEC) > 0)
-                                MessageBox.Show("Cập nhập thông tin phiếu khám bệnh thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        }
+                                bunifuSnackbar1.Show(this, "Cập nhập thông tin phiếu khám bệnh thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
 
                     }
+
+                }
                     else if (this.UserAction == "updateResult")
                     {
                         ExaminationCertificate newEC = new ExaminationCertificate();
@@ -112,8 +113,9 @@ namespace DO_AN_CUA_HAN.View
                         newEC.State = 1;
                         newEC.Date = dateCreate.Value;
                         newEC.Result = textBoxResult.Text;
+
                         if (ExaminationCertificate.UpdateEC(newEC) > 0)
-                            MessageBox.Show("Cập nhập kết quả khám bệnh thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            bunifuSnackbar1.Show(this, "Cập nhập kết quả khám bệnh thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                     }
                     else
                     {
@@ -143,12 +145,12 @@ namespace DO_AN_CUA_HAN.View
                     }
 
 
-                }
-                catch
+            }
+            catch
                 {
-                    MessageBox.Show("Lỗi dữ liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    bunifuSnackbar1.Show(this, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                 }
-                this.Close();
+            this.Close();
             }
 
         }
