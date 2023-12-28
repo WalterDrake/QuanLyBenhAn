@@ -231,6 +231,23 @@
     </Compile>
     <Compile Include="View\FormMedicineDetail.Designer.cs">
       <DependentUpon>FormMedicineDetail.cs</DependentUpon>
+    <Compile Include="View\FormPrescriptionDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormPrescriptionDetail.Designer.cs">
+      <DependentUpon>FormPrescriptionDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormService.Designer.cs">
+      <DependentUpon>FormService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormTestDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormTestDetail.Designer.cs">
+      <DependentUpon>FormTestDetail.cs</DependentUpon>
     </Compile>
     <Compile Include="View\FormSurgicalDetail.cs">
       <SubType>Form</SubType>
@@ -306,6 +323,14 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormMedicineDetail.resx">
       <DependentUpon>FormMedicineDetail.cs</DependentUpon>
+    <EmbeddedResource Include="View\FormPrescriptionDetail.resx">
+      <DependentUpon>FormPrescriptionDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormService.resx">
+      <DependentUpon>FormService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormTestDetail.resx">
+      <DependentUpon>FormTestDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormSurgicalDetail.resx">
       <DependentUpon>FormSurgicalDetail.cs</DependentUpon>
@@ -671,6 +696,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\5413809-effects-removebg-preview.png" />
+    <None Include="Resources\7071-removebg-preview.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
