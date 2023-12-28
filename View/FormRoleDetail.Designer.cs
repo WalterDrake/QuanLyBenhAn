@@ -1,6 +1,6 @@
 ﻿namespace DO_AN_CUA_HAN.View
 {
-    partial class FormAssignDetail
+    partial class FormRoleDetail
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAssignDetail));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormRoleDetail));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
@@ -46,24 +46,20 @@
             this.bunifuSnackbar1 = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
             this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.bunifuShadowPanel1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.listBoxSystemStaff = new System.Windows.Forms.ListBox();
-            this.listBoxCurrentStaff = new System.Windows.Forms.ListBox();
+            this.listBoxSystemFunctionID = new System.Windows.Forms.ListBox();
+            this.listBoxCurrentFunctionID = new System.Windows.Forms.ListBox();
+            this.listBoxSystemFunction = new System.Windows.Forms.ListBox();
+            this.listBoxCurrentFunction = new System.Windows.Forms.ListBox();
             this.buttonInsertFunction = new Bunifu.UI.WinForms.BunifuImageButton();
             this.buttonClose = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.buttonOk = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.dateCreate = new Bunifu.UI.WinForms.BunifuDatePicker();
-            this.labelX5 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.dateHospitalize = new Bunifu.UI.WinForms.BunifuDatePicker();
             this.bunifuButton2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.dateDischarge = new Bunifu.UI.WinForms.BunifuDatePicker();
             this.bunifuLabel7 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel6 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.labelX4 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.labelX3 = new Bunifu.UI.WinForms.BunifuLabel();
             this.labelRoleName = new Bunifu.UI.WinForms.BunifuLabel();
-            this.textBoxPatientID = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.textBoxAssignID = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.textBoxRoleName = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.textBoxRoleID = new Bunifu.UI.WinForms.BunifuTextBox();
             this.labelRoleID = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
@@ -172,31 +168,27 @@
             this.bunifuShadowPanel1.BorderColor = System.Drawing.Color.DarkSlateGray;
             this.bunifuShadowPanel1.BorderRadius = 20;
             this.bunifuShadowPanel1.BorderThickness = 2;
-            this.bunifuShadowPanel1.Controls.Add(this.listBoxSystemStaff);
-            this.bunifuShadowPanel1.Controls.Add(this.listBoxCurrentStaff);
+            this.bunifuShadowPanel1.Controls.Add(this.listBoxSystemFunctionID);
+            this.bunifuShadowPanel1.Controls.Add(this.listBoxCurrentFunctionID);
+            this.bunifuShadowPanel1.Controls.Add(this.listBoxSystemFunction);
+            this.bunifuShadowPanel1.Controls.Add(this.listBoxCurrentFunction);
             this.bunifuShadowPanel1.Controls.Add(this.buttonInsertFunction);
             this.bunifuShadowPanel1.Controls.Add(this.buttonClose);
             this.bunifuShadowPanel1.Controls.Add(this.buttonOk);
-            this.bunifuShadowPanel1.Controls.Add(this.dateCreate);
-            this.bunifuShadowPanel1.Controls.Add(this.labelX5);
-            this.bunifuShadowPanel1.Controls.Add(this.dateHospitalize);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuButton2);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuButton1);
-            this.bunifuShadowPanel1.Controls.Add(this.dateDischarge);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuLabel7);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuLabel6);
-            this.bunifuShadowPanel1.Controls.Add(this.labelX4);
-            this.bunifuShadowPanel1.Controls.Add(this.labelX3);
             this.bunifuShadowPanel1.Controls.Add(this.labelRoleName);
-            this.bunifuShadowPanel1.Controls.Add(this.textBoxPatientID);
-            this.bunifuShadowPanel1.Controls.Add(this.textBoxAssignID);
+            this.bunifuShadowPanel1.Controls.Add(this.textBoxRoleName);
+            this.bunifuShadowPanel1.Controls.Add(this.textBoxRoleID);
             this.bunifuShadowPanel1.Controls.Add(this.labelRoleID);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuLabel1);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuPictureBox1);
             this.bunifuShadowPanel1.Controls.Add(this.buttonRemoveFunction);
             this.bunifuShadowPanel1.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Gradient;
             this.bunifuShadowPanel1.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.bunifuShadowPanel1.Location = new System.Drawing.Point(40, 28);
+            this.bunifuShadowPanel1.Location = new System.Drawing.Point(36, 42);
             this.bunifuShadowPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuShadowPanel1.Name = "bunifuShadowPanel1";
             this.bunifuShadowPanel1.PanelColor = System.Drawing.Color.PaleTurquoise;
@@ -206,29 +198,45 @@
             this.bunifuShadowPanel1.ShadowDepth = 5;
             this.bunifuShadowPanel1.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
             this.bunifuShadowPanel1.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel1.Size = new System.Drawing.Size(592, 676);
+            this.bunifuShadowPanel1.Size = new System.Drawing.Size(592, 653);
             this.bunifuShadowPanel1.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.bunifuShadowPanel1.TabIndex = 0;
             // 
-            // listBoxSystemStaff
+            // listBoxSystemFunctionID
             // 
-            this.listBoxSystemStaff.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(231)))), ((int)(((byte)(219)))));
-            this.listBoxSystemStaff.FormattingEnabled = true;
-            this.listBoxSystemStaff.Location = new System.Drawing.Point(350, 380);
-            this.listBoxSystemStaff.Margin = new System.Windows.Forms.Padding(2);
-            this.listBoxSystemStaff.Name = "listBoxSystemStaff";
-            this.listBoxSystemStaff.Size = new System.Drawing.Size(204, 212);
-            this.listBoxSystemStaff.TabIndex = 65;
+            this.listBoxSystemFunctionID.FormattingEnabled = true;
+            this.listBoxSystemFunctionID.Location = new System.Drawing.Point(104, 569);
+            this.listBoxSystemFunctionID.Name = "listBoxSystemFunctionID";
+            this.listBoxSystemFunctionID.Size = new System.Drawing.Size(44, 43);
+            this.listBoxSystemFunctionID.TabIndex = 67;
             // 
-            // listBoxCurrentStaff
+            // listBoxCurrentFunctionID
             // 
-            this.listBoxCurrentStaff.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(231)))), ((int)(((byte)(219)))));
-            this.listBoxCurrentStaff.FormattingEnabled = true;
-            this.listBoxCurrentStaff.Location = new System.Drawing.Point(41, 380);
-            this.listBoxCurrentStaff.Margin = new System.Windows.Forms.Padding(2);
-            this.listBoxCurrentStaff.Name = "listBoxCurrentStaff";
-            this.listBoxCurrentStaff.Size = new System.Drawing.Size(204, 212);
-            this.listBoxCurrentStaff.TabIndex = 64;
+            this.listBoxCurrentFunctionID.FormattingEnabled = true;
+            this.listBoxCurrentFunctionID.Location = new System.Drawing.Point(39, 569);
+            this.listBoxCurrentFunctionID.Name = "listBoxCurrentFunctionID";
+            this.listBoxCurrentFunctionID.Size = new System.Drawing.Size(44, 43);
+            this.listBoxCurrentFunctionID.TabIndex = 66;
+            // 
+            // listBoxSystemFunction
+            // 
+            this.listBoxSystemFunction.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(231)))), ((int)(((byte)(219)))));
+            this.listBoxSystemFunction.FormattingEnabled = true;
+            this.listBoxSystemFunction.Location = new System.Drawing.Point(360, 291);
+            this.listBoxSystemFunction.Margin = new System.Windows.Forms.Padding(2);
+            this.listBoxSystemFunction.Name = "listBoxSystemFunction";
+            this.listBoxSystemFunction.Size = new System.Drawing.Size(204, 251);
+            this.listBoxSystemFunction.TabIndex = 65;
+            // 
+            // listBoxCurrentFunction
+            // 
+            this.listBoxCurrentFunction.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(231)))), ((int)(((byte)(219)))));
+            this.listBoxCurrentFunction.FormattingEnabled = true;
+            this.listBoxCurrentFunction.Location = new System.Drawing.Point(39, 289);
+            this.listBoxCurrentFunction.Margin = new System.Windows.Forms.Padding(2);
+            this.listBoxCurrentFunction.Name = "listBoxCurrentFunction";
+            this.listBoxCurrentFunction.Size = new System.Drawing.Size(204, 251);
+            this.listBoxCurrentFunction.TabIndex = 64;
             // 
             // buttonInsertFunction
             // 
@@ -253,7 +261,7 @@
             this.buttonInsertFunction.ImageSize = new System.Drawing.Size(74, 63);
             this.buttonInsertFunction.ImageZoomSize = new System.Drawing.Size(114, 103);
             this.buttonInsertFunction.InitialImage = ((System.Drawing.Image)(resources.GetObject("buttonInsertFunction.InitialImage")));
-            this.buttonInsertFunction.Location = new System.Drawing.Point(238, 384);
+            this.buttonInsertFunction.Location = new System.Drawing.Point(242, 291);
             this.buttonInsertFunction.Margin = new System.Windows.Forms.Padding(2);
             this.buttonInsertFunction.Name = "buttonInsertFunction";
             this.buttonInsertFunction.Rotation = 0;
@@ -317,7 +325,7 @@
             this.buttonClose.IdleIconLeftImage = null;
             this.buttonClose.IdleIconRightImage = null;
             this.buttonClose.IndicateFocus = false;
-            this.buttonClose.Location = new System.Drawing.Point(491, 610);
+            this.buttonClose.Location = new System.Drawing.Point(492, 575);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.buttonClose.OnDisabledState.BorderRadius = 15;
@@ -408,7 +416,7 @@
             this.buttonOk.IdleIconLeftImage = null;
             this.buttonOk.IdleIconRightImage = null;
             this.buttonOk.IndicateFocus = false;
-            this.buttonOk.Location = new System.Drawing.Point(394, 610);
+            this.buttonOk.Location = new System.Drawing.Point(394, 575);
             this.buttonOk.Name = "buttonOk";
             this.buttonOk.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.buttonOk.OnDisabledState.BorderRadius = 15;
@@ -450,74 +458,6 @@
             this.buttonOk.TextPadding = new System.Windows.Forms.Padding(0);
             this.buttonOk.UseDefaultRadiusAndThickness = true;
             this.buttonOk.Click += new System.EventHandler(this.buttonOk_Click);
-            // 
-            // dateCreate
-            // 
-            this.dateCreate.AllowDrop = true;
-            this.dateCreate.BackColor = System.Drawing.Color.Transparent;
-            this.dateCreate.BorderRadius = 5;
-            this.dateCreate.Color = System.Drawing.Color.Gainsboro;
-            this.dateCreate.DateBorderThickness = Bunifu.UI.WinForms.BunifuDatePicker.BorderThickness.Thin;
-            this.dateCreate.DateTextAlign = Bunifu.UI.WinForms.BunifuDatePicker.TextAlign.Left;
-            this.dateCreate.DisabledColor = System.Drawing.Color.Gray;
-            this.dateCreate.DisplayWeekNumbers = false;
-            this.dateCreate.DPHeight = 0;
-            this.dateCreate.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.dateCreate.FillDatePicker = false;
-            this.dateCreate.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.dateCreate.ForeColor = System.Drawing.Color.Gray;
-            this.dateCreate.Icon = ((System.Drawing.Image)(resources.GetObject("dateCreate.Icon")));
-            this.dateCreate.IconColor = System.Drawing.Color.DimGray;
-            this.dateCreate.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
-            this.dateCreate.LeftTextMargin = 5;
-            this.dateCreate.Location = new System.Drawing.Point(195, 304);
-            this.dateCreate.MinimumSize = new System.Drawing.Size(4, 32);
-            this.dateCreate.Name = "dateCreate";
-            this.dateCreate.Size = new System.Drawing.Size(308, 32);
-            this.dateCreate.TabIndex = 26;
-            this.dateCreate.Value = new System.DateTime(2023, 12, 8, 4, 30, 0, 0);
-            // 
-            // labelX5
-            // 
-            this.labelX5.AllowParentOverrides = false;
-            this.labelX5.AutoEllipsis = false;
-            this.labelX5.CursorType = null;
-            this.labelX5.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.labelX5.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.labelX5.Location = new System.Drawing.Point(69, 307);
-            this.labelX5.Name = "labelX5";
-            this.labelX5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.labelX5.Size = new System.Drawing.Size(54, 17);
-            this.labelX5.TabIndex = 25;
-            this.labelX5.Text = "Ngày lập";
-            this.labelX5.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.labelX5.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // dateHospitalize
-            // 
-            this.dateHospitalize.AllowDrop = true;
-            this.dateHospitalize.BackColor = System.Drawing.Color.Transparent;
-            this.dateHospitalize.BorderRadius = 5;
-            this.dateHospitalize.Color = System.Drawing.Color.Gainsboro;
-            this.dateHospitalize.DateBorderThickness = Bunifu.UI.WinForms.BunifuDatePicker.BorderThickness.Thin;
-            this.dateHospitalize.DateTextAlign = Bunifu.UI.WinForms.BunifuDatePicker.TextAlign.Left;
-            this.dateHospitalize.DisabledColor = System.Drawing.Color.Gray;
-            this.dateHospitalize.DisplayWeekNumbers = false;
-            this.dateHospitalize.DPHeight = 0;
-            this.dateHospitalize.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.dateHospitalize.FillDatePicker = false;
-            this.dateHospitalize.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.dateHospitalize.ForeColor = System.Drawing.Color.Gray;
-            this.dateHospitalize.Icon = ((System.Drawing.Image)(resources.GetObject("dateHospitalize.Icon")));
-            this.dateHospitalize.IconColor = System.Drawing.Color.DimGray;
-            this.dateHospitalize.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
-            this.dateHospitalize.LeftTextMargin = 5;
-            this.dateHospitalize.Location = new System.Drawing.Point(195, 214);
-            this.dateHospitalize.MinimumSize = new System.Drawing.Size(4, 32);
-            this.dateHospitalize.Name = "dateHospitalize";
-            this.dateHospitalize.Size = new System.Drawing.Size(308, 32);
-            this.dateHospitalize.TabIndex = 24;
-            this.dateHospitalize.Value = new System.DateTime(2023, 12, 8, 4, 30, 0, 0);
             // 
             // bunifuButton2
             // 
@@ -699,32 +639,6 @@
             this.bunifuButton1.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButton1.UseDefaultRadiusAndThickness = true;
             // 
-            // dateDischarge
-            // 
-            this.dateDischarge.AllowDrop = true;
-            this.dateDischarge.BackColor = System.Drawing.Color.Transparent;
-            this.dateDischarge.BorderRadius = 5;
-            this.dateDischarge.Color = System.Drawing.Color.Gainsboro;
-            this.dateDischarge.DateBorderThickness = Bunifu.UI.WinForms.BunifuDatePicker.BorderThickness.Thin;
-            this.dateDischarge.DateTextAlign = Bunifu.UI.WinForms.BunifuDatePicker.TextAlign.Left;
-            this.dateDischarge.DisabledColor = System.Drawing.Color.Gray;
-            this.dateDischarge.DisplayWeekNumbers = false;
-            this.dateDischarge.DPHeight = 0;
-            this.dateDischarge.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.dateDischarge.FillDatePicker = false;
-            this.dateDischarge.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.dateDischarge.ForeColor = System.Drawing.Color.Gray;
-            this.dateDischarge.Icon = ((System.Drawing.Image)(resources.GetObject("dateDischarge.Icon")));
-            this.dateDischarge.IconColor = System.Drawing.Color.DimGray;
-            this.dateDischarge.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
-            this.dateDischarge.LeftTextMargin = 5;
-            this.dateDischarge.Location = new System.Drawing.Point(195, 258);
-            this.dateDischarge.MinimumSize = new System.Drawing.Size(4, 32);
-            this.dateDischarge.Name = "dateDischarge";
-            this.dateDischarge.Size = new System.Drawing.Size(308, 32);
-            this.dateDischarge.TabIndex = 21;
-            this.dateDischarge.Value = new System.DateTime(2023, 12, 8, 4, 30, 0, 0);
-            // 
             // bunifuLabel7
             // 
             this.bunifuLabel7.AllowParentOverrides = false;
@@ -732,13 +646,13 @@
             this.bunifuLabel7.CursorType = null;
             this.bunifuLabel7.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.bunifuLabel7.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.bunifuLabel7.Location = new System.Drawing.Point(384, 355);
+            this.bunifuLabel7.Location = new System.Drawing.Point(384, 257);
             this.bunifuLabel7.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuLabel7.Name = "bunifuLabel7";
             this.bunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel7.Size = new System.Drawing.Size(128, 17);
+            this.bunifuLabel7.Size = new System.Drawing.Size(171, 17);
             this.bunifuLabel7.TabIndex = 20;
-            this.bunifuLabel7.Text = "Danh sách nhân viên";
+            this.bunifuLabel7.Text = "Các chức năng của hệ thống";
             this.bunifuLabel7.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel7.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -749,47 +663,15 @@
             this.bunifuLabel6.CursorType = null;
             this.bunifuLabel6.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.bunifuLabel6.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.bunifuLabel6.Location = new System.Drawing.Point(60, 354);
+            this.bunifuLabel6.Location = new System.Drawing.Point(57, 257);
             this.bunifuLabel6.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuLabel6.Name = "bunifuLabel6";
             this.bunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel6.Size = new System.Drawing.Size(167, 17);
+            this.bunifuLabel6.Size = new System.Drawing.Size(137, 17);
             this.bunifuLabel6.TabIndex = 19;
-            this.bunifuLabel6.Text = "Danh sách được phân công";
+            this.bunifuLabel6.Text = "Các chức năng hiện có";
             this.bunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel6.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // labelX4
-            // 
-            this.labelX4.AllowParentOverrides = false;
-            this.labelX4.AutoEllipsis = false;
-            this.labelX4.CursorType = null;
-            this.labelX4.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.labelX4.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.labelX4.Location = new System.Drawing.Point(67, 262);
-            this.labelX4.Name = "labelX4";
-            this.labelX4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.labelX4.Size = new System.Drawing.Size(92, 17);
-            this.labelX4.TabIndex = 18;
-            this.labelX4.Text = "Ngày xuất viện";
-            this.labelX4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.labelX4.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // labelX3
-            // 
-            this.labelX3.AllowParentOverrides = false;
-            this.labelX3.AutoEllipsis = false;
-            this.labelX3.CursorType = null;
-            this.labelX3.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.labelX3.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.labelX3.Location = new System.Drawing.Point(67, 219);
-            this.labelX3.Name = "labelX3";
-            this.labelX3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.labelX3.Size = new System.Drawing.Size(96, 17);
-            this.labelX3.TabIndex = 17;
-            this.labelX3.Text = "Ngày nhập viện";
-            this.labelX3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.labelX3.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // labelRoleName
             // 
@@ -798,164 +680,164 @@
             this.labelRoleName.CursorType = null;
             this.labelRoleName.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.labelRoleName.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.labelRoleName.Location = new System.Drawing.Point(71, 171);
+            this.labelRoleName.Location = new System.Drawing.Point(68, 198);
             this.labelRoleName.Name = "labelRoleName";
             this.labelRoleName.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.labelRoleName.Size = new System.Drawing.Size(87, 17);
+            this.labelRoleName.Size = new System.Drawing.Size(100, 17);
             this.labelRoleName.TabIndex = 16;
-            this.labelRoleName.Text = "Mã bệnh nhân";
+            this.labelRoleName.Text = "Tên phân quyền";
             this.labelRoleName.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.labelRoleName.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // textBoxPatientID
+            // textBoxRoleName
             // 
-            this.textBoxPatientID.AcceptsReturn = false;
-            this.textBoxPatientID.AcceptsTab = false;
-            this.textBoxPatientID.AnimationSpeed = 200;
-            this.textBoxPatientID.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.textBoxPatientID.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.textBoxPatientID.BackColor = System.Drawing.Color.White;
-            this.textBoxPatientID.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("textBoxPatientID.BackgroundImage")));
-            this.textBoxPatientID.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.textBoxPatientID.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.textBoxPatientID.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.textBoxPatientID.BorderColorIdle = System.Drawing.Color.Silver;
-            this.textBoxPatientID.BorderRadius = 10;
-            this.textBoxPatientID.BorderThickness = 1;
-            this.textBoxPatientID.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.textBoxPatientID.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBoxPatientID.DefaultFont = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textBoxPatientID.DefaultText = "";
-            this.textBoxPatientID.FillColor = System.Drawing.Color.White;
-            this.textBoxPatientID.ForeColor = System.Drawing.Color.Gray;
-            this.textBoxPatientID.HideSelection = true;
-            this.textBoxPatientID.IconLeft = null;
-            this.textBoxPatientID.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBoxPatientID.IconPadding = 10;
-            this.textBoxPatientID.IconRight = null;
-            this.textBoxPatientID.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBoxPatientID.Lines = new string[0];
-            this.textBoxPatientID.Location = new System.Drawing.Point(195, 160);
-            this.textBoxPatientID.MaxLength = 32767;
-            this.textBoxPatientID.MinimumSize = new System.Drawing.Size(1, 1);
-            this.textBoxPatientID.Modified = false;
-            this.textBoxPatientID.Multiline = false;
-            this.textBoxPatientID.Name = "textBoxPatientID";
+            this.textBoxRoleName.AcceptsReturn = false;
+            this.textBoxRoleName.AcceptsTab = false;
+            this.textBoxRoleName.AnimationSpeed = 200;
+            this.textBoxRoleName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.textBoxRoleName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.textBoxRoleName.BackColor = System.Drawing.Color.White;
+            this.textBoxRoleName.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("textBoxRoleName.BackgroundImage")));
+            this.textBoxRoleName.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.textBoxRoleName.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.textBoxRoleName.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.textBoxRoleName.BorderColorIdle = System.Drawing.Color.Silver;
+            this.textBoxRoleName.BorderRadius = 10;
+            this.textBoxRoleName.BorderThickness = 1;
+            this.textBoxRoleName.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.textBoxRoleName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxRoleName.DefaultFont = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.textBoxRoleName.DefaultText = "";
+            this.textBoxRoleName.FillColor = System.Drawing.Color.White;
+            this.textBoxRoleName.ForeColor = System.Drawing.Color.Gray;
+            this.textBoxRoleName.HideSelection = true;
+            this.textBoxRoleName.IconLeft = null;
+            this.textBoxRoleName.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxRoleName.IconPadding = 10;
+            this.textBoxRoleName.IconRight = null;
+            this.textBoxRoleName.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxRoleName.Lines = new string[0];
+            this.textBoxRoleName.Location = new System.Drawing.Point(195, 191);
+            this.textBoxRoleName.MaxLength = 32767;
+            this.textBoxRoleName.MinimumSize = new System.Drawing.Size(1, 1);
+            this.textBoxRoleName.Modified = false;
+            this.textBoxRoleName.Multiline = false;
+            this.textBoxRoleName.Name = "textBoxRoleName";
             stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
             stateProperties1.FillColor = System.Drawing.Color.Empty;
             stateProperties1.ForeColor = System.Drawing.Color.Empty;
             stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.textBoxPatientID.OnActiveState = stateProperties1;
+            this.textBoxRoleName.OnActiveState = stateProperties1;
             stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.textBoxPatientID.OnDisabledState = stateProperties2;
+            this.textBoxRoleName.OnDisabledState = stateProperties2;
             stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             stateProperties3.FillColor = System.Drawing.Color.Empty;
             stateProperties3.ForeColor = System.Drawing.Color.Empty;
             stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.textBoxPatientID.OnHoverState = stateProperties3;
+            this.textBoxRoleName.OnHoverState = stateProperties3;
             stateProperties4.BorderColor = System.Drawing.Color.Silver;
             stateProperties4.FillColor = System.Drawing.Color.White;
             stateProperties4.ForeColor = System.Drawing.Color.Gray;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.textBoxPatientID.OnIdleState = stateProperties4;
-            this.textBoxPatientID.Padding = new System.Windows.Forms.Padding(4);
-            this.textBoxPatientID.PasswordChar = '\0';
-            this.textBoxPatientID.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.textBoxPatientID.PlaceholderText = "Nhập mã bệnh nhân";
-            this.textBoxPatientID.ReadOnly = true;
-            this.textBoxPatientID.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.textBoxPatientID.SelectedText = "";
-            this.textBoxPatientID.SelectionLength = 0;
-            this.textBoxPatientID.SelectionStart = 0;
-            this.textBoxPatientID.ShortcutsEnabled = true;
-            this.textBoxPatientID.Size = new System.Drawing.Size(310, 34);
-            this.textBoxPatientID.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
-            this.textBoxPatientID.TabIndex = 13;
-            this.textBoxPatientID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.textBoxPatientID.TextMarginBottom = 0;
-            this.textBoxPatientID.TextMarginLeft = 3;
-            this.textBoxPatientID.TextMarginTop = 0;
-            this.textBoxPatientID.TextPlaceholder = "Nhập mã bệnh nhân";
-            this.textBoxPatientID.UseSystemPasswordChar = false;
-            this.textBoxPatientID.WordWrap = true;
+            this.textBoxRoleName.OnIdleState = stateProperties4;
+            this.textBoxRoleName.Padding = new System.Windows.Forms.Padding(4);
+            this.textBoxRoleName.PasswordChar = '\0';
+            this.textBoxRoleName.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.textBoxRoleName.PlaceholderText = "Nhập tên phân quyền";
+            this.textBoxRoleName.ReadOnly = true;
+            this.textBoxRoleName.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.textBoxRoleName.SelectedText = "";
+            this.textBoxRoleName.SelectionLength = 0;
+            this.textBoxRoleName.SelectionStart = 0;
+            this.textBoxRoleName.ShortcutsEnabled = true;
+            this.textBoxRoleName.Size = new System.Drawing.Size(310, 34);
+            this.textBoxRoleName.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
+            this.textBoxRoleName.TabIndex = 13;
+            this.textBoxRoleName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.textBoxRoleName.TextMarginBottom = 0;
+            this.textBoxRoleName.TextMarginLeft = 3;
+            this.textBoxRoleName.TextMarginTop = 0;
+            this.textBoxRoleName.TextPlaceholder = "Nhập tên phân quyền";
+            this.textBoxRoleName.UseSystemPasswordChar = false;
+            this.textBoxRoleName.WordWrap = true;
             // 
-            // textBoxAssignID
+            // textBoxRoleID
             // 
-            this.textBoxAssignID.AcceptsReturn = false;
-            this.textBoxAssignID.AcceptsTab = false;
-            this.textBoxAssignID.AnimationSpeed = 200;
-            this.textBoxAssignID.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.textBoxAssignID.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.textBoxAssignID.BackColor = System.Drawing.Color.White;
-            this.textBoxAssignID.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("textBoxAssignID.BackgroundImage")));
-            this.textBoxAssignID.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.textBoxAssignID.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.textBoxAssignID.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.textBoxAssignID.BorderColorIdle = System.Drawing.Color.Silver;
-            this.textBoxAssignID.BorderRadius = 20;
-            this.textBoxAssignID.BorderThickness = 1;
-            this.textBoxAssignID.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.textBoxAssignID.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBoxAssignID.DefaultFont = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textBoxAssignID.DefaultText = "";
-            this.textBoxAssignID.FillColor = System.Drawing.Color.White;
-            this.textBoxAssignID.ForeColor = System.Drawing.Color.Gray;
-            this.textBoxAssignID.HideSelection = true;
-            this.textBoxAssignID.IconLeft = null;
-            this.textBoxAssignID.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBoxAssignID.IconPadding = 10;
-            this.textBoxAssignID.IconRight = null;
-            this.textBoxAssignID.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBoxAssignID.Lines = new string[0];
-            this.textBoxAssignID.Location = new System.Drawing.Point(195, 106);
-            this.textBoxAssignID.MaxLength = 32767;
-            this.textBoxAssignID.MinimumSize = new System.Drawing.Size(1, 1);
-            this.textBoxAssignID.Modified = false;
-            this.textBoxAssignID.Multiline = false;
-            this.textBoxAssignID.Name = "textBoxAssignID";
+            this.textBoxRoleID.AcceptsReturn = false;
+            this.textBoxRoleID.AcceptsTab = false;
+            this.textBoxRoleID.AnimationSpeed = 200;
+            this.textBoxRoleID.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.textBoxRoleID.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.textBoxRoleID.BackColor = System.Drawing.Color.White;
+            this.textBoxRoleID.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("textBoxRoleID.BackgroundImage")));
+            this.textBoxRoleID.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.textBoxRoleID.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.textBoxRoleID.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.textBoxRoleID.BorderColorIdle = System.Drawing.Color.Silver;
+            this.textBoxRoleID.BorderRadius = 20;
+            this.textBoxRoleID.BorderThickness = 1;
+            this.textBoxRoleID.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.textBoxRoleID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxRoleID.DefaultFont = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.textBoxRoleID.DefaultText = "";
+            this.textBoxRoleID.FillColor = System.Drawing.Color.White;
+            this.textBoxRoleID.ForeColor = System.Drawing.Color.Gray;
+            this.textBoxRoleID.HideSelection = true;
+            this.textBoxRoleID.IconLeft = null;
+            this.textBoxRoleID.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxRoleID.IconPadding = 10;
+            this.textBoxRoleID.IconRight = null;
+            this.textBoxRoleID.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxRoleID.Lines = new string[0];
+            this.textBoxRoleID.Location = new System.Drawing.Point(195, 136);
+            this.textBoxRoleID.MaxLength = 32767;
+            this.textBoxRoleID.MinimumSize = new System.Drawing.Size(1, 1);
+            this.textBoxRoleID.Modified = false;
+            this.textBoxRoleID.Multiline = false;
+            this.textBoxRoleID.Name = "textBoxRoleID";
             stateProperties5.BorderColor = System.Drawing.Color.DodgerBlue;
             stateProperties5.FillColor = System.Drawing.Color.Empty;
             stateProperties5.ForeColor = System.Drawing.Color.Empty;
             stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.textBoxAssignID.OnActiveState = stateProperties5;
+            this.textBoxRoleID.OnActiveState = stateProperties5;
             stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.textBoxAssignID.OnDisabledState = stateProperties6;
+            this.textBoxRoleID.OnDisabledState = stateProperties6;
             stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             stateProperties7.FillColor = System.Drawing.Color.Empty;
             stateProperties7.ForeColor = System.Drawing.Color.Empty;
             stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.textBoxAssignID.OnHoverState = stateProperties7;
+            this.textBoxRoleID.OnHoverState = stateProperties7;
             stateProperties8.BorderColor = System.Drawing.Color.Silver;
             stateProperties8.FillColor = System.Drawing.Color.White;
             stateProperties8.ForeColor = System.Drawing.Color.Gray;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.textBoxAssignID.OnIdleState = stateProperties8;
-            this.textBoxAssignID.Padding = new System.Windows.Forms.Padding(4);
-            this.textBoxAssignID.PasswordChar = '\0';
-            this.textBoxAssignID.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.textBoxAssignID.PlaceholderText = "Nhập mã phân công";
-            this.textBoxAssignID.ReadOnly = true;
-            this.textBoxAssignID.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.textBoxAssignID.SelectedText = "";
-            this.textBoxAssignID.SelectionLength = 0;
-            this.textBoxAssignID.SelectionStart = 0;
-            this.textBoxAssignID.ShortcutsEnabled = true;
-            this.textBoxAssignID.Size = new System.Drawing.Size(310, 34);
-            this.textBoxAssignID.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
-            this.textBoxAssignID.TabIndex = 12;
-            this.textBoxAssignID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.textBoxAssignID.TextMarginBottom = 0;
-            this.textBoxAssignID.TextMarginLeft = 3;
-            this.textBoxAssignID.TextMarginTop = 0;
-            this.textBoxAssignID.TextPlaceholder = "Nhập mã phân công";
-            this.textBoxAssignID.UseSystemPasswordChar = false;
-            this.textBoxAssignID.WordWrap = true;
+            this.textBoxRoleID.OnIdleState = stateProperties8;
+            this.textBoxRoleID.Padding = new System.Windows.Forms.Padding(4);
+            this.textBoxRoleID.PasswordChar = '\0';
+            this.textBoxRoleID.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.textBoxRoleID.PlaceholderText = "Nhập mã phân quyền";
+            this.textBoxRoleID.ReadOnly = true;
+            this.textBoxRoleID.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.textBoxRoleID.SelectedText = "";
+            this.textBoxRoleID.SelectionLength = 0;
+            this.textBoxRoleID.SelectionStart = 0;
+            this.textBoxRoleID.ShortcutsEnabled = true;
+            this.textBoxRoleID.Size = new System.Drawing.Size(310, 34);
+            this.textBoxRoleID.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
+            this.textBoxRoleID.TabIndex = 12;
+            this.textBoxRoleID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.textBoxRoleID.TextMarginBottom = 0;
+            this.textBoxRoleID.TextMarginLeft = 3;
+            this.textBoxRoleID.TextMarginTop = 0;
+            this.textBoxRoleID.TextPlaceholder = "Nhập mã phân quyền";
+            this.textBoxRoleID.UseSystemPasswordChar = false;
+            this.textBoxRoleID.WordWrap = true;
             // 
             // labelRoleID
             // 
@@ -965,12 +847,12 @@
             this.labelRoleID.CursorType = System.Windows.Forms.Cursors.Default;
             this.labelRoleID.Font = new System.Drawing.Font("Cambria", 11F);
             this.labelRoleID.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.labelRoleID.Location = new System.Drawing.Point(73, 115);
+            this.labelRoleID.Location = new System.Drawing.Point(73, 147);
             this.labelRoleID.Name = "labelRoleID";
             this.labelRoleID.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.labelRoleID.Size = new System.Drawing.Size(86, 17);
+            this.labelRoleID.Size = new System.Drawing.Size(95, 17);
             this.labelRoleID.TabIndex = 2;
-            this.labelRoleID.Text = "Mã phân công";
+            this.labelRoleID.Text = "Mã phân quyền";
             this.labelRoleID.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.labelRoleID.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -986,9 +868,9 @@
             this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(201, 28);
+            this.bunifuLabel1.Size = new System.Drawing.Size(147, 28);
             this.bunifuLabel1.TabIndex = 1;
-            this.bunifuLabel1.Text = "BẢNG PHÂN CÔNG";
+            this.bunifuLabel1.Text = "PHÂN QUYỀN";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -998,13 +880,13 @@
             this.bunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bunifuPictureBox1.AutoSizeHeight = true;
             this.bunifuPictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.bunifuPictureBox1.BorderRadius = 85;
-            this.bunifuPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox1.Image")));
+            this.bunifuPictureBox1.BorderRadius = 72;
+            this.bunifuPictureBox1.Image = global::DO_AN_CUA_HAN.Properties.Resources._145411_OTQZ7A_227_removebg_preview;
             this.bunifuPictureBox1.IsCircle = false;
-            this.bunifuPictureBox1.Location = new System.Drawing.Point(117, -34);
+            this.bunifuPictureBox1.Location = new System.Drawing.Point(131, -4);
             this.bunifuPictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuPictureBox1.Name = "bunifuPictureBox1";
-            this.bunifuPictureBox1.Size = new System.Drawing.Size(170, 170);
+            this.bunifuPictureBox1.Size = new System.Drawing.Size(144, 144);
             this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuPictureBox1.TabIndex = 56;
             this.bunifuPictureBox1.TabStop = false;
@@ -1033,7 +915,7 @@
             this.buttonRemoveFunction.ImageSize = new System.Drawing.Size(74, 63);
             this.buttonRemoveFunction.ImageZoomSize = new System.Drawing.Size(114, 103);
             this.buttonRemoveFunction.InitialImage = ((System.Drawing.Image)(resources.GetObject("buttonRemoveFunction.InitialImage")));
-            this.buttonRemoveFunction.Location = new System.Drawing.Point(232, 491);
+            this.buttonRemoveFunction.Location = new System.Drawing.Point(242, 439);
             this.buttonRemoveFunction.Margin = new System.Windows.Forms.Padding(2);
             this.buttonRemoveFunction.Name = "buttonRemoveFunction";
             this.buttonRemoveFunction.Rotation = 0;
@@ -1049,15 +931,15 @@
             this.buttonRemoveFunction.ZoomSpeed = 10;
             this.buttonRemoveFunction.Click += new System.EventHandler(this.buttonRemoveFunction_Click);
             // 
-            // FormAssignDetail
+            // FormRoleDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(677, 741);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormAssignDetail";
-            this.Text = "FormAssignDetail";
+            this.Name = "FormRoleDetail";
+            this.Text = "FormRoleDetail";
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuShadowPanel1.ResumeLayout(false);
             this.bunifuShadowPanel1.PerformLayout();
@@ -1071,28 +953,24 @@
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton2;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton1;
-        private Bunifu.UI.WinForms.BunifuDatePicker dateDischarge;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel7;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel6;
-        private Bunifu.UI.WinForms.BunifuLabel labelX4;
-        private Bunifu.UI.WinForms.BunifuLabel labelX3;
         private Bunifu.UI.WinForms.BunifuLabel labelRoleName;
-        private Bunifu.UI.WinForms.BunifuTextBox textBoxPatientID;
-        private Bunifu.UI.WinForms.BunifuTextBox textBoxAssignID;
+        private Bunifu.UI.WinForms.BunifuTextBox textBoxRoleName;
+        private Bunifu.UI.WinForms.BunifuTextBox textBoxRoleID;
         private Bunifu.UI.WinForms.BunifuLabel labelRoleID;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
         private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel1;
         private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel1;
-        private Bunifu.UI.WinForms.BunifuDatePicker dateCreate;
-        private Bunifu.UI.WinForms.BunifuLabel labelX5;
-        private Bunifu.UI.WinForms.BunifuDatePicker dateHospitalize;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton buttonClose;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton buttonOk;
         private Bunifu.UI.WinForms.BunifuImageButton buttonInsertFunction;
         private Bunifu.UI.WinForms.BunifuImageButton buttonRemoveFunction;
         private Bunifu.UI.WinForms.BunifuSnackbar bunifuSnackbar1;
-        private System.Windows.Forms.ListBox listBoxCurrentStaff;
-        private System.Windows.Forms.ListBox listBoxSystemStaff;
+        private System.Windows.Forms.ListBox listBoxCurrentFunction;
+        private System.Windows.Forms.ListBox listBoxSystemFunction;
+        private System.Windows.Forms.ListBox listBoxSystemFunctionID;
+        private System.Windows.Forms.ListBox listBoxCurrentFunctionID;
     }
 }

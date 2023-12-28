@@ -214,6 +214,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="View\FormRoleDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormRoleDetail.Designer.cs">
+      <DependentUpon>FormRoleDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FormBillDetail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -229,9 +235,9 @@
     <Compile Include="View\FormMedicineDetail.cs">
       <SubType>Form</SubType>
     </Compile>
-	  <Compile Include="View\FormMedicineDetail.Designer.cs">
-		  <DependentUpon>FormMedicineDetail.cs</DependentUpon>
-	  </Compile>
+    <Compile Include="View\FormMedicineDetail.Designer.cs">
+      <DependentUpon>FormMedicineDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FormPrescriptionDetail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -316,6 +322,9 @@
     <Compile Include="View\FormRoleFunctionDetail.Designer.cs">
       <DependentUpon>FormRoleFunctionDetail.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\FormRoleDetail.resx">
+      <DependentUpon>FormRoleDetail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\FormBillDetail.resx">
       <DependentUpon>FormBillDetail.cs</DependentUpon>
     </EmbeddedResource>
@@ -698,9 +707,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\5413809-effects-removebg-preview.png" />
-</ItemGroup>
-<ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\7071-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\145411-OTQZ7A-227-removebg-preview.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
