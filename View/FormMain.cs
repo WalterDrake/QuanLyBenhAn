@@ -57,50 +57,7 @@ namespace DO_AN_CUA_HAN.View
             }
         }
 
-        private void StartButton_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-
-
-
-
-
-        private void btnMovePanel_Click(object sender, EventArgs e)
-        {
-        
-        }
-
-        private void Timer1_Tick(object sender, EventArgs e)
-        {
-         
-        }
-
-        private void StartButton_Click_1(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void bunifuImageButton1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuShadowPanel5_ControlAdded(object sender, ControlEventArgs e)
-        {
-
-        }
-
-        private void bunifuShadowPanel4_ControlAdded(object sender, ControlEventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void bunifuLabel2_Click(object sender, EventArgs e)
         {
@@ -123,11 +80,6 @@ namespace DO_AN_CUA_HAN.View
             objectX = 1148;
             targetX = 280;
             timer.Start(); // Bắt đầu Timer để bắt đầu di chuyển đối tượng
-            
-            
-
-
-
         }
 
         private void bunifuLabel8_Click(object sender, EventArgs e)
@@ -143,10 +95,6 @@ namespace DO_AN_CUA_HAN.View
             timer.Start(); // Bắt đầu Timer để bắt đầu di chuyển đối tượng
         }
 
-        private void bunifuLabel3_Click(object sender, EventArgs e)
-        {
-            
-        }
 
         private void bunifuLabel1_Click(object sender, EventArgs e)
         {
