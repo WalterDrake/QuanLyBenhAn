@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DevComponents.DotNetBar.Validator;
+using DO_AN_CUA_HAN.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,34 +9,102 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 
 namespace DO_AN_CUA_HAN.View
 {
     public partial class FormHICDetail : Form
     {
+        public HIC HICDetail { get; set; }
+        public String UserAction { get; set; }
         public FormHICDetail()
         {
             InitializeComponent();
         }
-
-        private void bunifuLabel3_Click(object sender, EventArgs e)
+        //This constructor for edit HIC 
+        public FormHICDetail(HIC hicDetail, String userAction)
         {
-
+            InitializeComponent();
+            this.HICDetail = hicDetail;
+            this.UserAction = userAction;
+            SetHICDetail(hicDetail);
+        }
+        private void SetHICDetail(HIC hicDetail)
+        {
+            bunifuTextBoxHICID.Text = hicDetail.HICID.ToString();
+            bunifuTextBoxPatientID.Text = hicDetail.PatientID.ToString();
+            bunifuDatePickerExpire.Value = hicDetail.ExpireDate;
+           bunifuDatePickerIssue.Value = hicDetail.IssueDate;
+        }
+        //this constructor for add HIC
+        public FormHICDetail(int patientID)
+        {
+            InitializeComponent();
+            bunifuTextBoxPatientID.Text = patientID.ToString();
         }
 
-        private void bunifuLabel4_Click(object sender, EventArgs e)
+        private void bunifuButtonClose_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
-        private void bunifuButton1_Click(object sender, EventArgs e)
+        private void bunifuButtonOK_Click(object sender, EventArgs e)
         {
+           /* if (!superValidator1.Validate())
+                return;*/
+           if(string.IsNullOrEmpty(bunifuTextBoxHICID.Text))
+            {
+                bunifuSnackbar1.Show(this, "Thiếu mã bảo hiểm y tế", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
 
-        }
+            }
+            int hicID = Convert.ToInt32(bunifuTextBoxHICID.Text);
+            int patientID = Convert.ToInt32(bunifuTextBoxPatientID.Text);
+            try
+            {
+                if (bunifuDatePickerIssue.Value < bunifuDatePickerExpire.Value)
+                {
+                    if (bunifuDatePickerExpire.Value > DateTime.Today)
+                    {
+                        HIC newHIC = new HIC();
+                        newHIC.HICID = hicID;
+                        newHIC.PatientID = patientID;
+                        newHIC.IssueDate = bunifuDatePickerIssue.Value;
+                        newHIC.ExpireDate = bunifuDatePickerExpire.Value;
+                        if (UserAction == "edit")
+                        {
+                            DialogResult dialogResult = MessageBox.Show("Xác nhận cập nhập thông tin bảo hiểm y tế", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                            if (dialogResult == DialogResult.Yes)
+                            {
+                                HIC.DeleteHIC(HIC.GetPatientHIC(newHIC.PatientID).HICID);
+                                if (HIC.InsertHIC(newHIC) > 0)
+                                bunifuSnackbar1.Show(this, "Cập nhật thông tin bảo hiểm y tế thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
 
-        private void bunifuPictureBox1_Click(object sender, EventArgs e)
-        {
+                            }
+                        }
+                        else
+                        {
+                            if (HIC.InsertHIC(newHIC) > 0)
+                            bunifuSnackbar1.Show(this, "Thêm bảo hiểm y tế thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
 
+                        }
+                        this.Close();
+                    }
+                    else
+                    {
+                        bunifuSnackbar1.Show(this, "Bảo hiểm y tế này đã hết hạn sử dụng", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+
+                    }
+                }
+                else
+                {
+                    bunifuSnackbar1.Show(this, "Ngày phát hành phải nhỏ hơn ngày hết hạn", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+
+                }
+            }
+            catch
+            {
+                bunifuSnackbar1.Show(this, "Sổ báo hiểm y tế này đã có người sử dụng", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Information, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+            }
         }
     }
 }
