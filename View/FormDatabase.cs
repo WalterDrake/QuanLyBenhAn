@@ -48,23 +48,12 @@ namespace DO_AN_CUA_HAN.View
             bunifuSnackbar1.Show(this, "Khởi động lại chương trình để kết nối mới có hiệu lực!", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
             this.Close();
         }
-<<<<<<< HEAD
-
-        private void bunifuTextBoxUsername_TextChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                bunifuTextBoxUsername.SelectAll();
-            }
-            catch { }
-=======
         private string getConnectionString() //
         {
                 connectionBuilder.IntegratedSecurity = true;
                 connectionBuilder.UserID = bunifuTextBoxUsername.Text;
                 connectionBuilder.Password = bunifuTextBoxPassword.Text;
             return connectionBuilder.ConnectionString;
->>>>>>> 036a5f2aa525e1ed97d1b33ad4aea318d5aa0360
         }
     }
 }

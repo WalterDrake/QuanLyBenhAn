@@ -1383,7 +1383,6 @@
             this.bunifuTextBoxUsername.TextPlaceholder = "Nhập tài khoản";
             this.bunifuTextBoxUsername.UseSystemPasswordChar = false;
             this.bunifuTextBoxUsername.WordWrap = true;
-            this.bunifuTextBoxUsername.TextChanged += new System.EventHandler(this.bunifuTextBoxUsername_TextChanged);
             // 
             // bunifuLabel13
             // 
