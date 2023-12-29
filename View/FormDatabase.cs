@@ -43,12 +43,19 @@ namespace DO_AN_CUA_HAN.View
             }
 
             Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
-            //config.ConnectionStrings.ConnectionStrings["Hospital.Properties.Settings.eHospital"].ConnectionString = getConnectionString();
+            config.ConnectionStrings.ConnectionStrings["Hospital.Properties.Settings.eHospital"].ConnectionString = getConnectionString();
             config.Save(ConfigurationSaveMode.Modified, true);
             ConfigurationManager.RefreshSection("connectionStrings");
 
             bunifuSnackbar1.Show(this, "Khởi động lại chương trình để kết nối mới có hiệu lực!", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
             this.Close();
+        }
+        private string getConnectionString() //
+        {
+                connectionBuilder.IntegratedSecurity = true;
+                connectionBuilder.UserID = bunifuTextBoxUsername.Text;
+                connectionBuilder.Password = bunifuTextBoxPassword.Text;
+            return connectionBuilder.ConnectionString;
         }
     }
 }

@@ -35,15 +35,11 @@ namespace DO_AN_CUA_HAN.View
         {
             InitializeComponent();
             loginStaff = staff;
+            timer = new Timer();
+            timer.Interval = 10;
+            timer.Tick += Timer_Tick;
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-            
-           
-
-        }
         private void Timer_Tick(object sender, EventArgs e)
         {
             // Di chuyển đối tượng
@@ -61,7 +57,7 @@ namespace DO_AN_CUA_HAN.View
 
         private void bunifuLabel2_Click(object sender, EventArgs e)
         {
-            bunifuShadowPanel3.Controls.Remove(this);
+            bunifuShadowPanel3.Controls.Clear();
             FormMainMedicine formMainMedicine = new FormMainMedicine();
             bunifuShadowPanel3.Controls.Add(formMainMedicine);
             // Thiết lập vị trí ban đầu của đối tượng và vị trí đích
@@ -73,7 +69,7 @@ namespace DO_AN_CUA_HAN.View
 
         private void bunifuLabel4_Click(object sender, EventArgs e)
         {
-            bunifuShadowPanel3.Controls.Remove(this);
+            bunifuShadowPanel3.Controls.Clear();
             FormMainPatient formMainPatient = new FormMainPatient();
             bunifuShadowPanel3.Controls.Add(formMainPatient);
             // Thiết lập vị trí ban đầu của đối tượng và vị trí đích
@@ -84,7 +80,7 @@ namespace DO_AN_CUA_HAN.View
 
         private void bunifuLabel8_Click(object sender, EventArgs e)
         {
-            bunifuShadowPanel3.Controls.Remove(this);
+            bunifuShadowPanel3.Controls.Clear();
             FormMainStaff formMainStaff = new FormMainStaff();
 
             bunifuShadowPanel3.Controls.Add(formMainStaff);
@@ -98,7 +94,7 @@ namespace DO_AN_CUA_HAN.View
 
         private void bunifuLabel1_Click(object sender, EventArgs e)
         {
-            bunifuShadowPanel3.Controls.Remove(this);
+            bunifuShadowPanel3.Controls.Clear();
             FormMainHF formMainHF = new FormMainHF();
 
             bunifuShadowPanel3.Controls.Add(formMainHF);
@@ -111,7 +107,7 @@ namespace DO_AN_CUA_HAN.View
 
         private void bunifuLabel5_Click(object sender, EventArgs e)
         {
-            bunifuShadowPanel3.Controls.Remove(this);
+            bunifuShadowPanel3.Controls.Clear();
             FormMainEC formMainEC = new FormMainEC();
 
             bunifuShadowPanel3.Controls.Add(formMainEC);
@@ -124,7 +120,7 @@ namespace DO_AN_CUA_HAN.View
 
         private void bunifuLabel6_Click(object sender, EventArgs e)
         {
-            bunifuShadowPanel3.Controls.Remove(this);
+            bunifuShadowPanel3.Controls.Clear();
             FormMainBill formMainBill = new FormMainBill();
 
             bunifuShadowPanel3.Controls.Add(formMainBill);
@@ -137,7 +133,7 @@ namespace DO_AN_CUA_HAN.View
 
         private void bunifuLabel7_Click(object sender, EventArgs e)
         {
-            bunifuShadowPanel3.Controls.Remove(this);
+            bunifuShadowPanel3.Controls.Clear();
             FormMainAssignment formMainAS = new FormMainAssignment();
 
             bunifuShadowPanel3.Controls.Add(formMainAS);
@@ -150,7 +146,7 @@ namespace DO_AN_CUA_HAN.View
 
         private void bunifuLabel12_Click(object sender, EventArgs e)
         {
-            bunifuShadowPanel3.Controls.Remove(this);
+            bunifuShadowPanel3.Controls.Clear();
             FormMainDeptMajor formMainMajor = new FormMainDeptMajor();
 
             bunifuShadowPanel3.Controls.Add(formMainMajor);
@@ -163,7 +159,7 @@ namespace DO_AN_CUA_HAN.View
 
         private void bunifuLabel13_Click(object sender, EventArgs e)
         {
-            bunifuShadowPanel3.Controls.Remove(this);
+            bunifuShadowPanel3.Controls.Clear();
             FormMainSurgery formMainSurgery = new FormMainSurgery();
 
             bunifuShadowPanel3.Controls.Add(formMainSurgery);

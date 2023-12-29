@@ -84,7 +84,7 @@
             this.bunifuShadowPanel1.ShadowDepth = 0;
             this.bunifuShadowPanel1.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
             this.bunifuShadowPanel1.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel1.Size = new System.Drawing.Size(908, 732);
+            this.bunifuShadowPanel1.Size = new System.Drawing.Size(940, 695);
             this.bunifuShadowPanel1.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.bunifuShadowPanel1.TabIndex = 4;
             // 
@@ -292,7 +292,7 @@
             this.bunifuPictureBox1.BorderRadius = 10;
             this.bunifuPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox1.Image")));
             this.bunifuPictureBox1.IsCircle = true;
-            this.bunifuPictureBox1.Location = new System.Drawing.Point(578, 651);
+            this.bunifuPictureBox1.Location = new System.Drawing.Point(575, 652);
             this.bunifuPictureBox1.Name = "bunifuPictureBox1";
             this.bunifuPictureBox1.Size = new System.Drawing.Size(20, 20);
             this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -438,9 +438,9 @@
             this.bunifuDataGridViewDC.EnableHeadersVisualStyles = false;
             this.bunifuDataGridViewDC.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.bunifuDataGridViewDC.HeaderBackColor = System.Drawing.Color.DodgerBlue;
-            this.bunifuDataGridViewDC.HeaderBackColor = System.Drawing.Color.Empty;
+            this.bunifuDataGridViewDC.HeaderBgColor = System.Drawing.Color.Empty;
             this.bunifuDataGridViewDC.HeaderForeColor = System.Drawing.Color.White;
-            this.bunifuDataGridViewDC.Location = new System.Drawing.Point(14, 75);
+            this.bunifuDataGridViewDC.Location = new System.Drawing.Point(37, 75);
             this.bunifuDataGridViewDC.Name = "bunifuDataGridViewDC";
             this.bunifuDataGridViewDC.RowHeadersVisible = false;
             this.bunifuDataGridViewDC.RowTemplate.Height = 40;
@@ -467,7 +467,7 @@
             this.bunifubuttonDCDeleteSearch.IdleFillColor = System.Drawing.Color.White;
             this.bunifubuttonDCDeleteSearch.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.bunifubuttonDCDeleteSearch.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(58)))), ((int)(((byte)(82)))));
-            this.bunifubuttonDCDeleteSearch.Location = new System.Drawing.Point(616, 29);
+            this.bunifubuttonDCDeleteSearch.Location = new System.Drawing.Point(711, 29);
             this.bunifubuttonDCDeleteSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifubuttonDCDeleteSearch.Name = "bunifubuttonDCDeleteSearch";
             this.bunifubuttonDCDeleteSearch.Size = new System.Drawing.Size(111, 34);
@@ -481,7 +481,7 @@
             this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel1.Location = new System.Drawing.Point(56, 32);
+            this.bunifuLabel1.Location = new System.Drawing.Point(114, 37);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel1.Size = new System.Drawing.Size(72, 17);
@@ -517,7 +517,7 @@
             this.bunifuTextBoxDCSearch.IconRight = null;
             this.bunifuTextBoxDCSearch.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuTextBoxDCSearch.Lines = new string[0];
-            this.bunifuTextBoxDCSearch.Location = new System.Drawing.Point(134, 29);
+            this.bunifuTextBoxDCSearch.Location = new System.Drawing.Point(212, 29);
             this.bunifuTextBoxDCSearch.MaxLength = 32767;
             this.bunifuTextBoxDCSearch.MinimumSize = new System.Drawing.Size(1, 1);
             this.bunifuTextBoxDCSearch.Modified = false;
@@ -575,7 +575,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.bunifuShadowPanel1);
             this.Name = "FormMainDischarged";
-            this.Size = new System.Drawing.Size(908, 732);
+            this.Size = new System.Drawing.Size(940, 695);
             this.bunifuShadowPanel1.ResumeLayout(false);
             this.bunifuShadowPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).EndInit();

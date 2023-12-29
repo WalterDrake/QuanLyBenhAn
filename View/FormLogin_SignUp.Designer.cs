@@ -764,7 +764,7 @@
             this.bunifuTextBoxPassword.TextPlaceholder = "Nhập mật khẩu";
             this.bunifuTextBoxPassword.UseSystemPasswordChar = false;
             this.bunifuTextBoxPassword.WordWrap = true;
-            this.bunifuTextBoxPassword.TextChanged += new System.EventHandler(this.bunifuTextBox2_TextChanged);
+            this.bunifuTextBoxPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.bunifuTextBoxPassword_KeyDown);
             // 
             // bunifuTextBoxUsername
             // 
