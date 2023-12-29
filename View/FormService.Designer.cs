@@ -58,6 +58,7 @@
             this.bunifuLabel24 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuSnackbar1 = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
+            this.bunifuToolTip1 = new Bunifu.UI.WinForms.BunifuToolTip(this.components);
             this.bunifuGradientPanel1.SuspendLayout();
             this.bunifuShadowPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
@@ -85,6 +86,9 @@
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(601, 445);
             this.bunifuGradientPanel1.TabIndex = 3;
+            this.bunifuToolTip1.SetToolTip(this.bunifuGradientPanel1, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.bunifuGradientPanel1, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.bunifuGradientPanel1, "");
             // 
             // bunifuShadowPanel2
             // 
@@ -116,6 +120,9 @@
             this.bunifuShadowPanel2.Size = new System.Drawing.Size(535, 339);
             this.bunifuShadowPanel2.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.bunifuShadowPanel2.TabIndex = 41;
+            this.bunifuToolTip1.SetToolTip(this.bunifuShadowPanel2, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.bunifuShadowPanel2, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.bunifuShadowPanel2, "");
             // 
             // buttonClose
             // 
@@ -205,6 +212,9 @@
             this.buttonClose.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.buttonClose.TextMarginLeft = 0;
             this.buttonClose.TextPadding = new System.Windows.Forms.Padding(0);
+            this.bunifuToolTip1.SetToolTip(this.buttonClose, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.buttonClose, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.buttonClose, "");
             this.buttonClose.UseDefaultRadiusAndThickness = true;
             this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
@@ -296,6 +306,9 @@
             this.buttonOk.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.buttonOk.TextMarginLeft = 0;
             this.buttonOk.TextPadding = new System.Windows.Forms.Padding(0);
+            this.bunifuToolTip1.SetToolTip(this.buttonOk, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.buttonOk, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.buttonOk, "");
             this.buttonOk.UseDefaultRadiusAndThickness = true;
             this.buttonOk.Click += new System.EventHandler(this.buttonOk_Click);
             // 
@@ -304,7 +317,7 @@
             this.labelPrice.AllowParentOverrides = false;
             this.labelPrice.AutoEllipsis = false;
             this.labelPrice.CursorType = null;
-            this.labelPrice.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelPrice.Font = new System.Drawing.Font("Cambria", 11F);
             this.labelPrice.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.labelPrice.Location = new System.Drawing.Point(41, 227);
             this.labelPrice.Name = "labelPrice";
@@ -314,6 +327,9 @@
             this.labelPrice.Text = "Đơn giá";
             this.labelPrice.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.labelPrice.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuToolTip1.SetToolTip(this.labelPrice, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.labelPrice, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.labelPrice, "");
             // 
             // textBoxPrice
             // 
@@ -369,7 +385,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Gray;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxPrice.OnIdleState = stateProperties4;
-            this.textBoxPrice.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.textBoxPrice.Padding = new System.Windows.Forms.Padding(3);
             this.textBoxPrice.PasswordChar = '\0';
             this.textBoxPrice.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.textBoxPrice.PlaceholderText = "Nhập đơn giá";
@@ -387,15 +403,19 @@
             this.textBoxPrice.TextMarginLeft = 3;
             this.textBoxPrice.TextMarginTop = 0;
             this.textBoxPrice.TextPlaceholder = "Nhập đơn giá";
+            this.bunifuToolTip1.SetToolTip(this.textBoxPrice, "Chỉ cho phép nhập số");
+            this.bunifuToolTip1.SetToolTipIcon(this.textBoxPrice, global::DO_AN_CUA_HAN.Properties.Resources.retro_error_message_illustration_in_pixel_style_vector_removebg_preview);
+            this.bunifuToolTip1.SetToolTipTitle(this.textBoxPrice, "Warning");
             this.textBoxPrice.UseSystemPasswordChar = false;
             this.textBoxPrice.WordWrap = true;
+            this.textBoxPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxPrice_KeyPress);
             // 
             // labelServiceName
             // 
             this.labelServiceName.AllowParentOverrides = false;
             this.labelServiceName.AutoEllipsis = false;
             this.labelServiceName.CursorType = null;
-            this.labelServiceName.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelServiceName.Font = new System.Drawing.Font("Cambria", 11F);
             this.labelServiceName.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.labelServiceName.Location = new System.Drawing.Point(41, 162);
             this.labelServiceName.Name = "labelServiceName";
@@ -405,6 +425,9 @@
             this.labelServiceName.Text = "Tên dịch vụ";
             this.labelServiceName.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.labelServiceName.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuToolTip1.SetToolTip(this.labelServiceName, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.labelServiceName, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.labelServiceName, "");
             // 
             // textBoxServiceName
             // 
@@ -460,7 +483,7 @@
             stateProperties8.ForeColor = System.Drawing.Color.Gray;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxServiceName.OnIdleState = stateProperties8;
-            this.textBoxServiceName.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.textBoxServiceName.Padding = new System.Windows.Forms.Padding(3);
             this.textBoxServiceName.PasswordChar = '\0';
             this.textBoxServiceName.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.textBoxServiceName.PlaceholderText = "Nhập tên dịch vụ";
@@ -478,8 +501,12 @@
             this.textBoxServiceName.TextMarginLeft = 3;
             this.textBoxServiceName.TextMarginTop = 0;
             this.textBoxServiceName.TextPlaceholder = "Nhập tên dịch vụ";
+            this.bunifuToolTip1.SetToolTip(this.textBoxServiceName, "Không chứa số và ký tự đặc biệt");
+            this.bunifuToolTip1.SetToolTipIcon(this.textBoxServiceName, global::DO_AN_CUA_HAN.Properties.Resources.retro_error_message_illustration_in_pixel_style_vector_removebg_preview);
+            this.bunifuToolTip1.SetToolTipTitle(this.textBoxServiceName, "Warning");
             this.textBoxServiceName.UseSystemPasswordChar = false;
             this.textBoxServiceName.WordWrap = true;
+            this.textBoxServiceName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxServiceName_KeyPress);
             // 
             // textBoxServiceID
             // 
@@ -535,7 +562,7 @@
             stateProperties12.ForeColor = System.Drawing.Color.Gray;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxServiceID.OnIdleState = stateProperties12;
-            this.textBoxServiceID.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.textBoxServiceID.Padding = new System.Windows.Forms.Padding(3);
             this.textBoxServiceID.PasswordChar = '\0';
             this.textBoxServiceID.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.textBoxServiceID.PlaceholderText = "Nhập mã dịch vụ";
@@ -553,6 +580,9 @@
             this.textBoxServiceID.TextMarginLeft = 3;
             this.textBoxServiceID.TextMarginTop = 0;
             this.textBoxServiceID.TextPlaceholder = "Nhập mã dịch vụ";
+            this.bunifuToolTip1.SetToolTip(this.textBoxServiceID, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.textBoxServiceID, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.textBoxServiceID, "");
             this.textBoxServiceID.UseSystemPasswordChar = false;
             this.textBoxServiceID.WordWrap = true;
             // 
@@ -562,7 +592,7 @@
             this.labelServiceID.AutoEllipsis = false;
             this.labelServiceID.Cursor = System.Windows.Forms.Cursors.Default;
             this.labelServiceID.CursorType = System.Windows.Forms.Cursors.Default;
-            this.labelServiceID.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelServiceID.Font = new System.Drawing.Font("Cambria", 11F);
             this.labelServiceID.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.labelServiceID.Location = new System.Drawing.Point(41, 98);
             this.labelServiceID.Name = "labelServiceID";
@@ -572,6 +602,9 @@
             this.labelServiceID.Text = "Mã dịch vụ";
             this.labelServiceID.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.labelServiceID.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuToolTip1.SetToolTip(this.labelServiceID, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.labelServiceID, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.labelServiceID, "");
             // 
             // bunifuLabel24
             // 
@@ -589,6 +622,9 @@
             this.bunifuLabel24.Text = "DỊCH VỤ";
             this.bunifuLabel24.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel24.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuToolTip1.SetToolTip(this.bunifuLabel24, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.bunifuLabel24, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.bunifuLabel24, "");
             // 
             // bunifuPictureBox1
             // 
@@ -599,12 +635,15 @@
             this.bunifuPictureBox1.Image = global::DO_AN_CUA_HAN.Properties.Resources._7071_removebg_preview;
             this.bunifuPictureBox1.IsCircle = false;
             this.bunifuPictureBox1.Location = new System.Drawing.Point(144, 8);
-            this.bunifuPictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuPictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuPictureBox1.Name = "bunifuPictureBox1";
             this.bunifuPictureBox1.Size = new System.Drawing.Size(78, 78);
             this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuPictureBox1.TabIndex = 32;
             this.bunifuPictureBox1.TabStop = false;
+            this.bunifuToolTip1.SetToolTip(this.bunifuPictureBox1, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.bunifuPictureBox1, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.bunifuPictureBox1, "");
             this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
             // 
             // bunifuSnackbar1
@@ -676,6 +715,41 @@
             this.bunifuSnackbar1.WarningOptions.IconLeftMargin = 12;
             this.bunifuSnackbar1.ZoomCloseIcon = true;
             // 
+            // bunifuToolTip1
+            // 
+            this.bunifuToolTip1.Active = true;
+            this.bunifuToolTip1.AlignTextWithTitle = false;
+            this.bunifuToolTip1.AllowAutoClose = false;
+            this.bunifuToolTip1.AllowFading = true;
+            this.bunifuToolTip1.AutoCloseDuration = 5000;
+            this.bunifuToolTip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(221)))), ((int)(((byte)(85)))));
+            this.bunifuToolTip1.BorderColor = System.Drawing.Color.Transparent;
+            this.bunifuToolTip1.ClickToShowDisplayControl = false;
+            this.bunifuToolTip1.ConvertNewlinesToBreakTags = true;
+            this.bunifuToolTip1.DisplayControl = null;
+            this.bunifuToolTip1.EntryAnimationSpeed = 350;
+            this.bunifuToolTip1.ExitAnimationSpeed = 200;
+            this.bunifuToolTip1.GenerateAutoCloseDuration = false;
+            this.bunifuToolTip1.IconMargin = 6;
+            this.bunifuToolTip1.InitialDelay = 0;
+            this.bunifuToolTip1.Name = "bunifuToolTip1";
+            this.bunifuToolTip1.Opacity = 1D;
+            this.bunifuToolTip1.OverrideToolTipTitles = false;
+            this.bunifuToolTip1.Padding = new System.Windows.Forms.Padding(10);
+            this.bunifuToolTip1.ReshowDelay = 100;
+            this.bunifuToolTip1.ShowAlways = true;
+            this.bunifuToolTip1.ShowBorders = false;
+            this.bunifuToolTip1.ShowIcons = true;
+            this.bunifuToolTip1.ShowShadows = true;
+            this.bunifuToolTip1.Tag = null;
+            this.bunifuToolTip1.TextFont = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.bunifuToolTip1.TextForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.bunifuToolTip1.TextMargin = 2;
+            this.bunifuToolTip1.TitleFont = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.bunifuToolTip1.TitleForeColor = System.Drawing.Color.DimGray;
+            this.bunifuToolTip1.ToolTipPosition = new System.Drawing.Point(0, 0);
+            this.bunifuToolTip1.ToolTipTitle = null;
+            // 
             // FormServiceDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -683,7 +757,7 @@
             this.ClientSize = new System.Drawing.Size(601, 445);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormServiceDetail";
             this.Text = "FormService";
             this.bunifuGradientPanel1.ResumeLayout(false);
@@ -710,5 +784,6 @@
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
         private Bunifu.UI.WinForms.BunifuSnackbar bunifuSnackbar1;
+        private Bunifu.UI.WinForms.BunifuToolTip bunifuToolTip1;
     }
 }

@@ -105,5 +105,13 @@ namespace DO_AN_CUA_HAN.View
                 bunifuSnackbar1.Show(this, "Sổ báo hiểm y tế này đã có người sử dụng", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Information, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
             }
         }
+
+        private void bunifuTextBoxHICID_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

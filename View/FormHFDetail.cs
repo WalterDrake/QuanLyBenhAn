@@ -130,6 +130,54 @@ namespace DO_AN_CUA_HAN.View
 
             this.Close();
         }
+
+        private void textBoxPatientState_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !((e.KeyChar >= 'A' && e.KeyChar <= 'Z') ||
+              (e.KeyChar >= 'a' && e.KeyChar <= 'z') ||
+              e.KeyChar == 8 || // Backspace
+              e.KeyChar == 32 || // Space
+              e.KeyChar == 16 || // Shift
+              e.KeyChar == 46 || // Delete
+              (e.KeyChar >= 'À' && e.KeyChar <= 'ỹ') || // Vietnamese characters and accented vowels
+              (e.KeyChar >= 'à' && e.KeyChar <= 'ỹ'));
+        }
+
+        private void textBoxPrehistory_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !((e.KeyChar >= 'A' && e.KeyChar <= 'Z') ||
+              (e.KeyChar >= 'a' && e.KeyChar <= 'z') ||
+              e.KeyChar == 8 || // Backspace
+              e.KeyChar == 32 || // Space
+              e.KeyChar == 16 || // Shift
+              e.KeyChar == 46 || // Delete
+              (e.KeyChar >= 'À' && e.KeyChar <= 'ỹ') || // Vietnamese characters and accented vowels
+              (e.KeyChar >= 'à' && e.KeyChar <= 'ỹ'));
+        }
+
+        private void textBoxDisease_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !((e.KeyChar >= 'A' && e.KeyChar <= 'Z') ||
+              (e.KeyChar >= 'a' && e.KeyChar <= 'z') ||
+              e.KeyChar == 8 || // Backspace
+              e.KeyChar == 32 || // Space
+              e.KeyChar == 16 || // Shift
+              e.KeyChar == 46 || // Delete
+              (e.KeyChar >= 'À' && e.KeyChar <= 'ỹ') || // Vietnamese characters and accented vowels
+              (e.KeyChar >= 'à' && e.KeyChar <= 'ỹ'));
+        }
+
+        private void textBoxTreatment_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !((e.KeyChar >= 'A' && e.KeyChar <= 'Z') ||
+              (e.KeyChar >= 'a' && e.KeyChar <= 'z') ||
+              e.KeyChar == 8 || // Backspace
+              e.KeyChar == 32 || // Space
+              e.KeyChar == 16 || // Shift
+              e.KeyChar == 46 || // Delete
+              (e.KeyChar >= 'À' && e.KeyChar <= 'ỹ') || // Vietnamese characters and accented vowels
+              (e.KeyChar >= 'à' && e.KeyChar <= 'ỹ'));
+        }
     }
 }
 

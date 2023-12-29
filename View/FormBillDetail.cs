@@ -630,7 +630,8 @@ namespace DO_AN_CUA_HAN.View
             {
                 if (bunifuDataGridViewBillDetail.Rows.Count <= 0)
                 {
-                    MessageBox.Show("Thêm chi tiết hóa đơn!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        bunifuSnackbar1.Show(this, "Thiếu thông tin hoá đơn", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+
                     return;
                 }
 
@@ -652,6 +653,14 @@ namespace DO_AN_CUA_HAN.View
         private void bunifuButtonClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void bunifuTextBoxQuantity_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }
