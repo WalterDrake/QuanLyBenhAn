@@ -29,11 +29,6 @@ namespace DO_AN_CUA_HAN.View
             this.Close();
         }
 
-        private void bunifuTextBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void bunifuButton3_Click(object sender, EventArgs e)
         {
             FormDatabase formDatabase = new FormDatabase();
@@ -56,6 +51,7 @@ namespace DO_AN_CUA_HAN.View
         {
             int staffID;
             Staff loginStaff;
+            
 
             // If fields are not validated then do nothing
             if (string.IsNullOrEmpty(bunifuTextBoxUsername.Text))
@@ -80,20 +76,20 @@ namespace DO_AN_CUA_HAN.View
                     if ((loginStaff.StaffID != 0) && (loginStaff.Password.Trim().Equals(bunifuTextBoxPassword.Text)))
                     {
                         // Show FormMain and hide FormLogin
-                        FormMain mainForm = new FormMain(loginStaff);
-                        mainForm.FormClosed += new FormClosedEventHandler(FormLogin_FormClosed);
-                        bunifuSnackbar1.Show(this, "Đăng nhập thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000,null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
-                        mainForm.Show();
+                        FormMain formMain = new FormMain(loginStaff);
+                        formMain.FormClosed += new FormClosedEventHandler(FormLogin_FormClosed);
+                        bunifuSnackbar1.Show(this, "Đăng nhập thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 3000,null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                        formMain.Show();
                         this.Hide();
                     }
                     else
                     {
-                        bunifuSnackbar1.Show(this, "Tài khoản không hợp lệ", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000, "Sai mật khẩu", Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                        bunifuSnackbar1.Show(this, "Tài khoản không hợp lệ", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, "Sai mật khẩu", Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
                     }
                 }
                 else
                 {
-                    bunifuSnackbar1.Show(this, "Tài khoản không hợp lệ", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000, "Lỗi đăng nhập", Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                    bunifuSnackbar1.Show(this, "Tài khoản không hợp lệ", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, "Lỗi đăng nhập", Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
                 }
             }
             catch
@@ -102,6 +98,13 @@ namespace DO_AN_CUA_HAN.View
             }
         }
 
+        private void bunifuTextBoxPassword_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                Login();
+            }
+        }
     }
 }
 

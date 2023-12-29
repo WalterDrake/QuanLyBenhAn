@@ -81,7 +81,7 @@
             this.bunifuShadowPanel1.ShadowDepth = 0;
             this.bunifuShadowPanel1.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
             this.bunifuShadowPanel1.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel1.Size = new System.Drawing.Size(908, 732);
+            this.bunifuShadowPanel1.Size = new System.Drawing.Size(940, 695);
             this.bunifuShadowPanel1.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.bunifuShadowPanel1.TabIndex = 3;
             this.bunifuShadowPanel1.ControlAdded += new System.Windows.Forms.ControlEventHandler(this.bunifuShadowPanel1_ControlAdded);
@@ -95,7 +95,7 @@
             this.bunifuPictureBox2.BorderRadius = 18;
             this.bunifuPictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox2.Image")));
             this.bunifuPictureBox2.IsCircle = true;
-            this.bunifuPictureBox2.Location = new System.Drawing.Point(722, 645);
+            this.bunifuPictureBox2.Location = new System.Drawing.Point(726, 644);
             this.bunifuPictureBox2.Name = "bunifuPictureBox2";
             this.bunifuPictureBox2.Size = new System.Drawing.Size(36, 36);
             this.bunifuPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -203,7 +203,7 @@
             this.bunifuPictureBox1.BorderRadius = 10;
             this.bunifuPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox1.Image")));
             this.bunifuPictureBox1.IsCircle = true;
-            this.bunifuPictureBox1.Location = new System.Drawing.Point(611, 653);
+            this.bunifuPictureBox1.Location = new System.Drawing.Point(609, 654);
             this.bunifuPictureBox1.Name = "bunifuPictureBox1";
             this.bunifuPictureBox1.Size = new System.Drawing.Size(20, 20);
             this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -351,9 +351,9 @@
             this.bunifuDataGridViewHealthNote.EnableHeadersVisualStyles = false;
             this.bunifuDataGridViewHealthNote.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.bunifuDataGridViewHealthNote.HeaderBackColor = System.Drawing.Color.DodgerBlue;
-            this.bunifuDataGridViewHealthNote.HeaderBackColor = System.Drawing.Color.Empty;
+            this.bunifuDataGridViewHealthNote.HeaderBgColor = System.Drawing.Color.Empty;
             this.bunifuDataGridViewHealthNote.HeaderForeColor = System.Drawing.Color.White;
-            this.bunifuDataGridViewHealthNote.Location = new System.Drawing.Point(14, 75);
+            this.bunifuDataGridViewHealthNote.Location = new System.Drawing.Point(30, 75);
             this.bunifuDataGridViewHealthNote.Name = "bunifuDataGridViewHealthNote";
             this.bunifuDataGridViewHealthNote.RowHeadersVisible = false;
             this.bunifuDataGridViewHealthNote.RowTemplate.Height = 40;
@@ -381,7 +381,7 @@
             this.bunifubuttonHealthNoteDeleteSearch.IdleFillColor = System.Drawing.Color.White;
             this.bunifubuttonHealthNoteDeleteSearch.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.bunifubuttonHealthNoteDeleteSearch.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(58)))), ((int)(((byte)(82)))));
-            this.bunifubuttonHealthNoteDeleteSearch.Location = new System.Drawing.Point(616, 29);
+            this.bunifubuttonHealthNoteDeleteSearch.Location = new System.Drawing.Point(705, 29);
             this.bunifubuttonHealthNoteDeleteSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifubuttonHealthNoteDeleteSearch.Name = "bunifubuttonHealthNoteDeleteSearch";
             this.bunifubuttonHealthNoteDeleteSearch.Size = new System.Drawing.Size(111, 34);
@@ -395,7 +395,7 @@
             this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel1.Location = new System.Drawing.Point(56, 32);
+            this.bunifuLabel1.Location = new System.Drawing.Point(109, 38);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel1.Size = new System.Drawing.Size(72, 17);
@@ -432,7 +432,7 @@
             this.bunifuTextBoxHealthNoteSearch.IconRight = null;
             this.bunifuTextBoxHealthNoteSearch.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuTextBoxHealthNoteSearch.Lines = new string[0];
-            this.bunifuTextBoxHealthNoteSearch.Location = new System.Drawing.Point(134, 29);
+            this.bunifuTextBoxHealthNoteSearch.Location = new System.Drawing.Point(210, 29);
             this.bunifuTextBoxHealthNoteSearch.MaxLength = 32767;
             this.bunifuTextBoxHealthNoteSearch.MinimumSize = new System.Drawing.Size(1, 1);
             this.bunifuTextBoxHealthNoteSearch.Modified = false;
@@ -491,7 +491,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.bunifuShadowPanel1);
             this.Name = "FormMainMonitor";
-            this.Size = new System.Drawing.Size(908, 732);
+            this.Size = new System.Drawing.Size(940, 695);
             this.bunifuShadowPanel1.ResumeLayout(false);
             this.bunifuShadowPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).EndInit();
