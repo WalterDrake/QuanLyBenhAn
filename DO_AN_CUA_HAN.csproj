@@ -182,6 +182,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EntityValidator.cs" />
     <Compile Include="Excel\UserInfo.cs" />
     <Compile Include="Funtional\SqlResult.cs" />
     <Compile Include="Model\Assignment.cs" />
@@ -723,6 +724,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\145411-OTQZ7A-227-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notification_icon-icons.com_73719.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning_attention_notification_caution_priority_high_alert_sticker_icon_258419.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\retro-error-message-illustration-in-pixel-style-vector-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\handdrawn_vector_61-removebg-preview.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

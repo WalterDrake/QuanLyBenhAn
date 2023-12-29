@@ -49,6 +49,8 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties15 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties16 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuSnackbar1 = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
+            this.bunifuToolTip1 = new Bunifu.UI.WinForms.BunifuToolTip(this.components);
             this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.bunifuShadowPanel1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.comboBoxState = new Bunifu.UI.WinForms.BunifuDropdown();
@@ -68,7 +70,6 @@
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPictureBox2 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.bunifuSnackbar1 = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
             this.bunifuGradientPanel1.SuspendLayout();
             this.bunifuShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).BeginInit();
@@ -79,6 +80,110 @@
             // 
             this.bunifuElipse1.ElipseRadius = 50;
             this.bunifuElipse1.TargetControl = this;
+            // 
+            // bunifuSnackbar1
+            // 
+            this.bunifuSnackbar1.AllowDragging = false;
+            this.bunifuSnackbar1.AllowMultipleViews = true;
+            this.bunifuSnackbar1.ClickToClose = true;
+            this.bunifuSnackbar1.DoubleClickToClose = true;
+            this.bunifuSnackbar1.DurationAfterIdle = 3000;
+            this.bunifuSnackbar1.ErrorOptions.ActionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSnackbar1.ErrorOptions.ActionBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSnackbar1.ErrorOptions.ActionBorderRadius = 1;
+            this.bunifuSnackbar1.ErrorOptions.ActionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.bunifuSnackbar1.ErrorOptions.ActionForeColor = System.Drawing.Color.Black;
+            this.bunifuSnackbar1.ErrorOptions.BackColor = System.Drawing.Color.White;
+            this.bunifuSnackbar1.ErrorOptions.BorderColor = System.Drawing.Color.White;
+            this.bunifuSnackbar1.ErrorOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(199)))));
+            this.bunifuSnackbar1.ErrorOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.bunifuSnackbar1.ErrorOptions.ForeColor = System.Drawing.Color.Black;
+            this.bunifuSnackbar1.ErrorOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon")));
+            this.bunifuSnackbar1.ErrorOptions.IconLeftMargin = 12;
+            this.bunifuSnackbar1.FadeCloseIcon = false;
+            this.bunifuSnackbar1.Host = Bunifu.UI.WinForms.BunifuSnackbar.Hosts.FormOwner;
+            this.bunifuSnackbar1.InformationOptions.ActionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSnackbar1.InformationOptions.ActionBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSnackbar1.InformationOptions.ActionBorderRadius = 1;
+            this.bunifuSnackbar1.InformationOptions.ActionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.bunifuSnackbar1.InformationOptions.ActionForeColor = System.Drawing.Color.Black;
+            this.bunifuSnackbar1.InformationOptions.BackColor = System.Drawing.Color.White;
+            this.bunifuSnackbar1.InformationOptions.BorderColor = System.Drawing.Color.White;
+            this.bunifuSnackbar1.InformationOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(213)))), ((int)(((byte)(255)))));
+            this.bunifuSnackbar1.InformationOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.bunifuSnackbar1.InformationOptions.ForeColor = System.Drawing.Color.Black;
+            this.bunifuSnackbar1.InformationOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon1")));
+            this.bunifuSnackbar1.InformationOptions.IconLeftMargin = 12;
+            this.bunifuSnackbar1.Margin = 10;
+            this.bunifuSnackbar1.MaximumSize = new System.Drawing.Size(0, 0);
+            this.bunifuSnackbar1.MaximumViews = 7;
+            this.bunifuSnackbar1.MessageRightMargin = 15;
+            this.bunifuSnackbar1.MinimumSize = new System.Drawing.Size(0, 0);
+            this.bunifuSnackbar1.ShowBorders = false;
+            this.bunifuSnackbar1.ShowCloseIcon = false;
+            this.bunifuSnackbar1.ShowIcon = true;
+            this.bunifuSnackbar1.ShowShadows = true;
+            this.bunifuSnackbar1.SuccessOptions.ActionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSnackbar1.SuccessOptions.ActionBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSnackbar1.SuccessOptions.ActionBorderRadius = 1;
+            this.bunifuSnackbar1.SuccessOptions.ActionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.bunifuSnackbar1.SuccessOptions.ActionForeColor = System.Drawing.Color.Black;
+            this.bunifuSnackbar1.SuccessOptions.BackColor = System.Drawing.Color.White;
+            this.bunifuSnackbar1.SuccessOptions.BorderColor = System.Drawing.Color.White;
+            this.bunifuSnackbar1.SuccessOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(255)))), ((int)(((byte)(237)))));
+            this.bunifuSnackbar1.SuccessOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.bunifuSnackbar1.SuccessOptions.ForeColor = System.Drawing.Color.Black;
+            this.bunifuSnackbar1.SuccessOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon2")));
+            this.bunifuSnackbar1.SuccessOptions.IconLeftMargin = 12;
+            this.bunifuSnackbar1.ViewsMargin = 7;
+            this.bunifuSnackbar1.WarningOptions.ActionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSnackbar1.WarningOptions.ActionBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSnackbar1.WarningOptions.ActionBorderRadius = 1;
+            this.bunifuSnackbar1.WarningOptions.ActionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.bunifuSnackbar1.WarningOptions.ActionForeColor = System.Drawing.Color.Black;
+            this.bunifuSnackbar1.WarningOptions.BackColor = System.Drawing.Color.White;
+            this.bunifuSnackbar1.WarningOptions.BorderColor = System.Drawing.Color.White;
+            this.bunifuSnackbar1.WarningOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(143)))));
+            this.bunifuSnackbar1.WarningOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.bunifuSnackbar1.WarningOptions.ForeColor = System.Drawing.Color.Black;
+            this.bunifuSnackbar1.WarningOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon3")));
+            this.bunifuSnackbar1.WarningOptions.IconLeftMargin = 12;
+            this.bunifuSnackbar1.ZoomCloseIcon = true;
+            // 
+            // bunifuToolTip1
+            // 
+            this.bunifuToolTip1.Active = true;
+            this.bunifuToolTip1.AlignTextWithTitle = false;
+            this.bunifuToolTip1.AllowAutoClose = false;
+            this.bunifuToolTip1.AllowFading = true;
+            this.bunifuToolTip1.AutoCloseDuration = 5000;
+            this.bunifuToolTip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(221)))), ((int)(((byte)(85)))));
+            this.bunifuToolTip1.BorderColor = System.Drawing.Color.Transparent;
+            this.bunifuToolTip1.ClickToShowDisplayControl = false;
+            this.bunifuToolTip1.ConvertNewlinesToBreakTags = true;
+            this.bunifuToolTip1.DisplayControl = null;
+            this.bunifuToolTip1.EntryAnimationSpeed = 350;
+            this.bunifuToolTip1.ExitAnimationSpeed = 200;
+            this.bunifuToolTip1.GenerateAutoCloseDuration = false;
+            this.bunifuToolTip1.IconMargin = 6;
+            this.bunifuToolTip1.InitialDelay = 0;
+            this.bunifuToolTip1.Name = "bunifuToolTip1";
+            this.bunifuToolTip1.Opacity = 1D;
+            this.bunifuToolTip1.OverrideToolTipTitles = false;
+            this.bunifuToolTip1.Padding = new System.Windows.Forms.Padding(10);
+            this.bunifuToolTip1.ReshowDelay = 100;
+            this.bunifuToolTip1.ShowAlways = true;
+            this.bunifuToolTip1.ShowBorders = false;
+            this.bunifuToolTip1.ShowIcons = true;
+            this.bunifuToolTip1.ShowShadows = true;
+            this.bunifuToolTip1.Tag = null;
+            this.bunifuToolTip1.TextFont = new System.Drawing.Font("Segoe UI", 9F);
+            this.bunifuToolTip1.TextForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.bunifuToolTip1.TextMargin = 2;
+            this.bunifuToolTip1.TitleFont = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.bunifuToolTip1.TitleForeColor = System.Drawing.Color.DimGray;
+            this.bunifuToolTip1.ToolTipPosition = new System.Drawing.Point(0, 0);
+            this.bunifuToolTip1.ToolTipTitle = null;
             // 
             // bunifuGradientPanel1
             // 
@@ -97,6 +202,9 @@
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(605, 676);
             this.bunifuGradientPanel1.TabIndex = 0;
+            this.bunifuToolTip1.SetToolTip(this.bunifuGradientPanel1, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.bunifuGradientPanel1, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.bunifuGradientPanel1, "");
             // 
             // bunifuShadowPanel1
             // 
@@ -134,6 +242,9 @@
             this.bunifuShadowPanel1.Size = new System.Drawing.Size(541, 608);
             this.bunifuShadowPanel1.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.bunifuShadowPanel1.TabIndex = 0;
+            this.bunifuToolTip1.SetToolTip(this.bunifuShadowPanel1, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.bunifuShadowPanel1, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.bunifuShadowPanel1, "");
             // 
             // comboBoxState
             // 
@@ -168,6 +279,9 @@
             this.comboBoxState.ItemHeight = 26;
             this.comboBoxState.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
             this.comboBoxState.ItemHighLightForeColor = System.Drawing.Color.White;
+            this.comboBoxState.Items.AddRange(new object[] {
+            "Chưa xác nhận",
+            "Đã xác nhận"});
             this.comboBoxState.ItemTopMargin = 3;
             this.comboBoxState.Location = new System.Drawing.Point(51, 500);
             this.comboBoxState.Name = "comboBoxState";
@@ -176,6 +290,9 @@
             this.comboBoxState.Text = null;
             this.comboBoxState.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
             this.comboBoxState.TextLeftMargin = 5;
+            this.bunifuToolTip1.SetToolTip(this.comboBoxState, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.comboBoxState, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.comboBoxState, "");
             // 
             // buttonClose
             // 
@@ -264,6 +381,9 @@
             this.buttonClose.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.buttonClose.TextMarginLeft = 0;
             this.buttonClose.TextPadding = new System.Windows.Forms.Padding(0);
+            this.bunifuToolTip1.SetToolTip(this.buttonClose, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.buttonClose, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.buttonClose, "");
             this.buttonClose.UseDefaultRadiusAndThickness = true;
             this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
@@ -355,6 +475,9 @@
             this.buttonOk.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.buttonOk.TextMarginLeft = 0;
             this.buttonOk.TextPadding = new System.Windows.Forms.Padding(0);
+            this.bunifuToolTip1.SetToolTip(this.buttonOk, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.buttonOk, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.buttonOk, "");
             this.buttonOk.UseDefaultRadiusAndThickness = true;
             this.buttonOk.Click += new System.EventHandler(this.buttonOk_Click);
             // 
@@ -382,6 +505,9 @@
             this.dateCreate.Name = "dateCreate";
             this.dateCreate.Size = new System.Drawing.Size(425, 32);
             this.dateCreate.TabIndex = 21;
+            this.bunifuToolTip1.SetToolTip(this.dateCreate, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.dateCreate, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.dateCreate, "");
             this.dateCreate.Value = new System.DateTime(2023, 12, 8, 4, 30, 0, 0);
             // 
             // labelState
@@ -389,7 +515,7 @@
             this.labelState.AllowParentOverrides = false;
             this.labelState.AutoEllipsis = false;
             this.labelState.CursorType = null;
-            this.labelState.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelState.Font = new System.Drawing.Font("Cambria", 11F);
             this.labelState.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.labelState.Location = new System.Drawing.Point(56, 474);
             this.labelState.Name = "labelState";
@@ -399,13 +525,16 @@
             this.labelState.Text = "Trạng thái";
             this.labelState.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.labelState.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuToolTip1.SetToolTip(this.labelState, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.labelState, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.labelState, "");
             // 
             // labelAddress
             // 
             this.labelAddress.AllowParentOverrides = false;
             this.labelAddress.AutoEllipsis = false;
             this.labelAddress.CursorType = null;
-            this.labelAddress.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelAddress.Font = new System.Drawing.Font("Cambria", 11F);
             this.labelAddress.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.labelAddress.Location = new System.Drawing.Point(56, 405);
             this.labelAddress.Name = "labelAddress";
@@ -415,13 +544,16 @@
             this.labelAddress.Text = "Kết quả";
             this.labelAddress.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.labelAddress.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuToolTip1.SetToolTip(this.labelAddress, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.labelAddress, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.labelAddress, "");
             // 
             // labelX3
             // 
             this.labelX3.AllowParentOverrides = false;
             this.labelX3.AutoEllipsis = false;
             this.labelX3.CursorType = null;
-            this.labelX3.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelX3.Font = new System.Drawing.Font("Cambria", 11F);
             this.labelX3.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.labelX3.Location = new System.Drawing.Point(56, 333);
             this.labelX3.Name = "labelX3";
@@ -431,13 +563,16 @@
             this.labelX3.Text = "Ngày lập";
             this.labelX3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.labelX3.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuToolTip1.SetToolTip(this.labelX3, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.labelX3, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.labelX3, "");
             // 
             // labelX2
             // 
             this.labelX2.AllowParentOverrides = false;
             this.labelX2.AutoEllipsis = false;
             this.labelX2.CursorType = null;
-            this.labelX2.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelX2.Font = new System.Drawing.Font("Cambria", 11F);
             this.labelX2.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.labelX2.Location = new System.Drawing.Point(56, 255);
             this.labelX2.Name = "labelX2";
@@ -447,13 +582,16 @@
             this.labelX2.Text = "Mã bệnh nhân";
             this.labelX2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.labelX2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuToolTip1.SetToolTip(this.labelX2, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.labelX2, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.labelX2, "");
             // 
             // labelX1
             // 
             this.labelX1.AllowParentOverrides = false;
             this.labelX1.AutoEllipsis = false;
             this.labelX1.CursorType = null;
-            this.labelX1.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelX1.Font = new System.Drawing.Font("Cambria", 11F);
             this.labelX1.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.labelX1.Location = new System.Drawing.Point(56, 180);
             this.labelX1.Name = "labelX1";
@@ -463,6 +601,9 @@
             this.labelX1.Text = "Mã nhân viên phụ trách";
             this.labelX1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.labelX1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuToolTip1.SetToolTip(this.labelX1, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.labelX1, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.labelX1, "");
             // 
             // textBoxResult
             // 
@@ -518,11 +659,11 @@
             stateProperties4.ForeColor = System.Drawing.Color.Gray;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxResult.OnIdleState = stateProperties4;
-            this.textBoxResult.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.textBoxResult.Padding = new System.Windows.Forms.Padding(3);
             this.textBoxResult.PasswordChar = '\0';
             this.textBoxResult.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.textBoxResult.PlaceholderText = "Nhập kết quả";
-            this.textBoxResult.ReadOnly = true;
+            this.textBoxResult.ReadOnly = false;
             this.textBoxResult.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.textBoxResult.SelectedText = "";
             this.textBoxResult.SelectionLength = 0;
@@ -536,8 +677,12 @@
             this.textBoxResult.TextMarginLeft = 3;
             this.textBoxResult.TextMarginTop = 0;
             this.textBoxResult.TextPlaceholder = "Nhập kết quả";
+            this.bunifuToolTip1.SetToolTip(this.textBoxResult, "Không chứa số và ký tự đặc biệt");
+            this.bunifuToolTip1.SetToolTipIcon(this.textBoxResult, global::DO_AN_CUA_HAN.Properties.Resources.retro_error_message_illustration_in_pixel_style_vector_removebg_preview);
+            this.bunifuToolTip1.SetToolTipTitle(this.textBoxResult, "Warning");
             this.textBoxResult.UseSystemPasswordChar = false;
             this.textBoxResult.WordWrap = true;
+            this.textBoxResult.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxResult_KeyPress);
             // 
             // textBoxPatientID
             // 
@@ -593,7 +738,7 @@
             stateProperties8.ForeColor = System.Drawing.Color.Gray;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxPatientID.OnIdleState = stateProperties8;
-            this.textBoxPatientID.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.textBoxPatientID.Padding = new System.Windows.Forms.Padding(3);
             this.textBoxPatientID.PasswordChar = '\0';
             this.textBoxPatientID.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.textBoxPatientID.PlaceholderText = "Nhập mã bệnh nhân";
@@ -611,6 +756,9 @@
             this.textBoxPatientID.TextMarginLeft = 3;
             this.textBoxPatientID.TextMarginTop = 0;
             this.textBoxPatientID.TextPlaceholder = "Nhập mã bệnh nhân";
+            this.bunifuToolTip1.SetToolTip(this.textBoxPatientID, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.textBoxPatientID, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.textBoxPatientID, "");
             this.textBoxPatientID.UseSystemPasswordChar = false;
             this.textBoxPatientID.WordWrap = true;
             // 
@@ -668,7 +816,7 @@
             stateProperties12.ForeColor = System.Drawing.Color.Gray;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxStaffID.OnIdleState = stateProperties12;
-            this.textBoxStaffID.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.textBoxStaffID.Padding = new System.Windows.Forms.Padding(3);
             this.textBoxStaffID.PasswordChar = '\0';
             this.textBoxStaffID.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.textBoxStaffID.PlaceholderText = "Nhập mã nhân viên";
@@ -686,6 +834,9 @@
             this.textBoxStaffID.TextMarginLeft = 3;
             this.textBoxStaffID.TextMarginTop = 0;
             this.textBoxStaffID.TextPlaceholder = "Nhập mã nhân viên";
+            this.bunifuToolTip1.SetToolTip(this.textBoxStaffID, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.textBoxStaffID, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.textBoxStaffID, "");
             this.textBoxStaffID.UseSystemPasswordChar = false;
             this.textBoxStaffID.WordWrap = true;
             // 
@@ -743,7 +894,7 @@
             stateProperties16.ForeColor = System.Drawing.Color.Gray;
             stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxECID.OnIdleState = stateProperties16;
-            this.textBoxECID.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.textBoxECID.Padding = new System.Windows.Forms.Padding(3);
             this.textBoxECID.PasswordChar = '\0';
             this.textBoxECID.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.textBoxECID.PlaceholderText = "Nhập mã phiếu khám bệnh";
@@ -761,6 +912,9 @@
             this.textBoxECID.TextMarginLeft = 3;
             this.textBoxECID.TextMarginTop = 0;
             this.textBoxECID.TextPlaceholder = "Nhập mã phiếu khám bệnh";
+            this.bunifuToolTip1.SetToolTip(this.textBoxECID, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.textBoxECID, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.textBoxECID, "");
             this.textBoxECID.UseSystemPasswordChar = false;
             this.textBoxECID.WordWrap = true;
             // 
@@ -770,7 +924,7 @@
             this.labelHCID.AutoEllipsis = false;
             this.labelHCID.Cursor = System.Windows.Forms.Cursors.Default;
             this.labelHCID.CursorType = System.Windows.Forms.Cursors.Default;
-            this.labelHCID.Font = new System.Drawing.Font("Cambria", 11.25F);
+            this.labelHCID.Font = new System.Drawing.Font("Cambria", 11F);
             this.labelHCID.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.labelHCID.Location = new System.Drawing.Point(56, 108);
             this.labelHCID.Name = "labelHCID";
@@ -780,6 +934,9 @@
             this.labelHCID.Text = "Mã phiếu khám bệnh";
             this.labelHCID.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.labelHCID.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuToolTip1.SetToolTip(this.labelHCID, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.labelHCID, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.labelHCID, "");
             // 
             // bunifuLabel1
             // 
@@ -797,6 +954,9 @@
             this.bunifuLabel1.Text = "PHIẾU KHÁM BỆNH";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuToolTip1.SetToolTip(this.bunifuLabel1, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.bunifuLabel1, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.bunifuLabel1, "");
             // 
             // bunifuPictureBox2
             // 
@@ -812,6 +972,9 @@
             this.bunifuPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuPictureBox2.TabIndex = 24;
             this.bunifuPictureBox2.TabStop = false;
+            this.bunifuToolTip1.SetToolTip(this.bunifuPictureBox2, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.bunifuPictureBox2, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.bunifuPictureBox2, "");
             this.bunifuPictureBox2.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
             // bunifuPictureBox1
@@ -828,76 +991,10 @@
             this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuPictureBox1.TabIndex = 0;
             this.bunifuPictureBox1.TabStop = false;
+            this.bunifuToolTip1.SetToolTip(this.bunifuPictureBox1, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.bunifuPictureBox1, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.bunifuPictureBox1, "");
             this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
-            // 
-            // bunifuSnackbar1
-            // 
-            this.bunifuSnackbar1.AllowDragging = false;
-            this.bunifuSnackbar1.AllowMultipleViews = true;
-            this.bunifuSnackbar1.ClickToClose = true;
-            this.bunifuSnackbar1.DoubleClickToClose = true;
-            this.bunifuSnackbar1.DurationAfterIdle = 3000;
-            this.bunifuSnackbar1.ErrorOptions.ActionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bunifuSnackbar1.ErrorOptions.ActionBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bunifuSnackbar1.ErrorOptions.ActionBorderRadius = 1;
-            this.bunifuSnackbar1.ErrorOptions.ActionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
-            this.bunifuSnackbar1.ErrorOptions.ActionForeColor = System.Drawing.Color.Black;
-            this.bunifuSnackbar1.ErrorOptions.BackColor = System.Drawing.Color.White;
-            this.bunifuSnackbar1.ErrorOptions.BorderColor = System.Drawing.Color.White;
-            this.bunifuSnackbar1.ErrorOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(199)))));
-            this.bunifuSnackbar1.ErrorOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.bunifuSnackbar1.ErrorOptions.ForeColor = System.Drawing.Color.Black;
-            this.bunifuSnackbar1.ErrorOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon")));
-            this.bunifuSnackbar1.ErrorOptions.IconLeftMargin = 12;
-            this.bunifuSnackbar1.FadeCloseIcon = false;
-            this.bunifuSnackbar1.Host = Bunifu.UI.WinForms.BunifuSnackbar.Hosts.FormOwner;
-            this.bunifuSnackbar1.InformationOptions.ActionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bunifuSnackbar1.InformationOptions.ActionBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bunifuSnackbar1.InformationOptions.ActionBorderRadius = 1;
-            this.bunifuSnackbar1.InformationOptions.ActionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
-            this.bunifuSnackbar1.InformationOptions.ActionForeColor = System.Drawing.Color.Black;
-            this.bunifuSnackbar1.InformationOptions.BackColor = System.Drawing.Color.White;
-            this.bunifuSnackbar1.InformationOptions.BorderColor = System.Drawing.Color.White;
-            this.bunifuSnackbar1.InformationOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(213)))), ((int)(((byte)(255)))));
-            this.bunifuSnackbar1.InformationOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.bunifuSnackbar1.InformationOptions.ForeColor = System.Drawing.Color.Black;
-            this.bunifuSnackbar1.InformationOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon1")));
-            this.bunifuSnackbar1.InformationOptions.IconLeftMargin = 12;
-            this.bunifuSnackbar1.Margin = 10;
-            this.bunifuSnackbar1.MaximumSize = new System.Drawing.Size(0, 0);
-            this.bunifuSnackbar1.MaximumViews = 7;
-            this.bunifuSnackbar1.MessageRightMargin = 15;
-            this.bunifuSnackbar1.MinimumSize = new System.Drawing.Size(0, 0);
-            this.bunifuSnackbar1.ShowBorders = false;
-            this.bunifuSnackbar1.ShowCloseIcon = false;
-            this.bunifuSnackbar1.ShowIcon = true;
-            this.bunifuSnackbar1.ShowShadows = true;
-            this.bunifuSnackbar1.SuccessOptions.ActionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bunifuSnackbar1.SuccessOptions.ActionBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bunifuSnackbar1.SuccessOptions.ActionBorderRadius = 1;
-            this.bunifuSnackbar1.SuccessOptions.ActionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
-            this.bunifuSnackbar1.SuccessOptions.ActionForeColor = System.Drawing.Color.Black;
-            this.bunifuSnackbar1.SuccessOptions.BackColor = System.Drawing.Color.White;
-            this.bunifuSnackbar1.SuccessOptions.BorderColor = System.Drawing.Color.White;
-            this.bunifuSnackbar1.SuccessOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(255)))), ((int)(((byte)(237)))));
-            this.bunifuSnackbar1.SuccessOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.bunifuSnackbar1.SuccessOptions.ForeColor = System.Drawing.Color.Black;
-            this.bunifuSnackbar1.SuccessOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon2")));
-            this.bunifuSnackbar1.SuccessOptions.IconLeftMargin = 12;
-            this.bunifuSnackbar1.ViewsMargin = 7;
-            this.bunifuSnackbar1.WarningOptions.ActionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bunifuSnackbar1.WarningOptions.ActionBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bunifuSnackbar1.WarningOptions.ActionBorderRadius = 1;
-            this.bunifuSnackbar1.WarningOptions.ActionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
-            this.bunifuSnackbar1.WarningOptions.ActionForeColor = System.Drawing.Color.Black;
-            this.bunifuSnackbar1.WarningOptions.BackColor = System.Drawing.Color.White;
-            this.bunifuSnackbar1.WarningOptions.BorderColor = System.Drawing.Color.White;
-            this.bunifuSnackbar1.WarningOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(143)))));
-            this.bunifuSnackbar1.WarningOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.bunifuSnackbar1.WarningOptions.ForeColor = System.Drawing.Color.Black;
-            this.bunifuSnackbar1.WarningOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon3")));
-            this.bunifuSnackbar1.WarningOptions.IconLeftMargin = 12;
-            this.bunifuSnackbar1.ZoomCloseIcon = true;
             // 
             // FormECDetail
             // 
@@ -906,7 +1003,7 @@
             this.ClientSize = new System.Drawing.Size(605, 676);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormECDetail";
             this.Text = "FormECDetail";
             this.bunifuGradientPanel1.ResumeLayout(false);
@@ -940,5 +1037,6 @@
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox2;
         private Bunifu.UI.WinForms.BunifuDropdown comboBoxState;
         private Bunifu.UI.WinForms.BunifuSnackbar bunifuSnackbar1;
+        private Bunifu.UI.WinForms.BunifuToolTip bunifuToolTip1;
     }
 }

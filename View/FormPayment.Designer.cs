@@ -132,7 +132,7 @@
             this.bunifuLabelHICD.Location = new System.Drawing.Point(157, 474);
             this.bunifuLabelHICD.Name = "bunifuLabelHICD";
             this.bunifuLabelHICD.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabelHICD.Size = new System.Drawing.Size(9, 17);
+            this.bunifuLabelHICD.Size = new System.Drawing.Size(21, 38);
             this.bunifuLabelHICD.TabIndex = 12;
             this.bunifuLabelHICD.Text = "...";
             this.bunifuLabelHICD.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -149,7 +149,7 @@
             this.bunifuLabelTotalPrice.Location = new System.Drawing.Point(157, 439);
             this.bunifuLabelTotalPrice.Name = "bunifuLabelTotalPrice";
             this.bunifuLabelTotalPrice.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabelTotalPrice.Size = new System.Drawing.Size(9, 17);
+            this.bunifuLabelTotalPrice.Size = new System.Drawing.Size(21, 38);
             this.bunifuLabelTotalPrice.TabIndex = 11;
             this.bunifuLabelTotalPrice.Text = "...";
             this.bunifuLabelTotalPrice.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -161,7 +161,7 @@
             this.bunifuLabel5.AutoEllipsis = false;
             this.bunifuLabel5.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel5.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel5.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel5.Font = new System.Drawing.Font("Cambria", 11F);
             this.bunifuLabel5.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.bunifuLabel5.Location = new System.Drawing.Point(51, 474);
             this.bunifuLabel5.Name = "bunifuLabel5";
@@ -178,7 +178,7 @@
             this.bunifuLabel4.AutoEllipsis = false;
             this.bunifuLabel4.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel4.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel4.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel4.Font = new System.Drawing.Font("Cambria", 11F);
             this.bunifuLabel4.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.bunifuLabel4.Location = new System.Drawing.Point(51, 439);
             this.bunifuLabel4.Name = "bunifuLabel4";
@@ -526,7 +526,7 @@
             this.bunifuLabel2.AllowParentOverrides = false;
             this.bunifuLabel2.AutoEllipsis = false;
             this.bunifuLabel2.CursorType = null;
-            this.bunifuLabel2.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel2.Font = new System.Drawing.Font("Cambria", 11F);
             this.bunifuLabel2.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.bunifuLabel2.Location = new System.Drawing.Point(325, 118);
             this.bunifuLabel2.Name = "bunifuLabel2";
@@ -543,7 +543,7 @@
             this.bunifuLabel1.AutoEllipsis = false;
             this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel1.Font = new System.Drawing.Font("Cambria", 11F);
             this.bunifuLabel1.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.bunifuLabel1.Location = new System.Drawing.Point(57, 118);
             this.bunifuLabel1.Name = "bunifuLabel1";

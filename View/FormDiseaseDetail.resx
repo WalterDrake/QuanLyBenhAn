@@ -2340,6 +2340,9 @@
         iSi+jHIMG1TMk9soBpjU4jckftHs8Say7Acr2v4Xy3fxKwAAAABJRU5ErkJggg==
 </value>
   </data>
+  <metadata name="bunifuToolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>285, 17</value>
+  </metadata>
   <data name="buttonOk.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAD8AAAAlCAYAAAD1EjEiAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -2353,7 +2356,7 @@
 </value>
   </data>
   <data name="labelDiseaseSymptom.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Cambria'; font-size: 11.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(47, 79, 79); text-align: left; }</value>
+    <value>#bunifu-label { padding: 0px; font-family: 'Cambria'; font-size: 11pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(47, 79, 79); text-align: left; }</value>
   </data>
   <data name="textBoxDiseaseSymptom.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2365,7 +2368,7 @@
 </value>
   </data>
   <data name="labelDiseaseName.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Cambria'; font-size: 11.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(47, 79, 79); text-align: left; }</value>
+    <value>#bunifu-label { padding: 0px; font-family: 'Cambria'; font-size: 11pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(47, 79, 79); text-align: left; }</value>
   </data>
   <data name="textBoxDiseaseName.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2384,7 +2387,7 @@
 </value>
   </data>
   <data name="bunifuLabel23.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Cambria'; font-size: 11.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(47, 79, 79); text-align: left; }</value>
+    <value>#bunifu-label { padding: 0px; font-family: 'Cambria'; font-size: 11pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(47, 79, 79); text-align: left; }</value>
   </data>
   <data name="bunifuLabel24.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Cambria'; font-size: 18pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(47, 79, 79); text-align: left; }</value>

@@ -160,10 +160,10 @@
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(109)))), ((int)(((byte)(160)))));
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(199)))), ((int)(((byte)(205)))));
             this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(677, 575);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(677, 707);
             this.bunifuGradientPanel1.TabIndex = 1;
             // 
             // bunifuShadowPanel1
@@ -197,7 +197,7 @@
             this.bunifuShadowPanel1.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Gradient;
             this.bunifuShadowPanel1.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
             this.bunifuShadowPanel1.Location = new System.Drawing.Point(40, 28);
-            this.bunifuShadowPanel1.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuShadowPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuShadowPanel1.Name = "bunifuShadowPanel1";
             this.bunifuShadowPanel1.PanelColor = System.Drawing.Color.PaleTurquoise;
             this.bunifuShadowPanel1.PanelColor2 = System.Drawing.Color.MistyRose;
@@ -215,7 +215,7 @@
             this.listBoxSystemStaff.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(231)))), ((int)(((byte)(219)))));
             this.listBoxSystemStaff.FormattingEnabled = true;
             this.listBoxSystemStaff.Location = new System.Drawing.Point(350, 380);
-            this.listBoxSystemStaff.Margin = new System.Windows.Forms.Padding(2);
+            this.listBoxSystemStaff.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listBoxSystemStaff.Name = "listBoxSystemStaff";
             this.listBoxSystemStaff.Size = new System.Drawing.Size(204, 212);
             this.listBoxSystemStaff.TabIndex = 65;
@@ -225,7 +225,7 @@
             this.listBoxCurrentStaff.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(231)))), ((int)(((byte)(219)))));
             this.listBoxCurrentStaff.FormattingEnabled = true;
             this.listBoxCurrentStaff.Location = new System.Drawing.Point(41, 380);
-            this.listBoxCurrentStaff.Margin = new System.Windows.Forms.Padding(2);
+            this.listBoxCurrentStaff.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listBoxCurrentStaff.Name = "listBoxCurrentStaff";
             this.listBoxCurrentStaff.Size = new System.Drawing.Size(204, 212);
             this.listBoxCurrentStaff.TabIndex = 64;
@@ -254,7 +254,7 @@
             this.buttonInsertFunction.ImageZoomSize = new System.Drawing.Size(114, 103);
             this.buttonInsertFunction.InitialImage = ((System.Drawing.Image)(resources.GetObject("buttonInsertFunction.InitialImage")));
             this.buttonInsertFunction.Location = new System.Drawing.Point(238, 384);
-            this.buttonInsertFunction.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonInsertFunction.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonInsertFunction.Name = "buttonInsertFunction";
             this.buttonInsertFunction.Rotation = 0;
             this.buttonInsertFunction.ShowActiveImage = true;
@@ -482,9 +482,9 @@
             this.labelX5.AllowParentOverrides = false;
             this.labelX5.AutoEllipsis = false;
             this.labelX5.CursorType = null;
-            this.labelX5.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelX5.Font = new System.Drawing.Font("Cambria", 11F);
             this.labelX5.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.labelX5.Location = new System.Drawing.Point(69, 307);
+            this.labelX5.Location = new System.Drawing.Point(73, 304);
             this.labelX5.Name = "labelX5";
             this.labelX5.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.labelX5.Size = new System.Drawing.Size(54, 17);
@@ -567,7 +567,7 @@
             this.bunifuButton2.IdleIconRightImage = null;
             this.bunifuButton2.IndicateFocus = false;
             this.bunifuButton2.Location = new System.Drawing.Point(596, 766);
-            this.bunifuButton2.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuButton2.Name = "bunifuButton2";
             this.bunifuButton2.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton2.OnDisabledState.BorderRadius = 15;
@@ -657,7 +657,7 @@
             this.bunifuButton1.IdleIconRightImage = null;
             this.bunifuButton1.IndicateFocus = false;
             this.bunifuButton1.Location = new System.Drawing.Point(472, 767);
-            this.bunifuButton1.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuButton1.Name = "bunifuButton1";
             this.bunifuButton1.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton1.OnDisabledState.BorderRadius = 15;
@@ -730,10 +730,10 @@
             this.bunifuLabel7.AllowParentOverrides = false;
             this.bunifuLabel7.AutoEllipsis = false;
             this.bunifuLabel7.CursorType = null;
-            this.bunifuLabel7.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.bunifuLabel7.Font = new System.Drawing.Font("Cambria", 11F);
             this.bunifuLabel7.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.bunifuLabel7.Location = new System.Drawing.Point(384, 355);
-            this.bunifuLabel7.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuLabel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuLabel7.Name = "bunifuLabel7";
             this.bunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel7.Size = new System.Drawing.Size(128, 17);
@@ -747,10 +747,10 @@
             this.bunifuLabel6.AllowParentOverrides = false;
             this.bunifuLabel6.AutoEllipsis = false;
             this.bunifuLabel6.CursorType = null;
-            this.bunifuLabel6.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.bunifuLabel6.Font = new System.Drawing.Font("Cambria", 11F);
             this.bunifuLabel6.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.bunifuLabel6.Location = new System.Drawing.Point(60, 354);
-            this.bunifuLabel6.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuLabel6.Location = new System.Drawing.Point(53, 355);
+            this.bunifuLabel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuLabel6.Name = "bunifuLabel6";
             this.bunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel6.Size = new System.Drawing.Size(167, 17);
@@ -764,9 +764,9 @@
             this.labelX4.AllowParentOverrides = false;
             this.labelX4.AutoEllipsis = false;
             this.labelX4.CursorType = null;
-            this.labelX4.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelX4.Font = new System.Drawing.Font("Cambria", 11F);
             this.labelX4.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.labelX4.Location = new System.Drawing.Point(67, 262);
+            this.labelX4.Location = new System.Drawing.Point(73, 262);
             this.labelX4.Name = "labelX4";
             this.labelX4.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.labelX4.Size = new System.Drawing.Size(92, 17);
@@ -780,9 +780,9 @@
             this.labelX3.AllowParentOverrides = false;
             this.labelX3.AutoEllipsis = false;
             this.labelX3.CursorType = null;
-            this.labelX3.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelX3.Font = new System.Drawing.Font("Cambria", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.labelX3.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.labelX3.Location = new System.Drawing.Point(67, 219);
+            this.labelX3.Location = new System.Drawing.Point(73, 219);
             this.labelX3.Name = "labelX3";
             this.labelX3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.labelX3.Size = new System.Drawing.Size(96, 17);
@@ -796,9 +796,9 @@
             this.labelRoleName.AllowParentOverrides = false;
             this.labelRoleName.AutoEllipsis = false;
             this.labelRoleName.CursorType = null;
-            this.labelRoleName.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelRoleName.Font = new System.Drawing.Font("Cambria", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.labelRoleName.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.labelRoleName.Location = new System.Drawing.Point(71, 171);
+            this.labelRoleName.Location = new System.Drawing.Point(73, 170);
             this.labelRoleName.Name = "labelRoleName";
             this.labelRoleName.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.labelRoleName.Size = new System.Drawing.Size(87, 17);
@@ -861,7 +861,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Gray;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxPatientID.OnIdleState = stateProperties4;
-            this.textBoxPatientID.Padding = new System.Windows.Forms.Padding(4);
+            this.textBoxPatientID.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxPatientID.PasswordChar = '\0';
             this.textBoxPatientID.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.textBoxPatientID.PlaceholderText = "Nhập mã bệnh nhân";
@@ -936,7 +936,7 @@
             stateProperties8.ForeColor = System.Drawing.Color.Gray;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxAssignID.OnIdleState = stateProperties8;
-            this.textBoxAssignID.Padding = new System.Windows.Forms.Padding(4);
+            this.textBoxAssignID.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxAssignID.PasswordChar = '\0';
             this.textBoxAssignID.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.textBoxAssignID.PlaceholderText = "Nhập mã phân công";
@@ -982,8 +982,8 @@
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold);
             this.bunifuLabel1.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.bunifuLabel1.Location = new System.Drawing.Point(270, 60);
-            this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuLabel1.Location = new System.Drawing.Point(270, 53);
+            this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel1.Size = new System.Drawing.Size(201, 28);
@@ -1001,8 +1001,8 @@
             this.bunifuPictureBox1.BorderRadius = 85;
             this.bunifuPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox1.Image")));
             this.bunifuPictureBox1.IsCircle = false;
-            this.bunifuPictureBox1.Location = new System.Drawing.Point(117, -34);
-            this.bunifuPictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuPictureBox1.Location = new System.Drawing.Point(115, -26);
+            this.bunifuPictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuPictureBox1.Name = "bunifuPictureBox1";
             this.bunifuPictureBox1.Size = new System.Drawing.Size(170, 170);
             this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1034,7 +1034,7 @@
             this.buttonRemoveFunction.ImageZoomSize = new System.Drawing.Size(114, 103);
             this.buttonRemoveFunction.InitialImage = ((System.Drawing.Image)(resources.GetObject("buttonRemoveFunction.InitialImage")));
             this.buttonRemoveFunction.Location = new System.Drawing.Point(232, 491);
-            this.buttonRemoveFunction.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonRemoveFunction.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonRemoveFunction.Name = "buttonRemoveFunction";
             this.buttonRemoveFunction.Rotation = 0;
             this.buttonRemoveFunction.ShowActiveImage = true;
@@ -1053,10 +1053,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(677, 575);
+            this.ClientSize = new System.Drawing.Size(677, 707);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormAssignDetail";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormAssignDetail";
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuShadowPanel1.ResumeLayout(false);

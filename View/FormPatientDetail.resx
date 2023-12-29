@@ -3444,11 +3444,14 @@
         IoBP7T2tz7/4BKDXDchb+v1ffP6Xibw//OUXf3Gj1aTPhz70/wNndFz39vZNmQAAAABJRU5ErkJggg==
 </value>
   </data>
+  <metadata name="bunifuToolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>447, 17</value>
+  </metadata>
   <data name="labelState.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Cambria'; font-size: 11.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(47, 79, 79); text-align: left; }</value>
+    <value>#bunifu-label { padding: 0px; font-family: 'Cambria'; font-size: 11pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(47, 79, 79); text-align: left; }</value>
   </data>
   <data name="labelX1.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Cambria'; font-size: 11.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(47, 79, 79); text-align: left; }</value>
+    <value>#bunifu-label { padding: 0px; font-family: 'Cambria'; font-size: 11pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(47, 79, 79); text-align: left; }</value>
   </data>
   <data name="textBoxDeposit.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -3459,7 +3462,7 @@
 </value>
   </data>
   <data name="labelProfession.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Cambria'; font-size: 11.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(47, 79, 79); text-align: left; }</value>
+    <value>#bunifu-label { padding: 0px; font-family: 'Cambria'; font-size: 11pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(47, 79, 79); text-align: left; }</value>
   </data>
   <data name="textBoxProfession.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -3470,7 +3473,7 @@
 </value>
   </data>
   <data name="labelIdentityCard.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Cambria'; font-size: 11.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(47, 79, 79); text-align: left; }</value>
+    <value>#bunifu-label { padding: 0px; font-family: 'Cambria'; font-size: 11pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(47, 79, 79); text-align: left; }</value>
   </data>
   <data name="textBoxIdentityCard.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -3481,7 +3484,7 @@
 </value>
   </data>
   <data name="labelPatientID.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Cambria'; font-size: 11.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(47, 79, 79); text-align: left; }</value>
+    <value>#bunifu-label { padding: 0px; font-family: 'Cambria'; font-size: 11pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(47, 79, 79); text-align: left; }</value>
   </data>
   <data name="textBoxPatientID.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -3531,16 +3534,16 @@
 </value>
   </data>
   <data name="labelAddress.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Cambria'; font-size: 11.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(47, 79, 79); text-align: left; }</value>
+    <value>#bunifu-label { padding: 0px; font-family: 'Cambria'; font-size: 11pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(47, 79, 79); text-align: left; }</value>
   </data>
   <data name="labelGender.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Cambria'; font-size: 11.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(47, 79, 79); text-align: left; }</value>
+    <value>#bunifu-label { padding: 0px; font-family: 'Cambria'; font-size: 11pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(47, 79, 79); text-align: left; }</value>
   </data>
   <data name="labelBirthday.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Cambria'; font-size: 11.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(47, 79, 79); text-align: left; }</value>
+    <value>#bunifu-label { padding: 0px; font-family: 'Cambria'; font-size: 11pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(47, 79, 79); text-align: left; }</value>
   </data>
   <data name="labelLastName.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Cambria'; font-size: 11.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(47, 79, 79); text-align: left; }</value>
+    <value>#bunifu-label { padding: 0px; font-family: 'Cambria'; font-size: 11pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(47, 79, 79); text-align: left; }</value>
   </data>
   <data name="textBoxLastName.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -3567,7 +3570,7 @@
 </value>
   </data>
   <data name="labelFirstName.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Cambria'; font-size: 11.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(47, 79, 79); text-align: left; }</value>
+    <value>#bunifu-label { padding: 0px; font-family: 'Cambria'; font-size: 11pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(47, 79, 79); text-align: left; }</value>
   </data>
   <data name="bunifuLabel1.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Cambria'; font-size: 18pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(47, 79, 79); text-align: left; }</value>

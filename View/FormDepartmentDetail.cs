@@ -35,6 +35,7 @@ namespace DO_AN_CUA_HAN.View
 
         private void bunifuButtonOK_Click(object sender, EventArgs e)
         {
+           
             if(string.IsNullOrEmpty(bunifuTextBoxDepartmentName.Text))
             {
                 bunifuSnackbar1.Show(this, "Thiếu tên phòng ban", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
@@ -75,5 +76,19 @@ namespace DO_AN_CUA_HAN.View
         {
             this.Close();
         }
+
+        private void bunifuTextBoxDepartmentName_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !((e.KeyChar >= 'A' && e.KeyChar <= 'Z') ||
+                          (e.KeyChar >= 'a' && e.KeyChar <= 'z') ||
+                          e.KeyChar == 8 || // Backspace
+                          e.KeyChar == 32 || // Space
+                          e.KeyChar == 16 || // Shift
+                          e.KeyChar == 46 || // Delete
+                          (e.KeyChar >= 'À' && e.KeyChar <= 'ỹ') || // Vietnamese characters and accented vowels
+                          (e.KeyChar >= 'à' && e.KeyChar <= 'ỹ'));
+        }
+
+
     }
 }

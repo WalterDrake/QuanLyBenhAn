@@ -88,5 +88,25 @@ namespace DO_AN_CUA_HAN.View
 
             this.Close();
         }
+
+        private void bunifuTextBoxMedicineName_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !((e.KeyChar >= 'A' && e.KeyChar <= 'Z') ||
+              (e.KeyChar >= 'a' && e.KeyChar <= 'z') ||
+              e.KeyChar == 8 || // Backspace
+              e.KeyChar == 32 || // Space
+              e.KeyChar == 16 || // Shift
+              e.KeyChar == 46 || // Delete
+              (e.KeyChar >= 'À' && e.KeyChar <= 'ỹ') || // Vietnamese characters and accented vowels
+              (e.KeyChar >= 'à' && e.KeyChar <= 'ỹ'));
+        }
+
+        private void bunifuTextBoxQuantity_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

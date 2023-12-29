@@ -3441,15 +3441,18 @@
         aKr25V959s0Gpj/77PNvPDDlRJ93vOP/A3QzVcFDWY7zAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="labelPasswordCheck.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Cambria'; font-size: 11.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(47, 79, 79); text-align: left; }</value>
-  </data>
   <data name="textBoxPasswordCheck.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAANAAAAAdCAYAAADb0uIeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAA4SURBVHhe7cMxEQAwCASw+jfFOwMsdGFK7vIAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAA4EqS2q3+Tg8CQ6MPHB+uyQAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAANAAAAAbCAYAAAANiwEDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAA2SURBVHhe7cNBDQAwCASw+TfFOQMs7E2b9AEAAAAAAAAA
+        AAAAAAAAAAAAAAAAABclqd3q7/QA+7KjD0I0hhkAAAAASUVORK5CYII=
 </value>
+  </data>
+  <metadata name="bunifuToolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>447, 17</value>
+  </metadata>
+  <data name="labelPasswordCheck.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Cambria'; font-size: 11.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(47, 79, 79); text-align: left; }</value>
   </data>
   <data name="labelPassword.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Cambria'; font-size: 11.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(47, 79, 79); text-align: left; }</value>

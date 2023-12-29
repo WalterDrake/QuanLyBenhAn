@@ -174,10 +174,9 @@
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(109)))), ((int)(((byte)(160)))));
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(199)))), ((int)(((byte)(205)))));
             this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(893, 1090);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(595, 707);
             this.bunifuGradientPanel1.TabIndex = 1;
             // 
             // bunifuShadowPanel3
@@ -192,8 +191,7 @@
             this.bunifuShadowPanel3.Controls.Add(this.bunifuLabel11);
             this.bunifuShadowPanel3.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Gradient;
             this.bunifuShadowPanel3.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.bunifuShadowPanel3.Location = new System.Drawing.Point(51, 486);
-            this.bunifuShadowPanel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuShadowPanel3.Location = new System.Drawing.Point(34, 316);
             this.bunifuShadowPanel3.Name = "bunifuShadowPanel3";
             this.bunifuShadowPanel3.PanelColor = System.Drawing.Color.MistyRose;
             this.bunifuShadowPanel3.PanelColor2 = System.Drawing.Color.PaleTurquoise;
@@ -202,7 +200,7 @@
             this.bunifuShadowPanel3.ShadowDepth = 5;
             this.bunifuShadowPanel3.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
             this.bunifuShadowPanel3.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel3.Size = new System.Drawing.Size(779, 192);
+            this.bunifuShadowPanel3.Size = new System.Drawing.Size(519, 132);
             this.bunifuShadowPanel3.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.bunifuShadowPanel3.TabIndex = 42;
             // 
@@ -240,9 +238,10 @@
             this.comboBoxTestType.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
             this.comboBoxTestType.ItemHighLightForeColor = System.Drawing.Color.White;
             this.comboBoxTestType.ItemTopMargin = 3;
-            this.comboBoxTestType.Location = new System.Drawing.Point(276, 77);
+            this.comboBoxTestType.Location = new System.Drawing.Point(184, 50);
+            this.comboBoxTestType.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxTestType.Name = "comboBoxTestType";
-            this.comboBoxTestType.Size = new System.Drawing.Size(464, 32);
+            this.comboBoxTestType.Size = new System.Drawing.Size(311, 32);
             this.comboBoxTestType.TabIndex = 24;
             this.comboBoxTestType.Text = null;
             this.comboBoxTestType.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
@@ -296,8 +295,7 @@
             this.buttonInsert.IdleIconLeftImage = null;
             this.buttonInsert.IdleIconRightImage = null;
             this.buttonInsert.IndicateFocus = false;
-            this.buttonInsert.Location = new System.Drawing.Point(379, 128);
-            this.buttonInsert.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonInsert.Location = new System.Drawing.Point(253, 89);
             this.buttonInsert.Name = "buttonInsert";
             this.buttonInsert.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.buttonInsert.OnDisabledState.BorderRadius = 15;
@@ -331,7 +329,7 @@
             this.buttonInsert.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.buttonInsert.OnPressedState.IconLeftImage = null;
             this.buttonInsert.OnPressedState.IconRightImage = null;
-            this.buttonInsert.Size = new System.Drawing.Size(114, 46);
+            this.buttonInsert.Size = new System.Drawing.Size(76, 30);
             this.buttonInsert.TabIndex = 23;
             this.buttonInsert.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.buttonInsert.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -346,13 +344,12 @@
             this.labelState.AutoEllipsis = false;
             this.labelState.Cursor = System.Windows.Forms.Cursors.Default;
             this.labelState.CursorType = System.Windows.Forms.Cursors.Default;
-            this.labelState.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelState.Font = new System.Drawing.Font("Cambria", 11F);
             this.labelState.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.labelState.Location = new System.Drawing.Point(42, 80);
-            this.labelState.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.labelState.Location = new System.Drawing.Point(28, 52);
             this.labelState.Name = "labelState";
             this.labelState.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.labelState.Size = new System.Drawing.Size(151, 27);
+            this.labelState.Size = new System.Drawing.Size(95, 17);
             this.labelState.TabIndex = 2;
             this.labelState.Text = "Tên xét nghiệm";
             this.labelState.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -366,11 +363,10 @@
             this.bunifuLabel11.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel11.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold);
             this.bunifuLabel11.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.bunifuLabel11.Location = new System.Drawing.Point(294, 33);
-            this.bunifuLabel11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuLabel11.Location = new System.Drawing.Point(196, 21);
             this.bunifuLabel11.Name = "bunifuLabel11";
             this.bunifuLabel11.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel11.Size = new System.Drawing.Size(199, 28);
+            this.bunifuLabel11.Size = new System.Drawing.Size(135, 19);
             this.bunifuLabel11.TabIndex = 1;
             this.bunifuLabel11.Text = "LOẠI XÉT NGHIỆM";
             this.bunifuLabel11.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -392,8 +388,7 @@
             this.bunifuShadowPanel1.Controls.Add(this.bunifuLabel1);
             this.bunifuShadowPanel1.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Gradient;
             this.bunifuShadowPanel1.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.bunifuShadowPanel1.Location = new System.Drawing.Point(51, 716);
-            this.bunifuShadowPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuShadowPanel1.Location = new System.Drawing.Point(34, 465);
             this.bunifuShadowPanel1.Name = "bunifuShadowPanel1";
             this.bunifuShadowPanel1.PanelColor = System.Drawing.Color.PaleTurquoise;
             this.bunifuShadowPanel1.PanelColor2 = System.Drawing.Color.MistyRose;
@@ -402,7 +397,7 @@
             this.bunifuShadowPanel1.ShadowDepth = 5;
             this.bunifuShadowPanel1.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
             this.bunifuShadowPanel1.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel1.Size = new System.Drawing.Size(779, 333);
+            this.bunifuShadowPanel1.Size = new System.Drawing.Size(519, 216);
             this.bunifuShadowPanel1.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.bunifuShadowPanel1.TabIndex = 0;
             // 
@@ -410,10 +405,10 @@
             // 
             this.listSelectedTestType.AccessibleRole = System.Windows.Forms.AccessibleRole.Clock;
             this.listSelectedTestType.FormattingEnabled = true;
-            this.listSelectedTestType.ItemHeight = 20;
-            this.listSelectedTestType.Location = new System.Drawing.Point(276, 82);
+            this.listSelectedTestType.Location = new System.Drawing.Point(184, 53);
+            this.listSelectedTestType.Margin = new System.Windows.Forms.Padding(2);
             this.listSelectedTestType.Name = "listSelectedTestType";
-            this.listSelectedTestType.Size = new System.Drawing.Size(464, 64);
+            this.listSelectedTestType.Size = new System.Drawing.Size(311, 43);
             this.listSelectedTestType.TabIndex = 27;
             // 
             // buttonClose
@@ -464,8 +459,7 @@
             this.buttonClose.IdleIconLeftImage = null;
             this.buttonClose.IdleIconRightImage = null;
             this.buttonClose.IndicateFocus = false;
-            this.buttonClose.Location = new System.Drawing.Point(614, 263);
-            this.buttonClose.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonClose.Location = new System.Drawing.Point(409, 171);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.buttonClose.OnDisabledState.BorderRadius = 15;
@@ -499,7 +493,7 @@
             this.buttonClose.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.buttonClose.OnPressedState.IconLeftImage = null;
             this.buttonClose.OnPressedState.IconRightImage = null;
-            this.buttonClose.Size = new System.Drawing.Size(114, 46);
+            this.buttonClose.Size = new System.Drawing.Size(76, 30);
             this.buttonClose.TabIndex = 26;
             this.buttonClose.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.buttonClose.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -556,8 +550,7 @@
             this.buttonOk.IdleIconLeftImage = null;
             this.buttonOk.IdleIconRightImage = null;
             this.buttonOk.IndicateFocus = false;
-            this.buttonOk.Location = new System.Drawing.Point(473, 263);
-            this.buttonOk.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonOk.Location = new System.Drawing.Point(315, 171);
             this.buttonOk.Name = "buttonOk";
             this.buttonOk.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.buttonOk.OnDisabledState.BorderRadius = 15;
@@ -591,7 +584,7 @@
             this.buttonOk.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.buttonOk.OnPressedState.IconLeftImage = null;
             this.buttonOk.OnPressedState.IconRightImage = null;
-            this.buttonOk.Size = new System.Drawing.Size(114, 46);
+            this.buttonOk.Size = new System.Drawing.Size(76, 30);
             this.buttonOk.TabIndex = 25;
             this.buttonOk.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.buttonOk.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -648,8 +641,7 @@
             this.buttonRemove.IdleIconLeftImage = null;
             this.buttonRemove.IdleIconRightImage = null;
             this.buttonRemove.IndicateFocus = false;
-            this.buttonRemove.Location = new System.Drawing.Point(333, 263);
-            this.buttonRemove.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonRemove.Location = new System.Drawing.Point(222, 171);
             this.buttonRemove.Name = "buttonRemove";
             this.buttonRemove.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.buttonRemove.OnDisabledState.BorderRadius = 15;
@@ -683,7 +675,7 @@
             this.buttonRemove.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.buttonRemove.OnPressedState.IconLeftImage = null;
             this.buttonRemove.OnPressedState.IconRightImage = null;
-            this.buttonRemove.Size = new System.Drawing.Size(114, 46);
+            this.buttonRemove.Size = new System.Drawing.Size(76, 30);
             this.buttonRemove.TabIndex = 24;
             this.buttonRemove.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.buttonRemove.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -697,13 +689,12 @@
             this.labelX5.AllowParentOverrides = false;
             this.labelX5.AutoEllipsis = false;
             this.labelX5.CursorType = null;
-            this.labelX5.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelX5.Font = new System.Drawing.Font("Cambria", 11F);
             this.labelX5.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.labelX5.Location = new System.Drawing.Point(42, 194);
-            this.labelX5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.labelX5.Location = new System.Drawing.Point(28, 126);
             this.labelX5.Name = "labelX5";
             this.labelX5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.labelX5.Size = new System.Drawing.Size(75, 27);
+            this.labelX5.Size = new System.Drawing.Size(47, 17);
             this.labelX5.TabIndex = 16;
             this.labelX5.Text = "Kết quả";
             this.labelX5.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -737,10 +728,9 @@
             this.textBoxResult.IconRight = null;
             this.textBoxResult.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.textBoxResult.Lines = new string[0];
-            this.textBoxResult.Location = new System.Drawing.Point(276, 165);
-            this.textBoxResult.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxResult.Location = new System.Drawing.Point(184, 107);
             this.textBoxResult.MaxLength = 32767;
-            this.textBoxResult.MinimumSize = new System.Drawing.Size(2, 2);
+            this.textBoxResult.MinimumSize = new System.Drawing.Size(1, 1);
             this.textBoxResult.Modified = false;
             this.textBoxResult.Multiline = false;
             this.textBoxResult.Name = "textBoxResult";
@@ -764,7 +754,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Gray;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxResult.OnIdleState = stateProperties4;
-            this.textBoxResult.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxResult.Padding = new System.Windows.Forms.Padding(3);
             this.textBoxResult.PasswordChar = '\0';
             this.textBoxResult.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.textBoxResult.PlaceholderText = "Nhập kết quả";
@@ -774,7 +764,7 @@
             this.textBoxResult.SelectionLength = 0;
             this.textBoxResult.SelectionStart = 0;
             this.textBoxResult.ShortcutsEnabled = true;
-            this.textBoxResult.Size = new System.Drawing.Size(464, 71);
+            this.textBoxResult.Size = new System.Drawing.Size(309, 46);
             this.textBoxResult.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
             this.textBoxResult.TabIndex = 13;
             this.textBoxResult.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -791,13 +781,12 @@
             this.labelX3.AutoEllipsis = false;
             this.labelX3.Cursor = System.Windows.Forms.Cursors.Default;
             this.labelX3.CursorType = System.Windows.Forms.Cursors.Default;
-            this.labelX3.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelX3.Font = new System.Drawing.Font("Cambria", 11F);
             this.labelX3.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.labelX3.Location = new System.Drawing.Point(42, 100);
-            this.labelX3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.labelX3.Location = new System.Drawing.Point(28, 65);
             this.labelX3.Name = "labelX3";
             this.labelX3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.labelX3.Size = new System.Drawing.Size(214, 27);
+            this.labelX3.Size = new System.Drawing.Size(135, 17);
             this.labelX3.TabIndex = 2;
             this.labelX3.Text = "Danh sách xét nghiệm";
             this.labelX3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -809,13 +798,12 @@
             this.bunifuLabel1.AutoEllipsis = false;
             this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Cambria", 12.25F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold);
             this.bunifuLabel1.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.bunifuLabel1.Location = new System.Drawing.Point(298, 34);
-            this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuLabel1.Location = new System.Drawing.Point(199, 22);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(245, 30);
+            this.bunifuLabel1.Size = new System.Drawing.Size(158, 19);
             this.bunifuLabel1.TabIndex = 1;
             this.bunifuLabel1.Text = "CHI TIẾT TOA THUỐC";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -840,8 +828,7 @@
             this.bunifuShadowPanel2.Controls.Add(this.bunifuLabel24);
             this.bunifuShadowPanel2.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Gradient;
             this.bunifuShadowPanel2.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.bunifuShadowPanel2.Location = new System.Drawing.Point(51, 55);
-            this.bunifuShadowPanel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuShadowPanel2.Location = new System.Drawing.Point(34, 36);
             this.bunifuShadowPanel2.Name = "bunifuShadowPanel2";
             this.bunifuShadowPanel2.PanelColor = System.Drawing.Color.MistyRose;
             this.bunifuShadowPanel2.PanelColor2 = System.Drawing.Color.PaleTurquoise;
@@ -850,7 +837,7 @@
             this.bunifuShadowPanel2.ShadowDepth = 5;
             this.bunifuShadowPanel2.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
             this.bunifuShadowPanel2.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel2.Size = new System.Drawing.Size(779, 390);
+            this.bunifuShadowPanel2.Size = new System.Drawing.Size(519, 253);
             this.bunifuShadowPanel2.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.bunifuShadowPanel2.TabIndex = 41;
             // 
@@ -888,13 +875,12 @@
             this.comboBoxState.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
             this.comboBoxState.ItemHighLightForeColor = System.Drawing.Color.White;
             this.comboBoxState.Items.AddRange(new object[] {
-            "Ngoại trú",
-            "Nội trú"});
+            "Chưa xét nghiệm",
+            "Đã xét nghiệm"});
             this.comboBoxState.ItemTopMargin = 3;
-            this.comboBoxState.Location = new System.Drawing.Point(276, 320);
-            this.comboBoxState.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.comboBoxState.Location = new System.Drawing.Point(184, 208);
             this.comboBoxState.Name = "comboBoxState";
-            this.comboBoxState.Size = new System.Drawing.Size(318, 32);
+            this.comboBoxState.Size = new System.Drawing.Size(213, 32);
             this.comboBoxState.TabIndex = 36;
             this.comboBoxState.Text = null;
             this.comboBoxState.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
@@ -919,11 +905,10 @@
             this.dateCreate.IconColor = System.Drawing.Color.DimGray;
             this.dateCreate.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
             this.dateCreate.LeftTextMargin = 5;
-            this.dateCreate.Location = new System.Drawing.Point(276, 270);
-            this.dateCreate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dateCreate.Location = new System.Drawing.Point(184, 174);
             this.dateCreate.MinimumSize = new System.Drawing.Size(4, 32);
             this.dateCreate.Name = "dateCreate";
-            this.dateCreate.Size = new System.Drawing.Size(311, 32);
+            this.dateCreate.Size = new System.Drawing.Size(209, 32);
             this.dateCreate.TabIndex = 23;
             this.dateCreate.Value = new System.DateTime(2023, 12, 8, 4, 30, 0, 0);
             // 
@@ -932,13 +917,12 @@
             this.labelBirthday.AllowParentOverrides = false;
             this.labelBirthday.AutoEllipsis = false;
             this.labelBirthday.CursorType = null;
-            this.labelBirthday.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelBirthday.Font = new System.Drawing.Font("Cambria", 11F);
             this.labelBirthday.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.labelBirthday.Location = new System.Drawing.Point(42, 270);
-            this.labelBirthday.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.labelBirthday.Location = new System.Drawing.Point(28, 176);
             this.labelBirthday.Name = "labelBirthday";
             this.labelBirthday.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.labelBirthday.Size = new System.Drawing.Size(85, 27);
+            this.labelBirthday.Size = new System.Drawing.Size(54, 17);
             this.labelBirthday.TabIndex = 22;
             this.labelBirthday.Text = "Ngày lập";
             this.labelBirthday.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -950,13 +934,12 @@
             this.labelX4.AutoEllipsis = false;
             this.labelX4.Cursor = System.Windows.Forms.Cursors.Default;
             this.labelX4.CursorType = System.Windows.Forms.Cursors.Default;
-            this.labelX4.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelX4.Font = new System.Drawing.Font("Cambria", 11F);
             this.labelX4.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.labelX4.Location = new System.Drawing.Point(42, 325);
-            this.labelX4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.labelX4.Location = new System.Drawing.Point(28, 211);
             this.labelX4.Name = "labelX4";
             this.labelX4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.labelX4.Size = new System.Drawing.Size(102, 27);
+            this.labelX4.Size = new System.Drawing.Size(64, 17);
             this.labelX4.TabIndex = 19;
             this.labelX4.Text = "Trạng thái";
             this.labelX4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -968,13 +951,12 @@
             this.labelX2.AutoEllipsis = false;
             this.labelX2.Cursor = System.Windows.Forms.Cursors.Default;
             this.labelX2.CursorType = System.Windows.Forms.Cursors.Default;
-            this.labelX2.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelX2.Font = new System.Drawing.Font("Cambria", 11F);
             this.labelX2.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.labelX2.Location = new System.Drawing.Point(42, 216);
-            this.labelX2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.labelX2.Location = new System.Drawing.Point(28, 140);
             this.labelX2.Name = "labelX2";
             this.labelX2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.labelX2.Size = new System.Drawing.Size(140, 27);
+            this.labelX2.Size = new System.Drawing.Size(87, 17);
             this.labelX2.TabIndex = 17;
             this.labelX2.Text = "Mã bệnh nhân";
             this.labelX2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -1008,10 +990,9 @@
             this.textBoxPatientID.IconRight = null;
             this.textBoxPatientID.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.textBoxPatientID.Lines = new string[0];
-            this.textBoxPatientID.Location = new System.Drawing.Point(276, 208);
-            this.textBoxPatientID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxPatientID.Location = new System.Drawing.Point(184, 135);
             this.textBoxPatientID.MaxLength = 32767;
-            this.textBoxPatientID.MinimumSize = new System.Drawing.Size(2, 2);
+            this.textBoxPatientID.MinimumSize = new System.Drawing.Size(1, 1);
             this.textBoxPatientID.Modified = false;
             this.textBoxPatientID.Multiline = false;
             this.textBoxPatientID.Name = "textBoxPatientID";
@@ -1035,17 +1016,17 @@
             stateProperties8.ForeColor = System.Drawing.Color.Gray;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxPatientID.OnIdleState = stateProperties8;
-            this.textBoxPatientID.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxPatientID.Padding = new System.Windows.Forms.Padding(3);
             this.textBoxPatientID.PasswordChar = '\0';
             this.textBoxPatientID.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.textBoxPatientID.PlaceholderText = "Nhập mã bệnh nhân";
-            this.textBoxPatientID.ReadOnly = false;
+            this.textBoxPatientID.ReadOnly = true;
             this.textBoxPatientID.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.textBoxPatientID.SelectedText = "";
             this.textBoxPatientID.SelectionLength = 0;
             this.textBoxPatientID.SelectionStart = 0;
             this.textBoxPatientID.ShortcutsEnabled = true;
-            this.textBoxPatientID.Size = new System.Drawing.Size(464, 42);
+            this.textBoxPatientID.Size = new System.Drawing.Size(309, 27);
             this.textBoxPatientID.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
             this.textBoxPatientID.TabIndex = 16;
             this.textBoxPatientID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1062,13 +1043,12 @@
             this.labelX1.AutoEllipsis = false;
             this.labelX1.Cursor = System.Windows.Forms.Cursors.Default;
             this.labelX1.CursorType = System.Windows.Forms.Cursors.Default;
-            this.labelX1.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelX1.Font = new System.Drawing.Font("Cambria", 11F);
             this.labelX1.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.labelX1.Location = new System.Drawing.Point(42, 150);
-            this.labelX1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.labelX1.Location = new System.Drawing.Point(28, 98);
             this.labelX1.Name = "labelX1";
             this.labelX1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.labelX1.Size = new System.Drawing.Size(132, 27);
+            this.labelX1.Size = new System.Drawing.Size(83, 17);
             this.labelX1.TabIndex = 15;
             this.labelX1.Text = "Mã nhân viên";
             this.labelX1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -1102,10 +1082,9 @@
             this.textBoxStaffID.IconRight = null;
             this.textBoxStaffID.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.textBoxStaffID.Lines = new string[0];
-            this.textBoxStaffID.Location = new System.Drawing.Point(276, 141);
-            this.textBoxStaffID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxStaffID.Location = new System.Drawing.Point(184, 92);
             this.textBoxStaffID.MaxLength = 32767;
-            this.textBoxStaffID.MinimumSize = new System.Drawing.Size(2, 2);
+            this.textBoxStaffID.MinimumSize = new System.Drawing.Size(1, 1);
             this.textBoxStaffID.Modified = false;
             this.textBoxStaffID.Multiline = false;
             this.textBoxStaffID.Name = "textBoxStaffID";
@@ -1129,17 +1108,17 @@
             stateProperties12.ForeColor = System.Drawing.Color.Gray;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxStaffID.OnIdleState = stateProperties12;
-            this.textBoxStaffID.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxStaffID.Padding = new System.Windows.Forms.Padding(3);
             this.textBoxStaffID.PasswordChar = '\0';
             this.textBoxStaffID.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.textBoxStaffID.PlaceholderText = "Nhập mã nhân viên";
-            this.textBoxStaffID.ReadOnly = false;
+            this.textBoxStaffID.ReadOnly = true;
             this.textBoxStaffID.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.textBoxStaffID.SelectedText = "";
             this.textBoxStaffID.SelectionLength = 0;
             this.textBoxStaffID.SelectionStart = 0;
             this.textBoxStaffID.ShortcutsEnabled = true;
-            this.textBoxStaffID.Size = new System.Drawing.Size(464, 42);
+            this.textBoxStaffID.Size = new System.Drawing.Size(309, 27);
             this.textBoxStaffID.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
             this.textBoxStaffID.TabIndex = 14;
             this.textBoxStaffID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1178,10 +1157,9 @@
             this.textBoxTCID.IconRight = null;
             this.textBoxTCID.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.textBoxTCID.Lines = new string[0];
-            this.textBoxTCID.Location = new System.Drawing.Point(276, 77);
-            this.textBoxTCID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxTCID.Location = new System.Drawing.Point(184, 50);
             this.textBoxTCID.MaxLength = 32767;
-            this.textBoxTCID.MinimumSize = new System.Drawing.Size(2, 2);
+            this.textBoxTCID.MinimumSize = new System.Drawing.Size(1, 1);
             this.textBoxTCID.Modified = false;
             this.textBoxTCID.Multiline = false;
             this.textBoxTCID.Name = "textBoxTCID";
@@ -1205,7 +1183,7 @@
             stateProperties16.ForeColor = System.Drawing.Color.Gray;
             stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxTCID.OnIdleState = stateProperties16;
-            this.textBoxTCID.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxTCID.Padding = new System.Windows.Forms.Padding(3);
             this.textBoxTCID.PasswordChar = '\0';
             this.textBoxTCID.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.textBoxTCID.PlaceholderText = "Nhập mã phiếu xét nghiệm";
@@ -1215,7 +1193,7 @@
             this.textBoxTCID.SelectionLength = 0;
             this.textBoxTCID.SelectionStart = 0;
             this.textBoxTCID.ShortcutsEnabled = true;
-            this.textBoxTCID.Size = new System.Drawing.Size(464, 42);
+            this.textBoxTCID.Size = new System.Drawing.Size(309, 27);
             this.textBoxTCID.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
             this.textBoxTCID.TabIndex = 12;
             this.textBoxTCID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1232,13 +1210,12 @@
             this.labelRoleID.AutoEllipsis = false;
             this.labelRoleID.Cursor = System.Windows.Forms.Cursors.Default;
             this.labelRoleID.CursorType = System.Windows.Forms.Cursors.Default;
-            this.labelRoleID.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelRoleID.Font = new System.Drawing.Font("Cambria", 11F);
             this.labelRoleID.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.labelRoleID.Location = new System.Drawing.Point(42, 87);
-            this.labelRoleID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.labelRoleID.Location = new System.Drawing.Point(28, 57);
             this.labelRoleID.Name = "labelRoleID";
             this.labelRoleID.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.labelRoleID.Size = new System.Drawing.Size(204, 27);
+            this.labelRoleID.Size = new System.Drawing.Size(128, 17);
             this.labelRoleID.TabIndex = 2;
             this.labelRoleID.Text = "Mã phiếu xét nghiệm";
             this.labelRoleID.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -1252,11 +1229,10 @@
             this.bunifuLabel24.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel24.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold);
             this.bunifuLabel24.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.bunifuLabel24.Location = new System.Drawing.Point(294, 31);
-            this.bunifuLabel24.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuLabel24.Location = new System.Drawing.Point(196, 20);
             this.bunifuLabel24.Name = "bunifuLabel24";
             this.bunifuLabel24.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel24.Size = new System.Drawing.Size(215, 28);
+            this.bunifuLabel24.Size = new System.Drawing.Size(147, 19);
             this.bunifuLabel24.TabIndex = 1;
             this.bunifuLabel24.Text = "PHIẾU XÉT NGHIỆM";
             this.bunifuLabel24.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -1264,11 +1240,12 @@
             // 
             // FormTestDetail
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(893, 1090);
+            this.ClientSize = new System.Drawing.Size(595, 707);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormTestDetail";
             this.Text = "FormPrescriptionDetail";
             this.bunifuGradientPanel1.ResumeLayout(false);

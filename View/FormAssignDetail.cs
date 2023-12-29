@@ -11,7 +11,7 @@ using DO_AN_CUA_HAN.Model;
 using Bunifu.UI.WinForms;
 namespace DO_AN_CUA_HAN.View
 {
-    public partial class FormAssignDetail : Form
+    public partial class FormAssignDetail : Form 
     {
         public Assignment AssignDetail { get; set; }
         public String UserAction { get; set; }
@@ -104,7 +104,7 @@ namespace DO_AN_CUA_HAN.View
             int selectedStaff = listBoxSystemStaff.SelectedIndex;
             if (CheckStaffInAssign(listStaff[selectedStaff].StaffID))
             {
-                bunifuSnackbar1.Show(this, "Nhân viên đã có trong danh sách phân công chăm sóc bệnh nhân", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, "Thông báo", Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                bunifuSnackbar1.Show(this, "Nhân viên đã có trong danh sách phân công chăm sóc bệnh nhân", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, "Thông báo", Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
             }
             else
             {

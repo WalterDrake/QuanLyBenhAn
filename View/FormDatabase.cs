@@ -55,5 +55,14 @@ namespace DO_AN_CUA_HAN.View
                 connectionBuilder.Password = bunifuTextBoxPassword.Text;
             return connectionBuilder.ConnectionString;
         }
+
+        private void bunifuTextBoxUsername_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+            if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
     }
 }
