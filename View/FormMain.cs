@@ -59,7 +59,7 @@ namespace DO_AN_CUA_HAN.View
             // Thiết lập vị trí ban đầu của đối tượng và vị trí đích
             objectX = 1148;
             targetX = 280;
-
+            formMainMedicine.tabItemMedicine_Click();
             timer.Start(); // Bắt đầu Timer để bắt đầu di chuyển đối tượng
         }
 
@@ -71,6 +71,7 @@ namespace DO_AN_CUA_HAN.View
             // Thiết lập vị trí ban đầu của đối tượng và vị trí đích
             objectX = 1148;
             targetX = 280;
+            formMainPatient.tabItemPatient();
             timer.Start(); // Bắt đầu Timer để bắt đầu di chuyển đối tượng
         }
 
@@ -92,11 +93,11 @@ namespace DO_AN_CUA_HAN.View
         {
             bunifuShadowPanel3.Controls.Clear();
             FormMainHF formMainHF = new FormMainHF();
-
             bunifuShadowPanel3.Controls.Add(formMainHF);
             // Thiết lập vị trí ban đầu của đối tượng và vị trí đích
             objectX = 1148;
             targetX = 280;
+            formMainHF.tabItemHealthFile_Click();
 
             timer.Start(); // Bắt đầu Timer để bắt đầu di chuyển đối tượng
         }
@@ -110,7 +111,7 @@ namespace DO_AN_CUA_HAN.View
             // Thiết lập vị trí ban đầu của đối tượng và vị trí đích
             objectX = 1148;
             targetX = 280;
-
+            formMainEC.tabItemExamination_Click();
             timer.Start(); // Bắt đầu Timer để bắt đầu di chuyển đối tượng
         }
 

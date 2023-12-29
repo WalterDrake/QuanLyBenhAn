@@ -14,15 +14,30 @@ namespace DO_AN_CUA_HAN.View
 {
     public partial class FormMainPatient : UserControl
     {
+        Staff loginStaff = new Staff();
+        public void tabItemPatient()
+        {
+            refreshDataViewPatient();
+        }
         public FormMainPatient()
         {
             InitializeComponent();
         }
-
-        private void bunifuButton3_Click(object sender, EventArgs e)
+        public FormMainPatient( Staff LoginStaff)
         {
-            //Hàm này dùng để hiện ra thông tin cái form FormPatientDetail
-            // và show Dialog()
+            InitializeComponent();
+            this.loginStaff = LoginStaff;
+
+        }
+
+        private void bunifuButtonAdd_Click(object sender, EventArgs e)
+        {
+            // Open patientdetail form for add
+            FormPatientDetail patientDetailForm = new FormPatientDetail("add", new Patient());
+            patientDetailForm.ShowDialog();
+
+            // Refresh datagridview after add
+            refreshDataViewPatient();
         }
 
 
@@ -105,11 +120,10 @@ namespace DO_AN_CUA_HAN.View
             searchPatient();
         }
 
-
         //Phuong thuc bat dau tim kiem sau khi nhan phim enter
         private void bunifuTextBoxPatientSearch_KeyDown(object sender, KeyEventArgs e)
         {
-            if(e.KeyCode == Keys.Enter)
+            if (e.KeyCode == Keys.Enter)
             {
                 searchPatient();
             }
@@ -119,30 +133,17 @@ namespace DO_AN_CUA_HAN.View
         //Thuat toan tim kiem cua Patient
         private void searchPatient()
         {
-            BindingSource bindingSource = new BindingSource();
-            bindingSource.DataSource = bunifuDataGridViewPatient.DataSource;
-            string filterExpression;
-            //Neu cai o text box chua nhap
-            if (bunifuTextBoxPatientSearch.Text !="")
+            // Not search it search string is empty
+            if (bunifuTextBoxPatientSearch.Text != "")
             {
-                // O day dung setfilerstring
-               
-
-                 filterExpression = "[Họ tên] LIKE '*" + bunifuDataGridViewPatient.Text.Trim() + "*'"
-                        + " OR [Mã bệnh nhân] LIKE '*" + bunifuDataGridViewPatient.Text.Trim() + "*'"
-                        + " OR [CMND] LIKE '*" + bunifuDataGridViewPatient.Text.Trim() + "*'";
-                bindingSource.Filter = filterExpression;
-
-                // Gán lại BindingSource cho BunifuDataGridView
-                bunifuDataGridViewPatient.DataSource = bindingSource;
+                // Search with RowFilter
+                ((DataView)bunifuDataGridViewPatient.DataSource).RowFilter = "[Họ tên] LIKE '*" + bunifuTextBoxPatientSearch.Text.Trim() + "*'"
+                                                                + "OR [Mã bệnh nhân] LIKE '*" + bunifuTextBoxPatientSearch.Text.Trim() + "*'"
+                                                                + "OR [CMND] LIKE '*" + bunifuTextBoxPatientSearch.Text.Trim() + "*'";
             }
             else
             {
-                filterExpression = "";
-                bindingSource.Filter = filterExpression;
-
-                // Gán lại BindingSource cho BunifuDataGridView
-                bunifuDataGridViewPatient.DataSource = bindingSource;
+                ((DataView)bunifuDataGridViewPatient.DataSource).RowFilter = "";
             }
         }
 
@@ -154,9 +155,253 @@ namespace DO_AN_CUA_HAN.View
                 //Current user
                 int staffID = 10000000;
 
-                // Xuat file Prescription
-                /*FormPrescriptionDetail formPD = new FormPrescriptionDetail(staffID, patientID);
-                formPD.ShowDialog();*/
+                FormPrescriptionDetail formPD = new FormPrescriptionDetail(staffID, patientID);
+                formPD.ShowDialog();
+            }
+        }
+
+        private void bunifuButtonHealthFile_Click(object sender, EventArgs e)
+        {
+            if (bunifuDataGridViewPatient.SelectedRows.Count > 0)
+            {
+                int patientID = Convert.ToInt32(bunifuDataGridViewPatient.SelectedRows[0].Cells[0].Value);
+                int state = Patient.GetPatient(patientID).State;
+
+                if (state == 1)
+                {
+                    if (!HeathFile.DidPatientHaveHF(patientID))
+                    {
+                        FormHFDetail formHFD = new FormHFDetail(patientID);
+                        formHFD.ShowDialog();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Bệnh nhân đã có bệnh án", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Bệnh nhân chưa nhập viện", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+        }
+
+        private void bunifuButtonHealthMonitor_Click(object sender, EventArgs e)
+        {
+            if (bunifuDataGridViewPatient.SelectedRows.Count > 0)
+            {
+                int patientID = Convert.ToInt32(bunifuDataGridViewPatient.SelectedRows[0].Cells[0].Value);
+                int state = Patient.GetPatient(patientID).State;
+                //Current user
+                int staffID = loginStaff.StaffID;
+
+                if (state == 1)
+                {
+                    FormHNDetail formHND = new FormHNDetail(staffID, patientID);
+                    formHND.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("Bệnh nhân chưa nhập viện", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+        }
+
+        private void bunifuButtonPatientExamination_Click(object sender, EventArgs e)
+        {
+            if (bunifuDataGridViewPatient.SelectedRows.Count > 0)
+            {
+                int patientID = Convert.ToInt32(bunifuDataGridViewPatient.SelectedRows[0].Cells[0].Value);
+                //Current user
+                int staffID = loginStaff.StaffID;
+
+                FormECDetail formECD = new FormECDetail(staffID, patientID);
+                formECD.LoginStaff = this.loginStaff;
+                formECD.ShowDialog();
+            }
+        }
+
+        private void bunifuButtonHospitalizationCert_Click(object sender, EventArgs e)
+        {
+            if (bunifuDataGridViewPatient.SelectedRows.Count > 0)
+            {
+                int patientID = Convert.ToInt32(bunifuDataGridViewPatient.SelectedRows[0].Cells[0].Value);
+                //Current user
+                int staffID = loginStaff.StaffID;
+                if (HospitalizationCertificate.IsPatientHadHC(patientID))
+                {
+                    MessageBox.Show("Bệnh nhân đã có giấy nhập viện", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    FormHCDetail formHCD = new FormHCDetail(staffID, patientID);
+                    formHCD.ShowDialog();
+                }
+            }
+        }
+
+        private void bunifuButtonDischargeCert_Click(object sender, EventArgs e)
+        {
+            if (bunifuDataGridViewPatient.SelectedRows.Count > 0)
+            {
+                int patientID = Convert.ToInt32(bunifuDataGridViewPatient.SelectedRows[0].Cells[0].Value);
+                //Current user
+                int staffID = loginStaff.StaffID;
+
+                if (HospitalizationCertificate.IsPatientHadHC(patientID))
+                {
+                    FormDCDetail formDCD = new FormDCDetail(staffID, patientID);
+                    formDCD.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("Bệnh nhân chưa nhập viện", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+        }
+
+        private void bunifuButtonPatientSurgery_Click(object sender, EventArgs e)
+        {
+            if (bunifuDataGridViewPatient.SelectedRows.Count > 0)
+            {
+                int patientID = Convert.ToInt32(bunifuDataGridViewPatient.SelectedRows[0].Cells[0].Value);
+
+                if (Patient.GetPatient(patientID).State == 1)
+                {
+                    FormSurgicalDetail formSD = new FormSurgicalDetail(patientID);
+                    formSD.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("Bệnh nhân chưa nhập viện nên không thể thực hiện phẩu thuật", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+        }
+
+        private void bunifuButtonAssign_Click(object sender, EventArgs e)
+        {
+            if (bunifuDataGridViewPatient.SelectedRows.Count > 0)
+            {
+                int patientID = Convert.ToInt32(bunifuDataGridViewPatient.SelectedRows[0].Cells[0].Value);
+                if (HospitalizationCertificate.IsPatientHadHC(patientID))
+                {
+                    if (Assignment.IsPatientHadAssignment(patientID))
+                    {
+                        MessageBox.Show("Bệnh nhân đã được phân công chăm sóc", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    else
+                    {
+                        FormAssignDetail formAD = new FormAssignDetail(patientID);
+                        formAD.ShowDialog();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Bệnh nhân chưa nhập viện", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+        }
+
+        private void bunifuButtonPatientTest_Click(object sender, EventArgs e)
+        {
+            if (bunifuDataGridViewPatient.SelectedRows.Count > 0)
+            {
+                int patientID = Convert.ToInt32(bunifuDataGridViewPatient.SelectedRows[0].Cells[0].Value);
+                //Current user
+                int staffID = loginStaff.StaffID;
+
+                FormTestDetail formTD = new FormTestDetail(staffID, patientID);
+                formTD.ShowDialog();
+            }
+        }
+
+        private void bunifuButtonPatientMaterial_Click(object sender, EventArgs e)
+        {
+            if (bunifuDataGridViewPatient.SelectedRows.Count > 0)
+            {
+                int patientID = Convert.ToInt32(bunifuDataGridViewPatient.SelectedRows[0].Cells[0].Value);
+                if (Patient.GetPatient(patientID).State == 1)
+                {
+                    //Current user
+                    int staffID = loginStaff.StaffID;
+
+                    Bill newBill = new Bill(Bill.MATERIALBILL, patientID, staffID);
+                    FormBillDetail billDetailForm = new FormBillDetail("insert", newBill);
+                    billDetailForm.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("Bệnh nhân chưa nhập viện nên không được phép mượn vật tư", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+        }
+
+        private void bunifuButtonPatientService_Click(object sender, EventArgs e)
+        {
+            if (bunifuDataGridViewPatient.SelectedRows.Count > 0)
+            {
+                int patientID = Convert.ToInt32(bunifuDataGridViewPatient.SelectedRows[0].Cells[0].Value);
+                //Current user
+                int staffID = loginStaff.StaffID;
+
+                Bill newBill = new Bill(Bill.SERVICEBILL, patientID, staffID);
+                FormBillDetail billDetailForm = new FormBillDetail("insert", newBill);
+                billDetailForm.ShowDialog();
+            }
+        }
+
+        private void bunifuDataGridViewPatient_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (bunifuDataGridViewPatient.SelectedRows.Count > 0)
+            {
+                // Get patient for edit
+                Patient PatientDetail = Patient.GetPatient(Convert.ToInt32(bunifuDataGridViewPatient.SelectedRows[0].Cells[0].Value.ToString()));
+
+                // Open patientdetail form for edit
+                FormPatientDetail patientDetailForm = new FormPatientDetail("edit", PatientDetail);
+                patientDetailForm.ShowDialog();
+
+                // Refresh datagridview after edit
+                refreshDataViewPatient();
+            }
+        }
+
+        private void bunifuButtonHIC_Click(object sender, EventArgs e)
+        {
+            if (bunifuDataGridViewPatient.SelectedRows.Count > 0)
+            {
+                int patientID = Convert.ToInt32(bunifuDataGridViewPatient.SelectedRows[0].Cells[0].Value);
+                if (HIC.CheckHIC(patientID))
+                {
+                    HIC newHIC = HIC.GetPatientHIC(patientID);
+                    FormHICDetail formHICD = new FormHICDetail(newHIC, "edit");
+
+                    formHICD.ShowDialog();
+                }
+                else
+                {
+                    FormHICDetail formHICD = new FormHICDetail(patientID);
+
+                    formHICD.ShowDialog();
+                }
+            }
+        }
+
+        private void bunifuButtonPatientPay_Click(object sender, EventArgs e)
+        {
+            if (bunifuDataGridViewPatient.SelectedRows.Count > 0)
+            {
+                int state = Patient.GetPatient(Convert.ToInt32(bunifuDataGridViewPatient.SelectedRows[0].Cells[0].Value)).State;
+                if (state == 1)
+                {
+                    FormPayment paymentform = new FormPayment();
+                    paymentform.patient = Patient.GetPatient(Convert.ToInt32(bunifuDataGridViewPatient.SelectedRows[0].Cells[0].Value));
+                    paymentform.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("Chỉ thanh toán viện phí cho bệnh nhân nhập viện", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
         }
     }

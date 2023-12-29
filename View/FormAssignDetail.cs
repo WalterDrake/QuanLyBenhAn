@@ -9,7 +9,6 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using DO_AN_CUA_HAN.Model;
 using Bunifu.UI.WinForms;
-
 namespace DO_AN_CUA_HAN.View
 {
     public partial class FormAssignDetail : Form

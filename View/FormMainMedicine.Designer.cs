@@ -196,6 +196,7 @@
             this.bunifuButtonMedicineAdd.TextMarginLeft = 0;
             this.bunifuButtonMedicineAdd.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButtonMedicineAdd.UseDefaultRadiusAndThickness = true;
+            this.bunifuButtonMedicineAdd.Click += new System.EventHandler(this.bunifuButtonMedicineAdd_Click);
             // 
             // bunifuPictureBox2
             // 
@@ -302,6 +303,7 @@
             this.bunifuButtonMedicineEdit.TextMarginLeft = 0;
             this.bunifuButtonMedicineEdit.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButtonMedicineEdit.UseDefaultRadiusAndThickness = true;
+            this.bunifuButtonMedicineEdit.Click += new System.EventHandler(this.bunifuButtonMedicineEdit_Click);
             // 
             // bunifuPictureBox1
             // 
@@ -408,11 +410,12 @@
             this.bunifuButtonMedicineDelete.TextMarginLeft = 0;
             this.bunifuButtonMedicineDelete.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButtonMedicineDelete.UseDefaultRadiusAndThickness = true;
+            this.bunifuButtonMedicineDelete.Click += new System.EventHandler(this.bunifuButtonMedicineDelete_Click);
             // 
             // bunifuDataGridViewMedicine
             // 
             this.bunifuDataGridViewMedicine.AllowCustomTheming = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(242)))), ((int)(((byte)(203)))));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             this.bunifuDataGridViewMedicine.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.bunifuDataGridViewMedicine.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -421,53 +424,54 @@
             this.bunifuDataGridViewMedicine.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.bunifuDataGridViewMedicine.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.LimeGreen;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(164)))), ((int)(((byte)(40)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.bunifuDataGridViewMedicine.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.bunifuDataGridViewMedicine.ColumnHeadersHeight = 40;
-            this.bunifuDataGridViewMedicine.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            this.bunifuDataGridViewMedicine.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(242)))), ((int)(((byte)(203)))));
             this.bunifuDataGridViewMedicine.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.bunifuDataGridViewMedicine.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.bunifuDataGridViewMedicine.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.bunifuDataGridViewMedicine.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(225)))), ((int)(((byte)(132)))));
             this.bunifuDataGridViewMedicine.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            this.bunifuDataGridViewMedicine.CurrentTheme.BackColor = System.Drawing.Color.White;
-            this.bunifuDataGridViewMedicine.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.bunifuDataGridViewMedicine.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuDataGridViewMedicine.CurrentTheme.BackColor = System.Drawing.Color.LimeGreen;
+            this.bunifuDataGridViewMedicine.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(240)))), ((int)(((byte)(193)))));
+            this.bunifuDataGridViewMedicine.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.LimeGreen;
             this.bunifuDataGridViewMedicine.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
             this.bunifuDataGridViewMedicine.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.bunifuDataGridViewMedicine.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            this.bunifuDataGridViewMedicine.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(164)))), ((int)(((byte)(40)))));
             this.bunifuDataGridViewMedicine.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.bunifuDataGridViewMedicine.CurrentTheme.Name = null;
-            this.bunifuDataGridViewMedicine.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.bunifuDataGridViewMedicine.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(245)))), ((int)(((byte)(214)))));
             this.bunifuDataGridViewMedicine.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.bunifuDataGridViewMedicine.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.bunifuDataGridViewMedicine.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.bunifuDataGridViewMedicine.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(225)))), ((int)(((byte)(132)))));
             this.bunifuDataGridViewMedicine.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(245)))), ((int)(((byte)(214)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(225)))), ((int)(((byte)(132)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.bunifuDataGridViewMedicine.DefaultCellStyle = dataGridViewCellStyle3;
             this.bunifuDataGridViewMedicine.EnableHeadersVisualStyles = false;
-            this.bunifuDataGridViewMedicine.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.bunifuDataGridViewMedicine.HeaderBackColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuDataGridViewMedicine.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(240)))), ((int)(((byte)(193)))));
+            this.bunifuDataGridViewMedicine.HeaderBackColor = System.Drawing.Color.LimeGreen;
             this.bunifuDataGridViewMedicine.HeaderBgColor = System.Drawing.Color.Empty;
             this.bunifuDataGridViewMedicine.HeaderForeColor = System.Drawing.Color.White;
-            this.bunifuDataGridViewMedicine.Location = new System.Drawing.Point(14, 75);
+            this.bunifuDataGridViewMedicine.Location = new System.Drawing.Point(32, 75);
             this.bunifuDataGridViewMedicine.Name = "bunifuDataGridViewMedicine";
             this.bunifuDataGridViewMedicine.RowHeadersVisible = false;
             this.bunifuDataGridViewMedicine.RowTemplate.Height = 40;
             this.bunifuDataGridViewMedicine.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.bunifuDataGridViewMedicine.Size = new System.Drawing.Size(874, 554);
             this.bunifuDataGridViewMedicine.TabIndex = 4;
-            this.bunifuDataGridViewMedicine.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            this.bunifuDataGridViewMedicine.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.LimeGreen;
+            this.bunifuDataGridViewMedicine.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuDataGridViewMedicine_CellDoubleClick);
             // 
             // bunifubuttonMedicineDeleteSearch
             // 
@@ -493,6 +497,7 @@
             this.bunifubuttonMedicineDeleteSearch.Size = new System.Drawing.Size(111, 34);
             this.bunifubuttonMedicineDeleteSearch.TabIndex = 3;
             this.bunifubuttonMedicineDeleteSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifubuttonMedicineDeleteSearch.Click += new System.EventHandler(this.bunifubuttonMedicineDeleteSearch_Click);
             // 
             // bunifuLabel1
             // 
@@ -583,6 +588,8 @@
             this.bunifuTextBoxMedicineSearch.TextPlaceholder = "Enter text";
             this.bunifuTextBoxMedicineSearch.UseSystemPasswordChar = false;
             this.bunifuTextBoxMedicineSearch.WordWrap = true;
+            this.bunifuTextBoxMedicineSearch.TextChange += new System.EventHandler(this.bunifuTextBoxMedicineSearch_TextChange);
+            this.bunifuTextBoxMedicineSearch.KeyDown += new System.Windows.Forms.KeyEventHandler(this.bunifuTextBoxMedicineSearch_KeyDown);
             // 
             // bunifuElipse1
             // 
