@@ -26,11 +26,7 @@ namespace DO_AN_CUA_HAN.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-<<<<<<< HEAD
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=JUNKYE;Initial Catalog=eHospital;Integrated Security=True")]
-=======
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LAPTOP-3RFD0JLN;Initial Catalog=eHospital;Integrated Security=True")]
->>>>>>> 036a5f2aa525e1ed97d1b33ad4aea318d5aa0360
         public string eHospital {
             get {
                 return ((string)(this["eHospital"]));
