@@ -182,7 +182,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EntityValidator.cs" />
     <Compile Include="Excel\UserInfo.cs" />
     <Compile Include="Funtional\SqlResult.cs" />
     <Compile Include="Model\Assignment.cs" />
@@ -611,6 +610,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormAssignDetail.resx">
       <DependentUpon>FormAssignDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormDiseaseDetail.resx">
       <DependentUpon>FormDiseaseDetail.cs</DependentUpon>
