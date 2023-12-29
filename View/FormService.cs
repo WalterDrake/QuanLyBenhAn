@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using DevComponents.DotNetBar.Validator;
 using DO_AN_CUA_HAN.Model;
 using Bunifu.UI.WinForms;
 
@@ -42,8 +41,11 @@ namespace DO_AN_CUA_HAN.View
 
         private void buttonOk_Click(object sender, EventArgs e)
         {
-            /*if (!superValidator1.Validate())
-                return;*/
+            if (string.IsNullOrEmpty(textBoxServiceName.Text))
+                bunifuSnackbar1.Show(this, "Thiếu tên dịch vụ", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+            if (string.IsNullOrEmpty(textBoxPrice.Text))
+                bunifuSnackbar1.Show(this, "Thiếu thông tin giá dịch vụ", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+
             try
             {
                 if (UserAction == "edit")

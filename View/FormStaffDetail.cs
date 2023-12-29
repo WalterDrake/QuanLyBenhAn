@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using DevComponents.DotNetBar.Validator;
 using DO_AN_CUA_HAN.Model;
 using System.Windows.Forms.VisualStyles;
 
@@ -74,10 +73,18 @@ namespace DO_AN_CUA_HAN .View
             decimal tempDecimal;
 
             // If fields is not validated then do nothing
-           /* if (!superValidator1.Validate())
-            {
-                return;
-            }*/
+            if (string.IsNullOrEmpty(textBoxFirstName.Text))
+                bunifuSnackbar1.Show(this, "Thiếu tên", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+            if (string.IsNullOrEmpty(textBoxLastName.Text))
+                bunifuSnackbar1.Show(this, "Thiếu họ", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+            if (string.IsNullOrEmpty(textBoxPassword.Text))
+                bunifuSnackbar1.Show(this, "Thiếu mật khẩu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+            if (string.IsNullOrEmpty(textBoxPasswordCheck.Text))
+                bunifuSnackbar1.Show(this, "Thiếu mật khẩu xác nhận", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+            if (string.IsNullOrEmpty(textBoxIdentityCard.Text))
+                bunifuSnackbar1.Show(this, "Thiếu thông tin CCCD", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+            if (string.IsNullOrEmpty(textBoxAddress.Text))
+                bunifuSnackbar1.Show(this, "Thiếu địa chỉ", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
 
             // Set StaffDetail property with value in staffdetail form            
             StaffDetail.DepartmentID = Convert.ToInt32(dropDownDepartment.SelectedValue.ToString());

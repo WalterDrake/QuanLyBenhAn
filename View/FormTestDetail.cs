@@ -8,7 +8,6 @@ using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using DO_AN_CUA_HAN.Functional;
-using DevComponents.DotNetBar.Validator;
 using DO_AN_CUA_HAN.Model;
 using System.Windows.Forms.VisualStyles;
 

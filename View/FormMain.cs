@@ -27,9 +27,6 @@ namespace DO_AN_CUA_HAN.View
             timer = new Timer();
             timer.Interval = 10;
             timer.Tick += Timer_Tick;
-
-            
-
         }
         public FormMain(Staff staff)
         {
@@ -37,13 +34,6 @@ namespace DO_AN_CUA_HAN.View
             loginStaff = staff;
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-            
-           
-
-        }
         private void Timer_Tick(object sender, EventArgs e)
         {
             // Di chuyển đối tượng
@@ -58,7 +48,6 @@ namespace DO_AN_CUA_HAN.View
         }
 
        
-
         private void bunifuLabel2_Click(object sender, EventArgs e)
         {
             bunifuShadowPanel3.Controls.Remove(this);
@@ -174,9 +163,6 @@ namespace DO_AN_CUA_HAN.View
             timer.Start(); // Bắt đầu Timer để bắt đầu di chuyển đối tượng
         }
 
-        private void bunifuLabel14_Click(object sender, EventArgs e)
-        {
-        }
     }
 }
     

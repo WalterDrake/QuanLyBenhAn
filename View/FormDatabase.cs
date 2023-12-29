@@ -1,5 +1,4 @@
 ﻿using Bunifu.UI.WinForms;
-using DevComponents.DotNetBar.Validator;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -28,8 +27,7 @@ namespace DO_AN_CUA_HAN.View
         {
             this.Close();
         }
-
-        private void bunifuButton11_Click(object sender, EventArgs e)
+            private void bunifuButton11_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(bunifuTextBoxUsername.Text))
             {
@@ -49,6 +47,15 @@ namespace DO_AN_CUA_HAN.View
 
             bunifuSnackbar1.Show(this, "Khởi động lại chương trình để kết nối mới có hiệu lực!", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
             this.Close();
+        }
+
+        private void bunifuTextBoxUsername_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                bunifuTextBoxUsername.SelectAll();
+            }
+            catch { }
         }
     }
 }

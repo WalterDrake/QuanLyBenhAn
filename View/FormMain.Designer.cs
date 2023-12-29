@@ -557,7 +557,6 @@
             this.bunifuLabel14.Text = "Chẩn đoán";
             this.bunifuLabel14.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel14.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            this.bunifuLabel14.Click += new System.EventHandler(this.bunifuLabel14_Click);
             // 
             // bunifuPictureBox11
             // 

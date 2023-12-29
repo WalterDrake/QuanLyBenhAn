@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using DevComponents.DotNetBar.Validator;
 using DO_AN_CUA_HAN.Model;
 
 namespace DO_AN_CUA_HAN.View
@@ -65,9 +64,12 @@ namespace DO_AN_CUA_HAN.View
         }
 
         private void buttonOk_Click(object sender, System.EventArgs e)
-        {/*
-            if (!superValidator1.Validate())
-                return;*/
+        {
+            if (string.IsNullOrEmpty(textBoxWeight.Text))
+                bunifuSnackbar1.Show(this, "Thiếu thông tin cân nặng", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+            if (string.IsNullOrEmpty(textBoxBloodPressure.Text))
+                bunifuSnackbar1.Show(this, "Thiếu thông tin huyết áp", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+
             if (Patient.IsPatientExist(int.Parse(textBoxPatientID.Text)))
             {
                 try

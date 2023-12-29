@@ -9,11 +9,9 @@ using System.Threading.Tasks;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using System.Drawing.Drawing2D;
-using DevComponents.DotNetBar.Metro;
 using System.Drawing.Text;
 using Bunifu.Framework.UI;
 using Bunifu.UI.WinForms;
-using DevComponents.DotNetBar.Validator;
 using DO_AN_CUA_HAN.Model;
 
 namespace DO_AN_CUA_HAN.View

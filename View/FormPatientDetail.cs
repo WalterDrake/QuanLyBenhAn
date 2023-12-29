@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using DevComponents.DotNetBar.Validator;
 using DO_AN_CUA_HAN.Model;
 using System.Windows.Forms.VisualStyles;
 using Bunifu.UI.WinForms;
@@ -52,10 +51,12 @@ namespace  DO_AN_CUA_HAN.View
             decimal tempDecimal;
 
             // If fields is not validated then do nothing
-            /*if (!superValidator1.Validate())
-            {
-                return;
-            }*/
+            if (string.IsNullOrEmpty(textBoxFirstName.Text))
+                bunifuSnackbar1.Show(this, "Thiếu tên", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+            if (string.IsNullOrEmpty(textBoxLastName.Text))
+                bunifuSnackbar1.Show(this, "Thiếu họ", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+            if (string.IsNullOrEmpty(textBoxIdentityCard.Text))
+                bunifuSnackbar1.Show(this, "Thiếu thông CCCD", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
 
             // Set PatientDetail property with value in patientdetail form
             PatientDetail.FirstName = textBoxFirstName.Text;

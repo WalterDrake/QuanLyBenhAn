@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using DevComponents.DotNetBar.Validator;
 using DO_AN_CUA_HAN.Model;
 using System.Windows.Forms.VisualStyles;
 
@@ -43,8 +42,9 @@ namespace DO_AN_CUA_HAN.View
 
         private void buttonOk_Click(object sender, EventArgs e)
         {
-            /*if (!superValidator1.Validate())
-                return;*/
+            if (string.IsNullOrEmpty(textBoxPatientID.Text))
+                bunifuSnackbar1.Show(this, "Thiếu thông tin mã bệnh nhân", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+
             HBDetail.Patient = Convert.ToInt32(textBoxPatientID.Text);
             String str = comboBoxState.Items[comboBoxState.SelectedIndex].ToString();
             HBDetail.State = 1;

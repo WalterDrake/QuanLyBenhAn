@@ -8,7 +8,6 @@ using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using DO_AN_CUA_HAN.Model;
-using DevComponents.DotNetBar.Validator;
 
 namespace DO_AN_CUA_HAN.View
 {
@@ -43,8 +42,14 @@ namespace DO_AN_CUA_HAN.View
 
         private void buttonOk_Click(object sender, EventArgs e)
         {
-            /*if (!superValidator1.Validate())
-                return;*/
+
+            if (string.IsNullOrEmpty(textBoxMaterialName.Text))
+                bunifuSnackbar1.Show(this, "Thiếu tên vật tư", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+            if (string.IsNullOrEmpty(textBoxQuantity.Text))
+                bunifuSnackbar1.Show(this, "Thiếu số lượng vật tư", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+            if (string.IsNullOrEmpty(textBoxPrice.Text))
+                bunifuSnackbar1.Show(this, "Thiếu thông tên giá vật tư", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+
             try
             {
                 if (UserAction == "edit")

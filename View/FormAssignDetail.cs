@@ -124,6 +124,7 @@ namespace DO_AN_CUA_HAN.View
             }
             return false;
         }
+
         private void buttonOk_Click(object sender, EventArgs e)
         {
             if (listBoxCurrentStaff.Items.Count > 0)
@@ -153,7 +154,7 @@ namespace DO_AN_CUA_HAN.View
                                         AssignmentDetail.InsertAssignmentDetails(newAD);
                                     }
                                     listAD.Clear();
-                                    bunifuSnackbar1.Show(this,"Cập nhập thông tin bảng phân công thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success,1000,null,Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                                    bunifuSnackbar1.Show(this, "Cập nhập thông tin bảng phân công thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                                 }
                             }
                         }
@@ -189,9 +190,11 @@ namespace DO_AN_CUA_HAN.View
                 bunifuSnackbar1.Show(this, "Chưa có nhân viên nào tham gia phân công chăm sóc bệnh nhân", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
             }
         }
+
         private void buttonClose_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+   
     }
 }

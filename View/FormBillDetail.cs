@@ -1,5 +1,4 @@
-﻿using DevComponents.DotNetBar.Validator;
-using DO_AN_CUA_HAN.Model;
+﻿using DO_AN_CUA_HAN.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

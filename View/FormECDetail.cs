@@ -84,11 +84,12 @@ namespace DO_AN_CUA_HAN.View
                 try
                 {
 
-                    /*if (!superValidator1.Validate())
-                    {
-                        return;
-                    }*/
-                    if (this.UserAction.Equals("edit"))
+                if (string.IsNullOrEmpty(textBoxResult.Text))
+                {
+                    bunifuSnackbar1.Show(this, "Thiếu kết quả khám bệnh", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+
+                }
+                if (this.UserAction.Equals("edit"))
                     {
                         ExaminationCertificate newEC = new ExaminationCertificate();
                         newEC = this.ECDetail;

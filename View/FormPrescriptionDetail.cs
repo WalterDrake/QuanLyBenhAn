@@ -8,7 +8,6 @@ using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using DO_AN_CUA_HAN.Functional;
-using DevComponents.DotNetBar.Validator;
 using DO_AN_CUA_HAN.Model;
 namespace DO_AN_CUA_HAN.View
 {
@@ -97,8 +96,11 @@ namespace DO_AN_CUA_HAN.View
 
         private void buttonInsert_Click(object sender, EventArgs e)
         {
-            /*if (!superValidator1.Validate())
-                return;*/
+            if (string.IsNullOrEmpty(textBoxInputQuantity.Text))
+                bunifuSnackbar1.Show(this, "Thiếu số lượng thuốc cần kê", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+            if (string.IsNullOrEmpty(textBoxInputInstruction.Text))
+                bunifuSnackbar1.Show(this, "Thiếu thông tên hướng dẫn", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+
             if (listMedicine.Count > 0)
             {
 
