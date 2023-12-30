@@ -364,7 +364,7 @@
             this.textBoxInputInstruction.DefaultFont = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.textBoxInputInstruction.DefaultText = "";
             this.textBoxInputInstruction.FillColor = System.Drawing.Color.White;
-            this.textBoxInputInstruction.ForeColor = System.Drawing.Color.Gray;
+            this.textBoxInputInstruction.ForeColor = System.Drawing.Color.Black;
             this.textBoxInputInstruction.HideSelection = true;
             this.textBoxInputInstruction.IconLeft = null;
             this.textBoxInputInstruction.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
@@ -395,7 +395,7 @@
             this.textBoxInputInstruction.OnHoverState = stateProperties3;
             stateProperties4.BorderColor = System.Drawing.Color.Silver;
             stateProperties4.FillColor = System.Drawing.Color.White;
-            stateProperties4.ForeColor = System.Drawing.Color.Gray;
+            stateProperties4.ForeColor = System.Drawing.Color.Black;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxInputInstruction.OnIdleState = stateProperties4;
             this.textBoxInputInstruction.Padding = new System.Windows.Forms.Padding(3);
@@ -462,7 +462,7 @@
             this.textBoxInputQuantity.DefaultFont = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.textBoxInputQuantity.DefaultText = "";
             this.textBoxInputQuantity.FillColor = System.Drawing.Color.White;
-            this.textBoxInputQuantity.ForeColor = System.Drawing.Color.Gray;
+            this.textBoxInputQuantity.ForeColor = System.Drawing.Color.Black;
             this.textBoxInputQuantity.HideSelection = true;
             this.textBoxInputQuantity.IconLeft = null;
             this.textBoxInputQuantity.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
@@ -493,7 +493,7 @@
             this.textBoxInputQuantity.OnHoverState = stateProperties7;
             stateProperties8.BorderColor = System.Drawing.Color.Silver;
             stateProperties8.FillColor = System.Drawing.Color.White;
-            stateProperties8.ForeColor = System.Drawing.Color.Gray;
+            stateProperties8.ForeColor = System.Drawing.Color.Black;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxInputQuantity.OnIdleState = stateProperties8;
             this.textBoxInputQuantity.Padding = new System.Windows.Forms.Padding(3);
@@ -681,7 +681,7 @@
             this.textBoxAddInstruction.DefaultFont = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.textBoxAddInstruction.DefaultText = "";
             this.textBoxAddInstruction.FillColor = System.Drawing.Color.White;
-            this.textBoxAddInstruction.ForeColor = System.Drawing.Color.Gray;
+            this.textBoxAddInstruction.ForeColor = System.Drawing.Color.Black;
             this.textBoxAddInstruction.HideSelection = true;
             this.textBoxAddInstruction.IconLeft = null;
             this.textBoxAddInstruction.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
@@ -712,7 +712,7 @@
             this.textBoxAddInstruction.OnHoverState = stateProperties11;
             stateProperties12.BorderColor = System.Drawing.Color.Silver;
             stateProperties12.FillColor = System.Drawing.Color.White;
-            stateProperties12.ForeColor = System.Drawing.Color.Gray;
+            stateProperties12.ForeColor = System.Drawing.Color.Black;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxAddInstruction.OnIdleState = stateProperties12;
             this.textBoxAddInstruction.Padding = new System.Windows.Forms.Padding(3);
@@ -779,7 +779,7 @@
             this.textBoxAddQuantity.DefaultFont = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.textBoxAddQuantity.DefaultText = "";
             this.textBoxAddQuantity.FillColor = System.Drawing.Color.White;
-            this.textBoxAddQuantity.ForeColor = System.Drawing.Color.Gray;
+            this.textBoxAddQuantity.ForeColor = System.Drawing.Color.Black;
             this.textBoxAddQuantity.HideSelection = true;
             this.textBoxAddQuantity.IconLeft = null;
             this.textBoxAddQuantity.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
@@ -810,7 +810,7 @@
             this.textBoxAddQuantity.OnHoverState = stateProperties15;
             stateProperties16.BorderColor = System.Drawing.Color.Silver;
             stateProperties16.FillColor = System.Drawing.Color.White;
-            stateProperties16.ForeColor = System.Drawing.Color.Gray;
+            stateProperties16.ForeColor = System.Drawing.Color.Black;
             stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxAddQuantity.OnIdleState = stateProperties16;
             this.textBoxAddQuantity.Padding = new System.Windows.Forms.Padding(3);
@@ -841,6 +841,7 @@
             // listSelectedMedicine
             // 
             this.listSelectedMedicine.AccessibleRole = System.Windows.Forms.AccessibleRole.Clock;
+            this.listSelectedMedicine.ForeColor = System.Drawing.Color.Black;
             this.listSelectedMedicine.FormattingEnabled = true;
             this.listSelectedMedicine.Location = new System.Drawing.Point(184, 47);
             this.listSelectedMedicine.Margin = new System.Windows.Forms.Padding(2);
@@ -1217,7 +1218,7 @@
             this.dateCreate.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             this.dateCreate.FillDatePicker = false;
             this.dateCreate.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.dateCreate.ForeColor = System.Drawing.Color.Gray;
+            this.dateCreate.ForeColor = System.Drawing.Color.Black;
             this.dateCreate.Icon = ((System.Drawing.Image)(resources.GetObject("dateCreate.Icon")));
             this.dateCreate.IconColor = System.Drawing.Color.DimGray;
             this.dateCreate.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
@@ -1291,7 +1292,7 @@
             this.textBoxPatientID.DefaultFont = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.textBoxPatientID.DefaultText = "";
             this.textBoxPatientID.FillColor = System.Drawing.Color.White;
-            this.textBoxPatientID.ForeColor = System.Drawing.Color.Gray;
+            this.textBoxPatientID.ForeColor = System.Drawing.Color.Black;
             this.textBoxPatientID.HideSelection = true;
             this.textBoxPatientID.IconLeft = null;
             this.textBoxPatientID.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
@@ -1322,7 +1323,7 @@
             this.textBoxPatientID.OnHoverState = stateProperties19;
             stateProperties20.BorderColor = System.Drawing.Color.Silver;
             stateProperties20.FillColor = System.Drawing.Color.White;
-            stateProperties20.ForeColor = System.Drawing.Color.Gray;
+            stateProperties20.ForeColor = System.Drawing.Color.Black;
             stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxPatientID.OnIdleState = stateProperties20;
             this.textBoxPatientID.Padding = new System.Windows.Forms.Padding(3);
@@ -1389,7 +1390,7 @@
             this.textBoxStaffID.DefaultFont = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.textBoxStaffID.DefaultText = "";
             this.textBoxStaffID.FillColor = System.Drawing.Color.White;
-            this.textBoxStaffID.ForeColor = System.Drawing.Color.Gray;
+            this.textBoxStaffID.ForeColor = System.Drawing.Color.Black;
             this.textBoxStaffID.HideSelection = true;
             this.textBoxStaffID.IconLeft = null;
             this.textBoxStaffID.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
@@ -1420,7 +1421,7 @@
             this.textBoxStaffID.OnHoverState = stateProperties23;
             stateProperties24.BorderColor = System.Drawing.Color.Silver;
             stateProperties24.FillColor = System.Drawing.Color.White;
-            stateProperties24.ForeColor = System.Drawing.Color.Gray;
+            stateProperties24.ForeColor = System.Drawing.Color.Black;
             stateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxStaffID.OnIdleState = stateProperties24;
             this.textBoxStaffID.Padding = new System.Windows.Forms.Padding(3);
@@ -1467,7 +1468,7 @@
             this.textBoxPrescriptionID.DefaultFont = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.textBoxPrescriptionID.DefaultText = "";
             this.textBoxPrescriptionID.FillColor = System.Drawing.Color.White;
-            this.textBoxPrescriptionID.ForeColor = System.Drawing.Color.Gray;
+            this.textBoxPrescriptionID.ForeColor = System.Drawing.Color.Black;
             this.textBoxPrescriptionID.HideSelection = true;
             this.textBoxPrescriptionID.IconLeft = null;
             this.textBoxPrescriptionID.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
@@ -1498,7 +1499,7 @@
             this.textBoxPrescriptionID.OnHoverState = stateProperties27;
             stateProperties28.BorderColor = System.Drawing.Color.Silver;
             stateProperties28.FillColor = System.Drawing.Color.White;
-            stateProperties28.ForeColor = System.Drawing.Color.Gray;
+            stateProperties28.ForeColor = System.Drawing.Color.Black;
             stateProperties28.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxPrescriptionID.OnIdleState = stateProperties28;
             this.textBoxPrescriptionID.Padding = new System.Windows.Forms.Padding(3);
@@ -1609,6 +1610,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormPrescriptionDetail";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormPrescriptionDetail";
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuShadowPanel3.ResumeLayout(false);

@@ -75,7 +75,7 @@ namespace DO_AN_CUA_HAN.View
         {
             if(string.IsNullOrEmpty(textBoxRoleName.Text))
             {
-                bunifuSnackbar1.Show(this, "Thiếu tên phân quyền", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                bunifuSnackbar1.Show(this, "Thiếu tên phân quyền", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                 return;
             }
             try
@@ -118,7 +118,7 @@ namespace DO_AN_CUA_HAN.View
             }
             catch
             {
-                bunifuSnackbar1.Show(this, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                bunifuSnackbar1.Show(this, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                 return;
             }
 

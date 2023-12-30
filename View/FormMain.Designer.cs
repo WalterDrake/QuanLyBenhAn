@@ -85,6 +85,7 @@
             this.bunifuShadowPanel3 = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.bunifuGradientPanel1_FormMain.SuspendLayout();
             this.bunifuShadowPanel1.SuspendLayout();
             this.bunifuShadowPanel19.SuspendLayout();
@@ -128,6 +129,7 @@
             this.bunifuGradientPanel1_FormMain.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1_FormMain.BackgroundImage")));
             this.bunifuGradientPanel1_FormMain.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuGradientPanel1_FormMain.BorderRadius = 100;
+            this.bunifuGradientPanel1_FormMain.Controls.Add(this.bunifuPanel1);
             this.bunifuGradientPanel1_FormMain.Controls.Add(this.bunifuShadowPanel2);
             this.bunifuGradientPanel1_FormMain.Controls.Add(this.bunifuShadowPanel1);
             this.bunifuGradientPanel1_FormMain.Controls.Add(this.bunifuShadowPanel3);
@@ -139,7 +141,7 @@
             this.bunifuGradientPanel1_FormMain.Location = new System.Drawing.Point(0, 0);
             this.bunifuGradientPanel1_FormMain.Name = "bunifuGradientPanel1_FormMain";
             this.bunifuGradientPanel1_FormMain.Quality = 10;
-            this.bunifuGradientPanel1_FormMain.Size = new System.Drawing.Size(1235, 721);
+            this.bunifuGradientPanel1_FormMain.Size = new System.Drawing.Size(1235, 772);
             this.bunifuGradientPanel1_FormMain.TabIndex = 0;
             // 
             // bunifuShadowPanel2
@@ -150,7 +152,7 @@
             this.bunifuShadowPanel2.BorderThickness = 1;
             this.bunifuShadowPanel2.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
             this.bunifuShadowPanel2.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.bunifuShadowPanel2.Location = new System.Drawing.Point(11, 564);
+            this.bunifuShadowPanel2.Location = new System.Drawing.Point(11, 615);
             this.bunifuShadowPanel2.Name = "bunifuShadowPanel2";
             this.bunifuShadowPanel2.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(228)))), ((int)(((byte)(225)))));
             this.bunifuShadowPanel2.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(228)))), ((int)(((byte)(225)))));
@@ -188,7 +190,7 @@
             this.bunifuShadowPanel1.Controls.Add(this.bunifuShadowPanel5);
             this.bunifuShadowPanel1.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Gradient;
             this.bunifuShadowPanel1.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.bunifuShadowPanel1.Location = new System.Drawing.Point(11, 3);
+            this.bunifuShadowPanel1.Location = new System.Drawing.Point(11, 54);
             this.bunifuShadowPanel1.Name = "bunifuShadowPanel1";
             this.bunifuShadowPanel1.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(109)))), ((int)(((byte)(160)))));
             this.bunifuShadowPanel1.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(217)))), ((int)(((byte)(183)))));
@@ -1160,12 +1162,27 @@
             this.bunifuElipse1.ElipseRadius = 100;
             this.bunifuElipse1.TargetControl = this;
             // 
+            // bunifuPanel1
+            // 
+            this.bunifuPanel1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(216)))), ((int)(((byte)(183)))));
+            this.bunifuPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel1.BackgroundImage")));
+            this.bunifuPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuPanel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(216)))), ((int)(((byte)(183)))));
+            this.bunifuPanel1.BorderRadius = 20;
+            this.bunifuPanel1.BorderThickness = 1;
+            this.bunifuPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bunifuPanel1.Location = new System.Drawing.Point(0, 0);
+            this.bunifuPanel1.Name = "bunifuPanel1";
+            this.bunifuPanel1.ShowBorders = true;
+            this.bunifuPanel1.Size = new System.Drawing.Size(1235, 38);
+            this.bunifuPanel1.TabIndex = 3;
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CausesValidation = false;
-            this.ClientSize = new System.Drawing.Size(1235, 721);
+            this.ClientSize = new System.Drawing.Size(1235, 772);
             this.Controls.Add(this.bunifuGradientPanel1_FormMain);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -1284,5 +1301,6 @@
         private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel18;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel15;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox16;
+        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
     }
 }

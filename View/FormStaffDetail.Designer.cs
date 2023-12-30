@@ -174,7 +174,7 @@
             this.textBoxPasswordCheck.DefaultFont = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.textBoxPasswordCheck.DefaultText = "";
             this.textBoxPasswordCheck.FillColor = System.Drawing.Color.White;
-            this.textBoxPasswordCheck.ForeColor = System.Drawing.Color.Gray;
+            this.textBoxPasswordCheck.ForeColor = System.Drawing.Color.Black;
             this.textBoxPasswordCheck.HideSelection = true;
             this.textBoxPasswordCheck.IconLeft = null;
             this.textBoxPasswordCheck.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
@@ -205,7 +205,7 @@
             this.textBoxPasswordCheck.OnHoverState = stateProperties3;
             stateProperties4.BorderColor = System.Drawing.Color.Silver;
             stateProperties4.FillColor = System.Drawing.Color.White;
-            stateProperties4.ForeColor = System.Drawing.Color.Gray;
+            stateProperties4.ForeColor = System.Drawing.Color.Black;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxPasswordCheck.OnIdleState = stateProperties4;
             this.textBoxPasswordCheck.Padding = new System.Windows.Forms.Padding(3);
@@ -290,7 +290,7 @@
             this.textBoxPassword.DefaultFont = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.textBoxPassword.DefaultText = "";
             this.textBoxPassword.FillColor = System.Drawing.Color.White;
-            this.textBoxPassword.ForeColor = System.Drawing.Color.Gray;
+            this.textBoxPassword.ForeColor = System.Drawing.Color.Black;
             this.textBoxPassword.HideSelection = true;
             this.textBoxPassword.IconLeft = null;
             this.textBoxPassword.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
@@ -321,7 +321,7 @@
             this.textBoxPassword.OnHoverState = stateProperties7;
             stateProperties8.BorderColor = System.Drawing.Color.Silver;
             stateProperties8.FillColor = System.Drawing.Color.White;
-            stateProperties8.ForeColor = System.Drawing.Color.Gray;
+            stateProperties8.ForeColor = System.Drawing.Color.Black;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxPassword.OnIdleState = stateProperties8;
             this.textBoxPassword.Padding = new System.Windows.Forms.Padding(3);
@@ -368,7 +368,7 @@
             this.textBoxStaffID.DefaultFont = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.textBoxStaffID.DefaultText = "";
             this.textBoxStaffID.FillColor = System.Drawing.Color.White;
-            this.textBoxStaffID.ForeColor = System.Drawing.Color.Gray;
+            this.textBoxStaffID.ForeColor = System.Drawing.Color.Black;
             this.textBoxStaffID.HideSelection = true;
             this.textBoxStaffID.IconLeft = null;
             this.textBoxStaffID.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
@@ -399,7 +399,7 @@
             this.textBoxStaffID.OnHoverState = stateProperties11;
             stateProperties12.BorderColor = System.Drawing.Color.Silver;
             stateProperties12.FillColor = System.Drawing.Color.White;
-            stateProperties12.ForeColor = System.Drawing.Color.Gray;
+            stateProperties12.ForeColor = System.Drawing.Color.Black;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxStaffID.OnIdleState = stateProperties12;
             this.textBoxStaffID.Padding = new System.Windows.Forms.Padding(3);
@@ -872,7 +872,7 @@
             this.textBoxIdentityCard.DefaultFont = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.textBoxIdentityCard.DefaultText = "";
             this.textBoxIdentityCard.FillColor = System.Drawing.Color.White;
-            this.textBoxIdentityCard.ForeColor = System.Drawing.Color.Gray;
+            this.textBoxIdentityCard.ForeColor = System.Drawing.Color.Black;
             this.textBoxIdentityCard.HideSelection = true;
             this.textBoxIdentityCard.IconLeft = null;
             this.textBoxIdentityCard.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
@@ -903,7 +903,7 @@
             this.textBoxIdentityCard.OnHoverState = stateProperties15;
             stateProperties16.BorderColor = System.Drawing.Color.Silver;
             stateProperties16.FillColor = System.Drawing.Color.White;
-            stateProperties16.ForeColor = System.Drawing.Color.Gray;
+            stateProperties16.ForeColor = System.Drawing.Color.Black;
             stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxIdentityCard.OnIdleState = stateProperties16;
             this.textBoxIdentityCard.Padding = new System.Windows.Forms.Padding(3);
@@ -1134,7 +1134,7 @@
             this.dateBirthday.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             this.dateBirthday.FillDatePicker = false;
             this.dateBirthday.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.dateBirthday.ForeColor = System.Drawing.Color.Gray;
+            this.dateBirthday.ForeColor = System.Drawing.Color.Black;
             this.dateBirthday.Icon = ((System.Drawing.Image)(resources.GetObject("dateBirthday.Icon")));
             this.dateBirthday.IconColor = System.Drawing.Color.DimGray;
             this.dateBirthday.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
@@ -1245,7 +1245,7 @@
             this.textBoxLastName.DefaultFont = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.textBoxLastName.DefaultText = "";
             this.textBoxLastName.FillColor = System.Drawing.Color.White;
-            this.textBoxLastName.ForeColor = System.Drawing.Color.Gray;
+            this.textBoxLastName.ForeColor = System.Drawing.Color.Black;
             this.textBoxLastName.HideSelection = true;
             this.textBoxLastName.IconLeft = null;
             this.textBoxLastName.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
@@ -1276,7 +1276,7 @@
             this.textBoxLastName.OnHoverState = stateProperties19;
             stateProperties20.BorderColor = System.Drawing.Color.Silver;
             stateProperties20.FillColor = System.Drawing.Color.White;
-            stateProperties20.ForeColor = System.Drawing.Color.Gray;
+            stateProperties20.ForeColor = System.Drawing.Color.Black;
             stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxLastName.OnIdleState = stateProperties20;
             this.textBoxLastName.Padding = new System.Windows.Forms.Padding(3);
@@ -1324,7 +1324,7 @@
             this.textBoxFirstName.DefaultFont = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.textBoxFirstName.DefaultText = "";
             this.textBoxFirstName.FillColor = System.Drawing.Color.White;
-            this.textBoxFirstName.ForeColor = System.Drawing.Color.Gray;
+            this.textBoxFirstName.ForeColor = System.Drawing.Color.Black;
             this.textBoxFirstName.HideSelection = true;
             this.textBoxFirstName.IconLeft = null;
             this.textBoxFirstName.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
@@ -1355,7 +1355,7 @@
             this.textBoxFirstName.OnHoverState = stateProperties23;
             stateProperties24.BorderColor = System.Drawing.Color.Silver;
             stateProperties24.FillColor = System.Drawing.Color.White;
-            stateProperties24.ForeColor = System.Drawing.Color.Gray;
+            stateProperties24.ForeColor = System.Drawing.Color.Black;
             stateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxFirstName.OnIdleState = stateProperties24;
             this.textBoxFirstName.Padding = new System.Windows.Forms.Padding(3);
@@ -1403,6 +1403,7 @@
             this.textBoxAddress.DefaultFont = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.textBoxAddress.DefaultText = "";
             this.textBoxAddress.FillColor = System.Drawing.Color.White;
+            this.textBoxAddress.ForeColor = System.Drawing.Color.Black;
             this.textBoxAddress.HideSelection = true;
             this.textBoxAddress.IconLeft = null;
             this.textBoxAddress.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
@@ -1433,7 +1434,7 @@
             this.textBoxAddress.OnHoverState = stateProperties27;
             stateProperties28.BorderColor = System.Drawing.Color.Silver;
             stateProperties28.FillColor = System.Drawing.Color.White;
-            stateProperties28.ForeColor = System.Drawing.Color.Empty;
+            stateProperties28.ForeColor = System.Drawing.Color.Black;
             stateProperties28.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxAddress.OnIdleState = stateProperties28;
             this.textBoxAddress.Padding = new System.Windows.Forms.Padding(3);
@@ -1618,6 +1619,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormStaffDetail";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormStaffDetail";
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuShadowPanel2.ResumeLayout(false);

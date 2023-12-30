@@ -630,7 +630,7 @@ namespace DO_AN_CUA_HAN.View
             {
                 if (bunifuDataGridViewBillDetail.Rows.Count <= 0)
                 {
-                        bunifuSnackbar1.Show(this, "Thiếu thông tin hoá đơn", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                        bunifuSnackbar1.Show(this, "Thiếu thông tin hoá đơn", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
 
                     return;
                 }

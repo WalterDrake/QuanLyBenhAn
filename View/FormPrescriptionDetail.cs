@@ -98,13 +98,13 @@ namespace DO_AN_CUA_HAN.View
         {
             if (string.IsNullOrEmpty(textBoxInputQuantity.Text))
             {
-                bunifuSnackbar1.Show(this, "Thiếu số lượng thuốc cần kê", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                bunifuSnackbar1.Show(this, "Thiếu số lượng thuốc cần kê", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                 return;
             }
 
             if (string.IsNullOrEmpty(textBoxInputInstruction.Text))
             {
-                bunifuSnackbar1.Show(this, "Thiếu thông tên hướng dẫn", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                bunifuSnackbar1.Show(this, "Thiếu thông tên hướng dẫn", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                 return;
             }
 
@@ -114,7 +114,7 @@ namespace DO_AN_CUA_HAN.View
                 int selectedIndex = comboBoxMedicine.SelectedIndex;
                 if (int.Parse(textBoxInputQuantity.Text) > listMedicine[selectedIndex].Quantity)
                 {
-                    bunifuSnackbar1.Show(this, "Số lượng thuốc không đáp ứng đủ nhu cầu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                    bunifuSnackbar1.Show(this, "Số lượng thuốc không đáp ứng đủ nhu cầu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                     return;
                 }
                 else
@@ -203,7 +203,7 @@ namespace DO_AN_CUA_HAN.View
                                 PrescriptionDetail.InsertPrescriptionDetail(newPD);
                             }
                             listDP.Clear();
-                            bunifuSnackbar1.Show(this, "Cập nhập thông tin bệnh thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                            bunifuSnackbar1.Show(this, "Cập nhập thông tin bệnh thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                         }
                     }
                 }
@@ -218,14 +218,14 @@ namespace DO_AN_CUA_HAN.View
                             listDP[i].PrescriptionID = prescriptionID;
                             PrescriptionDetail.InsertPrescriptionDetail(listDP[i]);
                         }
-                        bunifuSnackbar1.Show(this, "Thêm toa thuốc thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                        bunifuSnackbar1.Show(this, "Thêm toa thuốc thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                         listDP.Clear();
                     }
                 }
             }
             catch
             {
-                bunifuSnackbar1.Show(this, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                bunifuSnackbar1.Show(this, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
             }
             this.Close();
         }

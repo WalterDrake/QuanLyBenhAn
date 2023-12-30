@@ -43,12 +43,12 @@ namespace DO_AN_CUA_HAN.View
         {
             if (string.IsNullOrEmpty(textBoxServiceName.Text))
             {
-                bunifuSnackbar1.Show(this, "Thiếu tên dịch vụ", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                bunifuSnackbar1.Show(this, "Thiếu tên dịch vụ", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                 return;
             }
             if (string.IsNullOrEmpty(textBoxPrice.Text))
             {
-                bunifuSnackbar1.Show(this, "Thiếu thông tin giá dịch vụ", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                bunifuSnackbar1.Show(this, "Thiếu thông tin giá dịch vụ", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                 return;
             }
             try
@@ -62,7 +62,7 @@ namespace DO_AN_CUA_HAN.View
                     {
                         if (Service.UpdateService(ServiceDetail) > 0)
                         {
-                            bunifuSnackbar1.Show(this, "Cập nhập dịch vụ thành công thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                            bunifuSnackbar1.Show(this, "Cập nhập dịch vụ thành công thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                             return;
                         }
                     }
@@ -73,14 +73,14 @@ namespace DO_AN_CUA_HAN.View
                     Service newService = new Service(0, textBoxServiceName.Text, decimal.Parse(textBoxPrice.Text));
                     if (Service.InsertService(newService) > 0)
                     {
-                        bunifuSnackbar1.Show(this, "Thêm dịch vụ thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                        bunifuSnackbar1.Show(this, "Thêm dịch vụ thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                         return;
                     }
                 }
             }
             catch
             {
-                bunifuSnackbar1.Show(this, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                bunifuSnackbar1.Show(this, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                 return;
             }
 

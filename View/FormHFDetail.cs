@@ -66,14 +66,25 @@ namespace DO_AN_CUA_HAN.View
         private void buttonOk_Click(object sender, System.EventArgs e)
         {
             if (string.IsNullOrEmpty(textBoxPatientState.Text))
+            {
                 bunifuSnackbar1.Show(this, "Thiếu thông tin tình trạng sức khoẻ bệnh nhân", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                return;
+            }
             if (string.IsNullOrEmpty(textBoxPrehistory.Text))
+            {
                 bunifuSnackbar1.Show(this, "Thiếu thông tin tiền sử bệnh", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                return;
+            }
             if (string.IsNullOrEmpty(textBoxDisease.Text))
+            {
                 bunifuSnackbar1.Show(this, "Thiếu thông tin bệnh mắc phải", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                return;
+            }
             if (string.IsNullOrEmpty(textBoxTreatment.Text))
+            {
                 bunifuSnackbar1.Show(this, "Thiếu thông tin hướng điều trị", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
-
+                return;
+            }
             if (Patient.IsPatientExist(int.Parse(textBoxPatientID.Text)))
             {
                 try
@@ -123,7 +134,7 @@ namespace DO_AN_CUA_HAN.View
                                 bunifuSnackbar1.Show(this, "Thêm bệnh án thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                                 return;
                             }
-                        }   
+                        }
                     }
                 }
                 catch
@@ -140,29 +151,28 @@ namespace DO_AN_CUA_HAN.View
 
             this.Close();
         }
-
         private void textBoxPatientState_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = !((e.KeyChar >= 'A' && e.KeyChar <= 'Z') ||
-              (e.KeyChar >= 'a' && e.KeyChar <= 'z') ||
-              e.KeyChar == 8 || // Backspace
-              e.KeyChar == 32 || // Space
-              e.KeyChar == 16 || // Shift
-              e.KeyChar == 46 || // Delete
-              (e.KeyChar >= 'À' && e.KeyChar <= 'ỹ') || // Vietnamese characters and accented vowels
-              (e.KeyChar >= 'à' && e.KeyChar <= 'ỹ'));
+             (e.KeyChar >= 'a' && e.KeyChar <= 'z') ||
+             e.KeyChar == 8 || // Backspace
+             e.KeyChar == 32 || // Space
+             e.KeyChar == 16 || // Shift
+             e.KeyChar == 46 || // Delete
+             (e.KeyChar >= 'À' && e.KeyChar <= 'ỹ') || // Vietnamese characters and accented vowels
+             (e.KeyChar >= 'à' && e.KeyChar <= 'ỹ'));
         }
 
         private void textBoxPrehistory_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = !((e.KeyChar >= 'A' && e.KeyChar <= 'Z') ||
-              (e.KeyChar >= 'a' && e.KeyChar <= 'z') ||
-              e.KeyChar == 8 || // Backspace
-              e.KeyChar == 32 || // Space
-              e.KeyChar == 16 || // Shift
-              e.KeyChar == 46 || // Delete
-              (e.KeyChar >= 'À' && e.KeyChar <= 'ỹ') || // Vietnamese characters and accented vowels
-              (e.KeyChar >= 'à' && e.KeyChar <= 'ỹ'));
+            (e.KeyChar >= 'a' && e.KeyChar <= 'z') ||
+            e.KeyChar == 8 || // Backspace
+            e.KeyChar == 32 || // Space
+            e.KeyChar == 16 || // Shift
+            e.KeyChar == 46 || // Delete
+            (e.KeyChar >= 'À' && e.KeyChar <= 'ỹ') || // Vietnamese characters and accented vowels
+            (e.KeyChar >= 'à' && e.KeyChar <= 'ỹ'));
         }
 
         private void textBoxDisease_KeyPress(object sender, KeyPressEventArgs e)

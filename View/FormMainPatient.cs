@@ -71,7 +71,7 @@ namespace DO_AN_CUA_HAN.View
             }
         }
 
-        // Refresh laij datagridview sau khi thao tac voi benh nhan
+        // Refresh lai datagridview sau khi thao tac voi benh nhan
 
         private void refreshDataViewPatient()
         {

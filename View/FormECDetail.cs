@@ -95,12 +95,12 @@ namespace DO_AN_CUA_HAN.View
                     newEC.Result = textBoxResult.Text;
                     newEC.State = comboBoxState.SelectedIndex;
                     newEC.Date = dateCreate.Value;
-                    DialogResult dialogResult = MessageBox.Show("Xác nhận cập nhập thông tin phiếu khám bệnh", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                    DialogResult dialogResult = MessageBox.Show("Xác nhận cập nhật thông tin phiếu khám bệnh", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                     if (dialogResult == DialogResult.Yes)
                     {
                         if (ExaminationCertificate.UpdateEC(newEC) > 0)
                         {
-                            bunifuSnackbar1.Show(this, "Cập nhập thông tin phiếu khám bệnh thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                            bunifuSnackbar1.Show(this, "Cập nhật thông tin phiếu khám bệnh thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                             return;
                         }
                     }
@@ -118,7 +118,7 @@ namespace DO_AN_CUA_HAN.View
 
                     if (ExaminationCertificate.UpdateEC(newEC) > 0)
                         {
-                            bunifuSnackbar1.Show(this, "Cập nhập kết quả khám bệnh thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                            bunifuSnackbar1.Show(this, "Cập nhật kết quả khám bệnh thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                             return;
                         }
                     }
@@ -131,9 +131,9 @@ namespace DO_AN_CUA_HAN.View
                     newEC.State = comboBoxState.SelectedIndex;
                     newEC.Date = dateCreate.Value;
                     newEC.Result = textBoxResult.Text;
-                    if (ExaminationCertificate.InsertEC(newEC) > 0)
-                    {
-                        /*FormReport reportForm = new FormReport();
+                    /*if (ExaminationCertificate.InsertEC(newEC) > 0)*/
+                   /* {
+                        *//*FormReport reportForm = new FormReport();
 
                         reportForm.ReportType = "EC";
                             reportForm.ObjectID = ExaminationCertificate.GetCurrentECID();
@@ -145,8 +145,8 @@ namespace DO_AN_CUA_HAN.View
 
                             Bill newBill = new Bill(Bill.SERVICEBILL, patientID, staffID);
                             FormBillDetail billDetailForm = new FormBillDetail("insertExamination", newBill);
-                            billDetailForm.ShowDialog();*/
-                    }
+                            billDetailForm.ShowDialog();*//*
+                    }*/
                 }
             }
             catch

@@ -77,7 +77,7 @@ namespace DO_AN_CUA_HAN.View
             }
             catch (SqlException exception)
             {
-                bunifuSnackbar1.Show(this, exception.Message, Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                bunifuSnackbar1.Show(this, exception.Message, Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
 
             }
         }
