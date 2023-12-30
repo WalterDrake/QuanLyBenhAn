@@ -51,16 +51,16 @@ namespace DO_AN_CUA_HAN.View
             dateCreate.Value = hfDetail.Date;
             textBoxPatientState.Text = hfDetail.PatientState;
             textBoxPrehistory.Text = hfDetail.PreHistory;
-            textBoxDisease.Text = hfDetail.PreHistory;
+            textBoxDisease.Text = hfDetail.Disease;
             textBoxTreatment.Text = hfDetail.Treament;
         }
         private void SetAutoComplete()
         {
-            /*DataTable dtPatientID = Patient.GetListPatientID();
+            DataTable dtPatientID = Patient.GetListPatientID();
             for (int i = 0; i < dtPatientID.Rows.Count; i++)
             {
                 textBoxPatientID.AutoCompleteCustomSource.Add(dtPatientID.Rows[i][0].ToString());
-            }*/
+            }
         }
 
         private void buttonOk_Click(object sender, System.EventArgs e)

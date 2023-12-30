@@ -18,7 +18,10 @@ namespace DO_AN_CUA_HAN.View
         {
             InitializeComponent();
         }
-
+        public void tabPanelBill()
+        {
+            refreshbunifuDataGridViewBill();
+        }
         private void bunifuButtonEdit_Click(object sender, EventArgs e)
         {
             if (bunifuDataGridViewBill.SelectedRows.Count > 0)

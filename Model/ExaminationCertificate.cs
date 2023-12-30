@@ -81,8 +81,8 @@ namespace DO_AN_CUA_HAN.Model
             if (dataTable.Rows.Count > 0)
             {
                 newEC.ECID = Convert.ToInt32(dataTable.Rows[0][0]);
-                newEC.PatientID = Convert.ToInt32(dataTable.Rows[0][0]);
-                newEC.StaffID = Convert.ToInt32(dataTable.Rows[0][0]);
+                newEC.PatientID = Convert.ToInt32(dataTable.Rows[0][1]);
+                newEC.StaffID = Convert.ToInt32(dataTable.Rows[0][2]);
                 newEC.Date = (DateTime)dataTable.Rows[0][3];
                 newEC.Result = (String)dataTable.Rows[0][4];
                 newEC.State = (int)dataTable.Rows[0][5];

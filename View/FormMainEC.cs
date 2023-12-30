@@ -13,7 +13,7 @@ namespace DO_AN_CUA_HAN.View
 {
     public partial class FormMainEC : UserControl
     {
-        Staff loginStaffs;
+        Staff loginStaffs = new Staff();
 
         public FormMainEC()
         {
@@ -27,7 +27,7 @@ namespace DO_AN_CUA_HAN.View
         public FormMainEC(Staff loginStaff)
         {
             InitializeComponent();
-            loginStaffs = loginStaff;
+            this.loginStaffs = loginStaff;
             DataTable table = ExaminationCertificate.GetListEC();
             bunifuDataGridViewEC.DataSource = table;
 
@@ -74,7 +74,7 @@ namespace DO_AN_CUA_HAN.View
                     int ecID = Convert.ToInt32(bunifuDataGridViewEC.SelectedRows[0].Cells[0].Value);
                     ExaminationCertificate updateEC = ExaminationCertificate.GetEC(ecID);
                     //Current user
-                    int staffID = Convert.ToInt32(loginStaffs.StaffID);
+                    int staffID = loginStaffs.StaffID;
                     FormECDetail formECD = new FormECDetail(updateEC, "updateResult", staffID);
                     formECD.ShowDialog();
 

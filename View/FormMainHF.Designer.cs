@@ -290,6 +290,7 @@
             // bunifuDataGridViewHF
             // 
             this.bunifuDataGridViewHF.AllowCustomTheming = false;
+            this.bunifuDataGridViewHF.AllowUserToAddRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(242)))), ((int)(((byte)(203)))));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             this.bunifuDataGridViewHF.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;

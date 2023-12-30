@@ -68,7 +68,7 @@ namespace DO_AN_CUA_HAN.View
         {
             bunifuTextBoxHICD.Text = hcDetail.HCID.ToString();
             bunifuTextBoxStaffID.Text = hcDetail.StaffID.ToString();
-            bunifuTextBoxHICD.Text = hcDetail.PatientID.ToString();
+            bunifuTextBoxPatientID.Text = hcDetail.PatientID.ToString();
             bunifuTextBoxReason.Text = hcDetail.Reason;
             bunifuDatePickerHospitalizate.Value = hcDetail.Date;
             bunifuDropdownState.SelectedIndex = hcDetail.State;

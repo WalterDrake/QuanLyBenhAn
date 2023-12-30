@@ -66,7 +66,7 @@ namespace DO_AN_CUA_HAN.View
             {
                 textBoxECID.Text = ecDetail.ECID.ToString(); ;
                 textBoxPatientID.Text = ecDetail.PatientID.ToString();
-                textBoxStaffID.Text = staffID.ToString(); ;
+                textBoxStaffID.Text = staffID.ToString();
                 dateCreate.Value = ecDetail.Date;
                 textBoxResult.Text = ecDetail.Result;
                 comboBoxState.SelectedIndex = ecDetail.State;

@@ -235,11 +235,12 @@
             this.bunifuLabel16.Location = new System.Drawing.Point(37, 13);
             this.bunifuLabel16.Name = "bunifuLabel16";
             this.bunifuLabel16.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel16.Size = new System.Drawing.Size(66, 17);
+            this.bunifuLabel16.Size = new System.Drawing.Size(62, 17);
             this.bunifuLabel16.TabIndex = 13;
-            this.bunifuLabel16.Text = "Nhập viện";
+            this.bunifuLabel16.Text = "Xuất viện";
             this.bunifuLabel16.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel16.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuLabel16.Click += new System.EventHandler(this.bunifuLabel16_Click);
             // 
             // bunifuPictureBox17
             // 
@@ -296,6 +297,7 @@
             this.bunifuLabel15.Text = "Xét nghiệm";
             this.bunifuLabel15.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel15.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuLabel15.Click += new System.EventHandler(this.bunifuLabel15_Click);
             // 
             // bunifuPictureBox16
             // 
@@ -352,6 +354,7 @@
             this.bunifuLabel11.Text = "Thống kê";
             this.bunifuLabel11.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel11.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuLabel11.Click += new System.EventHandler(this.bunifuLabel11_Click);
             // 
             // bunifuPictureBox14
             // 
@@ -424,6 +427,7 @@
             this.bunifuLabel9.Text = "Nhập viện";
             this.bunifuLabel9.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel9.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuLabel9.Click += new System.EventHandler(this.bunifuLabel9_Click);
             // 
             // bunifuPictureBox13
             // 
@@ -480,6 +484,7 @@
             this.bunifuLabel10.Text = "Xuất viện";
             this.bunifuLabel10.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel10.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuLabel10.Click += new System.EventHandler(this.bunifuLabel10_Click);
             // 
             // bunifuPictureBox12
             // 
@@ -531,11 +536,12 @@
             this.bunifuLabel14.Location = new System.Drawing.Point(33, 14);
             this.bunifuLabel14.Name = "bunifuLabel14";
             this.bunifuLabel14.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel14.Size = new System.Drawing.Size(69, 17);
+            this.bunifuLabel14.Size = new System.Drawing.Size(58, 17);
             this.bunifuLabel14.TabIndex = 15;
-            this.bunifuLabel14.Text = "Chẩn đoán";
+            this.bunifuLabel14.Text = "Theo dõi";
             this.bunifuLabel14.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel14.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuLabel14.Click += new System.EventHandler(this.bunifuLabel14_Click);
             // 
             // bunifuPictureBox11
             // 
@@ -877,6 +883,7 @@
             this.bunifuLabel3.Text = "Bệnh";
             this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel3.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuLabel3.Click += new System.EventHandler(this.bunifuLabel3_Click);
             // 
             // bunifuPictureBox5
             // 
@@ -1146,7 +1153,7 @@
             // timer1
             // 
             this.timer1.Enabled = true;
-            this.timer1.Interval = 10;
+            this.timer1.Interval = 1;
             // 
             // bunifuElipse1
             // 
@@ -1160,6 +1167,7 @@
             this.CausesValidation = false;
             this.ClientSize = new System.Drawing.Size(1235, 721);
             this.Controls.Add(this.bunifuGradientPanel1_FormMain);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -404,5 +404,21 @@ namespace DO_AN_CUA_HAN.View
                 }
             }
         }
+
+        private void bunifuButtonPatientEdit_Click(object sender, EventArgs e)
+        {
+            if (bunifuDataGridViewPatient.SelectedRows.Count > 0)
+            {
+                // Get patient for edit
+                Patient PatientDetail = Patient.GetPatient(Convert.ToInt32(bunifuDataGridViewPatient.SelectedRows[0].Cells[0].Value.ToString()));
+
+                // Open patientdetail form for edit
+                FormPatientDetail patientDetailForm = new FormPatientDetail("edit", PatientDetail);
+                patientDetailForm.ShowDialog();
+
+                // Refresh datagridview after edit
+                refreshDataViewPatient();
+            }
+        }
     }
 }

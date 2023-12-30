@@ -338,6 +338,7 @@
             this.bunifuButtonPatientEdit.TextMarginLeft = 0;
             this.bunifuButtonPatientEdit.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButtonPatientEdit.UseDefaultRadiusAndThickness = true;
+            this.bunifuButtonPatientEdit.Click += new System.EventHandler(this.bunifuButtonPatientEdit_Click);
             // 
             // bunifuPictureBox1
             // 
@@ -539,6 +540,7 @@
             // bunifuDataGridViewPatient
             // 
             this.bunifuDataGridViewPatient.AllowCustomTheming = false;
+            this.bunifuDataGridViewPatient.AllowUserToAddRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(242)))), ((int)(((byte)(203)))));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             this.bunifuDataGridViewPatient.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
@@ -693,7 +695,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.bunifuTextBoxPatientSearch.OnIdleState = stateProperties4;
-            this.bunifuTextBoxPatientSearch.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.bunifuTextBoxPatientSearch.Padding = new System.Windows.Forms.Padding(3);
             this.bunifuTextBoxPatientSearch.PasswordChar = '\0';
             this.bunifuTextBoxPatientSearch.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.bunifuTextBoxPatientSearch.PlaceholderText = "Enter text";

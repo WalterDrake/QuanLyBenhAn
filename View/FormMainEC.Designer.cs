@@ -490,6 +490,7 @@
             // bunifuDataGridViewEC
             // 
             this.bunifuDataGridViewEC.AllowCustomTheming = false;
+            this.bunifuDataGridViewEC.AllowUserToAddRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(242)))), ((int)(((byte)(203)))));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             this.bunifuDataGridViewEC.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
@@ -643,7 +644,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.bunifuTextBoxECSearch.OnIdleState = stateProperties4;
-            this.bunifuTextBoxECSearch.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.bunifuTextBoxECSearch.Padding = new System.Windows.Forms.Padding(3);
             this.bunifuTextBoxECSearch.PasswordChar = '\0';
             this.bunifuTextBoxECSearch.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.bunifuTextBoxECSearch.PlaceholderText = "Enter text";
