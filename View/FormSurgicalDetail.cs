@@ -100,7 +100,7 @@ namespace DO_AN_CUA_HAN.View
             int selectedStaff = listBoxSystemStaff.SelectedIndex;
             if (CheckStaffInSurgical(listStaff[selectedStaff].StaffID))
             {
-                bunifuSnackbar1.Show(this, "Nhân viên đã có trong danh sách tham gia ca phẩu thuật", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                bunifuSnackbar1.Show(this, "Nhân viên đã có trong danh sách tham gia ca phẩu thuật", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                 return;
             }
             else
@@ -130,7 +130,7 @@ namespace DO_AN_CUA_HAN.View
         {
             if(string.IsNullOrEmpty(bunifuTextBoxDescription.Text))
             {
-                bunifuSnackbar1.Show(this, "Thiếu mô tả ca phẫu thuật", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                bunifuSnackbar1.Show(this, "Thiếu mô tả ca phẫu thuật", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                 return;
             }
             if (listBoxCurrentStaff.Items.Count > 0)
@@ -180,7 +180,7 @@ namespace DO_AN_CUA_HAN.View
                 }
                 catch
                 {
-                    bunifuSnackbar1.Show(this, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                    bunifuSnackbar1.Show(this, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                     return;
                 }
                 listSD.Clear();
@@ -188,7 +188,7 @@ namespace DO_AN_CUA_HAN.View
             }
             else
             {
-                bunifuSnackbar1.Show(this, "Chưa có nhân viên nào tham gia ca phẫu thuật", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Information, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                bunifuSnackbar1.Show(this, "Chưa có nhân viên nào tham gia ca phẫu thuật", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Information, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                 return;
             }
         }

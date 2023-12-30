@@ -351,7 +351,7 @@
             this.textBoxPrice.DefaultFont = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.textBoxPrice.DefaultText = "";
             this.textBoxPrice.FillColor = System.Drawing.Color.White;
-            this.textBoxPrice.ForeColor = System.Drawing.Color.Gray;
+            this.textBoxPrice.ForeColor = System.Drawing.Color.Black;
             this.textBoxPrice.HideSelection = true;
             this.textBoxPrice.IconLeft = null;
             this.textBoxPrice.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
@@ -382,7 +382,7 @@
             this.textBoxPrice.OnHoverState = stateProperties3;
             stateProperties4.BorderColor = System.Drawing.Color.Silver;
             stateProperties4.FillColor = System.Drawing.Color.White;
-            stateProperties4.ForeColor = System.Drawing.Color.Gray;
+            stateProperties4.ForeColor = System.Drawing.Color.Black;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxPrice.OnIdleState = stateProperties4;
             this.textBoxPrice.Padding = new System.Windows.Forms.Padding(3);
@@ -449,7 +449,7 @@
             this.textBoxServiceName.DefaultFont = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.textBoxServiceName.DefaultText = "";
             this.textBoxServiceName.FillColor = System.Drawing.Color.White;
-            this.textBoxServiceName.ForeColor = System.Drawing.Color.Gray;
+            this.textBoxServiceName.ForeColor = System.Drawing.Color.Black;
             this.textBoxServiceName.HideSelection = true;
             this.textBoxServiceName.IconLeft = null;
             this.textBoxServiceName.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
@@ -480,7 +480,7 @@
             this.textBoxServiceName.OnHoverState = stateProperties7;
             stateProperties8.BorderColor = System.Drawing.Color.Silver;
             stateProperties8.FillColor = System.Drawing.Color.White;
-            stateProperties8.ForeColor = System.Drawing.Color.Gray;
+            stateProperties8.ForeColor = System.Drawing.Color.Black;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxServiceName.OnIdleState = stateProperties8;
             this.textBoxServiceName.Padding = new System.Windows.Forms.Padding(3);
@@ -528,7 +528,7 @@
             this.textBoxServiceID.DefaultFont = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.textBoxServiceID.DefaultText = "";
             this.textBoxServiceID.FillColor = System.Drawing.Color.White;
-            this.textBoxServiceID.ForeColor = System.Drawing.Color.Gray;
+            this.textBoxServiceID.ForeColor = System.Drawing.Color.Black;
             this.textBoxServiceID.HideSelection = true;
             this.textBoxServiceID.IconLeft = null;
             this.textBoxServiceID.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
@@ -559,7 +559,7 @@
             this.textBoxServiceID.OnHoverState = stateProperties11;
             stateProperties12.BorderColor = System.Drawing.Color.Silver;
             stateProperties12.FillColor = System.Drawing.Color.White;
-            stateProperties12.ForeColor = System.Drawing.Color.Gray;
+            stateProperties12.ForeColor = System.Drawing.Color.Black;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxServiceID.OnIdleState = stateProperties12;
             this.textBoxServiceID.Padding = new System.Windows.Forms.Padding(3);
@@ -759,6 +759,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormServiceDetail";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormService";
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuShadowPanel2.ResumeLayout(false);

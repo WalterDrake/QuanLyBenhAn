@@ -45,17 +45,17 @@ namespace DO_AN_CUA_HAN.View
 
             if (string.IsNullOrEmpty(textBoxMaterialName.Text))
             {
-                bunifuSnackbar1.Show(this, "Thiếu tên vật tư", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                bunifuSnackbar1.Show(this, "Thiếu tên vật tư", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                 return;
             }
             if (string.IsNullOrEmpty(textBoxQuantity.Text))
             {
-                bunifuSnackbar1.Show(this, "Thiếu số lượng vật tư", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                bunifuSnackbar1.Show(this, "Thiếu số lượng vật tư", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                 return;
             }
             if (string.IsNullOrEmpty(textBoxPrice.Text))
             {
-                bunifuSnackbar1.Show(this, "Thiếu thông tên giá vật tư", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                bunifuSnackbar1.Show(this, "Thiếu thông tên giá vật tư", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                 return;
             }
             try
@@ -70,7 +70,7 @@ namespace DO_AN_CUA_HAN.View
                     {
                         if (Material.UpdateMaterial(MaterialDetail) > 0)
                         {
-                            bunifuSnackbar1.Show(this, "Cập nhập thông tin vật tư thành công thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                            bunifuSnackbar1.Show(this, "Cập nhập thông tin vật tư thành công thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                             return;
                         }
 
@@ -81,7 +81,7 @@ namespace DO_AN_CUA_HAN.View
                     Material newMaterial = new Material(0, textBoxMaterialName.Text, int.Parse(textBoxQuantity.Text), decimal.Parse(textBoxPrice.Text));
                     if (Material.InsertMaterial(newMaterial) > 0)
                     {
-                        bunifuSnackbar1.Show(this, "Thêm vật tư thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                        bunifuSnackbar1.Show(this, "Thêm vật tư thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                         return;
                     }
                     
@@ -89,7 +89,7 @@ namespace DO_AN_CUA_HAN.View
             }
             catch
             {
-                bunifuSnackbar1.Show(this, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                bunifuSnackbar1.Show(this, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                 return;
             }
 

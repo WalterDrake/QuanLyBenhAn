@@ -147,6 +147,7 @@
             // 
             // listBoxCurrentStaff
             // 
+            this.listBoxCurrentStaff.ForeColor = System.Drawing.Color.Black;
             this.listBoxCurrentStaff.FormattingEnabled = true;
             this.listBoxCurrentStaff.Location = new System.Drawing.Point(31, 384);
             this.listBoxCurrentStaff.Name = "listBoxCurrentStaff";
@@ -155,6 +156,7 @@
             // 
             // listBoxSystemStaff
             // 
+            this.listBoxSystemStaff.ForeColor = System.Drawing.Color.Black;
             this.listBoxSystemStaff.FormattingEnabled = true;
             this.listBoxSystemStaff.Location = new System.Drawing.Point(347, 385);
             this.listBoxSystemStaff.Name = "listBoxSystemStaff";
@@ -226,7 +228,7 @@
             this.bunifuTextBoxDescription.DefaultFont = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.bunifuTextBoxDescription.DefaultText = "";
             this.bunifuTextBoxDescription.FillColor = System.Drawing.Color.White;
-            this.bunifuTextBoxDescription.ForeColor = System.Drawing.Color.Gray;
+            this.bunifuTextBoxDescription.ForeColor = System.Drawing.Color.Black;
             this.bunifuTextBoxDescription.HideSelection = true;
             this.bunifuTextBoxDescription.IconLeft = null;
             this.bunifuTextBoxDescription.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
@@ -257,7 +259,7 @@
             this.bunifuTextBoxDescription.OnHoverState = stateProperties3;
             stateProperties4.BorderColor = System.Drawing.Color.Silver;
             stateProperties4.FillColor = System.Drawing.Color.White;
-            stateProperties4.ForeColor = System.Drawing.Color.Gray;
+            stateProperties4.ForeColor = System.Drawing.Color.Black;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.bunifuTextBoxDescription.OnIdleState = stateProperties4;
             this.bunifuTextBoxDescription.Padding = new System.Windows.Forms.Padding(4);
@@ -531,7 +533,7 @@
             this.bunifuDatePickerCreate.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             this.bunifuDatePickerCreate.FillDatePicker = false;
             this.bunifuDatePickerCreate.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.bunifuDatePickerCreate.ForeColor = System.Drawing.Color.Gray;
+            this.bunifuDatePickerCreate.ForeColor = System.Drawing.Color.Black;
             this.bunifuDatePickerCreate.Icon = ((System.Drawing.Image)(resources.GetObject("bunifuDatePickerCreate.Icon")));
             this.bunifuDatePickerCreate.IconColor = System.Drawing.Color.DimGray;
             this.bunifuDatePickerCreate.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
@@ -825,7 +827,7 @@
             this.bunifuTextBoxPatientID.DefaultFont = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.bunifuTextBoxPatientID.DefaultText = "";
             this.bunifuTextBoxPatientID.FillColor = System.Drawing.Color.White;
-            this.bunifuTextBoxPatientID.ForeColor = System.Drawing.Color.Gray;
+            this.bunifuTextBoxPatientID.ForeColor = System.Drawing.Color.Black;
             this.bunifuTextBoxPatientID.HideSelection = true;
             this.bunifuTextBoxPatientID.IconLeft = null;
             this.bunifuTextBoxPatientID.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
@@ -856,7 +858,7 @@
             this.bunifuTextBoxPatientID.OnHoverState = stateProperties7;
             stateProperties8.BorderColor = System.Drawing.Color.Silver;
             stateProperties8.FillColor = System.Drawing.Color.White;
-            stateProperties8.ForeColor = System.Drawing.Color.Gray;
+            stateProperties8.ForeColor = System.Drawing.Color.Black;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.bunifuTextBoxPatientID.OnIdleState = stateProperties8;
             this.bunifuTextBoxPatientID.Padding = new System.Windows.Forms.Padding(4);
@@ -991,7 +993,7 @@
             this.bunifuTextBoxSurgicalID.DefaultFont = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.bunifuTextBoxSurgicalID.DefaultText = "";
             this.bunifuTextBoxSurgicalID.FillColor = System.Drawing.Color.White;
-            this.bunifuTextBoxSurgicalID.ForeColor = System.Drawing.Color.Gray;
+            this.bunifuTextBoxSurgicalID.ForeColor = System.Drawing.Color.Black;
             this.bunifuTextBoxSurgicalID.HideSelection = true;
             this.bunifuTextBoxSurgicalID.IconLeft = null;
             this.bunifuTextBoxSurgicalID.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
@@ -1022,7 +1024,7 @@
             this.bunifuTextBoxSurgicalID.OnHoverState = stateProperties11;
             stateProperties12.BorderColor = System.Drawing.Color.Silver;
             stateProperties12.FillColor = System.Drawing.Color.White;
-            stateProperties12.ForeColor = System.Drawing.Color.Gray;
+            stateProperties12.ForeColor = System.Drawing.Color.Black;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.bunifuTextBoxSurgicalID.OnIdleState = stateProperties12;
             this.bunifuTextBoxSurgicalID.Padding = new System.Windows.Forms.Padding(4);
@@ -1123,6 +1125,7 @@
             this.Controls.Add(this.bunifuGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormSurgicalDetail";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormSurgicalDetail";
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuShadowPanel1.ResumeLayout(false);

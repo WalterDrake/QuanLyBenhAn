@@ -234,6 +234,7 @@
             // listBoxSystemFunction
             // 
             this.listBoxSystemFunction.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(231)))), ((int)(((byte)(219)))));
+            this.listBoxSystemFunction.ForeColor = System.Drawing.Color.Black;
             this.listBoxSystemFunction.FormattingEnabled = true;
             this.listBoxSystemFunction.Location = new System.Drawing.Point(360, 291);
             this.listBoxSystemFunction.Margin = new System.Windows.Forms.Padding(2);
@@ -247,6 +248,7 @@
             // listBoxCurrentFunction
             // 
             this.listBoxCurrentFunction.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(231)))), ((int)(((byte)(219)))));
+            this.listBoxCurrentFunction.ForeColor = System.Drawing.Color.Black;
             this.listBoxCurrentFunction.FormattingEnabled = true;
             this.listBoxCurrentFunction.Location = new System.Drawing.Point(39, 289);
             this.listBoxCurrentFunction.Margin = new System.Windows.Forms.Padding(2);
@@ -752,7 +754,7 @@
             this.textBoxRoleName.DefaultFont = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.textBoxRoleName.DefaultText = "";
             this.textBoxRoleName.FillColor = System.Drawing.Color.White;
-            this.textBoxRoleName.ForeColor = System.Drawing.Color.Gray;
+            this.textBoxRoleName.ForeColor = System.Drawing.Color.Black;
             this.textBoxRoleName.HideSelection = true;
             this.textBoxRoleName.IconLeft = null;
             this.textBoxRoleName.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
@@ -783,7 +785,7 @@
             this.textBoxRoleName.OnHoverState = stateProperties3;
             stateProperties4.BorderColor = System.Drawing.Color.Silver;
             stateProperties4.FillColor = System.Drawing.Color.White;
-            stateProperties4.ForeColor = System.Drawing.Color.Gray;
+            stateProperties4.ForeColor = System.Drawing.Color.Black;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxRoleName.OnIdleState = stateProperties4;
             this.textBoxRoleName.Padding = new System.Windows.Forms.Padding(4);
@@ -831,7 +833,7 @@
             this.textBoxRoleID.DefaultFont = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.textBoxRoleID.DefaultText = "";
             this.textBoxRoleID.FillColor = System.Drawing.Color.White;
-            this.textBoxRoleID.ForeColor = System.Drawing.Color.Gray;
+            this.textBoxRoleID.ForeColor = System.Drawing.Color.Black;
             this.textBoxRoleID.HideSelection = true;
             this.textBoxRoleID.IconLeft = null;
             this.textBoxRoleID.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
@@ -862,7 +864,7 @@
             this.textBoxRoleID.OnHoverState = stateProperties7;
             stateProperties8.BorderColor = System.Drawing.Color.Silver;
             stateProperties8.FillColor = System.Drawing.Color.White;
-            stateProperties8.ForeColor = System.Drawing.Color.Gray;
+            stateProperties8.ForeColor = System.Drawing.Color.Black;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxRoleID.OnIdleState = stateProperties8;
             this.textBoxRoleID.Padding = new System.Windows.Forms.Padding(4);
@@ -1036,6 +1038,7 @@
             this.Controls.Add(this.bunifuGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormRoleDetail";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormRoleDetail";
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuShadowPanel1.ResumeLayout(false);

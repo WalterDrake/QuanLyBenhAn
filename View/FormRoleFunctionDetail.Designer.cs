@@ -140,7 +140,7 @@
             this.bunifuTextBoxButton.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
             this.bunifuTextBoxButton.DefaultText = "";
             this.bunifuTextBoxButton.FillColor = System.Drawing.Color.White;
-            this.bunifuTextBoxButton.ForeColor = System.Drawing.Color.Gray;
+            this.bunifuTextBoxButton.ForeColor = System.Drawing.Color.Black;
             this.bunifuTextBoxButton.HideSelection = true;
             this.bunifuTextBoxButton.IconLeft = null;
             this.bunifuTextBoxButton.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
@@ -171,7 +171,7 @@
             this.bunifuTextBoxButton.OnHoverState = stateProperties3;
             stateProperties4.BorderColor = System.Drawing.Color.Silver;
             stateProperties4.FillColor = System.Drawing.Color.White;
-            stateProperties4.ForeColor = System.Drawing.Color.Gray;
+            stateProperties4.ForeColor = System.Drawing.Color.Black;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.bunifuTextBoxButton.OnIdleState = stateProperties4;
             this.bunifuTextBoxButton.Padding = new System.Windows.Forms.Padding(3);
@@ -256,7 +256,7 @@
             this.bunifuTextBoxFunctionName.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
             this.bunifuTextBoxFunctionName.DefaultText = "";
             this.bunifuTextBoxFunctionName.FillColor = System.Drawing.Color.White;
-            this.bunifuTextBoxFunctionName.ForeColor = System.Drawing.Color.Gray;
+            this.bunifuTextBoxFunctionName.ForeColor = System.Drawing.Color.Black;
             this.bunifuTextBoxFunctionName.HideSelection = true;
             this.bunifuTextBoxFunctionName.IconLeft = null;
             this.bunifuTextBoxFunctionName.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
@@ -287,7 +287,7 @@
             this.bunifuTextBoxFunctionName.OnHoverState = stateProperties7;
             stateProperties8.BorderColor = System.Drawing.Color.Silver;
             stateProperties8.FillColor = System.Drawing.Color.White;
-            stateProperties8.ForeColor = System.Drawing.Color.Gray;
+            stateProperties8.ForeColor = System.Drawing.Color.Black;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.bunifuTextBoxFunctionName.OnIdleState = stateProperties8;
             this.bunifuTextBoxFunctionName.Padding = new System.Windows.Forms.Padding(3);
@@ -335,7 +335,7 @@
             this.bunifuTextBoxFunctionID.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
             this.bunifuTextBoxFunctionID.DefaultText = "";
             this.bunifuTextBoxFunctionID.FillColor = System.Drawing.Color.White;
-            this.bunifuTextBoxFunctionID.ForeColor = System.Drawing.Color.Gray;
+            this.bunifuTextBoxFunctionID.ForeColor = System.Drawing.Color.Black;
             this.bunifuTextBoxFunctionID.HideSelection = true;
             this.bunifuTextBoxFunctionID.IconLeft = null;
             this.bunifuTextBoxFunctionID.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
@@ -366,7 +366,7 @@
             this.bunifuTextBoxFunctionID.OnHoverState = stateProperties11;
             stateProperties12.BorderColor = System.Drawing.Color.Silver;
             stateProperties12.FillColor = System.Drawing.Color.White;
-            stateProperties12.ForeColor = System.Drawing.Color.Gray;
+            stateProperties12.ForeColor = System.Drawing.Color.Black;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.bunifuTextBoxFunctionID.OnIdleState = stateProperties12;
             this.bunifuTextBoxFunctionID.Padding = new System.Windows.Forms.Padding(3);
@@ -757,6 +757,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormRoleFunctionDetail";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormDepartmentDetail";
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FormRoleFunctionDetail_KeyPress);
             this.bunifuGradientPanel1.ResumeLayout(false);

@@ -160,7 +160,7 @@
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(109)))), ((int)(((byte)(160)))));
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(199)))), ((int)(((byte)(205)))));
             this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(677, 707);
@@ -197,7 +197,7 @@
             this.bunifuShadowPanel1.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Gradient;
             this.bunifuShadowPanel1.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
             this.bunifuShadowPanel1.Location = new System.Drawing.Point(40, 28);
-            this.bunifuShadowPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuShadowPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuShadowPanel1.Name = "bunifuShadowPanel1";
             this.bunifuShadowPanel1.PanelColor = System.Drawing.Color.PaleTurquoise;
             this.bunifuShadowPanel1.PanelColor2 = System.Drawing.Color.MistyRose;
@@ -213,9 +213,10 @@
             // listBoxSystemStaff
             // 
             this.listBoxSystemStaff.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(231)))), ((int)(((byte)(219)))));
+            this.listBoxSystemStaff.ForeColor = System.Drawing.Color.Black;
             this.listBoxSystemStaff.FormattingEnabled = true;
             this.listBoxSystemStaff.Location = new System.Drawing.Point(350, 380);
-            this.listBoxSystemStaff.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listBoxSystemStaff.Margin = new System.Windows.Forms.Padding(2);
             this.listBoxSystemStaff.Name = "listBoxSystemStaff";
             this.listBoxSystemStaff.Size = new System.Drawing.Size(204, 212);
             this.listBoxSystemStaff.TabIndex = 65;
@@ -223,9 +224,10 @@
             // listBoxCurrentStaff
             // 
             this.listBoxCurrentStaff.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(231)))), ((int)(((byte)(219)))));
+            this.listBoxCurrentStaff.ForeColor = System.Drawing.Color.Black;
             this.listBoxCurrentStaff.FormattingEnabled = true;
             this.listBoxCurrentStaff.Location = new System.Drawing.Point(41, 380);
-            this.listBoxCurrentStaff.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listBoxCurrentStaff.Margin = new System.Windows.Forms.Padding(2);
             this.listBoxCurrentStaff.Name = "listBoxCurrentStaff";
             this.listBoxCurrentStaff.Size = new System.Drawing.Size(204, 212);
             this.listBoxCurrentStaff.TabIndex = 64;
@@ -254,7 +256,7 @@
             this.buttonInsertFunction.ImageZoomSize = new System.Drawing.Size(114, 103);
             this.buttonInsertFunction.InitialImage = ((System.Drawing.Image)(resources.GetObject("buttonInsertFunction.InitialImage")));
             this.buttonInsertFunction.Location = new System.Drawing.Point(238, 384);
-            this.buttonInsertFunction.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonInsertFunction.Margin = new System.Windows.Forms.Padding(2);
             this.buttonInsertFunction.Name = "buttonInsertFunction";
             this.buttonInsertFunction.Rotation = 0;
             this.buttonInsertFunction.ShowActiveImage = true;
@@ -465,7 +467,7 @@
             this.dateCreate.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             this.dateCreate.FillDatePicker = false;
             this.dateCreate.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.dateCreate.ForeColor = System.Drawing.Color.Gray;
+            this.dateCreate.ForeColor = System.Drawing.Color.Black;
             this.dateCreate.Icon = ((System.Drawing.Image)(resources.GetObject("dateCreate.Icon")));
             this.dateCreate.IconColor = System.Drawing.Color.DimGray;
             this.dateCreate.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
@@ -507,7 +509,7 @@
             this.dateHospitalize.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             this.dateHospitalize.FillDatePicker = false;
             this.dateHospitalize.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.dateHospitalize.ForeColor = System.Drawing.Color.Gray;
+            this.dateHospitalize.ForeColor = System.Drawing.Color.Black;
             this.dateHospitalize.Icon = ((System.Drawing.Image)(resources.GetObject("dateHospitalize.Icon")));
             this.dateHospitalize.IconColor = System.Drawing.Color.DimGray;
             this.dateHospitalize.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
@@ -567,7 +569,7 @@
             this.bunifuButton2.IdleIconRightImage = null;
             this.bunifuButton2.IndicateFocus = false;
             this.bunifuButton2.Location = new System.Drawing.Point(596, 766);
-            this.bunifuButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuButton2.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuButton2.Name = "bunifuButton2";
             this.bunifuButton2.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton2.OnDisabledState.BorderRadius = 15;
@@ -657,7 +659,7 @@
             this.bunifuButton1.IdleIconRightImage = null;
             this.bunifuButton1.IndicateFocus = false;
             this.bunifuButton1.Location = new System.Drawing.Point(472, 767);
-            this.bunifuButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuButton1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuButton1.Name = "bunifuButton1";
             this.bunifuButton1.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton1.OnDisabledState.BorderRadius = 15;
@@ -713,7 +715,7 @@
             this.dateDischarge.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             this.dateDischarge.FillDatePicker = false;
             this.dateDischarge.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.dateDischarge.ForeColor = System.Drawing.Color.Gray;
+            this.dateDischarge.ForeColor = System.Drawing.Color.Black;
             this.dateDischarge.Icon = ((System.Drawing.Image)(resources.GetObject("dateDischarge.Icon")));
             this.dateDischarge.IconColor = System.Drawing.Color.DimGray;
             this.dateDischarge.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
@@ -733,7 +735,7 @@
             this.bunifuLabel7.Font = new System.Drawing.Font("Cambria", 11F);
             this.bunifuLabel7.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.bunifuLabel7.Location = new System.Drawing.Point(384, 355);
-            this.bunifuLabel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuLabel7.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuLabel7.Name = "bunifuLabel7";
             this.bunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel7.Size = new System.Drawing.Size(128, 17);
@@ -750,7 +752,7 @@
             this.bunifuLabel6.Font = new System.Drawing.Font("Cambria", 11F);
             this.bunifuLabel6.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.bunifuLabel6.Location = new System.Drawing.Point(53, 355);
-            this.bunifuLabel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuLabel6.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuLabel6.Name = "bunifuLabel6";
             this.bunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel6.Size = new System.Drawing.Size(167, 17);
@@ -827,7 +829,7 @@
             this.textBoxPatientID.DefaultFont = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.textBoxPatientID.DefaultText = "";
             this.textBoxPatientID.FillColor = System.Drawing.Color.White;
-            this.textBoxPatientID.ForeColor = System.Drawing.Color.Gray;
+            this.textBoxPatientID.ForeColor = System.Drawing.Color.Black;
             this.textBoxPatientID.HideSelection = true;
             this.textBoxPatientID.IconLeft = null;
             this.textBoxPatientID.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
@@ -858,10 +860,10 @@
             this.textBoxPatientID.OnHoverState = stateProperties3;
             stateProperties4.BorderColor = System.Drawing.Color.Silver;
             stateProperties4.FillColor = System.Drawing.Color.White;
-            stateProperties4.ForeColor = System.Drawing.Color.Gray;
+            stateProperties4.ForeColor = System.Drawing.Color.Black;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxPatientID.OnIdleState = stateProperties4;
-            this.textBoxPatientID.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxPatientID.Padding = new System.Windows.Forms.Padding(4);
             this.textBoxPatientID.PasswordChar = '\0';
             this.textBoxPatientID.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.textBoxPatientID.PlaceholderText = "Nhập mã bệnh nhân";
@@ -902,7 +904,7 @@
             this.textBoxAssignID.DefaultFont = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.textBoxAssignID.DefaultText = "";
             this.textBoxAssignID.FillColor = System.Drawing.Color.White;
-            this.textBoxAssignID.ForeColor = System.Drawing.Color.Gray;
+            this.textBoxAssignID.ForeColor = System.Drawing.Color.Black;
             this.textBoxAssignID.HideSelection = true;
             this.textBoxAssignID.IconLeft = null;
             this.textBoxAssignID.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
@@ -933,10 +935,10 @@
             this.textBoxAssignID.OnHoverState = stateProperties7;
             stateProperties8.BorderColor = System.Drawing.Color.Silver;
             stateProperties8.FillColor = System.Drawing.Color.White;
-            stateProperties8.ForeColor = System.Drawing.Color.Gray;
+            stateProperties8.ForeColor = System.Drawing.Color.Black;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxAssignID.OnIdleState = stateProperties8;
-            this.textBoxAssignID.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxAssignID.Padding = new System.Windows.Forms.Padding(4);
             this.textBoxAssignID.PasswordChar = '\0';
             this.textBoxAssignID.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.textBoxAssignID.PlaceholderText = "Nhập mã phân công";
@@ -983,7 +985,7 @@
             this.bunifuLabel1.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold);
             this.bunifuLabel1.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.bunifuLabel1.Location = new System.Drawing.Point(270, 53);
-            this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel1.Size = new System.Drawing.Size(201, 28);
@@ -1002,7 +1004,7 @@
             this.bunifuPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox1.Image")));
             this.bunifuPictureBox1.IsCircle = false;
             this.bunifuPictureBox1.Location = new System.Drawing.Point(115, -26);
-            this.bunifuPictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuPictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuPictureBox1.Name = "bunifuPictureBox1";
             this.bunifuPictureBox1.Size = new System.Drawing.Size(170, 170);
             this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1034,7 +1036,7 @@
             this.buttonRemoveFunction.ImageZoomSize = new System.Drawing.Size(114, 103);
             this.buttonRemoveFunction.InitialImage = ((System.Drawing.Image)(resources.GetObject("buttonRemoveFunction.InitialImage")));
             this.buttonRemoveFunction.Location = new System.Drawing.Point(232, 491);
-            this.buttonRemoveFunction.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonRemoveFunction.Margin = new System.Windows.Forms.Padding(2);
             this.buttonRemoveFunction.Name = "buttonRemoveFunction";
             this.buttonRemoveFunction.Rotation = 0;
             this.buttonRemoveFunction.ShowActiveImage = true;

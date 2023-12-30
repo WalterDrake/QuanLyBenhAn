@@ -454,7 +454,7 @@
             this.textBoxPatientID.DefaultFont = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.textBoxPatientID.DefaultText = "";
             this.textBoxPatientID.FillColor = System.Drawing.Color.White;
-            this.textBoxPatientID.ForeColor = System.Drawing.Color.Gray;
+            this.textBoxPatientID.ForeColor = System.Drawing.Color.Black;
             this.textBoxPatientID.HideSelection = true;
             this.textBoxPatientID.IconLeft = null;
             this.textBoxPatientID.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
@@ -485,7 +485,7 @@
             this.textBoxPatientID.OnHoverState = stateProperties3;
             stateProperties4.BorderColor = System.Drawing.Color.Silver;
             stateProperties4.FillColor = System.Drawing.Color.White;
-            stateProperties4.ForeColor = System.Drawing.Color.Gray;
+            stateProperties4.ForeColor = System.Drawing.Color.Black;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxPatientID.OnIdleState = stateProperties4;
             this.textBoxPatientID.Padding = new System.Windows.Forms.Padding(3);
@@ -533,7 +533,7 @@
             this.textBoxHospitalBedID.DefaultFont = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.textBoxHospitalBedID.DefaultText = "";
             this.textBoxHospitalBedID.FillColor = System.Drawing.Color.White;
-            this.textBoxHospitalBedID.ForeColor = System.Drawing.Color.Gray;
+            this.textBoxHospitalBedID.ForeColor = System.Drawing.Color.Black;
             this.textBoxHospitalBedID.HideSelection = true;
             this.textBoxHospitalBedID.IconLeft = null;
             this.textBoxHospitalBedID.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
@@ -564,7 +564,7 @@
             this.textBoxHospitalBedID.OnHoverState = stateProperties7;
             stateProperties8.BorderColor = System.Drawing.Color.Silver;
             stateProperties8.FillColor = System.Drawing.Color.White;
-            stateProperties8.ForeColor = System.Drawing.Color.Gray;
+            stateProperties8.ForeColor = System.Drawing.Color.Black;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxHospitalBedID.OnIdleState = stateProperties8;
             this.textBoxHospitalBedID.Padding = new System.Windows.Forms.Padding(3);

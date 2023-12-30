@@ -67,12 +67,12 @@ namespace DO_AN_CUA_HAN.View
         {
             if (string.IsNullOrEmpty(textBoxWeight.Text))
             {
-                bunifuSnackbar1.Show(this, "Thiếu thông tin cân nặng", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                bunifuSnackbar1.Show(this, "Thiếu thông tin cân nặng", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                 return;
             }
             if (string.IsNullOrEmpty(textBoxBloodPressure.Text))
             {
-                bunifuSnackbar1.Show(this, "Thiếu thông tin huyết áp", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                bunifuSnackbar1.Show(this, "Thiếu thông tin huyết áp", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                 return;
             }
                 if (Patient.IsPatientExist(int.Parse(textBoxPatientID.Text)))
@@ -119,7 +119,7 @@ namespace DO_AN_CUA_HAN.View
                 }
                 catch
                 {
-                    bunifuSnackbar1.Show(this, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                    bunifuSnackbar1.Show(this, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                     return;
                 }
 
@@ -127,7 +127,7 @@ namespace DO_AN_CUA_HAN.View
             }
             else
             {
-                bunifuSnackbar1.Show(this, "Thiếu thông tin", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                bunifuSnackbar1.Show(this, "Thiếu thông tin", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                 return;
             }
 
