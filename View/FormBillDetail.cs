@@ -329,6 +329,7 @@ namespace DO_AN_CUA_HAN.View
             catch (SqlException exception)
             {
                 bunifuSnackbar1.Show(this,exception.Message, Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                return;
             }
 
         }
@@ -500,7 +501,6 @@ namespace DO_AN_CUA_HAN.View
                 if (bunifuDataGridViewBillDetail.Rows.Count <= 0)
                 {
                     bunifuSnackbar1.Show(this, "Thêm chi tiết hóa đơn", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-
                     return;
                 }
 
@@ -571,7 +571,7 @@ namespace DO_AN_CUA_HAN.View
             catch (SqlException exception)
             {
                 bunifuSnackbar1.Show(this, exception.Message, Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-
+                return;
             }
         }
         private void insertBillDetail()

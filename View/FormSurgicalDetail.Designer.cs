@@ -148,7 +148,7 @@
             // listBoxCurrentStaff
             // 
             this.listBoxCurrentStaff.FormattingEnabled = true;
-            this.listBoxCurrentStaff.Location = new System.Drawing.Point(30, 384);
+            this.listBoxCurrentStaff.Location = new System.Drawing.Point(31, 384);
             this.listBoxCurrentStaff.Name = "listBoxCurrentStaff";
             this.listBoxCurrentStaff.Size = new System.Drawing.Size(227, 238);
             this.listBoxCurrentStaff.TabIndex = 65;
@@ -156,7 +156,7 @@
             // listBoxSystemStaff
             // 
             this.listBoxSystemStaff.FormattingEnabled = true;
-            this.listBoxSystemStaff.Location = new System.Drawing.Point(349, 385);
+            this.listBoxSystemStaff.Location = new System.Drawing.Point(347, 385);
             this.listBoxSystemStaff.Name = "listBoxSystemStaff";
             this.listBoxSystemStaff.Size = new System.Drawing.Size(228, 238);
             this.listBoxSystemStaff.TabIndex = 64;
@@ -730,7 +730,7 @@
             this.bunifuLabel7.CursorType = null;
             this.bunifuLabel7.Font = new System.Drawing.Font("Cambria", 11F);
             this.bunifuLabel7.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.bunifuLabel7.Location = new System.Drawing.Point(360, 361);
+            this.bunifuLabel7.Location = new System.Drawing.Point(358, 361);
             this.bunifuLabel7.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuLabel7.Name = "bunifuLabel7";
             this.bunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -747,7 +747,7 @@
             this.bunifuLabel6.CursorType = null;
             this.bunifuLabel6.Font = new System.Drawing.Font("Cambria", 11F);
             this.bunifuLabel6.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.bunifuLabel6.Location = new System.Drawing.Point(49, 361);
+            this.bunifuLabel6.Location = new System.Drawing.Point(43, 361);
             this.bunifuLabel6.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuLabel6.Name = "bunifuLabel6";
             this.bunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No;

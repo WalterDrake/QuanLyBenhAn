@@ -87,7 +87,7 @@ namespace DO_AN_CUA_HAN.View
             if (string.IsNullOrEmpty(bunifuTextBoxReason.Text))
             {
                 bunifuSnackbar1.Show(this, "Thiếu lý do nhập viện", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-
+                return;
             }
             try
             {
@@ -107,7 +107,7 @@ namespace DO_AN_CUA_HAN.View
                     {
                         if (HospitalizationCertificate.UpdateHC(newHC) > 0)
                         bunifuSnackbar1.Show(this, "Cập nhật thông tin giấy nhập viện thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-
+                        return;
                     }
                 }
                 else
@@ -115,7 +115,7 @@ namespace DO_AN_CUA_HAN.View
                     if (HospitalizationCertificate.IsPatientHadHC(int.Parse(bunifuTextBoxPatientID.Text)))
                     {
                         bunifuSnackbar1.Show(this, "Bệnh nhân đã có giấy nhập viện", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Information, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-
+                        return;
                     }
                     else
                     {
@@ -127,7 +127,10 @@ namespace DO_AN_CUA_HAN.View
                         newHC.State = 0;
                         newHC.Date = bunifuDatePickerHospitalizate.Value;
                         if (HospitalizationCertificate.InsertHC(newHC) > 0)
+                        {
                             bunifuSnackbar1.Show(this, "Thêm giấy nhập viện thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                            return;
+                        }
 
                     }
                 }
@@ -135,6 +138,7 @@ namespace DO_AN_CUA_HAN.View
             catch
             {
                 bunifuSnackbar1.Show(this, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                return;
             }
             this.Close();
         }

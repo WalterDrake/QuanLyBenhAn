@@ -11,7 +11,7 @@ namespace DO_AN_CUA_HAN.Functional
     public static class SqlResult
     {
         //Get ConnectionString in app.config
-        private static string sqlConnectString = @"Data Source=laptop-3rfd0jln;Initial Catalog=eHospital;Integrated Security=True;Encrypt=False";
+        private static string sqlConnectString = @"Data Source=JUNKYE;Initial Catalog=eHospital;Integrated Security=True;Encrypt=False";
 
         //Execute insert, update, delete command without parameters
         public static int ExecuteNonQuery(string commandString)

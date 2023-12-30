@@ -76,7 +76,7 @@ namespace DO_AN_CUA_HAN.View
             if(string.IsNullOrEmpty(textBoxRoleName.Text))
             {
                 bunifuSnackbar1.Show(this, "Thiếu tên phân quyền", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
-
+                return;
             }
             try
             {
@@ -96,7 +96,7 @@ namespace DO_AN_CUA_HAN.View
                                 RoleDetail.InsertRoleDetail(newRD);
                             }
                             bunifuSnackbar1.Show(this, "Cập nhật thông tin phân quyền thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-
+                            return;
                         }
                     }
                 }
@@ -112,14 +112,14 @@ namespace DO_AN_CUA_HAN.View
                             RoleDetail.InsertRoleDetail(newRD);
                         }
                         bunifuSnackbar1.Show(this, "Thêm thông tin phân quyền thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-
+                        return;
                     }
                 }
             }
             catch
             {
                 bunifuSnackbar1.Show(this, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
-
+                return;
             }
 
             this.Close();

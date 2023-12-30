@@ -397,7 +397,7 @@
             this.bunifuShadowPanel1.ShadowDepth = 5;
             this.bunifuShadowPanel1.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
             this.bunifuShadowPanel1.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel1.Size = new System.Drawing.Size(519, 216);
+            this.bunifuShadowPanel1.Size = new System.Drawing.Size(519, 220);
             this.bunifuShadowPanel1.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.bunifuShadowPanel1.TabIndex = 0;
             // 
@@ -405,7 +405,7 @@
             // 
             this.listSelectedTestType.AccessibleRole = System.Windows.Forms.AccessibleRole.Clock;
             this.listSelectedTestType.FormattingEnabled = true;
-            this.listSelectedTestType.Location = new System.Drawing.Point(184, 53);
+            this.listSelectedTestType.Location = new System.Drawing.Point(184, 55);
             this.listSelectedTestType.Margin = new System.Windows.Forms.Padding(2);
             this.listSelectedTestType.Name = "listSelectedTestType";
             this.listSelectedTestType.Size = new System.Drawing.Size(311, 43);
@@ -459,7 +459,7 @@
             this.buttonClose.IdleIconLeftImage = null;
             this.buttonClose.IdleIconRightImage = null;
             this.buttonClose.IndicateFocus = false;
-            this.buttonClose.Location = new System.Drawing.Point(409, 171);
+            this.buttonClose.Location = new System.Drawing.Point(409, 173);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.buttonClose.OnDisabledState.BorderRadius = 15;
@@ -550,7 +550,7 @@
             this.buttonOk.IdleIconLeftImage = null;
             this.buttonOk.IdleIconRightImage = null;
             this.buttonOk.IndicateFocus = false;
-            this.buttonOk.Location = new System.Drawing.Point(315, 171);
+            this.buttonOk.Location = new System.Drawing.Point(315, 173);
             this.buttonOk.Name = "buttonOk";
             this.buttonOk.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.buttonOk.OnDisabledState.BorderRadius = 15;
@@ -641,7 +641,7 @@
             this.buttonRemove.IdleIconLeftImage = null;
             this.buttonRemove.IdleIconRightImage = null;
             this.buttonRemove.IndicateFocus = false;
-            this.buttonRemove.Location = new System.Drawing.Point(222, 171);
+            this.buttonRemove.Location = new System.Drawing.Point(222, 173);
             this.buttonRemove.Name = "buttonRemove";
             this.buttonRemove.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.buttonRemove.OnDisabledState.BorderRadius = 15;
@@ -691,7 +691,7 @@
             this.labelX5.CursorType = null;
             this.labelX5.Font = new System.Drawing.Font("Cambria", 11F);
             this.labelX5.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.labelX5.Location = new System.Drawing.Point(28, 126);
+            this.labelX5.Location = new System.Drawing.Point(28, 128);
             this.labelX5.Name = "labelX5";
             this.labelX5.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.labelX5.Size = new System.Drawing.Size(47, 17);
@@ -728,7 +728,7 @@
             this.textBoxResult.IconRight = null;
             this.textBoxResult.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.textBoxResult.Lines = new string[0];
-            this.textBoxResult.Location = new System.Drawing.Point(184, 107);
+            this.textBoxResult.Location = new System.Drawing.Point(184, 109);
             this.textBoxResult.MaxLength = 32767;
             this.textBoxResult.MinimumSize = new System.Drawing.Size(1, 1);
             this.textBoxResult.Modified = false;
@@ -783,7 +783,7 @@
             this.labelX3.CursorType = System.Windows.Forms.Cursors.Default;
             this.labelX3.Font = new System.Drawing.Font("Cambria", 11F);
             this.labelX3.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.labelX3.Location = new System.Drawing.Point(28, 65);
+            this.labelX3.Location = new System.Drawing.Point(28, 67);
             this.labelX3.Name = "labelX3";
             this.labelX3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.labelX3.Size = new System.Drawing.Size(135, 17);
@@ -800,7 +800,7 @@
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold);
             this.bunifuLabel1.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.bunifuLabel1.Location = new System.Drawing.Point(199, 22);
+            this.bunifuLabel1.Location = new System.Drawing.Point(199, 24);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel1.Size = new System.Drawing.Size(158, 19);
@@ -837,7 +837,7 @@
             this.bunifuShadowPanel2.ShadowDepth = 5;
             this.bunifuShadowPanel2.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
             this.bunifuShadowPanel2.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel2.Size = new System.Drawing.Size(519, 253);
+            this.bunifuShadowPanel2.Size = new System.Drawing.Size(519, 257);
             this.bunifuShadowPanel2.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.bunifuShadowPanel2.TabIndex = 41;
             // 
@@ -878,7 +878,7 @@
             "Chưa xét nghiệm",
             "Đã xét nghiệm"});
             this.comboBoxState.ItemTopMargin = 3;
-            this.comboBoxState.Location = new System.Drawing.Point(184, 208);
+            this.comboBoxState.Location = new System.Drawing.Point(184, 207);
             this.comboBoxState.Name = "comboBoxState";
             this.comboBoxState.Size = new System.Drawing.Size(213, 32);
             this.comboBoxState.TabIndex = 36;

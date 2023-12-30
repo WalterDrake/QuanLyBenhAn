@@ -97,16 +97,26 @@ namespace DO_AN_CUA_HAN.View
         private void buttonInsert_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(textBoxInputQuantity.Text))
+            {
                 bunifuSnackbar1.Show(this, "Thiếu số lượng thuốc cần kê", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                return;
+            }
+
             if (string.IsNullOrEmpty(textBoxInputInstruction.Text))
+            {
                 bunifuSnackbar1.Show(this, "Thiếu thông tên hướng dẫn", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                return;
+            }
 
             if (listMedicine.Count > 0)
             {
 
                 int selectedIndex = comboBoxMedicine.SelectedIndex;
                 if (int.Parse(textBoxInputQuantity.Text) > listMedicine[selectedIndex].Quantity)
+                {
                     bunifuSnackbar1.Show(this, "Số lượng thuốc không đáp ứng đủ nhu cầu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                    return;
+                }
                 else
                 {
                     PrescriptionDetail newPD = new PrescriptionDetail(listMedicine[selectedIndex].MedicineID, 0, int.Parse(textBoxInputQuantity.Text), textBoxInputInstruction.Text);

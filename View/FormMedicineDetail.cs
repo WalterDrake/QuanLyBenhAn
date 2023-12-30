@@ -45,17 +45,17 @@ namespace DO_AN_CUA_HAN.View
             if (string.IsNullOrEmpty(bunifuTextBoxMedicineName.Text))
             {
                 bunifuSnackbar1.Show(this, "Thiếu tên thuốc", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
-
+                return;
             }
             if (string.IsNullOrEmpty(bunifuTextBoxQuantity.Text))
             {
                 bunifuSnackbar1.Show(this, "Thiếu số lượng thuốc", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
-
+                return;
             }
             if (string.IsNullOrEmpty(bunifuTextBoxPrice.Text))
             {
                 bunifuSnackbar1.Show(this, "Thiếu đơn giá", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
-
+                return;
             }
             try
             {
@@ -68,7 +68,10 @@ namespace DO_AN_CUA_HAN.View
                     if (dialogResult == DialogResult.Yes)
                     {
                         if (Medicine.UpdateMedicine(MedicineDetail) > 0)
-                        bunifuSnackbar1.Show(this, "Cập nhật thông tin thuốc thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                        {
+                            bunifuSnackbar1.Show(this, "Cập nhật thông tin thuốc thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                            return;
+                        }
 
                     }
 
@@ -77,13 +80,17 @@ namespace DO_AN_CUA_HAN.View
                 {
                     Medicine newMedicine = new Medicine(0, bunifuTextBoxMedicineName.Text, int.Parse(bunifuTextBoxQuantity.Text), decimal.Parse(bunifuTextBoxPrice.Text));
                     if (Medicine.InsertMedicine(newMedicine) > 0)
-                    bunifuSnackbar1.Show(this, "Thêm thuốc thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                    {
+                        bunifuSnackbar1.Show(this, "Thêm thuốc thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                        return;
+                    }
 
                 }
             }
             catch
             {
                 bunifuSnackbar1.Show(this, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                return;
             }
 
             this.Close();

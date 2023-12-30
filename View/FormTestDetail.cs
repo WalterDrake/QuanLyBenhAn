@@ -97,6 +97,7 @@ namespace DO_AN_CUA_HAN.View
             if (CheckTestType(listTestType[selectedIndex].TestTypeID))
             {
                 MessageBox.Show("Loại xét nghiệm này đã có trong phiếu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
             }
             else
             {
@@ -159,6 +160,7 @@ namespace DO_AN_CUA_HAN.View
                                 }
                                 listTD.Clear();
                                 bunifuSnackbar1.Show(this, "Cập nhập thông tin phiếu xét nghiệm thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                                return;
                             }
                         }
                     }
@@ -174,6 +176,7 @@ namespace DO_AN_CUA_HAN.View
                                 TestDetail.InsertTestDetail(listTD[i]);
                             }
                             bunifuSnackbar1.Show(this, "Thêm phiếu xét nghiệm thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                            return;
                             listTD.Clear();
                         }
 
@@ -183,11 +186,13 @@ namespace DO_AN_CUA_HAN.View
                 else
                 {
                     bunifuSnackbar1.Show(this, "Yêu cầu nhập loại xét nghiệm", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                    return;
                 }
             }
             catch
             {
                 bunifuSnackbar1.Show(this, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                return;
             }
 
 

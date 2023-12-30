@@ -66,11 +66,16 @@ namespace DO_AN_CUA_HAN.View
         private void buttonOk_Click(object sender, System.EventArgs e)
         {
             if (string.IsNullOrEmpty(textBoxWeight.Text))
+            {
                 bunifuSnackbar1.Show(this, "Thiếu thông tin cân nặng", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                return;
+            }
             if (string.IsNullOrEmpty(textBoxBloodPressure.Text))
+            {
                 bunifuSnackbar1.Show(this, "Thiếu thông tin huyết áp", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
-
-            if (Patient.IsPatientExist(int.Parse(textBoxPatientID.Text)))
+                return;
+            }
+                if (Patient.IsPatientExist(int.Parse(textBoxPatientID.Text)))
             {
                 try
                 {
@@ -88,7 +93,10 @@ namespace DO_AN_CUA_HAN.View
                         if (dialogResult == DialogResult.Yes)
                         {
                             if (HeathMonitoringNote.UpdateHN(newHN) > 0)
+                            {
                                 bunifuSnackbar1.Show(this, "Cập nhật thông tin phiếu theo dõi sức khỏe thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                                return;
+                            }
                         }
 
                     }
@@ -103,12 +111,16 @@ namespace DO_AN_CUA_HAN.View
                         newHN.BloodPressure = textBoxBloodPressure.Text;
                         newHN.Date = dateCreate.Value;
                         if (HeathMonitoringNote.InsertHN(newHN) > 0)
+                        {
                             bunifuSnackbar1.Show(this, "Thêm phiếu theo dõi sức khỏe thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                            return;
+                        }
                     }
                 }
                 catch
                 {
                     bunifuSnackbar1.Show(this, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                    return;
                 }
 
                 this.Close();
@@ -116,6 +128,7 @@ namespace DO_AN_CUA_HAN.View
             else
             {
                 bunifuSnackbar1.Show(this, "Thiếu thông tin", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                return;
             }
 
         }

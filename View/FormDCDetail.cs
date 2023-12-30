@@ -74,7 +74,10 @@ namespace DO_AN_CUA_HAN.View
                     if (dialogResult == DialogResult.Yes)
                     {
                         if (DischargeCertificate.UpdateDC(newDC) > 0)
+                        {
                             bunifuSnackbar1.Show(this, "Cập nhật thông tin giấy xuất viện thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                            return;
+                        }
                     }
                 }
                 else
@@ -82,21 +85,23 @@ namespace DO_AN_CUA_HAN.View
                     if (DischargeCertificate.IsPatientHadDC(Convert.ToInt32(bunifuTextBoxPatientID.Text)))
                     {
                         bunifuSnackbar1.Show(this, "Bệnh nhân đã có giấy xuất viện", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Information, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-
+                        return;
                     }
                     else
                     {
                         newDC.DCID = 0;
                         if (DischargeCertificate.InsertDC(newDC) > 0)
-                        bunifuSnackbar1.Show(this, "Thêm giấy xuất viện thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-
+                        {
+                            bunifuSnackbar1.Show(this, "Thêm giấy xuất viện thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                            return;
+                        }
                     }
                 }
             }
             catch
             {
                 bunifuSnackbar1.Show(this, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-
+                return;
             }
             this.Close();
         }

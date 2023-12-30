@@ -82,7 +82,6 @@
             this.bunifuShadowPanel1.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Gradient;
             this.bunifuShadowPanel1.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
             this.bunifuShadowPanel1.Location = new System.Drawing.Point(0, 0);
-            this.bunifuShadowPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuShadowPanel1.Name = "bunifuShadowPanel1";
             this.bunifuShadowPanel1.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.bunifuShadowPanel1.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(58)))), ((int)(((byte)(82)))));
@@ -91,7 +90,7 @@
             this.bunifuShadowPanel1.ShadowDepth = 0;
             this.bunifuShadowPanel1.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
             this.bunifuShadowPanel1.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel1.Size = new System.Drawing.Size(1253, 855);
+            this.bunifuShadowPanel1.Size = new System.Drawing.Size(940, 695);
             this.bunifuShadowPanel1.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.bunifuShadowPanel1.TabIndex = 4;
             // 
@@ -99,10 +98,9 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(189)))), ((int)(((byte)(175)))));
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(817, 793);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Location = new System.Drawing.Point(613, 644);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(33, 39);
+            this.pictureBox3.Size = new System.Drawing.Size(25, 32);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 11;
             this.pictureBox3.TabStop = false;
@@ -154,8 +152,7 @@
             this.bunifuButtonECDelete.IdleIconLeftImage = null;
             this.bunifuButtonECDelete.IdleIconRightImage = null;
             this.bunifuButtonECDelete.IndicateFocus = false;
-            this.bunifuButtonECDelete.Location = new System.Drawing.Point(800, 793);
-            this.bunifuButtonECDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuButtonECDelete.Location = new System.Drawing.Point(600, 644);
             this.bunifuButtonECDelete.Name = "bunifuButtonECDelete";
             this.bunifuButtonECDelete.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButtonECDelete.OnDisabledState.BorderRadius = 15;
@@ -189,7 +186,7 @@
             this.bunifuButtonECDelete.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButtonECDelete.OnPressedState.IconLeftImage = null;
             this.bunifuButtonECDelete.OnPressedState.IconRightImage = null;
-            this.bunifuButtonECDelete.Size = new System.Drawing.Size(153, 39);
+            this.bunifuButtonECDelete.Size = new System.Drawing.Size(115, 32);
             this.bunifuButtonECDelete.TabIndex = 10;
             this.bunifuButtonECDelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButtonECDelete.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -245,8 +242,7 @@
             this.bunifuButtonECResult.IdleIconLeftImage = null;
             this.bunifuButtonECResult.IdleIconRightImage = null;
             this.bunifuButtonECResult.IndicateFocus = false;
-            this.bunifuButtonECResult.Location = new System.Drawing.Point(31, 793);
-            this.bunifuButtonECResult.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuButtonECResult.Location = new System.Drawing.Point(23, 644);
             this.bunifuButtonECResult.Name = "bunifuButtonECResult";
             this.bunifuButtonECResult.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButtonECResult.OnDisabledState.BorderRadius = 15;
@@ -280,7 +276,7 @@
             this.bunifuButtonECResult.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButtonECResult.OnPressedState.IconLeftImage = null;
             this.bunifuButtonECResult.OnPressedState.IconRightImage = null;
-            this.bunifuButtonECResult.Size = new System.Drawing.Size(153, 39);
+            this.bunifuButtonECResult.Size = new System.Drawing.Size(115, 32);
             this.bunifuButtonECResult.TabIndex = 9;
             this.bunifuButtonECResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButtonECResult.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -293,10 +289,9 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(189)))), ((int)(((byte)(175)))));
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(987, 793);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(740, 644);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(33, 39);
+            this.pictureBox2.Size = new System.Drawing.Size(25, 32);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
@@ -348,8 +343,7 @@
             this.bunifuButtonECEdit.IdleIconLeftImage = null;
             this.bunifuButtonECEdit.IdleIconRightImage = null;
             this.bunifuButtonECEdit.IndicateFocus = false;
-            this.bunifuButtonECEdit.Location = new System.Drawing.Point(975, 793);
-            this.bunifuButtonECEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuButtonECEdit.Location = new System.Drawing.Point(731, 644);
             this.bunifuButtonECEdit.Name = "bunifuButtonECEdit";
             this.bunifuButtonECEdit.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButtonECEdit.OnDisabledState.BorderRadius = 15;
@@ -383,7 +377,7 @@
             this.bunifuButtonECEdit.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButtonECEdit.OnPressedState.IconLeftImage = null;
             this.bunifuButtonECEdit.OnPressedState.IconRightImage = null;
-            this.bunifuButtonECEdit.Size = new System.Drawing.Size(153, 39);
+            this.bunifuButtonECEdit.Size = new System.Drawing.Size(115, 32);
             this.bunifuButtonECEdit.TabIndex = 7;
             this.bunifuButtonECEdit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButtonECEdit.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -396,10 +390,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(189)))), ((int)(((byte)(175)))));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(219, 793);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(164, 644);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(49, 39);
+            this.pictureBox1.Size = new System.Drawing.Size(37, 32);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
@@ -451,8 +444,7 @@
             this.bunifuButtonECPrint.IdleIconLeftImage = null;
             this.bunifuButtonECPrint.IdleIconRightImage = null;
             this.bunifuButtonECPrint.IndicateFocus = false;
-            this.bunifuButtonECPrint.Location = new System.Drawing.Point(220, 793);
-            this.bunifuButtonECPrint.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuButtonECPrint.Location = new System.Drawing.Point(165, 644);
             this.bunifuButtonECPrint.Name = "bunifuButtonECPrint";
             this.bunifuButtonECPrint.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButtonECPrint.OnDisabledState.BorderRadius = 15;
@@ -486,7 +478,7 @@
             this.bunifuButtonECPrint.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButtonECPrint.OnPressedState.IconLeftImage = null;
             this.bunifuButtonECPrint.OnPressedState.IconRightImage = null;
-            this.bunifuButtonECPrint.Size = new System.Drawing.Size(153, 39);
+            this.bunifuButtonECPrint.Size = new System.Drawing.Size(115, 32);
             this.bunifuButtonECPrint.TabIndex = 5;
             this.bunifuButtonECPrint.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButtonECPrint.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -546,14 +538,13 @@
             this.bunifuDataGridViewEC.HeaderBackColor = System.Drawing.Color.LimeGreen;
             this.bunifuDataGridViewEC.HeaderBgColor = System.Drawing.Color.Empty;
             this.bunifuDataGridViewEC.HeaderForeColor = System.Drawing.Color.White;
-            this.bunifuDataGridViewEC.Location = new System.Drawing.Point(43, 92);
-            this.bunifuDataGridViewEC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuDataGridViewEC.Location = new System.Drawing.Point(32, 75);
             this.bunifuDataGridViewEC.Name = "bunifuDataGridViewEC";
             this.bunifuDataGridViewEC.RowHeadersVisible = false;
             this.bunifuDataGridViewEC.RowHeadersWidth = 51;
             this.bunifuDataGridViewEC.RowTemplate.Height = 40;
             this.bunifuDataGridViewEC.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.bunifuDataGridViewEC.Size = new System.Drawing.Size(1165, 682);
+            this.bunifuDataGridViewEC.Size = new System.Drawing.Size(874, 554);
             this.bunifuDataGridViewEC.TabIndex = 4;
             this.bunifuDataGridViewEC.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.LimeGreen;
             // 
@@ -575,10 +566,10 @@
             this.bunifubuttonECDeleteSearch.IdleFillColor = System.Drawing.Color.White;
             this.bunifubuttonECDeleteSearch.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.bunifubuttonECDeleteSearch.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(58)))), ((int)(((byte)(82)))));
-            this.bunifubuttonECDeleteSearch.Location = new System.Drawing.Point(903, 38);
-            this.bunifubuttonECDeleteSearch.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.bunifubuttonECDeleteSearch.Location = new System.Drawing.Point(677, 31);
+            this.bunifubuttonECDeleteSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifubuttonECDeleteSearch.Name = "bunifubuttonECDeleteSearch";
-            this.bunifubuttonECDeleteSearch.Size = new System.Drawing.Size(148, 42);
+            this.bunifubuttonECDeleteSearch.Size = new System.Drawing.Size(111, 34);
             this.bunifubuttonECDeleteSearch.TabIndex = 3;
             this.bunifubuttonECDeleteSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifubuttonECDeleteSearch.Click += new System.EventHandler(this.bunifubuttonECDeleteSearch_Click);
@@ -589,12 +580,11 @@
             this.bunifuLabel1.AutoEllipsis = false;
             this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel1.Location = new System.Drawing.Point(137, 48);
-            this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuLabel1.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel1.Location = new System.Drawing.Point(103, 39);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(88, 22);
+            this.bunifuLabel1.Size = new System.Drawing.Size(72, 17);
             this.bunifuLabel1.TabIndex = 2;
             this.bunifuLabel1.Text = "Tìm kiếm :";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -627,8 +617,7 @@
             this.bunifuTextBoxECSearch.IconRight = null;
             this.bunifuTextBoxECSearch.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuTextBoxECSearch.Lines = new string[0];
-            this.bunifuTextBoxECSearch.Location = new System.Drawing.Point(252, 41);
-            this.bunifuTextBoxECSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuTextBoxECSearch.Location = new System.Drawing.Point(189, 33);
             this.bunifuTextBoxECSearch.MaxLength = 32767;
             this.bunifuTextBoxECSearch.MinimumSize = new System.Drawing.Size(1, 1);
             this.bunifuTextBoxECSearch.Modified = false;
@@ -654,7 +643,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.bunifuTextBoxECSearch.OnIdleState = stateProperties4;
-            this.bunifuTextBoxECSearch.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuTextBoxECSearch.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.bunifuTextBoxECSearch.PasswordChar = '\0';
             this.bunifuTextBoxECSearch.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.bunifuTextBoxECSearch.PlaceholderText = "Enter text";
@@ -664,7 +653,7 @@
             this.bunifuTextBoxECSearch.SelectionLength = 0;
             this.bunifuTextBoxECSearch.SelectionStart = 0;
             this.bunifuTextBoxECSearch.ShortcutsEnabled = true;
-            this.bunifuTextBoxECSearch.Size = new System.Drawing.Size(633, 37);
+            this.bunifuTextBoxECSearch.Size = new System.Drawing.Size(475, 30);
             this.bunifuTextBoxECSearch.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.bunifuTextBoxECSearch.TabIndex = 1;
             this.bunifuTextBoxECSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -683,12 +672,11 @@
             // 
             // FormMainEC
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.bunifuShadowPanel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormMainEC";
-            this.Size = new System.Drawing.Size(1253, 855);
+            this.Size = new System.Drawing.Size(940, 695);
             this.bunifuShadowPanel1.ResumeLayout(false);
             this.bunifuShadowPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

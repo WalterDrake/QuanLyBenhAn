@@ -78,7 +78,7 @@ namespace DO_AN_CUA_HAN.View
                         // Show FormMain and hide FormLogin
                         FormMain formMain = new FormMain(loginStaff);
                         formMain.FormClosed += new FormClosedEventHandler(FormLogin_FormClosed);
-                        bunifuSnackbar1.Show(this, "Đăng nhập thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000,null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                        bunifuSnackbar1.Show(this, "Đăng nhập thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 3000,null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                         formMain.Show();
                         this.Hide();
                     }
@@ -95,6 +95,7 @@ namespace DO_AN_CUA_HAN.View
             catch
             {
                 bunifuSnackbar1.Show(this, "Không thể kết nối với cơ sở dữ liệu. Vui lòng kiểm tra lại tùy chỉnh", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+          
             }
         }
 

@@ -54,6 +54,7 @@ namespace DO_AN_CUA_HAN.View
            if(string.IsNullOrEmpty(bunifuTextBoxHICID.Text))
             {
                 bunifuSnackbar1.Show(this, "Thiếu mã bảo hiểm y tế", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                return;
 
             }
             int hicID = Convert.ToInt32(bunifuTextBoxHICID.Text);
@@ -77,32 +78,33 @@ namespace DO_AN_CUA_HAN.View
                                 HIC.DeleteHIC(HIC.GetPatientHIC(newHIC.PatientID).HICID);
                                 if (HIC.InsertHIC(newHIC) > 0)
                                 bunifuSnackbar1.Show(this, "Cập nhật thông tin bảo hiểm y tế thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-
+                                return;
                             }
                         }
                         else
                         {
                             if (HIC.InsertHIC(newHIC) > 0)
                             bunifuSnackbar1.Show(this, "Thêm bảo hiểm y tế thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-
+                            return;
                         }
                         this.Close();
                     }
                     else
                     {
                         bunifuSnackbar1.Show(this, "Bảo hiểm y tế này đã hết hạn sử dụng", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-
+                        return;
                     }
                 }
                 else
                 {
                     bunifuSnackbar1.Show(this, "Ngày phát hành phải nhỏ hơn ngày hết hạn", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-
+                    return;
                 }
             }
             catch
             {
                 bunifuSnackbar1.Show(this, "Sổ báo hiểm y tế này đã có người sử dụng", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Information, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                return;
             }
         }
 
