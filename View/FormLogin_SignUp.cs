@@ -78,18 +78,18 @@ namespace DO_AN_CUA_HAN.View
                         // Show FormMain and hide FormLogin
                         FormMain formMain = new FormMain(loginStaff);
                         formMain.FormClosed += new FormClosedEventHandler(FormLogin_FormClosed);
-                        bunifuSnackbar1.Show(this, "Đăng nhập thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 3000,null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                        bunifuSnackbar1.Show(this, "Đăng nhập thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000,null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
                         formMain.Show();
                         this.Hide();
                     }
                     else
                     {
-                        bunifuSnackbar1.Show(this, "Tài khoản không hợp lệ", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, "Sai mật khẩu", Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                        bunifuSnackbar1.Show(this, "Tài khoản không hợp lệ", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000, "Sai mật khẩu", Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
                     }
                 }
                 else
                 {
-                    bunifuSnackbar1.Show(this, "Tài khoản không hợp lệ", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, "Lỗi đăng nhập", Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                    bunifuSnackbar1.Show(this, "Tài khoản không hợp lệ", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000, "Lỗi đăng nhập", Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
                 }
             }
             catch

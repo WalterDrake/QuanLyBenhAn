@@ -92,7 +92,8 @@ namespace DO_AN_CUA_HAN.View
                         if (dialogResult == DialogResult.Yes)
                         {
                             if (HeathFile.UpdateHeathFile(newHF) > 0)
-                                bunifuSnackbar1.Show(this, "Cập nhập thông tin bệnh án thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                            bunifuSnackbar1.Show(this, "Cập nhập thông tin bệnh án thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                            return;
                         }
 
                     }
