@@ -44,10 +44,16 @@ namespace DO_AN_CUA_HAN.View
         {
 
             if (string.IsNullOrEmpty(textBoxDiseaseName.Text))
+            {
                 bunifuSnackbar1.Show(this, "Thiếu tên bệnh", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
-            if (string.IsNullOrEmpty(textBoxDiseaseSymptom.Text))
-                bunifuSnackbar1.Show(this, "Thiếu thông tin triệu chứng", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                return;
+            }
 
+            if (string.IsNullOrEmpty(textBoxDiseaseSymptom.Text))
+            {
+                bunifuSnackbar1.Show(this, "Thiếu thông tin triệu chứng", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                return;
+            }
             try
             {
                 if (this.UserAction == "edit")
@@ -60,6 +66,7 @@ namespace DO_AN_CUA_HAN.View
                         if (Disease.UpdateDisease(DiseaseDetail) > 0)
                         {
                             bunifuSnackbar1.Show(this, "Cập nhập thông tin bệnh thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                            return;
                         }
                     }
                 }
@@ -69,12 +76,14 @@ namespace DO_AN_CUA_HAN.View
                     if (Disease.InsertDisease(newDisease) > 0)
                     {
                         bunifuSnackbar1.Show(this, "Thêm bệnh thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                        return;
                     }
                 }
             }
             catch
             {
                 bunifuSnackbar1.Show(this, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                return;
             }
 
             this.Close();

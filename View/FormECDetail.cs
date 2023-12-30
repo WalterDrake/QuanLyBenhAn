@@ -81,54 +81,58 @@ namespace DO_AN_CUA_HAN.View
 
             private void buttonOk_Click(object sender, System.EventArgs e)
             {
-                try
-                {
-
+            try
+            {
                 if (string.IsNullOrEmpty(textBoxResult.Text))
                 {
                     bunifuSnackbar1.Show(this, "Thiếu kết quả khám bệnh", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
-
+                    return;
                 }
                 if (this.UserAction.Equals("edit"))
+                {
+                    ExaminationCertificate newEC = new ExaminationCertificate();
+                    newEC = this.ECDetail;
+                    newEC.Result = textBoxResult.Text;
+                    newEC.State = comboBoxState.SelectedIndex;
+                    newEC.Date = dateCreate.Value;
+                    DialogResult dialogResult = MessageBox.Show("Xác nhận cập nhập thông tin phiếu khám bệnh", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                    if (dialogResult == DialogResult.Yes)
                     {
-                        ExaminationCertificate newEC = new ExaminationCertificate();
-                        newEC = this.ECDetail;
-                        newEC.Result = textBoxResult.Text;
-                        newEC.State = comboBoxState.SelectedIndex;
-                        newEC.Date = dateCreate.Value;
-                        DialogResult dialogResult = MessageBox.Show("Xác nhận cập nhập thông tin phiếu khám bệnh", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-                        if (dialogResult == DialogResult.Yes)
+                        if (ExaminationCertificate.UpdateEC(newEC) > 0)
                         {
-                            if (ExaminationCertificate.UpdateEC(newEC) > 0)
-                                bunifuSnackbar1.Show(this, "Cập nhập thông tin phiếu khám bệnh thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-
+                            bunifuSnackbar1.Show(this, "Cập nhập thông tin phiếu khám bệnh thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                            return;
+                        }
                     }
 
                 }
-                    else if (this.UserAction == "updateResult")
-                    {
-                        ExaminationCertificate newEC = new ExaminationCertificate();
-                        newEC.ECID = Convert.ToInt32(textBoxECID.Text);
-                        newEC.PatientID = Convert.ToInt32(textBoxPatientID.Text);
-                        newEC.StaffID = Convert.ToInt32(textBoxStaffID.Text);
-                        newEC.State = 1;
-                        newEC.Date = dateCreate.Value;
-                        newEC.Result = textBoxResult.Text;
+                else if (this.UserAction == "updateResult")
+                {
+                    ExaminationCertificate newEC = new ExaminationCertificate();
+                    newEC.ECID = Convert.ToInt32(textBoxECID.Text);
+                    newEC.PatientID = Convert.ToInt32(textBoxPatientID.Text);
+                    newEC.StaffID = Convert.ToInt32(textBoxStaffID.Text);
+                    newEC.State = 1;
+                    newEC.Date = dateCreate.Value;
+                    newEC.Result = textBoxResult.Text;
 
-                        if (ExaminationCertificate.UpdateEC(newEC) > 0)
-                            bunifuSnackbar1.Show(this, "Cập nhập kết quả khám bệnh thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                    }
-                    else
-                    {
-                        ExaminationCertificate newEC = new ExaminationCertificate();
-                        newEC.ECID = 0;
-                        newEC.PatientID = Convert.ToInt32(textBoxPatientID.Text);
-                        newEC.StaffID = Convert.ToInt32(textBoxStaffID.Text);
-                        newEC.State = comboBoxState.SelectedIndex;
-                        newEC.Date = dateCreate.Value;
-                        newEC.Result = textBoxResult.Text;
-                        if (ExaminationCertificate.InsertEC(newEC) > 0)
+                    if (ExaminationCertificate.UpdateEC(newEC) > 0)
                         {
+                            bunifuSnackbar1.Show(this, "Cập nhập kết quả khám bệnh thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                            return;
+                        }
+                    }
+                else
+                {
+                    ExaminationCertificate newEC = new ExaminationCertificate();
+                    newEC.ECID = 0;
+                    newEC.PatientID = Convert.ToInt32(textBoxPatientID.Text);
+                    newEC.StaffID = Convert.ToInt32(textBoxStaffID.Text);
+                    newEC.State = comboBoxState.SelectedIndex;
+                    newEC.Date = dateCreate.Value;
+                    newEC.Result = textBoxResult.Text;
+                    if (ExaminationCertificate.InsertEC(newEC) > 0)
+                    {
                         /*FormReport reportForm = new FormReport();
 
                         reportForm.ReportType = "EC";
@@ -142,15 +146,14 @@ namespace DO_AN_CUA_HAN.View
                             Bill newBill = new Bill(Bill.SERVICEBILL, patientID, staffID);
                             FormBillDetail billDetailForm = new FormBillDetail("insertExamination", newBill);
                             billDetailForm.ShowDialog();*/
-                        }
                     }
-
-
+                }
             }
             catch
-                {
-                    bunifuSnackbar1.Show(this, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                }
+            {
+                bunifuSnackbar1.Show(this, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                return;
+            }
             this.Close();
             }
 

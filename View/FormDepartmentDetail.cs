@@ -39,7 +39,7 @@ namespace DO_AN_CUA_HAN.View
             if(string.IsNullOrEmpty(bunifuTextBoxDepartmentName.Text))
             {
                 bunifuSnackbar1.Show(this, "Thiếu tên phòng ban", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
-
+                return;
             }
             try
             {
@@ -50,8 +50,10 @@ namespace DO_AN_CUA_HAN.View
                     if (dialogResult == DialogResult.Yes)
                     {
                         if (Department.UpdateDepartment(DepartmentDetail) > 0)
-                        bunifuSnackbar1.Show(this, "Cập nhật thông tin phòng ban thành công thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-
+                        {
+                            bunifuSnackbar1.Show(this, "Cập nhật thông tin phòng ban thành công thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                            return;
+                        }
                     }
 
                 }
@@ -59,14 +61,16 @@ namespace DO_AN_CUA_HAN.View
                 {
                     Department newDepartment = new Department(0, bunifuTextBoxDepartmentName.Text);
                     if (Department.InsertDepartment(newDepartment) > 0)
-                    bunifuSnackbar1.Show(this, "Thêm phòng ban thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-
+                    {
+                        bunifuSnackbar1.Show(this, "Thêm phòng ban thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                        return;
+                    }
                 }
             }
             catch
             {
                 bunifuSnackbar1.Show(this, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
-
+                return;
             }
 
             this.Close();

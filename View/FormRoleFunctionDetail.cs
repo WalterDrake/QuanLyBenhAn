@@ -40,12 +40,12 @@ namespace DO_AN_CUA_HAN.View
             if (string.IsNullOrEmpty(bunifuTextBoxFunctionName.Text))
             {
                 bunifuSnackbar1.Show(this, "Thiếu tên chức năng", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-
+                return;
             }
             if (string.IsNullOrEmpty(bunifuTextBoxButton.Text))
             {
                 bunifuSnackbar1.Show(this, "Thiếu nút", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-
+                return;
             }
             try
             {
@@ -57,8 +57,10 @@ namespace DO_AN_CUA_HAN.View
                     if (dialogResult == DialogResult.Yes)
                     {
                         if (RoleFunction.UpdateFunction(Function) > 0)
+                        {
                             bunifuSnackbar1.Show(this, "Cập nhật chức năng thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-
+                            return;
+                        }
                     }
 
                 }
@@ -66,14 +68,16 @@ namespace DO_AN_CUA_HAN.View
                 {
                     RoleFunction newFunction = new RoleFunction(0, bunifuTextBoxFunctionName.Text, bunifuTextBoxButton.Text);
                     if (RoleFunction.InsertFunction(newFunction) > 0)
+                    {
                         bunifuSnackbar1.Show(this, "Thêm chức năng thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-
+                        return;
+                    }
                 }
             }
             catch
             {
                 bunifuSnackbar1.Show(this, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-
+                return;
             }
 
             this.Close();

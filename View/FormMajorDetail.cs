@@ -43,6 +43,7 @@ namespace DO_AN_CUA_HAN.View
             if (string.IsNullOrEmpty(bunifuTextBoxMajorName.Text))
             {
                 bunifuSnackbar1.Show(this, "Thiếu tên phòng ban", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                return;
             }
             try
             {
@@ -56,8 +57,10 @@ namespace DO_AN_CUA_HAN.View
                     if (dialogResult == DialogResult.Yes)
                     {
                         if (Major.UpdateMajor(newMajor) > 0)
-                            MessageBox.Show("Cập nhập thông tin chuyên ngành thành công thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        bunifuSnackbar1.Show(this, "Cập nhập thông tin chuyên ngành thành công thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                        {
+                            bunifuSnackbar1.Show(this, "Cập nhập thông tin chuyên ngành thành công thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                            return;
+                        }
                     }
 
                 }
@@ -65,14 +68,16 @@ namespace DO_AN_CUA_HAN.View
                 {
                     newMajor.MajorID = 0;
                     if (Major.InsertMajor(newMajor) > 0)
+                    {
                         bunifuSnackbar1.Show(this, "Thêm phòng khoa thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-
+                        return;
+                    }
                 }
             }
             catch
             {
                 bunifuSnackbar1.Show(this, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
-
+                return;
             }
 
             this.Close();

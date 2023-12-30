@@ -43,9 +43,12 @@ namespace DO_AN_CUA_HAN.View
         private void buttonOk_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(textBoxPatientID.Text))
+            {
                 bunifuSnackbar1.Show(this, "Thiếu thông tin mã bệnh nhân", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                return;
+            }
 
-            HBDetail.Patient = Convert.ToInt32(textBoxPatientID.Text);
+                HBDetail.Patient = Convert.ToInt32(textBoxPatientID.Text);
             String str = comboBoxState.Items[comboBoxState.SelectedIndex].ToString();
             HBDetail.State = 1;
             if (Patient.IsPatientExist(HBDetail.Patient))
@@ -55,22 +58,28 @@ namespace DO_AN_CUA_HAN.View
                     if (!HospitalBed.CheckPatient(HBDetail.Patient))
                     {
                         if (HospitalBed.UpdateHospitalBed(HBDetail) > 0)
+                        {
                             bunifuSnackbar1.Show(this, "Nhận giường thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
-                        this.Close();
+                            return;
+                        }
+                            this.Close();
                     }
                     else
                     {
                         bunifuSnackbar1.Show(this, "Bệnh nhân đã nhận giường", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                        return;
                     }
                 }
                 catch
                 {
                     bunifuSnackbar1.Show(this, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                    return;
                 }
             }
             else
             {
                 bunifuSnackbar1.Show(this, "Bệnh nhân không tồn tại", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                return;
             }
 
         }

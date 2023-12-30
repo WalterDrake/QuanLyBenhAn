@@ -52,11 +52,20 @@ namespace  DO_AN_CUA_HAN.View
 
             // If fields is not validated then do nothing
             if (string.IsNullOrEmpty(textBoxFirstName.Text))
+            {
                 bunifuSnackbar1.Show(this, "Thiếu tên", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                return;
+            }
             if (string.IsNullOrEmpty(textBoxLastName.Text))
+            {
                 bunifuSnackbar1.Show(this, "Thiếu họ", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                return;
+            }
             if (string.IsNullOrEmpty(textBoxIdentityCard.Text))
+            {
                 bunifuSnackbar1.Show(this, "Thiếu thông CCCD", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                return;
+            }
 
             // Set PatientDetail property with value in patientdetail form
             PatientDetail.FirstName = textBoxFirstName.Text;

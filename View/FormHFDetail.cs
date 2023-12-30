@@ -92,7 +92,11 @@ namespace DO_AN_CUA_HAN.View
                         if (dialogResult == DialogResult.Yes)
                         {
                             if (HeathFile.UpdateHeathFile(newHF) > 0)
+                            {
                                 bunifuSnackbar1.Show(this, "Cập nhập thông tin bệnh án thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                                return;
+                            }
+                           
                         }
 
                     }
@@ -101,6 +105,7 @@ namespace DO_AN_CUA_HAN.View
                         if (HeathFile.DidPatientHaveHF(int.Parse(textBoxPatientID.Text)))
                         {
                             bunifuSnackbar1.Show(this, "Bệnh nhân đã có bệnh án", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                            return;
 
                         }
                         else
@@ -114,18 +119,23 @@ namespace DO_AN_CUA_HAN.View
                             newHF.Treament = textBoxTreatment.Text;
                             newHF.Date = dateCreate.Value;
                             if (HeathFile.InsertHeathFile(newHF) > 0)
+                            {
                                 bunifuSnackbar1.Show(this, "Thêm bệnh án thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                        }
+                                return;
+                            }
+                        }   
                     }
                 }
                 catch
                 {
                     bunifuSnackbar1.Show(this, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                    return;
                 }
             }
             else
             {
                 bunifuSnackbar1.Show(this, "Bệnh nhân không tồn tại", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                return;
             }
 
             this.Close();

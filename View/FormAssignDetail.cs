@@ -126,67 +126,75 @@ namespace DO_AN_CUA_HAN.View
 
         private void buttonOk_Click(object sender, EventArgs e)
         {
-            if (listBoxCurrentStaff.Items.Count > 0)
+            if (this.UserAction != null)
             {
-                if (dateDischarge.Value > dateHospitalize.Value)
+                if (listBoxCurrentStaff.Items.Count > 0)
                 {
-                    try
+                    if (dateDischarge.Value > dateHospitalize.Value)
                     {
-                        Assignment newAssign = new Assignment();
-                        newAssign.PatientID = Convert.ToInt32(textBoxPatientID.Text);
-                        newAssign.DischargedDate = dateDischarge.Value;
-                        newAssign.HospitalizateDate = dateHospitalize.Value;
-                        newAssign.Date = dateCreate.Value;
-                        if (this.UserAction == "edit")
+                        try
                         {
-                            newAssign.AssignID = Convert.ToInt32(textBoxAssignID.Text);
-                            DialogResult dialogResult = MessageBox.Show("Xác nhận cập nhập thông tin bản phân công", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                            if (dialogResult == DialogResult.Yes)
+                            Assignment newAssign = new Assignment();
+                            newAssign.PatientID = Convert.ToInt32(textBoxPatientID.Text);
+                            newAssign.DischargedDate = dateDischarge.Value;
+                            newAssign.HospitalizateDate = dateHospitalize.Value;
+                            newAssign.Date = dateCreate.Value;
+                            if (this.UserAction == "edit")
                             {
-                                if (Assignment.UpdateAssignment(newAssign) > 0)
+                                newAssign.AssignID = Convert.ToInt32(textBoxAssignID.Text);
+                                DialogResult dialogResult = MessageBox.Show("Xác nhận cập nhập thông tin bản phân công", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                                if (dialogResult == DialogResult.Yes)
                                 {
-                                    AssignmentDetail.DeleteAssignmentDetails(newAssign.AssignID);
+                                    if (Assignment.UpdateAssignment(newAssign) > 0)
+                                    {
+                                        AssignmentDetail.DeleteAssignmentDetails(newAssign.AssignID);
+                                        for (int i = 0; i < listAD.Count; i++)
+                                        {
+                                            AssignmentDetail newAD = listAD[i];
+                                            newAD.AssignID = newAssign.AssignID;
+                                            AssignmentDetail.InsertAssignmentDetails(newAD);
+                                        }
+                                        listAD.Clear();
+                                        bunifuSnackbar1.Show(this, "Cập nhập thông tin bảng phân công thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                                        return;
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                newAssign.AssignID = 0;
+                                if (Assignment.InsertAssignment(newAssign) > 0)
+                                {
+                                    int curAssignID = Assignment.GetCurrentIdentity();
                                     for (int i = 0; i < listAD.Count; i++)
                                     {
-                                        AssignmentDetail newAD = listAD[i];
-                                        newAD.AssignID = newAssign.AssignID;
-                                        AssignmentDetail.InsertAssignmentDetails(newAD);
+                                        listAD[i].AssignID = curAssignID;
+                                        AssignmentDetail.InsertAssignmentDetails(listAD[i]);
                                     }
-                                    listAD.Clear();
-                                    bunifuSnackbar1.Show(this, "Cập nhập thông tin bảng phân công thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                                    bunifuSnackbar1.Show(this, "Thêm bảng phân công thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                                    return;
                                 }
                             }
                         }
-                        else
+                        catch
                         {
-                            newAssign.AssignID = 0;
-                            if (Assignment.InsertAssignment(newAssign) > 0)
-                            {
-                                int curAssignID = Assignment.GetCurrentIdentity();
-                                for (int i = 0; i < listAD.Count; i++)
-                                {
-                                    listAD[i].AssignID = curAssignID;
-                                    AssignmentDetail.InsertAssignmentDetails(listAD[i]);
-                                }
-                                bunifuSnackbar1.Show(this, "Thêm bảng phân công thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                            }
+                            bunifuSnackbar1.Show(this, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                            return;
                         }
+                        listAD.Clear();
+                        this.Close();
                     }
-                    catch
+                    else
                     {
-                        bunifuSnackbar1.Show(this, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                        bunifuSnackbar1.Show(this, "Ngày xuất viện phải sau ngày nhập viện", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                        return;
                     }
-                    listAD.Clear();
-                    this.Close();
-                }
-                else
-                {
-                    bunifuSnackbar1.Show(this, "Ngày xuất viện phải sau ngày nhập viện", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                 }
             }
             else
             {
                 bunifuSnackbar1.Show(this, "Chưa có nhân viên nào tham gia phân công chăm sóc bệnh nhân", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                return;
             }
         }
 

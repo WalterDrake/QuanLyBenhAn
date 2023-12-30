@@ -32,12 +32,12 @@ namespace DO_AN_CUA_HAN.View
             if (string.IsNullOrEmpty(bunifuTextBoxUsername.Text))
             {
                 bunifuSnackbar1.Show(this, "Nhập tài khoản", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
-
+                return;
             }
             if (string.IsNullOrEmpty(bunifuTextBoxPassword.Text))
             {
                 bunifuSnackbar1.Show(this, "Nhập mật khẩu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
-
+                return;
             }
 
             Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
@@ -46,6 +46,7 @@ namespace DO_AN_CUA_HAN.View
             ConfigurationManager.RefreshSection("connectionStrings");
 
             bunifuSnackbar1.Show(this, "Khởi động lại chương trình để kết nối mới có hiệu lực!", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+            return;
             this.Close();
         }
         private string getConnectionString() //

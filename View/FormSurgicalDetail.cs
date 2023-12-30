@@ -101,7 +101,7 @@ namespace DO_AN_CUA_HAN.View
             if (CheckStaffInSurgical(listStaff[selectedStaff].StaffID))
             {
                 bunifuSnackbar1.Show(this, "Nhân viên đã có trong danh sách tham gia ca phẩu thuật", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
-
+                return;
             }
             else
             {
@@ -131,7 +131,7 @@ namespace DO_AN_CUA_HAN.View
             if(string.IsNullOrEmpty(bunifuTextBoxDescription.Text))
             {
                 bunifuSnackbar1.Show(this, "Thiếu mô tả ca phẫu thuật", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
-
+                return;
             }
             if (listBoxCurrentStaff.Items.Count > 0)
             {
@@ -159,7 +159,7 @@ namespace DO_AN_CUA_HAN.View
                                 }
                                 listSD.Clear();
                                 bunifuSnackbar1.Show(this, "Cập nhật thông tin ca phẩu thuật thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-
+                                return;
                             }
                         }
                     }
@@ -174,14 +174,14 @@ namespace DO_AN_CUA_HAN.View
                                 SurgicalDetail.InsertSurgicalDetail(listSD[i]);
                             }
                             bunifuSnackbar1.Show(this, "Thêm ca phẫu thuật thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-
+                            return;
                         }
                     }
                 }
                 catch
                 {
                     bunifuSnackbar1.Show(this, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
-
+                    return;
                 }
                 listSD.Clear();
                 this.Close();
@@ -189,7 +189,7 @@ namespace DO_AN_CUA_HAN.View
             else
             {
                 bunifuSnackbar1.Show(this, "Chưa có nhân viên nào tham gia ca phẫu thuật", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Information, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
-
+                return;
             }
         }
     }
