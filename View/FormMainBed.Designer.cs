@@ -87,7 +87,7 @@
             this.bunifuShadowPanel1.ShadowDepth = 0;
             this.bunifuShadowPanel1.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
             this.bunifuShadowPanel1.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel1.Size = new System.Drawing.Size(940, 695);
+            this.bunifuShadowPanel1.Size = new System.Drawing.Size(989, 792);
             this.bunifuShadowPanel1.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.bunifuShadowPanel1.TabIndex = 4;
             // 
@@ -138,7 +138,7 @@
             this.bunifuButtonReturnBed.IdleIconLeftImage = null;
             this.bunifuButtonReturnBed.IdleIconRightImage = null;
             this.bunifuButtonReturnBed.IndicateFocus = false;
-            this.bunifuButtonReturnBed.Location = new System.Drawing.Point(204, 644);
+            this.bunifuButtonReturnBed.Location = new System.Drawing.Point(242, 699);
             this.bunifuButtonReturnBed.Name = "bunifuButtonReturnBed";
             this.bunifuButtonReturnBed.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButtonReturnBed.OnDisabledState.BorderRadius = 15;
@@ -172,7 +172,7 @@
             this.bunifuButtonReturnBed.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButtonReturnBed.OnPressedState.IconLeftImage = null;
             this.bunifuButtonReturnBed.OnPressedState.IconRightImage = null;
-            this.bunifuButtonReturnBed.Size = new System.Drawing.Size(126, 32);
+            this.bunifuButtonReturnBed.Size = new System.Drawing.Size(136, 38);
             this.bunifuButtonReturnBed.TabIndex = 11;
             this.bunifuButtonReturnBed.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButtonReturnBed.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -184,9 +184,9 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(189)))), ((int)(((byte)(175)))));
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(752, 644);
+            this.pictureBox3.Location = new System.Drawing.Point(789, 699);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(27, 32);
+            this.pictureBox3.Size = new System.Drawing.Size(37, 38);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 10;
             this.pictureBox3.TabStop = false;
@@ -238,7 +238,7 @@
             this.bunifuButtonBedAdd.IdleIconLeftImage = null;
             this.bunifuButtonBedAdd.IdleIconRightImage = null;
             this.bunifuButtonBedAdd.IndicateFocus = false;
-            this.bunifuButtonBedAdd.Location = new System.Drawing.Point(749, 644);
+            this.bunifuButtonBedAdd.Location = new System.Drawing.Point(789, 699);
             this.bunifuButtonBedAdd.Name = "bunifuButtonBedAdd";
             this.bunifuButtonBedAdd.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButtonBedAdd.OnDisabledState.BorderRadius = 15;
@@ -272,7 +272,7 @@
             this.bunifuButtonBedAdd.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButtonBedAdd.OnPressedState.IconLeftImage = null;
             this.bunifuButtonBedAdd.OnPressedState.IconRightImage = null;
-            this.bunifuButtonBedAdd.Size = new System.Drawing.Size(111, 32);
+            this.bunifuButtonBedAdd.Size = new System.Drawing.Size(121, 38);
             this.bunifuButtonBedAdd.TabIndex = 9;
             this.bunifuButtonBedAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButtonBedAdd.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -284,9 +284,9 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(189)))), ((int)(((byte)(175)))));
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(625, 644);
+            this.pictureBox2.Location = new System.Drawing.Point(652, 699);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(25, 32);
+            this.pictureBox2.Size = new System.Drawing.Size(35, 38);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
@@ -338,7 +338,7 @@
             this.bunifuButtonBedDelete.IdleIconLeftImage = null;
             this.bunifuButtonBedDelete.IdleIconRightImage = null;
             this.bunifuButtonBedDelete.IndicateFocus = false;
-            this.bunifuButtonBedDelete.Location = new System.Drawing.Point(616, 644);
+            this.bunifuButtonBedDelete.Location = new System.Drawing.Point(643, 699);
             this.bunifuButtonBedDelete.Name = "bunifuButtonBedDelete";
             this.bunifuButtonBedDelete.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButtonBedDelete.OnDisabledState.BorderRadius = 15;
@@ -372,7 +372,7 @@
             this.bunifuButtonBedDelete.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButtonBedDelete.OnPressedState.IconLeftImage = null;
             this.bunifuButtonBedDelete.OnPressedState.IconRightImage = null;
-            this.bunifuButtonBedDelete.Size = new System.Drawing.Size(102, 32);
+            this.bunifuButtonBedDelete.Size = new System.Drawing.Size(112, 38);
             this.bunifuButtonBedDelete.TabIndex = 7;
             this.bunifuButtonBedDelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButtonBedDelete.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -427,7 +427,7 @@
             this.bunifuButtonReceiveBed.IdleIconLeftImage = null;
             this.bunifuButtonReceiveBed.IdleIconRightImage = null;
             this.bunifuButtonReceiveBed.IndicateFocus = false;
-            this.bunifuButtonReceiveBed.Location = new System.Drawing.Point(56, 644);
+            this.bunifuButtonReceiveBed.Location = new System.Drawing.Point(83, 699);
             this.bunifuButtonReceiveBed.Name = "bunifuButtonReceiveBed";
             this.bunifuButtonReceiveBed.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButtonReceiveBed.OnDisabledState.BorderRadius = 15;
@@ -461,7 +461,7 @@
             this.bunifuButtonReceiveBed.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButtonReceiveBed.OnPressedState.IconLeftImage = null;
             this.bunifuButtonReceiveBed.OnPressedState.IconRightImage = null;
-            this.bunifuButtonReceiveBed.Size = new System.Drawing.Size(126, 32);
+            this.bunifuButtonReceiveBed.Size = new System.Drawing.Size(136, 38);
             this.bunifuButtonReceiveBed.TabIndex = 5;
             this.bunifuButtonReceiveBed.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButtonReceiveBed.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -520,7 +520,7 @@
             this.bunifuDataGridViewBed.HeaderBackColor = System.Drawing.Color.DodgerBlue;
             this.bunifuDataGridViewBed.HeaderBgColor = System.Drawing.Color.Empty;
             this.bunifuDataGridViewBed.HeaderForeColor = System.Drawing.Color.White;
-            this.bunifuDataGridViewBed.Location = new System.Drawing.Point(14, 75);
+            this.bunifuDataGridViewBed.Location = new System.Drawing.Point(44, 117);
             this.bunifuDataGridViewBed.Name = "bunifuDataGridViewBed";
             this.bunifuDataGridViewBed.RowHeadersVisible = false;
             this.bunifuDataGridViewBed.RowTemplate.Height = 40;
@@ -547,10 +547,10 @@
             this.bunifubuttonBedDeleteSearch.IdleFillColor = System.Drawing.Color.White;
             this.bunifubuttonBedDeleteSearch.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.bunifubuttonBedDeleteSearch.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(58)))), ((int)(((byte)(82)))));
-            this.bunifubuttonBedDeleteSearch.Location = new System.Drawing.Point(646, 29);
+            this.bunifubuttonBedDeleteSearch.Location = new System.Drawing.Point(746, 45);
             this.bunifubuttonBedDeleteSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifubuttonBedDeleteSearch.Name = "bunifubuttonBedDeleteSearch";
-            this.bunifubuttonBedDeleteSearch.Size = new System.Drawing.Size(111, 34);
+            this.bunifubuttonBedDeleteSearch.Size = new System.Drawing.Size(135, 54);
             this.bunifubuttonBedDeleteSearch.TabIndex = 3;
             this.bunifubuttonBedDeleteSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -560,11 +560,11 @@
             this.bunifuLabel1.AutoEllipsis = false;
             this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
-            this.bunifuLabel1.Location = new System.Drawing.Point(76, 39);
+            this.bunifuLabel1.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel1.Location = new System.Drawing.Point(109, 61);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(72, 17);
+            this.bunifuLabel1.Size = new System.Drawing.Size(81, 19);
             this.bunifuLabel1.TabIndex = 2;
             this.bunifuLabel1.Text = "Tìm kiếm :";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -597,7 +597,7 @@
             this.bunifuTextBoxBedSearch.IconRight = null;
             this.bunifuTextBoxBedSearch.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuTextBoxBedSearch.Lines = new string[0];
-            this.bunifuTextBoxBedSearch.Location = new System.Drawing.Point(162, 33);
+            this.bunifuTextBoxBedSearch.Location = new System.Drawing.Point(211, 51);
             this.bunifuTextBoxBedSearch.MaxLength = 32767;
             this.bunifuTextBoxBedSearch.MinimumSize = new System.Drawing.Size(1, 1);
             this.bunifuTextBoxBedSearch.Modified = false;
@@ -633,7 +633,7 @@
             this.bunifuTextBoxBedSearch.SelectionLength = 0;
             this.bunifuTextBoxBedSearch.SelectionStart = 0;
             this.bunifuTextBoxBedSearch.ShortcutsEnabled = true;
-            this.bunifuTextBoxBedSearch.Size = new System.Drawing.Size(475, 30);
+            this.bunifuTextBoxBedSearch.Size = new System.Drawing.Size(518, 39);
             this.bunifuTextBoxBedSearch.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.bunifuTextBoxBedSearch.TabIndex = 1;
             this.bunifuTextBoxBedSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -655,7 +655,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.bunifuShadowPanel1);
             this.Name = "FormMainBed";
-            this.Size = new System.Drawing.Size(940, 695);
+            this.Size = new System.Drawing.Size(989, 792);
             this.bunifuShadowPanel1.ResumeLayout(false);
             this.bunifuShadowPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

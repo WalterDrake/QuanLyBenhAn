@@ -81,7 +81,7 @@
             this.bunifuShadowPanel1.ShadowDepth = 0;
             this.bunifuShadowPanel1.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
             this.bunifuShadowPanel1.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel1.Size = new System.Drawing.Size(940, 695);
+            this.bunifuShadowPanel1.Size = new System.Drawing.Size(989, 792);
             this.bunifuShadowPanel1.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.bunifuShadowPanel1.TabIndex = 3;
             // 
@@ -89,9 +89,9 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(189)))), ((int)(((byte)(175)))));
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(736, 644);
+            this.pictureBox2.Location = new System.Drawing.Point(762, 692);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(25, 32);
+            this.pictureBox2.Size = new System.Drawing.Size(41, 45);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
@@ -143,7 +143,7 @@
             this.bunifuButtonEdit.IdleIconLeftImage = null;
             this.bunifuButtonEdit.IdleIconRightImage = null;
             this.bunifuButtonEdit.IndicateFocus = false;
-            this.bunifuButtonEdit.Location = new System.Drawing.Point(731, 644);
+            this.bunifuButtonEdit.Location = new System.Drawing.Point(757, 692);
             this.bunifuButtonEdit.Name = "bunifuButtonEdit";
             this.bunifuButtonEdit.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButtonEdit.OnDisabledState.BorderRadius = 15;
@@ -177,7 +177,7 @@
             this.bunifuButtonEdit.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButtonEdit.OnPressedState.IconLeftImage = null;
             this.bunifuButtonEdit.OnPressedState.IconRightImage = null;
-            this.bunifuButtonEdit.Size = new System.Drawing.Size(115, 32);
+            this.bunifuButtonEdit.Size = new System.Drawing.Size(131, 45);
             this.bunifuButtonEdit.TabIndex = 7;
             this.bunifuButtonEdit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButtonEdit.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -190,9 +190,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(189)))), ((int)(((byte)(175)))));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(59, 644);
+            this.pictureBox1.Location = new System.Drawing.Point(85, 692);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(37, 32);
+            this.pictureBox1.Size = new System.Drawing.Size(53, 45);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
@@ -211,7 +211,7 @@
             this.bunifuButtonBillPrint.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(189)))), ((int)(((byte)(175)))));
             this.bunifuButtonBillPrint.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButtonBillPrint.BackgroundImage")));
             this.bunifuButtonBillPrint.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButtonBillPrint.ButtonText = "In";
+            this.bunifuButtonBillPrint.ButtonText = "       In";
             this.bunifuButtonBillPrint.ButtonTextMarginLeft = 0;
             this.bunifuButtonBillPrint.ColorContrastOnClick = 45;
             this.bunifuButtonBillPrint.ColorContrastOnHover = 45;
@@ -244,7 +244,7 @@
             this.bunifuButtonBillPrint.IdleIconLeftImage = null;
             this.bunifuButtonBillPrint.IdleIconRightImage = null;
             this.bunifuButtonBillPrint.IndicateFocus = false;
-            this.bunifuButtonBillPrint.Location = new System.Drawing.Point(56, 644);
+            this.bunifuButtonBillPrint.Location = new System.Drawing.Point(82, 692);
             this.bunifuButtonBillPrint.Name = "bunifuButtonBillPrint";
             this.bunifuButtonBillPrint.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButtonBillPrint.OnDisabledState.BorderRadius = 15;
@@ -278,7 +278,7 @@
             this.bunifuButtonBillPrint.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButtonBillPrint.OnPressedState.IconLeftImage = null;
             this.bunifuButtonBillPrint.OnPressedState.IconRightImage = null;
-            this.bunifuButtonBillPrint.Size = new System.Drawing.Size(115, 32);
+            this.bunifuButtonBillPrint.Size = new System.Drawing.Size(131, 45);
             this.bunifuButtonBillPrint.TabIndex = 5;
             this.bunifuButtonBillPrint.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButtonBillPrint.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -339,12 +339,12 @@
             this.bunifuDataGridViewBill.HeaderBackColor = System.Drawing.Color.LimeGreen;
             this.bunifuDataGridViewBill.HeaderBgColor = System.Drawing.Color.Empty;
             this.bunifuDataGridViewBill.HeaderForeColor = System.Drawing.Color.White;
-            this.bunifuDataGridViewBill.Location = new System.Drawing.Point(14, 75);
+            this.bunifuDataGridViewBill.Location = new System.Drawing.Point(30, 105);
             this.bunifuDataGridViewBill.Name = "bunifuDataGridViewBill";
             this.bunifuDataGridViewBill.RowHeadersVisible = false;
             this.bunifuDataGridViewBill.RowTemplate.Height = 40;
             this.bunifuDataGridViewBill.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.bunifuDataGridViewBill.Size = new System.Drawing.Size(908, 554);
+            this.bunifuDataGridViewBill.Size = new System.Drawing.Size(929, 557);
             this.bunifuDataGridViewBill.TabIndex = 4;
             this.bunifuDataGridViewBill.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.LimeGreen;
             // 
@@ -366,10 +366,10 @@
             this.bunifubuttonBillDeleteSearch.IdleFillColor = System.Drawing.Color.White;
             this.bunifubuttonBillDeleteSearch.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.bunifubuttonBillDeleteSearch.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(58)))), ((int)(((byte)(82)))));
-            this.bunifubuttonBillDeleteSearch.Location = new System.Drawing.Point(686, 25);
+            this.bunifubuttonBillDeleteSearch.Location = new System.Drawing.Point(721, 29);
             this.bunifubuttonBillDeleteSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifubuttonBillDeleteSearch.Name = "bunifubuttonBillDeleteSearch";
-            this.bunifubuttonBillDeleteSearch.Size = new System.Drawing.Size(111, 34);
+            this.bunifubuttonBillDeleteSearch.Size = new System.Drawing.Size(117, 55);
             this.bunifubuttonBillDeleteSearch.TabIndex = 3;
             this.bunifubuttonBillDeleteSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifubuttonBillDeleteSearch.Click += new System.EventHandler(this.bunifubuttonBillDeleteSearch_Click);
@@ -380,11 +380,11 @@
             this.bunifuLabel1.AutoEllipsis = false;
             this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
-            this.bunifuLabel1.Location = new System.Drawing.Point(86, 34);
+            this.bunifuLabel1.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel1.Location = new System.Drawing.Point(132, 55);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(72, 17);
+            this.bunifuLabel1.Size = new System.Drawing.Size(81, 19);
             this.bunifuLabel1.TabIndex = 2;
             this.bunifuLabel1.Text = "Tìm kiếm :";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -417,7 +417,7 @@
             this.bunifuTextBoxBillSearch.IconRight = null;
             this.bunifuTextBoxBillSearch.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuTextBoxBillSearch.Lines = new string[0];
-            this.bunifuTextBoxBillSearch.Location = new System.Drawing.Point(191, 29);
+            this.bunifuTextBoxBillSearch.Location = new System.Drawing.Point(226, 33);
             this.bunifuTextBoxBillSearch.MaxLength = 32767;
             this.bunifuTextBoxBillSearch.MinimumSize = new System.Drawing.Size(1, 1);
             this.bunifuTextBoxBillSearch.Modified = false;
@@ -453,7 +453,7 @@
             this.bunifuTextBoxBillSearch.SelectionLength = 0;
             this.bunifuTextBoxBillSearch.SelectionStart = 0;
             this.bunifuTextBoxBillSearch.ShortcutsEnabled = true;
-            this.bunifuTextBoxBillSearch.Size = new System.Drawing.Size(475, 30);
+            this.bunifuTextBoxBillSearch.Size = new System.Drawing.Size(481, 51);
             this.bunifuTextBoxBillSearch.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.bunifuTextBoxBillSearch.TabIndex = 1;
             this.bunifuTextBoxBillSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -477,7 +477,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.bunifuShadowPanel1);
             this.Name = "FormMainBill";
-            this.Size = new System.Drawing.Size(940, 695);
+            this.Size = new System.Drawing.Size(989, 792);
             this.bunifuShadowPanel1.ResumeLayout(false);
             this.bunifuShadowPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

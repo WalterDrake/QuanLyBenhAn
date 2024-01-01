@@ -236,7 +236,7 @@
             this.listBoxSystemFunction.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(231)))), ((int)(((byte)(219)))));
             this.listBoxSystemFunction.ForeColor = System.Drawing.Color.Black;
             this.listBoxSystemFunction.FormattingEnabled = true;
-            this.listBoxSystemFunction.Location = new System.Drawing.Point(360, 291);
+            this.listBoxSystemFunction.Location = new System.Drawing.Point(351, 289);
             this.listBoxSystemFunction.Margin = new System.Windows.Forms.Padding(2);
             this.listBoxSystemFunction.Name = "listBoxSystemFunction";
             this.listBoxSystemFunction.Size = new System.Drawing.Size(204, 251);
@@ -282,7 +282,7 @@
             this.buttonInsertFunction.ImageSize = new System.Drawing.Size(74, 63);
             this.buttonInsertFunction.ImageZoomSize = new System.Drawing.Size(114, 103);
             this.buttonInsertFunction.InitialImage = ((System.Drawing.Image)(resources.GetObject("buttonInsertFunction.InitialImage")));
-            this.buttonInsertFunction.Location = new System.Drawing.Point(242, 291);
+            this.buttonInsertFunction.Location = new System.Drawing.Point(238, 291);
             this.buttonInsertFunction.Margin = new System.Windows.Forms.Padding(2);
             this.buttonInsertFunction.Name = "buttonInsertFunction";
             this.buttonInsertFunction.Rotation = 0;
@@ -682,7 +682,7 @@
             this.bunifuLabel7.CursorType = null;
             this.bunifuLabel7.Font = new System.Drawing.Font("Cambria", 11F);
             this.bunifuLabel7.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.bunifuLabel7.Location = new System.Drawing.Point(384, 257);
+            this.bunifuLabel7.Location = new System.Drawing.Point(371, 257);
             this.bunifuLabel7.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuLabel7.Name = "bunifuLabel7";
             this.bunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -702,7 +702,7 @@
             this.bunifuLabel6.CursorType = null;
             this.bunifuLabel6.Font = new System.Drawing.Font("Cambria", 11F);
             this.bunifuLabel6.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.bunifuLabel6.Location = new System.Drawing.Point(57, 257);
+            this.bunifuLabel6.Location = new System.Drawing.Point(73, 257);
             this.bunifuLabel6.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuLabel6.Name = "bunifuLabel6";
             this.bunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -976,7 +976,7 @@
             this.buttonRemoveFunction.ImageSize = new System.Drawing.Size(74, 63);
             this.buttonRemoveFunction.ImageZoomSize = new System.Drawing.Size(114, 103);
             this.buttonRemoveFunction.InitialImage = ((System.Drawing.Image)(resources.GetObject("buttonRemoveFunction.InitialImage")));
-            this.buttonRemoveFunction.Location = new System.Drawing.Point(242, 439);
+            this.buttonRemoveFunction.Location = new System.Drawing.Point(238, 439);
             this.buttonRemoveFunction.Margin = new System.Windows.Forms.Padding(2);
             this.buttonRemoveFunction.Name = "buttonRemoveFunction";
             this.buttonRemoveFunction.Rotation = 0;

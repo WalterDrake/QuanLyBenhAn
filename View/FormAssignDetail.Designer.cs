@@ -163,7 +163,7 @@
             this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(677, 707);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(677, 736);
             this.bunifuGradientPanel1.TabIndex = 1;
             // 
             // bunifuShadowPanel1
@@ -1055,7 +1055,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(677, 707);
+            this.ClientSize = new System.Drawing.Size(677, 736);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormAssignDetail";

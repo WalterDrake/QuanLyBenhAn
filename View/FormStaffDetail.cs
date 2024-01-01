@@ -10,7 +10,7 @@ using System.Data.SqlClient;
 using DO_AN_CUA_HAN.Model;
 using System.Windows.Forms.VisualStyles;
 
-namespace DO_AN_CUA_HAN .View
+namespace DO_AN_CUA_HAN.View
 {
     public partial class FormStaffDetail : Form
     {
@@ -52,15 +52,17 @@ namespace DO_AN_CUA_HAN .View
             dropDownRole.DisplayMember = "ROLENAME";
 
             // If useraction is edit then set staffdetail to staffdetail form
-            if ("edit".Equals(userAction))
+            if ("edit".Equals(userAction) || "personalEdit".Equals(UserAction))
             {
-                setStaffDetail(staff);
+                textBoxPassword.ReadOnly = false;
+                textBoxPasswordCheck.ReadOnly = false;
+                //setStaffDetail(staff);
             }
-            else if ("personalEdit".Equals(userAction))
+            /*else if ("personalEdit".Equals(userAction))
             {
                 SetPersonalDetail(staff);
-            }
-            else
+            }*/
+            else if ("add".Equals(userAction))
             {
                 textBoxPassword.ReadOnly = true;
                 textBoxPasswordCheck.ReadOnly = true;
@@ -71,7 +73,11 @@ namespace DO_AN_CUA_HAN .View
         private void buttonOk_Click(object sender, EventArgs e)
         {
             decimal tempDecimal;
-
+            if (textBoxPassword.Text != textBoxPasswordCheck.Text)
+            {
+                bunifuSnackbar1.Show(this, "Mật khẩu xác nhận không khớp", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                return;
+            }
             // If fields is not validated then do nothing
             if (string.IsNullOrEmpty(textBoxFirstName.Text))
             {
@@ -300,9 +306,18 @@ namespace DO_AN_CUA_HAN .View
 
         private void textBoxIdentityCard_KeyPress(object sender, KeyPressEventArgs e)
         {
-
-            if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
+            // Cho phép chỉ là số hoặc các phím điều khiển (Backspace, Delete)
+            if (Char.IsDigit(e.KeyChar) || Char.IsControl(e.KeyChar))
             {
+                // Nếu chiều dài của chuỗi là 9, không cho phép nhập thêm
+                if (textBoxIdentityCard.Text.Length >= 9 && e.KeyChar != 8 && e.KeyChar != 127)
+                {
+                    e.Handled = true;
+                }
+            }
+            else
+            {
+                // Nếu ký tự không phải là số hoặc không phải là các phím điều khiển, không cho phép nhập
                 e.Handled = true;
             }
         }

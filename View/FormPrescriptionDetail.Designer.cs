@@ -343,6 +343,7 @@
             this.bunifuToolTip1.SetToolTipIcon(this.buttonInsert, null);
             this.bunifuToolTip1.SetToolTipTitle(this.buttonInsert, "");
             this.buttonInsert.UseDefaultRadiusAndThickness = true;
+            this.buttonInsert.Click += new System.EventHandler(this.buttonInsert_Click);
             // 
             // textBoxInputInstruction
             // 
