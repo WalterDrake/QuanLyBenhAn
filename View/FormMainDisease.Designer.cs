@@ -63,6 +63,7 @@
             // 
             this.bunifuDataGridViewDisease.AllowCustomTheming = false;
             this.bunifuDataGridViewDisease.AllowUserToAddRows = false;
+            this.bunifuDataGridViewDisease.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(242)))), ((int)(((byte)(203)))));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             this.bunifuDataGridViewDisease.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;

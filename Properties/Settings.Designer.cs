@@ -26,7 +26,8 @@ namespace DO_AN_CUA_HAN.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LAPTOP-3RFD0JLN;Initial Catalog=eHospital;Integrated Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=tcp:ehospital.database.windows.net,1433;Initial Catalog=eHospital;Use" +
+            "r ID=dbeHospital;Password=Admin123!")]
         public string eHospital {
             get {
                 return ((string)(this["eHospital"]));
