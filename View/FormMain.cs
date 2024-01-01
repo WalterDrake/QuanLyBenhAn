@@ -245,8 +245,6 @@ namespace DO_AN_CUA_HAN.View
             timer.Start(); // Bắt đầu Timer để bắt đầu di chuyển đối tượng
         }
 
-
-
         private void bunifuLabel16_Click(object sender, EventArgs e)
         {
             bunifuShadowPanel3.Controls.Clear();
@@ -258,26 +256,6 @@ namespace DO_AN_CUA_HAN.View
             targetX = 320;
             formMainDischarged.tabItemDischarged_Click();
             timer.Start(); // Bắt đầu Timer để bắt đầu di chuyển đối tượng
-        }
-
-        private void btnMinimize_Click(object sender, EventArgs e)
-        {
-            if (WindowState != FormWindowState.Minimized)
-            {
-                WindowState = FormWindowState.Minimized;
-            }
-        }
-
-        private void btnMaximize_Click(object sender, EventArgs e)
-        {
-            if (WindowState == FormWindowState.Normal)
-            {
-                WindowState = FormWindowState.Maximized;
-            }
-            else
-            {
-                WindowState = FormWindowState.Normal;
-            }
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -314,6 +292,7 @@ namespace DO_AN_CUA_HAN.View
         {
 
         }
+
     }
 }
     

@@ -133,6 +133,46 @@ namespace DO_AN_CUA_HAN.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _3varbuq4_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("3varbuq4-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3varbuq4_removebg_preview__1_ {
+            get {
+                object obj = ResourceManager.GetObject("3varbuq4-removebg-preview (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3varbuq4_removebg_preview__1_1 {
+            get {
+                object obj = ResourceManager.GetObject("3varbuq4-removebg-preview (1)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3varbuq4_removebg_preview__1_2 {
+            get {
+                object obj = ResourceManager.GetObject("3varbuq4-removebg-preview (1)2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _40300_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("40300-removebg-preview", resourceCulture);
@@ -206,6 +246,16 @@ namespace DO_AN_CUA_HAN.Properties {
         internal static System.Drawing.Bitmap _76b414fe4610989ff694005085de921a_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("76b414fe4610989ff694005085de921a-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _78pf2th5_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("78pf2th5-removebg-preview", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -386,6 +436,16 @@ namespace DO_AN_CUA_HAN.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Telegram_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("Telegram-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap vecteezy_3d_rendered_icon_medical_hospital_illustraion_27252245 {
             get {
                 object obj = ResourceManager.GetObject("vecteezy_3d-rendered-icon-medical-hospital-illustraion_27252245", resourceCulture);
@@ -427,6 +487,39 @@ namespace DO_AN_CUA_HAN.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap vecteezy_cute_adorable_cartoon_stationery_yellow_pen_pencil_boy_15737572_1_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("vecteezy_cute-adorable-cartoon-stationery-yellow-pen-pencil-boy_15737572-1-remove" +
+                        "bg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vecteezy_cute_adorable_cartoon_stationery_yellow_pen_pencil_boy_15737572_1_removebg_preview1 {
+            get {
+                object obj = ResourceManager.GetObject("vecteezy_cute-adorable-cartoon-stationery-yellow-pen-pencil-boy_15737572-1-remove" +
+                        "bg-preview1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vecteezy_cute_adorable_cartoon_stationery_yellow_pen_pencil_boy_15737572_1_removebg_preview2 {
+            get {
+                object obj = ResourceManager.GetObject("vecteezy_cute-adorable-cartoon-stationery-yellow-pen-pencil-boy_15737572-1-remove" +
+                        "bg-preview2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap vecteezy_flat_isometric_illustration_concept_symbol_of_the_best_7885579_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("vecteezy_flat-isometric-illustration-concept-symbol-of-the-best_7885579-removebg-" +
@@ -459,6 +552,17 @@ namespace DO_AN_CUA_HAN.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap vecteezy_interface_plus_user_business_flat_line_filled_icon_vector_19177343_removebg_preview__1_ {
+            get {
+                object obj = ResourceManager.GetObject("vecteezy_interface-plus-user-business-flat-line-filled-icon-vector_19177343-remov" +
+                        "ebg-preview (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap warning_attention_notification_caution_priority_high_alert_sticker_icon_258419 {
             get {
                 object obj = ResourceManager.GetObject("warning_attention_notification_caution_priority_high_alert_sticker_icon_258419", resourceCulture);
@@ -472,6 +576,36 @@ namespace DO_AN_CUA_HAN.Properties {
         internal static System.Drawing.Bitmap z4953206934367_014bc3b5af9952b68f5b02289aaceeca {
             get {
                 object obj = ResourceManager.GetObject("z4953206934367_014bc3b5af9952b68f5b02289aaceeca", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap z5030631053744_2e9b4f844cb98aa60abede7ce3520931_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("z5030631053744_2e9b4f844cb98aa60abede7ce3520931-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap z5030631053744_2e9b4f844cb98aa60abede7ce3520931_removebg_preview1 {
+            get {
+                object obj = ResourceManager.GetObject("z5030631053744_2e9b4f844cb98aa60abede7ce3520931-removebg-preview1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap z5030867747912_8bf5b5c157107b7c880b4fc92925e287_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("z5030867747912_8bf5b5c157107b7c880b4fc92925e287-removebg-preview", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

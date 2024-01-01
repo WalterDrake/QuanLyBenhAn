@@ -29,37 +29,37 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMainAssignment));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.bunifuShadowPanel1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.bunifuDataGridViewAssignmentDetail = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuDataGridViewAssignment = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuDataGridViewAssignmentDetail = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.bunifuButtonASDelete = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.bunifuButtonASEdit = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.bunifuDataGridViewAssignment = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.bunifubuttonAssignmentDeleteSearch = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuTextBoxAssignmentSearch = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuShadowPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridViewAssignment)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridViewAssignmentDetail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridViewAssignment)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuShadowPanel1
@@ -84,8 +84,8 @@
             this.bunifuShadowPanel1.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
             this.bunifuShadowPanel1.Location = new System.Drawing.Point(0, 0);
             this.bunifuShadowPanel1.Name = "bunifuShadowPanel1";
-            this.bunifuShadowPanel1.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.bunifuShadowPanel1.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(58)))), ((int)(((byte)(82)))));
+            this.bunifuShadowPanel1.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(236)))), ((int)(((byte)(210)))));
+            this.bunifuShadowPanel1.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(182)))), ((int)(((byte)(189)))));
             this.bunifuShadowPanel1.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(58)))), ((int)(((byte)(82)))));
             this.bunifuShadowPanel1.ShadowDept = 2;
             this.bunifuShadowPanel1.ShadowDepth = 0;
@@ -94,67 +94,6 @@
             this.bunifuShadowPanel1.Size = new System.Drawing.Size(989, 792);
             this.bunifuShadowPanel1.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.bunifuShadowPanel1.TabIndex = 5;
-            // 
-            // bunifuDataGridViewAssignmentDetail
-            // 
-            this.bunifuDataGridViewAssignmentDetail.AllowCustomTheming = false;
-            this.bunifuDataGridViewAssignmentDetail.AllowUserToAddRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(242)))), ((int)(((byte)(203)))));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            this.bunifuDataGridViewAssignmentDetail.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.bunifuDataGridViewAssignmentDetail.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.bunifuDataGridViewAssignmentDetail.BackgroundColor = System.Drawing.Color.LightCyan;
-            this.bunifuDataGridViewAssignmentDetail.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bunifuDataGridViewAssignmentDetail.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.bunifuDataGridViewAssignmentDetail.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.LimeGreen;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(164)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuDataGridViewAssignmentDetail.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.bunifuDataGridViewAssignmentDetail.ColumnHeadersHeight = 40;
-            this.bunifuDataGridViewAssignmentDetail.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(242)))), ((int)(((byte)(203)))));
-            this.bunifuDataGridViewAssignmentDetail.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.bunifuDataGridViewAssignmentDetail.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.bunifuDataGridViewAssignmentDetail.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(225)))), ((int)(((byte)(132)))));
-            this.bunifuDataGridViewAssignmentDetail.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            this.bunifuDataGridViewAssignmentDetail.CurrentTheme.BackColor = System.Drawing.Color.LimeGreen;
-            this.bunifuDataGridViewAssignmentDetail.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(240)))), ((int)(((byte)(193)))));
-            this.bunifuDataGridViewAssignmentDetail.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.LimeGreen;
-            this.bunifuDataGridViewAssignmentDetail.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            this.bunifuDataGridViewAssignmentDetail.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.bunifuDataGridViewAssignmentDetail.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(164)))), ((int)(((byte)(40)))));
-            this.bunifuDataGridViewAssignmentDetail.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.bunifuDataGridViewAssignmentDetail.CurrentTheme.Name = null;
-            this.bunifuDataGridViewAssignmentDetail.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(245)))), ((int)(((byte)(214)))));
-            this.bunifuDataGridViewAssignmentDetail.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.bunifuDataGridViewAssignmentDetail.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.bunifuDataGridViewAssignmentDetail.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(225)))), ((int)(((byte)(132)))));
-            this.bunifuDataGridViewAssignmentDetail.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(245)))), ((int)(((byte)(214)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(225)))), ((int)(((byte)(132)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.bunifuDataGridViewAssignmentDetail.DefaultCellStyle = dataGridViewCellStyle3;
-            this.bunifuDataGridViewAssignmentDetail.EnableHeadersVisualStyles = false;
-            this.bunifuDataGridViewAssignmentDetail.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(240)))), ((int)(((byte)(193)))));
-            this.bunifuDataGridViewAssignmentDetail.HeaderBackColor = System.Drawing.Color.LimeGreen;
-            this.bunifuDataGridViewAssignmentDetail.HeaderBgColor = System.Drawing.Color.Empty;
-            this.bunifuDataGridViewAssignmentDetail.HeaderForeColor = System.Drawing.Color.White;
-            this.bunifuDataGridViewAssignmentDetail.Location = new System.Drawing.Point(514, 170);
-            this.bunifuDataGridViewAssignmentDetail.Name = "bunifuDataGridViewAssignmentDetail";
-            this.bunifuDataGridViewAssignmentDetail.RowHeadersVisible = false;
-            this.bunifuDataGridViewAssignmentDetail.RowTemplate.Height = 40;
-            this.bunifuDataGridViewAssignmentDetail.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.bunifuDataGridViewAssignmentDetail.Size = new System.Drawing.Size(424, 510);
-            this.bunifuDataGridViewAssignmentDetail.TabIndex = 14;
-            this.bunifuDataGridViewAssignmentDetail.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.LimeGreen;
             // 
             // bunifuLabel3
             // 
@@ -187,13 +126,160 @@
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
+            // bunifuDataGridViewAssignment
+            // 
+            this.bunifuDataGridViewAssignment.AllowCustomTheming = false;
+            this.bunifuDataGridViewAssignment.AllowUserToAddRows = false;
+            this.bunifuDataGridViewAssignment.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(217)))), ((int)(((byte)(198)))));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            this.bunifuDataGridViewAssignment.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.bunifuDataGridViewAssignment.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.bunifuDataGridViewAssignment.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(217)))), ((int)(((byte)(198)))));
+            this.bunifuDataGridViewAssignment.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.bunifuDataGridViewAssignment.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.bunifuDataGridViewAssignment.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Chocolate;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(84)))), ((int)(((byte)(24)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuDataGridViewAssignment.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.bunifuDataGridViewAssignment.ColumnHeadersHeight = 40;
+            this.bunifuDataGridViewAssignment.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(217)))), ((int)(((byte)(198)))));
+            this.bunifuDataGridViewAssignment.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.bunifuDataGridViewAssignment.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.bunifuDataGridViewAssignment.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(165)))), ((int)(((byte)(120)))));
+            this.bunifuDataGridViewAssignment.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.bunifuDataGridViewAssignment.CurrentTheme.BackColor = System.Drawing.Color.Chocolate;
+            this.bunifuDataGridViewAssignment.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(210)))), ((int)(((byte)(187)))));
+            this.bunifuDataGridViewAssignment.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.Chocolate;
+            this.bunifuDataGridViewAssignment.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            this.bunifuDataGridViewAssignment.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.bunifuDataGridViewAssignment.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(84)))), ((int)(((byte)(24)))));
+            this.bunifuDataGridViewAssignment.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.bunifuDataGridViewAssignment.CurrentTheme.Name = null;
+            this.bunifuDataGridViewAssignment.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(225)))), ((int)(((byte)(210)))));
+            this.bunifuDataGridViewAssignment.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.bunifuDataGridViewAssignment.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.bunifuDataGridViewAssignment.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(165)))), ((int)(((byte)(120)))));
+            this.bunifuDataGridViewAssignment.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(225)))), ((int)(((byte)(210)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(165)))), ((int)(((byte)(120)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.bunifuDataGridViewAssignment.DefaultCellStyle = dataGridViewCellStyle6;
+            this.bunifuDataGridViewAssignment.EnableHeadersVisualStyles = false;
+            this.bunifuDataGridViewAssignment.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(210)))), ((int)(((byte)(187)))));
+            this.bunifuDataGridViewAssignment.HeaderBackColor = System.Drawing.Color.Chocolate;
+            this.bunifuDataGridViewAssignment.HeaderBgColor = System.Drawing.Color.Empty;
+            this.bunifuDataGridViewAssignment.HeaderForeColor = System.Drawing.Color.White;
+            this.bunifuDataGridViewAssignment.Location = new System.Drawing.Point(44, 170);
+            this.bunifuDataGridViewAssignment.Name = "bunifuDataGridViewAssignment";
+            this.bunifuDataGridViewAssignment.RowHeadersVisible = false;
+            this.bunifuDataGridViewAssignment.RowTemplate.Height = 40;
+            this.bunifuDataGridViewAssignment.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.bunifuDataGridViewAssignment.Size = new System.Drawing.Size(424, 510);
+            this.bunifuDataGridViewAssignment.TabIndex = 4;
+            this.bunifuDataGridViewAssignment.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Chocolate;
+            this.bunifuDataGridViewAssignment.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuDataGridViewAssignment_CellClick);
+            this.bunifuDataGridViewAssignment.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuDataGridViewAssignment_CellDoubleClick);
+            // 
+            // bunifuLabel1
+            // 
+            this.bunifuLabel1.AllowParentOverrides = false;
+            this.bunifuLabel1.AutoEllipsis = false;
+            this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel1.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel1.Location = new System.Drawing.Point(89, 59);
+            this.bunifuLabel1.Name = "bunifuLabel1";
+            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel1.Size = new System.Drawing.Size(88, 22);
+            this.bunifuLabel1.TabIndex = 2;
+            this.bunifuLabel1.Text = "Tìm kiếm :";
+            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 100;
+            this.bunifuElipse1.TargetControl = this;
+            // 
+            // bunifuDataGridViewAssignmentDetail
+            // 
+            this.bunifuDataGridViewAssignmentDetail.AllowCustomTheming = false;
+            this.bunifuDataGridViewAssignmentDetail.AllowUserToAddRows = false;
+            this.bunifuDataGridViewAssignmentDetail.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(217)))), ((int)(((byte)(198)))));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.bunifuDataGridViewAssignmentDetail.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.bunifuDataGridViewAssignmentDetail.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.bunifuDataGridViewAssignmentDetail.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(217)))), ((int)(((byte)(198)))));
+            this.bunifuDataGridViewAssignmentDetail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.bunifuDataGridViewAssignmentDetail.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.bunifuDataGridViewAssignmentDetail.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Chocolate;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(84)))), ((int)(((byte)(24)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuDataGridViewAssignmentDetail.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.bunifuDataGridViewAssignmentDetail.ColumnHeadersHeight = 40;
+            this.bunifuDataGridViewAssignmentDetail.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(217)))), ((int)(((byte)(198)))));
+            this.bunifuDataGridViewAssignmentDetail.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.bunifuDataGridViewAssignmentDetail.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.bunifuDataGridViewAssignmentDetail.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(165)))), ((int)(((byte)(120)))));
+            this.bunifuDataGridViewAssignmentDetail.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.bunifuDataGridViewAssignmentDetail.CurrentTheme.BackColor = System.Drawing.Color.Chocolate;
+            this.bunifuDataGridViewAssignmentDetail.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(210)))), ((int)(((byte)(187)))));
+            this.bunifuDataGridViewAssignmentDetail.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.Chocolate;
+            this.bunifuDataGridViewAssignmentDetail.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            this.bunifuDataGridViewAssignmentDetail.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.bunifuDataGridViewAssignmentDetail.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(84)))), ((int)(((byte)(24)))));
+            this.bunifuDataGridViewAssignmentDetail.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.bunifuDataGridViewAssignmentDetail.CurrentTheme.Name = null;
+            this.bunifuDataGridViewAssignmentDetail.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(225)))), ((int)(((byte)(210)))));
+            this.bunifuDataGridViewAssignmentDetail.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.bunifuDataGridViewAssignmentDetail.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.bunifuDataGridViewAssignmentDetail.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(165)))), ((int)(((byte)(120)))));
+            this.bunifuDataGridViewAssignmentDetail.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(225)))), ((int)(((byte)(210)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(165)))), ((int)(((byte)(120)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.bunifuDataGridViewAssignmentDetail.DefaultCellStyle = dataGridViewCellStyle3;
+            this.bunifuDataGridViewAssignmentDetail.EnableHeadersVisualStyles = false;
+            this.bunifuDataGridViewAssignmentDetail.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(210)))), ((int)(((byte)(187)))));
+            this.bunifuDataGridViewAssignmentDetail.HeaderBackColor = System.Drawing.Color.Chocolate;
+            this.bunifuDataGridViewAssignmentDetail.HeaderBgColor = System.Drawing.Color.Empty;
+            this.bunifuDataGridViewAssignmentDetail.HeaderForeColor = System.Drawing.Color.White;
+            this.bunifuDataGridViewAssignmentDetail.Location = new System.Drawing.Point(526, 170);
+            this.bunifuDataGridViewAssignmentDetail.Name = "bunifuDataGridViewAssignmentDetail";
+            this.bunifuDataGridViewAssignmentDetail.RowHeadersVisible = false;
+            this.bunifuDataGridViewAssignmentDetail.RowTemplate.Height = 40;
+            this.bunifuDataGridViewAssignmentDetail.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.bunifuDataGridViewAssignmentDetail.Size = new System.Drawing.Size(424, 510);
+            this.bunifuDataGridViewAssignmentDetail.TabIndex = 14;
+            this.bunifuDataGridViewAssignmentDetail.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Chocolate;
+            // 
             // pictureBox3
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(189)))), ((int)(((byte)(175)))));
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(582, 694);
+            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(205)))), ((int)(((byte)(197)))));
+            this.pictureBox3.Image = global::DO_AN_CUA_HAN.Properties.Resources.z5030631053744_2e9b4f844cb98aa60abede7ce3520931_removebg_preview;
+            this.pictureBox3.Location = new System.Drawing.Point(643, 717);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(39, 41);
+            this.pictureBox3.Size = new System.Drawing.Size(43, 43);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 11;
             this.pictureBox3.TabStop = false;
@@ -209,10 +295,10 @@
             this.bunifuButtonASDelete.AutoSizeLeftIcon = true;
             this.bunifuButtonASDelete.AutoSizeRightIcon = true;
             this.bunifuButtonASDelete.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuButtonASDelete.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(189)))), ((int)(((byte)(175)))));
+            this.bunifuButtonASDelete.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(205)))), ((int)(((byte)(197)))));
             this.bunifuButtonASDelete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButtonASDelete.BackgroundImage")));
-            this.bunifuButtonASDelete.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButtonASDelete.ButtonText = "Xóa";
+            this.bunifuButtonASDelete.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Dash;
+            this.bunifuButtonASDelete.ButtonText = "      Xóa";
             this.bunifuButtonASDelete.ButtonTextMarginLeft = 0;
             this.bunifuButtonASDelete.ColorContrastOnClick = 45;
             this.bunifuButtonASDelete.ColorContrastOnHover = 45;
@@ -238,19 +324,19 @@
             this.bunifuButtonASDelete.IconRightCursor = System.Windows.Forms.Cursors.Default;
             this.bunifuButtonASDelete.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.bunifuButtonASDelete.IconSize = 25;
-            this.bunifuButtonASDelete.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(209)))), ((int)(((byte)(215)))));
+            this.bunifuButtonASDelete.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(113)))), ((int)(((byte)(103)))));
             this.bunifuButtonASDelete.IdleBorderRadius = 15;
-            this.bunifuButtonASDelete.IdleBorderThickness = 1;
-            this.bunifuButtonASDelete.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(189)))), ((int)(((byte)(175)))));
+            this.bunifuButtonASDelete.IdleBorderThickness = 2;
+            this.bunifuButtonASDelete.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(205)))), ((int)(((byte)(197)))));
             this.bunifuButtonASDelete.IdleIconLeftImage = null;
             this.bunifuButtonASDelete.IdleIconRightImage = null;
             this.bunifuButtonASDelete.IndicateFocus = false;
-            this.bunifuButtonASDelete.Location = new System.Drawing.Point(577, 694);
+            this.bunifuButtonASDelete.Location = new System.Drawing.Point(636, 713);
             this.bunifuButtonASDelete.Name = "bunifuButtonASDelete";
             this.bunifuButtonASDelete.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButtonASDelete.OnDisabledState.BorderRadius = 15;
             this.bunifuButtonASDelete.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButtonASDelete.OnDisabledState.BorderThickness = 1;
+            this.bunifuButtonASDelete.OnDisabledState.BorderThickness = 2;
             this.bunifuButtonASDelete.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.bunifuButtonASDelete.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.bunifuButtonASDelete.OnDisabledState.IconLeftImage = null;
@@ -258,28 +344,28 @@
             this.bunifuButtonASDelete.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.bunifuButtonASDelete.onHoverState.BorderRadius = 15;
             this.bunifuButtonASDelete.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButtonASDelete.onHoverState.BorderThickness = 1;
+            this.bunifuButtonASDelete.onHoverState.BorderThickness = 2;
             this.bunifuButtonASDelete.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.bunifuButtonASDelete.onHoverState.ForeColor = System.Drawing.Color.White;
             this.bunifuButtonASDelete.onHoverState.IconLeftImage = null;
             this.bunifuButtonASDelete.onHoverState.IconRightImage = null;
-            this.bunifuButtonASDelete.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(209)))), ((int)(((byte)(215)))));
+            this.bunifuButtonASDelete.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(113)))), ((int)(((byte)(103)))));
             this.bunifuButtonASDelete.OnIdleState.BorderRadius = 15;
-            this.bunifuButtonASDelete.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButtonASDelete.OnIdleState.BorderThickness = 1;
-            this.bunifuButtonASDelete.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(189)))), ((int)(((byte)(175)))));
+            this.bunifuButtonASDelete.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Dash;
+            this.bunifuButtonASDelete.OnIdleState.BorderThickness = 2;
+            this.bunifuButtonASDelete.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(205)))), ((int)(((byte)(197)))));
             this.bunifuButtonASDelete.OnIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(58)))), ((int)(((byte)(82)))));
             this.bunifuButtonASDelete.OnIdleState.IconLeftImage = null;
             this.bunifuButtonASDelete.OnIdleState.IconRightImage = null;
             this.bunifuButtonASDelete.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.bunifuButtonASDelete.OnPressedState.BorderRadius = 15;
             this.bunifuButtonASDelete.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButtonASDelete.OnPressedState.BorderThickness = 1;
+            this.bunifuButtonASDelete.OnPressedState.BorderThickness = 2;
             this.bunifuButtonASDelete.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.bunifuButtonASDelete.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButtonASDelete.OnPressedState.IconLeftImage = null;
             this.bunifuButtonASDelete.OnPressedState.IconRightImage = null;
-            this.bunifuButtonASDelete.Size = new System.Drawing.Size(129, 41);
+            this.bunifuButtonASDelete.Size = new System.Drawing.Size(127, 51);
             this.bunifuButtonASDelete.TabIndex = 10;
             this.bunifuButtonASDelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButtonASDelete.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -290,11 +376,11 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(189)))), ((int)(((byte)(175)))));
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(741, 694);
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(205)))), ((int)(((byte)(197)))));
+            this.pictureBox2.Image = global::DO_AN_CUA_HAN.Properties.Resources.vecteezy_cute_adorable_cartoon_stationery_yellow_pen_pencil_boy_15737572_1_removebg_preview;
+            this.pictureBox2.Location = new System.Drawing.Point(799, 717);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(39, 41);
+            this.pictureBox2.Size = new System.Drawing.Size(43, 43);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
@@ -310,10 +396,10 @@
             this.bunifuButtonASEdit.AutoSizeLeftIcon = true;
             this.bunifuButtonASEdit.AutoSizeRightIcon = true;
             this.bunifuButtonASEdit.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuButtonASEdit.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(189)))), ((int)(((byte)(175)))));
+            this.bunifuButtonASEdit.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(205)))), ((int)(((byte)(197)))));
             this.bunifuButtonASEdit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButtonASEdit.BackgroundImage")));
-            this.bunifuButtonASEdit.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButtonASEdit.ButtonText = "     Thay đổi";
+            this.bunifuButtonASEdit.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Dash;
+            this.bunifuButtonASEdit.ButtonText = "         Thay đổi";
             this.bunifuButtonASEdit.ButtonTextMarginLeft = 0;
             this.bunifuButtonASEdit.ColorContrastOnClick = 45;
             this.bunifuButtonASEdit.ColorContrastOnHover = 45;
@@ -339,19 +425,19 @@
             this.bunifuButtonASEdit.IconRightCursor = System.Windows.Forms.Cursors.Default;
             this.bunifuButtonASEdit.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.bunifuButtonASEdit.IconSize = 25;
-            this.bunifuButtonASEdit.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(209)))), ((int)(((byte)(215)))));
+            this.bunifuButtonASEdit.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(113)))), ((int)(((byte)(103)))));
             this.bunifuButtonASEdit.IdleBorderRadius = 15;
-            this.bunifuButtonASEdit.IdleBorderThickness = 1;
-            this.bunifuButtonASEdit.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(189)))), ((int)(((byte)(175)))));
+            this.bunifuButtonASEdit.IdleBorderThickness = 2;
+            this.bunifuButtonASEdit.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(205)))), ((int)(((byte)(197)))));
             this.bunifuButtonASEdit.IdleIconLeftImage = null;
             this.bunifuButtonASEdit.IdleIconRightImage = null;
             this.bunifuButtonASEdit.IndicateFocus = false;
-            this.bunifuButtonASEdit.Location = new System.Drawing.Point(734, 694);
+            this.bunifuButtonASEdit.Location = new System.Drawing.Point(793, 713);
             this.bunifuButtonASEdit.Name = "bunifuButtonASEdit";
             this.bunifuButtonASEdit.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButtonASEdit.OnDisabledState.BorderRadius = 15;
             this.bunifuButtonASEdit.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButtonASEdit.OnDisabledState.BorderThickness = 1;
+            this.bunifuButtonASEdit.OnDisabledState.BorderThickness = 2;
             this.bunifuButtonASEdit.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.bunifuButtonASEdit.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.bunifuButtonASEdit.OnDisabledState.IconLeftImage = null;
@@ -359,28 +445,28 @@
             this.bunifuButtonASEdit.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.bunifuButtonASEdit.onHoverState.BorderRadius = 15;
             this.bunifuButtonASEdit.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButtonASEdit.onHoverState.BorderThickness = 1;
+            this.bunifuButtonASEdit.onHoverState.BorderThickness = 2;
             this.bunifuButtonASEdit.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.bunifuButtonASEdit.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.bunifuButtonASEdit.onHoverState.IconLeftImage = null;
+            this.bunifuButtonASEdit.onHoverState.IconLeftImage = global::DO_AN_CUA_HAN.Properties.Resources.vecteezy_flat_isometric_illustration_concept_symbol_of_the_best_7885579_removebg_preview;
             this.bunifuButtonASEdit.onHoverState.IconRightImage = null;
-            this.bunifuButtonASEdit.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(209)))), ((int)(((byte)(215)))));
+            this.bunifuButtonASEdit.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(113)))), ((int)(((byte)(103)))));
             this.bunifuButtonASEdit.OnIdleState.BorderRadius = 15;
-            this.bunifuButtonASEdit.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButtonASEdit.OnIdleState.BorderThickness = 1;
-            this.bunifuButtonASEdit.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(189)))), ((int)(((byte)(175)))));
+            this.bunifuButtonASEdit.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Dash;
+            this.bunifuButtonASEdit.OnIdleState.BorderThickness = 2;
+            this.bunifuButtonASEdit.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(205)))), ((int)(((byte)(197)))));
             this.bunifuButtonASEdit.OnIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(58)))), ((int)(((byte)(82)))));
             this.bunifuButtonASEdit.OnIdleState.IconLeftImage = null;
             this.bunifuButtonASEdit.OnIdleState.IconRightImage = null;
             this.bunifuButtonASEdit.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.bunifuButtonASEdit.OnPressedState.BorderRadius = 15;
             this.bunifuButtonASEdit.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButtonASEdit.OnPressedState.BorderThickness = 1;
+            this.bunifuButtonASEdit.OnPressedState.BorderThickness = 2;
             this.bunifuButtonASEdit.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.bunifuButtonASEdit.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButtonASEdit.OnPressedState.IconLeftImage = null;
             this.bunifuButtonASEdit.OnPressedState.IconRightImage = null;
-            this.bunifuButtonASEdit.Size = new System.Drawing.Size(129, 41);
+            this.bunifuButtonASEdit.Size = new System.Drawing.Size(127, 51);
             this.bunifuButtonASEdit.TabIndex = 7;
             this.bunifuButtonASEdit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButtonASEdit.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -388,69 +474,6 @@
             this.bunifuButtonASEdit.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButtonASEdit.UseDefaultRadiusAndThickness = true;
             this.bunifuButtonASEdit.Click += new System.EventHandler(this.bunifuButtonASEdit_Click);
-            // 
-            // bunifuDataGridViewAssignment
-            // 
-            this.bunifuDataGridViewAssignment.AllowCustomTheming = false;
-            this.bunifuDataGridViewAssignment.AllowUserToAddRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(242)))), ((int)(((byte)(203)))));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            this.bunifuDataGridViewAssignment.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.bunifuDataGridViewAssignment.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.bunifuDataGridViewAssignment.BackgroundColor = System.Drawing.Color.LightCyan;
-            this.bunifuDataGridViewAssignment.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bunifuDataGridViewAssignment.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.bunifuDataGridViewAssignment.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.LimeGreen;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(164)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuDataGridViewAssignment.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.bunifuDataGridViewAssignment.ColumnHeadersHeight = 40;
-            this.bunifuDataGridViewAssignment.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(242)))), ((int)(((byte)(203)))));
-            this.bunifuDataGridViewAssignment.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.bunifuDataGridViewAssignment.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.bunifuDataGridViewAssignment.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(225)))), ((int)(((byte)(132)))));
-            this.bunifuDataGridViewAssignment.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            this.bunifuDataGridViewAssignment.CurrentTheme.BackColor = System.Drawing.Color.LimeGreen;
-            this.bunifuDataGridViewAssignment.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(240)))), ((int)(((byte)(193)))));
-            this.bunifuDataGridViewAssignment.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.LimeGreen;
-            this.bunifuDataGridViewAssignment.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            this.bunifuDataGridViewAssignment.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.bunifuDataGridViewAssignment.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(164)))), ((int)(((byte)(40)))));
-            this.bunifuDataGridViewAssignment.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.bunifuDataGridViewAssignment.CurrentTheme.Name = null;
-            this.bunifuDataGridViewAssignment.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(245)))), ((int)(((byte)(214)))));
-            this.bunifuDataGridViewAssignment.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.bunifuDataGridViewAssignment.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.bunifuDataGridViewAssignment.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(225)))), ((int)(((byte)(132)))));
-            this.bunifuDataGridViewAssignment.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(245)))), ((int)(((byte)(214)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(225)))), ((int)(((byte)(132)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.bunifuDataGridViewAssignment.DefaultCellStyle = dataGridViewCellStyle6;
-            this.bunifuDataGridViewAssignment.EnableHeadersVisualStyles = false;
-            this.bunifuDataGridViewAssignment.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(240)))), ((int)(((byte)(193)))));
-            this.bunifuDataGridViewAssignment.HeaderBackColor = System.Drawing.Color.LimeGreen;
-            this.bunifuDataGridViewAssignment.HeaderBgColor = System.Drawing.Color.Empty;
-            this.bunifuDataGridViewAssignment.HeaderForeColor = System.Drawing.Color.White;
-            this.bunifuDataGridViewAssignment.Location = new System.Drawing.Point(44, 170);
-            this.bunifuDataGridViewAssignment.Name = "bunifuDataGridViewAssignment";
-            this.bunifuDataGridViewAssignment.RowHeadersVisible = false;
-            this.bunifuDataGridViewAssignment.RowTemplate.Height = 40;
-            this.bunifuDataGridViewAssignment.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.bunifuDataGridViewAssignment.Size = new System.Drawing.Size(424, 510);
-            this.bunifuDataGridViewAssignment.TabIndex = 4;
-            this.bunifuDataGridViewAssignment.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.LimeGreen;
-            this.bunifuDataGridViewAssignment.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuDataGridViewAssignment_CellClick);
-            this.bunifuDataGridViewAssignment.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuDataGridViewAssignment_CellDoubleClick);
             // 
             // bunifubuttonAssignmentDeleteSearch
             // 
@@ -477,22 +500,6 @@
             this.bunifubuttonAssignmentDeleteSearch.TabIndex = 3;
             this.bunifubuttonAssignmentDeleteSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifubuttonAssignmentDeleteSearch.Click += new System.EventHandler(this.bunifubuttonAssignmentDeleteSearch_Click);
-            // 
-            // bunifuLabel1
-            // 
-            this.bunifuLabel1.AllowParentOverrides = false;
-            this.bunifuLabel1.AutoEllipsis = false;
-            this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
-            this.bunifuLabel1.Location = new System.Drawing.Point(89, 59);
-            this.bunifuLabel1.Name = "bunifuLabel1";
-            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(88, 22);
-            this.bunifuLabel1.TabIndex = 2;
-            this.bunifuLabel1.Text = "Tìm kiếm :";
-            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // bunifuTextBoxAssignmentSearch
             // 
@@ -569,11 +576,6 @@
             this.bunifuTextBoxAssignmentSearch.WordWrap = true;
             this.bunifuTextBoxAssignmentSearch.TextChange += new System.EventHandler(this.bunifuTextBoxAssignmentSearch_TextChange);
             // 
-            // bunifuElipse1
-            // 
-            this.bunifuElipse1.ElipseRadius = 100;
-            this.bunifuElipse1.TargetControl = this;
-            // 
             // FormMainAssignment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -583,10 +585,10 @@
             this.Size = new System.Drawing.Size(989, 792);
             this.bunifuShadowPanel1.ResumeLayout(false);
             this.bunifuShadowPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridViewAssignment)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridViewAssignmentDetail)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridViewAssignment)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -603,8 +605,8 @@
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
         private Bunifu.UI.WinForms.BunifuTextBox bunifuTextBoxAssignmentSearch;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
-        private Bunifu.UI.WinForms.BunifuDataGridView bunifuDataGridViewAssignmentDetail;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel3;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
+        private Bunifu.UI.WinForms.BunifuDataGridView bunifuDataGridViewAssignmentDetail;
     }
 }
