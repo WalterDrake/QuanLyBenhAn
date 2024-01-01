@@ -1934,6 +1934,7 @@
             this.Controls.Add(this.bunifuGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormLogin_SignUp";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormLogin";
             this.bunifuGradientPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();

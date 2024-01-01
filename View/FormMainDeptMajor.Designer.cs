@@ -115,7 +115,7 @@
             this.bunifuShadowPanel1.ShadowDepth = 0;
             this.bunifuShadowPanel1.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
             this.bunifuShadowPanel1.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel1.Size = new System.Drawing.Size(940, 695);
+            this.bunifuShadowPanel1.Size = new System.Drawing.Size(989, 792);
             this.bunifuShadowPanel1.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.bunifuShadowPanel1.TabIndex = 6;
             // 
@@ -123,9 +123,9 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(189)))), ((int)(((byte)(175)))));
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(795, 644);
+            this.pictureBox2.Location = new System.Drawing.Point(815, 695);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(25, 32);
+            this.pictureBox2.Size = new System.Drawing.Size(35, 42);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 25;
             this.pictureBox2.TabStop = false;
@@ -177,7 +177,7 @@
             this.bunifuButtonMajorAdd.IdleIconLeftImage = null;
             this.bunifuButtonMajorAdd.IdleIconRightImage = null;
             this.bunifuButtonMajorAdd.IndicateFocus = false;
-            this.bunifuButtonMajorAdd.Location = new System.Drawing.Point(788, 644);
+            this.bunifuButtonMajorAdd.Location = new System.Drawing.Point(808, 695);
             this.bunifuButtonMajorAdd.Name = "bunifuButtonMajorAdd";
             this.bunifuButtonMajorAdd.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButtonMajorAdd.OnDisabledState.BorderRadius = 15;
@@ -211,7 +211,7 @@
             this.bunifuButtonMajorAdd.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButtonMajorAdd.OnPressedState.IconLeftImage = null;
             this.bunifuButtonMajorAdd.OnPressedState.IconRightImage = null;
-            this.bunifuButtonMajorAdd.Size = new System.Drawing.Size(115, 32);
+            this.bunifuButtonMajorAdd.Size = new System.Drawing.Size(125, 42);
             this.bunifuButtonMajorAdd.TabIndex = 24;
             this.bunifuButtonMajorAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButtonMajorAdd.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -224,9 +224,9 @@
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(189)))), ((int)(((byte)(175)))));
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(654, 644);
+            this.pictureBox6.Location = new System.Drawing.Point(674, 695);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(25, 32);
+            this.pictureBox6.Size = new System.Drawing.Size(35, 42);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 23;
             this.pictureBox6.TabStop = false;
@@ -278,7 +278,7 @@
             this.bunifuButtonMajorEdit.IdleIconLeftImage = null;
             this.bunifuButtonMajorEdit.IdleIconRightImage = null;
             this.bunifuButtonMajorEdit.IndicateFocus = false;
-            this.bunifuButtonMajorEdit.Location = new System.Drawing.Point(647, 644);
+            this.bunifuButtonMajorEdit.Location = new System.Drawing.Point(667, 695);
             this.bunifuButtonMajorEdit.Name = "bunifuButtonMajorEdit";
             this.bunifuButtonMajorEdit.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButtonMajorEdit.OnDisabledState.BorderRadius = 15;
@@ -312,7 +312,7 @@
             this.bunifuButtonMajorEdit.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButtonMajorEdit.OnPressedState.IconLeftImage = null;
             this.bunifuButtonMajorEdit.OnPressedState.IconRightImage = null;
-            this.bunifuButtonMajorEdit.Size = new System.Drawing.Size(115, 32);
+            this.bunifuButtonMajorEdit.Size = new System.Drawing.Size(125, 42);
             this.bunifuButtonMajorEdit.TabIndex = 22;
             this.bunifuButtonMajorEdit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButtonMajorEdit.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -325,9 +325,9 @@
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(189)))), ((int)(((byte)(175)))));
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(512, 644);
+            this.pictureBox5.Location = new System.Drawing.Point(532, 695);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(25, 32);
+            this.pictureBox5.Size = new System.Drawing.Size(35, 42);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 21;
             this.pictureBox5.TabStop = false;
@@ -379,7 +379,7 @@
             this.bunifuButtonMajorDelete.IdleIconLeftImage = null;
             this.bunifuButtonMajorDelete.IdleIconRightImage = null;
             this.bunifuButtonMajorDelete.IndicateFocus = false;
-            this.bunifuButtonMajorDelete.Location = new System.Drawing.Point(505, 644);
+            this.bunifuButtonMajorDelete.Location = new System.Drawing.Point(525, 695);
             this.bunifuButtonMajorDelete.Name = "bunifuButtonMajorDelete";
             this.bunifuButtonMajorDelete.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButtonMajorDelete.OnDisabledState.BorderRadius = 15;
@@ -413,7 +413,7 @@
             this.bunifuButtonMajorDelete.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButtonMajorDelete.OnPressedState.IconLeftImage = null;
             this.bunifuButtonMajorDelete.OnPressedState.IconRightImage = null;
-            this.bunifuButtonMajorDelete.Size = new System.Drawing.Size(115, 32);
+            this.bunifuButtonMajorDelete.Size = new System.Drawing.Size(125, 42);
             this.bunifuButtonMajorDelete.TabIndex = 20;
             this.bunifuButtonMajorDelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButtonMajorDelete.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -426,9 +426,9 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(189)))), ((int)(((byte)(175)))));
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(330, 644);
+            this.pictureBox4.Location = new System.Drawing.Point(329, 695);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(25, 32);
+            this.pictureBox4.Size = new System.Drawing.Size(35, 42);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 19;
             this.pictureBox4.TabStop = false;
@@ -480,7 +480,7 @@
             this.bunifuButtonDeparmentAdd.IdleIconLeftImage = null;
             this.bunifuButtonDeparmentAdd.IdleIconRightImage = null;
             this.bunifuButtonDeparmentAdd.IndicateFocus = false;
-            this.bunifuButtonDeparmentAdd.Location = new System.Drawing.Point(325, 644);
+            this.bunifuButtonDeparmentAdd.Location = new System.Drawing.Point(324, 695);
             this.bunifuButtonDeparmentAdd.Name = "bunifuButtonDeparmentAdd";
             this.bunifuButtonDeparmentAdd.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButtonDeparmentAdd.OnDisabledState.BorderRadius = 15;
@@ -514,7 +514,7 @@
             this.bunifuButtonDeparmentAdd.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButtonDeparmentAdd.OnPressedState.IconLeftImage = null;
             this.bunifuButtonDeparmentAdd.OnPressedState.IconRightImage = null;
-            this.bunifuButtonDeparmentAdd.Size = new System.Drawing.Size(115, 32);
+            this.bunifuButtonDeparmentAdd.Size = new System.Drawing.Size(125, 42);
             this.bunifuButtonDeparmentAdd.TabIndex = 18;
             this.bunifuButtonDeparmentAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButtonDeparmentAdd.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -527,9 +527,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(189)))), ((int)(((byte)(175)))));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(201, 644);
+            this.pictureBox1.Location = new System.Drawing.Point(200, 695);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(25, 32);
+            this.pictureBox1.Size = new System.Drawing.Size(35, 42);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 17;
             this.pictureBox1.TabStop = false;
@@ -581,7 +581,7 @@
             this.bunifuButtonDepartmentEdit.IdleIconLeftImage = null;
             this.bunifuButtonDepartmentEdit.IdleIconRightImage = null;
             this.bunifuButtonDepartmentEdit.IndicateFocus = false;
-            this.bunifuButtonDepartmentEdit.Location = new System.Drawing.Point(192, 644);
+            this.bunifuButtonDepartmentEdit.Location = new System.Drawing.Point(191, 695);
             this.bunifuButtonDepartmentEdit.Name = "bunifuButtonDepartmentEdit";
             this.bunifuButtonDepartmentEdit.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButtonDepartmentEdit.OnDisabledState.BorderRadius = 15;
@@ -615,7 +615,7 @@
             this.bunifuButtonDepartmentEdit.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButtonDepartmentEdit.OnPressedState.IconLeftImage = null;
             this.bunifuButtonDepartmentEdit.OnPressedState.IconRightImage = null;
-            this.bunifuButtonDepartmentEdit.Size = new System.Drawing.Size(115, 32);
+            this.bunifuButtonDepartmentEdit.Size = new System.Drawing.Size(125, 42);
             this.bunifuButtonDepartmentEdit.TabIndex = 16;
             this.bunifuButtonDepartmentEdit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButtonDepartmentEdit.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -629,11 +629,11 @@
             this.bunifuLabel4.AllowParentOverrides = false;
             this.bunifuLabel4.AutoEllipsis = false;
             this.bunifuLabel4.CursorType = null;
-            this.bunifuLabel4.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
-            this.bunifuLabel4.Location = new System.Drawing.Point(617, 100);
+            this.bunifuLabel4.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel4.Location = new System.Drawing.Point(648, 118);
             this.bunifuLabel4.Name = "bunifuLabel4";
             this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel4.Size = new System.Drawing.Size(165, 17);
+            this.bunifuLabel4.Size = new System.Drawing.Size(183, 19);
             this.bunifuLabel4.TabIndex = 15;
             this.bunifuLabel4.Text = "Danh sách chuyên ngành:";
             this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -645,11 +645,11 @@
             this.bunifuLabel2.AutoEllipsis = false;
             this.bunifuLabel2.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel2.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel2.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
-            this.bunifuLabel2.Location = new System.Drawing.Point(172, 100);
+            this.bunifuLabel2.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel2.Location = new System.Drawing.Point(203, 118);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel2.Size = new System.Drawing.Size(108, 17);
+            this.bunifuLabel2.Size = new System.Drawing.Size(119, 19);
             this.bunifuLabel2.TabIndex = 13;
             this.bunifuLabel2.Text = "Danh sách khoa:";
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -707,7 +707,7 @@
             this.bunifuDataGridViewMajor.HeaderBackColor = System.Drawing.Color.LimeGreen;
             this.bunifuDataGridViewMajor.HeaderBgColor = System.Drawing.Color.Empty;
             this.bunifuDataGridViewMajor.HeaderForeColor = System.Drawing.Color.White;
-            this.bunifuDataGridViewMajor.Location = new System.Drawing.Point(482, 121);
+            this.bunifuDataGridViewMajor.Location = new System.Drawing.Point(511, 152);
             this.bunifuDataGridViewMajor.Name = "bunifuDataGridViewMajor";
             this.bunifuDataGridViewMajor.RowHeadersVisible = false;
             this.bunifuDataGridViewMajor.RowTemplate.Height = 40;
@@ -721,9 +721,9 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(189)))), ((int)(((byte)(175)))));
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(69, 644);
+            this.pictureBox3.Location = new System.Drawing.Point(68, 695);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(25, 32);
+            this.pictureBox3.Size = new System.Drawing.Size(35, 42);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 11;
             this.pictureBox3.TabStop = false;
@@ -775,7 +775,7 @@
             this.bunifuButtonDepartmentDelete.IdleIconLeftImage = null;
             this.bunifuButtonDepartmentDelete.IdleIconRightImage = null;
             this.bunifuButtonDepartmentDelete.IndicateFocus = false;
-            this.bunifuButtonDepartmentDelete.Location = new System.Drawing.Point(56, 644);
+            this.bunifuButtonDepartmentDelete.Location = new System.Drawing.Point(55, 695);
             this.bunifuButtonDepartmentDelete.Name = "bunifuButtonDepartmentDelete";
             this.bunifuButtonDepartmentDelete.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButtonDepartmentDelete.OnDisabledState.BorderRadius = 15;
@@ -809,7 +809,7 @@
             this.bunifuButtonDepartmentDelete.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButtonDepartmentDelete.OnPressedState.IconLeftImage = null;
             this.bunifuButtonDepartmentDelete.OnPressedState.IconRightImage = null;
-            this.bunifuButtonDepartmentDelete.Size = new System.Drawing.Size(115, 32);
+            this.bunifuButtonDepartmentDelete.Size = new System.Drawing.Size(125, 42);
             this.bunifuButtonDepartmentDelete.TabIndex = 10;
             this.bunifuButtonDepartmentDelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButtonDepartmentDelete.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -870,7 +870,7 @@
             this.bunifuDataGridViewDeparment.HeaderBackColor = System.Drawing.Color.LimeGreen;
             this.bunifuDataGridViewDeparment.HeaderBgColor = System.Drawing.Color.Empty;
             this.bunifuDataGridViewDeparment.HeaderForeColor = System.Drawing.Color.White;
-            this.bunifuDataGridViewDeparment.Location = new System.Drawing.Point(25, 121);
+            this.bunifuDataGridViewDeparment.Location = new System.Drawing.Point(37, 152);
             this.bunifuDataGridViewDeparment.Name = "bunifuDataGridViewDeparment";
             this.bunifuDataGridViewDeparment.RowHeadersVisible = false;
             this.bunifuDataGridViewDeparment.RowTemplate.Height = 40;
@@ -898,10 +898,10 @@
             this.bunifubuttonMajorDeleteSearch.IdleFillColor = System.Drawing.Color.White;
             this.bunifubuttonMajorDeleteSearch.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.bunifubuttonMajorDeleteSearch.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(58)))), ((int)(((byte)(82)))));
-            this.bunifubuttonMajorDeleteSearch.Location = new System.Drawing.Point(685, 29);
+            this.bunifubuttonMajorDeleteSearch.Location = new System.Drawing.Point(702, 41);
             this.bunifubuttonMajorDeleteSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifubuttonMajorDeleteSearch.Name = "bunifubuttonMajorDeleteSearch";
-            this.bunifubuttonMajorDeleteSearch.Size = new System.Drawing.Size(111, 34);
+            this.bunifubuttonMajorDeleteSearch.Size = new System.Drawing.Size(129, 50);
             this.bunifubuttonMajorDeleteSearch.TabIndex = 3;
             this.bunifubuttonMajorDeleteSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -911,11 +911,11 @@
             this.bunifuLabel1.AutoEllipsis = false;
             this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
-            this.bunifuLabel1.Location = new System.Drawing.Point(99, 41);
+            this.bunifuLabel1.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel1.Location = new System.Drawing.Point(99, 59);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(72, 17);
+            this.bunifuLabel1.Size = new System.Drawing.Size(81, 19);
             this.bunifuLabel1.TabIndex = 2;
             this.bunifuLabel1.Text = "Tìm kiếm :";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -948,7 +948,7 @@
             this.bunifuTextBoxMajorSearch.IconRight = null;
             this.bunifuTextBoxMajorSearch.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuTextBoxMajorSearch.Lines = new string[0];
-            this.bunifuTextBoxMajorSearch.Location = new System.Drawing.Point(192, 33);
+            this.bunifuTextBoxMajorSearch.Location = new System.Drawing.Point(193, 45);
             this.bunifuTextBoxMajorSearch.MaxLength = 32767;
             this.bunifuTextBoxMajorSearch.MinimumSize = new System.Drawing.Size(1, 1);
             this.bunifuTextBoxMajorSearch.Modified = false;
@@ -984,7 +984,7 @@
             this.bunifuTextBoxMajorSearch.SelectionLength = 0;
             this.bunifuTextBoxMajorSearch.SelectionStart = 0;
             this.bunifuTextBoxMajorSearch.ShortcutsEnabled = true;
-            this.bunifuTextBoxMajorSearch.Size = new System.Drawing.Size(475, 30);
+            this.bunifuTextBoxMajorSearch.Size = new System.Drawing.Size(493, 46);
             this.bunifuTextBoxMajorSearch.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.bunifuTextBoxMajorSearch.TabIndex = 1;
             this.bunifuTextBoxMajorSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1006,7 +1006,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.bunifuShadowPanel1);
             this.Name = "FormMainDeptMajor";
-            this.Size = new System.Drawing.Size(940, 695);
+            this.Size = new System.Drawing.Size(989, 792);
             this.bunifuShadowPanel1.ResumeLayout(false);
             this.bunifuShadowPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

@@ -196,9 +196,19 @@ namespace  DO_AN_CUA_HAN.View
         }
 
         private void textBoxIdentityCard_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
+        { 
+            // Cho phép chỉ là số hoặc các phím điều khiển (Backspace, Delete)
+            if (Char.IsDigit(e.KeyChar) || Char.IsControl(e.KeyChar))
             {
+                // Nếu chiều dài của chuỗi là 9, không cho phép nhập thêm
+                if (textBoxIdentityCard.Text.Length >= 9 && e.KeyChar != 8 && e.KeyChar != 127)
+                {
+                    e.Handled = true;
+                }
+            }
+            else
+            {
+                // Nếu ký tự không phải là số hoặc không phải là các phím điều khiển, không cho phép nhập
                 e.Handled = true;
             }
         }

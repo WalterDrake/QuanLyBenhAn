@@ -282,7 +282,7 @@
             this.bunifuShadowPanel1.Controls.Add(this.bunifuPictureBox1);
             this.bunifuShadowPanel1.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Gradient;
             this.bunifuShadowPanel1.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.bunifuShadowPanel1.Location = new System.Drawing.Point(36, 32);
+            this.bunifuShadowPanel1.Location = new System.Drawing.Point(26, 32);
             this.bunifuShadowPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuShadowPanel1.Name = "bunifuShadowPanel1";
             this.bunifuShadowPanel1.PanelColor = System.Drawing.Color.PaleTurquoise;
@@ -306,7 +306,7 @@
             this.bunifuLabelPriceDetail.CursorType = null;
             this.bunifuLabelPriceDetail.Font = new System.Drawing.Font("Cambria", 11F);
             this.bunifuLabelPriceDetail.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.bunifuLabelPriceDetail.Location = new System.Drawing.Point(959, 213);
+            this.bunifuLabelPriceDetail.Location = new System.Drawing.Point(938, 213);
             this.bunifuLabelPriceDetail.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuLabelPriceDetail.Name = "bunifuLabelPriceDetail";
             this.bunifuLabelPriceDetail.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -326,7 +326,7 @@
             this.bunifuLabel17.CursorType = null;
             this.bunifuLabel17.Font = new System.Drawing.Font("Cambria", 11F);
             this.bunifuLabel17.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.bunifuLabel17.Location = new System.Drawing.Point(847, 213);
+            this.bunifuLabel17.Location = new System.Drawing.Point(826, 213);
             this.bunifuLabel17.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuLabel17.Name = "bunifuLabel17";
             this.bunifuLabel17.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -367,7 +367,7 @@
             this.bunifuTextBoxBillID.IconRight = null;
             this.bunifuTextBoxBillID.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuTextBoxBillID.Lines = new string[0];
-            this.bunifuTextBoxBillID.Location = new System.Drawing.Point(195, 155);
+            this.bunifuTextBoxBillID.Location = new System.Drawing.Point(174, 155);
             this.bunifuTextBoxBillID.MaxLength = 32767;
             this.bunifuTextBoxBillID.MinimumSize = new System.Drawing.Size(1, 1);
             this.bunifuTextBoxBillID.Modified = false;
@@ -424,7 +424,7 @@
             this.bunifuLabelBillState.CursorType = null;
             this.bunifuLabelBillState.Font = new System.Drawing.Font("Cambria", 11F);
             this.bunifuLabelBillState.ForeColor = System.Drawing.Color.Red;
-            this.bunifuLabelBillState.Location = new System.Drawing.Point(221, 589);
+            this.bunifuLabelBillState.Location = new System.Drawing.Point(200, 589);
             this.bunifuLabelBillState.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuLabelBillState.Name = "bunifuLabelBillState";
             this.bunifuLabelBillState.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -444,7 +444,7 @@
             this.bunifuLabelTotalBillPrice.CursorType = null;
             this.bunifuLabelTotalBillPrice.Font = new System.Drawing.Font("Cambria", 11F);
             this.bunifuLabelTotalBillPrice.ForeColor = System.Drawing.Color.Red;
-            this.bunifuLabelTotalBillPrice.Location = new System.Drawing.Point(219, 540);
+            this.bunifuLabelTotalBillPrice.Location = new System.Drawing.Point(198, 540);
             this.bunifuLabelTotalBillPrice.Name = "bunifuLabelTotalBillPrice";
             this.bunifuLabelTotalBillPrice.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabelTotalBillPrice.Size = new System.Drawing.Size(24, 17);
@@ -463,7 +463,7 @@
             this.bunifuLabelHICD.CursorType = null;
             this.bunifuLabelHICD.Font = new System.Drawing.Font("Cambria", 11F);
             this.bunifuLabelHICD.ForeColor = System.Drawing.Color.Red;
-            this.bunifuLabelHICD.Location = new System.Drawing.Point(219, 644);
+            this.bunifuLabelHICD.Location = new System.Drawing.Point(198, 644);
             this.bunifuLabelHICD.Name = "bunifuLabelHICD";
             this.bunifuLabelHICD.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabelHICD.Size = new System.Drawing.Size(24, 17);
@@ -482,7 +482,7 @@
             this.bunifuLabel10.CursorType = null;
             this.bunifuLabel10.Font = new System.Drawing.Font("Cambria", 11F);
             this.bunifuLabel10.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.bunifuLabel10.Location = new System.Drawing.Point(69, 589);
+            this.bunifuLabel10.Location = new System.Drawing.Point(48, 589);
             this.bunifuLabel10.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuLabel10.Name = "bunifuLabel10";
             this.bunifuLabel10.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -502,7 +502,7 @@
             this.bunifuLabel11.CursorType = null;
             this.bunifuLabel11.Font = new System.Drawing.Font("Cambria", 11F);
             this.bunifuLabel11.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.bunifuLabel11.Location = new System.Drawing.Point(67, 540);
+            this.bunifuLabel11.Location = new System.Drawing.Point(46, 540);
             this.bunifuLabel11.Name = "bunifuLabel11";
             this.bunifuLabel11.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel11.Size = new System.Drawing.Size(59, 17);
@@ -521,7 +521,7 @@
             this.bunifuLabel12.CursorType = null;
             this.bunifuLabel12.Font = new System.Drawing.Font("Cambria", 11F);
             this.bunifuLabel12.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.bunifuLabel12.Location = new System.Drawing.Point(67, 644);
+            this.bunifuLabel12.Location = new System.Drawing.Point(46, 644);
             this.bunifuLabel12.Name = "bunifuLabel12";
             this.bunifuLabel12.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel12.Size = new System.Drawing.Size(88, 17);
@@ -583,7 +583,7 @@
             this.bunifuDataGridViewBillDetail.HeaderBackColor = System.Drawing.Color.DodgerBlue;
             this.bunifuDataGridViewBillDetail.HeaderBgColor = System.Drawing.Color.Empty;
             this.bunifuDataGridViewBillDetail.HeaderForeColor = System.Drawing.Color.White;
-            this.bunifuDataGridViewBillDetail.Location = new System.Drawing.Point(528, 307);
+            this.bunifuDataGridViewBillDetail.Location = new System.Drawing.Point(507, 307);
             this.bunifuDataGridViewBillDetail.Name = "bunifuDataGridViewBillDetail";
             this.bunifuDataGridViewBillDetail.RowHeadersVisible = false;
             this.bunifuDataGridViewBillDetail.RowTemplate.Height = 40;
@@ -643,7 +643,7 @@
             this.bunifuButtonPay.IdleIconLeftImage = null;
             this.bunifuButtonPay.IdleIconRightImage = null;
             this.bunifuButtonPay.IndicateFocus = false;
-            this.bunifuButtonPay.Location = new System.Drawing.Point(392, 556);
+            this.bunifuButtonPay.Location = new System.Drawing.Point(371, 556);
             this.bunifuButtonPay.Name = "bunifuButtonPay";
             this.bunifuButtonPay.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButtonPay.OnDisabledState.BorderRadius = 15;
@@ -737,7 +737,7 @@
             this.bunifuButtonDelete.IdleIconLeftImage = null;
             this.bunifuButtonDelete.IdleIconRightImage = null;
             this.bunifuButtonDelete.IndicateFocus = false;
-            this.bunifuButtonDelete.Location = new System.Drawing.Point(1016, 251);
+            this.bunifuButtonDelete.Location = new System.Drawing.Point(995, 251);
             this.bunifuButtonDelete.Name = "bunifuButtonDelete";
             this.bunifuButtonDelete.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButtonDelete.OnDisabledState.BorderRadius = 15;
@@ -831,7 +831,7 @@
             this.bunifuButtonAdd.IdleIconLeftImage = null;
             this.bunifuButtonAdd.IdleIconRightImage = null;
             this.bunifuButtonAdd.IndicateFocus = false;
-            this.bunifuButtonAdd.Location = new System.Drawing.Point(921, 251);
+            this.bunifuButtonAdd.Location = new System.Drawing.Point(900, 251);
             this.bunifuButtonAdd.Name = "bunifuButtonAdd";
             this.bunifuButtonAdd.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButtonAdd.OnDisabledState.BorderRadius = 15;
@@ -905,7 +905,7 @@
             this.bunifuTextBoxQuantity.IconRight = null;
             this.bunifuTextBoxQuantity.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuTextBoxQuantity.Lines = new string[0];
-            this.bunifuTextBoxQuantity.Location = new System.Drawing.Point(655, 206);
+            this.bunifuTextBoxQuantity.Location = new System.Drawing.Point(634, 206);
             this.bunifuTextBoxQuantity.MaxLength = 32767;
             this.bunifuTextBoxQuantity.MinimumSize = new System.Drawing.Size(1, 1);
             this.bunifuTextBoxQuantity.Modified = false;
@@ -984,7 +984,7 @@
             this.bunifuTextBoxStaffID.IconRight = null;
             this.bunifuTextBoxStaffID.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuTextBoxStaffID.Lines = new string[0];
-            this.bunifuTextBoxStaffID.Location = new System.Drawing.Point(195, 319);
+            this.bunifuTextBoxStaffID.Location = new System.Drawing.Point(174, 319);
             this.bunifuTextBoxStaffID.MaxLength = 32767;
             this.bunifuTextBoxStaffID.MinimumSize = new System.Drawing.Size(1, 1);
             this.bunifuTextBoxStaffID.Modified = false;
@@ -1062,7 +1062,7 @@
             this.bunifuTextBoxStaffName.IconRight = null;
             this.bunifuTextBoxStaffName.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuTextBoxStaffName.Lines = new string[0];
-            this.bunifuTextBoxStaffName.Location = new System.Drawing.Point(195, 377);
+            this.bunifuTextBoxStaffName.Location = new System.Drawing.Point(174, 377);
             this.bunifuTextBoxStaffName.MaxLength = 32767;
             this.bunifuTextBoxStaffName.MinimumSize = new System.Drawing.Size(1, 1);
             this.bunifuTextBoxStaffName.Modified = false;
@@ -1119,7 +1119,7 @@
             this.bunifuLabel9.CursorType = null;
             this.bunifuLabel9.Font = new System.Drawing.Font("Cambria", 11F);
             this.bunifuLabel9.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.bunifuLabel9.Location = new System.Drawing.Point(71, 384);
+            this.bunifuLabel9.Location = new System.Drawing.Point(50, 384);
             this.bunifuLabel9.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuLabel9.Name = "bunifuLabel9";
             this.bunifuLabel9.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1160,7 +1160,7 @@
             this.bunifuTextBoxPatientName.IconRight = null;
             this.bunifuTextBoxPatientName.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuTextBoxPatientName.Lines = new string[0];
-            this.bunifuTextBoxPatientName.Location = new System.Drawing.Point(198, 262);
+            this.bunifuTextBoxPatientName.Location = new System.Drawing.Point(177, 262);
             this.bunifuTextBoxPatientName.MaxLength = 32767;
             this.bunifuTextBoxPatientName.MinimumSize = new System.Drawing.Size(1, 1);
             this.bunifuTextBoxPatientName.Modified = false;
@@ -1244,7 +1244,7 @@
             this.bunifuDropdownDetail.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
             this.bunifuDropdownDetail.ItemHighLightForeColor = System.Drawing.Color.White;
             this.bunifuDropdownDetail.ItemTopMargin = 3;
-            this.bunifuDropdownDetail.Location = new System.Drawing.Point(655, 157);
+            this.bunifuDropdownDetail.Location = new System.Drawing.Point(634, 157);
             this.bunifuDropdownDetail.Name = "bunifuDropdownDetail";
             this.bunifuDropdownDetail.Size = new System.Drawing.Size(359, 32);
             this.bunifuDropdownDetail.TabIndex = 63;
@@ -1304,7 +1304,7 @@
             this.bunifuButtonClose.IdleIconLeftImage = null;
             this.bunifuButtonClose.IdleIconRightImage = null;
             this.bunifuButtonClose.IndicateFocus = false;
-            this.bunifuButtonClose.Location = new System.Drawing.Point(1016, 644);
+            this.bunifuButtonClose.Location = new System.Drawing.Point(995, 644);
             this.bunifuButtonClose.Name = "bunifuButtonClose";
             this.bunifuButtonClose.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButtonClose.OnDisabledState.BorderRadius = 15;
@@ -1398,7 +1398,7 @@
             this.bunifuButtonSave.IdleIconLeftImage = null;
             this.bunifuButtonSave.IdleIconRightImage = null;
             this.bunifuButtonSave.IndicateFocus = false;
-            this.bunifuButtonSave.Location = new System.Drawing.Point(847, 644);
+            this.bunifuButtonSave.Location = new System.Drawing.Point(826, 644);
             this.bunifuButtonSave.Name = "bunifuButtonSave";
             this.bunifuButtonSave.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButtonSave.OnDisabledState.BorderRadius = 15;
@@ -1451,7 +1451,7 @@
             this.bunifuLabel8.CursorType = null;
             this.bunifuLabel8.Font = new System.Drawing.Font("Cambria", 11F);
             this.bunifuLabel8.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.bunifuLabel8.Location = new System.Drawing.Point(69, 328);
+            this.bunifuLabel8.Location = new System.Drawing.Point(48, 328);
             this.bunifuLabel8.Name = "bunifuLabel8";
             this.bunifuLabel8.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel8.Size = new System.Drawing.Size(83, 17);
@@ -1482,7 +1482,7 @@
             this.bunifuDatePickerInputBill.IconColor = System.Drawing.Color.DimGray;
             this.bunifuDatePickerInputBill.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
             this.bunifuDatePickerInputBill.LeftTextMargin = 5;
-            this.bunifuDatePickerInputBill.Location = new System.Drawing.Point(195, 441);
+            this.bunifuDatePickerInputBill.Location = new System.Drawing.Point(174, 441);
             this.bunifuDatePickerInputBill.MinimumSize = new System.Drawing.Size(4, 32);
             this.bunifuDatePickerInputBill.Name = "bunifuDatePickerInputBill";
             this.bunifuDatePickerInputBill.Size = new System.Drawing.Size(308, 32);
@@ -1685,7 +1685,7 @@
             this.bunifuLabel7.CursorType = null;
             this.bunifuLabel7.Font = new System.Drawing.Font("Cambria", 11F);
             this.bunifuLabel7.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.bunifuLabel7.Location = new System.Drawing.Point(582, 213);
+            this.bunifuLabel7.Location = new System.Drawing.Point(561, 213);
             this.bunifuLabel7.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuLabel7.Name = "bunifuLabel7";
             this.bunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1705,7 +1705,7 @@
             this.bunifuLabelDetail.CursorType = null;
             this.bunifuLabelDetail.Font = new System.Drawing.Font("Cambria", 11F);
             this.bunifuLabelDetail.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.bunifuLabelDetail.Location = new System.Drawing.Point(582, 163);
+            this.bunifuLabelDetail.Location = new System.Drawing.Point(561, 163);
             this.bunifuLabelDetail.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuLabelDetail.Name = "bunifuLabelDetail";
             this.bunifuLabelDetail.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1725,7 +1725,7 @@
             this.bunifuLabel5.CursorType = null;
             this.bunifuLabel5.Font = new System.Drawing.Font("Cambria", 11F);
             this.bunifuLabel5.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.bunifuLabel5.Location = new System.Drawing.Point(69, 449);
+            this.bunifuLabel5.Location = new System.Drawing.Point(48, 449);
             this.bunifuLabel5.Name = "bunifuLabel5";
             this.bunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel5.Size = new System.Drawing.Size(54, 17);
@@ -1744,7 +1744,7 @@
             this.bunifuLabel4.CursorType = null;
             this.bunifuLabel4.Font = new System.Drawing.Font("Cambria", 11F);
             this.bunifuLabel4.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.bunifuLabel4.Location = new System.Drawing.Point(67, 271);
+            this.bunifuLabel4.Location = new System.Drawing.Point(46, 271);
             this.bunifuLabel4.Name = "bunifuLabel4";
             this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel4.Size = new System.Drawing.Size(66, 17);
@@ -1763,7 +1763,7 @@
             this.bunifuLabel3.CursorType = null;
             this.bunifuLabel3.Font = new System.Drawing.Font("Cambria", 11F);
             this.bunifuLabel3.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.bunifuLabel3.Location = new System.Drawing.Point(67, 213);
+            this.bunifuLabel3.Location = new System.Drawing.Point(46, 213);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel3.Size = new System.Drawing.Size(87, 17);
@@ -1803,7 +1803,7 @@
             this.bunifuTextBoxPatientID.IconRight = null;
             this.bunifuTextBoxPatientID.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuTextBoxPatientID.Lines = new string[0];
-            this.bunifuTextBoxPatientID.Location = new System.Drawing.Point(195, 206);
+            this.bunifuTextBoxPatientID.Location = new System.Drawing.Point(174, 206);
             this.bunifuTextBoxPatientID.MaxLength = 32767;
             this.bunifuTextBoxPatientID.MinimumSize = new System.Drawing.Size(1, 1);
             this.bunifuTextBoxPatientID.Modified = false;
@@ -1861,7 +1861,7 @@
             this.bunifuLabel2.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel2.Font = new System.Drawing.Font("Cambria", 11F);
             this.bunifuLabel2.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.bunifuLabel2.Location = new System.Drawing.Point(67, 163);
+            this.bunifuLabel2.Location = new System.Drawing.Point(46, 163);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel2.Size = new System.Drawing.Size(69, 17);

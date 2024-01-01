@@ -343,6 +343,7 @@
             this.bunifuToolTip1.SetToolTipIcon(this.buttonInsert, null);
             this.bunifuToolTip1.SetToolTipTitle(this.buttonInsert, "");
             this.buttonInsert.UseDefaultRadiusAndThickness = true;
+            this.buttonInsert.Click += new System.EventHandler(this.buttonInsert_Click);
             // 
             // textBoxInputInstruction
             // 
@@ -944,6 +945,7 @@
             this.bunifuToolTip1.SetToolTipIcon(this.buttonClose, null);
             this.bunifuToolTip1.SetToolTipTitle(this.buttonClose, "");
             this.buttonClose.UseDefaultRadiusAndThickness = true;
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // buttonOk
             // 
@@ -1037,6 +1039,7 @@
             this.bunifuToolTip1.SetToolTipIcon(this.buttonOk, null);
             this.bunifuToolTip1.SetToolTipTitle(this.buttonOk, "");
             this.buttonOk.UseDefaultRadiusAndThickness = true;
+            this.buttonOk.Click += new System.EventHandler(this.buttonOk_Click);
             // 
             // buttonRemove
             // 
@@ -1130,6 +1133,7 @@
             this.bunifuToolTip1.SetToolTipIcon(this.buttonRemove, null);
             this.bunifuToolTip1.SetToolTipTitle(this.buttonRemove, "");
             this.buttonRemove.UseDefaultRadiusAndThickness = true;
+            this.buttonRemove.Click += new System.EventHandler(this.buttonRemove_Click);
             // 
             // labelX3
             // 

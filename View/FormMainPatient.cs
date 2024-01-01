@@ -113,7 +113,6 @@ namespace DO_AN_CUA_HAN.View
             searchPatient();
         }
 
-
         //Phuong thuc tim kiem cua thanh textboxserach
         private void bunifuTextBoxPatientSearch_TextChanged(object sender, EventArgs e)
         {
@@ -128,7 +127,6 @@ namespace DO_AN_CUA_HAN.View
                 searchPatient();
             }
         }
-
 
         //Thuat toan tim kiem cua Patient
         private void searchPatient()
