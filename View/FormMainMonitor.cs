@@ -17,44 +17,5 @@ namespace DO_AN_CUA_HAN.View
             InitializeComponent();
         }
 
-        private void bunifuShadowPanel1_ControlAdded(object sender, ControlEventArgs e)
-        {
-
-        }
-
-        private void bunifuPictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuButtonMornitorEdit_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuPictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuButtonMornitorDelete_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuDataGridViewHealthNote_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void bunifuLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuTextBoxHealthNoteSearch_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

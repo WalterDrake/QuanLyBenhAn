@@ -230,6 +230,18 @@
     <Compile Include="View\FormMainDisease.Designer.cs">
       <DependentUpon>FormMainDisease.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FormMainHN.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\FormMainHN.Designer.cs">
+      <DependentUpon>FormMainHN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormMainRoleFunction.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\FormMainRoleFunction.Designer.cs">
+      <DependentUpon>FormMainRoleFunction.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FormRoleDetail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -340,6 +352,12 @@
     </Compile>
     <EmbeddedResource Include="View\FormMainDisease.resx">
       <DependentUpon>FormMainDisease.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormMainHN.resx">
+      <DependentUpon>FormMainHN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormMainRoleFunction.resx">
+      <DependentUpon>FormMainRoleFunction.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormRoleDetail.resx">
       <DependentUpon>FormRoleDetail.cs</DependentUpon>

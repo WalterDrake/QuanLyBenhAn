@@ -84,7 +84,6 @@
             this.bunifuShadowPanel1.Size = new System.Drawing.Size(989, 792);
             this.bunifuShadowPanel1.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.bunifuShadowPanel1.TabIndex = 3;
-            this.bunifuShadowPanel1.ControlAdded += new System.Windows.Forms.ControlEventHandler(this.bunifuShadowPanel1_ControlAdded);
             // 
             // bunifuDataGridViewHealthNote
             // 
@@ -145,7 +144,6 @@
             this.bunifuDataGridViewHealthNote.Size = new System.Drawing.Size(932, 601);
             this.bunifuDataGridViewHealthNote.TabIndex = 4;
             this.bunifuDataGridViewHealthNote.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
-            this.bunifuDataGridViewHealthNote.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuDataGridViewHealthNote_CellContentClick);
             // 
             // bunifubuttonHealthNoteDeleteSearch
             // 
@@ -187,7 +185,6 @@
             this.bunifuLabel1.Text = "Tìm kiếm :";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            this.bunifuLabel1.Click += new System.EventHandler(this.bunifuLabel1_Click);
             // 
             // bunifuTextBoxHealthNoteSearch
             // 
@@ -262,7 +259,6 @@
             this.bunifuTextBoxHealthNoteSearch.TextPlaceholder = "Enter text";
             this.bunifuTextBoxHealthNoteSearch.UseSystemPasswordChar = false;
             this.bunifuTextBoxHealthNoteSearch.WordWrap = true;
-            this.bunifuTextBoxHealthNoteSearch.TextChanged += new System.EventHandler(this.bunifuTextBoxHealthNoteSearch_TextChanged);
             // 
             // bunifuElipse1
             // 

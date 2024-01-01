@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="bunifubuttonPrescriptionDeleteSearch.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="bunifubuttonServiceSearch.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAHYAAAAyCAYAAACJbi9rAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKWSURBVHhe7dzfS1NhHMfx3eSsQIQybdIQiugfqLYMToW2
@@ -135,7 +135,7 @@
         Lj/SuoCTXm7FsWHWCnfywR19dCoiIiIi+n8+3w9KXtZPAP0o5QAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="bunifuTextBoxPrescriptionSearch.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="bunifuTextBoxServiceSearch.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAeIAAAAuCAYAAAD0tBrYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADzSURBVHhe7dUxDQMxAARB80fll2EERgDkZclNCHibGema
@@ -1917,7 +1917,7 @@
         AAAASUVORK5CYII=
 </value>
   </data>
-  <data name="bunifuButtonMajorAdd.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="bunifuButtonServiceAdd.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAH0AAAAqCAYAAACeC1RqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIcSURBVHhe7dxNS9xQFMbxu+zSpcsu+xH8CO6EYjqZUWtB
@@ -3505,7 +3505,7 @@
         SCQSiUQikUgkEolEIpFIJBKJRPLR5a/+6v8CUQ/3RJ/vPYcAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="bunifuButtonMajorEdit.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="bunifuButtonServiceEdit.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAH0AAAAqCAYAAACeC1RqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIcSURBVHhe7dxNS9xQFMbxu+zSpcsu+xH8CO6EYjqZUWtB
@@ -5384,7 +5384,7 @@
         JCQkJCQkJCQkJCQkJCQkJCQkkpGS8v8A55Y6d3Qg4OsAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="bunifuButtonMajorDelete.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="bunifuButtonServiceDelete.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAH0AAAAqCAYAAACeC1RqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIcSURBVHhe7dxNS9xQFMbxu+zSpcsu+xH8CO6EYjqZUWtB

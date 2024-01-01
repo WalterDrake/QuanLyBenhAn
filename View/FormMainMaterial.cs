@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DO_AN_CUA_HAN.Model;
 
 namespace DO_AN_CUA_HAN.View
 {
@@ -16,10 +17,134 @@ namespace DO_AN_CUA_HAN.View
         {
             InitializeComponent();
         }
-
-        private void bunifuShadowPanel1_ControlAdded(object sender, ControlEventArgs e)
+        // Refresh datagridview when click material tab
+        public void tabItemMaterial_Click()
         {
+            refreshDataViewMaterial();
+        }
 
+        private void bunifuTextBoxMaterialSearch_TextChange(object sender, EventArgs e)
+        {
+            searchMaterial();
+        }
+
+        private void bunifuTextBoxMaterialSearch_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                searchMaterial();
+            }
+        }
+
+        private void bunifubuttonMaterialDeleteSearch_Click(object sender, EventArgs e)
+        {
+            bunifuTextBoxMaterialSearch.Text = "";
+            searchMaterial();
+        }
+
+        private void bunifuButtonMaterialDelete_Click(object sender, EventArgs e)
+        {
+            if (bunifuDataGridViewMaterial.SelectedRows.Count > 0)
+            {
+                int materialID = Convert.ToInt16(bunifuDataGridViewMaterial.SelectedRows[0].Cells[0].Value);
+                DialogResult dialogResult = MessageBox.Show("Xác nhận xóa vật tư", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    try
+                    {
+                        if (Material.DeleteMaterial(materialID) > 0)
+                            MessageBox.Show("Xóa vật tư thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Vật tư đã hoặc đang được sử dụng", "Lỗi dữ liệu", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+
+                refreshDataViewMaterial();
+            }
+        }
+
+        private void bunifuButtonMaterialEdit_Click(object sender, EventArgs e)
+        {
+            if (bunifuDataGridViewMaterial.SelectedRows.Count > 0)
+            {
+                int materialID = Convert.ToInt16(bunifuDataGridViewMaterial.SelectedRows[0].Cells[0].Value);
+                FormMaterialDetail formMaterialDetail = new FormMaterialDetail(Material.GetMaterial(materialID), "edit");
+                formMaterialDetail.ShowDialog();
+
+                refreshDataViewMaterial();
+            }
+        }
+
+        private void bunifuDataGridViewMaterial_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (bunifuDataGridViewMaterial.SelectedRows.Count > 0)
+            {
+                int materialID = Convert.ToInt16(bunifuDataGridViewMaterial.SelectedRows[0].Cells[0].Value);
+                FormMaterialDetail formMaterialDetail = new FormMaterialDetail(Material.GetMaterial(materialID), "edit");
+                formMaterialDetail.ShowDialog();
+
+                refreshDataViewMaterial();
+            }
+        }
+
+        private void bunifuButtonMaterialAdd_Click(object sender, EventArgs e)
+        {
+            FormMaterialDetail formMaterialDetail = new FormMaterialDetail();
+            formMaterialDetail.ShowDialog();
+
+            refreshDataViewMaterial();
+        }
+        //Refresh datagridview in material tab
+        private void refreshDataViewMaterial()
+        {
+            try
+            {
+                // Get material's datatable
+                DataTable materialTable = Material.GetListMaterial();
+
+                // Add Vietnamese column's name
+                materialTable.Columns.Add("Mã vật tư", typeof(string), "[MATERIALID]");
+                materialTable.Columns.Add("Tên vật tư", typeof(string), "[MATERIALNAME]");
+                materialTable.Columns.Add("Số lượng", typeof(string), "[QUANTITY]");
+                materialTable.Columns.Add("Đơn giá", typeof(string), "[PRICE]");
+                // Set data source to dataview for searching
+                bunifuDataGridViewMaterial.DataSource = materialTable.DefaultView;
+
+                // Hide English columns'name
+                for (int i = 0; i < 4; i++)
+                {
+                    bunifuDataGridViewMaterial.Columns[i].Visible = false;
+                }
+
+                //Add auto complete datasource to textbox
+                bunifuTextBoxMaterialSearch.AutoCompleteCustomSource.Clear();
+                for (int i = 0; i < materialTable.Rows.Count; i++)
+                {
+                    String strmaterialName = materialTable.Rows[i][1].ToString();
+                    bunifuTextBoxMaterialSearch.AutoCompleteCustomSource.Add(strmaterialName);
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Lỗi dữ liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        //Search in datagridview
+        private void searchMaterial()
+        {
+            // Not search it search string is empty
+            if (bunifuTextBoxMaterialSearch.Text != "")
+            {
+                // Search with RowFilter
+                ((DataView)bunifuDataGridViewMaterial.DataSource).RowFilter = "[Mã vật tư] LIKE '*" + bunifuTextBoxMaterialSearch.Text.Trim() + "*'"
+                                                                + "OR [Tên vật tư] LIKE '*" + bunifuTextBoxMaterialSearch.Text.Trim() + "*'";
+            }
+            else
+            {
+                ((DataView)bunifuDataGridViewMaterial.DataSource).RowFilter = "";
+            }
         }
     }
 }
