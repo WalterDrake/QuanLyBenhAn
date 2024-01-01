@@ -33,15 +33,11 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuGradientPanel1_FormMain = new Bunifu.UI.WinForms.BunifuGradientPanel();
-<<<<<<< HEAD
-            this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
-=======
             this.header = new Bunifu.UI.WinForms.BunifuPanel();
             this.controlBox = new Bunifu.UI.WinForms.BunifuPanel();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnMaximize = new System.Windows.Forms.Button();
             this.btnMinimize = new System.Windows.Forms.Button();
->>>>>>> 687701ea5f252b0ae6089e2258715aab0fb94809
             this.bunifuShadowPanel2 = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.bunifuShadowPanel1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.bunifuShadowPanel25 = new Bunifu.UI.WinForms.BunifuShadowPanel();
@@ -109,12 +105,7 @@
             this.bunifuPictureBox2 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuPictureBox15 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuShadowPanel3 = new Bunifu.UI.WinForms.BunifuShadowPanel();
-<<<<<<< HEAD
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-=======
             this.bunifuSnackbar1 = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
->>>>>>> 687701ea5f252b0ae6089e2258715aab0fb94809
             this.bunifuGradientPanel1_FormMain.SuspendLayout();
             this.header.SuspendLayout();
             this.controlBox.SuspendLayout();
@@ -195,22 +186,6 @@
             this.bunifuGradientPanel1_FormMain.Size = new System.Drawing.Size(1300, 858);
             this.bunifuGradientPanel1_FormMain.TabIndex = 0;
             // 
-<<<<<<< HEAD
-            // bunifuPanel1
-            // 
-            this.bunifuPanel1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(216)))), ((int)(((byte)(183)))));
-            this.bunifuPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel1.BackgroundImage")));
-            this.bunifuPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuPanel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(216)))), ((int)(((byte)(183)))));
-            this.bunifuPanel1.BorderRadius = 20;
-            this.bunifuPanel1.BorderThickness = 1;
-            this.bunifuPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bunifuPanel1.Location = new System.Drawing.Point(0, 0);
-            this.bunifuPanel1.Name = "bunifuPanel1";
-            this.bunifuPanel1.ShowBorders = true;
-            this.bunifuPanel1.Size = new System.Drawing.Size(1235, 38);
-            this.bunifuPanel1.TabIndex = 3;
-=======
             // header
             // 
             this.header.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(216)))), ((int)(((byte)(183)))));
@@ -290,7 +265,6 @@
             this.btnMinimize.TabIndex = 0;
             this.btnMinimize.UseVisualStyleBackColor = false;
             this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
->>>>>>> 687701ea5f252b0ae6089e2258715aab0fb94809
             // 
             // bunifuShadowPanel2
             // 
@@ -1596,15 +1570,6 @@
             // 
             // bunifuSnackbar1
             // 
-<<<<<<< HEAD
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 1;
-            // 
-            // bunifuElipse1
-            // 
-            this.bunifuElipse1.ElipseRadius = 100;
-            this.bunifuElipse1.TargetControl = this;
-=======
             this.bunifuSnackbar1.AllowDragging = false;
             this.bunifuSnackbar1.AllowMultipleViews = true;
             this.bunifuSnackbar1.ClickToClose = true;
@@ -1671,7 +1636,6 @@
             this.bunifuSnackbar1.WarningOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon3")));
             this.bunifuSnackbar1.WarningOptions.IconLeftMargin = 12;
             this.bunifuSnackbar1.ZoomCloseIcon = true;
->>>>>>> 687701ea5f252b0ae6089e2258715aab0fb94809
             // 
             // FormMain
             // 
