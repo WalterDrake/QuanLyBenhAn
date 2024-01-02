@@ -1,11 +1,13 @@
 ﻿using Bunifu.Framework.UI;
 using Bunifu.UI.WinForm.BunifuShadowPanel;
 using Bunifu.UI.WinForms;
+using DO_AN_CUA_HAN.Functional;
 using DO_AN_CUA_HAN.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -31,6 +33,38 @@ namespace DO_AN_CUA_HAN.View
             InitializeComponent();
             loginStaff = staff;
             bunifuSnackbar1.Show(this, "Đăng nhập thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+            GetStaffInformation();
+        }
+        private void GetStaffInformation()
+        {
+
+            DataTable dtb;
+
+            string sqlSelect = @"SELECT STAFF.FIRSTNAME, STAFF.LASTNAME, DEPARTMENT.DEPARTMENTNAME, ROLE.ROLENAME
+                                FROM  STAFF JOIN DEPARTMENT ON STAFF.DEPARTMENTID = DEPARTMENT.DEPARTMENTID
+                                JOIN  ROLE ON STAFF.ROLEID = ROLE.ROLEID
+                                WHERE  STAFF.STAFFID = @Staffid";
+
+            SqlParameter[] sqlParameters = { new SqlParameter("@Staffid", loginStaff.StaffID) };
+
+            dtb = SqlResult.ExecuteQuery(sqlSelect, sqlParameters);
+
+
+            // If select query have row then set to new patient
+            if (dtb.Rows.Count > 0)
+            {
+                string firstName = dtb.Rows[0]["FIRSTNAME"].ToString();
+                string lastName = dtb.Rows[0]["LASTNAME"].ToString();
+                string departmentName = dtb.Rows[0]["DEPARTMENTNAME"].ToString();
+                string roleName = dtb.Rows[0]["ROLENAME"].ToString();
+                string fullName = $"{lastName} {firstName}";
+               // string tooltipText = $"<html><b>Họ và tên:</b> {fullName}<br/><b>Chức vụ:</b> {roleName}<br/><b>Khoa:</b> {departmentName}</html>";
+                string tooltipText = $"<html> Họ và tên: <i>{fullName}</i> <br/>Chức vụ: <i>{roleName}</i> <br/>Khoa: <i>{departmentName}</i></html>";
+
+                bunifuToolTip1.SetToolTip(pictureBoxInformation, tooltipText);
+                // Bạn cũng có thể đặt ToolTip Title hoặc Icon nếu cần.
+                bunifuToolTip1.SetToolTipTitle(pictureBoxInformation, fullName);
+            }
         }
 
 
@@ -297,7 +331,6 @@ namespace DO_AN_CUA_HAN.View
                 }
             }
         }
-
         private void mouse_Down(object sender, MouseEventArgs e)
         {
             mouseLocation = new Point(-e.X, -e.Y);
