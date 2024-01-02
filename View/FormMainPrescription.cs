@@ -75,7 +75,7 @@ namespace DO_AN_CUA_HAN.View
             }
         }
 
-        private void bunifuButtonMajorEdit_Click(object sender, EventArgs e)
+        private void bunifuButtonPrescriptionEdit_Click(object sender, EventArgs e)
         {
             if (bunifuDataGridViewPrescription.SelectedRows.Count > 0)
             {
@@ -88,7 +88,7 @@ namespace DO_AN_CUA_HAN.View
             }
         }
 
-        private void bunifuButtonMajorDelete_Click(object sender, EventArgs e)
+        private void bunifuButtonPrescriptionDelete_Click(object sender, EventArgs e)
         {
             if (bunifuDataGridViewPrescription.SelectedRows.Count > 0)
             {

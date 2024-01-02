@@ -199,7 +199,7 @@
             this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(798, 871);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(798, 873);
             this.bunifuGradientPanel1.TabIndex = 0;
             this.bunifuToolTip1.SetToolTip(this.bunifuGradientPanel1, "");
             this.bunifuToolTip1.SetToolTipIcon(this.bunifuGradientPanel1, null);
@@ -998,7 +998,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(798, 871);
+            this.ClientSize = new System.Drawing.Size(798, 873);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Font = new System.Drawing.Font("Cambria", 11F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

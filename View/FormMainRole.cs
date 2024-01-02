@@ -23,7 +23,7 @@ namespace DO_AN_CUA_HAN.View
             refreshDataViewRoleDetail();
         }
 
-        private void bunifuButtonMajorAdd_Click(object sender, EventArgs e)
+        private void bunifuButtonRoleAdd_Click(object sender, EventArgs e)
         {
             FormRoleDetail formRoleDetail = new FormRoleDetail();
             formRoleDetail.ShowDialog();
@@ -32,7 +32,7 @@ namespace DO_AN_CUA_HAN.View
             refreshDataViewRoleDetail();
         }
 
-        private void bunifuButtonMajorDelete_Click(object sender, EventArgs e)
+        private void bunifuButtonRoleDelete_Click(object sender, EventArgs e)
         {
             if (bunifuDataGridViewRole.SelectedRows.Count > 0)
             {
@@ -69,7 +69,7 @@ namespace DO_AN_CUA_HAN.View
             }
         }
 
-        private void bunifuButtonMajorEdit_Click(object sender, EventArgs e)
+        private void bunifuButtonRoleEdit_Click(object sender, EventArgs e)
         {
             if (bunifuDataGridViewRole.SelectedRows.Count > 0)
             {
@@ -102,11 +102,11 @@ namespace DO_AN_CUA_HAN.View
                 }
 
                 //Add auto complete datasource to textbox
-                bunifuTextBoxPrescriptionSearch.AutoCompleteCustomSource.Clear();
+                bunifuTextBoxRoleSearch.AutoCompleteCustomSource.Clear();
                 for (int i = 0; i < roleTable.Rows.Count; i++)
                 {
                     String strRoleName = roleTable.Rows[i][1].ToString();
-                    bunifuTextBoxPrescriptionSearch.AutoCompleteCustomSource.Add(strRoleName);
+                    bunifuTextBoxRoleSearch.AutoCompleteCustomSource.Add(strRoleName);
                 }
             }
             catch
@@ -137,11 +137,11 @@ namespace DO_AN_CUA_HAN.View
         private void searchRole()
         {
             // Not search it search string is empty
-            if (bunifuTextBoxPrescriptionSearch.Text != "")
+            if (bunifuTextBoxRoleSearch.Text != "")
             {
                 // Search with RowFilter
-                ((DataView)bunifuDataGridViewRole.DataSource).RowFilter = "[Tên phân quyền] LIKE '*" + bunifuTextBoxPrescriptionSearch.Text.Trim() + "*'"
-                                                                + "OR [Mã phân quyền] LIKE '*" + bunifuTextBoxPrescriptionSearch.Text.Trim() + "*'";
+                ((DataView)bunifuDataGridViewRole.DataSource).RowFilter = "[Tên phân quyền] LIKE '*" + bunifuTextBoxRoleSearch.Text.Trim() + "*'"
+                                                                + "OR [Mã phân quyền] LIKE '*" + bunifuTextBoxRoleSearch.Text.Trim() + "*'";
                 refreshDataViewRoleDetail();
             }
             else
@@ -163,18 +163,18 @@ namespace DO_AN_CUA_HAN.View
             }
         }
 
-        private void bunifuTextBoxPrescriptionSearch_TextChange(object sender, EventArgs e)
+        private void bunifuTextBoxRoleSearch_TextChange(object sender, EventArgs e)
         {
             searchRole();
         }
 
-        private void bunifubuttonPrescriptionDeleteSearch_Click(object sender, EventArgs e)
+        private void bunifubuttonRoleDeleteSearch_Click(object sender, EventArgs e)
         {
-            bunifuTextBoxPrescriptionSearch.Text = "";
+            bunifuTextBoxRoleSearch.Text = "";
             searchRole();
         }
 
-        private void bunifuTextBoxPrescriptionSearch_KeyDown(object sender, KeyEventArgs e)
+        private void bunifuTextBoxRoleSearch_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {

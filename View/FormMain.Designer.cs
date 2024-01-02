@@ -100,12 +100,12 @@
             this.bunifuShadowPanel5 = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.tabItemMedicine = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPictureBox2 = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.bunifuPictureBox15 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuShadowPanel3 = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.header = new Bunifu.UI.WinForms.BunifuPanel();
             this.controlBox = new Bunifu.UI.WinForms.BunifuPanel();
-            this.bunifuPictureBox24 = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.bunifuPictureBox17 = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.Exit = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.bunifuLogOut = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.bunifuAccount = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuGradientPanel1_FormMain.SuspendLayout();
             this.bunifuShadowPanel1.SuspendLayout();
             this.bunifuShadowPanel25.SuspendLayout();
@@ -150,11 +150,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.bunifuShadowPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox15)).BeginInit();
             this.header.SuspendLayout();
             this.controlBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox24)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Exit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuLogOut)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuAccount)).BeginInit();
             this.SuspendLayout();
             // 
             // timer1
@@ -740,10 +740,10 @@
             this.tabItemRole.Text = "Phân quyền";
             this.tabItemRole.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.tabItemRole.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            this.tabItemRole.Click += new System.EventHandler(this.tabItemRole_Click);
             this.bunifuToolTip1.SetToolTip(this.tabItemRole, "");
             this.bunifuToolTip1.SetToolTipIcon(this.tabItemRole, null);
             this.bunifuToolTip1.SetToolTipTitle(this.tabItemRole, "");
+            this.tabItemRole.Click += new System.EventHandler(this.tabItemRole_Click);
             // 
             // bunifuPictureBox18
             // 
@@ -806,11 +806,10 @@
             this.tabItemTest.Text = "Xét nghiệm";
             this.tabItemTest.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.tabItemTest.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            this.tabItemTest.Click += new System.EventHandler(this.tabItemTest_Click);
             this.bunifuToolTip1.SetToolTip(this.tabItemTest, "");
             this.bunifuToolTip1.SetToolTipIcon(this.tabItemTest, null);
             this.bunifuToolTip1.SetToolTipTitle(this.tabItemTest, "");
-            this.tabItemTest.Click += new System.EventHandler(this.bunifuLabel15_Click);
+            this.tabItemTest.Click += new System.EventHandler(this.tabItemTest_Click);
             // 
             // bunifuPictureBox16
             // 
@@ -1005,10 +1004,10 @@
             this.tabItemDischarged.Text = "Xuất viện";
             this.tabItemDischarged.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.tabItemDischarged.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            this.tabItemDischarged.Click += new System.EventHandler(this.tabItemDischarged_Click);
             this.bunifuToolTip1.SetToolTip(this.tabItemDischarged, "");
             this.bunifuToolTip1.SetToolTipIcon(this.tabItemDischarged, null);
             this.bunifuToolTip1.SetToolTipTitle(this.tabItemDischarged, "");
+            this.tabItemDischarged.Click += new System.EventHandler(this.tabItemDischarged_Click);
             // 
             // bunifuPictureBox12
             // 
@@ -1401,10 +1400,10 @@
             this.tabItemExamination.Text = "Khám bệnh";
             this.tabItemExamination.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.tabItemExamination.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            this.tabItemExamination.Click += new System.EventHandler(this.tabItemExamination_Click);
             this.bunifuToolTip1.SetToolTip(this.tabItemExamination, "");
             this.bunifuToolTip1.SetToolTipIcon(this.tabItemExamination, null);
             this.bunifuToolTip1.SetToolTipTitle(this.tabItemExamination, "");
+            this.tabItemExamination.Click += new System.EventHandler(this.tabItemExamination_Click);
             // 
             // bunifuPictureBox6
             // 
@@ -1755,25 +1754,6 @@
             this.bunifuToolTip1.SetToolTipTitle(this.bunifuPictureBox2, "");
             this.bunifuPictureBox2.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
-            // bunifuPictureBox15
-            // 
-            this.bunifuPictureBox15.AllowFocused = false;
-            this.bunifuPictureBox15.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPictureBox15.AutoSizeHeight = true;
-            this.bunifuPictureBox15.BorderRadius = 40;
-            this.bunifuPictureBox15.Image = global::DO_AN_CUA_HAN.Properties.Resources.z5030867747912_8bf5b5c157107b7c880b4fc92925e287_removebg_preview;
-            this.bunifuPictureBox15.IsCircle = false;
-            this.bunifuPictureBox15.Location = new System.Drawing.Point(67, -12);
-            this.bunifuPictureBox15.Name = "bunifuPictureBox15";
-            this.bunifuPictureBox15.Size = new System.Drawing.Size(80, 80);
-            this.bunifuPictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuPictureBox15.TabIndex = 3;
-            this.bunifuPictureBox15.TabStop = false;
-            this.bunifuToolTip1.SetToolTip(this.bunifuPictureBox15, "Info");
-            this.bunifuToolTip1.SetToolTipIcon(this.bunifuPictureBox15, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.bunifuPictureBox15, "");
-            this.bunifuPictureBox15.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
-            // 
             // bunifuShadowPanel3
             // 
             this.bunifuShadowPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -1784,7 +1764,7 @@
             this.bunifuShadowPanel3.BorderThickness = 1;
             this.bunifuShadowPanel3.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
             this.bunifuShadowPanel3.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.bunifuShadowPanel3.Location = new System.Drawing.Point(1290, 48);
+            this.bunifuShadowPanel3.Location = new System.Drawing.Point(1292, 56);
             this.bunifuShadowPanel3.Name = "bunifuShadowPanel3";
             this.bunifuShadowPanel3.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(220)))), ((int)(((byte)(202)))));
             this.bunifuShadowPanel3.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(220)))), ((int)(((byte)(202)))));
@@ -1827,9 +1807,9 @@
             this.controlBox.BorderColor = System.Drawing.Color.Transparent;
             this.controlBox.BorderRadius = 3;
             this.controlBox.BorderThickness = 1;
-            this.controlBox.Controls.Add(this.bunifuPictureBox24);
-            this.controlBox.Controls.Add(this.bunifuPictureBox17);
-            this.controlBox.Controls.Add(this.bunifuPictureBox15);
+            this.controlBox.Controls.Add(this.Exit);
+            this.controlBox.Controls.Add(this.bunifuLogOut);
+            this.controlBox.Controls.Add(this.bunifuAccount);
             this.controlBox.Dock = System.Windows.Forms.DockStyle.Right;
             this.controlBox.Location = new System.Drawing.Point(1054, 0);
             this.controlBox.Margin = new System.Windows.Forms.Padding(2);
@@ -1841,44 +1821,66 @@
             this.bunifuToolTip1.SetToolTipIcon(this.controlBox, null);
             this.bunifuToolTip1.SetToolTipTitle(this.controlBox, "");
             // 
-            // bunifuPictureBox24
+            // Exit
             // 
-            this.bunifuPictureBox24.AllowFocused = false;
-            this.bunifuPictureBox24.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPictureBox24.AutoSizeHeight = true;
-            this.bunifuPictureBox24.BorderRadius = 39;
-            this.bunifuPictureBox24.Image = global::DO_AN_CUA_HAN.Properties.Resources.Telegram_removebg_preview;
-            this.bunifuPictureBox24.IsCircle = false;
-            this.bunifuPictureBox24.Location = new System.Drawing.Point(137, -8);
-            this.bunifuPictureBox24.Name = "bunifuPictureBox24";
-            this.bunifuPictureBox24.Size = new System.Drawing.Size(79, 79);
-            this.bunifuPictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuPictureBox24.TabIndex = 4;
-            this.bunifuPictureBox24.TabStop = false;
-            this.bunifuToolTip1.SetToolTip(this.bunifuPictureBox24, "Exit");
-            this.bunifuToolTip1.SetToolTipIcon(this.bunifuPictureBox24, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.bunifuPictureBox24, "");
-            this.bunifuPictureBox24.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
+            this.Exit.AllowFocused = false;
+            this.Exit.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Exit.AutoSizeHeight = true;
+            this.Exit.BorderRadius = 39;
+            this.Exit.Image = global::DO_AN_CUA_HAN.Properties.Resources.Telegram_removebg_preview;
+            this.Exit.IsCircle = false;
+            this.Exit.Location = new System.Drawing.Point(137, -8);
+            this.Exit.Name = "Exit";
+            this.Exit.Size = new System.Drawing.Size(79, 79);
+            this.Exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Exit.TabIndex = 4;
+            this.Exit.TabStop = false;
+            this.bunifuToolTip1.SetToolTip(this.Exit, "Exit");
+            this.bunifuToolTip1.SetToolTipIcon(this.Exit, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.Exit, "");
+            this.Exit.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
+            this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
-            // bunifuPictureBox17
+            // bunifuLogOut
             // 
-            this.bunifuPictureBox17.AllowFocused = false;
-            this.bunifuPictureBox17.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPictureBox17.AutoSizeHeight = true;
-            this.bunifuPictureBox17.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuPictureBox17.BorderRadius = 0;
-            this.bunifuPictureBox17.Image = global::DO_AN_CUA_HAN.Properties.Resources._3varbuq4_removebg_preview__1_2;
-            this.bunifuPictureBox17.IsCircle = false;
-            this.bunifuPictureBox17.Location = new System.Drawing.Point(3, 0);
-            this.bunifuPictureBox17.Name = "bunifuPictureBox17";
-            this.bunifuPictureBox17.Size = new System.Drawing.Size(61, 61);
-            this.bunifuPictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuPictureBox17.TabIndex = 4;
-            this.bunifuPictureBox17.TabStop = false;
-            this.bunifuToolTip1.SetToolTip(this.bunifuPictureBox17, "Log out");
-            this.bunifuToolTip1.SetToolTipIcon(this.bunifuPictureBox17, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.bunifuPictureBox17, "");
-            this.bunifuPictureBox17.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            this.bunifuLogOut.AllowFocused = false;
+            this.bunifuLogOut.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuLogOut.AutoSizeHeight = true;
+            this.bunifuLogOut.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuLogOut.BorderRadius = 0;
+            this.bunifuLogOut.Image = global::DO_AN_CUA_HAN.Properties.Resources._3varbuq4_removebg_preview__1_2;
+            this.bunifuLogOut.IsCircle = false;
+            this.bunifuLogOut.Location = new System.Drawing.Point(3, 0);
+            this.bunifuLogOut.Name = "bunifuLogOut";
+            this.bunifuLogOut.Size = new System.Drawing.Size(61, 61);
+            this.bunifuLogOut.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuLogOut.TabIndex = 4;
+            this.bunifuLogOut.TabStop = false;
+            this.bunifuToolTip1.SetToolTip(this.bunifuLogOut, "Log out");
+            this.bunifuToolTip1.SetToolTipIcon(this.bunifuLogOut, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.bunifuLogOut, "");
+            this.bunifuLogOut.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            this.bunifuLogOut.Click += new System.EventHandler(this.bunifuLogOut_Click);
+            // 
+            // bunifuAccount
+            // 
+            this.bunifuAccount.AllowFocused = false;
+            this.bunifuAccount.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuAccount.AutoSizeHeight = true;
+            this.bunifuAccount.BorderRadius = 40;
+            this.bunifuAccount.Image = global::DO_AN_CUA_HAN.Properties.Resources.z5030867747912_8bf5b5c157107b7c880b4fc92925e287_removebg_preview;
+            this.bunifuAccount.IsCircle = false;
+            this.bunifuAccount.Location = new System.Drawing.Point(67, -12);
+            this.bunifuAccount.Name = "bunifuAccount";
+            this.bunifuAccount.Size = new System.Drawing.Size(80, 80);
+            this.bunifuAccount.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuAccount.TabIndex = 3;
+            this.bunifuAccount.TabStop = false;
+            this.bunifuToolTip1.SetToolTip(this.bunifuAccount, "Info");
+            this.bunifuToolTip1.SetToolTipIcon(this.bunifuAccount, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.bunifuAccount, "");
+            this.bunifuAccount.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
+            this.bunifuAccount.Click += new System.EventHandler(this.bunifuAccount_Click);
             // 
             // FormMain
             // 
@@ -1957,11 +1959,11 @@
             this.bunifuShadowPanel5.ResumeLayout(false);
             this.bunifuShadowPanel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox15)).EndInit();
             this.header.ResumeLayout(false);
             this.controlBox.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox24)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Exit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuLogOut)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuAccount)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1970,13 +1972,13 @@
 
         private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel1_FormMain;
         private System.Windows.Forms.Timer timer1;
-        private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox15;
+        private Bunifu.UI.WinForms.BunifuPictureBox bunifuAccount;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.UI.WinForms.BunifuPanel header;
         private Bunifu.UI.WinForms.BunifuSnackbar bunifuSnackbar1;
         private Bunifu.UI.WinForms.BunifuPanel controlBox;
         private Bunifu.UI.WinForms.BunifuToolTip bunifuToolTip1;
-        private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox17;
+        private Bunifu.UI.WinForms.BunifuPictureBox bunifuLogOut;
         private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel2;
         private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel1;
         private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel25;
@@ -2043,6 +2045,6 @@
         private Bunifu.UI.WinForms.BunifuLabel tabItemMedicine;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox2;
         private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel3;
-        private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox24;
+        private Bunifu.UI.WinForms.BunifuPictureBox Exit;
     }
 }

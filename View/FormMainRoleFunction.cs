@@ -35,13 +35,13 @@ namespace DO_AN_CUA_HAN.View
             }
         }
 
-        private void bunifubuttonServiceSearch_Click(object sender, EventArgs e)
+        private void bunifubuttonRFDeleteSearch_Click(object sender, EventArgs e)
         {
             bunifuTextBoxRoleFunctionSearch.Text = "";
             searchFunction();
         }
 
-        private void bunifuButtonServiceDelete_Click(object sender, EventArgs e)
+        private void bunifuButtonRFDelete_Click(object sender, EventArgs e)
         {
             if (bunifuDataGridViewRoleFunction.SelectedRows.Count > 0)
             {
@@ -77,7 +77,7 @@ namespace DO_AN_CUA_HAN.View
             }
         }
 
-        private void bunifuButtonServiceEdit_Click(object sender, EventArgs e)
+        private void bunifuButtonRFEdit_Click(object sender, EventArgs e)
         {
             if (bunifuDataGridViewRoleFunction.SelectedRows.Count > 0)
             {
@@ -90,7 +90,7 @@ namespace DO_AN_CUA_HAN.View
             }
         }
 
-        private void bunifuButtonServiceAdd_Click(object sender, EventArgs e)
+        private void bunifuButtonRFAdd_Click(object sender, EventArgs e)
         {
             FormRoleFunctionDetail formRFD = new FormRoleFunctionDetail();
             formRFD.ShowDialog();

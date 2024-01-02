@@ -30,7 +30,7 @@ namespace DO_AN_CUA_HAN.View
 
         }
 
-        private void bunifuButtonAdd_Click(object sender, EventArgs e)
+        private void bunifuButtonPatientAdd_Click(object sender, EventArgs e)
         {
             // Open patientdetail form for add
             FormPatientDetail patientDetailForm = new FormPatientDetail("add", new Patient());
@@ -107,7 +107,7 @@ namespace DO_AN_CUA_HAN.View
         }
 
         // Phuong thuc xoa du lieu cua thanh textbox
-        private void bunifuThinButton21_Click(object sender, EventArgs e)
+        private void bunifuThinPatientDeleteSearch_Click(object sender, EventArgs e)
         {
             bunifuTextBoxPatientSearch.Text = "";
             searchPatient();

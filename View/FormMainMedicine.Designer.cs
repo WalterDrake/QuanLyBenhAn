@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMainMedicine));
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -36,27 +40,23 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMainMedicine));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bunifuShadowPanel1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.bunifuDataGridViewMedicine = new Bunifu.UI.WinForms.BunifuDataGridView();
-            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.bunifubuttonMedicineDeleteSearch = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuTextBoxMedicineSearch = new Bunifu.UI.WinForms.BunifuTextBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.bunifuButtonMedicineAdd = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.bunifuButtonASDelete = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.bunifuButtonMedicineDelete = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.bunifuButtonASEdit = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.bunifuButtonMedicineEdit = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.bunifuDataGridViewMedicine = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.bunifubuttonMedicineDeleteSearch = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuTextBoxMedicineSearch = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuShadowPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridViewMedicine)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridViewMedicine)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuShadowPanel1
@@ -66,11 +66,11 @@
             this.bunifuShadowPanel1.BorderRadius = 30;
             this.bunifuShadowPanel1.BorderThickness = 0;
             this.bunifuShadowPanel1.Controls.Add(this.pictureBox9);
-            this.bunifuShadowPanel1.Controls.Add(this.bunifuButton1);
+            this.bunifuShadowPanel1.Controls.Add(this.bunifuButtonMedicineAdd);
             this.bunifuShadowPanel1.Controls.Add(this.pictureBox7);
-            this.bunifuShadowPanel1.Controls.Add(this.bunifuButtonASDelete);
+            this.bunifuShadowPanel1.Controls.Add(this.bunifuButtonMedicineDelete);
             this.bunifuShadowPanel1.Controls.Add(this.pictureBox8);
-            this.bunifuShadowPanel1.Controls.Add(this.bunifuButtonASEdit);
+            this.bunifuShadowPanel1.Controls.Add(this.bunifuButtonMedicineEdit);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuDataGridViewMedicine);
             this.bunifuShadowPanel1.Controls.Add(this.bunifubuttonMedicineDeleteSearch);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuLabel1);
@@ -90,6 +90,309 @@
             this.bunifuShadowPanel1.Size = new System.Drawing.Size(989, 792);
             this.bunifuShadowPanel1.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.bunifuShadowPanel1.TabIndex = 2;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(205)))), ((int)(((byte)(197)))));
+            this.pictureBox9.Image = global::DO_AN_CUA_HAN.Properties.Resources.vecteezy_interface_plus_user_business_flat_line_filled_icon_vector_19177343_removebg_preview__1_;
+            this.pictureBox9.Location = new System.Drawing.Point(806, 729);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(43, 43);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 43;
+            this.pictureBox9.TabStop = false;
+            // 
+            // bunifuButtonMedicineAdd
+            // 
+            this.bunifuButtonMedicineAdd.AllowAnimations = true;
+            this.bunifuButtonMedicineAdd.AllowMouseEffects = true;
+            this.bunifuButtonMedicineAdd.AllowToggling = false;
+            this.bunifuButtonMedicineAdd.AnimationSpeed = 200;
+            this.bunifuButtonMedicineAdd.AutoGenerateColors = false;
+            this.bunifuButtonMedicineAdd.AutoRoundBorders = false;
+            this.bunifuButtonMedicineAdd.AutoSizeLeftIcon = true;
+            this.bunifuButtonMedicineAdd.AutoSizeRightIcon = true;
+            this.bunifuButtonMedicineAdd.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuButtonMedicineAdd.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(205)))), ((int)(((byte)(197)))));
+            this.bunifuButtonMedicineAdd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButtonMedicineAdd.BackgroundImage")));
+            this.bunifuButtonMedicineAdd.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Dash;
+            this.bunifuButtonMedicineAdd.ButtonText = "         Thêm mới";
+            this.bunifuButtonMedicineAdd.ButtonTextMarginLeft = 0;
+            this.bunifuButtonMedicineAdd.ColorContrastOnClick = 45;
+            this.bunifuButtonMedicineAdd.ColorContrastOnHover = 45;
+            this.bunifuButtonMedicineAdd.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.bunifuButtonMedicineAdd.CustomizableEdges = borderEdges1;
+            this.bunifuButtonMedicineAdd.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.bunifuButtonMedicineAdd.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.bunifuButtonMedicineAdd.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.bunifuButtonMedicineAdd.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.bunifuButtonMedicineAdd.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.bunifuButtonMedicineAdd.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuButtonMedicineAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(58)))), ((int)(((byte)(82)))));
+            this.bunifuButtonMedicineAdd.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuButtonMedicineAdd.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuButtonMedicineAdd.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.bunifuButtonMedicineAdd.IconMarginLeft = 11;
+            this.bunifuButtonMedicineAdd.IconPadding = 10;
+            this.bunifuButtonMedicineAdd.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.bunifuButtonMedicineAdd.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuButtonMedicineAdd.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.bunifuButtonMedicineAdd.IconSize = 25;
+            this.bunifuButtonMedicineAdd.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(113)))), ((int)(((byte)(103)))));
+            this.bunifuButtonMedicineAdd.IdleBorderRadius = 15;
+            this.bunifuButtonMedicineAdd.IdleBorderThickness = 2;
+            this.bunifuButtonMedicineAdd.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(205)))), ((int)(((byte)(197)))));
+            this.bunifuButtonMedicineAdd.IdleIconLeftImage = null;
+            this.bunifuButtonMedicineAdd.IdleIconRightImage = null;
+            this.bunifuButtonMedicineAdd.IndicateFocus = false;
+            this.bunifuButtonMedicineAdd.Location = new System.Drawing.Point(800, 725);
+            this.bunifuButtonMedicineAdd.Name = "bunifuButtonMedicineAdd";
+            this.bunifuButtonMedicineAdd.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.bunifuButtonMedicineAdd.OnDisabledState.BorderRadius = 15;
+            this.bunifuButtonMedicineAdd.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButtonMedicineAdd.OnDisabledState.BorderThickness = 2;
+            this.bunifuButtonMedicineAdd.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.bunifuButtonMedicineAdd.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.bunifuButtonMedicineAdd.OnDisabledState.IconLeftImage = null;
+            this.bunifuButtonMedicineAdd.OnDisabledState.IconRightImage = null;
+            this.bunifuButtonMedicineAdd.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.bunifuButtonMedicineAdd.onHoverState.BorderRadius = 15;
+            this.bunifuButtonMedicineAdd.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButtonMedicineAdd.onHoverState.BorderThickness = 2;
+            this.bunifuButtonMedicineAdd.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.bunifuButtonMedicineAdd.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.bunifuButtonMedicineAdd.onHoverState.IconLeftImage = global::DO_AN_CUA_HAN.Properties.Resources.vecteezy_flat_isometric_illustration_concept_symbol_of_the_best_7885579_removebg_preview;
+            this.bunifuButtonMedicineAdd.onHoverState.IconRightImage = null;
+            this.bunifuButtonMedicineAdd.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(113)))), ((int)(((byte)(103)))));
+            this.bunifuButtonMedicineAdd.OnIdleState.BorderRadius = 15;
+            this.bunifuButtonMedicineAdd.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Dash;
+            this.bunifuButtonMedicineAdd.OnIdleState.BorderThickness = 2;
+            this.bunifuButtonMedicineAdd.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(205)))), ((int)(((byte)(197)))));
+            this.bunifuButtonMedicineAdd.OnIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(58)))), ((int)(((byte)(82)))));
+            this.bunifuButtonMedicineAdd.OnIdleState.IconLeftImage = null;
+            this.bunifuButtonMedicineAdd.OnIdleState.IconRightImage = null;
+            this.bunifuButtonMedicineAdd.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.bunifuButtonMedicineAdd.OnPressedState.BorderRadius = 15;
+            this.bunifuButtonMedicineAdd.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButtonMedicineAdd.OnPressedState.BorderThickness = 2;
+            this.bunifuButtonMedicineAdd.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.bunifuButtonMedicineAdd.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.bunifuButtonMedicineAdd.OnPressedState.IconLeftImage = null;
+            this.bunifuButtonMedicineAdd.OnPressedState.IconRightImage = null;
+            this.bunifuButtonMedicineAdd.Size = new System.Drawing.Size(127, 51);
+            this.bunifuButtonMedicineAdd.TabIndex = 42;
+            this.bunifuButtonMedicineAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuButtonMedicineAdd.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.bunifuButtonMedicineAdd.TextMarginLeft = 0;
+            this.bunifuButtonMedicineAdd.TextPadding = new System.Windows.Forms.Padding(0);
+            this.bunifuButtonMedicineAdd.UseDefaultRadiusAndThickness = true;
+            this.bunifuButtonMedicineAdd.Click += new System.EventHandler(this.bunifuButtonMedicineAdd_Click);
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(205)))), ((int)(((byte)(197)))));
+            this.pictureBox7.Image = global::DO_AN_CUA_HAN.Properties.Resources.z5030631053744_2e9b4f844cb98aa60abede7ce3520931_removebg_preview;
+            this.pictureBox7.Location = new System.Drawing.Point(513, 729);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(43, 43);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 41;
+            this.pictureBox7.TabStop = false;
+            // 
+            // bunifuButtonMedicineDelete
+            // 
+            this.bunifuButtonMedicineDelete.AllowAnimations = true;
+            this.bunifuButtonMedicineDelete.AllowMouseEffects = true;
+            this.bunifuButtonMedicineDelete.AllowToggling = false;
+            this.bunifuButtonMedicineDelete.AnimationSpeed = 200;
+            this.bunifuButtonMedicineDelete.AutoGenerateColors = false;
+            this.bunifuButtonMedicineDelete.AutoRoundBorders = false;
+            this.bunifuButtonMedicineDelete.AutoSizeLeftIcon = true;
+            this.bunifuButtonMedicineDelete.AutoSizeRightIcon = true;
+            this.bunifuButtonMedicineDelete.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuButtonMedicineDelete.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(205)))), ((int)(((byte)(197)))));
+            this.bunifuButtonMedicineDelete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButtonMedicineDelete.BackgroundImage")));
+            this.bunifuButtonMedicineDelete.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Dash;
+            this.bunifuButtonMedicineDelete.ButtonText = "      Xóa";
+            this.bunifuButtonMedicineDelete.ButtonTextMarginLeft = 0;
+            this.bunifuButtonMedicineDelete.ColorContrastOnClick = 45;
+            this.bunifuButtonMedicineDelete.ColorContrastOnHover = 45;
+            this.bunifuButtonMedicineDelete.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.bunifuButtonMedicineDelete.CustomizableEdges = borderEdges2;
+            this.bunifuButtonMedicineDelete.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.bunifuButtonMedicineDelete.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.bunifuButtonMedicineDelete.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.bunifuButtonMedicineDelete.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.bunifuButtonMedicineDelete.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.bunifuButtonMedicineDelete.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuButtonMedicineDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(58)))), ((int)(((byte)(82)))));
+            this.bunifuButtonMedicineDelete.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuButtonMedicineDelete.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuButtonMedicineDelete.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.bunifuButtonMedicineDelete.IconMarginLeft = 11;
+            this.bunifuButtonMedicineDelete.IconPadding = 10;
+            this.bunifuButtonMedicineDelete.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.bunifuButtonMedicineDelete.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuButtonMedicineDelete.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.bunifuButtonMedicineDelete.IconSize = 25;
+            this.bunifuButtonMedicineDelete.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(113)))), ((int)(((byte)(103)))));
+            this.bunifuButtonMedicineDelete.IdleBorderRadius = 15;
+            this.bunifuButtonMedicineDelete.IdleBorderThickness = 2;
+            this.bunifuButtonMedicineDelete.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(205)))), ((int)(((byte)(197)))));
+            this.bunifuButtonMedicineDelete.IdleIconLeftImage = null;
+            this.bunifuButtonMedicineDelete.IdleIconRightImage = null;
+            this.bunifuButtonMedicineDelete.IndicateFocus = false;
+            this.bunifuButtonMedicineDelete.Location = new System.Drawing.Point(506, 725);
+            this.bunifuButtonMedicineDelete.Name = "bunifuButtonMedicineDelete";
+            this.bunifuButtonMedicineDelete.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.bunifuButtonMedicineDelete.OnDisabledState.BorderRadius = 15;
+            this.bunifuButtonMedicineDelete.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButtonMedicineDelete.OnDisabledState.BorderThickness = 2;
+            this.bunifuButtonMedicineDelete.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.bunifuButtonMedicineDelete.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.bunifuButtonMedicineDelete.OnDisabledState.IconLeftImage = null;
+            this.bunifuButtonMedicineDelete.OnDisabledState.IconRightImage = null;
+            this.bunifuButtonMedicineDelete.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.bunifuButtonMedicineDelete.onHoverState.BorderRadius = 15;
+            this.bunifuButtonMedicineDelete.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButtonMedicineDelete.onHoverState.BorderThickness = 2;
+            this.bunifuButtonMedicineDelete.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.bunifuButtonMedicineDelete.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.bunifuButtonMedicineDelete.onHoverState.IconLeftImage = null;
+            this.bunifuButtonMedicineDelete.onHoverState.IconRightImage = null;
+            this.bunifuButtonMedicineDelete.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(113)))), ((int)(((byte)(103)))));
+            this.bunifuButtonMedicineDelete.OnIdleState.BorderRadius = 15;
+            this.bunifuButtonMedicineDelete.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Dash;
+            this.bunifuButtonMedicineDelete.OnIdleState.BorderThickness = 2;
+            this.bunifuButtonMedicineDelete.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(205)))), ((int)(((byte)(197)))));
+            this.bunifuButtonMedicineDelete.OnIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(58)))), ((int)(((byte)(82)))));
+            this.bunifuButtonMedicineDelete.OnIdleState.IconLeftImage = null;
+            this.bunifuButtonMedicineDelete.OnIdleState.IconRightImage = null;
+            this.bunifuButtonMedicineDelete.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.bunifuButtonMedicineDelete.OnPressedState.BorderRadius = 15;
+            this.bunifuButtonMedicineDelete.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButtonMedicineDelete.OnPressedState.BorderThickness = 2;
+            this.bunifuButtonMedicineDelete.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.bunifuButtonMedicineDelete.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.bunifuButtonMedicineDelete.OnPressedState.IconLeftImage = null;
+            this.bunifuButtonMedicineDelete.OnPressedState.IconRightImage = null;
+            this.bunifuButtonMedicineDelete.Size = new System.Drawing.Size(127, 51);
+            this.bunifuButtonMedicineDelete.TabIndex = 40;
+            this.bunifuButtonMedicineDelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuButtonMedicineDelete.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.bunifuButtonMedicineDelete.TextMarginLeft = 0;
+            this.bunifuButtonMedicineDelete.TextPadding = new System.Windows.Forms.Padding(0);
+            this.bunifuButtonMedicineDelete.UseDefaultRadiusAndThickness = true;
+            this.bunifuButtonMedicineDelete.Click += new System.EventHandler(this.bunifuButtonMedicineDelete_Click);
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(205)))), ((int)(((byte)(197)))));
+            this.pictureBox8.Image = global::DO_AN_CUA_HAN.Properties.Resources.vecteezy_cute_adorable_cartoon_stationery_yellow_pen_pencil_boy_15737572_1_removebg_preview;
+            this.pictureBox8.Location = new System.Drawing.Point(656, 729);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(43, 43);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 39;
+            this.pictureBox8.TabStop = false;
+            // 
+            // bunifuButtonMedicineEdit
+            // 
+            this.bunifuButtonMedicineEdit.AllowAnimations = true;
+            this.bunifuButtonMedicineEdit.AllowMouseEffects = true;
+            this.bunifuButtonMedicineEdit.AllowToggling = false;
+            this.bunifuButtonMedicineEdit.AnimationSpeed = 200;
+            this.bunifuButtonMedicineEdit.AutoGenerateColors = false;
+            this.bunifuButtonMedicineEdit.AutoRoundBorders = false;
+            this.bunifuButtonMedicineEdit.AutoSizeLeftIcon = true;
+            this.bunifuButtonMedicineEdit.AutoSizeRightIcon = true;
+            this.bunifuButtonMedicineEdit.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuButtonMedicineEdit.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(205)))), ((int)(((byte)(197)))));
+            this.bunifuButtonMedicineEdit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButtonMedicineEdit.BackgroundImage")));
+            this.bunifuButtonMedicineEdit.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Dash;
+            this.bunifuButtonMedicineEdit.ButtonText = "         Thay đổi";
+            this.bunifuButtonMedicineEdit.ButtonTextMarginLeft = 0;
+            this.bunifuButtonMedicineEdit.ColorContrastOnClick = 45;
+            this.bunifuButtonMedicineEdit.ColorContrastOnHover = 45;
+            this.bunifuButtonMedicineEdit.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.bunifuButtonMedicineEdit.CustomizableEdges = borderEdges3;
+            this.bunifuButtonMedicineEdit.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.bunifuButtonMedicineEdit.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.bunifuButtonMedicineEdit.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.bunifuButtonMedicineEdit.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.bunifuButtonMedicineEdit.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.bunifuButtonMedicineEdit.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuButtonMedicineEdit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(58)))), ((int)(((byte)(82)))));
+            this.bunifuButtonMedicineEdit.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuButtonMedicineEdit.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuButtonMedicineEdit.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.bunifuButtonMedicineEdit.IconMarginLeft = 11;
+            this.bunifuButtonMedicineEdit.IconPadding = 10;
+            this.bunifuButtonMedicineEdit.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.bunifuButtonMedicineEdit.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuButtonMedicineEdit.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.bunifuButtonMedicineEdit.IconSize = 25;
+            this.bunifuButtonMedicineEdit.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(113)))), ((int)(((byte)(103)))));
+            this.bunifuButtonMedicineEdit.IdleBorderRadius = 15;
+            this.bunifuButtonMedicineEdit.IdleBorderThickness = 2;
+            this.bunifuButtonMedicineEdit.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(205)))), ((int)(((byte)(197)))));
+            this.bunifuButtonMedicineEdit.IdleIconLeftImage = null;
+            this.bunifuButtonMedicineEdit.IdleIconRightImage = null;
+            this.bunifuButtonMedicineEdit.IndicateFocus = false;
+            this.bunifuButtonMedicineEdit.Location = new System.Drawing.Point(653, 725);
+            this.bunifuButtonMedicineEdit.Name = "bunifuButtonMedicineEdit";
+            this.bunifuButtonMedicineEdit.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.bunifuButtonMedicineEdit.OnDisabledState.BorderRadius = 15;
+            this.bunifuButtonMedicineEdit.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButtonMedicineEdit.OnDisabledState.BorderThickness = 2;
+            this.bunifuButtonMedicineEdit.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.bunifuButtonMedicineEdit.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.bunifuButtonMedicineEdit.OnDisabledState.IconLeftImage = null;
+            this.bunifuButtonMedicineEdit.OnDisabledState.IconRightImage = null;
+            this.bunifuButtonMedicineEdit.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.bunifuButtonMedicineEdit.onHoverState.BorderRadius = 15;
+            this.bunifuButtonMedicineEdit.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButtonMedicineEdit.onHoverState.BorderThickness = 2;
+            this.bunifuButtonMedicineEdit.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.bunifuButtonMedicineEdit.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.bunifuButtonMedicineEdit.onHoverState.IconLeftImage = global::DO_AN_CUA_HAN.Properties.Resources.vecteezy_flat_isometric_illustration_concept_symbol_of_the_best_7885579_removebg_preview;
+            this.bunifuButtonMedicineEdit.onHoverState.IconRightImage = null;
+            this.bunifuButtonMedicineEdit.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(113)))), ((int)(((byte)(103)))));
+            this.bunifuButtonMedicineEdit.OnIdleState.BorderRadius = 15;
+            this.bunifuButtonMedicineEdit.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Dash;
+            this.bunifuButtonMedicineEdit.OnIdleState.BorderThickness = 2;
+            this.bunifuButtonMedicineEdit.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(205)))), ((int)(((byte)(197)))));
+            this.bunifuButtonMedicineEdit.OnIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(58)))), ((int)(((byte)(82)))));
+            this.bunifuButtonMedicineEdit.OnIdleState.IconLeftImage = null;
+            this.bunifuButtonMedicineEdit.OnIdleState.IconRightImage = null;
+            this.bunifuButtonMedicineEdit.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.bunifuButtonMedicineEdit.OnPressedState.BorderRadius = 15;
+            this.bunifuButtonMedicineEdit.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButtonMedicineEdit.OnPressedState.BorderThickness = 2;
+            this.bunifuButtonMedicineEdit.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.bunifuButtonMedicineEdit.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.bunifuButtonMedicineEdit.OnPressedState.IconLeftImage = null;
+            this.bunifuButtonMedicineEdit.OnPressedState.IconRightImage = null;
+            this.bunifuButtonMedicineEdit.Size = new System.Drawing.Size(127, 51);
+            this.bunifuButtonMedicineEdit.TabIndex = 38;
+            this.bunifuButtonMedicineEdit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuButtonMedicineEdit.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.bunifuButtonMedicineEdit.TextMarginLeft = 0;
+            this.bunifuButtonMedicineEdit.TextPadding = new System.Windows.Forms.Padding(0);
+            this.bunifuButtonMedicineEdit.UseDefaultRadiusAndThickness = true;
+            this.bunifuButtonMedicineEdit.Click += new System.EventHandler(this.bunifuButtonMedicineEdit_Click);
             // 
             // bunifuDataGridViewMedicine
             // 
@@ -154,27 +457,6 @@
             this.bunifuDataGridViewMedicine.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Crimson;
             this.bunifuDataGridViewMedicine.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuDataGridViewMedicine_CellDoubleClick);
             // 
-            // bunifuLabel1
-            // 
-            this.bunifuLabel1.AllowParentOverrides = false;
-            this.bunifuLabel1.AutoEllipsis = false;
-            this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
-            this.bunifuLabel1.Location = new System.Drawing.Point(132, 44);
-            this.bunifuLabel1.Name = "bunifuLabel1";
-            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(81, 19);
-            this.bunifuLabel1.TabIndex = 2;
-            this.bunifuLabel1.Text = "Tìm kiếm :";
-            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // bunifuElipse1
-            // 
-            this.bunifuElipse1.ElipseRadius = 100;
-            this.bunifuElipse1.TargetControl = this;
-            // 
             // bunifubuttonMedicineDeleteSearch
             // 
             this.bunifubuttonMedicineDeleteSearch.ActiveBorderThickness = 1;
@@ -200,6 +482,22 @@
             this.bunifubuttonMedicineDeleteSearch.TabIndex = 3;
             this.bunifubuttonMedicineDeleteSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifubuttonMedicineDeleteSearch.Click += new System.EventHandler(this.bunifubuttonMedicineDeleteSearch_Click);
+            // 
+            // bunifuLabel1
+            // 
+            this.bunifuLabel1.AllowParentOverrides = false;
+            this.bunifuLabel1.AutoEllipsis = false;
+            this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel1.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel1.Location = new System.Drawing.Point(132, 44);
+            this.bunifuLabel1.Name = "bunifuLabel1";
+            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel1.Size = new System.Drawing.Size(81, 19);
+            this.bunifuLabel1.TabIndex = 2;
+            this.bunifuLabel1.Text = "Tìm kiếm :";
+            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // bunifuTextBoxMedicineSearch
             // 
@@ -277,305 +575,10 @@
             this.bunifuTextBoxMedicineSearch.TextChange += new System.EventHandler(this.bunifuTextBoxMedicineSearch_TextChange);
             this.bunifuTextBoxMedicineSearch.KeyDown += new System.Windows.Forms.KeyEventHandler(this.bunifuTextBoxMedicineSearch_KeyDown);
             // 
-            // pictureBox9
+            // bunifuElipse1
             // 
-            this.pictureBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(205)))), ((int)(((byte)(197)))));
-            this.pictureBox9.Image = global::DO_AN_CUA_HAN.Properties.Resources.vecteezy_interface_plus_user_business_flat_line_filled_icon_vector_19177343_removebg_preview__1_;
-            this.pictureBox9.Location = new System.Drawing.Point(806, 729);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(43, 43);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 43;
-            this.pictureBox9.TabStop = false;
-            // 
-            // bunifuButton1
-            // 
-            this.bunifuButton1.AllowAnimations = true;
-            this.bunifuButton1.AllowMouseEffects = true;
-            this.bunifuButton1.AllowToggling = false;
-            this.bunifuButton1.AnimationSpeed = 200;
-            this.bunifuButton1.AutoGenerateColors = false;
-            this.bunifuButton1.AutoRoundBorders = false;
-            this.bunifuButton1.AutoSizeLeftIcon = true;
-            this.bunifuButton1.AutoSizeRightIcon = true;
-            this.bunifuButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuButton1.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(205)))), ((int)(((byte)(197)))));
-            this.bunifuButton1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton1.BackgroundImage")));
-            this.bunifuButton1.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Dash;
-            this.bunifuButton1.ButtonText = "         Thêm mới";
-            this.bunifuButton1.ButtonTextMarginLeft = 0;
-            this.bunifuButton1.ColorContrastOnClick = 45;
-            this.bunifuButton1.ColorContrastOnHover = 45;
-            this.bunifuButton1.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.bunifuButton1.CustomizableEdges = borderEdges1;
-            this.bunifuButton1.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.bunifuButton1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.bunifuButton1.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.bunifuButton1.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.bunifuButton1.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.bunifuButton1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(58)))), ((int)(((byte)(82)))));
-            this.bunifuButton1.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuButton1.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuButton1.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
-            this.bunifuButton1.IconMarginLeft = 11;
-            this.bunifuButton1.IconPadding = 10;
-            this.bunifuButton1.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.bunifuButton1.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuButton1.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.bunifuButton1.IconSize = 25;
-            this.bunifuButton1.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(113)))), ((int)(((byte)(103)))));
-            this.bunifuButton1.IdleBorderRadius = 15;
-            this.bunifuButton1.IdleBorderThickness = 2;
-            this.bunifuButton1.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(205)))), ((int)(((byte)(197)))));
-            this.bunifuButton1.IdleIconLeftImage = null;
-            this.bunifuButton1.IdleIconRightImage = null;
-            this.bunifuButton1.IndicateFocus = false;
-            this.bunifuButton1.Location = new System.Drawing.Point(800, 725);
-            this.bunifuButton1.Name = "bunifuButton1";
-            this.bunifuButton1.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.bunifuButton1.OnDisabledState.BorderRadius = 15;
-            this.bunifuButton1.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButton1.OnDisabledState.BorderThickness = 2;
-            this.bunifuButton1.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.bunifuButton1.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.bunifuButton1.OnDisabledState.IconLeftImage = null;
-            this.bunifuButton1.OnDisabledState.IconRightImage = null;
-            this.bunifuButton1.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.bunifuButton1.onHoverState.BorderRadius = 15;
-            this.bunifuButton1.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButton1.onHoverState.BorderThickness = 2;
-            this.bunifuButton1.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.bunifuButton1.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.bunifuButton1.onHoverState.IconLeftImage = global::DO_AN_CUA_HAN.Properties.Resources.vecteezy_flat_isometric_illustration_concept_symbol_of_the_best_7885579_removebg_preview;
-            this.bunifuButton1.onHoverState.IconRightImage = null;
-            this.bunifuButton1.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(113)))), ((int)(((byte)(103)))));
-            this.bunifuButton1.OnIdleState.BorderRadius = 15;
-            this.bunifuButton1.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Dash;
-            this.bunifuButton1.OnIdleState.BorderThickness = 2;
-            this.bunifuButton1.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(205)))), ((int)(((byte)(197)))));
-            this.bunifuButton1.OnIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(58)))), ((int)(((byte)(82)))));
-            this.bunifuButton1.OnIdleState.IconLeftImage = null;
-            this.bunifuButton1.OnIdleState.IconRightImage = null;
-            this.bunifuButton1.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.bunifuButton1.OnPressedState.BorderRadius = 15;
-            this.bunifuButton1.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButton1.OnPressedState.BorderThickness = 2;
-            this.bunifuButton1.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.bunifuButton1.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.bunifuButton1.OnPressedState.IconLeftImage = null;
-            this.bunifuButton1.OnPressedState.IconRightImage = null;
-            this.bunifuButton1.Size = new System.Drawing.Size(127, 51);
-            this.bunifuButton1.TabIndex = 42;
-            this.bunifuButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuButton1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.bunifuButton1.TextMarginLeft = 0;
-            this.bunifuButton1.TextPadding = new System.Windows.Forms.Padding(0);
-            this.bunifuButton1.UseDefaultRadiusAndThickness = true;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(205)))), ((int)(((byte)(197)))));
-            this.pictureBox7.Image = global::DO_AN_CUA_HAN.Properties.Resources.z5030631053744_2e9b4f844cb98aa60abede7ce3520931_removebg_preview;
-            this.pictureBox7.Location = new System.Drawing.Point(513, 729);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(43, 43);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 41;
-            this.pictureBox7.TabStop = false;
-            // 
-            // bunifuButtonASDelete
-            // 
-            this.bunifuButtonASDelete.AllowAnimations = true;
-            this.bunifuButtonASDelete.AllowMouseEffects = true;
-            this.bunifuButtonASDelete.AllowToggling = false;
-            this.bunifuButtonASDelete.AnimationSpeed = 200;
-            this.bunifuButtonASDelete.AutoGenerateColors = false;
-            this.bunifuButtonASDelete.AutoRoundBorders = false;
-            this.bunifuButtonASDelete.AutoSizeLeftIcon = true;
-            this.bunifuButtonASDelete.AutoSizeRightIcon = true;
-            this.bunifuButtonASDelete.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuButtonASDelete.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(205)))), ((int)(((byte)(197)))));
-            this.bunifuButtonASDelete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButtonASDelete.BackgroundImage")));
-            this.bunifuButtonASDelete.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Dash;
-            this.bunifuButtonASDelete.ButtonText = "      Xóa";
-            this.bunifuButtonASDelete.ButtonTextMarginLeft = 0;
-            this.bunifuButtonASDelete.ColorContrastOnClick = 45;
-            this.bunifuButtonASDelete.ColorContrastOnHover = 45;
-            this.bunifuButtonASDelete.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.bunifuButtonASDelete.CustomizableEdges = borderEdges2;
-            this.bunifuButtonASDelete.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.bunifuButtonASDelete.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.bunifuButtonASDelete.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.bunifuButtonASDelete.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.bunifuButtonASDelete.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.bunifuButtonASDelete.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuButtonASDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(58)))), ((int)(((byte)(82)))));
-            this.bunifuButtonASDelete.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuButtonASDelete.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuButtonASDelete.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
-            this.bunifuButtonASDelete.IconMarginLeft = 11;
-            this.bunifuButtonASDelete.IconPadding = 10;
-            this.bunifuButtonASDelete.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.bunifuButtonASDelete.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuButtonASDelete.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.bunifuButtonASDelete.IconSize = 25;
-            this.bunifuButtonASDelete.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(113)))), ((int)(((byte)(103)))));
-            this.bunifuButtonASDelete.IdleBorderRadius = 15;
-            this.bunifuButtonASDelete.IdleBorderThickness = 2;
-            this.bunifuButtonASDelete.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(205)))), ((int)(((byte)(197)))));
-            this.bunifuButtonASDelete.IdleIconLeftImage = null;
-            this.bunifuButtonASDelete.IdleIconRightImage = null;
-            this.bunifuButtonASDelete.IndicateFocus = false;
-            this.bunifuButtonASDelete.Location = new System.Drawing.Point(506, 725);
-            this.bunifuButtonASDelete.Name = "bunifuButtonASDelete";
-            this.bunifuButtonASDelete.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.bunifuButtonASDelete.OnDisabledState.BorderRadius = 15;
-            this.bunifuButtonASDelete.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButtonASDelete.OnDisabledState.BorderThickness = 2;
-            this.bunifuButtonASDelete.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.bunifuButtonASDelete.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.bunifuButtonASDelete.OnDisabledState.IconLeftImage = null;
-            this.bunifuButtonASDelete.OnDisabledState.IconRightImage = null;
-            this.bunifuButtonASDelete.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.bunifuButtonASDelete.onHoverState.BorderRadius = 15;
-            this.bunifuButtonASDelete.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButtonASDelete.onHoverState.BorderThickness = 2;
-            this.bunifuButtonASDelete.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.bunifuButtonASDelete.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.bunifuButtonASDelete.onHoverState.IconLeftImage = null;
-            this.bunifuButtonASDelete.onHoverState.IconRightImage = null;
-            this.bunifuButtonASDelete.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(113)))), ((int)(((byte)(103)))));
-            this.bunifuButtonASDelete.OnIdleState.BorderRadius = 15;
-            this.bunifuButtonASDelete.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Dash;
-            this.bunifuButtonASDelete.OnIdleState.BorderThickness = 2;
-            this.bunifuButtonASDelete.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(205)))), ((int)(((byte)(197)))));
-            this.bunifuButtonASDelete.OnIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(58)))), ((int)(((byte)(82)))));
-            this.bunifuButtonASDelete.OnIdleState.IconLeftImage = null;
-            this.bunifuButtonASDelete.OnIdleState.IconRightImage = null;
-            this.bunifuButtonASDelete.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.bunifuButtonASDelete.OnPressedState.BorderRadius = 15;
-            this.bunifuButtonASDelete.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButtonASDelete.OnPressedState.BorderThickness = 2;
-            this.bunifuButtonASDelete.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.bunifuButtonASDelete.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.bunifuButtonASDelete.OnPressedState.IconLeftImage = null;
-            this.bunifuButtonASDelete.OnPressedState.IconRightImage = null;
-            this.bunifuButtonASDelete.Size = new System.Drawing.Size(127, 51);
-            this.bunifuButtonASDelete.TabIndex = 40;
-            this.bunifuButtonASDelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuButtonASDelete.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.bunifuButtonASDelete.TextMarginLeft = 0;
-            this.bunifuButtonASDelete.TextPadding = new System.Windows.Forms.Padding(0);
-            this.bunifuButtonASDelete.UseDefaultRadiusAndThickness = true;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(205)))), ((int)(((byte)(197)))));
-            this.pictureBox8.Image = global::DO_AN_CUA_HAN.Properties.Resources.vecteezy_cute_adorable_cartoon_stationery_yellow_pen_pencil_boy_15737572_1_removebg_preview;
-            this.pictureBox8.Location = new System.Drawing.Point(656, 729);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(43, 43);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 39;
-            this.pictureBox8.TabStop = false;
-            // 
-            // bunifuButtonASEdit
-            // 
-            this.bunifuButtonASEdit.AllowAnimations = true;
-            this.bunifuButtonASEdit.AllowMouseEffects = true;
-            this.bunifuButtonASEdit.AllowToggling = false;
-            this.bunifuButtonASEdit.AnimationSpeed = 200;
-            this.bunifuButtonASEdit.AutoGenerateColors = false;
-            this.bunifuButtonASEdit.AutoRoundBorders = false;
-            this.bunifuButtonASEdit.AutoSizeLeftIcon = true;
-            this.bunifuButtonASEdit.AutoSizeRightIcon = true;
-            this.bunifuButtonASEdit.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuButtonASEdit.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(205)))), ((int)(((byte)(197)))));
-            this.bunifuButtonASEdit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButtonASEdit.BackgroundImage")));
-            this.bunifuButtonASEdit.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Dash;
-            this.bunifuButtonASEdit.ButtonText = "         Thay đổi";
-            this.bunifuButtonASEdit.ButtonTextMarginLeft = 0;
-            this.bunifuButtonASEdit.ColorContrastOnClick = 45;
-            this.bunifuButtonASEdit.ColorContrastOnHover = 45;
-            this.bunifuButtonASEdit.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.bunifuButtonASEdit.CustomizableEdges = borderEdges3;
-            this.bunifuButtonASEdit.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.bunifuButtonASEdit.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.bunifuButtonASEdit.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.bunifuButtonASEdit.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.bunifuButtonASEdit.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.bunifuButtonASEdit.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuButtonASEdit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(58)))), ((int)(((byte)(82)))));
-            this.bunifuButtonASEdit.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuButtonASEdit.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuButtonASEdit.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
-            this.bunifuButtonASEdit.IconMarginLeft = 11;
-            this.bunifuButtonASEdit.IconPadding = 10;
-            this.bunifuButtonASEdit.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.bunifuButtonASEdit.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuButtonASEdit.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.bunifuButtonASEdit.IconSize = 25;
-            this.bunifuButtonASEdit.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(113)))), ((int)(((byte)(103)))));
-            this.bunifuButtonASEdit.IdleBorderRadius = 15;
-            this.bunifuButtonASEdit.IdleBorderThickness = 2;
-            this.bunifuButtonASEdit.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(205)))), ((int)(((byte)(197)))));
-            this.bunifuButtonASEdit.IdleIconLeftImage = null;
-            this.bunifuButtonASEdit.IdleIconRightImage = null;
-            this.bunifuButtonASEdit.IndicateFocus = false;
-            this.bunifuButtonASEdit.Location = new System.Drawing.Point(653, 725);
-            this.bunifuButtonASEdit.Name = "bunifuButtonASEdit";
-            this.bunifuButtonASEdit.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.bunifuButtonASEdit.OnDisabledState.BorderRadius = 15;
-            this.bunifuButtonASEdit.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButtonASEdit.OnDisabledState.BorderThickness = 2;
-            this.bunifuButtonASEdit.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.bunifuButtonASEdit.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.bunifuButtonASEdit.OnDisabledState.IconLeftImage = null;
-            this.bunifuButtonASEdit.OnDisabledState.IconRightImage = null;
-            this.bunifuButtonASEdit.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.bunifuButtonASEdit.onHoverState.BorderRadius = 15;
-            this.bunifuButtonASEdit.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButtonASEdit.onHoverState.BorderThickness = 2;
-            this.bunifuButtonASEdit.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.bunifuButtonASEdit.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.bunifuButtonASEdit.onHoverState.IconLeftImage = global::DO_AN_CUA_HAN.Properties.Resources.vecteezy_flat_isometric_illustration_concept_symbol_of_the_best_7885579_removebg_preview;
-            this.bunifuButtonASEdit.onHoverState.IconRightImage = null;
-            this.bunifuButtonASEdit.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(113)))), ((int)(((byte)(103)))));
-            this.bunifuButtonASEdit.OnIdleState.BorderRadius = 15;
-            this.bunifuButtonASEdit.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Dash;
-            this.bunifuButtonASEdit.OnIdleState.BorderThickness = 2;
-            this.bunifuButtonASEdit.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(205)))), ((int)(((byte)(197)))));
-            this.bunifuButtonASEdit.OnIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(58)))), ((int)(((byte)(82)))));
-            this.bunifuButtonASEdit.OnIdleState.IconLeftImage = null;
-            this.bunifuButtonASEdit.OnIdleState.IconRightImage = null;
-            this.bunifuButtonASEdit.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.bunifuButtonASEdit.OnPressedState.BorderRadius = 15;
-            this.bunifuButtonASEdit.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButtonASEdit.OnPressedState.BorderThickness = 2;
-            this.bunifuButtonASEdit.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.bunifuButtonASEdit.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.bunifuButtonASEdit.OnPressedState.IconLeftImage = null;
-            this.bunifuButtonASEdit.OnPressedState.IconRightImage = null;
-            this.bunifuButtonASEdit.Size = new System.Drawing.Size(127, 51);
-            this.bunifuButtonASEdit.TabIndex = 38;
-            this.bunifuButtonASEdit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuButtonASEdit.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.bunifuButtonASEdit.TextMarginLeft = 0;
-            this.bunifuButtonASEdit.TextPadding = new System.Windows.Forms.Padding(0);
-            this.bunifuButtonASEdit.UseDefaultRadiusAndThickness = true;
+            this.bunifuElipse1.ElipseRadius = 100;
+            this.bunifuElipse1.TargetControl = this;
             // 
             // FormMainMedicine
             // 
@@ -586,10 +589,10 @@
             this.Size = new System.Drawing.Size(989, 792);
             this.bunifuShadowPanel1.ResumeLayout(false);
             this.bunifuShadowPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridViewMedicine)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridViewMedicine)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -603,10 +606,10 @@
         private Bunifu.UI.WinForms.BunifuTextBox bunifuTextBoxMedicineSearch;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private System.Windows.Forms.PictureBox pictureBox9;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton1;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButtonMedicineAdd;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButtonASDelete;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButtonMedicineDelete;
         private System.Windows.Forms.PictureBox pictureBox8;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButtonASEdit;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButtonMedicineEdit;
     }
 }

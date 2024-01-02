@@ -39,7 +39,6 @@ namespace DO_AN_CUA_HAN.View
             timer.Interval = 1;
             timer.Tick += Timer_Tick;
             bunifuSnackbar1.Show(this, "Đăng nhập thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-
         }
 
         private void Timer_Tick(object sender, EventArgs e)
@@ -79,7 +78,7 @@ namespace DO_AN_CUA_HAN.View
             FormMainMedicine formMainMedicine = new FormMainMedicine();
             bunifuShadowPanel3.Controls.Add(formMainMedicine);
             // Thiết lập vị trí ban đầu của đối tượng và vị trí đích
-            objectX = 1148;
+            objectX = 1300;
             targetX = 320;
             formMainMedicine.tabItemMedicine_Click();
             timer.Start(); // Bắt đầu Timer để bắt đầu di chuyển đối tượng
@@ -91,7 +90,7 @@ namespace DO_AN_CUA_HAN.View
             FormMainPatient formMainPatient = new FormMainPatient(loginStaff);
             bunifuShadowPanel3.Controls.Add(formMainPatient);
             // Thiết lập vị trí ban đầu của đối tượng và vị trí đích
-            objectX = 1148;
+            objectX = 1300;
             targetX = 320;
             formMainPatient.tabItemPatient();
             timer.Start(); // Bắt đầu Timer để bắt đầu di chuyển đối tượng
@@ -104,7 +103,7 @@ namespace DO_AN_CUA_HAN.View
 
             bunifuShadowPanel3.Controls.Add(formMainStaff);
             // Thiết lập vị trí ban đầu của đối tượng và vị trí đích
-            objectX = 1148;
+            objectX = 1300;
             targetX = 320;
             formMainStaff.tabItemStaff_Click();
             timer.Start(); // Bắt đầu Timer để bắt đầu di chuyển đối tượng
@@ -117,7 +116,7 @@ namespace DO_AN_CUA_HAN.View
             FormMainHF formMainHF = new FormMainHF();
             bunifuShadowPanel3.Controls.Add(formMainHF);
             // Thiết lập vị trí ban đầu của đối tượng và vị trí đích
-            objectX = 1148;
+            objectX = 1300;
             targetX = 320;
             formMainHF.tabItemHealthFile_Click();
 
@@ -131,7 +130,7 @@ namespace DO_AN_CUA_HAN.View
 
             bunifuShadowPanel3.Controls.Add(formMainEC);
             // Thiết lập vị trí ban đầu của đối tượng và vị trí đích
-            objectX = 1148;
+            objectX = 1300;
             targetX = 320;
             formMainEC.tabItemExamination_Click();
             timer.Start(); // Bắt đầu Timer để bắt đầu di chuyển đối tượng
@@ -144,7 +143,7 @@ namespace DO_AN_CUA_HAN.View
 
             bunifuShadowPanel3.Controls.Add(formMainBill);
             // Thiết lập vị trí ban đầu của đối tượng và vị trí đích
-            objectX = 1148;
+            objectX = 1300;
             targetX = 320;
             formMainBill.tabPanelBill();
             timer.Start(); // Bắt đầu Timer để bắt đầu di chuyển đối tượng
@@ -157,7 +156,7 @@ namespace DO_AN_CUA_HAN.View
 
             bunifuShadowPanel3.Controls.Add(formMainAS);
             // Thiết lập vị trí ban đầu của đối tượng và vị trí đích
-            objectX = 1148;
+            objectX = 1300;
             targetX = 320;
             formMainAS.tabItemAssignment_Click();
             timer.Start(); // Bắt đầu Timer để bắt đầu di chuyển đối tượng
@@ -170,7 +169,7 @@ namespace DO_AN_CUA_HAN.View
 
             bunifuShadowPanel3.Controls.Add(formMainMajor);
             // Thiết lập vị trí ban đầu của đối tượng và vị trí đích
-            objectX = 1148;
+            objectX = 1300;
             targetX = 320;
             formMainMajor.tabItemDeptMajor_Click();
             timer.Start(); // Bắt đầu Timer để bắt đầu di chuyển đối tượng
@@ -183,7 +182,7 @@ namespace DO_AN_CUA_HAN.View
 
             bunifuShadowPanel3.Controls.Add(formMainSurgery);
             // Thiết lập vị trí ban đầu của đối tượng và vị trí đích
-            objectX = 1148;
+            objectX = 1300;
             targetX = 320;
             formMainSurgery.tabItemSurgery_Click();
             timer.Start(); // Bắt đầu Timer để bắt đầu di chuyển đối tượng
@@ -196,7 +195,7 @@ namespace DO_AN_CUA_HAN.View
 
             bunifuShadowPanel3.Controls.Add(formMainDisease);
             // Thiết lập vị trí ban đầu của đối tượng và vị trí đích
-            objectX = 1148;
+            objectX = 1300;
             targetX = 320;
             formMainDisease.tabItemDisease_Click();
             timer.Start(); // Bắt đầu Timer để bắt đầu di chuyển đối tượng
@@ -209,7 +208,7 @@ namespace DO_AN_CUA_HAN.View
 
             bunifuShadowPanel3.Controls.Add(formMainHospitalization);
             // Thiết lập vị trí ban đầu của đối tượng và vị trí đích
-            objectX = 1148;
+            objectX = 1300;
             targetX = 320;
             formMainHospitalization.tabItemHospitalization_Click();
             timer.Start(); // Bắt đầu Timer để bắt đầu di chuyển đối tượng
@@ -218,13 +217,13 @@ namespace DO_AN_CUA_HAN.View
         private void tabItemMonitor_Click(object sender, EventArgs e)
         {
             bunifuShadowPanel3.Controls.Clear();
-            FormMainHN formMainHN = new FormMainHN();
+            FormMainMonitor formMainMonitor = new FormMainMonitor();
 
-            bunifuShadowPanel3.Controls.Add(formMainHN);
+            bunifuShadowPanel3.Controls.Add(formMainMonitor);
             // Thiết lập vị trí ban đầu của đối tượng và vị trí đích
-            objectX = 1148;
+            objectX = 1300;
             targetX = 320;
-            formMainHN.tabItemMonitor_Click();
+            formMainMonitor.tabItemMonitor_Click();
             timer.Start(); // Bắt đầu Timer để bắt đầu di chuyển đối tượng
         }
 
@@ -237,7 +236,7 @@ namespace DO_AN_CUA_HAN.View
 
             bunifuShadowPanel3.Controls.Add(formMainTest);
             // Thiết lập vị trí ban đầu của đối tượng và vị trí đích
-            objectX = 1148;
+            objectX = 1300;
             targetX = 320;
             formMainTest.tabItemTest_Click();
             timer.Start(); // Bắt đầu Timer để bắt đầu di chuyển đối tượng
@@ -255,7 +254,7 @@ namespace DO_AN_CUA_HAN.View
 
             bunifuShadowPanel3.Controls.Add(formMainRoleFunction);
             // Thiết lập vị trí ban đầu của đối tượng và vị trí đích
-            objectX = 1148;
+            objectX = 1300;
             targetX = 320;
             formMainRoleFunction.tabItemFunction_Click();
             timer.Start(); // Bắt đầu Timer để bắt đầu di chuyển đối tượng
@@ -268,7 +267,7 @@ namespace DO_AN_CUA_HAN.View
 
             bunifuShadowPanel3.Controls.Add(formMainBed);
             // Thiết lập vị trí ban đầu của đối tượng và vị trí đích
-            objectX = 1148;
+            objectX = 1300;
             targetX = 320;
             formMainBed.tabItemBed_Click();
             timer.Start(); // Bắt đầu Timer để bắt đầu di chuyển đối tượng
@@ -281,7 +280,7 @@ namespace DO_AN_CUA_HAN.View
 
             bunifuShadowPanel3.Controls.Add(formMainService);
             // Thiết lập vị trí ban đầu của đối tượng và vị trí đích
-            objectX = 1148;
+            objectX = 1300;
             targetX = 320;
             formMainService.tabItemService_Click();
             timer.Start(); // Bắt đầu Timer để bắt đầu di chuyển đối tượng
@@ -294,7 +293,7 @@ namespace DO_AN_CUA_HAN.View
 
             bunifuShadowPanel3.Controls.Add(formMainPrescription);
             // Thiết lập vị trí ban đầu của đối tượng và vị trí đích
-            objectX = 1148;
+            objectX = 1300;
             targetX = 320;
             formMainPrescription.tabItemPrescpition_Click();
             timer.Start(); // Bắt đầu Timer để bắt đầu di chuyển đối tượng
@@ -307,17 +306,11 @@ namespace DO_AN_CUA_HAN.View
 
             bunifuShadowPanel3.Controls.Add(formMainMaterial);
             // Thiết lập vị trí ban đầu của đối tượng và vị trí đích
-            objectX = 1148;
+            objectX = 1300;
             targetX = 320;
             formMainMaterial.tabItemMaterial_Click();
             timer.Start(); // Bắt đầu Timer để bắt đầu di chuyển đối tượng
         }
-
-        private void tabItemStatistics_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void tabItemDischarged_Click(object sender, EventArgs e)
         {
             bunifuShadowPanel3.Controls.Clear();
@@ -325,7 +318,7 @@ namespace DO_AN_CUA_HAN.View
 
             bunifuShadowPanel3.Controls.Add(formMainDischarged);
             // Thiết lập vị trí ban đầu của đối tượng và vị trí đích
-            objectX = 1148;
+            objectX = 1300;
             targetX = 320;
             formMainDischarged.tabItemDischarged_Click();
             timer.Start(); // Bắt đầu Timer để bắt đầu di chuyển đối tượng
@@ -339,11 +332,36 @@ namespace DO_AN_CUA_HAN.View
 
             bunifuShadowPanel3.Controls.Add(formMainRole);
             // Thiết lập vị trí ban đầu của đối tượng và vị trí đích
-            objectX = 1148;
+            objectX = 1300;
             targetX = 320;
             formMainRole.tabItemRole_Click();
             timer.Start(); // Bắt đầu Timer để bắt đầu di chuyển đối tượng
         }
+
+        private void Exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void bunifuLogOut_Click(object sender, EventArgs e)
+        {
+            FormLogin_SignUp formLogin = new FormLogin_SignUp();
+            formLogin.FormClosed += new FormClosedEventHandler(Exit_Click);
+            formLogin.Show();
+            this.Hide();
+        }
+
+        private void bunifuAccount_Click(object sender, EventArgs e)
+        {
+            FormStaffDetail formSD = new FormStaffDetail("personalEdit", loginStaff);
+            formSD.ShowDialog();
+        }
+        private void tabItemStatistics_Click(object sender, EventArgs e)
+        {
+
+        }
+
+       
     }
 }
     

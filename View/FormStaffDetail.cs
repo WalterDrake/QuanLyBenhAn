@@ -52,16 +52,16 @@ namespace DO_AN_CUA_HAN.View
             dropDownRole.DisplayMember = "ROLENAME";
 
             // If useraction is edit then set staffdetail to staffdetail form
-            if ("edit".Equals(userAction) || "personalEdit".Equals(UserAction))
+            if ("edit".Equals(userAction))
             {
                 textBoxPassword.ReadOnly = false;
                 textBoxPasswordCheck.ReadOnly = false;
-                //setStaffDetail(staff);
+                setStaffDetail(staff);
             }
-            /*else if ("personalEdit".Equals(userAction))
+            else if ("personalEdit".Equals(userAction))
             {
                 SetPersonalDetail(staff);
-            }*/
+            }
             else if ("add".Equals(userAction))
             {
                 textBoxPassword.ReadOnly = true;
