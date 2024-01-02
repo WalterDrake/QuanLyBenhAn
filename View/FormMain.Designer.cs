@@ -36,6 +36,7 @@
             this.bunifuGradientPanel1_FormMain = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.bunifuShadowPanel2 = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.tabMain = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.pictureBoxInformation = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.tabItemBed = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.ItemBed = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPictureBox23 = new Bunifu.UI.WinForms.BunifuPictureBox();
@@ -107,6 +108,7 @@
             this.bunifuAccount = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuGradientPanel1_FormMain.SuspendLayout();
             this.tabMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxInformation)).BeginInit();
             this.tabItemBed.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox23)).BeginInit();
             this.tabItemMaterial.SuspendLayout();
@@ -233,12 +235,12 @@
             // bunifuToolTip1
             // 
             this.bunifuToolTip1.Active = true;
-            this.bunifuToolTip1.AlignTextWithTitle = false;
-            this.bunifuToolTip1.AllowAutoClose = false;
+            this.bunifuToolTip1.AlignTextWithTitle = true;
+            this.bunifuToolTip1.AllowAutoClose = true;
             this.bunifuToolTip1.AllowFading = true;
             this.bunifuToolTip1.AutoCloseDuration = 5000;
-            this.bunifuToolTip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(221)))), ((int)(((byte)(85)))));
-            this.bunifuToolTip1.BorderColor = System.Drawing.Color.Transparent;
+            this.bunifuToolTip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.bunifuToolTip1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.bunifuToolTip1.ClickToShowDisplayControl = false;
             this.bunifuToolTip1.ConvertNewlinesToBreakTags = true;
             this.bunifuToolTip1.DisplayControl = null;
@@ -249,19 +251,19 @@
             this.bunifuToolTip1.InitialDelay = 0;
             this.bunifuToolTip1.Name = "bunifuToolTip1";
             this.bunifuToolTip1.Opacity = 1D;
-            this.bunifuToolTip1.OverrideToolTipTitles = false;
+            this.bunifuToolTip1.OverrideToolTipTitles = true;
             this.bunifuToolTip1.Padding = new System.Windows.Forms.Padding(10);
             this.bunifuToolTip1.ReshowDelay = 100;
             this.bunifuToolTip1.ShowAlways = true;
-            this.bunifuToolTip1.ShowBorders = false;
+            this.bunifuToolTip1.ShowBorders = true;
             this.bunifuToolTip1.ShowIcons = true;
             this.bunifuToolTip1.ShowShadows = true;
             this.bunifuToolTip1.Tag = null;
-            this.bunifuToolTip1.TextFont = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.bunifuToolTip1.TextForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.bunifuToolTip1.TextFont = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.bunifuToolTip1.TextForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bunifuToolTip1.TextMargin = 2;
-            this.bunifuToolTip1.TitleFont = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.bunifuToolTip1.TitleForeColor = System.Drawing.Color.DimGray;
+            this.bunifuToolTip1.TitleFont = new System.Drawing.Font("Segoe UI Black", 11F, System.Drawing.FontStyle.Bold);
+            this.bunifuToolTip1.TitleForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(109)))), ((int)(((byte)(160)))));
             this.bunifuToolTip1.ToolTipPosition = new System.Drawing.Point(0, 0);
             this.bunifuToolTip1.ToolTipTitle = null;
             // 
@@ -323,6 +325,7 @@
             this.tabMain.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.tabMain.BorderRadius = 40;
             this.tabMain.BorderThickness = 1;
+            this.tabMain.Controls.Add(this.pictureBoxInformation);
             this.tabMain.Controls.Add(this.tabItemBed);
             this.tabMain.Controls.Add(this.tabItemMaterial);
             this.tabMain.Controls.Add(this.tabItemService);
@@ -348,7 +351,7 @@
             this.tabMain.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
             this.tabMain.Location = new System.Drawing.Point(18, 44);
             this.tabMain.Name = "tabMain";
-            this.tabMain.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(109)))), ((int)(((byte)(160)))));
+            this.tabMain.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(219)))), ((int)(((byte)(237)))));
             this.tabMain.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(217)))), ((int)(((byte)(183)))));
             this.tabMain.ShadowColor = System.Drawing.Color.IndianRed;
             this.tabMain.ShadowDept = 2;
@@ -361,6 +364,25 @@
             this.bunifuToolTip1.SetToolTip(this.tabMain, "");
             this.bunifuToolTip1.SetToolTipIcon(this.tabMain, null);
             this.bunifuToolTip1.SetToolTipTitle(this.tabMain, "");
+            // 
+            // pictureBoxInformation
+            // 
+            this.pictureBoxInformation.AllowFocused = false;
+            this.pictureBoxInformation.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBoxInformation.AutoSizeHeight = true;
+            this.pictureBoxInformation.BorderRadius = 32;
+            this.pictureBoxInformation.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxInformation.Image")));
+            this.pictureBoxInformation.IsCircle = true;
+            this.pictureBoxInformation.Location = new System.Drawing.Point(23, 13);
+            this.pictureBoxInformation.Name = "pictureBoxInformation";
+            this.pictureBoxInformation.Size = new System.Drawing.Size(64, 64);
+            this.pictureBoxInformation.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxInformation.TabIndex = 26;
+            this.pictureBoxInformation.TabStop = false;
+            this.bunifuToolTip1.SetToolTip(this.pictureBoxInformation, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.pictureBoxInformation, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.pictureBoxInformation, "");
+            this.pictureBoxInformation.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
             // tabItemBed
             // 
@@ -1911,6 +1933,7 @@
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.bunifuGradientPanel1_FormMain.ResumeLayout(false);
             this.tabMain.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxInformation)).EndInit();
             this.tabItemBed.ResumeLayout(false);
             this.tabItemBed.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox23)).EndInit();
@@ -2060,5 +2083,6 @@
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox2;
         private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel3;
         private Bunifu.UI.WinForms.BunifuPictureBox Exit;
+        private Bunifu.UI.WinForms.BunifuPictureBox pictureBoxInformation;
     }
 }

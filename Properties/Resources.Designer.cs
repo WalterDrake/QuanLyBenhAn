@@ -356,6 +356,16 @@ namespace DO_AN_CUA_HAN.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap handdrawn_vector_61_removebg_preview2 {
+            get {
+                object obj = ResourceManager.GetObject("handdrawn_vector_61-removebg-preview2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap i88i_lnik_180209_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("i88i_lnik_180209-removebg-preview", resourceCulture);
