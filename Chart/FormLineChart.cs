@@ -74,7 +74,6 @@ ORDER BY [Month], TotalQuantity DESC;
                     double value = Convert.ToDouble(dtb.Rows[i][2]);
                     data.Add(value);
                     danhSach.Enqueue(dtb.Rows[i][1].ToString());
-
                 }
             }
             bunifuChartCanvas1.Labels = danhSach.ToArray();

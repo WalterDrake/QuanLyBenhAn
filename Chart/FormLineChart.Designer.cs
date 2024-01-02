@@ -84,8 +84,7 @@
             this.bunifuButton1.IdleIconLeftImage = null;
             this.bunifuButton1.IdleIconRightImage = null;
             this.bunifuButton1.IndicateFocus = false;
-            this.bunifuButton1.Location = new System.Drawing.Point(720, 465);
-            this.bunifuButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuButton1.Location = new System.Drawing.Point(540, 384);
             this.bunifuButton1.Name = "bunifuButton1";
             this.bunifuButton1.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton1.OnDisabledState.BorderRadius = 1;
@@ -119,7 +118,7 @@
             this.bunifuButton1.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButton1.OnPressedState.IconLeftImage = null;
             this.bunifuButton1.OnPressedState.IconRightImage = null;
-            this.bunifuButton1.Size = new System.Drawing.Size(97, 48);
+            this.bunifuButton1.Size = new System.Drawing.Size(73, 39);
             this.bunifuButton1.TabIndex = 4;
             this.bunifuButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButton1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -175,10 +174,9 @@
             "11",
             "12"});
             this.bunifuDropdown1.ItemTopMargin = 3;
-            this.bunifuDropdown1.Location = new System.Drawing.Point(332, 465);
-            this.bunifuDropdown1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuDropdown1.Location = new System.Drawing.Point(249, 386);
             this.bunifuDropdown1.Name = "bunifuDropdown1";
-            this.bunifuDropdown1.Size = new System.Drawing.Size(345, 32);
+            this.bunifuDropdown1.Size = new System.Drawing.Size(260, 32);
             this.bunifuDropdown1.TabIndex = 6;
             this.bunifuDropdown1.Text = null;
             this.bunifuDropdown1.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
@@ -199,12 +197,12 @@
             this.bunifuChartCanvas1.LegendPosition = Bunifu.Charts.WinForms.BunifuChartCanvas.PositionOptions.top;
             this.bunifuChartCanvas1.LegendRevese = false;
             this.bunifuChartCanvas1.LegendRTL = false;
-            this.bunifuChartCanvas1.Location = new System.Drawing.Point(108, 42);
-            this.bunifuChartCanvas1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.bunifuChartCanvas1.Location = new System.Drawing.Point(110, -8);
+            this.bunifuChartCanvas1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuChartCanvas1.Name = "bunifuChartCanvas1";
             this.bunifuChartCanvas1.ShowXAxis = true;
             this.bunifuChartCanvas1.ShowYAxis = true;
-            this.bunifuChartCanvas1.Size = new System.Drawing.Size(895, 414);
+            this.bunifuChartCanvas1.Size = new System.Drawing.Size(568, 435);
             this.bunifuChartCanvas1.TabIndex = 7;
             this.bunifuChartCanvas1.Title = "";
             this.bunifuChartCanvas1.TitleLineHeight = 1.2D;
@@ -275,14 +273,13 @@
             // 
             // FormLineChart
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
-            this.Controls.Add(this.bunifuChartCanvas1);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.bunifuDropdown1);
             this.Controls.Add(this.bunifuButton1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Controls.Add(this.bunifuChartCanvas1);
             this.Name = "FormLineChart";
             this.Text = "FormLineChart";
             this.ResumeLayout(false);
