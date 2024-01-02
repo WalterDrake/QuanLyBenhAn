@@ -175,9 +175,9 @@ namespace DO_AN_CUA_HAN.View
                                 listTD[i].TCID = tcID;
                                 TestDetail.InsertTestDetail(listTD[i]);
                             }
+                            listTD.Clear();
                             bunifuSnackbar1.Show(this, "Thêm phiếu xét nghiệm thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                             return;
-                            listTD.Clear();
                         }
 
                     }

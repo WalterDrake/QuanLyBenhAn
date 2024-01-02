@@ -72,7 +72,7 @@ namespace DO_AN_CUA_HAN.View
             }
             catch (SqlException exception)
             {
-                MessageBox.Show("Lỗi dữ liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(exception.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

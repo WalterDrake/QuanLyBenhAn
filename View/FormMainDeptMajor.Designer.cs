@@ -42,10 +42,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.bunifuShadowPanel1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuButtonDepartmentAdd = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -63,9 +59,6 @@
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuDataGridViewMajor = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.bunifuDataGridViewDeparment = new Bunifu.UI.WinForms.BunifuDataGridView();
-            this.bunifubuttonMajorDeleteSearch = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuTextBoxMajorSearch = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -100,9 +93,6 @@
             this.bunifuShadowPanel1.Controls.Add(this.bunifuLabel2);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuDataGridViewMajor);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuDataGridViewDeparment);
-            this.bunifuShadowPanel1.Controls.Add(this.bunifubuttonMajorDeleteSearch);
-            this.bunifuShadowPanel1.Controls.Add(this.bunifuLabel1);
-            this.bunifuShadowPanel1.Controls.Add(this.bunifuTextBoxMajorSearch);
             this.bunifuShadowPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bunifuShadowPanel1.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Gradient;
             this.bunifuShadowPanel1.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
@@ -725,7 +715,7 @@
             this.bunifuLabel4.AutoEllipsis = false;
             this.bunifuLabel4.CursorType = null;
             this.bunifuLabel4.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
-            this.bunifuLabel4.Location = new System.Drawing.Point(648, 118);
+            this.bunifuLabel4.Location = new System.Drawing.Point(648, 62);
             this.bunifuLabel4.Name = "bunifuLabel4";
             this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel4.Size = new System.Drawing.Size(183, 19);
@@ -741,7 +731,7 @@
             this.bunifuLabel2.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel2.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel2.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
-            this.bunifuLabel2.Location = new System.Drawing.Point(203, 118);
+            this.bunifuLabel2.Location = new System.Drawing.Point(203, 62);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel2.Size = new System.Drawing.Size(119, 19);
@@ -803,12 +793,12 @@
             this.bunifuDataGridViewMajor.HeaderBackColor = System.Drawing.Color.Crimson;
             this.bunifuDataGridViewMajor.HeaderBgColor = System.Drawing.Color.Empty;
             this.bunifuDataGridViewMajor.HeaderForeColor = System.Drawing.Color.White;
-            this.bunifuDataGridViewMajor.Location = new System.Drawing.Point(511, 152);
+            this.bunifuDataGridViewMajor.Location = new System.Drawing.Point(511, 107);
             this.bunifuDataGridViewMajor.Name = "bunifuDataGridViewMajor";
             this.bunifuDataGridViewMajor.RowHeadersVisible = false;
             this.bunifuDataGridViewMajor.RowTemplate.Height = 40;
             this.bunifuDataGridViewMajor.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.bunifuDataGridViewMajor.Size = new System.Drawing.Size(433, 508);
+            this.bunifuDataGridViewMajor.Size = new System.Drawing.Size(433, 550);
             this.bunifuDataGridViewMajor.TabIndex = 12;
             this.bunifuDataGridViewMajor.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Crimson;
             this.bunifuDataGridViewMajor.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuDataGridViewMajor_CellDoubleClick);
@@ -866,130 +856,15 @@
             this.bunifuDataGridViewDeparment.HeaderBackColor = System.Drawing.Color.Crimson;
             this.bunifuDataGridViewDeparment.HeaderBgColor = System.Drawing.Color.Empty;
             this.bunifuDataGridViewDeparment.HeaderForeColor = System.Drawing.Color.White;
-            this.bunifuDataGridViewDeparment.Location = new System.Drawing.Point(37, 152);
+            this.bunifuDataGridViewDeparment.Location = new System.Drawing.Point(37, 107);
             this.bunifuDataGridViewDeparment.Name = "bunifuDataGridViewDeparment";
             this.bunifuDataGridViewDeparment.RowHeadersVisible = false;
             this.bunifuDataGridViewDeparment.RowTemplate.Height = 40;
             this.bunifuDataGridViewDeparment.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.bunifuDataGridViewDeparment.Size = new System.Drawing.Size(433, 508);
+            this.bunifuDataGridViewDeparment.Size = new System.Drawing.Size(433, 550);
             this.bunifuDataGridViewDeparment.TabIndex = 4;
             this.bunifuDataGridViewDeparment.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Crimson;
             this.bunifuDataGridViewDeparment.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuDataGridViewDeparment_CellDoubleClick);
-            // 
-            // bunifubuttonMajorDeleteSearch
-            // 
-            this.bunifubuttonMajorDeleteSearch.ActiveBorderThickness = 1;
-            this.bunifubuttonMajorDeleteSearch.ActiveCornerRadius = 20;
-            this.bunifubuttonMajorDeleteSearch.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.bunifubuttonMajorDeleteSearch.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifubuttonMajorDeleteSearch.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifubuttonMajorDeleteSearch.BackColor = System.Drawing.Color.Transparent;
-            this.bunifubuttonMajorDeleteSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifubuttonMajorDeleteSearch.BackgroundImage")));
-            this.bunifubuttonMajorDeleteSearch.ButtonText = "Xóa tìm kiếm";
-            this.bunifubuttonMajorDeleteSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifubuttonMajorDeleteSearch.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifubuttonMajorDeleteSearch.ForeColor = System.Drawing.Color.Maroon;
-            this.bunifubuttonMajorDeleteSearch.IdleBorderThickness = 1;
-            this.bunifubuttonMajorDeleteSearch.IdleCornerRadius = 20;
-            this.bunifubuttonMajorDeleteSearch.IdleFillColor = System.Drawing.Color.White;
-            this.bunifubuttonMajorDeleteSearch.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.bunifubuttonMajorDeleteSearch.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(58)))), ((int)(((byte)(82)))));
-            this.bunifubuttonMajorDeleteSearch.Location = new System.Drawing.Point(702, 41);
-            this.bunifubuttonMajorDeleteSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.bunifubuttonMajorDeleteSearch.Name = "bunifubuttonMajorDeleteSearch";
-            this.bunifubuttonMajorDeleteSearch.Size = new System.Drawing.Size(129, 50);
-            this.bunifubuttonMajorDeleteSearch.TabIndex = 3;
-            this.bunifubuttonMajorDeleteSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // bunifuLabel1
-            // 
-            this.bunifuLabel1.AllowParentOverrides = false;
-            this.bunifuLabel1.AutoEllipsis = false;
-            this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
-            this.bunifuLabel1.Location = new System.Drawing.Point(99, 59);
-            this.bunifuLabel1.Name = "bunifuLabel1";
-            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(81, 19);
-            this.bunifuLabel1.TabIndex = 2;
-            this.bunifuLabel1.Text = "Tìm kiếm :";
-            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // bunifuTextBoxMajorSearch
-            // 
-            this.bunifuTextBoxMajorSearch.AcceptsReturn = false;
-            this.bunifuTextBoxMajorSearch.AcceptsTab = false;
-            this.bunifuTextBoxMajorSearch.AnimationSpeed = 200;
-            this.bunifuTextBoxMajorSearch.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.bunifuTextBoxMajorSearch.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.bunifuTextBoxMajorSearch.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuTextBoxMajorSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuTextBoxMajorSearch.BackgroundImage")));
-            this.bunifuTextBoxMajorSearch.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.bunifuTextBoxMajorSearch.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.bunifuTextBoxMajorSearch.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.bunifuTextBoxMajorSearch.BorderColorIdle = System.Drawing.Color.Silver;
-            this.bunifuTextBoxMajorSearch.BorderRadius = 1;
-            this.bunifuTextBoxMajorSearch.BorderThickness = 1;
-            this.bunifuTextBoxMajorSearch.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.bunifuTextBoxMajorSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuTextBoxMajorSearch.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
-            this.bunifuTextBoxMajorSearch.DefaultText = "";
-            this.bunifuTextBoxMajorSearch.FillColor = System.Drawing.Color.White;
-            this.bunifuTextBoxMajorSearch.HideSelection = true;
-            this.bunifuTextBoxMajorSearch.IconLeft = null;
-            this.bunifuTextBoxMajorSearch.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuTextBoxMajorSearch.IconPadding = 10;
-            this.bunifuTextBoxMajorSearch.IconRight = null;
-            this.bunifuTextBoxMajorSearch.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuTextBoxMajorSearch.Lines = new string[0];
-            this.bunifuTextBoxMajorSearch.Location = new System.Drawing.Point(193, 45);
-            this.bunifuTextBoxMajorSearch.MaxLength = 32767;
-            this.bunifuTextBoxMajorSearch.MinimumSize = new System.Drawing.Size(1, 1);
-            this.bunifuTextBoxMajorSearch.Modified = false;
-            this.bunifuTextBoxMajorSearch.Multiline = false;
-            this.bunifuTextBoxMajorSearch.Name = "bunifuTextBoxMajorSearch";
-            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties1.FillColor = System.Drawing.Color.Empty;
-            stateProperties1.ForeColor = System.Drawing.Color.Empty;
-            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.bunifuTextBoxMajorSearch.OnActiveState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.bunifuTextBoxMajorSearch.OnDisabledState = stateProperties2;
-            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties3.FillColor = System.Drawing.Color.Empty;
-            stateProperties3.ForeColor = System.Drawing.Color.Empty;
-            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.bunifuTextBoxMajorSearch.OnHoverState = stateProperties3;
-            stateProperties4.BorderColor = System.Drawing.Color.Silver;
-            stateProperties4.FillColor = System.Drawing.Color.White;
-            stateProperties4.ForeColor = System.Drawing.Color.Empty;
-            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.bunifuTextBoxMajorSearch.OnIdleState = stateProperties4;
-            this.bunifuTextBoxMajorSearch.Padding = new System.Windows.Forms.Padding(3);
-            this.bunifuTextBoxMajorSearch.PasswordChar = '\0';
-            this.bunifuTextBoxMajorSearch.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.bunifuTextBoxMajorSearch.PlaceholderText = "Enter text";
-            this.bunifuTextBoxMajorSearch.ReadOnly = false;
-            this.bunifuTextBoxMajorSearch.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.bunifuTextBoxMajorSearch.SelectedText = "";
-            this.bunifuTextBoxMajorSearch.SelectionLength = 0;
-            this.bunifuTextBoxMajorSearch.SelectionStart = 0;
-            this.bunifuTextBoxMajorSearch.ShortcutsEnabled = true;
-            this.bunifuTextBoxMajorSearch.Size = new System.Drawing.Size(493, 46);
-            this.bunifuTextBoxMajorSearch.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.bunifuTextBoxMajorSearch.TabIndex = 1;
-            this.bunifuTextBoxMajorSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.bunifuTextBoxMajorSearch.TextMarginBottom = 0;
-            this.bunifuTextBoxMajorSearch.TextMarginLeft = 3;
-            this.bunifuTextBoxMajorSearch.TextMarginTop = 0;
-            this.bunifuTextBoxMajorSearch.TextPlaceholder = "Enter text";
-            this.bunifuTextBoxMajorSearch.UseSystemPasswordChar = false;
-            this.bunifuTextBoxMajorSearch.WordWrap = true;
             // 
             // bunifuElipse1
             // 
@@ -1021,9 +896,6 @@
 
         private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel1;
         private Bunifu.UI.WinForms.BunifuDataGridView bunifuDataGridViewDeparment;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifubuttonMajorDeleteSearch;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
-        private Bunifu.UI.WinForms.BunifuTextBox bunifuTextBoxMajorSearch;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel4;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;

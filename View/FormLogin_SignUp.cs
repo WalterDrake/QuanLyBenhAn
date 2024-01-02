@@ -114,7 +114,23 @@ namespace DO_AN_CUA_HAN.View
             }
         }
 
- 
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+            if(bunifuTextBoxPassword.PasswordChar == '*')
+            {
+                bunifuPictureBoxEyeOpen.BringToFront();
+                bunifuTextBoxPassword.PasswordChar = '\0';
+            }    
+        }
+
+        private void bunifuImageButton2_Click(object sender, EventArgs e)
+        {
+            if (bunifuTextBoxPassword.PasswordChar == '\0')
+            {
+                bunifuPictureBoxEyeClose.BringToFront();
+                bunifuTextBoxPassword.PasswordChar = '*';
+            }
+        }
     }
 }
 

@@ -366,6 +366,26 @@ namespace DO_AN_CUA_HAN.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_closed_eye_40 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-closed-eye-40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_eye_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-eye-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap maximize {
             get {
                 object obj = ResourceManager.GetObject("maximize", resourceCulture);
@@ -409,6 +429,86 @@ namespace DO_AN_CUA_HAN.Properties {
         internal static System.Drawing.Bitmap retro_error_message_illustration_in_pixel_style_vector_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("retro-error-message-illustration-in-pixel-style-vector-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2023_12_31_163312 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot_2023_12_31_163312", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2023_12_31_163445 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot_2023_12_31_163445", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2023_12_31_163600 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot_2023_12_31_163600", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2023_12_31_163629 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot_2023_12_31_163629", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2024_01_02_185836 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot_2024_01_02_185836", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2024_01_02_185836_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot_2024_01_02_185836_removebg_preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2024_01_02_185900 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot_2024_01_02_185900", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2024_01_02_185900_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot_2024_01_02_185900_removebg_preview", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

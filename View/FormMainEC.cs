@@ -83,7 +83,7 @@ namespace DO_AN_CUA_HAN.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Loi");
+                MessageBox.Show(ex.Message);
             }
         }
 

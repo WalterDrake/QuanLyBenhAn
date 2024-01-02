@@ -45,9 +45,9 @@ namespace DO_AN_CUA_HAN.View
             config.Save(ConfigurationSaveMode.Modified, true);
             ConfigurationManager.RefreshSection("connectionStrings");
 
+            this.Close();
             bunifuSnackbar1.Show(this, "Khởi động lại chương trình để kết nối mới có hiệu lực!", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
             return;
-            this.Close();
         }
         private string getConnectionString() //
         {

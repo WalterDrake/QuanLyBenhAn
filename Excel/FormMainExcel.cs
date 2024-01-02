@@ -52,12 +52,12 @@ namespace DO_AN_CUA_HAN.Excel
                         userlist.Add(user);
                     }
                     catch(Exception exe) {
-                        MessageBox.Show("Loi o day");
+                        MessageBox.Show(exe.Message);
                     }
                     
                 }
             }catch(Exception ex) {
-                MessageBox.Show("Error!");
+                MessageBox.Show(ex.Message);
             }
 
             dataGridView1.DataSource = userlist;

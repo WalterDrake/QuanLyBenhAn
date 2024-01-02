@@ -12,7 +12,8 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Xml.Linq;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 namespace DO_AN_CUA_HAN.View
 {
     
@@ -20,7 +21,7 @@ namespace DO_AN_CUA_HAN.View
     {
 
         private Staff loginStaff { get; set; }
-
+        public Point mouseLocation;
         public FormMain()
         {
             InitializeComponent();
@@ -265,7 +266,10 @@ namespace DO_AN_CUA_HAN.View
         }
         private void tabItemStatistics_Click(object sender, EventArgs e)
         {
-
+            bunifuShadowPanel3.Controls.Clear();
+            FormMainReport formMainReport = new FormMainReport();
+            bunifuShadowPanel3.Controls.Add(formMainReport);
+            // Thiết lập vị trí ban đầu của đối tượng và vị trí đích
         }
 
         private void FormMain_Load(object sender, EventArgs e)
@@ -291,6 +295,21 @@ namespace DO_AN_CUA_HAN.View
                         panel.Visible = true;
                     }
                 }
+            }
+        }
+
+        private void mouse_Down(object sender, MouseEventArgs e)
+        {
+            mouseLocation = new Point(-e.X, -e.Y);
+        }
+
+        private void mouse_Move(object sender, MouseEventArgs e)
+        {
+            if(e.Button == MouseButtons.Left) 
+            {
+                Point mousePose = Control.MousePosition;
+                mousePose.Offset(mouseLocation.X, mouseLocation.Y);
+                Location = mousePose;
             }
         }
     }

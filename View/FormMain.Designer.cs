@@ -1812,6 +1812,8 @@
             this.bunifuToolTip1.SetToolTip(this.header, "");
             this.bunifuToolTip1.SetToolTipIcon(this.header, null);
             this.bunifuToolTip1.SetToolTipTitle(this.header, "");
+            this.header.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mouse_Down);
+            this.header.MouseMove += new System.Windows.Forms.MouseEventHandler(this.mouse_Move);
             // 
             // controlBox
             // 
