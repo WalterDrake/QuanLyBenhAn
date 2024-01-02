@@ -136,13 +136,11 @@
   <data name="3varbuq4-removebg-preview (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3varbuq4-removebg-preview (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-<<<<<<< HEAD
-  <data name="notification_icon-icons.com_73719" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\notification_icon-icons.com_73719.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-=======
+	<data name="notification_icon-icons.com_73719" type="System.Resources.ResXFileRef, System.Windows.Forms">
+		<value>..\Resources\notification_icon-icons.com_73719.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+	</data>
   <data name="7071-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\7071-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
->>>>>>> e0d1a7a254c2c7c98007420431b4a608cc337320
   </data>
   <data name="3varbuq4-removebg-preview (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3varbuq4-removebg-preview (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -243,16 +241,14 @@
   <data name="vecteezy_hospital-bed-in-circle-icon-intensive-care-unit-icon_4745587-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vecteezy_hospital-bed-in-circle-icon-intensive-care-unit-icon_4745587-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-<<<<<<< HEAD
   <data name="2318_R0lVIEFOTiAwNzAtMTA5-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2318_R0lVIEFOTiAwNzAtMTA5-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Telegram-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Telegram-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-=======
+	<data name="Telegram-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+		<value>..\Resources\Telegram-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+	</data>
   <data name="vecteezy_blood-test-vector-icon_18758827-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vecteezy_blood-test-vector-icon_18758827-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
->>>>>>> e0d1a7a254c2c7c98007420431b4a608cc337320
   </data>
   <data name="vecteezy_cute-adorable-cartoon-stationery-yellow-pen-pencil-boy_15737572-1-removebg-preview1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vecteezy_cute-adorable-cartoon-stationery-yellow-pen-pencil-boy_15737572-1-removebg-preview1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -296,7 +292,6 @@
   <data name="vecteezy_cute-adorable-cartoon-stationery-yellow-pen-pencil-boy_15737572-1-removebg-preview2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vecteezy_cute-adorable-cartoon-stationery-yellow-pen-pencil-boy_15737572-1-removebg-preview2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-<<<<<<< HEAD
   <data name="icons8-closed-eye-40" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-closed-eye-40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -321,11 +316,10 @@
   <data name="Screenshot_2024_01_02_185900" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Screenshot 2024-01-02 185900.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Screenshot_2024_01_02_185900_removebg_preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Screenshot_2024-01-02_185900-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-=======
+	<data name="Screenshot_2024_01_02_185900_removebg_preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+		<value>..\Resources\Screenshot_2024-01-02_185900-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+	</data>
   <data name="handdrawn_vector_61-removebg-preview2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\handdrawn_vector_61-removebg-preview2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
->>>>>>> e0d1a7a254c2c7c98007420431b4a608cc337320
   </data>
 </root>

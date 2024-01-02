@@ -120,10 +120,11 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="bunifuButton1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAEkAAAAnCAYAAABDjWX2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACASURBVGhD7dChEYAwAMBAJunKsB9j4AsIBALuMsCLV3FZ
-        xjb3sZ0nf+Z+T/oKvJkUmBSYFJgUmBSYFJgUmBSYFJgUmBSYFJgUmBSYFJgUmBSYFJgUmBSYFJgUmBSY
-        FJgUmBSYFJgUmBSYFJgUmBSYFJgUmBSYFCxjncdX4LHO4wIWa7giB7deZgAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAAGEAAAAwCAYAAAAB1BTxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACcSURBVHhe7dGhAYAwAMAwLtnL8B9n4Dc4AA0VEVGV3cYx
+        z3GsxV/m+Ux4C3zJhAATAkwIMCHAhAATAkwIMCHAhAATAkwIMCHAhAATAkwIMCHAhAATAkwIMCHAhAAT
+        AkwIMCHAhAATAkwIMCHAhAATAkwIMCHAhAATAkwIMCHAhAATAkwIMCHAhAATAkwIMCHAhIBt7PN6C3xk
+        n9cNo22aq4RhudIAAAAASUVORK5CYII=
 </value>
   </data>
   <metadata name="bunifuLineChart1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">

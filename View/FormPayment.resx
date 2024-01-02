@@ -3109,11 +3109,25 @@
         3Oe/+v/8z1xqc85qXQAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="bunifuButtonClose.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAFwAAAA0CAYAAAAHSF9vAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG4SURBVHhe7dw9TgJBGMbxLS0tLS09AkfwEgaLnVljowW8
+        C5UewMJYSHa2INTWtpa23IDEwpj4neBXYqHvLAtGnELI7lM9k/wCyQwU/0wGmp1ofvQPmisujbedmNM8
+        TYZ5ar9oEdpM7MC1453+XnO1zBoeTuJGLuZKjcNfRv8iRl/NqxN7m7fsZpn399BFXZfap+AX0NJ8U93I
+        x2XmyfA7m7FrJPYx65itIrY/s3X73wQXUnXE3Pdbu2u6u+2+S81HcBFVyv8RifTN2fwE1SUZ+uCjvxNU
+        B/2dfPPBg5NUDwYHY3AwBgdjcDAGB2NwMAYHY3AwBgdjcDAGB2NwMAYHY3AwBgdjcDAGB2NwMAYHY3Aw
+        BgdjcDAGB2NwMAYHY3AwBgdjcDAGB2NwMAYHY3AwBgdjcDAGB9Pg5i40QdVzYj998AsXmKRajPyR0vHl
+        5yaoav7CA7GDqJcm6xqcz9nXrLzkoFE8b69vTN62z6GFVIV47MQcFbGnY3KWm5fwB2hZmdh3PU4u/SUS
+        ZeqfodEPdes/hD5IiyuuRJHkJBh7OrKu3dDF/sIDPoO/JD0+rjX2+ezMno0o+ga1f53CFj+YcAAAAABJ
+        RU5ErkJggg==
+</value>
+  </data>
   <data name="bunifuLabelHICD.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Cambria'; font-size: 11,25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(47, 79, 79); text-align: left; }</value>
+    <value>#bunifu-label { padding: 0px; font-family: 'Cambria'; font-size: 11.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(47, 79, 79); text-align: left; }</value>
   </data>
   <data name="bunifuLabelTotalPrice.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Cambria'; font-size: 11,25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(47, 79, 79); text-align: left; }</value>
+    <value>#bunifu-label { padding: 0px; font-family: 'Cambria'; font-size: 11.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(47, 79, 79); text-align: left; }</value>
   </data>
   <data name="bunifuLabel5.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Cambria'; font-size: 11pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(47, 79, 79); text-align: left; }</value>

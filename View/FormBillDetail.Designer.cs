@@ -536,6 +536,8 @@
             // bunifuDataGridViewBillDetail
             // 
             this.bunifuDataGridViewBillDetail.AllowCustomTheming = false;
+            this.bunifuDataGridViewBillDetail.AllowUserToAddRows = false;
+            this.bunifuDataGridViewBillDetail.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             this.bunifuDataGridViewBillDetail.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;

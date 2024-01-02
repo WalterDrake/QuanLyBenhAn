@@ -102,5 +102,10 @@ namespace DO_AN_CUA_HAN.View
 
             refreshbunifuDataGridViewBill();
         }
+
+        private void bunifuButtonClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
