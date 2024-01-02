@@ -30,75 +30,74 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuSnackbar1 = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
             this.bunifuToolTip1 = new Bunifu.UI.WinForms.BunifuToolTip(this.components);
             this.bunifuGradientPanel1_FormMain = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.bunifuShadowPanel2 = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.bunifuShadowPanel1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.bunifuShadowPanel25 = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.tabItemBed = new Bunifu.UI.WinForms.BunifuLabel();
+            this.tabMain = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.tabItemBed = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.ItemBed = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPictureBox23 = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.bunifuShadowPanel24 = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.tabItemMaterial = new Bunifu.UI.WinForms.BunifuLabel();
+            this.tabItemMaterial = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.ItemMaterial = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPictureBox22 = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.bunifuShadowPanel23 = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.tabItemService = new Bunifu.UI.WinForms.BunifuLabel();
+            this.tabItemService = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.ItemService = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPictureBox21 = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.bunifuShadowPanel22 = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.tabItemPrescpition = new Bunifu.UI.WinForms.BunifuLabel();
+            this.tabItemPrescpition = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.ItemPrescpition = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPictureBox20 = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.bunifuShadowPanel21 = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.tabItemFunction = new Bunifu.UI.WinForms.BunifuLabel();
+            this.tabItemFunction = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.ItemFunction = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPictureBox19 = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.bunifuShadowPanel20 = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.tabItemRole = new Bunifu.UI.WinForms.BunifuLabel();
+            this.tabItemRole = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.ItemRole = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPictureBox18 = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.bunifuShadowPanel18 = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.tabItemTest = new Bunifu.UI.WinForms.BunifuLabel();
+            this.tabItemTest = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.ItemTest = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPictureBox16 = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.bunifuShadowPanel17 = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.tabItemStatistics = new Bunifu.UI.WinForms.BunifuLabel();
+            this.tabItemStatistics = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.ItemStatistics = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPictureBox14 = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.bunifuShadowPanel16 = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.tabItemHospitalization = new Bunifu.UI.WinForms.BunifuLabel();
+            this.tabItemHospitalization = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.ItemHospitalization = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPictureBox13 = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.bunifuShadowPanel15 = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.tabItemDischarged = new Bunifu.UI.WinForms.BunifuLabel();
+            this.tabItemDischarged = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.ItemDischarged = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPictureBox12 = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.bunifuShadowPanel14 = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.tabItemMonitor = new Bunifu.UI.WinForms.BunifuLabel();
+            this.tabItemMonitor = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.ItemMonitor = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPictureBox11 = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.bunifuShadowPanel13 = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.tabItemSurgery = new Bunifu.UI.WinForms.BunifuLabel();
+            this.tabItemSurgery = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.ItemSurgery = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPictureBox10 = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.bunifuShadowPanel12 = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.tabItemStaff = new Bunifu.UI.WinForms.BunifuLabel();
+            this.tabItemStaff = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.ItemStaff = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPictureBox9 = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.bunifuShadowPanel11 = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.tabItemDeptMajor = new Bunifu.UI.WinForms.BunifuLabel();
+            this.tabItemDeptMajor = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.ItemDeptMajor = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPictureBox8 = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.bunifuShadowPanel10 = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.tabItemAssignment = new Bunifu.UI.WinForms.BunifuLabel();
+            this.tabItemAssignment = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.ItemAssignment = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPictureBox7 = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.bunifuShadowPanel9 = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.tabItemExamination = new Bunifu.UI.WinForms.BunifuLabel();
+            this.tabItemExamination = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.ItemExamination = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPictureBox6 = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.bunifuShadowPanel8 = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.tabItemDisease = new Bunifu.UI.WinForms.BunifuLabel();
+            this.tabItemDisease = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.ItemDisease = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPictureBox5 = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.bunifuShadowPanel7 = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.tabItemBill = new Bunifu.UI.WinForms.BunifuLabel();
+            this.tabItemBill = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.ItemBill = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPictureBox4 = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.bunifuShadowPanel6 = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.tabItemHealthFile = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.bunifuPictureBox3 = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.tabItemHealthFile = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuShadowPanel4 = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.tabItemPatient = new Bunifu.UI.WinForms.BunifuLabel();
+            this.ItemHealthFile = new Bunifu.UI.WinForms.BunifuLabel();
+            this.tabItemPatient = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.ItemPatient = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.bunifuShadowPanel5 = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.tabItemMedicine = new Bunifu.UI.WinForms.BunifuLabel();
+            this.tabItemMedicine = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.ItemMedicine = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPictureBox2 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuShadowPanel3 = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.header = new Bunifu.UI.WinForms.BunifuPanel();
@@ -107,48 +106,48 @@
             this.bunifuLogOut = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuAccount = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuGradientPanel1_FormMain.SuspendLayout();
-            this.bunifuShadowPanel1.SuspendLayout();
-            this.bunifuShadowPanel25.SuspendLayout();
+            this.tabMain.SuspendLayout();
+            this.tabItemBed.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox23)).BeginInit();
-            this.bunifuShadowPanel24.SuspendLayout();
+            this.tabItemMaterial.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox22)).BeginInit();
-            this.bunifuShadowPanel23.SuspendLayout();
+            this.tabItemService.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox21)).BeginInit();
-            this.bunifuShadowPanel22.SuspendLayout();
+            this.tabItemPrescpition.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox20)).BeginInit();
-            this.bunifuShadowPanel21.SuspendLayout();
+            this.tabItemFunction.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox19)).BeginInit();
-            this.bunifuShadowPanel20.SuspendLayout();
+            this.tabItemRole.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox18)).BeginInit();
-            this.bunifuShadowPanel18.SuspendLayout();
+            this.tabItemTest.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox16)).BeginInit();
-            this.bunifuShadowPanel17.SuspendLayout();
+            this.tabItemStatistics.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox14)).BeginInit();
-            this.bunifuShadowPanel16.SuspendLayout();
+            this.tabItemHospitalization.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox13)).BeginInit();
-            this.bunifuShadowPanel15.SuspendLayout();
+            this.tabItemDischarged.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox12)).BeginInit();
-            this.bunifuShadowPanel14.SuspendLayout();
+            this.tabItemMonitor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox11)).BeginInit();
-            this.bunifuShadowPanel13.SuspendLayout();
+            this.tabItemSurgery.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox10)).BeginInit();
-            this.bunifuShadowPanel12.SuspendLayout();
+            this.tabItemStaff.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox9)).BeginInit();
-            this.bunifuShadowPanel11.SuspendLayout();
+            this.tabItemDeptMajor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox8)).BeginInit();
-            this.bunifuShadowPanel10.SuspendLayout();
+            this.tabItemAssignment.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox7)).BeginInit();
-            this.bunifuShadowPanel9.SuspendLayout();
+            this.tabItemExamination.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox6)).BeginInit();
-            this.bunifuShadowPanel8.SuspendLayout();
+            this.tabItemDisease.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox5)).BeginInit();
-            this.bunifuShadowPanel7.SuspendLayout();
+            this.tabItemBill.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox4)).BeginInit();
-            this.bunifuShadowPanel6.SuspendLayout();
+            this.tabItemHealthFile.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox3)).BeginInit();
-            this.bunifuShadowPanel4.SuspendLayout();
+            this.tabItemPatient.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
-            this.bunifuShadowPanel5.SuspendLayout();
+            this.tabItemMedicine.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).BeginInit();
             this.header.SuspendLayout();
             this.controlBox.SuspendLayout();
@@ -156,11 +155,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.bunifuLogOut)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuAccount)).BeginInit();
             this.SuspendLayout();
-            // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 1;
             // 
             // bunifuElipse1
             // 
@@ -278,7 +272,7 @@
             this.bunifuGradientPanel1_FormMain.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuGradientPanel1_FormMain.BorderRadius = 100;
             this.bunifuGradientPanel1_FormMain.Controls.Add(this.bunifuShadowPanel2);
-            this.bunifuGradientPanel1_FormMain.Controls.Add(this.bunifuShadowPanel1);
+            this.bunifuGradientPanel1_FormMain.Controls.Add(this.tabMain);
             this.bunifuGradientPanel1_FormMain.Controls.Add(this.bunifuShadowPanel3);
             this.bunifuGradientPanel1_FormMain.Controls.Add(this.header);
             this.bunifuGradientPanel1_FormMain.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -321,99 +315,100 @@
             this.bunifuToolTip1.SetToolTipIcon(this.bunifuShadowPanel2, null);
             this.bunifuToolTip1.SetToolTipTitle(this.bunifuShadowPanel2, "");
             // 
-            // bunifuShadowPanel1
+            // tabMain
             // 
-            this.bunifuShadowPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.tabMain.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.bunifuShadowPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuShadowPanel1.BorderColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuShadowPanel1.BorderRadius = 40;
-            this.bunifuShadowPanel1.BorderThickness = 1;
-            this.bunifuShadowPanel1.Controls.Add(this.bunifuShadowPanel25);
-            this.bunifuShadowPanel1.Controls.Add(this.bunifuShadowPanel24);
-            this.bunifuShadowPanel1.Controls.Add(this.bunifuShadowPanel23);
-            this.bunifuShadowPanel1.Controls.Add(this.bunifuShadowPanel22);
-            this.bunifuShadowPanel1.Controls.Add(this.bunifuShadowPanel21);
-            this.bunifuShadowPanel1.Controls.Add(this.bunifuShadowPanel20);
-            this.bunifuShadowPanel1.Controls.Add(this.bunifuShadowPanel18);
-            this.bunifuShadowPanel1.Controls.Add(this.bunifuShadowPanel17);
-            this.bunifuShadowPanel1.Controls.Add(this.bunifuShadowPanel16);
-            this.bunifuShadowPanel1.Controls.Add(this.bunifuShadowPanel15);
-            this.bunifuShadowPanel1.Controls.Add(this.bunifuShadowPanel14);
-            this.bunifuShadowPanel1.Controls.Add(this.bunifuShadowPanel13);
-            this.bunifuShadowPanel1.Controls.Add(this.bunifuShadowPanel12);
-            this.bunifuShadowPanel1.Controls.Add(this.bunifuShadowPanel11);
-            this.bunifuShadowPanel1.Controls.Add(this.bunifuShadowPanel10);
-            this.bunifuShadowPanel1.Controls.Add(this.bunifuShadowPanel9);
-            this.bunifuShadowPanel1.Controls.Add(this.bunifuShadowPanel8);
-            this.bunifuShadowPanel1.Controls.Add(this.bunifuShadowPanel7);
-            this.bunifuShadowPanel1.Controls.Add(this.bunifuShadowPanel6);
-            this.bunifuShadowPanel1.Controls.Add(this.bunifuShadowPanel4);
-            this.bunifuShadowPanel1.Controls.Add(this.bunifuShadowPanel5);
-            this.bunifuShadowPanel1.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Gradient;
-            this.bunifuShadowPanel1.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.bunifuShadowPanel1.Location = new System.Drawing.Point(18, 44);
-            this.bunifuShadowPanel1.Name = "bunifuShadowPanel1";
-            this.bunifuShadowPanel1.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(109)))), ((int)(((byte)(160)))));
-            this.bunifuShadowPanel1.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(217)))), ((int)(((byte)(183)))));
-            this.bunifuShadowPanel1.ShadowColor = System.Drawing.Color.IndianRed;
-            this.bunifuShadowPanel1.ShadowDept = 2;
-            this.bunifuShadowPanel1.ShadowDepth = 5;
-            this.bunifuShadowPanel1.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
-            this.bunifuShadowPanel1.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel1.Size = new System.Drawing.Size(275, 660);
-            this.bunifuShadowPanel1.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
-            this.bunifuShadowPanel1.TabIndex = 0;
-            this.bunifuToolTip1.SetToolTip(this.bunifuShadowPanel1, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.bunifuShadowPanel1, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.bunifuShadowPanel1, "");
-            // 
-            // bunifuShadowPanel25
-            // 
-            this.bunifuShadowPanel25.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuShadowPanel25.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(188)))), ((int)(((byte)(172)))));
-            this.bunifuShadowPanel25.BorderRadius = 20;
-            this.bunifuShadowPanel25.BorderThickness = 1;
-            this.bunifuShadowPanel25.Controls.Add(this.tabItemBed);
-            this.bunifuShadowPanel25.Controls.Add(this.bunifuPictureBox23);
-            this.bunifuShadowPanel25.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
-            this.bunifuShadowPanel25.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.bunifuShadowPanel25.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.bunifuShadowPanel25.Location = new System.Drawing.Point(14, 501);
-            this.bunifuShadowPanel25.Name = "bunifuShadowPanel25";
-            this.bunifuShadowPanel25.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.bunifuShadowPanel25.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.bunifuShadowPanel25.ShadowColor = System.Drawing.Color.Gray;
-            this.bunifuShadowPanel25.ShadowDept = 2;
-            this.bunifuShadowPanel25.ShadowDepth = 2;
-            this.bunifuShadowPanel25.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
-            this.bunifuShadowPanel25.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel25.Size = new System.Drawing.Size(121, 41);
-            this.bunifuShadowPanel25.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
-            this.bunifuShadowPanel25.TabIndex = 25;
-            this.bunifuToolTip1.SetToolTip(this.bunifuShadowPanel25, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.bunifuShadowPanel25, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.bunifuShadowPanel25, "");
+            this.tabMain.BackColor = System.Drawing.Color.Transparent;
+            this.tabMain.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.tabMain.BorderRadius = 40;
+            this.tabMain.BorderThickness = 1;
+            this.tabMain.Controls.Add(this.tabItemBed);
+            this.tabMain.Controls.Add(this.tabItemMaterial);
+            this.tabMain.Controls.Add(this.tabItemService);
+            this.tabMain.Controls.Add(this.tabItemPrescpition);
+            this.tabMain.Controls.Add(this.tabItemFunction);
+            this.tabMain.Controls.Add(this.tabItemRole);
+            this.tabMain.Controls.Add(this.tabItemTest);
+            this.tabMain.Controls.Add(this.tabItemStatistics);
+            this.tabMain.Controls.Add(this.tabItemHospitalization);
+            this.tabMain.Controls.Add(this.tabItemDischarged);
+            this.tabMain.Controls.Add(this.tabItemMonitor);
+            this.tabMain.Controls.Add(this.tabItemSurgery);
+            this.tabMain.Controls.Add(this.tabItemStaff);
+            this.tabMain.Controls.Add(this.tabItemDeptMajor);
+            this.tabMain.Controls.Add(this.tabItemAssignment);
+            this.tabMain.Controls.Add(this.tabItemExamination);
+            this.tabMain.Controls.Add(this.tabItemDisease);
+            this.tabMain.Controls.Add(this.tabItemBill);
+            this.tabMain.Controls.Add(this.tabItemHealthFile);
+            this.tabMain.Controls.Add(this.tabItemPatient);
+            this.tabMain.Controls.Add(this.tabItemMedicine);
+            this.tabMain.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Gradient;
+            this.tabMain.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
+            this.tabMain.Location = new System.Drawing.Point(18, 44);
+            this.tabMain.Name = "tabMain";
+            this.tabMain.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(109)))), ((int)(((byte)(160)))));
+            this.tabMain.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(217)))), ((int)(((byte)(183)))));
+            this.tabMain.ShadowColor = System.Drawing.Color.IndianRed;
+            this.tabMain.ShadowDept = 2;
+            this.tabMain.ShadowDepth = 5;
+            this.tabMain.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
+            this.tabMain.ShadowTopLeftVisible = false;
+            this.tabMain.Size = new System.Drawing.Size(275, 660);
+            this.tabMain.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
+            this.tabMain.TabIndex = 0;
+            this.bunifuToolTip1.SetToolTip(this.tabMain, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.tabMain, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.tabMain, "");
             // 
             // tabItemBed
             // 
-            this.tabItemBed.AllowParentOverrides = false;
-            this.tabItemBed.AutoEllipsis = false;
-            this.tabItemBed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.tabItemBed.CursorType = null;
-            this.tabItemBed.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
-            this.tabItemBed.Location = new System.Drawing.Point(29, 12);
+            this.tabItemBed.BackColor = System.Drawing.Color.Transparent;
+            this.tabItemBed.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(188)))), ((int)(((byte)(172)))));
+            this.tabItemBed.BorderRadius = 20;
+            this.tabItemBed.BorderThickness = 1;
+            this.tabItemBed.Controls.Add(this.ItemBed);
+            this.tabItemBed.Controls.Add(this.bunifuPictureBox23);
+            this.tabItemBed.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
+            this.tabItemBed.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.tabItemBed.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
+            this.tabItemBed.Location = new System.Drawing.Point(14, 501);
             this.tabItemBed.Name = "tabItemBed";
-            this.tabItemBed.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tabItemBed.Size = new System.Drawing.Size(84, 17);
-            this.tabItemBed.TabIndex = 13;
-            this.tabItemBed.Text = "Giường bệnh";
-            this.tabItemBed.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.tabItemBed.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.tabItemBed.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.tabItemBed.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.tabItemBed.ShadowColor = System.Drawing.Color.Gray;
+            this.tabItemBed.ShadowDept = 2;
+            this.tabItemBed.ShadowDepth = 2;
+            this.tabItemBed.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
+            this.tabItemBed.ShadowTopLeftVisible = false;
+            this.tabItemBed.Size = new System.Drawing.Size(121, 41);
+            this.tabItemBed.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
+            this.tabItemBed.TabIndex = 25;
             this.bunifuToolTip1.SetToolTip(this.tabItemBed, "");
             this.bunifuToolTip1.SetToolTipIcon(this.tabItemBed, null);
             this.bunifuToolTip1.SetToolTipTitle(this.tabItemBed, "");
-            this.tabItemBed.Click += new System.EventHandler(this.tabItemBed_Click);
+            this.tabItemBed.Visible = false;
+            // 
+            // ItemBed
+            // 
+            this.ItemBed.AllowParentOverrides = false;
+            this.ItemBed.AutoEllipsis = false;
+            this.ItemBed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.ItemBed.CursorType = null;
+            this.ItemBed.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
+            this.ItemBed.Location = new System.Drawing.Point(29, 12);
+            this.ItemBed.Name = "ItemBed";
+            this.ItemBed.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ItemBed.Size = new System.Drawing.Size(84, 17);
+            this.ItemBed.TabIndex = 13;
+            this.ItemBed.Text = "Giường bệnh";
+            this.ItemBed.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.ItemBed.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuToolTip1.SetToolTip(this.ItemBed, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.ItemBed, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.ItemBed, "");
+            this.ItemBed.Click += new System.EventHandler(this.tabItemBed_Click);
             // 
             // bunifuPictureBox23
             // 
@@ -434,52 +429,53 @@
             this.bunifuToolTip1.SetToolTipTitle(this.bunifuPictureBox23, "");
             this.bunifuPictureBox23.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Custom;
             // 
-            // bunifuShadowPanel24
-            // 
-            this.bunifuShadowPanel24.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuShadowPanel24.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(188)))), ((int)(((byte)(172)))));
-            this.bunifuShadowPanel24.BorderRadius = 20;
-            this.bunifuShadowPanel24.BorderThickness = 1;
-            this.bunifuShadowPanel24.Controls.Add(this.tabItemMaterial);
-            this.bunifuShadowPanel24.Controls.Add(this.bunifuPictureBox22);
-            this.bunifuShadowPanel24.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
-            this.bunifuShadowPanel24.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.bunifuShadowPanel24.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.bunifuShadowPanel24.Location = new System.Drawing.Point(143, 550);
-            this.bunifuShadowPanel24.Name = "bunifuShadowPanel24";
-            this.bunifuShadowPanel24.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.bunifuShadowPanel24.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.bunifuShadowPanel24.ShadowColor = System.Drawing.Color.Gray;
-            this.bunifuShadowPanel24.ShadowDept = 2;
-            this.bunifuShadowPanel24.ShadowDepth = 2;
-            this.bunifuShadowPanel24.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
-            this.bunifuShadowPanel24.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel24.Size = new System.Drawing.Size(113, 41);
-            this.bunifuShadowPanel24.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
-            this.bunifuShadowPanel24.TabIndex = 24;
-            this.bunifuToolTip1.SetToolTip(this.bunifuShadowPanel24, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.bunifuShadowPanel24, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.bunifuShadowPanel24, "");
-            // 
             // tabItemMaterial
             // 
-            this.tabItemMaterial.AllowParentOverrides = false;
-            this.tabItemMaterial.AutoEllipsis = false;
-            this.tabItemMaterial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.tabItemMaterial.CursorType = null;
-            this.tabItemMaterial.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
-            this.tabItemMaterial.Location = new System.Drawing.Point(43, 13);
+            this.tabItemMaterial.BackColor = System.Drawing.Color.Transparent;
+            this.tabItemMaterial.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(188)))), ((int)(((byte)(172)))));
+            this.tabItemMaterial.BorderRadius = 20;
+            this.tabItemMaterial.BorderThickness = 1;
+            this.tabItemMaterial.Controls.Add(this.ItemMaterial);
+            this.tabItemMaterial.Controls.Add(this.bunifuPictureBox22);
+            this.tabItemMaterial.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
+            this.tabItemMaterial.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.tabItemMaterial.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
+            this.tabItemMaterial.Location = new System.Drawing.Point(143, 550);
             this.tabItemMaterial.Name = "tabItemMaterial";
-            this.tabItemMaterial.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tabItemMaterial.Size = new System.Drawing.Size(55, 17);
-            this.tabItemMaterial.TabIndex = 13;
-            this.tabItemMaterial.Text = "Đồ dùng";
-            this.tabItemMaterial.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.tabItemMaterial.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.tabItemMaterial.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.tabItemMaterial.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.tabItemMaterial.ShadowColor = System.Drawing.Color.Gray;
+            this.tabItemMaterial.ShadowDept = 2;
+            this.tabItemMaterial.ShadowDepth = 2;
+            this.tabItemMaterial.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
+            this.tabItemMaterial.ShadowTopLeftVisible = false;
+            this.tabItemMaterial.Size = new System.Drawing.Size(113, 41);
+            this.tabItemMaterial.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
+            this.tabItemMaterial.TabIndex = 24;
             this.bunifuToolTip1.SetToolTip(this.tabItemMaterial, "");
             this.bunifuToolTip1.SetToolTipIcon(this.tabItemMaterial, null);
             this.bunifuToolTip1.SetToolTipTitle(this.tabItemMaterial, "");
-            this.tabItemMaterial.Click += new System.EventHandler(this.tabItemMaterial_Click);
+            this.tabItemMaterial.Visible = false;
+            // 
+            // ItemMaterial
+            // 
+            this.ItemMaterial.AllowParentOverrides = false;
+            this.ItemMaterial.AutoEllipsis = false;
+            this.ItemMaterial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.ItemMaterial.CursorType = null;
+            this.ItemMaterial.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
+            this.ItemMaterial.Location = new System.Drawing.Point(43, 13);
+            this.ItemMaterial.Name = "ItemMaterial";
+            this.ItemMaterial.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ItemMaterial.Size = new System.Drawing.Size(55, 17);
+            this.ItemMaterial.TabIndex = 13;
+            this.ItemMaterial.Text = "Đồ dùng";
+            this.ItemMaterial.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.ItemMaterial.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuToolTip1.SetToolTip(this.ItemMaterial, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.ItemMaterial, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.ItemMaterial, "");
+            this.ItemMaterial.Click += new System.EventHandler(this.tabItemMaterial_Click);
             // 
             // bunifuPictureBox22
             // 
@@ -500,52 +496,53 @@
             this.bunifuToolTip1.SetToolTipTitle(this.bunifuPictureBox22, "");
             this.bunifuPictureBox22.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
-            // bunifuShadowPanel23
-            // 
-            this.bunifuShadowPanel23.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuShadowPanel23.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(188)))), ((int)(((byte)(172)))));
-            this.bunifuShadowPanel23.BorderRadius = 20;
-            this.bunifuShadowPanel23.BorderThickness = 1;
-            this.bunifuShadowPanel23.Controls.Add(this.tabItemService);
-            this.bunifuShadowPanel23.Controls.Add(this.bunifuPictureBox21);
-            this.bunifuShadowPanel23.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
-            this.bunifuShadowPanel23.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.bunifuShadowPanel23.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.bunifuShadowPanel23.Location = new System.Drawing.Point(141, 501);
-            this.bunifuShadowPanel23.Name = "bunifuShadowPanel23";
-            this.bunifuShadowPanel23.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.bunifuShadowPanel23.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.bunifuShadowPanel23.ShadowColor = System.Drawing.Color.Gray;
-            this.bunifuShadowPanel23.ShadowDept = 2;
-            this.bunifuShadowPanel23.ShadowDepth = 2;
-            this.bunifuShadowPanel23.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
-            this.bunifuShadowPanel23.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel23.Size = new System.Drawing.Size(119, 41);
-            this.bunifuShadowPanel23.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
-            this.bunifuShadowPanel23.TabIndex = 23;
-            this.bunifuToolTip1.SetToolTip(this.bunifuShadowPanel23, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.bunifuShadowPanel23, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.bunifuShadowPanel23, "");
-            // 
             // tabItemService
             // 
-            this.tabItemService.AllowParentOverrides = false;
-            this.tabItemService.AutoEllipsis = false;
-            this.tabItemService.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.tabItemService.CursorType = null;
-            this.tabItemService.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
-            this.tabItemService.Location = new System.Drawing.Point(50, 13);
+            this.tabItemService.BackColor = System.Drawing.Color.Transparent;
+            this.tabItemService.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(188)))), ((int)(((byte)(172)))));
+            this.tabItemService.BorderRadius = 20;
+            this.tabItemService.BorderThickness = 1;
+            this.tabItemService.Controls.Add(this.ItemService);
+            this.tabItemService.Controls.Add(this.bunifuPictureBox21);
+            this.tabItemService.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
+            this.tabItemService.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.tabItemService.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
+            this.tabItemService.Location = new System.Drawing.Point(141, 501);
             this.tabItemService.Name = "tabItemService";
-            this.tabItemService.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tabItemService.Size = new System.Drawing.Size(50, 17);
-            this.tabItemService.TabIndex = 13;
-            this.tabItemService.Text = "Dịch vụ";
-            this.tabItemService.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.tabItemService.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.tabItemService.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.tabItemService.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.tabItemService.ShadowColor = System.Drawing.Color.Gray;
+            this.tabItemService.ShadowDept = 2;
+            this.tabItemService.ShadowDepth = 2;
+            this.tabItemService.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
+            this.tabItemService.ShadowTopLeftVisible = false;
+            this.tabItemService.Size = new System.Drawing.Size(119, 41);
+            this.tabItemService.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
+            this.tabItemService.TabIndex = 23;
             this.bunifuToolTip1.SetToolTip(this.tabItemService, "");
             this.bunifuToolTip1.SetToolTipIcon(this.tabItemService, null);
             this.bunifuToolTip1.SetToolTipTitle(this.tabItemService, "");
-            this.tabItemService.Click += new System.EventHandler(this.tabItemService_Click);
+            this.tabItemService.Visible = false;
+            // 
+            // ItemService
+            // 
+            this.ItemService.AllowParentOverrides = false;
+            this.ItemService.AutoEllipsis = false;
+            this.ItemService.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.ItemService.CursorType = null;
+            this.ItemService.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
+            this.ItemService.Location = new System.Drawing.Point(50, 13);
+            this.ItemService.Name = "ItemService";
+            this.ItemService.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ItemService.Size = new System.Drawing.Size(50, 17);
+            this.ItemService.TabIndex = 13;
+            this.ItemService.Text = "Dịch vụ";
+            this.ItemService.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.ItemService.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuToolTip1.SetToolTip(this.ItemService, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.ItemService, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.ItemService, "");
+            this.ItemService.Click += new System.EventHandler(this.tabItemService_Click);
             // 
             // bunifuPictureBox21
             // 
@@ -566,52 +563,53 @@
             this.bunifuToolTip1.SetToolTipTitle(this.bunifuPictureBox21, "");
             this.bunifuPictureBox21.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
-            // bunifuShadowPanel22
-            // 
-            this.bunifuShadowPanel22.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuShadowPanel22.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(188)))), ((int)(((byte)(172)))));
-            this.bunifuShadowPanel22.BorderRadius = 20;
-            this.bunifuShadowPanel22.BorderThickness = 1;
-            this.bunifuShadowPanel22.Controls.Add(this.tabItemPrescpition);
-            this.bunifuShadowPanel22.Controls.Add(this.bunifuPictureBox20);
-            this.bunifuShadowPanel22.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
-            this.bunifuShadowPanel22.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.bunifuShadowPanel22.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.bunifuShadowPanel22.Location = new System.Drawing.Point(17, 547);
-            this.bunifuShadowPanel22.Name = "bunifuShadowPanel22";
-            this.bunifuShadowPanel22.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.bunifuShadowPanel22.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.bunifuShadowPanel22.ShadowColor = System.Drawing.Color.Gray;
-            this.bunifuShadowPanel22.ShadowDept = 2;
-            this.bunifuShadowPanel22.ShadowDepth = 2;
-            this.bunifuShadowPanel22.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
-            this.bunifuShadowPanel22.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel22.Size = new System.Drawing.Size(113, 41);
-            this.bunifuShadowPanel22.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
-            this.bunifuShadowPanel22.TabIndex = 22;
-            this.bunifuToolTip1.SetToolTip(this.bunifuShadowPanel22, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.bunifuShadowPanel22, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.bunifuShadowPanel22, "");
-            // 
             // tabItemPrescpition
             // 
-            this.tabItemPrescpition.AllowParentOverrides = false;
-            this.tabItemPrescpition.AutoEllipsis = false;
-            this.tabItemPrescpition.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.tabItemPrescpition.CursorType = null;
-            this.tabItemPrescpition.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
-            this.tabItemPrescpition.Location = new System.Drawing.Point(45, 13);
+            this.tabItemPrescpition.BackColor = System.Drawing.Color.Transparent;
+            this.tabItemPrescpition.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(188)))), ((int)(((byte)(172)))));
+            this.tabItemPrescpition.BorderRadius = 20;
+            this.tabItemPrescpition.BorderThickness = 1;
+            this.tabItemPrescpition.Controls.Add(this.ItemPrescpition);
+            this.tabItemPrescpition.Controls.Add(this.bunifuPictureBox20);
+            this.tabItemPrescpition.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
+            this.tabItemPrescpition.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.tabItemPrescpition.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
+            this.tabItemPrescpition.Location = new System.Drawing.Point(17, 547);
             this.tabItemPrescpition.Name = "tabItemPrescpition";
-            this.tabItemPrescpition.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tabItemPrescpition.Size = new System.Drawing.Size(48, 17);
-            this.tabItemPrescpition.TabIndex = 13;
-            this.tabItemPrescpition.Text = "Kê đơn";
-            this.tabItemPrescpition.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.tabItemPrescpition.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.tabItemPrescpition.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.tabItemPrescpition.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.tabItemPrescpition.ShadowColor = System.Drawing.Color.Gray;
+            this.tabItemPrescpition.ShadowDept = 2;
+            this.tabItemPrescpition.ShadowDepth = 2;
+            this.tabItemPrescpition.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
+            this.tabItemPrescpition.ShadowTopLeftVisible = false;
+            this.tabItemPrescpition.Size = new System.Drawing.Size(113, 41);
+            this.tabItemPrescpition.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
+            this.tabItemPrescpition.TabIndex = 22;
             this.bunifuToolTip1.SetToolTip(this.tabItemPrescpition, "");
             this.bunifuToolTip1.SetToolTipIcon(this.tabItemPrescpition, null);
             this.bunifuToolTip1.SetToolTipTitle(this.tabItemPrescpition, "");
-            this.tabItemPrescpition.Click += new System.EventHandler(this.tabItemPrescpition_Click);
+            this.tabItemPrescpition.Visible = false;
+            // 
+            // ItemPrescpition
+            // 
+            this.ItemPrescpition.AllowParentOverrides = false;
+            this.ItemPrescpition.AutoEllipsis = false;
+            this.ItemPrescpition.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.ItemPrescpition.CursorType = null;
+            this.ItemPrescpition.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
+            this.ItemPrescpition.Location = new System.Drawing.Point(45, 13);
+            this.ItemPrescpition.Name = "ItemPrescpition";
+            this.ItemPrescpition.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ItemPrescpition.Size = new System.Drawing.Size(48, 17);
+            this.ItemPrescpition.TabIndex = 13;
+            this.ItemPrescpition.Text = "Kê đơn";
+            this.ItemPrescpition.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.ItemPrescpition.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuToolTip1.SetToolTip(this.ItemPrescpition, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.ItemPrescpition, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.ItemPrescpition, "");
+            this.ItemPrescpition.Click += new System.EventHandler(this.tabItemPrescpition_Click);
             // 
             // bunifuPictureBox20
             // 
@@ -632,52 +630,53 @@
             this.bunifuToolTip1.SetToolTipTitle(this.bunifuPictureBox20, "");
             this.bunifuPictureBox20.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
-            // bunifuShadowPanel21
-            // 
-            this.bunifuShadowPanel21.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuShadowPanel21.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(188)))), ((int)(((byte)(172)))));
-            this.bunifuShadowPanel21.BorderRadius = 20;
-            this.bunifuShadowPanel21.BorderThickness = 1;
-            this.bunifuShadowPanel21.Controls.Add(this.tabItemFunction);
-            this.bunifuShadowPanel21.Controls.Add(this.bunifuPictureBox19);
-            this.bunifuShadowPanel21.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
-            this.bunifuShadowPanel21.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.bunifuShadowPanel21.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.bunifuShadowPanel21.Location = new System.Drawing.Point(139, 453);
-            this.bunifuShadowPanel21.Name = "bunifuShadowPanel21";
-            this.bunifuShadowPanel21.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.bunifuShadowPanel21.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.bunifuShadowPanel21.ShadowColor = System.Drawing.Color.Gray;
-            this.bunifuShadowPanel21.ShadowDept = 2;
-            this.bunifuShadowPanel21.ShadowDepth = 2;
-            this.bunifuShadowPanel21.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
-            this.bunifuShadowPanel21.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel21.Size = new System.Drawing.Size(118, 41);
-            this.bunifuShadowPanel21.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
-            this.bunifuShadowPanel21.TabIndex = 21;
-            this.bunifuToolTip1.SetToolTip(this.bunifuShadowPanel21, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.bunifuShadowPanel21, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.bunifuShadowPanel21, "");
-            // 
             // tabItemFunction
             // 
-            this.tabItemFunction.AllowParentOverrides = false;
-            this.tabItemFunction.AutoEllipsis = false;
-            this.tabItemFunction.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.tabItemFunction.CursorType = null;
-            this.tabItemFunction.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
-            this.tabItemFunction.Location = new System.Drawing.Point(39, 11);
+            this.tabItemFunction.BackColor = System.Drawing.Color.Transparent;
+            this.tabItemFunction.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(188)))), ((int)(((byte)(172)))));
+            this.tabItemFunction.BorderRadius = 20;
+            this.tabItemFunction.BorderThickness = 1;
+            this.tabItemFunction.Controls.Add(this.ItemFunction);
+            this.tabItemFunction.Controls.Add(this.bunifuPictureBox19);
+            this.tabItemFunction.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
+            this.tabItemFunction.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.tabItemFunction.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
+            this.tabItemFunction.Location = new System.Drawing.Point(139, 453);
             this.tabItemFunction.Name = "tabItemFunction";
-            this.tabItemFunction.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tabItemFunction.Size = new System.Drawing.Size(70, 17);
-            this.tabItemFunction.TabIndex = 13;
-            this.tabItemFunction.Text = "Chức năng";
-            this.tabItemFunction.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.tabItemFunction.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.tabItemFunction.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.tabItemFunction.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.tabItemFunction.ShadowColor = System.Drawing.Color.Gray;
+            this.tabItemFunction.ShadowDept = 2;
+            this.tabItemFunction.ShadowDepth = 2;
+            this.tabItemFunction.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
+            this.tabItemFunction.ShadowTopLeftVisible = false;
+            this.tabItemFunction.Size = new System.Drawing.Size(118, 41);
+            this.tabItemFunction.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
+            this.tabItemFunction.TabIndex = 21;
             this.bunifuToolTip1.SetToolTip(this.tabItemFunction, "");
             this.bunifuToolTip1.SetToolTipIcon(this.tabItemFunction, null);
             this.bunifuToolTip1.SetToolTipTitle(this.tabItemFunction, "");
-            this.tabItemFunction.Click += new System.EventHandler(this.tabItemFunction_Click);
+            this.tabItemFunction.Visible = false;
+            // 
+            // ItemFunction
+            // 
+            this.ItemFunction.AllowParentOverrides = false;
+            this.ItemFunction.AutoEllipsis = false;
+            this.ItemFunction.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.ItemFunction.CursorType = null;
+            this.ItemFunction.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
+            this.ItemFunction.Location = new System.Drawing.Point(39, 11);
+            this.ItemFunction.Name = "ItemFunction";
+            this.ItemFunction.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ItemFunction.Size = new System.Drawing.Size(70, 17);
+            this.ItemFunction.TabIndex = 13;
+            this.ItemFunction.Text = "Chức năng";
+            this.ItemFunction.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.ItemFunction.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuToolTip1.SetToolTip(this.ItemFunction, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.ItemFunction, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.ItemFunction, "");
+            this.ItemFunction.Click += new System.EventHandler(this.tabItemFunction_Click);
             // 
             // bunifuPictureBox19
             // 
@@ -698,52 +697,53 @@
             this.bunifuToolTip1.SetToolTipTitle(this.bunifuPictureBox19, "");
             this.bunifuPictureBox19.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
-            // bunifuShadowPanel20
-            // 
-            this.bunifuShadowPanel20.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuShadowPanel20.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(188)))), ((int)(((byte)(172)))));
-            this.bunifuShadowPanel20.BorderRadius = 20;
-            this.bunifuShadowPanel20.BorderThickness = 1;
-            this.bunifuShadowPanel20.Controls.Add(this.tabItemRole);
-            this.bunifuShadowPanel20.Controls.Add(this.bunifuPictureBox18);
-            this.bunifuShadowPanel20.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
-            this.bunifuShadowPanel20.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.bunifuShadowPanel20.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.bunifuShadowPanel20.Location = new System.Drawing.Point(18, 454);
-            this.bunifuShadowPanel20.Name = "bunifuShadowPanel20";
-            this.bunifuShadowPanel20.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.bunifuShadowPanel20.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.bunifuShadowPanel20.ShadowColor = System.Drawing.Color.Gray;
-            this.bunifuShadowPanel20.ShadowDept = 2;
-            this.bunifuShadowPanel20.ShadowDepth = 2;
-            this.bunifuShadowPanel20.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
-            this.bunifuShadowPanel20.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel20.Size = new System.Drawing.Size(118, 41);
-            this.bunifuShadowPanel20.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
-            this.bunifuShadowPanel20.TabIndex = 20;
-            this.bunifuToolTip1.SetToolTip(this.bunifuShadowPanel20, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.bunifuShadowPanel20, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.bunifuShadowPanel20, "");
-            // 
             // tabItemRole
             // 
-            this.tabItemRole.AllowParentOverrides = false;
-            this.tabItemRole.AutoEllipsis = false;
-            this.tabItemRole.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.tabItemRole.CursorType = null;
-            this.tabItemRole.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
-            this.tabItemRole.Location = new System.Drawing.Point(36, 12);
+            this.tabItemRole.BackColor = System.Drawing.Color.Transparent;
+            this.tabItemRole.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(188)))), ((int)(((byte)(172)))));
+            this.tabItemRole.BorderRadius = 20;
+            this.tabItemRole.BorderThickness = 1;
+            this.tabItemRole.Controls.Add(this.ItemRole);
+            this.tabItemRole.Controls.Add(this.bunifuPictureBox18);
+            this.tabItemRole.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
+            this.tabItemRole.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.tabItemRole.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
+            this.tabItemRole.Location = new System.Drawing.Point(18, 454);
             this.tabItemRole.Name = "tabItemRole";
-            this.tabItemRole.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tabItemRole.Size = new System.Drawing.Size(75, 17);
-            this.tabItemRole.TabIndex = 13;
-            this.tabItemRole.Text = "Phân quyền";
-            this.tabItemRole.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.tabItemRole.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.tabItemRole.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.tabItemRole.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.tabItemRole.ShadowColor = System.Drawing.Color.Gray;
+            this.tabItemRole.ShadowDept = 2;
+            this.tabItemRole.ShadowDepth = 2;
+            this.tabItemRole.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
+            this.tabItemRole.ShadowTopLeftVisible = false;
+            this.tabItemRole.Size = new System.Drawing.Size(118, 41);
+            this.tabItemRole.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
+            this.tabItemRole.TabIndex = 20;
             this.bunifuToolTip1.SetToolTip(this.tabItemRole, "");
             this.bunifuToolTip1.SetToolTipIcon(this.tabItemRole, null);
             this.bunifuToolTip1.SetToolTipTitle(this.tabItemRole, "");
-            this.tabItemRole.Click += new System.EventHandler(this.tabItemRole_Click);
+            this.tabItemRole.Visible = false;
+            // 
+            // ItemRole
+            // 
+            this.ItemRole.AllowParentOverrides = false;
+            this.ItemRole.AutoEllipsis = false;
+            this.ItemRole.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.ItemRole.CursorType = null;
+            this.ItemRole.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
+            this.ItemRole.Location = new System.Drawing.Point(36, 12);
+            this.ItemRole.Name = "ItemRole";
+            this.ItemRole.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ItemRole.Size = new System.Drawing.Size(75, 17);
+            this.ItemRole.TabIndex = 13;
+            this.ItemRole.Text = "Phân quyền";
+            this.ItemRole.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.ItemRole.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuToolTip1.SetToolTip(this.ItemRole, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.ItemRole, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.ItemRole, "");
+            this.ItemRole.Click += new System.EventHandler(this.tabItemRole_Click);
             // 
             // bunifuPictureBox18
             // 
@@ -764,52 +764,53 @@
             this.bunifuToolTip1.SetToolTipTitle(this.bunifuPictureBox18, "");
             this.bunifuPictureBox18.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
-            // bunifuShadowPanel18
-            // 
-            this.bunifuShadowPanel18.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuShadowPanel18.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(188)))), ((int)(((byte)(172)))));
-            this.bunifuShadowPanel18.BorderRadius = 20;
-            this.bunifuShadowPanel18.BorderThickness = 1;
-            this.bunifuShadowPanel18.Controls.Add(this.tabItemTest);
-            this.bunifuShadowPanel18.Controls.Add(this.bunifuPictureBox16);
-            this.bunifuShadowPanel18.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
-            this.bunifuShadowPanel18.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.bunifuShadowPanel18.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.bunifuShadowPanel18.Location = new System.Drawing.Point(143, 354);
-            this.bunifuShadowPanel18.Name = "bunifuShadowPanel18";
-            this.bunifuShadowPanel18.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.bunifuShadowPanel18.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.bunifuShadowPanel18.ShadowColor = System.Drawing.Color.Gray;
-            this.bunifuShadowPanel18.ShadowDept = 2;
-            this.bunifuShadowPanel18.ShadowDepth = 2;
-            this.bunifuShadowPanel18.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
-            this.bunifuShadowPanel18.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel18.Size = new System.Drawing.Size(113, 41);
-            this.bunifuShadowPanel18.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
-            this.bunifuShadowPanel18.TabIndex = 18;
-            this.bunifuToolTip1.SetToolTip(this.bunifuShadowPanel18, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.bunifuShadowPanel18, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.bunifuShadowPanel18, "");
-            // 
             // tabItemTest
             // 
-            this.tabItemTest.AllowParentOverrides = false;
-            this.tabItemTest.AutoEllipsis = false;
-            this.tabItemTest.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.tabItemTest.CursorType = null;
-            this.tabItemTest.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
-            this.tabItemTest.Location = new System.Drawing.Point(28, 13);
+            this.tabItemTest.BackColor = System.Drawing.Color.Transparent;
+            this.tabItemTest.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(188)))), ((int)(((byte)(172)))));
+            this.tabItemTest.BorderRadius = 20;
+            this.tabItemTest.BorderThickness = 1;
+            this.tabItemTest.Controls.Add(this.ItemTest);
+            this.tabItemTest.Controls.Add(this.bunifuPictureBox16);
+            this.tabItemTest.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
+            this.tabItemTest.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.tabItemTest.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
+            this.tabItemTest.Location = new System.Drawing.Point(143, 354);
             this.tabItemTest.Name = "tabItemTest";
-            this.tabItemTest.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tabItemTest.Size = new System.Drawing.Size(75, 17);
-            this.tabItemTest.TabIndex = 13;
-            this.tabItemTest.Text = "Xét nghiệm";
-            this.tabItemTest.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.tabItemTest.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.tabItemTest.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.tabItemTest.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.tabItemTest.ShadowColor = System.Drawing.Color.Gray;
+            this.tabItemTest.ShadowDept = 2;
+            this.tabItemTest.ShadowDepth = 2;
+            this.tabItemTest.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
+            this.tabItemTest.ShadowTopLeftVisible = false;
+            this.tabItemTest.Size = new System.Drawing.Size(113, 41);
+            this.tabItemTest.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
+            this.tabItemTest.TabIndex = 18;
             this.bunifuToolTip1.SetToolTip(this.tabItemTest, "");
             this.bunifuToolTip1.SetToolTipIcon(this.tabItemTest, null);
             this.bunifuToolTip1.SetToolTipTitle(this.tabItemTest, "");
-            this.tabItemTest.Click += new System.EventHandler(this.tabItemTest_Click);
+            this.tabItemTest.Visible = false;
+            // 
+            // ItemTest
+            // 
+            this.ItemTest.AllowParentOverrides = false;
+            this.ItemTest.AutoEllipsis = false;
+            this.ItemTest.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.ItemTest.CursorType = null;
+            this.ItemTest.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
+            this.ItemTest.Location = new System.Drawing.Point(28, 13);
+            this.ItemTest.Name = "ItemTest";
+            this.ItemTest.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ItemTest.Size = new System.Drawing.Size(75, 17);
+            this.ItemTest.TabIndex = 13;
+            this.ItemTest.Text = "Xét nghiệm";
+            this.ItemTest.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.ItemTest.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuToolTip1.SetToolTip(this.ItemTest, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.ItemTest, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.ItemTest, "");
+            this.ItemTest.Click += new System.EventHandler(this.tabItemTest_Click);
             // 
             // bunifuPictureBox16
             // 
@@ -830,52 +831,52 @@
             this.bunifuToolTip1.SetToolTipTitle(this.bunifuPictureBox16, "");
             this.bunifuPictureBox16.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
-            // bunifuShadowPanel17
-            // 
-            this.bunifuShadowPanel17.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuShadowPanel17.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(188)))), ((int)(((byte)(172)))));
-            this.bunifuShadowPanel17.BorderRadius = 20;
-            this.bunifuShadowPanel17.BorderThickness = 1;
-            this.bunifuShadowPanel17.Controls.Add(this.tabItemStatistics);
-            this.bunifuShadowPanel17.Controls.Add(this.bunifuPictureBox14);
-            this.bunifuShadowPanel17.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
-            this.bunifuShadowPanel17.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.bunifuShadowPanel17.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.bunifuShadowPanel17.Location = new System.Drawing.Point(75, 602);
-            this.bunifuShadowPanel17.Name = "bunifuShadowPanel17";
-            this.bunifuShadowPanel17.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.bunifuShadowPanel17.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.bunifuShadowPanel17.ShadowColor = System.Drawing.Color.Gray;
-            this.bunifuShadowPanel17.ShadowDept = 2;
-            this.bunifuShadowPanel17.ShadowDepth = 2;
-            this.bunifuShadowPanel17.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
-            this.bunifuShadowPanel17.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel17.Size = new System.Drawing.Size(118, 41);
-            this.bunifuShadowPanel17.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
-            this.bunifuShadowPanel17.TabIndex = 17;
-            this.bunifuToolTip1.SetToolTip(this.bunifuShadowPanel17, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.bunifuShadowPanel17, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.bunifuShadowPanel17, "");
-            // 
             // tabItemStatistics
             // 
-            this.tabItemStatistics.AllowParentOverrides = false;
-            this.tabItemStatistics.AutoEllipsis = false;
-            this.tabItemStatistics.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.tabItemStatistics.CursorType = null;
-            this.tabItemStatistics.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
-            this.tabItemStatistics.Location = new System.Drawing.Point(38, 13);
+            this.tabItemStatistics.BackColor = System.Drawing.Color.Transparent;
+            this.tabItemStatistics.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(188)))), ((int)(((byte)(172)))));
+            this.tabItemStatistics.BorderRadius = 20;
+            this.tabItemStatistics.BorderThickness = 1;
+            this.tabItemStatistics.Controls.Add(this.ItemStatistics);
+            this.tabItemStatistics.Controls.Add(this.bunifuPictureBox14);
+            this.tabItemStatistics.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
+            this.tabItemStatistics.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.tabItemStatistics.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
+            this.tabItemStatistics.Location = new System.Drawing.Point(75, 602);
             this.tabItemStatistics.Name = "tabItemStatistics";
-            this.tabItemStatistics.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tabItemStatistics.Size = new System.Drawing.Size(63, 17);
-            this.tabItemStatistics.TabIndex = 15;
-            this.tabItemStatistics.Text = "Thống kê";
-            this.tabItemStatistics.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.tabItemStatistics.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.tabItemStatistics.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.tabItemStatistics.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.tabItemStatistics.ShadowColor = System.Drawing.Color.Gray;
+            this.tabItemStatistics.ShadowDept = 2;
+            this.tabItemStatistics.ShadowDepth = 2;
+            this.tabItemStatistics.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
+            this.tabItemStatistics.ShadowTopLeftVisible = false;
+            this.tabItemStatistics.Size = new System.Drawing.Size(118, 41);
+            this.tabItemStatistics.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
+            this.tabItemStatistics.TabIndex = 17;
             this.bunifuToolTip1.SetToolTip(this.tabItemStatistics, "");
             this.bunifuToolTip1.SetToolTipIcon(this.tabItemStatistics, null);
             this.bunifuToolTip1.SetToolTipTitle(this.tabItemStatistics, "");
-            this.tabItemStatistics.Click += new System.EventHandler(this.tabItemStatistics_Click);
+            // 
+            // ItemStatistics
+            // 
+            this.ItemStatistics.AllowParentOverrides = false;
+            this.ItemStatistics.AutoEllipsis = false;
+            this.ItemStatistics.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.ItemStatistics.CursorType = null;
+            this.ItemStatistics.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
+            this.ItemStatistics.Location = new System.Drawing.Point(38, 13);
+            this.ItemStatistics.Name = "ItemStatistics";
+            this.ItemStatistics.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ItemStatistics.Size = new System.Drawing.Size(63, 17);
+            this.ItemStatistics.TabIndex = 15;
+            this.ItemStatistics.Text = "Thống kê";
+            this.ItemStatistics.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.ItemStatistics.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuToolTip1.SetToolTip(this.ItemStatistics, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.ItemStatistics, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.ItemStatistics, "");
+            this.ItemStatistics.Click += new System.EventHandler(this.tabItemStatistics_Click);
             // 
             // bunifuPictureBox14
             // 
@@ -896,52 +897,53 @@
             this.bunifuToolTip1.SetToolTipTitle(this.bunifuPictureBox14, "");
             this.bunifuPictureBox14.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
-            // bunifuShadowPanel16
-            // 
-            this.bunifuShadowPanel16.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuShadowPanel16.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(188)))), ((int)(((byte)(172)))));
-            this.bunifuShadowPanel16.BorderRadius = 20;
-            this.bunifuShadowPanel16.BorderThickness = 1;
-            this.bunifuShadowPanel16.Controls.Add(this.tabItemHospitalization);
-            this.bunifuShadowPanel16.Controls.Add(this.bunifuPictureBox13);
-            this.bunifuShadowPanel16.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
-            this.bunifuShadowPanel16.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.bunifuShadowPanel16.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.bunifuShadowPanel16.Location = new System.Drawing.Point(15, 405);
-            this.bunifuShadowPanel16.Name = "bunifuShadowPanel16";
-            this.bunifuShadowPanel16.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.bunifuShadowPanel16.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.bunifuShadowPanel16.ShadowColor = System.Drawing.Color.Gray;
-            this.bunifuShadowPanel16.ShadowDept = 2;
-            this.bunifuShadowPanel16.ShadowDepth = 2;
-            this.bunifuShadowPanel16.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
-            this.bunifuShadowPanel16.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel16.Size = new System.Drawing.Size(113, 41);
-            this.bunifuShadowPanel16.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
-            this.bunifuShadowPanel16.TabIndex = 17;
-            this.bunifuToolTip1.SetToolTip(this.bunifuShadowPanel16, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.bunifuShadowPanel16, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.bunifuShadowPanel16, "");
-            // 
             // tabItemHospitalization
             // 
-            this.tabItemHospitalization.AllowParentOverrides = false;
-            this.tabItemHospitalization.AutoEllipsis = false;
-            this.tabItemHospitalization.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.tabItemHospitalization.CursorType = null;
-            this.tabItemHospitalization.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
-            this.tabItemHospitalization.Location = new System.Drawing.Point(37, 13);
+            this.tabItemHospitalization.BackColor = System.Drawing.Color.Transparent;
+            this.tabItemHospitalization.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(188)))), ((int)(((byte)(172)))));
+            this.tabItemHospitalization.BorderRadius = 20;
+            this.tabItemHospitalization.BorderThickness = 1;
+            this.tabItemHospitalization.Controls.Add(this.ItemHospitalization);
+            this.tabItemHospitalization.Controls.Add(this.bunifuPictureBox13);
+            this.tabItemHospitalization.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
+            this.tabItemHospitalization.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.tabItemHospitalization.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
+            this.tabItemHospitalization.Location = new System.Drawing.Point(15, 405);
             this.tabItemHospitalization.Name = "tabItemHospitalization";
-            this.tabItemHospitalization.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tabItemHospitalization.Size = new System.Drawing.Size(66, 17);
-            this.tabItemHospitalization.TabIndex = 13;
-            this.tabItemHospitalization.Text = "Nhập viện";
-            this.tabItemHospitalization.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.tabItemHospitalization.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.tabItemHospitalization.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.tabItemHospitalization.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.tabItemHospitalization.ShadowColor = System.Drawing.Color.Gray;
+            this.tabItemHospitalization.ShadowDept = 2;
+            this.tabItemHospitalization.ShadowDepth = 2;
+            this.tabItemHospitalization.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
+            this.tabItemHospitalization.ShadowTopLeftVisible = false;
+            this.tabItemHospitalization.Size = new System.Drawing.Size(113, 41);
+            this.tabItemHospitalization.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
+            this.tabItemHospitalization.TabIndex = 17;
             this.bunifuToolTip1.SetToolTip(this.tabItemHospitalization, "");
             this.bunifuToolTip1.SetToolTipIcon(this.tabItemHospitalization, null);
             this.bunifuToolTip1.SetToolTipTitle(this.tabItemHospitalization, "");
-            this.tabItemHospitalization.Click += new System.EventHandler(this.tabItemHospitalization_Click);
+            this.tabItemHospitalization.Visible = false;
+            // 
+            // ItemHospitalization
+            // 
+            this.ItemHospitalization.AllowParentOverrides = false;
+            this.ItemHospitalization.AutoEllipsis = false;
+            this.ItemHospitalization.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.ItemHospitalization.CursorType = null;
+            this.ItemHospitalization.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
+            this.ItemHospitalization.Location = new System.Drawing.Point(37, 13);
+            this.ItemHospitalization.Name = "ItemHospitalization";
+            this.ItemHospitalization.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ItemHospitalization.Size = new System.Drawing.Size(66, 17);
+            this.ItemHospitalization.TabIndex = 13;
+            this.ItemHospitalization.Text = "Nhập viện";
+            this.ItemHospitalization.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.ItemHospitalization.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuToolTip1.SetToolTip(this.ItemHospitalization, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.ItemHospitalization, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.ItemHospitalization, "");
+            this.ItemHospitalization.Click += new System.EventHandler(this.tabItemHospitalization_Click);
             // 
             // bunifuPictureBox13
             // 
@@ -962,52 +964,53 @@
             this.bunifuToolTip1.SetToolTipTitle(this.bunifuPictureBox13, "");
             this.bunifuPictureBox13.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
-            // bunifuShadowPanel15
-            // 
-            this.bunifuShadowPanel15.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuShadowPanel15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(188)))), ((int)(((byte)(172)))));
-            this.bunifuShadowPanel15.BorderRadius = 20;
-            this.bunifuShadowPanel15.BorderThickness = 1;
-            this.bunifuShadowPanel15.Controls.Add(this.tabItemDischarged);
-            this.bunifuShadowPanel15.Controls.Add(this.bunifuPictureBox12);
-            this.bunifuShadowPanel15.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
-            this.bunifuShadowPanel15.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.bunifuShadowPanel15.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.bunifuShadowPanel15.Location = new System.Drawing.Point(138, 405);
-            this.bunifuShadowPanel15.Name = "bunifuShadowPanel15";
-            this.bunifuShadowPanel15.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.bunifuShadowPanel15.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.bunifuShadowPanel15.ShadowColor = System.Drawing.Color.Gray;
-            this.bunifuShadowPanel15.ShadowDept = 2;
-            this.bunifuShadowPanel15.ShadowDepth = 2;
-            this.bunifuShadowPanel15.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
-            this.bunifuShadowPanel15.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel15.Size = new System.Drawing.Size(118, 41);
-            this.bunifuShadowPanel15.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
-            this.bunifuShadowPanel15.TabIndex = 16;
-            this.bunifuToolTip1.SetToolTip(this.bunifuShadowPanel15, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.bunifuShadowPanel15, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.bunifuShadowPanel15, "");
-            // 
             // tabItemDischarged
             // 
-            this.tabItemDischarged.AllowParentOverrides = false;
-            this.tabItemDischarged.AutoEllipsis = false;
-            this.tabItemDischarged.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.tabItemDischarged.CursorType = null;
-            this.tabItemDischarged.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
-            this.tabItemDischarged.Location = new System.Drawing.Point(44, 13);
+            this.tabItemDischarged.BackColor = System.Drawing.Color.Transparent;
+            this.tabItemDischarged.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(188)))), ((int)(((byte)(172)))));
+            this.tabItemDischarged.BorderRadius = 20;
+            this.tabItemDischarged.BorderThickness = 1;
+            this.tabItemDischarged.Controls.Add(this.ItemDischarged);
+            this.tabItemDischarged.Controls.Add(this.bunifuPictureBox12);
+            this.tabItemDischarged.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
+            this.tabItemDischarged.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.tabItemDischarged.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
+            this.tabItemDischarged.Location = new System.Drawing.Point(138, 405);
             this.tabItemDischarged.Name = "tabItemDischarged";
-            this.tabItemDischarged.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tabItemDischarged.Size = new System.Drawing.Size(62, 17);
-            this.tabItemDischarged.TabIndex = 14;
-            this.tabItemDischarged.Text = "Xuất viện";
-            this.tabItemDischarged.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.tabItemDischarged.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.tabItemDischarged.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.tabItemDischarged.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.tabItemDischarged.ShadowColor = System.Drawing.Color.Gray;
+            this.tabItemDischarged.ShadowDept = 2;
+            this.tabItemDischarged.ShadowDepth = 2;
+            this.tabItemDischarged.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
+            this.tabItemDischarged.ShadowTopLeftVisible = false;
+            this.tabItemDischarged.Size = new System.Drawing.Size(118, 41);
+            this.tabItemDischarged.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
+            this.tabItemDischarged.TabIndex = 16;
             this.bunifuToolTip1.SetToolTip(this.tabItemDischarged, "");
             this.bunifuToolTip1.SetToolTipIcon(this.tabItemDischarged, null);
             this.bunifuToolTip1.SetToolTipTitle(this.tabItemDischarged, "");
-            this.tabItemDischarged.Click += new System.EventHandler(this.tabItemDischarged_Click);
+            this.tabItemDischarged.Visible = false;
+            // 
+            // ItemDischarged
+            // 
+            this.ItemDischarged.AllowParentOverrides = false;
+            this.ItemDischarged.AutoEllipsis = false;
+            this.ItemDischarged.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.ItemDischarged.CursorType = null;
+            this.ItemDischarged.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
+            this.ItemDischarged.Location = new System.Drawing.Point(44, 13);
+            this.ItemDischarged.Name = "ItemDischarged";
+            this.ItemDischarged.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ItemDischarged.Size = new System.Drawing.Size(62, 17);
+            this.ItemDischarged.TabIndex = 14;
+            this.ItemDischarged.Text = "Xuất viện";
+            this.ItemDischarged.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.ItemDischarged.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuToolTip1.SetToolTip(this.ItemDischarged, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.ItemDischarged, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.ItemDischarged, "");
+            this.ItemDischarged.Click += new System.EventHandler(this.tabItemDischarged_Click);
             // 
             // bunifuPictureBox12
             // 
@@ -1028,52 +1031,53 @@
             this.bunifuToolTip1.SetToolTipTitle(this.bunifuPictureBox12, "");
             this.bunifuPictureBox12.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
-            // bunifuShadowPanel14
-            // 
-            this.bunifuShadowPanel14.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuShadowPanel14.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(188)))), ((int)(((byte)(172)))));
-            this.bunifuShadowPanel14.BorderRadius = 20;
-            this.bunifuShadowPanel14.BorderThickness = 1;
-            this.bunifuShadowPanel14.Controls.Add(this.tabItemMonitor);
-            this.bunifuShadowPanel14.Controls.Add(this.bunifuPictureBox11);
-            this.bunifuShadowPanel14.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
-            this.bunifuShadowPanel14.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.bunifuShadowPanel14.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.bunifuShadowPanel14.Location = new System.Drawing.Point(15, 355);
-            this.bunifuShadowPanel14.Name = "bunifuShadowPanel14";
-            this.bunifuShadowPanel14.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.bunifuShadowPanel14.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.bunifuShadowPanel14.ShadowColor = System.Drawing.Color.Gray;
-            this.bunifuShadowPanel14.ShadowDept = 2;
-            this.bunifuShadowPanel14.ShadowDepth = 2;
-            this.bunifuShadowPanel14.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
-            this.bunifuShadowPanel14.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel14.Size = new System.Drawing.Size(113, 41);
-            this.bunifuShadowPanel14.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
-            this.bunifuShadowPanel14.TabIndex = 15;
-            this.bunifuToolTip1.SetToolTip(this.bunifuShadowPanel14, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.bunifuShadowPanel14, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.bunifuShadowPanel14, "");
-            // 
             // tabItemMonitor
             // 
-            this.tabItemMonitor.AllowParentOverrides = false;
-            this.tabItemMonitor.AutoEllipsis = false;
-            this.tabItemMonitor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.tabItemMonitor.CursorType = null;
-            this.tabItemMonitor.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
-            this.tabItemMonitor.Location = new System.Drawing.Point(33, 14);
+            this.tabItemMonitor.BackColor = System.Drawing.Color.Transparent;
+            this.tabItemMonitor.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(188)))), ((int)(((byte)(172)))));
+            this.tabItemMonitor.BorderRadius = 20;
+            this.tabItemMonitor.BorderThickness = 1;
+            this.tabItemMonitor.Controls.Add(this.ItemMonitor);
+            this.tabItemMonitor.Controls.Add(this.bunifuPictureBox11);
+            this.tabItemMonitor.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
+            this.tabItemMonitor.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.tabItemMonitor.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
+            this.tabItemMonitor.Location = new System.Drawing.Point(15, 355);
             this.tabItemMonitor.Name = "tabItemMonitor";
-            this.tabItemMonitor.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tabItemMonitor.Size = new System.Drawing.Size(58, 17);
+            this.tabItemMonitor.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.tabItemMonitor.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.tabItemMonitor.ShadowColor = System.Drawing.Color.Gray;
+            this.tabItemMonitor.ShadowDept = 2;
+            this.tabItemMonitor.ShadowDepth = 2;
+            this.tabItemMonitor.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
+            this.tabItemMonitor.ShadowTopLeftVisible = false;
+            this.tabItemMonitor.Size = new System.Drawing.Size(113, 41);
+            this.tabItemMonitor.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.tabItemMonitor.TabIndex = 15;
-            this.tabItemMonitor.Text = "Theo dõi";
-            this.tabItemMonitor.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.tabItemMonitor.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             this.bunifuToolTip1.SetToolTip(this.tabItemMonitor, "");
             this.bunifuToolTip1.SetToolTipIcon(this.tabItemMonitor, null);
             this.bunifuToolTip1.SetToolTipTitle(this.tabItemMonitor, "");
-            this.tabItemMonitor.Click += new System.EventHandler(this.tabItemMonitor_Click);
+            this.tabItemMonitor.Visible = false;
+            // 
+            // ItemMonitor
+            // 
+            this.ItemMonitor.AllowParentOverrides = false;
+            this.ItemMonitor.AutoEllipsis = false;
+            this.ItemMonitor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.ItemMonitor.CursorType = null;
+            this.ItemMonitor.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
+            this.ItemMonitor.Location = new System.Drawing.Point(33, 12);
+            this.ItemMonitor.Name = "ItemMonitor";
+            this.ItemMonitor.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ItemMonitor.Size = new System.Drawing.Size(58, 17);
+            this.ItemMonitor.TabIndex = 15;
+            this.ItemMonitor.Text = "Theo dõi";
+            this.ItemMonitor.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.ItemMonitor.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuToolTip1.SetToolTip(this.ItemMonitor, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.ItemMonitor, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.ItemMonitor, "");
+            this.ItemMonitor.Click += new System.EventHandler(this.tabItemMonitor_Click);
             // 
             // bunifuPictureBox11
             // 
@@ -1094,52 +1098,53 @@
             this.bunifuToolTip1.SetToolTipTitle(this.bunifuPictureBox11, "");
             this.bunifuPictureBox11.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
-            // bunifuShadowPanel13
-            // 
-            this.bunifuShadowPanel13.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuShadowPanel13.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(188)))), ((int)(((byte)(172)))));
-            this.bunifuShadowPanel13.BorderRadius = 20;
-            this.bunifuShadowPanel13.BorderThickness = 1;
-            this.bunifuShadowPanel13.Controls.Add(this.tabItemSurgery);
-            this.bunifuShadowPanel13.Controls.Add(this.bunifuPictureBox10);
-            this.bunifuShadowPanel13.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
-            this.bunifuShadowPanel13.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.bunifuShadowPanel13.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.bunifuShadowPanel13.Location = new System.Drawing.Point(15, 305);
-            this.bunifuShadowPanel13.Name = "bunifuShadowPanel13";
-            this.bunifuShadowPanel13.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.bunifuShadowPanel13.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.bunifuShadowPanel13.ShadowColor = System.Drawing.Color.Gray;
-            this.bunifuShadowPanel13.ShadowDept = 2;
-            this.bunifuShadowPanel13.ShadowDepth = 2;
-            this.bunifuShadowPanel13.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
-            this.bunifuShadowPanel13.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel13.Size = new System.Drawing.Size(113, 41);
-            this.bunifuShadowPanel13.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
-            this.bunifuShadowPanel13.TabIndex = 14;
-            this.bunifuToolTip1.SetToolTip(this.bunifuShadowPanel13, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.bunifuShadowPanel13, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.bunifuShadowPanel13, "");
-            // 
             // tabItemSurgery
             // 
-            this.tabItemSurgery.AllowParentOverrides = false;
-            this.tabItemSurgery.AutoEllipsis = false;
-            this.tabItemSurgery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.tabItemSurgery.CursorType = null;
-            this.tabItemSurgery.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
-            this.tabItemSurgery.Location = new System.Drawing.Point(38, 14);
+            this.tabItemSurgery.BackColor = System.Drawing.Color.Transparent;
+            this.tabItemSurgery.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(188)))), ((int)(((byte)(172)))));
+            this.tabItemSurgery.BorderRadius = 20;
+            this.tabItemSurgery.BorderThickness = 1;
+            this.tabItemSurgery.Controls.Add(this.ItemSurgery);
+            this.tabItemSurgery.Controls.Add(this.bunifuPictureBox10);
+            this.tabItemSurgery.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
+            this.tabItemSurgery.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.tabItemSurgery.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
+            this.tabItemSurgery.Location = new System.Drawing.Point(15, 305);
             this.tabItemSurgery.Name = "tabItemSurgery";
-            this.tabItemSurgery.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tabItemSurgery.Size = new System.Drawing.Size(69, 17);
-            this.tabItemSurgery.TabIndex = 13;
-            this.tabItemSurgery.Text = "Phẫu thuật";
-            this.tabItemSurgery.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.tabItemSurgery.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.tabItemSurgery.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.tabItemSurgery.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.tabItemSurgery.ShadowColor = System.Drawing.Color.Gray;
+            this.tabItemSurgery.ShadowDept = 2;
+            this.tabItemSurgery.ShadowDepth = 2;
+            this.tabItemSurgery.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
+            this.tabItemSurgery.ShadowTopLeftVisible = false;
+            this.tabItemSurgery.Size = new System.Drawing.Size(113, 41);
+            this.tabItemSurgery.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
+            this.tabItemSurgery.TabIndex = 14;
             this.bunifuToolTip1.SetToolTip(this.tabItemSurgery, "");
             this.bunifuToolTip1.SetToolTipIcon(this.tabItemSurgery, null);
             this.bunifuToolTip1.SetToolTipTitle(this.tabItemSurgery, "");
-            this.tabItemSurgery.Click += new System.EventHandler(this.tabItemSurgery_Click);
+            this.tabItemSurgery.Visible = false;
+            // 
+            // ItemSurgery
+            // 
+            this.ItemSurgery.AllowParentOverrides = false;
+            this.ItemSurgery.AutoEllipsis = false;
+            this.ItemSurgery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.ItemSurgery.CursorType = null;
+            this.ItemSurgery.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
+            this.ItemSurgery.Location = new System.Drawing.Point(38, 14);
+            this.ItemSurgery.Name = "ItemSurgery";
+            this.ItemSurgery.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ItemSurgery.Size = new System.Drawing.Size(69, 17);
+            this.ItemSurgery.TabIndex = 13;
+            this.ItemSurgery.Text = "Phẫu thuật";
+            this.ItemSurgery.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.ItemSurgery.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuToolTip1.SetToolTip(this.ItemSurgery, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.ItemSurgery, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.ItemSurgery, "");
+            this.ItemSurgery.Click += new System.EventHandler(this.tabItemSurgery_Click);
             // 
             // bunifuPictureBox10
             // 
@@ -1160,52 +1165,53 @@
             this.bunifuToolTip1.SetToolTipTitle(this.bunifuPictureBox10, "");
             this.bunifuPictureBox10.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
-            // bunifuShadowPanel12
-            // 
-            this.bunifuShadowPanel12.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuShadowPanel12.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(188)))), ((int)(((byte)(172)))));
-            this.bunifuShadowPanel12.BorderRadius = 20;
-            this.bunifuShadowPanel12.BorderThickness = 1;
-            this.bunifuShadowPanel12.Controls.Add(this.tabItemStaff);
-            this.bunifuShadowPanel12.Controls.Add(this.bunifuPictureBox9);
-            this.bunifuShadowPanel12.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
-            this.bunifuShadowPanel12.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.bunifuShadowPanel12.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.bunifuShadowPanel12.Location = new System.Drawing.Point(138, 305);
-            this.bunifuShadowPanel12.Name = "bunifuShadowPanel12";
-            this.bunifuShadowPanel12.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.bunifuShadowPanel12.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.bunifuShadowPanel12.ShadowColor = System.Drawing.Color.Gray;
-            this.bunifuShadowPanel12.ShadowDept = 2;
-            this.bunifuShadowPanel12.ShadowDepth = 2;
-            this.bunifuShadowPanel12.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
-            this.bunifuShadowPanel12.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel12.Size = new System.Drawing.Size(118, 41);
-            this.bunifuShadowPanel12.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
-            this.bunifuShadowPanel12.TabIndex = 13;
-            this.bunifuToolTip1.SetToolTip(this.bunifuShadowPanel12, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.bunifuShadowPanel12, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.bunifuShadowPanel12, "");
-            // 
             // tabItemStaff
             // 
-            this.tabItemStaff.AllowParentOverrides = false;
-            this.tabItemStaff.AutoEllipsis = false;
-            this.tabItemStaff.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.tabItemStaff.CursorType = null;
-            this.tabItemStaff.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
-            this.tabItemStaff.Location = new System.Drawing.Point(41, 12);
+            this.tabItemStaff.BackColor = System.Drawing.Color.Transparent;
+            this.tabItemStaff.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(188)))), ((int)(((byte)(172)))));
+            this.tabItemStaff.BorderRadius = 20;
+            this.tabItemStaff.BorderThickness = 1;
+            this.tabItemStaff.Controls.Add(this.ItemStaff);
+            this.tabItemStaff.Controls.Add(this.bunifuPictureBox9);
+            this.tabItemStaff.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
+            this.tabItemStaff.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.tabItemStaff.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
+            this.tabItemStaff.Location = new System.Drawing.Point(138, 305);
             this.tabItemStaff.Name = "tabItemStaff";
-            this.tabItemStaff.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tabItemStaff.Size = new System.Drawing.Size(66, 17);
-            this.tabItemStaff.TabIndex = 12;
-            this.tabItemStaff.Text = "Nhân viên";
-            this.tabItemStaff.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.tabItemStaff.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.tabItemStaff.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.tabItemStaff.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.tabItemStaff.ShadowColor = System.Drawing.Color.Gray;
+            this.tabItemStaff.ShadowDept = 2;
+            this.tabItemStaff.ShadowDepth = 2;
+            this.tabItemStaff.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
+            this.tabItemStaff.ShadowTopLeftVisible = false;
+            this.tabItemStaff.Size = new System.Drawing.Size(118, 41);
+            this.tabItemStaff.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
+            this.tabItemStaff.TabIndex = 13;
             this.bunifuToolTip1.SetToolTip(this.tabItemStaff, "");
             this.bunifuToolTip1.SetToolTipIcon(this.tabItemStaff, null);
             this.bunifuToolTip1.SetToolTipTitle(this.tabItemStaff, "");
-            this.tabItemStaff.Click += new System.EventHandler(this.tabItemStaff_Click);
+            this.tabItemStaff.Visible = false;
+            // 
+            // ItemStaff
+            // 
+            this.ItemStaff.AllowParentOverrides = false;
+            this.ItemStaff.AutoEllipsis = false;
+            this.ItemStaff.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.ItemStaff.CursorType = null;
+            this.ItemStaff.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
+            this.ItemStaff.Location = new System.Drawing.Point(41, 12);
+            this.ItemStaff.Name = "ItemStaff";
+            this.ItemStaff.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ItemStaff.Size = new System.Drawing.Size(66, 17);
+            this.ItemStaff.TabIndex = 12;
+            this.ItemStaff.Text = "Nhân viên";
+            this.ItemStaff.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.ItemStaff.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuToolTip1.SetToolTip(this.ItemStaff, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.ItemStaff, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.ItemStaff, "");
+            this.ItemStaff.Click += new System.EventHandler(this.tabItemStaff_Click);
             // 
             // bunifuPictureBox9
             // 
@@ -1226,52 +1232,53 @@
             this.bunifuToolTip1.SetToolTipTitle(this.bunifuPictureBox9, "");
             this.bunifuPictureBox9.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
-            // bunifuShadowPanel11
-            // 
-            this.bunifuShadowPanel11.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuShadowPanel11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(188)))), ((int)(((byte)(172)))));
-            this.bunifuShadowPanel11.BorderRadius = 20;
-            this.bunifuShadowPanel11.BorderThickness = 1;
-            this.bunifuShadowPanel11.Controls.Add(this.tabItemDeptMajor);
-            this.bunifuShadowPanel11.Controls.Add(this.bunifuPictureBox8);
-            this.bunifuShadowPanel11.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
-            this.bunifuShadowPanel11.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.bunifuShadowPanel11.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.bunifuShadowPanel11.Location = new System.Drawing.Point(138, 253);
-            this.bunifuShadowPanel11.Name = "bunifuShadowPanel11";
-            this.bunifuShadowPanel11.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.bunifuShadowPanel11.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.bunifuShadowPanel11.ShadowColor = System.Drawing.Color.Gray;
-            this.bunifuShadowPanel11.ShadowDept = 2;
-            this.bunifuShadowPanel11.ShadowDepth = 2;
-            this.bunifuShadowPanel11.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
-            this.bunifuShadowPanel11.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel11.Size = new System.Drawing.Size(118, 41);
-            this.bunifuShadowPanel11.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
-            this.bunifuShadowPanel11.TabIndex = 12;
-            this.bunifuToolTip1.SetToolTip(this.bunifuShadowPanel11, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.bunifuShadowPanel11, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.bunifuShadowPanel11, "");
-            // 
             // tabItemDeptMajor
             // 
-            this.tabItemDeptMajor.AllowParentOverrides = false;
-            this.tabItemDeptMajor.AutoEllipsis = false;
-            this.tabItemDeptMajor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.tabItemDeptMajor.CursorType = null;
-            this.tabItemDeptMajor.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
-            this.tabItemDeptMajor.Location = new System.Drawing.Point(43, 13);
+            this.tabItemDeptMajor.BackColor = System.Drawing.Color.Transparent;
+            this.tabItemDeptMajor.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(188)))), ((int)(((byte)(172)))));
+            this.tabItemDeptMajor.BorderRadius = 20;
+            this.tabItemDeptMajor.BorderThickness = 1;
+            this.tabItemDeptMajor.Controls.Add(this.ItemDeptMajor);
+            this.tabItemDeptMajor.Controls.Add(this.bunifuPictureBox8);
+            this.tabItemDeptMajor.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
+            this.tabItemDeptMajor.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.tabItemDeptMajor.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
+            this.tabItemDeptMajor.Location = new System.Drawing.Point(138, 253);
             this.tabItemDeptMajor.Name = "tabItemDeptMajor";
-            this.tabItemDeptMajor.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tabItemDeptMajor.Size = new System.Drawing.Size(61, 17);
-            this.tabItemDeptMajor.TabIndex = 10;
-            this.tabItemDeptMajor.Text = "Khoa/CN";
-            this.tabItemDeptMajor.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.tabItemDeptMajor.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.tabItemDeptMajor.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.tabItemDeptMajor.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.tabItemDeptMajor.ShadowColor = System.Drawing.Color.Gray;
+            this.tabItemDeptMajor.ShadowDept = 2;
+            this.tabItemDeptMajor.ShadowDepth = 2;
+            this.tabItemDeptMajor.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
+            this.tabItemDeptMajor.ShadowTopLeftVisible = false;
+            this.tabItemDeptMajor.Size = new System.Drawing.Size(118, 41);
+            this.tabItemDeptMajor.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
+            this.tabItemDeptMajor.TabIndex = 12;
             this.bunifuToolTip1.SetToolTip(this.tabItemDeptMajor, "");
             this.bunifuToolTip1.SetToolTipIcon(this.tabItemDeptMajor, null);
             this.bunifuToolTip1.SetToolTipTitle(this.tabItemDeptMajor, "");
-            this.tabItemDeptMajor.Click += new System.EventHandler(this.tabItemDeptMajor_Click);
+            this.tabItemDeptMajor.Visible = false;
+            // 
+            // ItemDeptMajor
+            // 
+            this.ItemDeptMajor.AllowParentOverrides = false;
+            this.ItemDeptMajor.AutoEllipsis = false;
+            this.ItemDeptMajor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.ItemDeptMajor.CursorType = null;
+            this.ItemDeptMajor.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
+            this.ItemDeptMajor.Location = new System.Drawing.Point(43, 13);
+            this.ItemDeptMajor.Name = "ItemDeptMajor";
+            this.ItemDeptMajor.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ItemDeptMajor.Size = new System.Drawing.Size(61, 17);
+            this.ItemDeptMajor.TabIndex = 10;
+            this.ItemDeptMajor.Text = "Khoa/CN";
+            this.ItemDeptMajor.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.ItemDeptMajor.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuToolTip1.SetToolTip(this.ItemDeptMajor, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.ItemDeptMajor, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.ItemDeptMajor, "");
+            this.ItemDeptMajor.Click += new System.EventHandler(this.tabItemDeptMajor_Click);
             // 
             // bunifuPictureBox8
             // 
@@ -1292,52 +1299,53 @@
             this.bunifuToolTip1.SetToolTipTitle(this.bunifuPictureBox8, "");
             this.bunifuPictureBox8.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
-            // bunifuShadowPanel10
-            // 
-            this.bunifuShadowPanel10.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuShadowPanel10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(188)))), ((int)(((byte)(172)))));
-            this.bunifuShadowPanel10.BorderRadius = 20;
-            this.bunifuShadowPanel10.BorderThickness = 1;
-            this.bunifuShadowPanel10.Controls.Add(this.tabItemAssignment);
-            this.bunifuShadowPanel10.Controls.Add(this.bunifuPictureBox7);
-            this.bunifuShadowPanel10.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
-            this.bunifuShadowPanel10.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.bunifuShadowPanel10.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.bunifuShadowPanel10.Location = new System.Drawing.Point(15, 253);
-            this.bunifuShadowPanel10.Name = "bunifuShadowPanel10";
-            this.bunifuShadowPanel10.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.bunifuShadowPanel10.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.bunifuShadowPanel10.ShadowColor = System.Drawing.Color.Gray;
-            this.bunifuShadowPanel10.ShadowDept = 2;
-            this.bunifuShadowPanel10.ShadowDepth = 2;
-            this.bunifuShadowPanel10.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
-            this.bunifuShadowPanel10.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel10.Size = new System.Drawing.Size(113, 41);
-            this.bunifuShadowPanel10.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
-            this.bunifuShadowPanel10.TabIndex = 11;
-            this.bunifuToolTip1.SetToolTip(this.bunifuShadowPanel10, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.bunifuShadowPanel10, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.bunifuShadowPanel10, "");
-            // 
             // tabItemAssignment
             // 
-            this.tabItemAssignment.AllowParentOverrides = false;
-            this.tabItemAssignment.AutoEllipsis = false;
-            this.tabItemAssignment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.tabItemAssignment.CursorType = null;
-            this.tabItemAssignment.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
-            this.tabItemAssignment.Location = new System.Drawing.Point(38, 12);
+            this.tabItemAssignment.BackColor = System.Drawing.Color.Transparent;
+            this.tabItemAssignment.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(188)))), ((int)(((byte)(172)))));
+            this.tabItemAssignment.BorderRadius = 20;
+            this.tabItemAssignment.BorderThickness = 1;
+            this.tabItemAssignment.Controls.Add(this.ItemAssignment);
+            this.tabItemAssignment.Controls.Add(this.bunifuPictureBox7);
+            this.tabItemAssignment.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
+            this.tabItemAssignment.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.tabItemAssignment.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
+            this.tabItemAssignment.Location = new System.Drawing.Point(15, 253);
             this.tabItemAssignment.Name = "tabItemAssignment";
-            this.tabItemAssignment.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tabItemAssignment.Size = new System.Drawing.Size(67, 17);
+            this.tabItemAssignment.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.tabItemAssignment.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.tabItemAssignment.ShadowColor = System.Drawing.Color.Gray;
+            this.tabItemAssignment.ShadowDept = 2;
+            this.tabItemAssignment.ShadowDepth = 2;
+            this.tabItemAssignment.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
+            this.tabItemAssignment.ShadowTopLeftVisible = false;
+            this.tabItemAssignment.Size = new System.Drawing.Size(113, 41);
+            this.tabItemAssignment.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.tabItemAssignment.TabIndex = 11;
-            this.tabItemAssignment.Text = "Phân công";
-            this.tabItemAssignment.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.tabItemAssignment.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             this.bunifuToolTip1.SetToolTip(this.tabItemAssignment, "");
             this.bunifuToolTip1.SetToolTipIcon(this.tabItemAssignment, null);
             this.bunifuToolTip1.SetToolTipTitle(this.tabItemAssignment, "");
-            this.tabItemAssignment.Click += new System.EventHandler(this.tabItemAssignment_Click);
+            this.tabItemAssignment.Visible = false;
+            // 
+            // ItemAssignment
+            // 
+            this.ItemAssignment.AllowParentOverrides = false;
+            this.ItemAssignment.AutoEllipsis = false;
+            this.ItemAssignment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.ItemAssignment.CursorType = null;
+            this.ItemAssignment.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
+            this.ItemAssignment.Location = new System.Drawing.Point(38, 12);
+            this.ItemAssignment.Name = "ItemAssignment";
+            this.ItemAssignment.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ItemAssignment.Size = new System.Drawing.Size(67, 17);
+            this.ItemAssignment.TabIndex = 11;
+            this.ItemAssignment.Text = "Phân công";
+            this.ItemAssignment.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.ItemAssignment.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuToolTip1.SetToolTip(this.ItemAssignment, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.ItemAssignment, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.ItemAssignment, "");
+            this.ItemAssignment.Click += new System.EventHandler(this.tabItemAssignment_Click);
             // 
             // bunifuPictureBox7
             // 
@@ -1358,52 +1366,53 @@
             this.bunifuToolTip1.SetToolTipTitle(this.bunifuPictureBox7, "");
             this.bunifuPictureBox7.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
-            // bunifuShadowPanel9
-            // 
-            this.bunifuShadowPanel9.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuShadowPanel9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(188)))), ((int)(((byte)(172)))));
-            this.bunifuShadowPanel9.BorderRadius = 20;
-            this.bunifuShadowPanel9.BorderThickness = 1;
-            this.bunifuShadowPanel9.Controls.Add(this.tabItemExamination);
-            this.bunifuShadowPanel9.Controls.Add(this.bunifuPictureBox6);
-            this.bunifuShadowPanel9.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
-            this.bunifuShadowPanel9.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.bunifuShadowPanel9.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.bunifuShadowPanel9.Location = new System.Drawing.Point(15, 196);
-            this.bunifuShadowPanel9.Name = "bunifuShadowPanel9";
-            this.bunifuShadowPanel9.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.bunifuShadowPanel9.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.bunifuShadowPanel9.ShadowColor = System.Drawing.Color.Gray;
-            this.bunifuShadowPanel9.ShadowDept = 2;
-            this.bunifuShadowPanel9.ShadowDepth = 2;
-            this.bunifuShadowPanel9.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
-            this.bunifuShadowPanel9.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel9.Size = new System.Drawing.Size(113, 41);
-            this.bunifuShadowPanel9.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
-            this.bunifuShadowPanel9.TabIndex = 10;
-            this.bunifuToolTip1.SetToolTip(this.bunifuShadowPanel9, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.bunifuShadowPanel9, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.bunifuShadowPanel9, "");
-            // 
             // tabItemExamination
             // 
-            this.tabItemExamination.AllowParentOverrides = false;
-            this.tabItemExamination.AutoEllipsis = false;
-            this.tabItemExamination.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.tabItemExamination.CursorType = null;
-            this.tabItemExamination.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
-            this.tabItemExamination.Location = new System.Drawing.Point(32, 13);
+            this.tabItemExamination.BackColor = System.Drawing.Color.Transparent;
+            this.tabItemExamination.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(188)))), ((int)(((byte)(172)))));
+            this.tabItemExamination.BorderRadius = 20;
+            this.tabItemExamination.BorderThickness = 1;
+            this.tabItemExamination.Controls.Add(this.ItemExamination);
+            this.tabItemExamination.Controls.Add(this.bunifuPictureBox6);
+            this.tabItemExamination.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
+            this.tabItemExamination.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.tabItemExamination.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
+            this.tabItemExamination.Location = new System.Drawing.Point(15, 196);
             this.tabItemExamination.Name = "tabItemExamination";
-            this.tabItemExamination.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tabItemExamination.Size = new System.Drawing.Size(75, 17);
+            this.tabItemExamination.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.tabItemExamination.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.tabItemExamination.ShadowColor = System.Drawing.Color.Gray;
+            this.tabItemExamination.ShadowDept = 2;
+            this.tabItemExamination.ShadowDepth = 2;
+            this.tabItemExamination.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
+            this.tabItemExamination.ShadowTopLeftVisible = false;
+            this.tabItemExamination.Size = new System.Drawing.Size(113, 41);
+            this.tabItemExamination.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.tabItemExamination.TabIndex = 10;
-            this.tabItemExamination.Text = "Khám bệnh";
-            this.tabItemExamination.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.tabItemExamination.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             this.bunifuToolTip1.SetToolTip(this.tabItemExamination, "");
             this.bunifuToolTip1.SetToolTipIcon(this.tabItemExamination, null);
             this.bunifuToolTip1.SetToolTipTitle(this.tabItemExamination, "");
-            this.tabItemExamination.Click += new System.EventHandler(this.tabItemExamination_Click);
+            this.tabItemExamination.Visible = false;
+            // 
+            // ItemExamination
+            // 
+            this.ItemExamination.AllowParentOverrides = false;
+            this.ItemExamination.AutoEllipsis = false;
+            this.ItemExamination.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.ItemExamination.CursorType = null;
+            this.ItemExamination.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
+            this.ItemExamination.Location = new System.Drawing.Point(32, 13);
+            this.ItemExamination.Name = "ItemExamination";
+            this.ItemExamination.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ItemExamination.Size = new System.Drawing.Size(75, 17);
+            this.ItemExamination.TabIndex = 10;
+            this.ItemExamination.Text = "Khám bệnh";
+            this.ItemExamination.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.ItemExamination.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuToolTip1.SetToolTip(this.ItemExamination, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.ItemExamination, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.ItemExamination, "");
+            this.ItemExamination.Click += new System.EventHandler(this.tabItemExamination_Click);
             // 
             // bunifuPictureBox6
             // 
@@ -1424,52 +1433,53 @@
             this.bunifuToolTip1.SetToolTipTitle(this.bunifuPictureBox6, "");
             this.bunifuPictureBox6.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
-            // bunifuShadowPanel8
-            // 
-            this.bunifuShadowPanel8.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuShadowPanel8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(188)))), ((int)(((byte)(172)))));
-            this.bunifuShadowPanel8.BorderRadius = 20;
-            this.bunifuShadowPanel8.BorderThickness = 1;
-            this.bunifuShadowPanel8.Controls.Add(this.tabItemDisease);
-            this.bunifuShadowPanel8.Controls.Add(this.bunifuPictureBox5);
-            this.bunifuShadowPanel8.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
-            this.bunifuShadowPanel8.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.bunifuShadowPanel8.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.bunifuShadowPanel8.Location = new System.Drawing.Point(15, 139);
-            this.bunifuShadowPanel8.Name = "bunifuShadowPanel8";
-            this.bunifuShadowPanel8.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.bunifuShadowPanel8.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.bunifuShadowPanel8.ShadowColor = System.Drawing.Color.Gray;
-            this.bunifuShadowPanel8.ShadowDept = 2;
-            this.bunifuShadowPanel8.ShadowDepth = 2;
-            this.bunifuShadowPanel8.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
-            this.bunifuShadowPanel8.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel8.Size = new System.Drawing.Size(113, 41);
-            this.bunifuShadowPanel8.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
-            this.bunifuShadowPanel8.TabIndex = 9;
-            this.bunifuToolTip1.SetToolTip(this.bunifuShadowPanel8, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.bunifuShadowPanel8, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.bunifuShadowPanel8, "");
-            // 
             // tabItemDisease
             // 
-            this.tabItemDisease.AllowParentOverrides = false;
-            this.tabItemDisease.AutoEllipsis = false;
-            this.tabItemDisease.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.tabItemDisease.CursorType = null;
-            this.tabItemDisease.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
-            this.tabItemDisease.Location = new System.Drawing.Point(53, 12);
+            this.tabItemDisease.BackColor = System.Drawing.Color.Transparent;
+            this.tabItemDisease.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(188)))), ((int)(((byte)(172)))));
+            this.tabItemDisease.BorderRadius = 20;
+            this.tabItemDisease.BorderThickness = 1;
+            this.tabItemDisease.Controls.Add(this.ItemDisease);
+            this.tabItemDisease.Controls.Add(this.bunifuPictureBox5);
+            this.tabItemDisease.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
+            this.tabItemDisease.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.tabItemDisease.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
+            this.tabItemDisease.Location = new System.Drawing.Point(15, 139);
             this.tabItemDisease.Name = "tabItemDisease";
-            this.tabItemDisease.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tabItemDisease.Size = new System.Drawing.Size(35, 17);
+            this.tabItemDisease.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.tabItemDisease.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.tabItemDisease.ShadowColor = System.Drawing.Color.Gray;
+            this.tabItemDisease.ShadowDept = 2;
+            this.tabItemDisease.ShadowDepth = 2;
+            this.tabItemDisease.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
+            this.tabItemDisease.ShadowTopLeftVisible = false;
+            this.tabItemDisease.Size = new System.Drawing.Size(113, 41);
+            this.tabItemDisease.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.tabItemDisease.TabIndex = 9;
-            this.tabItemDisease.Text = "Bệnh";
-            this.tabItemDisease.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.tabItemDisease.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             this.bunifuToolTip1.SetToolTip(this.tabItemDisease, "");
             this.bunifuToolTip1.SetToolTipIcon(this.tabItemDisease, null);
             this.bunifuToolTip1.SetToolTipTitle(this.tabItemDisease, "");
-            this.tabItemDisease.Click += new System.EventHandler(this.tabItemDisease_Click);
+            this.tabItemDisease.Visible = false;
+            // 
+            // ItemDisease
+            // 
+            this.ItemDisease.AllowParentOverrides = false;
+            this.ItemDisease.AutoEllipsis = false;
+            this.ItemDisease.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.ItemDisease.CursorType = null;
+            this.ItemDisease.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
+            this.ItemDisease.Location = new System.Drawing.Point(53, 12);
+            this.ItemDisease.Name = "ItemDisease";
+            this.ItemDisease.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ItemDisease.Size = new System.Drawing.Size(35, 17);
+            this.ItemDisease.TabIndex = 9;
+            this.ItemDisease.Text = "Bệnh";
+            this.ItemDisease.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.ItemDisease.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuToolTip1.SetToolTip(this.ItemDisease, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.ItemDisease, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.ItemDisease, "");
+            this.ItemDisease.Click += new System.EventHandler(this.tabItemDisease_Click);
             // 
             // bunifuPictureBox5
             // 
@@ -1490,52 +1500,53 @@
             this.bunifuToolTip1.SetToolTipTitle(this.bunifuPictureBox5, "");
             this.bunifuPictureBox5.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
-            // bunifuShadowPanel7
-            // 
-            this.bunifuShadowPanel7.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuShadowPanel7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(188)))), ((int)(((byte)(172)))));
-            this.bunifuShadowPanel7.BorderRadius = 20;
-            this.bunifuShadowPanel7.BorderThickness = 1;
-            this.bunifuShadowPanel7.Controls.Add(this.tabItemBill);
-            this.bunifuShadowPanel7.Controls.Add(this.bunifuPictureBox4);
-            this.bunifuShadowPanel7.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
-            this.bunifuShadowPanel7.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.bunifuShadowPanel7.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.bunifuShadowPanel7.Location = new System.Drawing.Point(138, 196);
-            this.bunifuShadowPanel7.Name = "bunifuShadowPanel7";
-            this.bunifuShadowPanel7.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.bunifuShadowPanel7.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.bunifuShadowPanel7.ShadowColor = System.Drawing.Color.Gray;
-            this.bunifuShadowPanel7.ShadowDept = 2;
-            this.bunifuShadowPanel7.ShadowDepth = 2;
-            this.bunifuShadowPanel7.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
-            this.bunifuShadowPanel7.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel7.Size = new System.Drawing.Size(118, 41);
-            this.bunifuShadowPanel7.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
-            this.bunifuShadowPanel7.TabIndex = 9;
-            this.bunifuToolTip1.SetToolTip(this.bunifuShadowPanel7, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.bunifuShadowPanel7, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.bunifuShadowPanel7, "");
-            // 
             // tabItemBill
             // 
-            this.tabItemBill.AllowParentOverrides = false;
-            this.tabItemBill.AutoEllipsis = false;
-            this.tabItemBill.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.tabItemBill.CursorType = null;
-            this.tabItemBill.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
-            this.tabItemBill.Location = new System.Drawing.Point(46, 13);
+            this.tabItemBill.BackColor = System.Drawing.Color.Transparent;
+            this.tabItemBill.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(188)))), ((int)(((byte)(172)))));
+            this.tabItemBill.BorderRadius = 20;
+            this.tabItemBill.BorderThickness = 1;
+            this.tabItemBill.Controls.Add(this.ItemBill);
+            this.tabItemBill.Controls.Add(this.bunifuPictureBox4);
+            this.tabItemBill.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
+            this.tabItemBill.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.tabItemBill.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
+            this.tabItemBill.Location = new System.Drawing.Point(138, 196);
             this.tabItemBill.Name = "tabItemBill";
-            this.tabItemBill.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tabItemBill.Size = new System.Drawing.Size(55, 17);
+            this.tabItemBill.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.tabItemBill.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.tabItemBill.ShadowColor = System.Drawing.Color.Gray;
+            this.tabItemBill.ShadowDept = 2;
+            this.tabItemBill.ShadowDepth = 2;
+            this.tabItemBill.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
+            this.tabItemBill.ShadowTopLeftVisible = false;
+            this.tabItemBill.Size = new System.Drawing.Size(118, 41);
+            this.tabItemBill.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.tabItemBill.TabIndex = 9;
-            this.tabItemBill.Text = "Hóa đơn";
-            this.tabItemBill.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.tabItemBill.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             this.bunifuToolTip1.SetToolTip(this.tabItemBill, "");
             this.bunifuToolTip1.SetToolTipIcon(this.tabItemBill, null);
             this.bunifuToolTip1.SetToolTipTitle(this.tabItemBill, "");
-            this.tabItemBill.Click += new System.EventHandler(this.tabItemBill_Click);
+            this.tabItemBill.Visible = false;
+            // 
+            // ItemBill
+            // 
+            this.ItemBill.AllowParentOverrides = false;
+            this.ItemBill.AutoEllipsis = false;
+            this.ItemBill.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.ItemBill.CursorType = null;
+            this.ItemBill.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
+            this.ItemBill.Location = new System.Drawing.Point(46, 13);
+            this.ItemBill.Name = "ItemBill";
+            this.ItemBill.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ItemBill.Size = new System.Drawing.Size(55, 17);
+            this.ItemBill.TabIndex = 9;
+            this.ItemBill.Text = "Hóa đơn";
+            this.ItemBill.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.ItemBill.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuToolTip1.SetToolTip(this.ItemBill, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.ItemBill, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.ItemBill, "");
+            this.ItemBill.Click += new System.EventHandler(this.tabItemBill_Click);
             // 
             // bunifuPictureBox4
             // 
@@ -1556,32 +1567,33 @@
             this.bunifuToolTip1.SetToolTipTitle(this.bunifuPictureBox4, "");
             this.bunifuPictureBox4.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
-            // bunifuShadowPanel6
+            // tabItemHealthFile
             // 
-            this.bunifuShadowPanel6.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuShadowPanel6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(188)))), ((int)(((byte)(172)))));
-            this.bunifuShadowPanel6.BorderRadius = 20;
-            this.bunifuShadowPanel6.BorderThickness = 1;
-            this.bunifuShadowPanel6.Controls.Add(this.bunifuPictureBox3);
-            this.bunifuShadowPanel6.Controls.Add(this.tabItemHealthFile);
-            this.bunifuShadowPanel6.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
-            this.bunifuShadowPanel6.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.bunifuShadowPanel6.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.bunifuShadowPanel6.Location = new System.Drawing.Point(138, 139);
-            this.bunifuShadowPanel6.Name = "bunifuShadowPanel6";
-            this.bunifuShadowPanel6.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.bunifuShadowPanel6.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.bunifuShadowPanel6.ShadowColor = System.Drawing.Color.Gray;
-            this.bunifuShadowPanel6.ShadowDept = 2;
-            this.bunifuShadowPanel6.ShadowDepth = 2;
-            this.bunifuShadowPanel6.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
-            this.bunifuShadowPanel6.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel6.Size = new System.Drawing.Size(118, 41);
-            this.bunifuShadowPanel6.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
-            this.bunifuShadowPanel6.TabIndex = 8;
-            this.bunifuToolTip1.SetToolTip(this.bunifuShadowPanel6, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.bunifuShadowPanel6, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.bunifuShadowPanel6, "");
+            this.tabItemHealthFile.BackColor = System.Drawing.Color.Transparent;
+            this.tabItemHealthFile.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(188)))), ((int)(((byte)(172)))));
+            this.tabItemHealthFile.BorderRadius = 20;
+            this.tabItemHealthFile.BorderThickness = 1;
+            this.tabItemHealthFile.Controls.Add(this.bunifuPictureBox3);
+            this.tabItemHealthFile.Controls.Add(this.ItemHealthFile);
+            this.tabItemHealthFile.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
+            this.tabItemHealthFile.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.tabItemHealthFile.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
+            this.tabItemHealthFile.Location = new System.Drawing.Point(138, 139);
+            this.tabItemHealthFile.Name = "tabItemHealthFile";
+            this.tabItemHealthFile.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.tabItemHealthFile.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.tabItemHealthFile.ShadowColor = System.Drawing.Color.Gray;
+            this.tabItemHealthFile.ShadowDept = 2;
+            this.tabItemHealthFile.ShadowDepth = 2;
+            this.tabItemHealthFile.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
+            this.tabItemHealthFile.ShadowTopLeftVisible = false;
+            this.tabItemHealthFile.Size = new System.Drawing.Size(118, 41);
+            this.tabItemHealthFile.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
+            this.tabItemHealthFile.TabIndex = 8;
+            this.bunifuToolTip1.SetToolTip(this.tabItemHealthFile, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.tabItemHealthFile, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.tabItemHealthFile, "");
+            this.tabItemHealthFile.Visible = false;
             // 
             // bunifuPictureBox3
             // 
@@ -1602,72 +1614,73 @@
             this.bunifuToolTip1.SetToolTipTitle(this.bunifuPictureBox3, "");
             this.bunifuPictureBox3.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
-            // tabItemHealthFile
+            // ItemHealthFile
             // 
-            this.tabItemHealthFile.AllowParentOverrides = false;
-            this.tabItemHealthFile.AutoEllipsis = false;
-            this.tabItemHealthFile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.tabItemHealthFile.CursorType = null;
-            this.tabItemHealthFile.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
-            this.tabItemHealthFile.Location = new System.Drawing.Point(50, 12);
-            this.tabItemHealthFile.Name = "tabItemHealthFile";
-            this.tabItemHealthFile.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tabItemHealthFile.Size = new System.Drawing.Size(54, 17);
-            this.tabItemHealthFile.TabIndex = 8;
-            this.tabItemHealthFile.Text = "Bệnh án";
-            this.tabItemHealthFile.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.tabItemHealthFile.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            this.bunifuToolTip1.SetToolTip(this.tabItemHealthFile, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.tabItemHealthFile, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.tabItemHealthFile, "");
-            this.tabItemHealthFile.Click += new System.EventHandler(this.tabItemHealthFile_Click);
-            // 
-            // bunifuShadowPanel4
-            // 
-            this.bunifuShadowPanel4.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuShadowPanel4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(188)))), ((int)(((byte)(172)))));
-            this.bunifuShadowPanel4.BorderRadius = 20;
-            this.bunifuShadowPanel4.BorderThickness = 1;
-            this.bunifuShadowPanel4.Controls.Add(this.tabItemPatient);
-            this.bunifuShadowPanel4.Controls.Add(this.bunifuPictureBox1);
-            this.bunifuShadowPanel4.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
-            this.bunifuShadowPanel4.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.bunifuShadowPanel4.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.bunifuShadowPanel4.Location = new System.Drawing.Point(138, 83);
-            this.bunifuShadowPanel4.Name = "bunifuShadowPanel4";
-            this.bunifuShadowPanel4.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.bunifuShadowPanel4.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.bunifuShadowPanel4.ShadowColor = System.Drawing.Color.Gray;
-            this.bunifuShadowPanel4.ShadowDept = 2;
-            this.bunifuShadowPanel4.ShadowDepth = 2;
-            this.bunifuShadowPanel4.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
-            this.bunifuShadowPanel4.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel4.Size = new System.Drawing.Size(118, 41);
-            this.bunifuShadowPanel4.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
-            this.bunifuShadowPanel4.TabIndex = 7;
-            this.bunifuToolTip1.SetToolTip(this.bunifuShadowPanel4, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.bunifuShadowPanel4, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.bunifuShadowPanel4, "");
+            this.ItemHealthFile.AllowParentOverrides = false;
+            this.ItemHealthFile.AutoEllipsis = false;
+            this.ItemHealthFile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.ItemHealthFile.CursorType = null;
+            this.ItemHealthFile.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
+            this.ItemHealthFile.Location = new System.Drawing.Point(50, 12);
+            this.ItemHealthFile.Name = "ItemHealthFile";
+            this.ItemHealthFile.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ItemHealthFile.Size = new System.Drawing.Size(54, 17);
+            this.ItemHealthFile.TabIndex = 8;
+            this.ItemHealthFile.Text = "Bệnh án";
+            this.ItemHealthFile.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.ItemHealthFile.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuToolTip1.SetToolTip(this.ItemHealthFile, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.ItemHealthFile, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.ItemHealthFile, "");
+            this.ItemHealthFile.Click += new System.EventHandler(this.tabItemHealthFile_Click);
             // 
             // tabItemPatient
             // 
-            this.tabItemPatient.AllowParentOverrides = false;
-            this.tabItemPatient.AutoEllipsis = false;
-            this.tabItemPatient.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.tabItemPatient.CursorType = null;
-            this.tabItemPatient.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
-            this.tabItemPatient.Location = new System.Drawing.Point(34, 12);
+            this.tabItemPatient.BackColor = System.Drawing.Color.Transparent;
+            this.tabItemPatient.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(188)))), ((int)(((byte)(172)))));
+            this.tabItemPatient.BorderRadius = 20;
+            this.tabItemPatient.BorderThickness = 1;
+            this.tabItemPatient.Controls.Add(this.ItemPatient);
+            this.tabItemPatient.Controls.Add(this.bunifuPictureBox1);
+            this.tabItemPatient.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
+            this.tabItemPatient.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.tabItemPatient.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
+            this.tabItemPatient.Location = new System.Drawing.Point(138, 83);
             this.tabItemPatient.Name = "tabItemPatient";
-            this.tabItemPatient.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tabItemPatient.Size = new System.Drawing.Size(70, 17);
-            this.tabItemPatient.TabIndex = 8;
-            this.tabItemPatient.Text = "Bệnh nhân";
-            this.tabItemPatient.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.tabItemPatient.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.tabItemPatient.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.tabItemPatient.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.tabItemPatient.ShadowColor = System.Drawing.Color.Gray;
+            this.tabItemPatient.ShadowDept = 2;
+            this.tabItemPatient.ShadowDepth = 2;
+            this.tabItemPatient.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
+            this.tabItemPatient.ShadowTopLeftVisible = false;
+            this.tabItemPatient.Size = new System.Drawing.Size(118, 41);
+            this.tabItemPatient.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
+            this.tabItemPatient.TabIndex = 7;
             this.bunifuToolTip1.SetToolTip(this.tabItemPatient, "");
             this.bunifuToolTip1.SetToolTipIcon(this.tabItemPatient, null);
             this.bunifuToolTip1.SetToolTipTitle(this.tabItemPatient, "");
-            this.tabItemPatient.Click += new System.EventHandler(this.tabItemPatient_Click);
+            this.tabItemPatient.Visible = false;
+            // 
+            // ItemPatient
+            // 
+            this.ItemPatient.AllowParentOverrides = false;
+            this.ItemPatient.AutoEllipsis = false;
+            this.ItemPatient.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.ItemPatient.CursorType = null;
+            this.ItemPatient.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
+            this.ItemPatient.Location = new System.Drawing.Point(34, 12);
+            this.ItemPatient.Name = "ItemPatient";
+            this.ItemPatient.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ItemPatient.Size = new System.Drawing.Size(70, 17);
+            this.ItemPatient.TabIndex = 8;
+            this.ItemPatient.Text = "Bệnh nhân";
+            this.ItemPatient.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.ItemPatient.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuToolTip1.SetToolTip(this.ItemPatient, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.ItemPatient, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.ItemPatient, "");
+            this.ItemPatient.Click += new System.EventHandler(this.tabItemPatient_Click);
             // 
             // bunifuPictureBox1
             // 
@@ -1688,52 +1701,53 @@
             this.bunifuToolTip1.SetToolTipTitle(this.bunifuPictureBox1, "");
             this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
-            // bunifuShadowPanel5
-            // 
-            this.bunifuShadowPanel5.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuShadowPanel5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(188)))), ((int)(((byte)(172)))));
-            this.bunifuShadowPanel5.BorderRadius = 20;
-            this.bunifuShadowPanel5.BorderThickness = 1;
-            this.bunifuShadowPanel5.Controls.Add(this.tabItemMedicine);
-            this.bunifuShadowPanel5.Controls.Add(this.bunifuPictureBox2);
-            this.bunifuShadowPanel5.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
-            this.bunifuShadowPanel5.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.bunifuShadowPanel5.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.bunifuShadowPanel5.Location = new System.Drawing.Point(15, 83);
-            this.bunifuShadowPanel5.Name = "bunifuShadowPanel5";
-            this.bunifuShadowPanel5.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.bunifuShadowPanel5.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.bunifuShadowPanel5.ShadowColor = System.Drawing.Color.Gray;
-            this.bunifuShadowPanel5.ShadowDept = 2;
-            this.bunifuShadowPanel5.ShadowDepth = 2;
-            this.bunifuShadowPanel5.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
-            this.bunifuShadowPanel5.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel5.Size = new System.Drawing.Size(113, 41);
-            this.bunifuShadowPanel5.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
-            this.bunifuShadowPanel5.TabIndex = 6;
-            this.bunifuToolTip1.SetToolTip(this.bunifuShadowPanel5, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.bunifuShadowPanel5, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.bunifuShadowPanel5, "");
-            // 
             // tabItemMedicine
             // 
-            this.tabItemMedicine.AllowParentOverrides = false;
-            this.tabItemMedicine.AutoEllipsis = false;
-            this.tabItemMedicine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
-            this.tabItemMedicine.CursorType = null;
-            this.tabItemMedicine.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
-            this.tabItemMedicine.Location = new System.Drawing.Point(52, 13);
+            this.tabItemMedicine.BackColor = System.Drawing.Color.Transparent;
+            this.tabItemMedicine.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(188)))), ((int)(((byte)(172)))));
+            this.tabItemMedicine.BorderRadius = 20;
+            this.tabItemMedicine.BorderThickness = 1;
+            this.tabItemMedicine.Controls.Add(this.ItemMedicine);
+            this.tabItemMedicine.Controls.Add(this.bunifuPictureBox2);
+            this.tabItemMedicine.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
+            this.tabItemMedicine.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.tabItemMedicine.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
+            this.tabItemMedicine.Location = new System.Drawing.Point(15, 83);
             this.tabItemMedicine.Name = "tabItemMedicine";
-            this.tabItemMedicine.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tabItemMedicine.Size = new System.Drawing.Size(41, 17);
-            this.tabItemMedicine.TabIndex = 7;
-            this.tabItemMedicine.Text = "Thuốc";
-            this.tabItemMedicine.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.tabItemMedicine.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.tabItemMedicine.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.tabItemMedicine.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.tabItemMedicine.ShadowColor = System.Drawing.Color.Gray;
+            this.tabItemMedicine.ShadowDept = 2;
+            this.tabItemMedicine.ShadowDepth = 2;
+            this.tabItemMedicine.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
+            this.tabItemMedicine.ShadowTopLeftVisible = false;
+            this.tabItemMedicine.Size = new System.Drawing.Size(113, 41);
+            this.tabItemMedicine.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
+            this.tabItemMedicine.TabIndex = 6;
             this.bunifuToolTip1.SetToolTip(this.tabItemMedicine, "");
             this.bunifuToolTip1.SetToolTipIcon(this.tabItemMedicine, null);
             this.bunifuToolTip1.SetToolTipTitle(this.tabItemMedicine, "");
-            this.tabItemMedicine.Click += new System.EventHandler(this.tabItemMedicine_Click);
+            this.tabItemMedicine.Visible = false;
+            // 
+            // ItemMedicine
+            // 
+            this.ItemMedicine.AllowParentOverrides = false;
+            this.ItemMedicine.AutoEllipsis = false;
+            this.ItemMedicine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
+            this.ItemMedicine.CursorType = null;
+            this.ItemMedicine.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
+            this.ItemMedicine.Location = new System.Drawing.Point(52, 13);
+            this.ItemMedicine.Name = "ItemMedicine";
+            this.ItemMedicine.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ItemMedicine.Size = new System.Drawing.Size(41, 17);
+            this.ItemMedicine.TabIndex = 7;
+            this.ItemMedicine.Text = "Thuốc";
+            this.ItemMedicine.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.ItemMedicine.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuToolTip1.SetToolTip(this.ItemMedicine, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.ItemMedicine, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.ItemMedicine, "");
+            this.ItemMedicine.Click += new System.EventHandler(this.tabItemMedicine_Click);
             // 
             // bunifuPictureBox2
             // 
@@ -1764,7 +1778,7 @@
             this.bunifuShadowPanel3.BorderThickness = 1;
             this.bunifuShadowPanel3.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
             this.bunifuShadowPanel3.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.bunifuShadowPanel3.Location = new System.Drawing.Point(1292, 56);
+            this.bunifuShadowPanel3.Location = new System.Drawing.Point(299, 63);
             this.bunifuShadowPanel3.Name = "bunifuShadowPanel3";
             this.bunifuShadowPanel3.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(220)))), ((int)(((byte)(202)))));
             this.bunifuShadowPanel3.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(220)))), ((int)(((byte)(202)))));
@@ -1894,70 +1908,71 @@
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormMain";
+            this.Load += new System.EventHandler(this.FormMain_Load);
             this.bunifuGradientPanel1_FormMain.ResumeLayout(false);
-            this.bunifuShadowPanel1.ResumeLayout(false);
-            this.bunifuShadowPanel25.ResumeLayout(false);
-            this.bunifuShadowPanel25.PerformLayout();
+            this.tabMain.ResumeLayout(false);
+            this.tabItemBed.ResumeLayout(false);
+            this.tabItemBed.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox23)).EndInit();
-            this.bunifuShadowPanel24.ResumeLayout(false);
-            this.bunifuShadowPanel24.PerformLayout();
+            this.tabItemMaterial.ResumeLayout(false);
+            this.tabItemMaterial.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox22)).EndInit();
-            this.bunifuShadowPanel23.ResumeLayout(false);
-            this.bunifuShadowPanel23.PerformLayout();
+            this.tabItemService.ResumeLayout(false);
+            this.tabItemService.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox21)).EndInit();
-            this.bunifuShadowPanel22.ResumeLayout(false);
-            this.bunifuShadowPanel22.PerformLayout();
+            this.tabItemPrescpition.ResumeLayout(false);
+            this.tabItemPrescpition.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox20)).EndInit();
-            this.bunifuShadowPanel21.ResumeLayout(false);
-            this.bunifuShadowPanel21.PerformLayout();
+            this.tabItemFunction.ResumeLayout(false);
+            this.tabItemFunction.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox19)).EndInit();
-            this.bunifuShadowPanel20.ResumeLayout(false);
-            this.bunifuShadowPanel20.PerformLayout();
+            this.tabItemRole.ResumeLayout(false);
+            this.tabItemRole.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox18)).EndInit();
-            this.bunifuShadowPanel18.ResumeLayout(false);
-            this.bunifuShadowPanel18.PerformLayout();
+            this.tabItemTest.ResumeLayout(false);
+            this.tabItemTest.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox16)).EndInit();
-            this.bunifuShadowPanel17.ResumeLayout(false);
-            this.bunifuShadowPanel17.PerformLayout();
+            this.tabItemStatistics.ResumeLayout(false);
+            this.tabItemStatistics.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox14)).EndInit();
-            this.bunifuShadowPanel16.ResumeLayout(false);
-            this.bunifuShadowPanel16.PerformLayout();
+            this.tabItemHospitalization.ResumeLayout(false);
+            this.tabItemHospitalization.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox13)).EndInit();
-            this.bunifuShadowPanel15.ResumeLayout(false);
-            this.bunifuShadowPanel15.PerformLayout();
+            this.tabItemDischarged.ResumeLayout(false);
+            this.tabItemDischarged.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox12)).EndInit();
-            this.bunifuShadowPanel14.ResumeLayout(false);
-            this.bunifuShadowPanel14.PerformLayout();
+            this.tabItemMonitor.ResumeLayout(false);
+            this.tabItemMonitor.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox11)).EndInit();
-            this.bunifuShadowPanel13.ResumeLayout(false);
-            this.bunifuShadowPanel13.PerformLayout();
+            this.tabItemSurgery.ResumeLayout(false);
+            this.tabItemSurgery.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox10)).EndInit();
-            this.bunifuShadowPanel12.ResumeLayout(false);
-            this.bunifuShadowPanel12.PerformLayout();
+            this.tabItemStaff.ResumeLayout(false);
+            this.tabItemStaff.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox9)).EndInit();
-            this.bunifuShadowPanel11.ResumeLayout(false);
-            this.bunifuShadowPanel11.PerformLayout();
+            this.tabItemDeptMajor.ResumeLayout(false);
+            this.tabItemDeptMajor.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox8)).EndInit();
-            this.bunifuShadowPanel10.ResumeLayout(false);
-            this.bunifuShadowPanel10.PerformLayout();
+            this.tabItemAssignment.ResumeLayout(false);
+            this.tabItemAssignment.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox7)).EndInit();
-            this.bunifuShadowPanel9.ResumeLayout(false);
-            this.bunifuShadowPanel9.PerformLayout();
+            this.tabItemExamination.ResumeLayout(false);
+            this.tabItemExamination.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox6)).EndInit();
-            this.bunifuShadowPanel8.ResumeLayout(false);
-            this.bunifuShadowPanel8.PerformLayout();
+            this.tabItemDisease.ResumeLayout(false);
+            this.tabItemDisease.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox5)).EndInit();
-            this.bunifuShadowPanel7.ResumeLayout(false);
-            this.bunifuShadowPanel7.PerformLayout();
+            this.tabItemBill.ResumeLayout(false);
+            this.tabItemBill.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox4)).EndInit();
-            this.bunifuShadowPanel6.ResumeLayout(false);
-            this.bunifuShadowPanel6.PerformLayout();
+            this.tabItemHealthFile.ResumeLayout(false);
+            this.tabItemHealthFile.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox3)).EndInit();
-            this.bunifuShadowPanel4.ResumeLayout(false);
-            this.bunifuShadowPanel4.PerformLayout();
+            this.tabItemPatient.ResumeLayout(false);
+            this.tabItemPatient.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
-            this.bunifuShadowPanel5.ResumeLayout(false);
-            this.bunifuShadowPanel5.PerformLayout();
+            this.tabItemMedicine.ResumeLayout(false);
+            this.tabItemMedicine.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).EndInit();
             this.header.ResumeLayout(false);
             this.controlBox.ResumeLayout(false);
@@ -1971,7 +1986,6 @@
         #endregion
 
         private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel1_FormMain;
-        private System.Windows.Forms.Timer timer1;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuAccount;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.UI.WinForms.BunifuPanel header;
@@ -1980,69 +1994,69 @@
         private Bunifu.UI.WinForms.BunifuToolTip bunifuToolTip1;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuLogOut;
         private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel2;
-        private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel1;
-        private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel25;
-        private Bunifu.UI.WinForms.BunifuLabel tabItemBed;
+        private Bunifu.UI.WinForms.BunifuShadowPanel tabMain;
+        private Bunifu.UI.WinForms.BunifuShadowPanel tabItemBed;
+        private Bunifu.UI.WinForms.BunifuLabel ItemBed;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox23;
-        private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel24;
-        private Bunifu.UI.WinForms.BunifuLabel tabItemMaterial;
+        private Bunifu.UI.WinForms.BunifuShadowPanel tabItemMaterial;
+        private Bunifu.UI.WinForms.BunifuLabel ItemMaterial;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox22;
-        private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel23;
-        private Bunifu.UI.WinForms.BunifuLabel tabItemService;
+        private Bunifu.UI.WinForms.BunifuShadowPanel tabItemService;
+        private Bunifu.UI.WinForms.BunifuLabel ItemService;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox21;
-        private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel22;
-        private Bunifu.UI.WinForms.BunifuLabel tabItemPrescpition;
+        private Bunifu.UI.WinForms.BunifuShadowPanel tabItemPrescpition;
+        private Bunifu.UI.WinForms.BunifuLabel ItemPrescpition;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox20;
-        private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel21;
-        private Bunifu.UI.WinForms.BunifuLabel tabItemFunction;
+        private Bunifu.UI.WinForms.BunifuShadowPanel tabItemFunction;
+        private Bunifu.UI.WinForms.BunifuLabel ItemFunction;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox19;
-        private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel20;
-        private Bunifu.UI.WinForms.BunifuLabel tabItemRole;
+        private Bunifu.UI.WinForms.BunifuShadowPanel tabItemRole;
+        private Bunifu.UI.WinForms.BunifuLabel ItemRole;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox18;
-        private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel18;
-        private Bunifu.UI.WinForms.BunifuLabel tabItemTest;
+        private Bunifu.UI.WinForms.BunifuShadowPanel tabItemTest;
+        private Bunifu.UI.WinForms.BunifuLabel ItemTest;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox16;
-        private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel17;
-        private Bunifu.UI.WinForms.BunifuLabel tabItemStatistics;
+        private Bunifu.UI.WinForms.BunifuShadowPanel tabItemStatistics;
+        private Bunifu.UI.WinForms.BunifuLabel ItemStatistics;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox14;
-        private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel16;
-        private Bunifu.UI.WinForms.BunifuLabel tabItemHospitalization;
+        private Bunifu.UI.WinForms.BunifuShadowPanel tabItemHospitalization;
+        private Bunifu.UI.WinForms.BunifuLabel ItemHospitalization;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox13;
-        private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel15;
-        private Bunifu.UI.WinForms.BunifuLabel tabItemDischarged;
+        private Bunifu.UI.WinForms.BunifuShadowPanel tabItemDischarged;
+        private Bunifu.UI.WinForms.BunifuLabel ItemDischarged;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox12;
-        private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel14;
-        private Bunifu.UI.WinForms.BunifuLabel tabItemMonitor;
+        private Bunifu.UI.WinForms.BunifuShadowPanel tabItemMonitor;
+        private Bunifu.UI.WinForms.BunifuLabel ItemMonitor;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox11;
-        private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel13;
-        private Bunifu.UI.WinForms.BunifuLabel tabItemSurgery;
+        private Bunifu.UI.WinForms.BunifuShadowPanel tabItemSurgery;
+        private Bunifu.UI.WinForms.BunifuLabel ItemSurgery;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox10;
-        private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel12;
-        private Bunifu.UI.WinForms.BunifuLabel tabItemStaff;
+        private Bunifu.UI.WinForms.BunifuShadowPanel tabItemStaff;
+        private Bunifu.UI.WinForms.BunifuLabel ItemStaff;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox9;
-        private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel11;
-        private Bunifu.UI.WinForms.BunifuLabel tabItemDeptMajor;
+        private Bunifu.UI.WinForms.BunifuShadowPanel tabItemDeptMajor;
+        private Bunifu.UI.WinForms.BunifuLabel ItemDeptMajor;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox8;
-        private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel10;
-        private Bunifu.UI.WinForms.BunifuLabel tabItemAssignment;
+        private Bunifu.UI.WinForms.BunifuShadowPanel tabItemAssignment;
+        private Bunifu.UI.WinForms.BunifuLabel ItemAssignment;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox7;
-        private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel9;
-        private Bunifu.UI.WinForms.BunifuLabel tabItemExamination;
+        private Bunifu.UI.WinForms.BunifuShadowPanel tabItemExamination;
+        private Bunifu.UI.WinForms.BunifuLabel ItemExamination;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox6;
-        private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel8;
-        private Bunifu.UI.WinForms.BunifuLabel tabItemDisease;
+        private Bunifu.UI.WinForms.BunifuShadowPanel tabItemDisease;
+        private Bunifu.UI.WinForms.BunifuLabel ItemDisease;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox5;
-        private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel7;
-        private Bunifu.UI.WinForms.BunifuLabel tabItemBill;
+        private Bunifu.UI.WinForms.BunifuShadowPanel tabItemBill;
+        private Bunifu.UI.WinForms.BunifuLabel ItemBill;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox4;
-        private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel6;
+        private Bunifu.UI.WinForms.BunifuShadowPanel tabItemHealthFile;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox3;
-        private Bunifu.UI.WinForms.BunifuLabel tabItemHealthFile;
-        private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel4;
-        private Bunifu.UI.WinForms.BunifuLabel tabItemPatient;
+        private Bunifu.UI.WinForms.BunifuLabel ItemHealthFile;
+        private Bunifu.UI.WinForms.BunifuShadowPanel tabItemPatient;
+        private Bunifu.UI.WinForms.BunifuLabel ItemPatient;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
-        private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel5;
-        private Bunifu.UI.WinForms.BunifuLabel tabItemMedicine;
+        private Bunifu.UI.WinForms.BunifuShadowPanel tabItemMedicine;
+        private Bunifu.UI.WinForms.BunifuLabel ItemMedicine;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox2;
         private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel3;
         private Bunifu.UI.WinForms.BunifuPictureBox Exit;
