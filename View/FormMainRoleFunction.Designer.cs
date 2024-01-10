@@ -547,7 +547,7 @@
             this.bunifuDataGridViewRoleFunction.EnableHeadersVisualStyles = false;
             this.bunifuDataGridViewRoleFunction.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(184)))), ((int)(((byte)(196)))));
             this.bunifuDataGridViewRoleFunction.HeaderBackColor = System.Drawing.Color.Crimson;
-            this.bunifuDataGridViewRoleFunction.HeaderBgColor = System.Drawing.Color.Empty;
+            this.bunifuDataGridViewRoleFunction.HeaderBackColor = System.Drawing.Color.Empty;
             this.bunifuDataGridViewRoleFunction.HeaderForeColor = System.Drawing.Color.White;
             this.bunifuDataGridViewRoleFunction.Location = new System.Drawing.Point(28, 104);
             this.bunifuDataGridViewRoleFunction.Name = "bunifuDataGridViewRoleFunction";

@@ -276,7 +276,7 @@
             this.buttonInsertFunction.FadeWhenInactive = true;
             this.buttonInsertFunction.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
             this.buttonInsertFunction.Image = global::DO_AN_CUA_HAN.Properties.Resources._81328514_removebg_preview;
-            this.buttonInsertFunction.ImageActive = null;
+            this.buttonInsertFunction.ActiveImage = null;
             this.buttonInsertFunction.ImageLocation = null;
             this.buttonInsertFunction.ImageMargin = 40;
             this.buttonInsertFunction.ImageSize = new System.Drawing.Size(74, 63);
@@ -297,7 +297,7 @@
             this.buttonInsertFunction.ToolTipText = "";
             this.bunifuToolTip1.SetToolTipTitle(this.buttonInsertFunction, "");
             this.buttonInsertFunction.WaitOnLoad = false;
-            this.buttonInsertFunction.Zoom = 40;
+            this.buttonInsertFunction.ImageMargin = 40;
             this.buttonInsertFunction.ZoomSpeed = 10;
             this.buttonInsertFunction.Click += new System.EventHandler(this.buttonInsertFunction_Click);
             // 
@@ -970,7 +970,7 @@
             this.buttonRemoveFunction.FadeWhenInactive = true;
             this.buttonRemoveFunction.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
             this.buttonRemoveFunction.Image = global::DO_AN_CUA_HAN.Properties.Resources._81328524_removebg_preview;
-            this.buttonRemoveFunction.ImageActive = null;
+            this.buttonRemoveFunction.ActiveImage = null;
             this.buttonRemoveFunction.ImageLocation = null;
             this.buttonRemoveFunction.ImageMargin = 40;
             this.buttonRemoveFunction.ImageSize = new System.Drawing.Size(74, 63);
@@ -991,7 +991,7 @@
             this.buttonRemoveFunction.ToolTipText = "";
             this.bunifuToolTip1.SetToolTipTitle(this.buttonRemoveFunction, "");
             this.buttonRemoveFunction.WaitOnLoad = false;
-            this.buttonRemoveFunction.Zoom = 40;
+            this.buttonRemoveFunction.ImageMargin = 40;
             this.buttonRemoveFunction.ZoomSpeed = 10;
             this.buttonRemoveFunction.Click += new System.EventHandler(this.buttonRemoveFunction_Click);
             // 

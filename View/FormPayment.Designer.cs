@@ -242,7 +242,7 @@
             this.bunifuDataGridViewBill.EnableHeadersVisualStyles = false;
             this.bunifuDataGridViewBill.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.bunifuDataGridViewBill.HeaderBackColor = System.Drawing.Color.DodgerBlue;
-            this.bunifuDataGridViewBill.HeaderBgColor = System.Drawing.Color.Empty;
+            this.bunifuDataGridViewBill.HeaderBackColor = System.Drawing.Color.Empty;
             this.bunifuDataGridViewBill.HeaderForeColor = System.Drawing.Color.White;
             this.bunifuDataGridViewBill.Location = new System.Drawing.Point(34, 192);
             this.bunifuDataGridViewBill.Name = "bunifuDataGridViewBill";

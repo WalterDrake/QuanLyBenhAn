@@ -145,7 +145,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>=First(Fields!DATE.Value,"DataSet1")</Value>
+                      <Value>=First(Fields!DATE.Value,"EC")</Value>
                       <Style />
                     </TextRun>
                   </TextRuns>
@@ -466,7 +466,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>=First(Fields!ICN.Value, "DataSet1")</Value>
+                      <Value>=First(Fields!ICN.Value, "EC")</Value>
                       <Style />
                     </TextRun>
                   </TextRuns>
@@ -594,7 +594,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>=First(Fields!ADDRESS.Value, "DataSet1")</Value>
+                      <Value>=First(Fields!ADDRESS.Value, "EC")</Value>
                       <Style />
                     </TextRun>
                   </TextRuns>
@@ -626,7 +626,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>=First(Fields!PATIENTID.Value, "DataSet1")</Value>
+                      <Value>=First(Fields!PATIENTID.Value, "EC")</Value>
                       <Style />
                     </TextRun>
                   </TextRuns>
@@ -738,7 +738,7 @@
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="DataSet1">
+    <DataSet Name="EC">
       <Query>
         <DataSourceName>Report</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
@@ -787,7 +787,7 @@
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>Report</rd:DataSetName>
-        <rd:SchemaPath>E:\DO_AN_CUA_HAN\QuanLyBenhAn\Report.xsd</rd:SchemaPath>
+        <rd:SchemaPath>D:\Code\DOANLTTQ\DoAnCuaHan\QuanLyBenhAn\Report.xsd</rd:SchemaPath>
         <rd:TableName>EC</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>

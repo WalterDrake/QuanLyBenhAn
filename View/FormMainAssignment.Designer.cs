@@ -146,7 +146,7 @@
             this.bunifuDataGridViewAssignmentDetail.EnableHeadersVisualStyles = false;
             this.bunifuDataGridViewAssignmentDetail.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(184)))), ((int)(((byte)(196)))));
             this.bunifuDataGridViewAssignmentDetail.HeaderBackColor = System.Drawing.Color.Crimson;
-            this.bunifuDataGridViewAssignmentDetail.HeaderBgColor = System.Drawing.Color.Empty;
+            this.bunifuDataGridViewAssignmentDetail.HeaderBackColor = System.Drawing.Color.Empty;
             this.bunifuDataGridViewAssignmentDetail.HeaderForeColor = System.Drawing.Color.White;
             this.bunifuDataGridViewAssignmentDetail.Location = new System.Drawing.Point(526, 170);
             this.bunifuDataGridViewAssignmentDetail.Name = "bunifuDataGridViewAssignmentDetail";
@@ -441,7 +441,7 @@
             this.bunifuDataGridViewAssignment.EnableHeadersVisualStyles = false;
             this.bunifuDataGridViewAssignment.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(184)))), ((int)(((byte)(196)))));
             this.bunifuDataGridViewAssignment.HeaderBackColor = System.Drawing.Color.Crimson;
-            this.bunifuDataGridViewAssignment.HeaderBgColor = System.Drawing.Color.Empty;
+            this.bunifuDataGridViewAssignment.HeaderBackColor = System.Drawing.Color.Empty;
             this.bunifuDataGridViewAssignment.HeaderForeColor = System.Drawing.Color.White;
             this.bunifuDataGridViewAssignment.Location = new System.Drawing.Point(44, 170);
             this.bunifuDataGridViewAssignment.Name = "bunifuDataGridViewAssignment";

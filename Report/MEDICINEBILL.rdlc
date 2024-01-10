@@ -170,7 +170,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=First(Fields!BILLID.Value, "DataSet1")</Value>
+                <Value>=First(Fields!BILLID.Value, "MEDICINEBILL")</Value>
                 <Style />
               </TextRun>
             </TextRuns>
@@ -202,7 +202,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=First(Fields!STAFFID.Value, "DataSet1")</Value>
+                <Value>=First(Fields!STAFFID.Value, "MEDICINEBILL")</Value>
                 <Style />
               </TextRun>
             </TextRuns>
@@ -234,7 +234,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=First(Fields!STAFFNAME.Value, "DataSet1")</Value>
+                <Value>=First(Fields!STAFFNAME.Value, "MEDICINEBILL")</Value>
                 <Style />
               </TextRun>
             </TextRuns>
@@ -266,7 +266,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=First(Fields!PATIENTID.Value, "DataSet1")</Value>
+                <Value>=First(Fields!PATIENTID.Value, "MEDICINEBILL")</Value>
                 <Style />
               </TextRun>
             </TextRuns>
@@ -298,7 +298,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=First(Fields!PATIENTNAME.Value, "DataSet1")</Value>
+                <Value>=First(Fields!PATIENTNAME.Value, "MEDICINEBILL")</Value>
                 <Style />
               </TextRun>
             </TextRuns>
@@ -362,7 +362,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=First(Fields!ADDRESS.Value, "DataSet1")</Value>
+                <Value>=First(Fields!ADDRESS.Value, "MEDICINEBILL")</Value>
                 <Style />
               </TextRun>
             </TextRuns>
@@ -426,7 +426,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Format(First(Fields!DATE.Value, "DataSet1"), "dd/MM/yyyy")</Value>
+                <Value>=Format(First(Fields!DATE.Value, "MEDICINEBILL"), "dd/MM/yyyy")</Value>
                 <Style />
               </TextRun>
             </TextRuns>
@@ -921,7 +921,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=FIRST(Fields!TOTALPRICE.Value, "DataSet1")</Value>
+                <Value>=FIRST(Fields!TOTALPRICE.Value, "MEDICINEBILL")</Value>
                 <Style>
                   <FontSize>12pt</FontSize>
                   <FontWeight>Bold</FontWeight>
@@ -1004,7 +1004,7 @@
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="DataSet1">
+    <DataSet Name="MEDICINEBILL">
       <Query>
         <DataSourceName>Report</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
@@ -1053,7 +1053,7 @@
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>Report</rd:DataSetName>
-        <rd:SchemaPath>E:\DO_AN_CUA_HAN\QuanLyBenhAn\Report.xsd</rd:SchemaPath>
+        <rd:SchemaPath>D:\Code\DOANLTTQ\DoAnCuaHan\QuanLyBenhAn\Report.xsd</rd:SchemaPath>
         <rd:TableName>MEDICINEBILL</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>

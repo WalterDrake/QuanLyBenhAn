@@ -110,7 +110,7 @@
             this.bunifuDataGridViewDisease.EnableHeadersVisualStyles = false;
             this.bunifuDataGridViewDisease.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(184)))), ((int)(((byte)(196)))));
             this.bunifuDataGridViewDisease.HeaderBackColor = System.Drawing.Color.Crimson;
-            this.bunifuDataGridViewDisease.HeaderBgColor = System.Drawing.Color.Empty;
+            this.bunifuDataGridViewDisease.HeaderBackColor = System.Drawing.Color.Empty;
             this.bunifuDataGridViewDisease.HeaderForeColor = System.Drawing.Color.White;
             this.bunifuDataGridViewDisease.Location = new System.Drawing.Point(28, 102);
             this.bunifuDataGridViewDisease.Name = "bunifuDataGridViewDisease";

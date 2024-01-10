@@ -34,7 +34,7 @@ namespace DO_AN_CUA_HAN.View
                 case "EC":
                     ReportTableAdapters.ECTableAdapter ECTableAdapter = new ReportTableAdapters.ECTableAdapter();
                     ECTableAdapter.Fill(reportDataset.EC);
-                    this.reportDataSource.Name = "DataSet1";
+                    this.reportDataSource.Name = "EC";
                     this.reportDataSource.Value = this.reportDataset.EC;
 
                     this.reportViewer1.LocalReport.ReportEmbeddedResource = "DO_AN_CUA_HAN.Report.EC.rdlc";
@@ -43,10 +43,10 @@ namespace DO_AN_CUA_HAN.View
                     ReportTableAdapters.MEDICINEBILLTableAdapter MEDICINEBILLTableAdapter = new ReportTableAdapters.MEDICINEBILLTableAdapter();
                     MEDICINEBILLTableAdapter.Fill(reportDataset.MEDICINEBILL);
 
-                    this.reportDataSource.Name = "DataSet1";
+                    this.reportDataSource.Name = "MEDICINEBILL";
                     this.reportDataSource.Value = this.reportDataset.MEDICINEBILL;
 
-                    this.reportViewer1.LocalReport.ReportEmbeddedResource = "DO_AN_CUA_HAN.Report.EC.rdlc\";\r\n                    break;";
+                    this.reportViewer1.LocalReport.ReportEmbeddedResource = "DO_AN_CUA_HAN.Report.EC.rdlc";
 
                     break;
             }  
