@@ -70,19 +70,20 @@ namespace DO_AN_CUA_HAN.View
 
         private void tabItemMedicine_Click(object sender, EventArgs e)
         {
-            bunifuShadowPanel3.Controls.Clear();
-            FormMainMedicine formMainMedicine = new FormMainMedicine();
-            bunifuShadowPanel3.Controls.Add(formMainMedicine);            // Thiết lập vị trí ban đầu của đối tượng và vị trí đích
-            formMainMedicine.tabItemMedicine_Click();
+             bunifuShadowPanel3.Controls.Clear();
+             FormMainMedicine formMainMedicine = new FormMainMedicine();
+             bunifuShadowPanel3.Controls.Add(formMainMedicine);           
+             formMainMedicine.tabItemMedicine_Click();
+
 
         }
 
         private void tabItemPatient_Click(object sender, EventArgs e)
         {
             bunifuShadowPanel3.Controls.Clear();
-            FormMainPatient formMainPatient = new FormMainPatient(loginStaff);
-            bunifuShadowPanel3.Controls.Add(formMainPatient);
-            formMainPatient.tabItemPatient();
+             FormMainPatient formMainPatient = new FormMainPatient(loginStaff);
+             bunifuShadowPanel3.Controls.Add(formMainPatient);
+             formMainPatient.tabItemPatient();
 
         }
 

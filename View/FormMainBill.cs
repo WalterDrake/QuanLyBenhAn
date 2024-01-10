@@ -112,7 +112,7 @@ namespace DO_AN_CUA_HAN.View
                 // Get bill for print
                 Bill billDetail = Bill.GetBill(Convert.ToInt32(bunifuDataGridViewBill.SelectedRows[0].Cells[0].Value.ToString()));
 
-                /*FormReport reportForm = new FormReport();
+                FormReport reportForm = new FormReport();
 
                 switch (billDetail.BillTypeID)
                 {
@@ -133,7 +133,7 @@ namespace DO_AN_CUA_HAN.View
                         return;
                 }
 
-                reportForm.Show();*/
+                reportForm.Show();
 
             }
         }
