@@ -50,11 +50,11 @@ namespace DO_AN_CUA_HAN.View
             {
                 ExaminationCertificate ECPrint = ExaminationCertificate.GetEC(Convert.ToInt32(bunifuDataGridViewEC.SelectedRows[0].Cells[0].Value));
 
-                /*FormReport reportForm = new FormReport();
+                FormReport reportForm = new FormReport();
 
                 reportForm.ReportType = "EC";
                 reportForm.ObjectID = ECPrint.ECID;
-                reportForm.Show();*/
+                reportForm.Show();
             }
         }
 

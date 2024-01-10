@@ -542,7 +542,7 @@ namespace DO_AN_CUA_HAN.View
                         billReport = BillDetail;
                     }
 
-                   /* FormReport reportForm = new FormReport();
+                    FormReport reportForm = new FormReport();
 
                     switch (billReport.BillTypeID)
                     {
@@ -563,7 +563,7 @@ namespace DO_AN_CUA_HAN.View
                             return;
                     }
 
-                    reportForm.ShowDialog();*/
+                    reportForm.ShowDialog();
 
                     this.Close();
                 }
