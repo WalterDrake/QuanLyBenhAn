@@ -79,6 +79,8 @@
             this.bunifuLabel12 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuButton9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuShadowPanel1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.bunifuPictureBoxEyeClose = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.bunifuPictureBoxEyeOpen = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuTextBoxPassword = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuTextBoxUsername = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
@@ -100,17 +102,15 @@
             this.bunifuLabel8 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuButton6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuPictureBox3 = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.bunifuPictureBoxEyeOpen = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.bunifuPictureBoxEyeClose = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.bunifuShadowPanel3.SuspendLayout();
             this.bunifuShadowPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBoxEyeClose)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBoxEyeOpen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).BeginInit();
             this.bunifuShadowPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBoxEyeOpen)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBoxEyeClose)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -666,7 +666,7 @@
             this.bunifuLabel10.Location = new System.Drawing.Point(97, 224);
             this.bunifuLabel10.Name = "bunifuLabel10";
             this.bunifuLabel10.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel10.Size = new System.Drawing.Size(59, 19);
+            this.bunifuLabel10.Size = new System.Drawing.Size(138, 45);
             this.bunifuLabel10.TabIndex = 2;
             this.bunifuLabel10.Text = "Mật khẩu";
             this.bunifuLabel10.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -684,7 +684,7 @@
             this.bunifuLabel11.Location = new System.Drawing.Point(97, 181);
             this.bunifuLabel11.Name = "bunifuLabel11";
             this.bunifuLabel11.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel11.Size = new System.Drawing.Size(59, 19);
+            this.bunifuLabel11.Size = new System.Drawing.Size(141, 45);
             this.bunifuLabel11.TabIndex = 1;
             this.bunifuLabel11.Text = "Tài khoản";
             this.bunifuLabel11.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -702,7 +702,7 @@
             this.bunifuLabel12.Location = new System.Drawing.Point(245, 95);
             this.bunifuLabel12.Name = "bunifuLabel12";
             this.bunifuLabel12.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel12.Size = new System.Drawing.Size(76, 30);
+            this.bunifuLabel12.Size = new System.Drawing.Size(362, 133);
             this.bunifuLabel12.TabIndex = 0;
             this.bunifuLabel12.Text = "Đăng kí";
             this.bunifuLabel12.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -839,6 +839,46 @@
             this.bunifuToolTip1.SetToolTip(this.bunifuShadowPanel1, "");
             this.bunifuToolTip1.SetToolTipIcon(this.bunifuShadowPanel1, null);
             this.bunifuToolTip1.SetToolTipTitle(this.bunifuShadowPanel1, "");
+            // 
+            // bunifuPictureBoxEyeClose
+            // 
+            this.bunifuPictureBoxEyeClose.AllowFocused = false;
+            this.bunifuPictureBoxEyeClose.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBoxEyeClose.AutoSizeHeight = true;
+            this.bunifuPictureBoxEyeClose.BorderRadius = 13;
+            this.bunifuPictureBoxEyeClose.Image = global::DO_AN_CUA_HAN.Properties.Resources.icons8_closed_eye_40;
+            this.bunifuPictureBoxEyeClose.IsCircle = true;
+            this.bunifuPictureBoxEyeClose.Location = new System.Drawing.Point(469, 217);
+            this.bunifuPictureBoxEyeClose.Name = "bunifuPictureBoxEyeClose";
+            this.bunifuPictureBoxEyeClose.Size = new System.Drawing.Size(27, 27);
+            this.bunifuPictureBoxEyeClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuPictureBoxEyeClose.TabIndex = 14;
+            this.bunifuPictureBoxEyeClose.TabStop = false;
+            this.bunifuToolTip1.SetToolTip(this.bunifuPictureBoxEyeClose, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.bunifuPictureBoxEyeClose, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.bunifuPictureBoxEyeClose, "");
+            this.bunifuPictureBoxEyeClose.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
+            this.bunifuPictureBoxEyeClose.Click += new System.EventHandler(this.bunifuImageButton1_Click);
+            // 
+            // bunifuPictureBoxEyeOpen
+            // 
+            this.bunifuPictureBoxEyeOpen.AllowFocused = false;
+            this.bunifuPictureBoxEyeOpen.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBoxEyeOpen.AutoSizeHeight = true;
+            this.bunifuPictureBoxEyeOpen.BorderRadius = 13;
+            this.bunifuPictureBoxEyeOpen.Image = global::DO_AN_CUA_HAN.Properties.Resources.icons8_eye_48;
+            this.bunifuPictureBoxEyeOpen.IsCircle = true;
+            this.bunifuPictureBoxEyeOpen.Location = new System.Drawing.Point(469, 217);
+            this.bunifuPictureBoxEyeOpen.Name = "bunifuPictureBoxEyeOpen";
+            this.bunifuPictureBoxEyeOpen.Size = new System.Drawing.Size(27, 27);
+            this.bunifuPictureBoxEyeOpen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuPictureBoxEyeOpen.TabIndex = 13;
+            this.bunifuPictureBoxEyeOpen.TabStop = false;
+            this.bunifuToolTip1.SetToolTip(this.bunifuPictureBoxEyeOpen, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.bunifuPictureBoxEyeOpen, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.bunifuPictureBoxEyeOpen, "");
+            this.bunifuPictureBoxEyeOpen.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
+            this.bunifuPictureBoxEyeOpen.Click += new System.EventHandler(this.bunifuImageButton2_Click);
             // 
             // bunifuTextBoxPassword
             // 
@@ -1252,7 +1292,7 @@
             this.bunifuLabel1.Location = new System.Drawing.Point(246, 102);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(139, 37);
+            this.bunifuLabel1.Size = new System.Drawing.Size(169, 45);
             this.bunifuLabel1.TabIndex = 0;
             this.bunifuLabel1.Text = "Đăng nhập";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -1276,7 +1316,7 @@
             this.bunifuButtonSignUp.BackColor1 = System.Drawing.Color.Transparent;
             this.bunifuButtonSignUp.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButtonSignUp.BackgroundImage")));
             this.bunifuButtonSignUp.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButtonSignUp.ButtonText = "Đăng kí";
+            this.bunifuButtonSignUp.ButtonText = "Quên mật khẩu";
             this.bunifuButtonSignUp.ButtonTextMarginLeft = 0;
             this.bunifuButtonSignUp.ColorContrastOnClick = 45;
             this.bunifuButtonSignUp.ColorContrastOnHover = 45;
@@ -1343,7 +1383,7 @@
             this.bunifuButtonSignUp.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButtonSignUp.OnPressedState.IconLeftImage = null;
             this.bunifuButtonSignUp.OnPressedState.IconRightImage = null;
-            this.bunifuButtonSignUp.Size = new System.Drawing.Size(52, 31);
+            this.bunifuButtonSignUp.Size = new System.Drawing.Size(96, 31);
             this.bunifuButtonSignUp.TabIndex = 6;
             this.bunifuButtonSignUp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButtonSignUp.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1353,7 +1393,6 @@
             this.bunifuToolTip1.SetToolTipIcon(this.bunifuButtonSignUp, null);
             this.bunifuToolTip1.SetToolTipTitle(this.bunifuButtonSignUp, "");
             this.bunifuButtonSignUp.UseDefaultRadiusAndThickness = true;
-            this.bunifuButtonSignUp.Click += new System.EventHandler(this.bunifuButton3_Click);
             // 
             // bunifuPictureBox2
             // 
@@ -1774,7 +1813,7 @@
             this.bunifuLabel6.Location = new System.Drawing.Point(97, 224);
             this.bunifuLabel6.Name = "bunifuLabel6";
             this.bunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel6.Size = new System.Drawing.Size(59, 19);
+            this.bunifuLabel6.Size = new System.Drawing.Size(138, 45);
             this.bunifuLabel6.TabIndex = 2;
             this.bunifuLabel6.Text = "Mật khẩu";
             this.bunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -1792,7 +1831,7 @@
             this.bunifuLabel7.Location = new System.Drawing.Point(97, 181);
             this.bunifuLabel7.Name = "bunifuLabel7";
             this.bunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel7.Size = new System.Drawing.Size(59, 19);
+            this.bunifuLabel7.Size = new System.Drawing.Size(141, 45);
             this.bunifuLabel7.TabIndex = 1;
             this.bunifuLabel7.Text = "Tài khoản";
             this.bunifuLabel7.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -1810,7 +1849,7 @@
             this.bunifuLabel8.Location = new System.Drawing.Point(245, 95);
             this.bunifuLabel8.Name = "bunifuLabel8";
             this.bunifuLabel8.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel8.Size = new System.Drawing.Size(76, 30);
+            this.bunifuLabel8.Size = new System.Drawing.Size(362, 133);
             this.bunifuLabel8.TabIndex = 0;
             this.bunifuLabel8.Text = "Đăng kí";
             this.bunifuLabel8.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -1931,46 +1970,6 @@
             this.bunifuToolTip1.SetToolTipTitle(this.bunifuPictureBox3, "");
             this.bunifuPictureBox3.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
-            // bunifuPictureBoxEyeOpen
-            // 
-            this.bunifuPictureBoxEyeOpen.AllowFocused = false;
-            this.bunifuPictureBoxEyeOpen.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPictureBoxEyeOpen.AutoSizeHeight = true;
-            this.bunifuPictureBoxEyeOpen.BorderRadius = 13;
-            this.bunifuPictureBoxEyeOpen.Image = global::DO_AN_CUA_HAN.Properties.Resources.icons8_eye_48;
-            this.bunifuPictureBoxEyeOpen.IsCircle = true;
-            this.bunifuPictureBoxEyeOpen.Location = new System.Drawing.Point(469, 217);
-            this.bunifuPictureBoxEyeOpen.Name = "bunifuPictureBoxEyeOpen";
-            this.bunifuPictureBoxEyeOpen.Size = new System.Drawing.Size(27, 27);
-            this.bunifuPictureBoxEyeOpen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuPictureBoxEyeOpen.TabIndex = 13;
-            this.bunifuPictureBoxEyeOpen.TabStop = false;
-            this.bunifuToolTip1.SetToolTip(this.bunifuPictureBoxEyeOpen, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.bunifuPictureBoxEyeOpen, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.bunifuPictureBoxEyeOpen, "");
-            this.bunifuPictureBoxEyeOpen.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
-            this.bunifuPictureBoxEyeOpen.Click += new System.EventHandler(this.bunifuImageButton2_Click);
-            // 
-            // bunifuPictureBoxEyeClose
-            // 
-            this.bunifuPictureBoxEyeClose.AllowFocused = false;
-            this.bunifuPictureBoxEyeClose.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPictureBoxEyeClose.AutoSizeHeight = true;
-            this.bunifuPictureBoxEyeClose.BorderRadius = 13;
-            this.bunifuPictureBoxEyeClose.Image = global::DO_AN_CUA_HAN.Properties.Resources.icons8_closed_eye_40;
-            this.bunifuPictureBoxEyeClose.IsCircle = true;
-            this.bunifuPictureBoxEyeClose.Location = new System.Drawing.Point(469, 217);
-            this.bunifuPictureBoxEyeClose.Name = "bunifuPictureBoxEyeClose";
-            this.bunifuPictureBoxEyeClose.Size = new System.Drawing.Size(27, 27);
-            this.bunifuPictureBoxEyeClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuPictureBoxEyeClose.TabIndex = 14;
-            this.bunifuPictureBoxEyeClose.TabStop = false;
-            this.bunifuToolTip1.SetToolTip(this.bunifuPictureBoxEyeClose, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.bunifuPictureBoxEyeClose, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.bunifuPictureBoxEyeClose, "");
-            this.bunifuPictureBoxEyeClose.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
-            this.bunifuPictureBoxEyeClose.Click += new System.EventHandler(this.bunifuImageButton1_Click);
-            // 
             // FormLogin_SignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1988,12 +1987,12 @@
             this.bunifuShadowPanel3.PerformLayout();
             this.bunifuShadowPanel1.ResumeLayout(false);
             this.bunifuShadowPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBoxEyeClose)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBoxEyeOpen)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).EndInit();
             this.bunifuShadowPanel2.ResumeLayout(false);
             this.bunifuShadowPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBoxEyeOpen)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBoxEyeClose)).EndInit();
             this.ResumeLayout(false);
 
         }

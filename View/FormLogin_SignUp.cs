@@ -29,13 +29,6 @@ namespace DO_AN_CUA_HAN.View
             this.Close();
         }
 
-        private void bunifuButton3_Click(object sender, EventArgs e)
-        {
-            FormDatabase formDatabase = new FormDatabase();
-            formDatabase.FormClosed += new FormClosedEventHandler(FormLogin_FormClosed);
-            formDatabase.Show();
-            this.Hide();
-        }
 
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
