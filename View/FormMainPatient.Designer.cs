@@ -1822,7 +1822,6 @@
             this.bunifuButtonPatientExamination.UseDefaultRadiusAndThickness = true;
             this.bunifuButtonPatientExamination.Click += new System.EventHandler(this.bunifuButtonPatientExamination_Click);
             // 
-<<<<<<< HEAD
             // bunifuButton1
             // 
             this.bunifuButton1.AllowAnimations = true;
@@ -1912,7 +1911,6 @@
             this.bunifuButton1.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButton1.UseDefaultRadiusAndThickness = true;
             this.bunifuButton1.Click += new System.EventHandler(this.bunifuButton1_Click);
-=======
             // bunifuSnackbar1
             // 
             this.bunifuSnackbar1.AllowDragging = false;
@@ -1981,7 +1979,6 @@
             this.bunifuSnackbar1.WarningOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon3")));
             this.bunifuSnackbar1.WarningOptions.IconLeftMargin = 12;
             this.bunifuSnackbar1.ZoomCloseIcon = true;
->>>>>>> a4a29fbbf4c2af32b2b0837bd6b3b307627da8e1
             // 
             // FormMainPatient
             // 
@@ -2030,10 +2027,7 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButtonPatientDelete;
         private System.Windows.Forms.PictureBox pictureBox8;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButtonPatientEdit;
-<<<<<<< HEAD
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton1;
-=======
         private Bunifu.UI.WinForms.BunifuSnackbar bunifuSnackbar1;
->>>>>>> a4a29fbbf4c2af32b2b0837bd6b3b307627da8e1
     }
 }
