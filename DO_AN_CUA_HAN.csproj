@@ -289,6 +289,12 @@
       <DependentUpon>Report.xsd</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="View\FormResetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormResetPassword.Designer.cs">
+      <DependentUpon>FormResetPassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FormMainReport.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -421,6 +427,9 @@
     <Compile Include="View\FormRoleFunctionDetail.Designer.cs">
       <DependentUpon>FormRoleFunctionDetail.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\FormResetPassword.resx">
+      <DependentUpon>FormResetPassword.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\FormMainDisease.resx">
       <DependentUpon>FormMainDisease.cs</DependentUpon>
     </EmbeddedResource>
@@ -722,18 +731,6 @@
     <EmbeddedResource Include="View\FormStaffDetail.resx">
       <DependentUpon>FormStaffDetail.cs</DependentUpon>
     </EmbeddedResource>
-    <Compile Include="View\ImportHInh.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="View\ImportHInh.Designer.cs">
-      <DependentUpon>ImportHInh.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\XemHinhAnh.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="View\XemHinhAnh.Designer.cs">
-      <DependentUpon>XemHinhAnh.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Chart\FormBarChart.resx">
       <DependentUpon>FormBarChart.cs</DependentUpon>
     </EmbeddedResource>
