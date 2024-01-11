@@ -135,7 +135,7 @@ namespace DO_AN_CUA_HAN.View
                         if (HospitalizationCertificate.DeleteHC(hcID) > 0)
                         {
                             bunifuSnackbar1.Show(Form.ActiveForm, "Xóa giấy nhập viện thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Information, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                            returrn;
+                            return;
                         }
                     }
 
