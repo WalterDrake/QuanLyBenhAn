@@ -312,7 +312,7 @@ namespace DO_AN_CUA_HAN.View
         {
             FormStaffDetail formSD = new FormStaffDetail("personalEdit", loginStaff);
             formSD.ShowDialog();
-        }**+*
+        }
         private void tabItemStatistics_Click(object sender, EventArgs e)
         {
             bunifuShadowPanel3.Controls.Clear();
