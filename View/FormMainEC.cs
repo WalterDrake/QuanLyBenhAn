@@ -98,11 +98,11 @@ namespace DO_AN_CUA_HAN.View
                     if (ExaminationCertificate.GetEC(ecID).State != 1)
                     {
                         if (ExaminationCertificate.DeleteEC(ecID) > 0)
-                            MessageBox.Show("Xóa phiếu khám bệnh thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            bunifuSnackbar1.Show(Form.ActiveForm, "Xóa phiếu khám bệnh thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Information, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                     }
                     else
                     {
-                        MessageBox.Show("Không thể xóa phiếu khám bệnh này", "Lỗi dữ liệu", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        bunifuSnackbar1.Show(Form.ActiveForm, "Không thể xóa phiếu khám bệnh này", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                     }
                 }
                 refreshDataViewExamination();
@@ -129,7 +129,7 @@ namespace DO_AN_CUA_HAN.View
             }
             catch
             {
-                MessageBox.Show("Loiiiii");
+                bunifuSnackbar1.Show(Form.ActiveForm, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
             }
         }
 
@@ -180,7 +180,7 @@ namespace DO_AN_CUA_HAN.View
             }
             catch
             {
-                MessageBox.Show("Lỗi dữ liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                bunifuSnackbar1.Show(Form.ActiveForm, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
             }
         }
 

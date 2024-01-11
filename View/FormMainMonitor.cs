@@ -49,7 +49,7 @@ namespace DO_AN_CUA_HAN.View
             }
             catch
             {
-                MessageBox.Show("Lỗi dữ liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                bunifuSnackbar1.Show(Form.ActiveForm, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
             }
         }
         //Search in datagridview
@@ -98,11 +98,11 @@ namespace DO_AN_CUA_HAN.View
                     try
                     {
                         if (HeathMonitoringNote.DeleteHN(heathNoteID) > 0)
-                            MessageBox.Show("Xóa phiếu theo dõi thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            bunifuSnackbar1.Show(Form.ActiveForm, "Xóa phiếu theo dõi thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                     }
                     catch
                     {
-                        MessageBox.Show("Không xóa phiếu theo dõi này", "Lỗi dữ liệu", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        bunifuSnackbar1.Show(Form.ActiveForm, "Không xóa phiếu theo dõi này", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                     }
                 }
 

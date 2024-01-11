@@ -1,4 +1,5 @@
-﻿using DO_AN_CUA_HAN.Model;
+﻿using Bunifu.UI.WinForms;
+using DO_AN_CUA_HAN.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -72,7 +73,7 @@ namespace DO_AN_CUA_HAN.View
             }
             catch (SqlException exception)
             {
-                MessageBox.Show(exception.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                bunifuSnackbar1.Show(Form.ActiveForm, "Thông báo", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
             }
         }
 
@@ -129,7 +130,7 @@ namespace DO_AN_CUA_HAN.View
                         reportForm.ObjectID = billDetail.BillID;
                         break;
                     default:
-                        MessageBox.Show("Vui lòng chọn hóa đơn để in!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        bunifuSnackbar1.Show(Form.ActiveForm, "Vui lòng chọn hóa đơn để in!", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                         return;
                 }
 

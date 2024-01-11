@@ -63,7 +63,7 @@ namespace DO_AN_CUA_HAN.View
                 }
                 catch
                 {
-                    MessageBox.Show("Lỗi dữ liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    bunifuSnackbar1.Show(Form.ActiveForm, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                 }
 
                 // Refresh datagridview after delete
@@ -102,7 +102,7 @@ namespace DO_AN_CUA_HAN.View
             }
             catch
             {
-                MessageBox.Show("Lỗi dữ liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                bunifuSnackbar1.Show(Form.ActiveForm, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
             }
         }
 
@@ -174,12 +174,12 @@ namespace DO_AN_CUA_HAN.View
                     }
                     else
                     {
-                        MessageBox.Show("Bệnh nhân đã có bệnh án", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        bunifuSnackbar1.Show(Form.ActiveForm, "Bệnh nhân đã có bệnh án", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Bệnh nhân chưa nhập viện", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    bunifuSnackbar1.Show(Form.ActiveForm, "Bệnh nhân chưa nhập viện", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                 }
             }
         }
@@ -200,7 +200,7 @@ namespace DO_AN_CUA_HAN.View
                 }
                 else
                 {
-                    MessageBox.Show("Bệnh nhân chưa nhập viện", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    bunifuSnackbar1.Show(Form.ActiveForm, "Bệnh nhân chưa nhập viện", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                 }
             }
         }
@@ -228,7 +228,7 @@ namespace DO_AN_CUA_HAN.View
                 int staffID = loginStaff.StaffID;
                 if (HospitalizationCertificate.IsPatientHadHC(patientID))
                 {
-                    MessageBox.Show("Bệnh nhân đã có giấy nhập viện", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    bunifuSnackbar1.Show(Form.ActiveForm, "Bệnh nhân đã có giấy nhập viện", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                 }
                 else
                 {
@@ -253,7 +253,7 @@ namespace DO_AN_CUA_HAN.View
                 }
                 else
                 {
-                    MessageBox.Show("Bệnh nhân chưa nhập viện", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    bunifuSnackbar1.Show(Form.ActiveForm, "Bệnh nhân chưa nhập viện", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                 }
             }
         }
@@ -271,7 +271,7 @@ namespace DO_AN_CUA_HAN.View
                 }
                 else
                 {
-                    MessageBox.Show("Bệnh nhân chưa nhập viện nên không thể thực hiện phẩu thuật", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    bunifuSnackbar1.Show(Form.ActiveForm, "Bệnh nhân chưa nhập viện nên không thể thực hiện phẩu thuật", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                 }
             }
         }
@@ -285,7 +285,7 @@ namespace DO_AN_CUA_HAN.View
                 {
                     if (Assignment.IsPatientHadAssignment(patientID))
                     {
-                        MessageBox.Show("Bệnh nhân đã được phân công chăm sóc", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        bunifuSnackbar1.Show(Form.ActiveForm, "Bệnh nhân đã được phân công chăm sóc", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                     }
                     else
                     {
@@ -295,7 +295,7 @@ namespace DO_AN_CUA_HAN.View
                 }
                 else
                 {
-                    MessageBox.Show("Bệnh nhân chưa nhập viện", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    bunifuSnackbar1.Show(Form.ActiveForm, "Bệnh nhân chưa nhập viện", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                 }
             }
         }
@@ -329,7 +329,7 @@ namespace DO_AN_CUA_HAN.View
                 }
                 else
                 {
-                    MessageBox.Show("Bệnh nhân chưa nhập viện nên không được phép mượn vật tư", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    bunifuSnackbar1.Show(Form.ActiveForm, "Bệnh nhân chưa nhập viện nên không được phép mượn vật tư", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                 }
             }
         }
@@ -398,7 +398,7 @@ namespace DO_AN_CUA_HAN.View
                 }
                 else
                 {
-                    MessageBox.Show("Chỉ thanh toán viện phí cho bệnh nhân nhập viện", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    bunifuSnackbar1.Show(Form.ActiveForm, "Chỉ thanh toán viện phí cho bệnh nhân nhập viện", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                 }
             }
         }

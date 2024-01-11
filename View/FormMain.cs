@@ -100,7 +100,6 @@ namespace DO_AN_CUA_HAN.View
 
         }
 
-
         private void tabItemHealthFile_Click(object sender, EventArgs e)
         {
             bunifuShadowPanel3.Hide();
@@ -201,8 +200,6 @@ namespace DO_AN_CUA_HAN.View
 
         }
 
-
-
         private void tabItemTest_Click(object sender, EventArgs e)
         {
             bunifuShadowPanel3.Hide();
@@ -238,7 +235,6 @@ namespace DO_AN_CUA_HAN.View
             bunifuShadowPanel3.Controls.Add(formMainBed);
             bunifuShadowPanel3.Show();
             formMainBed.tabItemBed_Click();
-
         }
 
         private void tabItemService_Click(object sender, EventArgs e)
@@ -288,7 +284,7 @@ namespace DO_AN_CUA_HAN.View
         {
             bunifuShadowPanel3.Hide();
             bunifuShadowPanel3.Controls.Clear();
-            FormMainRole formMainRole = new FormMainRole();///
+            FormMainRole formMainRole = new FormMainRole();
             bunifuShadowPanel3.Controls.Add(formMainRole);
             bunifuShadowPanel3.Show();
             formMainRole.tabItemRole_Click();
@@ -346,6 +342,8 @@ namespace DO_AN_CUA_HAN.View
                 }
             }
         }
+       
+
         private void mouse_Down(object sender, MouseEventArgs e)
         {
             mouseLocation = new Point(-e.X, -e.Y);
