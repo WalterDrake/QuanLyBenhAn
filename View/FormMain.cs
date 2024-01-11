@@ -35,7 +35,7 @@ namespace DO_AN_CUA_HAN.View
             bunifuSnackbar1.Show(this, "Đăng nhập thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
             GetStaffInformation();
         }
-        private void GetStaffInformation()
+        private void GetStaffInformation() // Avatar
         {
 
             DataTable dtb;
@@ -70,29 +70,32 @@ namespace DO_AN_CUA_HAN.View
 
         private void tabItemMedicine_Click(object sender, EventArgs e)
         {
-             bunifuShadowPanel3.Controls.Clear();
+            bunifuShadowPanel3.Hide();
+            bunifuShadowPanel3.Controls.Clear();
              FormMainMedicine formMainMedicine = new FormMainMedicine();
-             bunifuShadowPanel3.Controls.Add(formMainMedicine);           
-             formMainMedicine.tabItemMedicine_Click();
-
-
+             bunifuShadowPanel3.Controls.Add(formMainMedicine);
+            bunifuShadowPanel3.Show();
+            formMainMedicine.tabItemMedicine_Click();
         }
 
         private void tabItemPatient_Click(object sender, EventArgs e)
         {
+            bunifuShadowPanel3.Hide();
             bunifuShadowPanel3.Controls.Clear();
-             FormMainPatient formMainPatient = new FormMainPatient(loginStaff);
+            FormMainPatient formMainPatient = new FormMainPatient(loginStaff);
              bunifuShadowPanel3.Controls.Add(formMainPatient);
+            bunifuShadowPanel3.Show();
              formMainPatient.tabItemPatient();
 
         }
 
         private void tabItemStaff_Click(object sender, EventArgs e)
         {
+            bunifuShadowPanel3.Hide();
             bunifuShadowPanel3.Controls.Clear();
             FormMainStaff formMainStaff = new FormMainStaff();
-
             bunifuShadowPanel3.Controls.Add(formMainStaff);
+            bunifuShadowPanel3.Show();
             formMainStaff.tabItemStaff_Click();
 
         }
@@ -100,9 +103,11 @@ namespace DO_AN_CUA_HAN.View
 
         private void tabItemHealthFile_Click(object sender, EventArgs e)
         {
+            bunifuShadowPanel3.Hide();
             bunifuShadowPanel3.Controls.Clear();
             FormMainHF formMainHF = new FormMainHF();
             bunifuShadowPanel3.Controls.Add(formMainHF);
+            bunifuShadowPanel3.Show();
             formMainHF.tabItemHealthFile_Click();
 
 
@@ -110,83 +115,88 @@ namespace DO_AN_CUA_HAN.View
 
         private void tabItemExamination_Click(object sender, EventArgs e)
         {
+            bunifuShadowPanel3.Hide();
             bunifuShadowPanel3.Controls.Clear();
             FormMainEC formMainEC = new FormMainEC(loginStaff);
-
             bunifuShadowPanel3.Controls.Add(formMainEC);
+            bunifuShadowPanel3.Show();
             formMainEC.tabItemExamination_Click();
 
         }
 
         private void tabItemBill_Click(object sender, EventArgs e)
         {
+            bunifuShadowPanel3.Hide();
             bunifuShadowPanel3.Controls.Clear();
             FormMainBill formMainBill = new FormMainBill();
-
             bunifuShadowPanel3.Controls.Add(formMainBill);
+            bunifuShadowPanel3.Show();
             formMainBill.tabPanelBill();
 
         }
 
         private void tabItemAssignment_Click(object sender, EventArgs e)
         {
+            bunifuShadowPanel3.Hide();
             bunifuShadowPanel3.Controls.Clear();
             FormMainAssignment formMainAS = new FormMainAssignment();
-
             bunifuShadowPanel3.Controls.Add(formMainAS);
+            bunifuShadowPanel3.Show();
             formMainAS.tabItemAssignment_Click();
 
         }
 
         private void tabItemDeptMajor_Click(object sender, EventArgs e)
         {
+            bunifuShadowPanel3.Hide();
             bunifuShadowPanel3.Controls.Clear();
             FormMainDeptMajor formMainMajor = new FormMainDeptMajor();
-
             bunifuShadowPanel3.Controls.Add(formMainMajor);
+            bunifuShadowPanel3.Show();
             formMainMajor.tabItemDeptMajor_Click();
 
         }
 
         private void tabItemSurgery_Click(object sender, EventArgs e)
         {
+            bunifuShadowPanel3.Hide();
             bunifuShadowPanel3.Controls.Clear();
             FormMainSurgery formMainSurgery = new FormMainSurgery();
-
             bunifuShadowPanel3.Controls.Add(formMainSurgery);
+            bunifuShadowPanel3.Show();
             formMainSurgery.tabItemSurgery_Click();
 
         }
         
         private void tabItemDisease_Click(object sender, EventArgs e)
         {
+            bunifuShadowPanel3.Hide();
             bunifuShadowPanel3.Controls.Clear();
             FormMainDisease formMainDisease = new FormMainDisease();
-
             bunifuShadowPanel3.Controls.Add(formMainDisease);
+            bunifuShadowPanel3.Show();
             formMainDisease.tabItemDisease_Click();
 
         }
 
         private void tabItemHospitalization_Click(object sender, EventArgs e)
         {
+            bunifuShadowPanel3.Hide();
             bunifuShadowPanel3.Controls.Clear();
             FormMainHospitalization formMainHospitalization = new FormMainHospitalization();
-
             bunifuShadowPanel3.Controls.Add(formMainHospitalization);
+            bunifuShadowPanel3.Show();
            formMainHospitalization.tabItemHospitalization_Click();
 
         }
 
         private void tabItemMonitor_Click(object sender, EventArgs e)
         {
+            bunifuShadowPanel3.Hide();
             bunifuShadowPanel3.Controls.Clear();
             FormMainMonitor formMainMonitor = new FormMainMonitor();
-
             bunifuShadowPanel3.Controls.Add(formMainMonitor);
-            // Thiết lập vị trí ban đầu của đối tượng và vị trí đích
-
-
+            bunifuShadowPanel3.Show();
             formMainMonitor.tabItemMonitor_Click();
 
         }
@@ -195,10 +205,11 @@ namespace DO_AN_CUA_HAN.View
 
         private void tabItemTest_Click(object sender, EventArgs e)
         {
+            bunifuShadowPanel3.Hide();
             bunifuShadowPanel3.Controls.Clear();
             FormMainTest formMainTest = new FormMainTest();
-
             bunifuShadowPanel3.Controls.Add(formMainTest);
+            bunifuShadowPanel3.Show();
             formMainTest.tabItemTest_Click();
 
         }
@@ -210,73 +221,76 @@ namespace DO_AN_CUA_HAN.View
 
         private void tabItemFunction_Click(object sender, EventArgs e)
         {
+            bunifuShadowPanel3.Hide();
             bunifuShadowPanel3.Controls.Clear();
             FormMainRoleFunction formMainRoleFunction = new FormMainRoleFunction();
-
             bunifuShadowPanel3.Controls.Add(formMainRoleFunction);
+            bunifuShadowPanel3.Show();
             formMainRoleFunction.tabItemFunction_Click();
 
         }
 
         private void tabItemBed_Click(object sender, EventArgs e)
         {
+            bunifuShadowPanel3.Hide();
             bunifuShadowPanel3.Controls.Clear();
             FormMainBed formMainBed = new FormMainBed();
-
             bunifuShadowPanel3.Controls.Add(formMainBed);
+            bunifuShadowPanel3.Show();
             formMainBed.tabItemBed_Click();
 
         }
 
         private void tabItemService_Click(object sender, EventArgs e)
         {
+            bunifuShadowPanel3.Hide();
             bunifuShadowPanel3.Controls.Clear();
             FormMainService formMainService = new FormMainService();
-
             bunifuShadowPanel3.Controls.Add(formMainService);
-            // Thiết lập vị trí ban đầu của đối tượng và vị trí đích
-
-
+            bunifuShadowPanel3.Show();
             formMainService.tabItemService_Click();
 
         }
 
         private void tabItemPrescpition_Click(object sender, EventArgs e)
         {
+            bunifuShadowPanel3.Hide();
             bunifuShadowPanel3.Controls.Clear();
             FormMainPrescription formMainPrescription = new FormMainPrescription();
-
             bunifuShadowPanel3.Controls.Add(formMainPrescription);
+            bunifuShadowPanel3.Show();
             formMainPrescription.tabItemPrescpition_Click();
 
         }
 
         private void tabItemMaterial_Click(object sender, EventArgs e)
         {
+            bunifuShadowPanel3.Hide();
             bunifuShadowPanel3.Controls.Clear();
             FormMainMaterial formMainMaterial= new FormMainMaterial();
-
             bunifuShadowPanel3.Controls.Add(formMainMaterial);
+            bunifuShadowPanel3.Show();
             formMainMaterial.tabItemMaterial_Click();
 
         }
         private void tabItemDischarged_Click(object sender, EventArgs e)
         {
+            bunifuShadowPanel3.Hide();
             bunifuShadowPanel3.Controls.Clear();
             FormMainDischarged formMainDischarged = new FormMainDischarged();
-
             bunifuShadowPanel3.Controls.Add(formMainDischarged);
+            bunifuShadowPanel3.Show();
             formMainDischarged.tabItemDischarged_Click();
 
         }
 
         private void tabItemRole_Click(object sender, EventArgs e)
         {
-
+            bunifuShadowPanel3.Hide();
             bunifuShadowPanel3.Controls.Clear();
-            FormMainRole formMainRole = new FormMainRole();
-
+            FormMainRole formMainRole = new FormMainRole();///
             bunifuShadowPanel3.Controls.Add(formMainRole);
+            bunifuShadowPanel3.Show();
             formMainRole.tabItemRole_Click();
 
         }
@@ -298,7 +312,7 @@ namespace DO_AN_CUA_HAN.View
         {
             FormStaffDetail formSD = new FormStaffDetail("personalEdit", loginStaff);
             formSD.ShowDialog();
-        }
+        }**+*
         private void tabItemStatistics_Click(object sender, EventArgs e)
         {
             bunifuShadowPanel3.Controls.Clear();

@@ -49,7 +49,7 @@ namespace DO_AN_CUA_HAN.View
         }
         private void SetHCDetail(int staffID, int patientID)
         {
-            bunifuTextBoxHICD.Text = patientID.ToString();
+            bunifuTextBoxPatientID.Text = patientID.ToString();
             bunifuTextBoxStaffID.Text = staffID.ToString();
             bunifuDropdownState.Enabled = false;
             bunifuDropdownState.SelectedIndex = 0;
