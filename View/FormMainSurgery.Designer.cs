@@ -467,7 +467,7 @@
             this.bunifuDataGridViewSurgeryDetail.EnableHeadersVisualStyles = false;
             this.bunifuDataGridViewSurgeryDetail.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(184)))), ((int)(((byte)(196)))));
             this.bunifuDataGridViewSurgeryDetail.HeaderBackColor = System.Drawing.Color.Crimson;
-            this.bunifuDataGridViewSurgeryDetail.HeaderBgColor = System.Drawing.Color.Empty;
+            this.bunifuDataGridViewSurgeryDetail.HeaderBackColor = System.Drawing.Color.Empty;
             this.bunifuDataGridViewSurgeryDetail.HeaderForeColor = System.Drawing.Color.White;
             this.bunifuDataGridViewSurgeryDetail.Location = new System.Drawing.Point(522, 166);
             this.bunifuDataGridViewSurgeryDetail.Name = "bunifuDataGridViewSurgeryDetail";
@@ -560,7 +560,7 @@
             this.bunifuDataGridViewSurgery.EnableHeadersVisualStyles = false;
             this.bunifuDataGridViewSurgery.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(184)))), ((int)(((byte)(196)))));
             this.bunifuDataGridViewSurgery.HeaderBackColor = System.Drawing.Color.Crimson;
-            this.bunifuDataGridViewSurgery.HeaderBgColor = System.Drawing.Color.Empty;
+            this.bunifuDataGridViewSurgery.HeaderBackColor = System.Drawing.Color.Empty;
             this.bunifuDataGridViewSurgery.HeaderForeColor = System.Drawing.Color.White;
             this.bunifuDataGridViewSurgery.Location = new System.Drawing.Point(32, 166);
             this.bunifuDataGridViewSurgery.Name = "bunifuDataGridViewSurgery";

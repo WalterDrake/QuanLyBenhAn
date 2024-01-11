@@ -339,7 +339,7 @@
             this.bunifuDataGridViewHealthNote.EnableHeadersVisualStyles = false;
             this.bunifuDataGridViewHealthNote.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(184)))), ((int)(((byte)(196)))));
             this.bunifuDataGridViewHealthNote.HeaderBackColor = System.Drawing.Color.Crimson;
-            this.bunifuDataGridViewHealthNote.HeaderBgColor = System.Drawing.Color.Empty;
+            this.bunifuDataGridViewHealthNote.HeaderBackColor = System.Drawing.Color.Empty;
             this.bunifuDataGridViewHealthNote.HeaderForeColor = System.Drawing.Color.White;
             this.bunifuDataGridViewHealthNote.Location = new System.Drawing.Point(29, 102);
             this.bunifuDataGridViewHealthNote.Name = "bunifuDataGridViewHealthNote";

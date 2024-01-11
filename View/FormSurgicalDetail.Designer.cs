@@ -305,7 +305,7 @@
             this.bunifuImageButtonInsertFunction.FadeWhenInactive = true;
             this.bunifuImageButtonInsertFunction.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
             this.bunifuImageButtonInsertFunction.Image = global::DO_AN_CUA_HAN.Properties.Resources._81328514_removebg_preview;
-            this.bunifuImageButtonInsertFunction.ImageActive = null;
+            this.bunifuImageButtonInsertFunction.ActiveImage = null;
             this.bunifuImageButtonInsertFunction.ImageLocation = null;
             this.bunifuImageButtonInsertFunction.ImageMargin = 40;
             this.bunifuImageButtonInsertFunction.ImageSize = new System.Drawing.Size(112, 87);
@@ -323,7 +323,7 @@
             this.bunifuImageButtonInsertFunction.TabIndex = 61;
             this.bunifuImageButtonInsertFunction.ToolTipText = "";
             this.bunifuImageButtonInsertFunction.WaitOnLoad = false;
-            this.bunifuImageButtonInsertFunction.Zoom = 40;
+            this.bunifuImageButtonInsertFunction.ImageMargin = 40;
             this.bunifuImageButtonInsertFunction.ZoomSpeed = 10;
             this.bunifuImageButtonInsertFunction.Click += new System.EventHandler(this.bunifuImageButtonInsertFunction_Click);
             // 
@@ -966,7 +966,7 @@
             this.bunifuImageButtonRemoveFunction.FadeWhenInactive = true;
             this.bunifuImageButtonRemoveFunction.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
             this.bunifuImageButtonRemoveFunction.Image = global::DO_AN_CUA_HAN.Properties.Resources._81328524_removebg_preview;
-            this.bunifuImageButtonRemoveFunction.ImageActive = null;
+            this.bunifuImageButtonRemoveFunction.ActiveImage = null;
             this.bunifuImageButtonRemoveFunction.ImageLocation = null;
             this.bunifuImageButtonRemoveFunction.ImageMargin = 40;
             this.bunifuImageButtonRemoveFunction.ImageSize = new System.Drawing.Size(112, 87);
@@ -984,7 +984,7 @@
             this.bunifuImageButtonRemoveFunction.TabIndex = 60;
             this.bunifuImageButtonRemoveFunction.ToolTipText = "";
             this.bunifuImageButtonRemoveFunction.WaitOnLoad = false;
-            this.bunifuImageButtonRemoveFunction.Zoom = 40;
+            this.bunifuImageButtonRemoveFunction.ImageMargin = 40;
             this.bunifuImageButtonRemoveFunction.ZoomSpeed = 10;
             this.bunifuImageButtonRemoveFunction.Click += new System.EventHandler(this.bunifuImageButtonRemoveFunction_Click);
             // 

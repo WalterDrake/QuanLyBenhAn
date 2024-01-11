@@ -574,7 +574,7 @@
             this.bunifuDataGridViewPatient.EnableHeadersVisualStyles = false;
             this.bunifuDataGridViewPatient.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(184)))), ((int)(((byte)(196)))));
             this.bunifuDataGridViewPatient.HeaderBackColor = System.Drawing.Color.Crimson;
-            this.bunifuDataGridViewPatient.HeaderBgColor = System.Drawing.Color.Empty;
+            this.bunifuDataGridViewPatient.HeaderBackColor = System.Drawing.Color.Empty;
             this.bunifuDataGridViewPatient.HeaderForeColor = System.Drawing.Color.White;
             this.bunifuDataGridViewPatient.Location = new System.Drawing.Point(23, 82);
             this.bunifuDataGridViewPatient.Name = "bunifuDataGridViewPatient";

@@ -450,7 +450,7 @@
             this.bunifuDataGridViewTCDetail.EnableHeadersVisualStyles = false;
             this.bunifuDataGridViewTCDetail.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(184)))), ((int)(((byte)(196)))));
             this.bunifuDataGridViewTCDetail.HeaderBackColor = System.Drawing.Color.Crimson;
-            this.bunifuDataGridViewTCDetail.HeaderBgColor = System.Drawing.Color.Empty;
+            this.bunifuDataGridViewTCDetail.HeaderBackColor = System.Drawing.Color.Empty;
             this.bunifuDataGridViewTCDetail.HeaderForeColor = System.Drawing.Color.White;
             this.bunifuDataGridViewTCDetail.Location = new System.Drawing.Point(527, 167);
             this.bunifuDataGridViewTCDetail.Name = "bunifuDataGridViewTCDetail";
@@ -544,7 +544,7 @@
             this.bunifuDataGridViewTC.EnableHeadersVisualStyles = false;
             this.bunifuDataGridViewTC.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(184)))), ((int)(((byte)(196)))));
             this.bunifuDataGridViewTC.HeaderBackColor = System.Drawing.Color.Crimson;
-            this.bunifuDataGridViewTC.HeaderBgColor = System.Drawing.Color.Empty;
+            this.bunifuDataGridViewTC.HeaderBackColor = System.Drawing.Color.Empty;
             this.bunifuDataGridViewTC.HeaderForeColor = System.Drawing.Color.White;
             this.bunifuDataGridViewTC.Location = new System.Drawing.Point(33, 167);
             this.bunifuDataGridViewTC.Name = "bunifuDataGridViewTC";

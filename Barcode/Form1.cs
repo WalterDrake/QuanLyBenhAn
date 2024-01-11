@@ -67,7 +67,7 @@ namespace DO_AN_CUA_HAN.Barcode
                 }
                 catch (Exception ex)
                 {
-
+                    MessageBox.Show(ex.Message);
                 }
             }
         }
