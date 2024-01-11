@@ -115,7 +115,7 @@ namespace DO_AN_CUA_HAN.View
             }
         }
 
-        private void bunifuButtonDepartmentEdit_Click(object sender, EventArgs e)
+        private void bunifuButtonDepartment_Click(object sender, EventArgs e)
         {
             if (bunifuDataGridViewDeparment.SelectedRows.Count > 0)
             {
