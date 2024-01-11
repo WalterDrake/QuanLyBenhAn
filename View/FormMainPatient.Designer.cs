@@ -80,11 +80,8 @@
             this.bunifuButtonPatientTest = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuButtonPrescription = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuButtonPatientExamination = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-<<<<<<< HEAD
             this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-=======
             this.bunifuSnackbar1 = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
->>>>>>> a4a29fbbf4c2af32b2b0837bd6b3b307627da8e1
             this.bunifuShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
