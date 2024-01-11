@@ -36,7 +36,6 @@
             this.bunifuGradientPanel1_FormMain = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.bunifuShadowPanel2 = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.tabMain = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.pictureBoxInformation = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.tabItemBed = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.ItemBed = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPictureBox23 = new Bunifu.UI.WinForms.BunifuPictureBox();
@@ -100,6 +99,7 @@
             this.tabItemMedicine = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.ItemMedicine = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPictureBox2 = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.pictureBoxInformation = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuShadowPanel3 = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.header = new Bunifu.UI.WinForms.BunifuPanel();
             this.controlBox = new Bunifu.UI.WinForms.BunifuPanel();
@@ -108,7 +108,6 @@
             this.bunifuAccount = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuGradientPanel1_FormMain.SuspendLayout();
             this.tabMain.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxInformation)).BeginInit();
             this.tabItemBed.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox23)).BeginInit();
             this.tabItemMaterial.SuspendLayout();
@@ -151,6 +150,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.tabItemMedicine.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxInformation)).BeginInit();
             this.header.SuspendLayout();
             this.controlBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Exit)).BeginInit();
@@ -364,25 +364,6 @@
             this.bunifuToolTip1.SetToolTip(this.tabMain, "");
             this.bunifuToolTip1.SetToolTipIcon(this.tabMain, null);
             this.bunifuToolTip1.SetToolTipTitle(this.tabMain, "");
-            // 
-            // pictureBoxInformation
-            // 
-            this.pictureBoxInformation.AllowFocused = false;
-            this.pictureBoxInformation.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBoxInformation.AutoSizeHeight = true;
-            this.pictureBoxInformation.BorderRadius = 0;
-            this.pictureBoxInformation.Image = global::DO_AN_CUA_HAN.Properties.Resources.handdrawn_vector_61_removebg_preview;
-            this.pictureBoxInformation.IsCircle = true;
-            this.pictureBoxInformation.Location = new System.Drawing.Point(10, 0);
-            this.pictureBoxInformation.Name = "pictureBoxInformation";
-            this.pictureBoxInformation.Size = new System.Drawing.Size(93, 93);
-            this.pictureBoxInformation.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxInformation.TabIndex = 26;
-            this.pictureBoxInformation.TabStop = false;
-            this.bunifuToolTip1.SetToolTip(this.pictureBoxInformation, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.pictureBoxInformation, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.pictureBoxInformation, "");
-            this.pictureBoxInformation.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
             // 
             // tabItemBed
             // 
@@ -797,7 +778,7 @@
             this.tabItemTest.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
             this.tabItemTest.ForeColor = System.Drawing.Color.DarkKhaki;
             this.tabItemTest.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.tabItemTest.Location = new System.Drawing.Point(143, 354);
+            this.tabItemTest.Location = new System.Drawing.Point(143, 355);
             this.tabItemTest.Name = "tabItemTest";
             this.tabItemTest.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
             this.tabItemTest.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
@@ -1790,6 +1771,25 @@
             this.bunifuToolTip1.SetToolTipTitle(this.bunifuPictureBox2, "");
             this.bunifuPictureBox2.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
+            // pictureBoxInformation
+            // 
+            this.pictureBoxInformation.AllowFocused = false;
+            this.pictureBoxInformation.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBoxInformation.AutoSizeHeight = true;
+            this.pictureBoxInformation.BorderRadius = 0;
+            this.pictureBoxInformation.Image = global::DO_AN_CUA_HAN.Properties.Resources.handdrawn_vector_61_removebg_preview;
+            this.pictureBoxInformation.IsCircle = true;
+            this.pictureBoxInformation.Location = new System.Drawing.Point(10, 0);
+            this.pictureBoxInformation.Name = "pictureBoxInformation";
+            this.pictureBoxInformation.Size = new System.Drawing.Size(93, 93);
+            this.pictureBoxInformation.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxInformation.TabIndex = 26;
+            this.pictureBoxInformation.TabStop = false;
+            this.bunifuToolTip1.SetToolTip(this.pictureBoxInformation, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.pictureBoxInformation, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.pictureBoxInformation, "");
+            this.pictureBoxInformation.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            // 
             // bunifuShadowPanel3
             // 
             this.bunifuShadowPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -1935,7 +1935,6 @@
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.bunifuGradientPanel1_FormMain.ResumeLayout(false);
             this.tabMain.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxInformation)).EndInit();
             this.tabItemBed.ResumeLayout(false);
             this.tabItemBed.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox23)).EndInit();
@@ -1999,6 +1998,7 @@
             this.tabItemMedicine.ResumeLayout(false);
             this.tabItemMedicine.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxInformation)).EndInit();
             this.header.ResumeLayout(false);
             this.controlBox.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Exit)).EndInit();

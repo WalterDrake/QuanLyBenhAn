@@ -311,24 +311,24 @@ namespace DO_AN_CUA_HAN.View
             indexlist.Add(Tuple.Create(15, 83));
             indexlist.Add(Tuple.Create(183, 83));
             indexlist.Add(Tuple.Create(15, 139));
-            indexlist.Add(Tuple.Create(15, 139));
             indexlist.Add(Tuple.Create(138, 139));
             indexlist.Add(Tuple.Create(15, 196));
             indexlist.Add(Tuple.Create(138, 196));
-            indexlist.Add(Tuple.Create(15, 139));
-            indexlist.Add(Tuple.Create(15, 139));
-            indexlist.Add(Tuple.Create(15, 139));
-            indexlist.Add(Tuple.Create(15, 139));
-            indexlist.Add(Tuple.Create(15, 139));
-            indexlist.Add(Tuple.Create(15, 139));
-            indexlist.Add(Tuple.Create(15, 139));
-            indexlist.Add(Tuple.Create(15, 139));
-            indexlist.Add(Tuple.Create(15, 139));
-            indexlist.Add(Tuple.Create(15, 139));
-            indexlist.Add(Tuple.Create(15, 139));
-            indexlist.Add(Tuple.Create(15, 139));
-            indexlist.Add(Tuple.Create(15, 139));
-            indexlist.Add(Tuple.Create(15, 139));
+            indexlist.Add(Tuple.Create(15, 253));
+            indexlist.Add(Tuple.Create(138, 253));
+            indexlist.Add(Tuple.Create(15, 305));
+            indexlist.Add(Tuple.Create(138, 305));
+            indexlist.Add(Tuple.Create(15, 335));
+            indexlist.Add(Tuple.Create(143, 354));
+            indexlist.Add(Tuple.Create(15, 405));
+            indexlist.Add(Tuple.Create(138, 405));
+            indexlist.Add(Tuple.Create(18, 454));
+            indexlist.Add(Tuple.Create(139, 454));
+            indexlist.Add(Tuple.Create(14, 501));
+            indexlist.Add(Tuple.Create(141, 501));
+            indexlist.Add(Tuple.Create(17, 547));
+            indexlist.Add(Tuple.Create(143, 550));
+            indexlist.Add(Tuple.Create(75, 602));
             FormMainPatient formMainPatient = new FormMainPatient(loginStaff);
             bunifuShadowPanel3.Controls.Add(formMainPatient);
             formMainPatient.tabItemPatient();
@@ -336,8 +336,34 @@ namespace DO_AN_CUA_HAN.View
         }
         private void GrantRole()
         {
-            DataTable dtRoleDetail = RoleDetail.GetListStaffFunction(loginStaff.RoleID);
+            // Creating a list of tuples
+            List<Tuple<int, int>> indexlist = new List<Tuple<int, int>>();
 
+            // Adding tuples to the list
+            indexlist.Add(Tuple.Create(15, 83));
+            indexlist.Add(Tuple.Create(138, 83));
+            indexlist.Add(Tuple.Create(15, 139));
+            indexlist.Add(Tuple.Create(138, 139));
+            indexlist.Add(Tuple.Create(15, 196));
+            indexlist.Add(Tuple.Create(138, 196));
+            indexlist.Add(Tuple.Create(15, 253));
+            indexlist.Add(Tuple.Create(138, 253));
+            indexlist.Add(Tuple.Create(15, 305));
+            indexlist.Add(Tuple.Create(138, 305));
+            indexlist.Add(Tuple.Create(15, 355));
+            indexlist.Add(Tuple.Create(143, 354));
+            indexlist.Add(Tuple.Create(15, 405));
+            indexlist.Add(Tuple.Create(138, 405));
+            indexlist.Add(Tuple.Create(18, 454));
+            indexlist.Add(Tuple.Create(139, 454));
+            indexlist.Add(Tuple.Create(14, 501));
+            indexlist.Add(Tuple.Create(141, 501));
+            indexlist.Add(Tuple.Create(17, 547));
+            indexlist.Add(Tuple.Create(143, 550));
+            indexlist.Add(Tuple.Create(75, 602));
+
+            DataTable dtRoleDetail = RoleDetail.GetListStaffFunction(loginStaff.RoleID);
+            
             for (int i = 0; i < dtRoleDetail.Rows.Count; i++)
             {
                 string tabName = dtRoleDetail.Rows[i][2].ToString();
@@ -348,6 +374,7 @@ namespace DO_AN_CUA_HAN.View
                     {
                         // Set the visibility of the panel based on your condition (e.g., role)
                         panel.Visible = true;
+                        panel.Location = new Point(indexlist[i].Item1, indexlist[i].Item2);
                     }
                 }
             }
