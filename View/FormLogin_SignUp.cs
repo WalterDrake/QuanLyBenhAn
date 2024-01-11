@@ -124,6 +124,14 @@ namespace DO_AN_CUA_HAN.View
                 bunifuTextBoxPassword.PasswordChar = '*';
             }
         }
+
+        private void bunifuButtonSignUp_Click(object sender, EventArgs e)
+        {
+            FormResetPassword formResetPassword = new FormResetPassword();
+            formResetPassword.FormClosed += new FormClosedEventHandler(FormLogin_FormClosed);
+            formResetPassword.Show();
+            this.Hide();
+        }
     }
 }
 

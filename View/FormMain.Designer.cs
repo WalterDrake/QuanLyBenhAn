@@ -325,7 +325,6 @@
             this.tabMain.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.tabMain.BorderRadius = 40;
             this.tabMain.BorderThickness = 1;
-            this.tabMain.Controls.Add(this.pictureBoxInformation);
             this.tabMain.Controls.Add(this.tabItemBed);
             this.tabMain.Controls.Add(this.tabItemMaterial);
             this.tabMain.Controls.Add(this.tabItemService);
@@ -347,6 +346,7 @@
             this.tabMain.Controls.Add(this.tabItemHealthFile);
             this.tabMain.Controls.Add(this.tabItemPatient);
             this.tabMain.Controls.Add(this.tabItemMedicine);
+            this.tabMain.Controls.Add(this.pictureBoxInformation);
             this.tabMain.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Gradient;
             this.tabMain.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
             this.tabMain.Location = new System.Drawing.Point(18, 44);
@@ -370,19 +370,19 @@
             this.pictureBoxInformation.AllowFocused = false;
             this.pictureBoxInformation.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBoxInformation.AutoSizeHeight = true;
-            this.pictureBoxInformation.BorderRadius = 32;
-            this.pictureBoxInformation.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxInformation.Image")));
+            this.pictureBoxInformation.BorderRadius = 0;
+            this.pictureBoxInformation.Image = global::DO_AN_CUA_HAN.Properties.Resources.handdrawn_vector_61_removebg_preview;
             this.pictureBoxInformation.IsCircle = true;
-            this.pictureBoxInformation.Location = new System.Drawing.Point(23, 13);
+            this.pictureBoxInformation.Location = new System.Drawing.Point(10, 0);
             this.pictureBoxInformation.Name = "pictureBoxInformation";
-            this.pictureBoxInformation.Size = new System.Drawing.Size(64, 64);
+            this.pictureBoxInformation.Size = new System.Drawing.Size(93, 93);
             this.pictureBoxInformation.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxInformation.TabIndex = 26;
             this.pictureBoxInformation.TabStop = false;
             this.bunifuToolTip1.SetToolTip(this.pictureBoxInformation, "");
             this.bunifuToolTip1.SetToolTipIcon(this.pictureBoxInformation, null);
             this.bunifuToolTip1.SetToolTipTitle(this.pictureBoxInformation, "");
-            this.pictureBoxInformation.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
+            this.pictureBoxInformation.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
             // 
             // tabItemBed
             // 

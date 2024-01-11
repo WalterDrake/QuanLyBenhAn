@@ -24,6 +24,7 @@ namespace DO_AN_CUA_HAN.View
 
         private Staff loginStaff { get; set; }
         public Point mouseLocation;
+
         public FormMain()
         {
             InitializeComponent();
@@ -73,7 +74,7 @@ namespace DO_AN_CUA_HAN.View
             bunifuShadowPanel3.Hide();
             bunifuShadowPanel3.Controls.Clear();
              FormMainMedicine formMainMedicine = new FormMainMedicine();
-             bunifuShadowPanel3.Controls.Add(formMainMedicine);
+            bunifuShadowPanel3.Controls.Add(formMainMedicine);
             bunifuShadowPanel3.Show();
             formMainMedicine.tabItemMedicine_Click();
         }
@@ -100,7 +101,6 @@ namespace DO_AN_CUA_HAN.View
 
         }
 
-
         private void tabItemHealthFile_Click(object sender, EventArgs e)
         {
             bunifuShadowPanel3.Hide();
@@ -109,8 +109,6 @@ namespace DO_AN_CUA_HAN.View
             bunifuShadowPanel3.Controls.Add(formMainHF);
             bunifuShadowPanel3.Show();
             formMainHF.tabItemHealthFile_Click();
-
-
         }
 
         private void tabItemExamination_Click(object sender, EventArgs e)
@@ -121,7 +119,6 @@ namespace DO_AN_CUA_HAN.View
             bunifuShadowPanel3.Controls.Add(formMainEC);
             bunifuShadowPanel3.Show();
             formMainEC.tabItemExamination_Click();
-
         }
 
         private void tabItemBill_Click(object sender, EventArgs e)
@@ -132,7 +129,6 @@ namespace DO_AN_CUA_HAN.View
             bunifuShadowPanel3.Controls.Add(formMainBill);
             bunifuShadowPanel3.Show();
             formMainBill.tabPanelBill();
-
         }
 
         private void tabItemAssignment_Click(object sender, EventArgs e)
@@ -143,7 +139,6 @@ namespace DO_AN_CUA_HAN.View
             bunifuShadowPanel3.Controls.Add(formMainAS);
             bunifuShadowPanel3.Show();
             formMainAS.tabItemAssignment_Click();
-
         }
 
         private void tabItemDeptMajor_Click(object sender, EventArgs e)
@@ -154,7 +149,6 @@ namespace DO_AN_CUA_HAN.View
             bunifuShadowPanel3.Controls.Add(formMainMajor);
             bunifuShadowPanel3.Show();
             formMainMajor.tabItemDeptMajor_Click();
-
         }
 
         private void tabItemSurgery_Click(object sender, EventArgs e)
@@ -165,7 +159,6 @@ namespace DO_AN_CUA_HAN.View
             bunifuShadowPanel3.Controls.Add(formMainSurgery);
             bunifuShadowPanel3.Show();
             formMainSurgery.tabItemSurgery_Click();
-
         }
         
         private void tabItemDisease_Click(object sender, EventArgs e)
@@ -176,7 +169,6 @@ namespace DO_AN_CUA_HAN.View
             bunifuShadowPanel3.Controls.Add(formMainDisease);
             bunifuShadowPanel3.Show();
             formMainDisease.tabItemDisease_Click();
-
         }
 
         private void tabItemHospitalization_Click(object sender, EventArgs e)
@@ -187,7 +179,6 @@ namespace DO_AN_CUA_HAN.View
             bunifuShadowPanel3.Controls.Add(formMainHospitalization);
             bunifuShadowPanel3.Show();
            formMainHospitalization.tabItemHospitalization_Click();
-
         }
 
         private void tabItemMonitor_Click(object sender, EventArgs e)
@@ -198,10 +189,7 @@ namespace DO_AN_CUA_HAN.View
             bunifuShadowPanel3.Controls.Add(formMainMonitor);
             bunifuShadowPanel3.Show();
             formMainMonitor.tabItemMonitor_Click();
-
         }
-
-
 
         private void tabItemTest_Click(object sender, EventArgs e)
         {
@@ -211,7 +199,6 @@ namespace DO_AN_CUA_HAN.View
             bunifuShadowPanel3.Controls.Add(formMainTest);
             bunifuShadowPanel3.Show();
             formMainTest.tabItemTest_Click();
-
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -227,7 +214,6 @@ namespace DO_AN_CUA_HAN.View
             bunifuShadowPanel3.Controls.Add(formMainRoleFunction);
             bunifuShadowPanel3.Show();
             formMainRoleFunction.tabItemFunction_Click();
-
         }
 
         private void tabItemBed_Click(object sender, EventArgs e)
@@ -238,7 +224,6 @@ namespace DO_AN_CUA_HAN.View
             bunifuShadowPanel3.Controls.Add(formMainBed);
             bunifuShadowPanel3.Show();
             formMainBed.tabItemBed_Click();
-
         }
 
         private void tabItemService_Click(object sender, EventArgs e)
@@ -249,7 +234,6 @@ namespace DO_AN_CUA_HAN.View
             bunifuShadowPanel3.Controls.Add(formMainService);
             bunifuShadowPanel3.Show();
             formMainService.tabItemService_Click();
-
         }
 
         private void tabItemPrescpition_Click(object sender, EventArgs e)
@@ -260,7 +244,6 @@ namespace DO_AN_CUA_HAN.View
             bunifuShadowPanel3.Controls.Add(formMainPrescription);
             bunifuShadowPanel3.Show();
             formMainPrescription.tabItemPrescpition_Click();
-
         }
 
         private void tabItemMaterial_Click(object sender, EventArgs e)
@@ -271,7 +254,6 @@ namespace DO_AN_CUA_HAN.View
             bunifuShadowPanel3.Controls.Add(formMainMaterial);
             bunifuShadowPanel3.Show();
             formMainMaterial.tabItemMaterial_Click();
-
         }
         private void tabItemDischarged_Click(object sender, EventArgs e)
         {
@@ -281,18 +263,16 @@ namespace DO_AN_CUA_HAN.View
             bunifuShadowPanel3.Controls.Add(formMainDischarged);
             bunifuShadowPanel3.Show();
             formMainDischarged.tabItemDischarged_Click();
-
         }
 
         private void tabItemRole_Click(object sender, EventArgs e)
         {
             bunifuShadowPanel3.Hide();
             bunifuShadowPanel3.Controls.Clear();
-            FormMainRole formMainRole = new FormMainRole();///
+            FormMainRole formMainRole = new FormMainRole();
             bunifuShadowPanel3.Controls.Add(formMainRole);
             bunifuShadowPanel3.Show();
             formMainRole.tabItemRole_Click();
-
         }
 
         private void Exit_Click(object sender, EventArgs e)
@@ -315,14 +295,40 @@ namespace DO_AN_CUA_HAN.View
         }
         private void tabItemStatistics_Click(object sender, EventArgs e)
         {
+            bunifuShadowPanel3.Hide();
             bunifuShadowPanel3.Controls.Clear();
             FormMainReport formMainReport = new FormMainReport();
             bunifuShadowPanel3.Controls.Add(formMainReport);
-            // Thiết lập vị trí ban đầu của đối tượng và vị trí đích
+            bunifuShadowPanel3.Show();
         }
 
         private void FormMain_Load(object sender, EventArgs e)
         {
+            // Creating a list of tuples
+            List<Tuple<int, int>> indexlist = new List<Tuple<int, int>>();
+
+            // Adding tuples to the list
+            indexlist.Add(Tuple.Create(15, 83));
+            indexlist.Add(Tuple.Create(183, 83));
+            indexlist.Add(Tuple.Create(15, 139));
+            indexlist.Add(Tuple.Create(15, 139));
+            indexlist.Add(Tuple.Create(138, 139));
+            indexlist.Add(Tuple.Create(15, 196));
+            indexlist.Add(Tuple.Create(138, 196));
+            indexlist.Add(Tuple.Create(15, 139));
+            indexlist.Add(Tuple.Create(15, 139));
+            indexlist.Add(Tuple.Create(15, 139));
+            indexlist.Add(Tuple.Create(15, 139));
+            indexlist.Add(Tuple.Create(15, 139));
+            indexlist.Add(Tuple.Create(15, 139));
+            indexlist.Add(Tuple.Create(15, 139));
+            indexlist.Add(Tuple.Create(15, 139));
+            indexlist.Add(Tuple.Create(15, 139));
+            indexlist.Add(Tuple.Create(15, 139));
+            indexlist.Add(Tuple.Create(15, 139));
+            indexlist.Add(Tuple.Create(15, 139));
+            indexlist.Add(Tuple.Create(15, 139));
+            indexlist.Add(Tuple.Create(15, 139));
             FormMainPatient formMainPatient = new FormMainPatient(loginStaff);
             bunifuShadowPanel3.Controls.Add(formMainPatient);
             formMainPatient.tabItemPatient();
@@ -346,6 +352,8 @@ namespace DO_AN_CUA_HAN.View
                 }
             }
         }
+       
+
         private void mouse_Down(object sender, MouseEventArgs e)
         {
             mouseLocation = new Point(-e.X, -e.Y);
