@@ -66,7 +66,7 @@ namespace DO_AN_CUA_HAN.View
                     loginStaff = Staff.GetStaff(staffID);
 
                     // Check if username and password is valid
-                    if ((loginStaff.StaffID != 0) && (loginStaff.Password.Trim().Equals(bunifuTextBoxPassword.Text)))
+                    if ((loginStaff.StaffID != 0) && (loginStaff.Password.Trim().Equals(Model.Bcrypt.CreateMD5(bunifuTextBoxPassword.Text))))
                     {
                         // Show FormMain and hide FormLogin
                         FormMain formMain = new FormMain(loginStaff);
