@@ -98,11 +98,15 @@ namespace DO_AN_CUA_HAN.View
                     if (ExaminationCertificate.GetEC(ecID).State != 1)
                     {
                         if (ExaminationCertificate.DeleteEC(ecID) > 0)
+                        {
                             bunifuSnackbar1.Show(Form.ActiveForm, "Xóa phiếu khám bệnh thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Information, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                            return;
+                        }
                     }
                     else
                     {
                         bunifuSnackbar1.Show(Form.ActiveForm, "Không thể xóa phiếu khám bệnh này", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                        return;
                     }
                 }
                 refreshDataViewExamination();
@@ -130,6 +134,7 @@ namespace DO_AN_CUA_HAN.View
             catch
             {
                 bunifuSnackbar1.Show(Form.ActiveForm, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                return;
             }
         }
 
@@ -181,6 +186,7 @@ namespace DO_AN_CUA_HAN.View
             catch
             {
                 bunifuSnackbar1.Show(Form.ActiveForm, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                return;
             }
         }
 

@@ -48,6 +48,7 @@ namespace DO_AN_CUA_HAN.View
             catch
             {
                 bunifuSnackbar1.Show(Form.ActiveForm, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                return;
             }
         }
 
@@ -103,13 +104,17 @@ namespace DO_AN_CUA_HAN.View
                         updatePatient.State = 1;
                         confirmHC.State = 1;
                         if (HospitalizationCertificate.UpdateHC(confirmHC) > 0 && Patient.UpdatePatient(updatePatient) > 0)
-                        bunifuSnackbar1.Show(Form.ActiveForm, "Xác nhận giấy nhập viện thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Information, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                        {
+                            bunifuSnackbar1.Show(Form.ActiveForm, "Xác nhận giấy nhập viện thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Information, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                            return;
+                        }
                     }
 
                 }
                 else
                 {
                     bunifuSnackbar1.Show(Form.ActiveForm, "Giấy nhập viện đã được xác nhận", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                    return;
                 }
                 refreshDataViewHC();
             }
@@ -128,13 +133,17 @@ namespace DO_AN_CUA_HAN.View
                     if (dialogResult == DialogResult.Yes)
                     {
                         if (HospitalizationCertificate.DeleteHC(hcID) > 0)
-                        bunifuSnackbar1.Show(Form.ActiveForm, "Xóa giấy nhập viện thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Information, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                        {
+                            bunifuSnackbar1.Show(Form.ActiveForm, "Xóa giấy nhập viện thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Information, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                            returrn;
+                        }
                     }
 
                 }
                 else
                 {
                     bunifuSnackbar1.Show(Form.ActiveForm, "Không thể xóa giấy nhập viện đã được xác nhận", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                    return;
                 }
                 refreshDataViewHC();
             }

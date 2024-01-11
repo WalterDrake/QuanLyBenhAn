@@ -37,6 +37,7 @@ namespace DO_AN_CUA_HAN.View
                 staffTable.Columns.Add("CMND", typeof(string), "[ICN]");
                 staffTable.Columns.Add("Giới tính", typeof(string), "IIF([GENDER] = 0, 'Nam', 'Nữ')");
                 staffTable.Columns.Add("Ngày sinh", typeof(DateTime), "[BIRTHDAY]");
+                staffTable.Columns.Add("Email", typeof(string), "[EMAIL]");
                 staffTable.Columns.Add("Địa chỉ", typeof(string), "[ADDRESS]");
                 staffTable.Columns.Add("Trạng thái", typeof(string), "IIF([STATE] = 0, 'Đã thôi việc', 'Đang làm việc')");
 
@@ -52,6 +53,7 @@ namespace DO_AN_CUA_HAN.View
             catch
             {
                 bunifuSnackbar1.Show(Form.ActiveForm, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                return;
             }
 
         }
@@ -124,6 +126,7 @@ namespace DO_AN_CUA_HAN.View
             catch
             {
                 bunifuSnackbar1.Show(Form.ActiveForm, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                return;
             }
             // Refresh datagridview after delete
             refreshDataViewStaff();

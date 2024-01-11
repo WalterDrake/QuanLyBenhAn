@@ -310,7 +310,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Black;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxPatientState.OnIdleState = stateProperties4;
-            this.textBoxPatientState.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.textBoxPatientState.Padding = new System.Windows.Forms.Padding(3);
             this.textBoxPatientState.PasswordChar = '\0';
             this.textBoxPatientState.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.textBoxPatientState.PlaceholderText = "Nhập tình trạng bệnh nhân";
@@ -719,7 +719,7 @@
             stateProperties8.ForeColor = System.Drawing.Color.Black;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxWeight.OnIdleState = stateProperties8;
-            this.textBoxWeight.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.textBoxWeight.Padding = new System.Windows.Forms.Padding(3);
             this.textBoxWeight.PasswordChar = '\0';
             this.textBoxWeight.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.textBoxWeight.PlaceholderText = "Nhập cân nặng";
@@ -798,7 +798,7 @@
             stateProperties12.ForeColor = System.Drawing.Color.Black;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxPatientID.OnIdleState = stateProperties12;
-            this.textBoxPatientID.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.textBoxPatientID.Padding = new System.Windows.Forms.Padding(3);
             this.textBoxPatientID.PasswordChar = '\0';
             this.textBoxPatientID.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.textBoxPatientID.PlaceholderText = "Nhập mã bệnh nhân";
@@ -876,7 +876,7 @@
             stateProperties16.ForeColor = System.Drawing.Color.Black;
             stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxStaffID.OnIdleState = stateProperties16;
-            this.textBoxStaffID.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.textBoxStaffID.Padding = new System.Windows.Forms.Padding(3);
             this.textBoxStaffID.PasswordChar = '\0';
             this.textBoxStaffID.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.textBoxStaffID.PlaceholderText = "Nhập mã nhân viên";
@@ -954,7 +954,7 @@
             stateProperties20.ForeColor = System.Drawing.Color.Black;
             stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxHNID.OnIdleState = stateProperties20;
-            this.textBoxHNID.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.textBoxHNID.Padding = new System.Windows.Forms.Padding(3);
             this.textBoxHNID.PasswordChar = '\0';
             this.textBoxHNID.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.textBoxHNID.PlaceholderText = "Nhập mã phiếu theo dõi sức khoẻ";
@@ -1032,7 +1032,7 @@
             stateProperties24.ForeColor = System.Drawing.Color.Black;
             stateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxBloodPressure.OnIdleState = stateProperties24;
-            this.textBoxBloodPressure.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.textBoxBloodPressure.Padding = new System.Windows.Forms.Padding(3);
             this.textBoxBloodPressure.PasswordChar = '\0';
             this.textBoxBloodPressure.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.textBoxBloodPressure.PlaceholderText = "Nhập huyết áp";
@@ -1102,9 +1102,9 @@
             this.bunifuPictureBox1.AllowFocused = false;
             this.bunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bunifuPictureBox1.AutoSizeHeight = true;
-            this.bunifuPictureBox1.BorderRadius = 0;
+            this.bunifuPictureBox1.BorderRadius = 113;
             this.bunifuPictureBox1.Image = global::DO_AN_CUA_HAN.Properties.Resources.tai_xuong__2__removebg_preview;
-            this.bunifuPictureBox1.IsCircle = true;
+            this.bunifuPictureBox1.IsCircle = false;
             this.bunifuPictureBox1.Location = new System.Drawing.Point(20, -99);
             this.bunifuPictureBox1.Name = "bunifuPictureBox1";
             this.bunifuPictureBox1.Size = new System.Drawing.Size(226, 226);
@@ -1114,7 +1114,7 @@
             this.bunifuToolTip1.SetToolTip(this.bunifuPictureBox1, "");
             this.bunifuToolTip1.SetToolTipIcon(this.bunifuPictureBox1, null);
             this.bunifuToolTip1.SetToolTipTitle(this.bunifuPictureBox1, "");
-            this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
             // FormHNDetail
             // 
@@ -1123,7 +1123,7 @@
             this.ClientSize = new System.Drawing.Size(653, 735);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormHNDetail";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormHNDetail";

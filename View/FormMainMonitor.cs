@@ -50,6 +50,7 @@ namespace DO_AN_CUA_HAN.View
             catch
             {
                 bunifuSnackbar1.Show(Form.ActiveForm, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                return;
             }
         }
         //Search in datagridview
@@ -98,11 +99,15 @@ namespace DO_AN_CUA_HAN.View
                     try
                     {
                         if (HeathMonitoringNote.DeleteHN(heathNoteID) > 0)
+                        {
                             bunifuSnackbar1.Show(Form.ActiveForm, "Xóa phiếu theo dõi thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                            return;
+                        }
                     }
                     catch
                     {
                         bunifuSnackbar1.Show(Form.ActiveForm, "Không xóa phiếu theo dõi này", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                        return;
                     }
                 }
 

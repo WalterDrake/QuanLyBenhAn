@@ -22,6 +22,7 @@ namespace DO_AN_CUA_HAN.Model
         public string Password { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
+        public string Email { get; set; }
         public DateTime BirthDay { get; set; }
         public int Gender { get; set; }
         public decimal ICN { get; set; }
@@ -30,7 +31,7 @@ namespace DO_AN_CUA_HAN.Model
 
         public Staff() { }
 
-        public Staff(int patientID, int majorID, int departmentID, int roleID, string password, string firstName, string lastName,
+        public Staff(int patientID, int majorID, int departmentID, int roleID, string password, string firstName, string lastName, string email,
             DateTime birthDay, int gender, decimal iCN, string address, int state)
         {
             StaffID = patientID;
@@ -40,6 +41,7 @@ namespace DO_AN_CUA_HAN.Model
             Password = password;
             FirstName = firstName;
             LastName = lastName;
+            Email = email;
             BirthDay = birthDay;
             Gender = gender;
             ICN = iCN;
@@ -50,10 +52,10 @@ namespace DO_AN_CUA_HAN.Model
         public static int InsertStaff(Staff staff)
         {
             string sqlInsert = @"INSERT INTO STAFF
-                                (DEPARTMENTID, MAJORID, ROLEID, PASSWORD, FIRSTNAME, LASTNAME, BIRTHDAY, GENDER, ICN, ADDRESS, STATE)
+                                (DEPARTMENTID, MAJORID, ROLEID, PASSWORD, FIRSTNAME, LASTNAME, BIRTHDAY, GENDER, ICN, ADDRESS, STATE, EMAIL)
                                 VALUES
                                 (@DepartmentID, @MajorID, @RoleID, @Password, @FirstName, @LastName, @BirthDay, @Gender, @ICN
-                                    , @Address, @State)";
+                                    , @Address, @State, @Email)";
 
             SqlParameter[] sqlParameters = {   new SqlParameter("@DepartmentID", staff.DepartmentID),
                                            new SqlParameter("@MajorID", staff.MajorID),
@@ -65,8 +67,8 @@ namespace DO_AN_CUA_HAN.Model
                                            new SqlParameter("@Gender", staff.Gender),
                                            new SqlParameter("@ICN", staff.ICN),
                                            new SqlParameter("@Address", staff.Address),
-                                           new SqlParameter("@State", staff.State)};
-
+                                           new SqlParameter("@State", staff.State),
+                                           new SqlParameter("@Email", staff.Email)};
 
 
             return SqlResult.ExecuteNonQuery(sqlInsert, sqlParameters);
@@ -77,7 +79,7 @@ namespace DO_AN_CUA_HAN.Model
             string sqlUpdate = @"UPDATE STAFF
                                 SET DEPARTMENTID = @DepartmentID, MAJORID = @MajorID, ROLEID = @RoleID, PASSWORD = @Password
                                                  , FIRSTNAME = @FirstName, LASTNAME = @LastName, BIRTHDAY = @BirthDay, GENDER = @Gender
-                                                 , ICN = @ICN, ADDRESS = @Address, STATE = @State
+                                                 , ICN = @ICN, ADDRESS = @Address, STATE = @State, EMAIL = @Mail
                                 WHERE (STAFFID = @StaffID)";
 
             SqlParameter[] sqlParameters = { new SqlParameter("StaffID", staff.StaffID),
@@ -91,7 +93,8 @@ namespace DO_AN_CUA_HAN.Model
                                            new SqlParameter("@Gender", staff.Gender),
                                            new SqlParameter("@ICN", staff.ICN),
                                            new SqlParameter("@Address", staff.Address),
-                                           new SqlParameter("@State", staff.State)};
+                                           new SqlParameter("@State", staff.State),
+                                           new SqlParameter("@Email", staff.Email)};
 
             return SqlResult.ExecuteNonQuery(sqlUpdate, sqlParameters);
         }
@@ -111,7 +114,7 @@ namespace DO_AN_CUA_HAN.Model
         public static DataTable GetListStaff()
         {
             string sqlSelect = @"SELECT STAFF.STAFFID, DEPARTMENT.DEPARTMENTNAME, MAJOR.MAJORNAME, ROLE.ROLENAME, STAFF.PASSWORD
-                                    , STAFF.FIRSTNAME, STAFF.LASTNAME, STAFF.BIRTHDAY, STAFF.GENDER, STAFF.ICN, STAFF.ADDRESS, STAFF.STATE
+                                    , STAFF.FIRSTNAME, STAFF.LASTNAME, STAFF.BIRTHDAY, STAFF.GENDER, STAFF.ICN, STAFF.ADDRESS, STAFF.STATE, STAFF.EMAIL
                                 FROM STAFF INNER JOIN
                                     DEPARTMENT ON STAFF.DEPARTMENTID = DEPARTMENT.DEPARTMENTID INNER JOIN
                                     MAJOR ON STAFF.MAJORID = MAJOR.MAJORID INNER JOIN
@@ -128,7 +131,7 @@ namespace DO_AN_CUA_HAN.Model
             Staff newStaff = new Staff();
             DataTable staffDataTable;
             string sqlSelect = @"SELECT STAFFID, DEPARTMENTID, MAJORID, ROLEID, PASSWORD, FIRSTNAME, LASTNAME, BIRTHDAY,
-                                        GENDER, ICN, ADDRESS, STATE
+                                        GENDER, ICN, ADDRESS, STATE, EMAIL
                                 FROM STAFF
                                 WHERE (STAFFID = @StaffID)";
             SqlParameter[] sqlParameters = { new SqlParameter("@StaffID", staffID) };
@@ -151,6 +154,7 @@ namespace DO_AN_CUA_HAN.Model
                 newStaff.ICN = (decimal)staffDataTable.Rows[0]["ICN"];
                 newStaff.Address = (string)staffDataTable.Rows[0]["ADDRESS"];
                 newStaff.State = (int)staffDataTable.Rows[0]["STATE"];
+                newStaff.Email = (string)staffDataTable.Rows[0]["EMAIL"];
             }
 
             return newStaff;

@@ -47,6 +47,7 @@ namespace DO_AN_CUA_HAN.View
             catch
             {
                 bunifuSnackbar1.Show(Form.ActiveForm, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                return;
             }
         }
         private void refreshDataViewSurgicalDetail()
@@ -64,6 +65,7 @@ namespace DO_AN_CUA_HAN.View
                 catch
                 {
                     bunifuSnackbar1.Show(Form.ActiveForm, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                    return;
                 }
             }
         }
@@ -130,17 +132,22 @@ namespace DO_AN_CUA_HAN.View
                         try
                         {
                             if (SurgicalDetail.DeleteSurgicalDetail(surgicalID) > 0 && Surgical.DeleteSurgical(surgicalID) > 0)
+                            {
                                 bunifuSnackbar1.Show(Form.ActiveForm, "Xóa ca phẩu thuật thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                                return;
+                            }
                         }
                         catch
                         {
                             bunifuSnackbar1.Show(Form.ActiveForm, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                            return;
                         }
                     }
                 }
                 else
                 {
                     bunifuSnackbar1.Show(Form.ActiveForm, "Không thể xóa ca phẩu thuật đã được thực hiện", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                    return;
                 }
                 refreshDataViewSurgical();
                 refreshDataViewSurgicalDetail();

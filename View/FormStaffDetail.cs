@@ -104,11 +104,17 @@ namespace DO_AN_CUA_HAN.View
                 bunifuSnackbar1.Show(this, "Thiếu thông tin CCCD", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                 return;
             }
+            if (string.IsNullOrEmpty(textBoxEmail.Text))
+            {
+                bunifuSnackbar1.Show(this, "Thiếu email", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                return;
+            }
             if (string.IsNullOrEmpty(textBoxAddress.Text))
             {
                 bunifuSnackbar1.Show(this, "Thiếu địa chỉ", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                 return;
             }
+           
 
             // Set StaffDetail property with value in staffdetail form            
             StaffDetail.DepartmentID = Convert.ToInt32(dropDownDepartment.SelectedValue.ToString());
@@ -132,6 +138,8 @@ namespace DO_AN_CUA_HAN.View
             {
                 StaffDetail.Gender = Staff.GENDER_FEMALE;
             }
+
+            StaffDetail.Email = textBoxEmail.Text;
 
             StaffDetail.Address = textBoxAddress.Text;
 
@@ -210,15 +218,17 @@ namespace DO_AN_CUA_HAN.View
                 dropDownGender.SelectedIndex = Staff.GENDER_FEMALE;
             }
 
+            textBoxEmail.Text = staff.Email;
+
             textBoxAddress.Text = staff.Address;
 
             if (staff.State == 0)
             {
-                dropDownState.Text = "Đã thôi việc";
+                dropDownState.Text = "Đang làm việc";
             }
             else
             {
-                dropDownState.Text = "Đang làm việc";
+                dropDownState.Text = "Đã thôi việc";
             }
 
             dropDownDepartment.SelectedValue = (object)staff.DepartmentID;
@@ -234,6 +244,7 @@ namespace DO_AN_CUA_HAN.View
             textBoxIdentityCard.ReadOnly = true;
             dropDownGender.Enabled = false;
             dateBirthday.Enabled = false;
+            textBoxEmail.ReadOnly = false;
         }
         // Set staffdetail to staffdetail form
         public void setStaffDetail(Staff staff)
@@ -256,16 +267,17 @@ namespace DO_AN_CUA_HAN.View
             {
                 dropDownGender.SelectedIndex = Staff.GENDER_FEMALE;
             }
-
+            
+            textBoxEmail.Text = staff.Email;
             textBoxAddress.Text = staff.Address;
 
             if (staff.State == 0)
             {
-                dropDownState.Text = "Đã thôi việc";
+                dropDownState.Text = "Đang làm việc";
             }
             else
             {
-                dropDownState.Text = "Đang làm việc";
+                dropDownState.Text = "Đã thôi việc";
             }
 
             dropDownDepartment.SelectedValue = (object)staff.DepartmentID;
@@ -320,6 +332,11 @@ namespace DO_AN_CUA_HAN.View
                 // Nếu ký tự không phải là số hoặc không phải là các phím điều khiển, không cho phép nhập
                 e.Handled = true;
             }
+        }
+
+        private void bunifuGradientPanel1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
