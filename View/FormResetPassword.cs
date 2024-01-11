@@ -61,6 +61,7 @@ namespace DO_AN_CUA_HAN.View
             SqlResult.ExecuteNonQuery(sqlUpdate, sqlParametersUpdate);
             Send(EMAIL, subject, body);
             bunifuSnackbar1.Show(this, "Reset password thành công. Vui lòng kiểm tra email", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+            this.Cursor = Cursors.Default;
         }
 
         private void bunifuButtonClose_Click(object sender, EventArgs e)

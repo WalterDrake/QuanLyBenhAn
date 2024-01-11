@@ -14,12 +14,12 @@ using ZXing;
 
 namespace DO_AN_CUA_HAN.Barcode
 {
-    public partial class Form1 : Form
+    public partial class Detection : Form
     {
         private FilterInfoCollection CaptureDevice;
         private VideoCaptureDevice FinalFrame;
         public int mabenhnhan { get; set; }
-        public Form1()
+        public Detection()
         {
             InitializeComponent();
         
@@ -56,7 +56,7 @@ namespace DO_AN_CUA_HAN.Barcode
                         DialogResult ketqua = MessageBox.Show("Nhận dạng thành công!", "Thong Bao", MessageBoxButtons.OK);
                         int.TryParse(decoded, out int mabenhnhan);
 
-                        Form form2 = new Form2(mabenhnhan);
+                        Form form2 = new Info(mabenhnhan);
                         form2.ShowDialog();
                   
                         this.Close();

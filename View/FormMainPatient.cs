@@ -435,7 +435,7 @@ namespace DO_AN_CUA_HAN.View
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
            
-            Form1 form1 = new Form1();
+            Detection form1 = new Detection();
             form1.ShowDialog();
            
 

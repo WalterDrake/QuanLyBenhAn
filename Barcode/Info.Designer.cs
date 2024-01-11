@@ -1,6 +1,6 @@
 ﻿namespace DO_AN_CUA_HAN.Barcode
 {
-    partial class Form2
+    partial class Info
     {
         /// <summary>
         /// Required designer variable.

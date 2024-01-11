@@ -563,7 +563,7 @@ namespace DO_AN_CUA_HAN.View
                             return;
                     }
 
-                    reportForm.ShowDialog();
+                    reportForm.Show();
 
                     this.Close();
                 }

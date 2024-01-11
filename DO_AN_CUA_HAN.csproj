@@ -219,17 +219,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Barcode\Form1.cs">
+    <Compile Include="Barcode\Detection.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Barcode\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Barcode\Detection.Designer.cs">
+      <DependentUpon>Detection.cs</DependentUpon>
     </Compile>
-    <Compile Include="Barcode\Form2.cs">
+    <Compile Include="Barcode\Info.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Barcode\Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="Barcode\Info.Designer.cs">
+      <DependentUpon>Info.cs</DependentUpon>
     </Compile>
     <Compile Include="Chart\FormBarChart.cs">
       <SubType>Form</SubType>
@@ -454,11 +454,11 @@
     <Compile Include="View\FormRoleFunctionDetail.Designer.cs">
       <DependentUpon>FormRoleFunctionDetail.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Barcode\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Barcode\Detection.resx">
+      <DependentUpon>Detection.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Barcode\Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="Barcode\Info.resx">
+      <DependentUpon>Info.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormResetPassword.resx">
       <DependentUpon>FormResetPassword.cs</DependentUpon>

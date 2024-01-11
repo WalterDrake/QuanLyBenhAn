@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace DO_AN_CUA_HAN.Barcode
 {
-    public partial class Form2 : Form
+    public partial class Info : Form
     {
-        public Form2(int decode)
+        public Info(int decode)
         {
             InitializeComponent();
             Patient patient = Patient.GetPatient(decode);
