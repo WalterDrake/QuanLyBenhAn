@@ -47,7 +47,8 @@ namespace DO_AN_CUA_HAN.View
             }
             catch
             {
-                MessageBox.Show("Lỗi dữ liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                bunifuSnackbar1.Show(Form.ActiveForm, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+
             }
         }
         //Search in datagridview
@@ -108,23 +109,23 @@ namespace DO_AN_CUA_HAN.View
                                 updatePatient.State = 0;
                                 confirmDC.State = 1;
                                 if (DischargeCertificate.UpdateDC(confirmDC) > 0 && Patient.UpdatePatient(updatePatient) > 0)
-                                    MessageBox.Show("Xác nhận giấy xuất viện thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                    bunifuSnackbar1.Show(Form.ActiveForm, "Xác nhận giấy xuất viện thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Information, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                             }
                         }
                         else
                         {
-                            MessageBox.Show("Bệnh nhân chưa thanh toán hóa đơn", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            bunifuSnackbar1.Show(Form.ActiveForm, "Bệnh nhân chưa thanh toán hóa đơn", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Information, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                         }
                     }
                     else
                     {
-                        MessageBox.Show("Bệnh nhân chưa trả giường", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        bunifuSnackbar1.Show(Form.ActiveForm, "Bệnh nhân chưa trả giường", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Information, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                     }
 
                 }
                 else
                 {
-                    MessageBox.Show("Giấy xuất viện đã được xác nhận", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    bunifuSnackbar1.Show(Form.ActiveForm, "Giấy xuất viện đã được xác nhận", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                 }
                 refreshDataViewDC();
             }
@@ -144,13 +145,13 @@ namespace DO_AN_CUA_HAN.View
                     if (dialogResult == DialogResult.Yes)
                     {
                         if (DischargeCertificate.DeleteDC(dcID) > 0)
-                            MessageBox.Show("Xóa giấy xuất viện thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            bunifuSnackbar1.Show(Form.ActiveForm, "Xóa giấy xuất viện thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Information, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                     }
 
                 }
                 else
                 {
-                    MessageBox.Show("Không thể xóa giấy xuất viện đã được xác nhận", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    bunifuSnackbar1.Show(Form.ActiveForm, "Không thể xóa giấy xuất viện đã được xác nhận", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                 }
                 refreshDataViewDC();
             }

@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -44,7 +45,7 @@ namespace DO_AN_CUA_HAN.View
             }
             catch
             {
-                MessageBox.Show("Lỗi dữ liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                bunifuSnackbar1.Show(Form.ActiveForm, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
             }
         }
         private void refreshDataViewMajor()
@@ -69,7 +70,7 @@ namespace DO_AN_CUA_HAN.View
             }
             catch
             {
-                MessageBox.Show("Lỗi dữ liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                bunifuSnackbar1.Show(Form.ActiveForm, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
             }
         }
 
@@ -84,11 +85,11 @@ namespace DO_AN_CUA_HAN.View
                     try
                     {
                         if (Department.DeleteDepartment(departmentID) > 0)
-                            MessageBox.Show("Xóa phòng ban thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            bunifuSnackbar1.Show(Form.ActiveForm, "Xóa phòng ban thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Information, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                     }
                     catch
                     {
-                        MessageBox.Show("phòng khoa đã hoặc đang có người công tác", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        bunifuSnackbar1.Show(Form.ActiveForm, "Phòng khoa đã hoặc đang có người công tác", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                     }
                 }
 
@@ -139,11 +140,11 @@ namespace DO_AN_CUA_HAN.View
                     try
                     {
                         if (Major.DeleteMajor(majorID) > 0)
-                            MessageBox.Show("Xóa chuyên ngành thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            bunifuSnackbar1.Show(Form.ActiveForm, "Xóa chuyên ngành thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                     }
                     catch
                     {
-                        MessageBox.Show("Không thể xóa được chuyên ngành này", "Lỗi dữ liệu", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        bunifuSnackbar1.Show(Form.ActiveForm, "Không thể xóa được chuyên ngành này", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                     }
                 }
 
