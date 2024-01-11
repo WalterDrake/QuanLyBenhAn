@@ -83,7 +83,6 @@
             this.bunifuPictureBoxEyeOpen = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuTextBoxPassword = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuTextBoxUsername = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuButtonClose = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuButtonLogin = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
@@ -666,7 +665,7 @@
             this.bunifuLabel10.Location = new System.Drawing.Point(97, 224);
             this.bunifuLabel10.Name = "bunifuLabel10";
             this.bunifuLabel10.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel10.Size = new System.Drawing.Size(59, 19);
+            this.bunifuLabel10.Size = new System.Drawing.Size(138, 45);
             this.bunifuLabel10.TabIndex = 2;
             this.bunifuLabel10.Text = "Mật khẩu";
             this.bunifuLabel10.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -684,7 +683,7 @@
             this.bunifuLabel11.Location = new System.Drawing.Point(97, 181);
             this.bunifuLabel11.Name = "bunifuLabel11";
             this.bunifuLabel11.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel11.Size = new System.Drawing.Size(59, 19);
+            this.bunifuLabel11.Size = new System.Drawing.Size(141, 45);
             this.bunifuLabel11.TabIndex = 1;
             this.bunifuLabel11.Text = "Tài khoản";
             this.bunifuLabel11.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -702,7 +701,7 @@
             this.bunifuLabel12.Location = new System.Drawing.Point(245, 95);
             this.bunifuLabel12.Name = "bunifuLabel12";
             this.bunifuLabel12.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel12.Size = new System.Drawing.Size(76, 30);
+            this.bunifuLabel12.Size = new System.Drawing.Size(362, 133);
             this.bunifuLabel12.TabIndex = 0;
             this.bunifuLabel12.Text = "Đăng kí";
             this.bunifuLabel12.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -814,7 +813,6 @@
             this.bunifuShadowPanel1.Controls.Add(this.bunifuPictureBoxEyeOpen);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuTextBoxPassword);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuTextBoxUsername);
-            this.bunifuShadowPanel1.Controls.Add(this.bunifuLabel4);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuButtonClose);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuButtonLogin);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuLabel3);
@@ -1037,24 +1035,6 @@
             this.bunifuTextBoxUsername.UseSystemPasswordChar = false;
             this.bunifuTextBoxUsername.WordWrap = true;
             this.bunifuTextBoxUsername.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.bunifuTextBoxUsername_KeyPress);
-            // 
-            // bunifuLabel4
-            // 
-            this.bunifuLabel4.AllowParentOverrides = false;
-            this.bunifuLabel4.AutoEllipsis = false;
-            this.bunifuLabel4.CursorType = null;
-            this.bunifuLabel4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel4.Location = new System.Drawing.Point(208, 370);
-            this.bunifuLabel4.Name = "bunifuLabel4";
-            this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel4.Size = new System.Drawing.Size(96, 15);
-            this.bunifuLabel4.TabIndex = 5;
-            this.bunifuLabel4.Text = "Chưa có tài khoản";
-            this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel4.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            this.bunifuToolTip1.SetToolTip(this.bunifuLabel4, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.bunifuLabel4, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.bunifuLabel4, "");
             // 
             // bunifuButtonClose
             // 
@@ -1292,7 +1272,7 @@
             this.bunifuLabel1.Location = new System.Drawing.Point(246, 102);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(139, 37);
+            this.bunifuLabel1.Size = new System.Drawing.Size(169, 45);
             this.bunifuLabel1.TabIndex = 0;
             this.bunifuLabel1.Text = "Đăng nhập";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -1349,7 +1329,7 @@
             this.bunifuButtonSignUp.IdleIconLeftImage = null;
             this.bunifuButtonSignUp.IdleIconRightImage = null;
             this.bunifuButtonSignUp.IndicateFocus = false;
-            this.bunifuButtonSignUp.Location = new System.Drawing.Point(315, 362);
+            this.bunifuButtonSignUp.Location = new System.Drawing.Point(250, 362);
             this.bunifuButtonSignUp.Name = "bunifuButtonSignUp";
             this.bunifuButtonSignUp.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButtonSignUp.OnDisabledState.BorderRadius = 1;
@@ -1400,7 +1380,7 @@
             this.bunifuPictureBox2.AllowFocused = false;
             this.bunifuPictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bunifuPictureBox2.AutoSizeHeight = true;
-            this.bunifuPictureBox2.BorderRadius = 0;
+            this.bunifuPictureBox2.BorderRadius = 81;
             this.bunifuPictureBox2.Image = global::DO_AN_CUA_HAN.Properties.Resources._5245433_removebg_preview;
             this.bunifuPictureBox2.IsCircle = true;
             this.bunifuPictureBox2.Location = new System.Drawing.Point(363, -24);
@@ -1412,7 +1392,7 @@
             this.bunifuToolTip1.SetToolTip(this.bunifuPictureBox2, "");
             this.bunifuToolTip1.SetToolTipIcon(this.bunifuPictureBox2, null);
             this.bunifuToolTip1.SetToolTipTitle(this.bunifuPictureBox2, "");
-            this.bunifuPictureBox2.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            this.bunifuPictureBox2.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
             // bunifuShadowPanel2
             // 
@@ -1814,7 +1794,7 @@
             this.bunifuLabel6.Location = new System.Drawing.Point(97, 224);
             this.bunifuLabel6.Name = "bunifuLabel6";
             this.bunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel6.Size = new System.Drawing.Size(59, 19);
+            this.bunifuLabel6.Size = new System.Drawing.Size(138, 45);
             this.bunifuLabel6.TabIndex = 2;
             this.bunifuLabel6.Text = "Mật khẩu";
             this.bunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -1832,7 +1812,7 @@
             this.bunifuLabel7.Location = new System.Drawing.Point(97, 181);
             this.bunifuLabel7.Name = "bunifuLabel7";
             this.bunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel7.Size = new System.Drawing.Size(59, 19);
+            this.bunifuLabel7.Size = new System.Drawing.Size(141, 45);
             this.bunifuLabel7.TabIndex = 1;
             this.bunifuLabel7.Text = "Tài khoản";
             this.bunifuLabel7.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -1850,7 +1830,7 @@
             this.bunifuLabel8.Location = new System.Drawing.Point(245, 95);
             this.bunifuLabel8.Name = "bunifuLabel8";
             this.bunifuLabel8.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel8.Size = new System.Drawing.Size(76, 30);
+            this.bunifuLabel8.Size = new System.Drawing.Size(362, 133);
             this.bunifuLabel8.TabIndex = 0;
             this.bunifuLabel8.Text = "Đăng kí";
             this.bunifuLabel8.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -2009,7 +1989,6 @@
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel3;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel4;
         private Bunifu.UI.WinForms.BunifuTextBox bunifuTextBoxPassword;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel2;

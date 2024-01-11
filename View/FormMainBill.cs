@@ -74,6 +74,7 @@ namespace DO_AN_CUA_HAN.View
             catch (SqlException exception)
             {
                 bunifuSnackbar1.Show(Form.ActiveForm, "Thông báo", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                return;
             }
         }
 

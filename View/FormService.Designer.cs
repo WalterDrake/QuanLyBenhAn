@@ -631,7 +631,7 @@
             this.bunifuPictureBox1.AllowFocused = false;
             this.bunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bunifuPictureBox1.AutoSizeHeight = true;
-            this.bunifuPictureBox1.BorderRadius = 0;
+            this.bunifuPictureBox1.BorderRadius = 39;
             this.bunifuPictureBox1.Image = global::DO_AN_CUA_HAN.Properties.Resources._7071_removebg_preview;
             this.bunifuPictureBox1.IsCircle = false;
             this.bunifuPictureBox1.Location = new System.Drawing.Point(144, 8);
@@ -644,7 +644,7 @@
             this.bunifuToolTip1.SetToolTip(this.bunifuPictureBox1, "");
             this.bunifuToolTip1.SetToolTipIcon(this.bunifuPictureBox1, null);
             this.bunifuToolTip1.SetToolTipTitle(this.bunifuPictureBox1, "");
-            this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
             // bunifuSnackbar1
             // 

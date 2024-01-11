@@ -52,6 +52,7 @@ namespace DO_AN_CUA_HAN.View
             catch
             {
                 bunifuSnackbar1.Show(Form.ActiveForm, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                return;
             }
         }
         //Search in datagridview
@@ -101,10 +102,12 @@ namespace DO_AN_CUA_HAN.View
                     {
                         if (Disease.DeleteDisease(diseaseID) > 0)
                         bunifuSnackbar1.Show(Form.ActiveForm, "Xóa bệnh thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Information, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                        return;
                     }
                     catch
                     {
                         bunifuSnackbar1.Show(Form.ActiveForm, "Bệnh đã hoặc đang có người mắc phải", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                        return;
                     }
                 }
 

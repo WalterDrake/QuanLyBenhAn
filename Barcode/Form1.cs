@@ -72,17 +72,6 @@ namespace DO_AN_CUA_HAN.Barcode
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            FinalFrame = new VideoCaptureDevice(CaptureDevice[comboBox1.SelectedIndex].MonikerString);
-            FinalFrame.NewFrame += new AForge.Video.NewFrameEventHandler(FinalFrame_NewFrame);
-            FinalFrame.Start();
-            timer1.Enabled = true;
-            timer1.Start();
-
-
-
-        }
         private void FinalFrame_NewFrame(object sender, NewFrameEventArgs e)
         {
           
@@ -108,6 +97,20 @@ namespace DO_AN_CUA_HAN.Barcode
         private void timer2_Tick(object sender, EventArgs e)
         {
           
+        }
+
+        private void buttonChoose_Click(object sender, EventArgs e)
+        {
+            FinalFrame = new VideoCaptureDevice(CaptureDevice[comboBox1.SelectedIndex].MonikerString);
+            FinalFrame.NewFrame += new AForge.Video.NewFrameEventHandler(FinalFrame_NewFrame);
+            FinalFrame.Start();
+            timer1.Enabled = true;
+            timer1.Start();
+        }
+
+        private void buttonClose_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
