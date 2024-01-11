@@ -1,4 +1,5 @@
 ﻿using DO_AN_CUA_HAN.View;
+using DO_AN_CUA_HAN.Barcode;
 using System;
 using System.Collections.Generic;
 using System.Linq;
