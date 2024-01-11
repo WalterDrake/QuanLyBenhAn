@@ -89,16 +89,6 @@ namespace DO_AN_CUA_HAN.View
                 bunifuSnackbar1.Show(this, "Thiếu họ", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                 return;
             }
-            if (string.IsNullOrEmpty(textBoxPassword.Text))
-            {
-                bunifuSnackbar1.Show(this, "Thiếu mật khẩu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                return;
-            }
-            if (string.IsNullOrEmpty(textBoxPasswordCheck.Text))
-            {
-                bunifuSnackbar1.Show(this, "Thiếu mật khẩu xác nhận", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                return;
-            }
             if (string.IsNullOrEmpty(textBoxIdentityCard.Text))
             {
                 bunifuSnackbar1.Show(this, "Thiếu thông tin CCCD", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);

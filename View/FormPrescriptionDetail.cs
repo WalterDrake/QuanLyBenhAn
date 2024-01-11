@@ -204,6 +204,7 @@ namespace DO_AN_CUA_HAN.View
                             }
                             listDP.Clear();
                             bunifuSnackbar1.Show(this, "Cập nhập thông tin bệnh thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                            return;
                         }
                     }
                 }

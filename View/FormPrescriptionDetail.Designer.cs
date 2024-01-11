@@ -567,6 +567,7 @@
             this.bunifuToolTip1.SetToolTip(this.comboBoxMedicine, "");
             this.bunifuToolTip1.SetToolTipIcon(this.comboBoxMedicine, null);
             this.bunifuToolTip1.SetToolTipTitle(this.comboBoxMedicine, "");
+            this.comboBoxMedicine.SelectedIndexChanged += new System.EventHandler(this.comboBoxMedicine_SelectedIndexChanged);
             // 
             // labelState
             // 
@@ -852,6 +853,7 @@
             this.bunifuToolTip1.SetToolTip(this.listSelectedMedicine, "");
             this.bunifuToolTip1.SetToolTipIcon(this.listSelectedMedicine, null);
             this.bunifuToolTip1.SetToolTipTitle(this.listSelectedMedicine, "");
+            this.listSelectedMedicine.SelectedIndexChanged += new System.EventHandler(this.listSelectedMedicine_SelectedIndexChanged);
             // 
             // buttonClose
             // 

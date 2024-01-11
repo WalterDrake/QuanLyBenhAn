@@ -209,6 +209,7 @@
             this.bunifuButtonDepartmentAdd.TextMarginLeft = 0;
             this.bunifuButtonDepartmentAdd.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButtonDepartmentAdd.UseDefaultRadiusAndThickness = true;
+            this.bunifuButtonDepartmentAdd.Click += new System.EventHandler(this.bunifuButtonDeparmentAdd_Click);
             // 
             // pictureBox2
             // 
@@ -309,6 +310,7 @@
             this.bunifuButtonDepartmentDelete.TextMarginLeft = 0;
             this.bunifuButtonDepartmentDelete.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButtonDepartmentDelete.UseDefaultRadiusAndThickness = true;
+            this.bunifuButtonDepartmentDelete.Click += new System.EventHandler(this.bunifuButtonDepartmentDelete_Click);
             // 
             // pictureBox3
             // 
@@ -409,6 +411,7 @@
             this.bunifuButtonDepartmentEdit.TextMarginLeft = 0;
             this.bunifuButtonDepartmentEdit.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButtonDepartmentEdit.UseDefaultRadiusAndThickness = true;
+            this.bunifuButtonDepartmentEdit.Click += new System.EventHandler(this.bunifuButtonDepartmentEdit_Click);
             // 
             // pictureBox9
             // 
@@ -509,6 +512,7 @@
             this.bunifuButtonMajorAdd.TextMarginLeft = 0;
             this.bunifuButtonMajorAdd.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButtonMajorAdd.UseDefaultRadiusAndThickness = true;
+            this.bunifuButtonMajorAdd.Click += new System.EventHandler(this.bunifuButtonMajorAdd_Click);
             // 
             // pictureBox7
             // 
@@ -609,6 +613,7 @@
             this.bunifuButtonMajorDelete.TextMarginLeft = 0;
             this.bunifuButtonMajorDelete.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButtonMajorDelete.UseDefaultRadiusAndThickness = true;
+            this.bunifuButtonMajorDelete.Click += new System.EventHandler(this.bunifuButtonMajorDelete_Click);
             // 
             // pictureBox8
             // 
@@ -709,6 +714,7 @@
             this.bunifuButtonMajorEdit.TextMarginLeft = 0;
             this.bunifuButtonMajorEdit.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButtonMajorEdit.UseDefaultRadiusAndThickness = true;
+            this.bunifuButtonMajorEdit.Click += new System.EventHandler(this.bunifuButtonMajorEdit_Click);
             // 
             // bunifuLabel4
             // 

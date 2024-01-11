@@ -732,8 +732,8 @@
             this.dropDownState.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
             this.dropDownState.ItemHighLightForeColor = System.Drawing.Color.White;
             this.dropDownState.Items.AddRange(new object[] {
-            "Đang làm việc",
-            "Đã thôi việc"});
+            "Đã thôi việc",
+            "Đang làm việc"});
             this.dropDownState.ItemTopMargin = 3;
             this.dropDownState.Location = new System.Drawing.Point(163, 505);
             this.dropDownState.Name = "dropDownState";
