@@ -66,6 +66,13 @@ namespace DO_AN_CUA_HAN.View
 
         private void bunifuButtonClose_Click(object sender, EventArgs e)
         {
+            FormLogin_SignUp formLogin = new FormLogin_SignUp();
+            formLogin.FormClosed += new FormClosedEventHandler(FormResetClose);
+            formLogin.Show();
+            this.Hide();
+        }
+        private void FormResetClose(object sender, FormClosedEventArgs e)
+        {
             this.Close();
         }
         private string GenerateRandomPassword(int minLength, int maxLength)
