@@ -1,4 +1,5 @@
 ﻿using Bunifu.UI.WinForms;
+using DO_AN_CUA_HAN.Barcode;
 using DO_AN_CUA_HAN.Model;
 using System;
 using System.Collections.Generic;
@@ -417,6 +418,27 @@ namespace DO_AN_CUA_HAN.View
                 // Refresh datagridview after edit
                 refreshDataViewPatient();
             }
+        }
+
+        private void bunifuButton1_Click(object sender, EventArgs e)
+        {
+           
+            Form1 form1 = new Form1();
+            form1.ShowDialog();
+           
+
+            // Refresh datagridview after edit
+
+
+
+
+
+
+        }
+
+        private void bunifuTextBoxPatientSearch_TextChanged_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
