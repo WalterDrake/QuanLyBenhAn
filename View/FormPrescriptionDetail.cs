@@ -37,7 +37,6 @@ namespace DO_AN_CUA_HAN.View
             this.PDetail = pDetail;
             this.UserAction = userAction;
             SetPDetailForUpdate(pDetail);
-
         }
         private void SetPDetailForInsert(int staffID, int patientID)
         {
@@ -98,13 +97,15 @@ namespace DO_AN_CUA_HAN.View
         {
             if (string.IsNullOrEmpty(textBoxInputQuantity.Text))
             {
-                bunifuSnackbar1.Show(this, "Thiếu số lượng thuốc cần kê", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                bunifuSnackbar1.Show(this, "Thiếu số lượng thuốc cần kê", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 
+                1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                 return;
             }
 
             if (string.IsNullOrEmpty(textBoxInputInstruction.Text))
             {
-                bunifuSnackbar1.Show(this, "Thiếu thông tên hướng dẫn", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                bunifuSnackbar1.Show(this, "Thiếu thông tên hướng dẫn", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 
+                1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                 return;
             }
 
@@ -114,12 +115,14 @@ namespace DO_AN_CUA_HAN.View
                 int selectedIndex = comboBoxMedicine.SelectedIndex;
                 if (int.Parse(textBoxInputQuantity.Text) > listMedicine[selectedIndex].Quantity)
                 {
-                    bunifuSnackbar1.Show(this, "Số lượng thuốc không đáp ứng đủ nhu cầu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                    bunifuSnackbar1.Show(this, "Số lượng thuốc không đáp ứng đủ nhu cầu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 
+                    1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                     return;
                 }
                 else
                 {
-                    PrescriptionDetail newPD = new PrescriptionDetail(listMedicine[selectedIndex].MedicineID, 0, int.Parse(textBoxInputQuantity.Text), textBoxInputInstruction.Text);
+                    PrescriptionDetail newPD = new PrescriptionDetail(listMedicine[selectedIndex].MedicineID, 0, 
+                    int.Parse(textBoxInputQuantity.Text), textBoxInputInstruction.Text);
                     if (DidPrescriptionHaveMedicine(newPD.MedicineID))
                     {
                         for (int i = 0; i < listDP.Count; i++)
