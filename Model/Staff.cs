@@ -5,6 +5,7 @@ using System.Text;
 using System.Data;
 using System.Data.SqlClient;
 using DO_AN_CUA_HAN.Functional;
+using ZXing.QrCode.Internal;
 
 namespace DO_AN_CUA_HAN.Model
 {
@@ -60,7 +61,7 @@ namespace DO_AN_CUA_HAN.Model
             SqlParameter[] sqlParameters = {   new SqlParameter("@DepartmentID", staff.DepartmentID),
                                            new SqlParameter("@MajorID", staff.MajorID),
                                            new SqlParameter("@RoleID", staff.RoleID),
-                                           new SqlParameter("@Password", staff.Password),
+                                           new SqlParameter("@Password", Model.Bcrypt.CreateMD5(staff.Password)),
                                            new SqlParameter("@FirstName", staff.FirstName),
                                            new SqlParameter("@LastName", staff.LastName),
                                            new SqlParameter("@BirthDay", staff.BirthDay),
@@ -68,7 +69,7 @@ namespace DO_AN_CUA_HAN.Model
                                            new SqlParameter("@ICN", staff.ICN),
                                            new SqlParameter("@Address", staff.Address),
                                            new SqlParameter("@State", staff.State),
-                                           new SqlParameter("@Email", staff.Email)};
+                                           new SqlParameter("@Mail", staff.Email)};
 
 
             return SqlResult.ExecuteNonQuery(sqlInsert, sqlParameters);
@@ -86,7 +87,7 @@ namespace DO_AN_CUA_HAN.Model
                                            new SqlParameter("@DepartmentID", staff.DepartmentID),
                                            new SqlParameter("@MajorID", staff.MajorID),
                                            new SqlParameter("@RoleID", staff.RoleID),
-                                           new SqlParameter("@Password", staff.Password),
+                                           new SqlParameter("@Password", Model.Bcrypt.CreateMD5(staff.Password)),
                                            new SqlParameter("@FirstName", staff.FirstName),
                                            new SqlParameter("@LastName", staff.LastName),
                                            new SqlParameter("@BirthDay", staff.BirthDay),
@@ -94,7 +95,7 @@ namespace DO_AN_CUA_HAN.Model
                                            new SqlParameter("@ICN", staff.ICN),
                                            new SqlParameter("@Address", staff.Address),
                                            new SqlParameter("@State", staff.State),
-                                           new SqlParameter("@Email", staff.Email)};
+                                           new SqlParameter("@Mail", staff.Email)};
 
             return SqlResult.ExecuteNonQuery(sqlUpdate, sqlParameters);
         }

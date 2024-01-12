@@ -148,7 +148,7 @@ namespace DO_AN_CUA_HAN.View
                 // If useraction is add then insert to database else update
                 if ("add".Equals(this.UserAction))
                 {
-                    StaffDetail.Password = StaffDetail.ICN.ToString();
+                    StaffDetail.Password = StaffDetail.ICN.ToString(); //password mới tạo là cccd
                     Staff.InsertStaff(StaffDetail);
                 }
                 else if ("edit".Equals(this.UserAction))
@@ -172,9 +172,9 @@ namespace DO_AN_CUA_HAN.View
                     }
                 }
             }
-            catch
+            catch(Exception ex)
             {
-                bunifuSnackbar1.Show(this, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                bunifuSnackbar1.Show(this, ex.Message, Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                 return;
             }
 

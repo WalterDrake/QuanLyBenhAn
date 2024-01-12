@@ -32,35 +32,30 @@ namespace DO_AN_CUA_HAN.View
 
         private void bunifuButtonResetPassword_Click(object sender, EventArgs e)
         {
-
             this.Cursor = Cursors.WaitCursor;
             DataTable dtb;
-
             string USERNAME = bunifuTextBoxUsername.Text;
             string sqlSelect = @"SELECT * FROM STAFF WHERE STAFFID = @Staffid";
-
             SqlParameter[] sqlParameters = { new SqlParameter("@Staffid", USERNAME) };
-
             dtb = SqlResult.ExecuteQuery(sqlSelect, sqlParameters);
-
             if (!(dtb.Rows.Count > 0))
             {
-                bunifuSnackbar1.Show(this, "Tài khoản không hợp lệ", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000, "Lỗi đăng nhập", Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                bunifuSnackbar1.Show(this, "Tài khoản không hợp lệ", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error,
+                1000, "Lỗi đăng nhập", Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
                 return;
             }
             string EMAIL = dtb.Rows[0]["EMAIL"].ToString();
-
             string newPassword = GenerateRandomPassword(8, 14);
             string subject = "Reset password (eHospital)";
             string body = "Mật khẩu mới: " + newPassword;
-                    
             string hashedPassword = Model.Bcrypt.CreateMD5(newPassword);
             string sqlUpdate = @"UPDATE STAFF SET  PASSWORD = @Password WHERE (STAFFID = @StaffID)";
             SqlParameter[] sqlParametersUpdate = { new SqlParameter("@Password", hashedPassword),
                                                     new SqlParameter("@StaffID", USERNAME)};
             SqlResult.ExecuteNonQuery(sqlUpdate, sqlParametersUpdate);
             Send(EMAIL, subject, body);
-            bunifuSnackbar1.Show(this, "Reset password thành công. Vui lòng kiểm tra email", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+            bunifuSnackbar1.Show(this, "Reset password thành công. Vui lòng kiểm tra email", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 
+            3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
             this.Cursor = Cursors.Default;
         }
 
@@ -126,7 +121,8 @@ namespace DO_AN_CUA_HAN.View
             }
             catch (Exception error)
             {
-                bunifuSnackbar1.Show(this, "Unexpected Error: " + error, Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000,null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
+                bunifuSnackbar1.Show(this, "Unexpected Error: " + error, Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error,
+                1000,null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
             }
         }
     }
