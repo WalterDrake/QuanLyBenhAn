@@ -106,7 +106,9 @@
             this.Exit = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuLogOut = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuAccount = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.bunifuLabelInfo = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuGradientPanel1_FormMain.SuspendLayout();
+            this.bunifuShadowPanel2.SuspendLayout();
             this.tabMain.SuspendLayout();
             this.tabItemBed.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox23)).BeginInit();
@@ -299,6 +301,7 @@
             this.bunifuShadowPanel2.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.bunifuShadowPanel2.BorderRadius = 40;
             this.bunifuShadowPanel2.BorderThickness = 1;
+            this.bunifuShadowPanel2.Controls.Add(this.bunifuLabelInfo);
             this.bunifuShadowPanel2.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
             this.bunifuShadowPanel2.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
             this.bunifuShadowPanel2.Location = new System.Drawing.Point(28, 706);
@@ -400,7 +403,7 @@
             this.ItemBed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
             this.ItemBed.CursorType = null;
             this.ItemBed.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
-            this.ItemBed.Location = new System.Drawing.Point(29, 12);
+            this.ItemBed.Location = new System.Drawing.Point(27, 13);
             this.ItemBed.Name = "ItemBed";
             this.ItemBed.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.ItemBed.Size = new System.Drawing.Size(84, 17);
@@ -421,7 +424,7 @@
             this.bunifuPictureBox23.BorderRadius = 14;
             this.bunifuPictureBox23.Image = global::DO_AN_CUA_HAN.Properties.Resources.vecteezy_hospital_bed_in_circle_icon_intensive_care_unit_icon_4745587_removebg_preview;
             this.bunifuPictureBox23.IsCircle = false;
-            this.bunifuPictureBox23.Location = new System.Drawing.Point(4, 9);
+            this.bunifuPictureBox23.Location = new System.Drawing.Point(3, 7);
             this.bunifuPictureBox23.Name = "bunifuPictureBox23";
             this.bunifuPictureBox23.Size = new System.Drawing.Size(28, 28);
             this.bunifuPictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -668,7 +671,7 @@
             this.ItemFunction.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
             this.ItemFunction.CursorType = null;
             this.ItemFunction.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
-            this.ItemFunction.Location = new System.Drawing.Point(39, 11);
+            this.ItemFunction.Location = new System.Drawing.Point(36, 13);
             this.ItemFunction.Name = "ItemFunction";
             this.ItemFunction.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.ItemFunction.Size = new System.Drawing.Size(70, 17);
@@ -689,7 +692,7 @@
             this.bunifuPictureBox19.BorderRadius = 18;
             this.bunifuPictureBox19.Image = global::DO_AN_CUA_HAN.Properties.Resources.vecteezy_3d_rendered_icon_medical_hospital_illustraion_27252245;
             this.bunifuPictureBox19.IsCircle = true;
-            this.bunifuPictureBox19.Location = new System.Drawing.Point(8, 1);
+            this.bunifuPictureBox19.Location = new System.Drawing.Point(4, 0);
             this.bunifuPictureBox19.Name = "bunifuPictureBox19";
             this.bunifuPictureBox19.Size = new System.Drawing.Size(37, 37);
             this.bunifuPictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -735,7 +738,7 @@
             this.ItemRole.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
             this.ItemRole.CursorType = null;
             this.ItemRole.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
-            this.ItemRole.Location = new System.Drawing.Point(36, 12);
+            this.ItemRole.Location = new System.Drawing.Point(32, 13);
             this.ItemRole.Name = "ItemRole";
             this.ItemRole.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.ItemRole.Size = new System.Drawing.Size(75, 17);
@@ -756,7 +759,7 @@
             this.bunifuPictureBox18.BorderRadius = 23;
             this.bunifuPictureBox18.Image = global::DO_AN_CUA_HAN.Properties.Resources.vecteezy_a_medical_staff_group_of_doctors_and_nurses_standing_in_7382696_removebg_preview;
             this.bunifuPictureBox18.IsCircle = true;
-            this.bunifuPictureBox18.Location = new System.Drawing.Point(3, -1);
+            this.bunifuPictureBox18.Location = new System.Drawing.Point(-3, -2);
             this.bunifuPictureBox18.Name = "bunifuPictureBox18";
             this.bunifuPictureBox18.Size = new System.Drawing.Size(47, 47);
             this.bunifuPictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1136,7 +1139,7 @@
             this.ItemSurgery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
             this.ItemSurgery.CursorType = null;
             this.ItemSurgery.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
-            this.ItemSurgery.Location = new System.Drawing.Point(38, 14);
+            this.ItemSurgery.Location = new System.Drawing.Point(33, 13);
             this.ItemSurgery.Name = "ItemSurgery";
             this.ItemSurgery.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.ItemSurgery.Size = new System.Drawing.Size(69, 17);
@@ -1157,7 +1160,7 @@
             this.bunifuPictureBox10.BorderRadius = 22;
             this.bunifuPictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox10.Image")));
             this.bunifuPictureBox10.IsCircle = true;
-            this.bunifuPictureBox10.Location = new System.Drawing.Point(-1, -1);
+            this.bunifuPictureBox10.Location = new System.Drawing.Point(-5, -1);
             this.bunifuPictureBox10.Name = "bunifuPictureBox10";
             this.bunifuPictureBox10.Size = new System.Drawing.Size(44, 44);
             this.bunifuPictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1203,7 +1206,7 @@
             this.ItemStaff.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
             this.ItemStaff.CursorType = null;
             this.ItemStaff.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
-            this.ItemStaff.Location = new System.Drawing.Point(41, 12);
+            this.ItemStaff.Location = new System.Drawing.Point(40, 13);
             this.ItemStaff.Name = "ItemStaff";
             this.ItemStaff.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.ItemStaff.Size = new System.Drawing.Size(66, 17);
@@ -1224,7 +1227,7 @@
             this.bunifuPictureBox9.BorderRadius = 21;
             this.bunifuPictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox9.Image")));
             this.bunifuPictureBox9.IsCircle = true;
-            this.bunifuPictureBox9.Location = new System.Drawing.Point(7, 0);
+            this.bunifuPictureBox9.Location = new System.Drawing.Point(2, 0);
             this.bunifuPictureBox9.Name = "bunifuPictureBox9";
             this.bunifuPictureBox9.Size = new System.Drawing.Size(42, 42);
             this.bunifuPictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1337,7 +1340,7 @@
             this.ItemAssignment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
             this.ItemAssignment.CursorType = null;
             this.ItemAssignment.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
-            this.ItemAssignment.Location = new System.Drawing.Point(38, 12);
+            this.ItemAssignment.Location = new System.Drawing.Point(33, 13);
             this.ItemAssignment.Name = "ItemAssignment";
             this.ItemAssignment.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.ItemAssignment.Size = new System.Drawing.Size(67, 17);
@@ -1358,7 +1361,7 @@
             this.bunifuPictureBox7.BorderRadius = 14;
             this.bunifuPictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox7.Image")));
             this.bunifuPictureBox7.IsCircle = true;
-            this.bunifuPictureBox7.Location = new System.Drawing.Point(8, 7);
+            this.bunifuPictureBox7.Location = new System.Drawing.Point(5, 7);
             this.bunifuPictureBox7.Name = "bunifuPictureBox7";
             this.bunifuPictureBox7.Size = new System.Drawing.Size(29, 29);
             this.bunifuPictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1404,7 +1407,7 @@
             this.ItemExamination.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(210)))), ((int)(((byte)(200)))));
             this.ItemExamination.CursorType = null;
             this.ItemExamination.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
-            this.ItemExamination.Location = new System.Drawing.Point(32, 13);
+            this.ItemExamination.Location = new System.Drawing.Point(27, 13);
             this.ItemExamination.Name = "ItemExamination";
             this.ItemExamination.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.ItemExamination.Size = new System.Drawing.Size(75, 17);
@@ -1425,7 +1428,7 @@
             this.bunifuPictureBox6.BorderRadius = 12;
             this.bunifuPictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox6.Image")));
             this.bunifuPictureBox6.IsCircle = true;
-            this.bunifuPictureBox6.Location = new System.Drawing.Point(7, 11);
+            this.bunifuPictureBox6.Location = new System.Drawing.Point(4, 9);
             this.bunifuPictureBox6.Name = "bunifuPictureBox6";
             this.bunifuPictureBox6.Size = new System.Drawing.Size(24, 24);
             this.bunifuPictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1920,6 +1923,25 @@
             this.bunifuAccount.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             this.bunifuAccount.Click += new System.EventHandler(this.bunifuAccount_Click);
             // 
+            // bunifuLabelInfo
+            // 
+            this.bunifuLabelInfo.AllowParentOverrides = false;
+            this.bunifuLabelInfo.AutoEllipsis = false;
+            this.bunifuLabelInfo.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabelInfo.Font = new System.Drawing.Font("Bree Serif", 15.75F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabelInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.bunifuLabelInfo.Location = new System.Drawing.Point(28, 54);
+            this.bunifuLabelInfo.Name = "bunifuLabelInfo";
+            this.bunifuLabelInfo.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabelInfo.Size = new System.Drawing.Size(40, 29);
+            this.bunifuLabelInfo.TabIndex = 0;
+            this.bunifuLabelInfo.Text = "text";
+            this.bunifuLabelInfo.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabelInfo.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuToolTip1.SetToolTip(this.bunifuLabelInfo, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.bunifuLabelInfo, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.bunifuLabelInfo, "");
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1934,6 +1956,8 @@
             this.Text = "FormMain";
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.bunifuGradientPanel1_FormMain.ResumeLayout(false);
+            this.bunifuShadowPanel2.ResumeLayout(false);
+            this.bunifuShadowPanel2.PerformLayout();
             this.tabMain.ResumeLayout(false);
             this.tabItemBed.ResumeLayout(false);
             this.tabItemBed.PerformLayout();
@@ -2086,5 +2110,6 @@
         private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel3;
         private Bunifu.UI.WinForms.BunifuPictureBox Exit;
         private Bunifu.UI.WinForms.BunifuPictureBox pictureBoxInformation;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabelInfo;
     }
 }

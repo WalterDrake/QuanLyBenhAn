@@ -24,6 +24,7 @@ namespace DO_AN_CUA_HAN.View
 
         private Staff loginStaff { get; set; }
         public Point mouseLocation;
+        private Bunifu.UI.WinForms.BunifuShadowPanel lastClickedPanel;
 
         public FormMain()
         {
@@ -71,9 +72,12 @@ namespace DO_AN_CUA_HAN.View
 
         private void tabItemMedicine_Click(object sender, EventArgs e)
         {
+            SwitchPanel(tabItemMedicine);
+            click_Animation_On(tabItemMedicine);
+            bunifuLabelInfo.Text = "Hệ thống thuốc";
             bunifuShadowPanel3.Hide();
             bunifuShadowPanel3.Controls.Clear();
-             FormMainMedicine formMainMedicine = new FormMainMedicine();
+            FormMainMedicine formMainMedicine = new FormMainMedicine();
             bunifuShadowPanel3.Controls.Add(formMainMedicine);
             bunifuShadowPanel3.Show();
             formMainMedicine.tabItemMedicine_Click();
@@ -81,6 +85,9 @@ namespace DO_AN_CUA_HAN.View
 
         private void tabItemPatient_Click(object sender, EventArgs e)
         {
+            SwitchPanel(tabItemPatient);
+            click_Animation_On(tabItemPatient);
+            bunifuLabelInfo.Text = "Hệ thống bệnh nhân";
             bunifuShadowPanel3.Hide();
             bunifuShadowPanel3.Controls.Clear();
             FormMainPatient formMainPatient = new FormMainPatient(loginStaff);
@@ -92,6 +99,9 @@ namespace DO_AN_CUA_HAN.View
 
         private void tabItemStaff_Click(object sender, EventArgs e)
         {
+            SwitchPanel(tabItemStaff);
+            click_Animation_On(tabItemStaff);
+            bunifuLabelInfo.Text = "Hệ thống nhân viên";
             bunifuShadowPanel3.Hide();
             bunifuShadowPanel3.Controls.Clear();
             FormMainStaff formMainStaff = new FormMainStaff();
@@ -103,6 +113,9 @@ namespace DO_AN_CUA_HAN.View
 
         private void tabItemHealthFile_Click(object sender, EventArgs e)
         {
+            SwitchPanel(tabItemHealthFile);
+            click_Animation_On(tabItemHealthFile);
+            bunifuLabelInfo.Text = "Hệ thống bệnh án";
             bunifuShadowPanel3.Hide();
             bunifuShadowPanel3.Controls.Clear();
             FormMainHF formMainHF = new FormMainHF();
@@ -113,6 +126,9 @@ namespace DO_AN_CUA_HAN.View
 
         private void tabItemExamination_Click(object sender, EventArgs e)
         {
+            SwitchPanel(tabItemExamination);
+            click_Animation_On(tabItemExamination);
+            bunifuLabelInfo.Text = "Hệ thống khám bệnh";
             bunifuShadowPanel3.Hide();
             bunifuShadowPanel3.Controls.Clear();
             FormMainEC formMainEC = new FormMainEC(loginStaff);
@@ -123,6 +139,9 @@ namespace DO_AN_CUA_HAN.View
 
         private void tabItemBill_Click(object sender, EventArgs e)
         {
+            SwitchPanel(tabItemBill);
+            click_Animation_On(tabItemBill);
+            bunifuLabelInfo.Text = "Hệ thống hóa đơn";
             bunifuShadowPanel3.Hide();
             bunifuShadowPanel3.Controls.Clear();
             FormMainBill formMainBill = new FormMainBill();
@@ -133,6 +152,9 @@ namespace DO_AN_CUA_HAN.View
 
         private void tabItemAssignment_Click(object sender, EventArgs e)
         {
+            SwitchPanel(tabItemAssignment);
+            click_Animation_On(tabItemAssignment);
+            bunifuLabelInfo.Text = "Hệ thống phân công";
             bunifuShadowPanel3.Hide();
             bunifuShadowPanel3.Controls.Clear();
             FormMainAssignment formMainAS = new FormMainAssignment();
@@ -143,6 +165,9 @@ namespace DO_AN_CUA_HAN.View
 
         private void tabItemDeptMajor_Click(object sender, EventArgs e)
         {
+            SwitchPanel(tabItemDeptMajor);
+            click_Animation_On(tabItemDeptMajor);
+            bunifuLabelInfo.Text = "Hệ thống khoa/chuyên ngành";
             bunifuShadowPanel3.Hide();
             bunifuShadowPanel3.Controls.Clear();
             FormMainDeptMajor formMainMajor = new FormMainDeptMajor();
@@ -153,6 +178,9 @@ namespace DO_AN_CUA_HAN.View
 
         private void tabItemSurgery_Click(object sender, EventArgs e)
         {
+            SwitchPanel(tabItemSurgery);
+            click_Animation_On(tabItemSurgery);
+            bunifuLabelInfo.Text = "Hệ thống phẫu thuật";
             bunifuShadowPanel3.Hide();
             bunifuShadowPanel3.Controls.Clear();
             FormMainSurgery formMainSurgery = new FormMainSurgery();
@@ -163,6 +191,9 @@ namespace DO_AN_CUA_HAN.View
         
         private void tabItemDisease_Click(object sender, EventArgs e)
         {
+            SwitchPanel(tabItemDisease);
+            click_Animation_On(tabItemDisease);
+            bunifuLabelInfo.Text = "Hệ thống bệnh tật";
             bunifuShadowPanel3.Hide();
             bunifuShadowPanel3.Controls.Clear();
             FormMainDisease formMainDisease = new FormMainDisease();
@@ -173,6 +204,9 @@ namespace DO_AN_CUA_HAN.View
 
         private void tabItemHospitalization_Click(object sender, EventArgs e)
         {
+            SwitchPanel(tabItemHospitalization);
+            click_Animation_On(tabItemHospitalization);
+            bunifuLabelInfo.Text = "Hệ thống nhập viện";
             bunifuShadowPanel3.Hide();
             bunifuShadowPanel3.Controls.Clear();
             FormMainHospitalization formMainHospitalization = new FormMainHospitalization();
@@ -183,6 +217,9 @@ namespace DO_AN_CUA_HAN.View
 
         private void tabItemMonitor_Click(object sender, EventArgs e)
         {
+            SwitchPanel(tabItemMonitor);
+            click_Animation_On(tabItemMonitor);
+            bunifuLabelInfo.Text = "Hệ thống theo dõi";
             bunifuShadowPanel3.Hide();
             bunifuShadowPanel3.Controls.Clear();
             FormMainMonitor formMainMonitor = new FormMainMonitor();
@@ -193,6 +230,9 @@ namespace DO_AN_CUA_HAN.View
 
         private void tabItemTest_Click(object sender, EventArgs e)
         {
+            SwitchPanel(tabItemTest);
+            click_Animation_On(tabItemTest);
+            bunifuLabelInfo.Text = "Hệ thống xét nghiệm";
             bunifuShadowPanel3.Hide();
             bunifuShadowPanel3.Controls.Clear();
             FormMainTest formMainTest = new FormMainTest();
@@ -208,6 +248,9 @@ namespace DO_AN_CUA_HAN.View
 
         private void tabItemFunction_Click(object sender, EventArgs e)
         {
+            SwitchPanel(tabItemFunction);
+            click_Animation_On(tabItemFunction);
+            bunifuLabelInfo.Text = "Hệ thống chức năng";
             bunifuShadowPanel3.Hide();
             bunifuShadowPanel3.Controls.Clear();
             FormMainRoleFunction formMainRoleFunction = new FormMainRoleFunction();
@@ -218,6 +261,9 @@ namespace DO_AN_CUA_HAN.View
 
         private void tabItemBed_Click(object sender, EventArgs e)
         {
+            SwitchPanel(tabItemBed);
+            click_Animation_On(tabItemBed);
+            bunifuLabelInfo.Text = "Hệ thống giường bệnh";
             bunifuShadowPanel3.Hide();
             bunifuShadowPanel3.Controls.Clear();
             FormMainBed formMainBed = new FormMainBed();
@@ -228,6 +274,9 @@ namespace DO_AN_CUA_HAN.View
 
         private void tabItemService_Click(object sender, EventArgs e)
         {
+            SwitchPanel(tabItemService);
+            click_Animation_On(tabItemService);
+            bunifuLabelInfo.Text = "Hệ thống dịch vụ";
             bunifuShadowPanel3.Hide();
             bunifuShadowPanel3.Controls.Clear();
             FormMainService formMainService = new FormMainService();
@@ -238,6 +287,9 @@ namespace DO_AN_CUA_HAN.View
 
         private void tabItemPrescpition_Click(object sender, EventArgs e)
         {
+            SwitchPanel(tabItemPrescpition);
+            click_Animation_On(tabItemPrescpition);
+            bunifuLabelInfo.Text = "Hệ thống kê đơn";
             bunifuShadowPanel3.Hide();
             bunifuShadowPanel3.Controls.Clear();
             FormMainPrescription formMainPrescription = new FormMainPrescription();
@@ -248,6 +300,9 @@ namespace DO_AN_CUA_HAN.View
 
         private void tabItemMaterial_Click(object sender, EventArgs e)
         {
+            SwitchPanel(tabItemMaterial);
+            click_Animation_On(tabItemMaterial);
+            bunifuLabelInfo.Text = "Hệ thống dồ dùng";
             bunifuShadowPanel3.Hide();
             bunifuShadowPanel3.Controls.Clear();
             FormMainMaterial formMainMaterial= new FormMainMaterial();
@@ -257,6 +312,9 @@ namespace DO_AN_CUA_HAN.View
         }
         private void tabItemDischarged_Click(object sender, EventArgs e)
         {
+            SwitchPanel(tabItemDischarged);
+            click_Animation_On(tabItemDischarged);
+            bunifuLabelInfo.Text = "Hệ thống xuất viện";
             bunifuShadowPanel3.Hide();
             bunifuShadowPanel3.Controls.Clear();
             FormMainDischarged formMainDischarged = new FormMainDischarged();
@@ -267,6 +325,9 @@ namespace DO_AN_CUA_HAN.View
 
         private void tabItemRole_Click(object sender, EventArgs e)
         {
+            SwitchPanel(tabItemRole);
+            click_Animation_On(tabItemRole);
+            bunifuLabelInfo.Text = "Hệ thống phân quyền";
             bunifuShadowPanel3.Hide();
             bunifuShadowPanel3.Controls.Clear();
             FormMainRole formMainRole = new FormMainRole();
@@ -295,6 +356,9 @@ namespace DO_AN_CUA_HAN.View
         }
         private void tabItemStatistics_Click(object sender, EventArgs e)
         {
+            SwitchPanel(tabItemStatistics);
+            click_Animation_On(tabItemStatistics);
+            bunifuLabelInfo.Text = "Hệ thống thống kê";
             bunifuShadowPanel3.Hide();
             bunifuShadowPanel3.Controls.Clear();
             FormMainReport formMainReport = new FormMainReport();
@@ -304,34 +368,42 @@ namespace DO_AN_CUA_HAN.View
 
         private void FormMain_Load(object sender, EventArgs e)
         {
-            // Creating a list of tuples
-            List<Tuple<int, int>> indexlist = new List<Tuple<int, int>>();
+            switch (loginStaff.RoleID)
+            {
+                case 105:
+                    {
+                        FormMainPatient formMainPatient = new FormMainPatient(loginStaff);
+                        bunifuShadowPanel3.Controls.Add(formMainPatient);
+                        formMainPatient.tabItemPatient();
+                        bunifuLabelInfo.Text = "Giao diện bệnh nhân";
+                        break;
+                    }
+                case 100:
+                    {
+                        FormMainStaff formMainStaff = new FormMainStaff();
+                        bunifuShadowPanel3.Controls.Add(formMainStaff);
+                        formMainStaff.tabItemStaff_Click();
+                        bunifuLabelInfo.Text = "Giao diện nhân viên";
+                        break;
+                    }
+                case 102:
+                    {
+                        FormMainBill formMainBill = new FormMainBill();
+                        bunifuShadowPanel3.Controls.Add(formMainBill);
+                        formMainBill.tabPanelBill();
+                        bunifuLabelInfo.Text = "Giao diện hóa đơn";
+                        break;
+                    }
+                case 103:
+                    {
+                        FormMainPatient formMainPatient = new FormMainPatient(loginStaff);
+                        bunifuShadowPanel3.Controls.Add(formMainPatient);
+                        formMainPatient.tabItemPatient();
+                        bunifuLabelInfo.Text = "Giao diện bệnh nhân";
+                        break;
+                    }
 
-            // Adding tuples to the list
-            indexlist.Add(Tuple.Create(15, 83));
-            indexlist.Add(Tuple.Create(183, 83));
-            indexlist.Add(Tuple.Create(15, 139));
-            indexlist.Add(Tuple.Create(138, 139));
-            indexlist.Add(Tuple.Create(15, 196));
-            indexlist.Add(Tuple.Create(138, 196));
-            indexlist.Add(Tuple.Create(15, 253));
-            indexlist.Add(Tuple.Create(138, 253));
-            indexlist.Add(Tuple.Create(15, 305));
-            indexlist.Add(Tuple.Create(138, 305));
-            indexlist.Add(Tuple.Create(15, 335));
-            indexlist.Add(Tuple.Create(143, 354));
-            indexlist.Add(Tuple.Create(15, 405));
-            indexlist.Add(Tuple.Create(138, 405));
-            indexlist.Add(Tuple.Create(18, 454));
-            indexlist.Add(Tuple.Create(139, 454));
-            indexlist.Add(Tuple.Create(14, 501));
-            indexlist.Add(Tuple.Create(141, 501));
-            indexlist.Add(Tuple.Create(17, 547));
-            indexlist.Add(Tuple.Create(143, 550));
-            indexlist.Add(Tuple.Create(75, 602));
-            FormMainPatient formMainPatient = new FormMainPatient(loginStaff);
-            bunifuShadowPanel3.Controls.Add(formMainPatient);
-            formMainPatient.tabItemPatient();
+            }
             GrantRole();
         }
         private void GrantRole()
@@ -360,7 +432,6 @@ namespace DO_AN_CUA_HAN.View
             indexlist.Add(Tuple.Create(141, 501));
             indexlist.Add(Tuple.Create(17, 547));
             indexlist.Add(Tuple.Create(143, 550));
-            indexlist.Add(Tuple.Create(75, 602));
 
             DataTable dtRoleDetail = RoleDetail.GetListStaffFunction(loginStaff.RoleID);
             
@@ -394,6 +465,27 @@ namespace DO_AN_CUA_HAN.View
                 mousePose.Offset(mouseLocation.X, mouseLocation.Y);
                 Location = mousePose;
             }
+        }
+
+        private void click_Animation_On(Bunifu.UI.WinForms.BunifuShadowPanel a)
+        {
+            a.ShadowDepth = 5;
+            a.ShadowColor = Color.Teal;
+        }
+        private void click_Animation_Off(Bunifu.UI.WinForms.BunifuShadowPanel a)
+        {
+            a.ShadowDepth = 2;
+            a.ShadowColor = Color.Gray;
+        }
+        
+        private void SwitchPanel(Bunifu.UI.WinForms.BunifuShadowPanel newPanel)
+        {
+            if (lastClickedPanel != null)
+            {
+                click_Animation_Off(lastClickedPanel);
+            }
+
+            lastClickedPanel = newPanel;
         }
     }
 }

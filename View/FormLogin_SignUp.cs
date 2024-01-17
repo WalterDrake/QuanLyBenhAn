@@ -87,7 +87,6 @@ namespace DO_AN_CUA_HAN.View
             catch
             {
                 bunifuSnackbar1.Show(this, "Không thể kết nối với cơ sở dữ liệu. Vui lòng kiểm tra lại tùy chỉnh", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopLeft);
-          
             }
         }
 

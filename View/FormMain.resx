@@ -1310,6 +1310,9 @@
         q+cP1n3OXwGu3/3u/wcvjj3Fmc/VdwAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="bunifuLabelInfo.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Bree Serif'; font-size: 15.75pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 192, 192); text-align: left; }</value>
+  </data>
   <metadata name="bunifuToolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>318, 17</value>
   </metadata>

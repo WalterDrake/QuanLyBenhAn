@@ -20,5 +20,10 @@ namespace DO_AN_CUA_HAN.Barcode
             string ten = patient.FirstName + patient.LastName;
             label1.Text = ten;
         }
+
+        private void buttonClose_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
