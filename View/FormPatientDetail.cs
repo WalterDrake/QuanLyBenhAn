@@ -123,6 +123,7 @@ namespace  DO_AN_CUA_HAN.View
             catch
             {
                 bunifuSnackbar1.Show(this, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+                return;
             }
 
             // After process then close this form

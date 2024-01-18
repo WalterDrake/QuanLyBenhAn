@@ -45,8 +45,8 @@
             this.bunifuToolTip1 = new Bunifu.UI.WinForms.BunifuToolTip(this.components);
             this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.bunifuShadowPanel1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.bunifuDatePickerIssue = new Bunifu.UI.WinForms.BunifuDatePicker();
             this.bunifuDatePickerExpire = new Bunifu.UI.WinForms.BunifuDatePicker();
+            this.bunifuDatePickerIssue = new Bunifu.UI.WinForms.BunifuDatePicker();
             this.bunifuLabel5 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuTextBoxPatientID = new Bunifu.UI.WinForms.BunifuTextBox();
@@ -184,7 +184,7 @@
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(109)))), ((int)(((byte)(160)))));
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(199)))), ((int)(((byte)(205)))));
             this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(638, 566);
@@ -199,8 +199,8 @@
             this.bunifuShadowPanel1.BorderColor = System.Drawing.Color.DarkSlateGray;
             this.bunifuShadowPanel1.BorderRadius = 20;
             this.bunifuShadowPanel1.BorderThickness = 2;
-            this.bunifuShadowPanel1.Controls.Add(this.bunifuDatePickerIssue);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuDatePickerExpire);
+            this.bunifuShadowPanel1.Controls.Add(this.bunifuDatePickerIssue);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuLabel5);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuLabel4);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuTextBoxPatientID);
@@ -229,35 +229,6 @@
             this.bunifuToolTip1.SetToolTipIcon(this.bunifuShadowPanel1, null);
             this.bunifuToolTip1.SetToolTipTitle(this.bunifuShadowPanel1, "");
             // 
-            // bunifuDatePickerIssue
-            // 
-            this.bunifuDatePickerIssue.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuDatePickerIssue.BorderRadius = 5;
-            this.bunifuDatePickerIssue.CalendarFont = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuDatePickerIssue.Color = System.Drawing.Color.Gainsboro;
-            this.bunifuDatePickerIssue.DateBorderThickness = Bunifu.UI.WinForms.BunifuDatePicker.BorderThickness.Thin;
-            this.bunifuDatePickerIssue.DateTextAlign = Bunifu.UI.WinForms.BunifuDatePicker.TextAlign.Left;
-            this.bunifuDatePickerIssue.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuDatePickerIssue.DisplayWeekNumbers = false;
-            this.bunifuDatePickerIssue.DPHeight = 0;
-            this.bunifuDatePickerIssue.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.bunifuDatePickerIssue.FillDatePicker = false;
-            this.bunifuDatePickerIssue.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuDatePickerIssue.ForeColor = System.Drawing.Color.Black;
-            this.bunifuDatePickerIssue.Icon = ((System.Drawing.Image)(resources.GetObject("bunifuDatePickerIssue.Icon")));
-            this.bunifuDatePickerIssue.IconColor = System.Drawing.Color.DimGray;
-            this.bunifuDatePickerIssue.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
-            this.bunifuDatePickerIssue.LeftTextMargin = 5;
-            this.bunifuDatePickerIssue.Location = new System.Drawing.Point(57, 356);
-            this.bunifuDatePickerIssue.MinimumSize = new System.Drawing.Size(4, 32);
-            this.bunifuDatePickerIssue.Name = "bunifuDatePickerIssue";
-            this.bunifuDatePickerIssue.Size = new System.Drawing.Size(419, 32);
-            this.bunifuDatePickerIssue.TabIndex = 12;
-            this.bunifuToolTip1.SetToolTip(this.bunifuDatePickerIssue, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.bunifuDatePickerIssue, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.bunifuDatePickerIssue, "");
-            this.bunifuDatePickerIssue.Value = new System.DateTime(2023, 12, 13, 22, 17, 0, 0);
-            // 
             // bunifuDatePickerExpire
             // 
             this.bunifuDatePickerExpire.BackColor = System.Drawing.Color.Transparent;
@@ -277,15 +248,44 @@
             this.bunifuDatePickerExpire.IconColor = System.Drawing.Color.DimGray;
             this.bunifuDatePickerExpire.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
             this.bunifuDatePickerExpire.LeftTextMargin = 5;
-            this.bunifuDatePickerExpire.Location = new System.Drawing.Point(57, 286);
+            this.bunifuDatePickerExpire.Location = new System.Drawing.Point(57, 356);
             this.bunifuDatePickerExpire.MinimumSize = new System.Drawing.Size(4, 32);
             this.bunifuDatePickerExpire.Name = "bunifuDatePickerExpire";
             this.bunifuDatePickerExpire.Size = new System.Drawing.Size(419, 32);
-            this.bunifuDatePickerExpire.TabIndex = 11;
+            this.bunifuDatePickerExpire.TabIndex = 12;
             this.bunifuToolTip1.SetToolTip(this.bunifuDatePickerExpire, "");
             this.bunifuToolTip1.SetToolTipIcon(this.bunifuDatePickerExpire, null);
             this.bunifuToolTip1.SetToolTipTitle(this.bunifuDatePickerExpire, "");
             this.bunifuDatePickerExpire.Value = new System.DateTime(2023, 12, 13, 22, 17, 0, 0);
+            // 
+            // bunifuDatePickerIssue
+            // 
+            this.bunifuDatePickerIssue.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuDatePickerIssue.BorderRadius = 5;
+            this.bunifuDatePickerIssue.CalendarFont = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuDatePickerIssue.Color = System.Drawing.Color.Gainsboro;
+            this.bunifuDatePickerIssue.DateBorderThickness = Bunifu.UI.WinForms.BunifuDatePicker.BorderThickness.Thin;
+            this.bunifuDatePickerIssue.DateTextAlign = Bunifu.UI.WinForms.BunifuDatePicker.TextAlign.Left;
+            this.bunifuDatePickerIssue.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuDatePickerIssue.DisplayWeekNumbers = false;
+            this.bunifuDatePickerIssue.DPHeight = 0;
+            this.bunifuDatePickerIssue.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.bunifuDatePickerIssue.FillDatePicker = false;
+            this.bunifuDatePickerIssue.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bunifuDatePickerIssue.ForeColor = System.Drawing.Color.Black;
+            this.bunifuDatePickerIssue.Icon = ((System.Drawing.Image)(resources.GetObject("bunifuDatePickerIssue.Icon")));
+            this.bunifuDatePickerIssue.IconColor = System.Drawing.Color.DimGray;
+            this.bunifuDatePickerIssue.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
+            this.bunifuDatePickerIssue.LeftTextMargin = 5;
+            this.bunifuDatePickerIssue.Location = new System.Drawing.Point(57, 286);
+            this.bunifuDatePickerIssue.MinimumSize = new System.Drawing.Size(4, 32);
+            this.bunifuDatePickerIssue.Name = "bunifuDatePickerIssue";
+            this.bunifuDatePickerIssue.Size = new System.Drawing.Size(419, 32);
+            this.bunifuDatePickerIssue.TabIndex = 11;
+            this.bunifuToolTip1.SetToolTip(this.bunifuDatePickerIssue, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.bunifuDatePickerIssue, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.bunifuDatePickerIssue, "");
+            this.bunifuDatePickerIssue.Value = new System.DateTime(2023, 12, 13, 22, 17, 0, 0);
             // 
             // bunifuLabel5
             // 
@@ -379,7 +379,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Black;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.bunifuTextBoxPatientID.OnIdleState = stateProperties4;
-            this.bunifuTextBoxPatientID.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.bunifuTextBoxPatientID.Padding = new System.Windows.Forms.Padding(3);
             this.bunifuTextBoxPatientID.PasswordChar = '\0';
             this.bunifuTextBoxPatientID.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.bunifuTextBoxPatientID.PlaceholderText = "Nhập mã bệnh nhân";
@@ -457,7 +457,7 @@
             stateProperties8.ForeColor = System.Drawing.Color.Black;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.bunifuTextBoxHICID.OnIdleState = stateProperties8;
-            this.bunifuTextBoxHICID.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.bunifuTextBoxHICID.Padding = new System.Windows.Forms.Padding(3);
             this.bunifuTextBoxHICID.PasswordChar = '\0';
             this.bunifuTextBoxHICID.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.bunifuTextBoxHICID.PlaceholderText = "Nhập số BHYT";
@@ -754,7 +754,7 @@
             this.ClientSize = new System.Drawing.Size(638, 566);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormHICDetail";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormHICDetail";
@@ -780,8 +780,8 @@
         private Bunifu.UI.WinForms.BunifuTextBox bunifuTextBoxPatientID;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel4;
-        private Bunifu.UI.WinForms.BunifuDatePicker bunifuDatePickerIssue;
         private Bunifu.UI.WinForms.BunifuDatePicker bunifuDatePickerExpire;
+        private Bunifu.UI.WinForms.BunifuDatePicker bunifuDatePickerIssue;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel5;
         private Bunifu.UI.WinForms.BunifuSnackbar bunifuSnackbar1;
         private Bunifu.UI.WinForms.BunifuToolTip bunifuToolTip1;

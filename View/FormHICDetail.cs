@@ -32,8 +32,8 @@ namespace DO_AN_CUA_HAN.View
         {
             bunifuTextBoxHICID.Text = hicDetail.HICID.ToString();
             bunifuTextBoxPatientID.Text = hicDetail.PatientID.ToString();
-            bunifuDatePickerExpire.Value = hicDetail.ExpireDate;
-           bunifuDatePickerIssue.Value = hicDetail.IssueDate;
+            bunifuDatePickerIssue.Value = hicDetail.ExpireDate;
+           bunifuDatePickerExpire.Value = hicDetail.IssueDate;
         }
         //this constructor for add HIC
         public FormHICDetail(int patientID)
@@ -61,7 +61,7 @@ namespace DO_AN_CUA_HAN.View
             int patientID = Convert.ToInt32(bunifuTextBoxPatientID.Text);
             try
             {
-                if (bunifuDatePickerIssue.Value < bunifuDatePickerExpire.Value)
+                if (bunifuDatePickerExpire.Value > bunifuDatePickerIssue.Value)
                 {
                     if (bunifuDatePickerExpire.Value > DateTime.Today)
                     {

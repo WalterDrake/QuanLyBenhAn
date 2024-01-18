@@ -131,22 +131,22 @@ namespace DO_AN_CUA_HAN.View
                     newEC.State = comboBoxState.SelectedIndex;
                     newEC.Date = dateCreate.Value;
                     newEC.Result = textBoxResult.Text;
-                    /*if (ExaminationCertificate.InsertEC(newEC) > 0)*/
-                   /* {
-                        *//*FormReport reportForm = new FormReport();
+                    if (ExaminationCertificate.InsertEC(newEC) > 0)
+                    {
+                        FormReport reportForm = new FormReport();
 
                         reportForm.ReportType = "EC";
-                            reportForm.ObjectID = ExaminationCertificate.GetCurrentECID();
-                            reportForm.ShowDialog();
+                        reportForm.ObjectID = ExaminationCertificate.GetCurrentECID();
+                        reportForm.ShowDialog();
 
-                            int patientID = newEC.PatientID;
-                            //Current user
-                            int staffID = LoginStaff.StaffID;
+                        int patientID = newEC.PatientID;
+                        //Current user
+                        int staffID = LoginStaff.StaffID;
 
-                            Bill newBill = new Bill(Bill.SERVICEBILL, patientID, staffID);
-                            FormBillDetail billDetailForm = new FormBillDetail("insertExamination", newBill);
-                            billDetailForm.ShowDialog();*//*
-                    }*/
+                        Bill newBill = new Bill(Bill.SERVICEBILL, patientID, staffID);
+                        FormBillDetail billDetailForm = new FormBillDetail("insertExamination", newBill);
+                        billDetailForm.ShowDialog();
+                    }
                 }
             }
             catch

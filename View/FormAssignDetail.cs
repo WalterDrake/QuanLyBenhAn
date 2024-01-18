@@ -126,8 +126,6 @@ namespace DO_AN_CUA_HAN.View
 
         private void buttonOk_Click(object sender, EventArgs e)
         {
-            if (this.UserAction != null)
-            {
                 if (listBoxCurrentStaff.Items.Count > 0)
                 {
                     if (dateDischarge.Value > dateHospitalize.Value)
@@ -190,7 +188,6 @@ namespace DO_AN_CUA_HAN.View
                         return;
                     }
                 }
-            }
             else
             {
                 bunifuSnackbar1.Show(this, "Chưa có nhân viên nào tham gia phân công chăm sóc bệnh nhân", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
