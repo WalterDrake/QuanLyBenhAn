@@ -128,7 +128,6 @@
             this.bunifuToolTip1.SetToolTip(this.bunifuGradientPanel1, "");
             this.bunifuToolTip1.SetToolTipIcon(this.bunifuGradientPanel1, null);
             this.bunifuToolTip1.SetToolTipTitle(this.bunifuGradientPanel1, "");
-            this.bunifuGradientPanel1.Click += new System.EventHandler(this.bunifuGradientPanel1_Click);
             // 
             // bunifuShadowPanel2
             // 

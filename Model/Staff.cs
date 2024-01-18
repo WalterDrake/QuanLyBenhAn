@@ -56,12 +56,12 @@ namespace DO_AN_CUA_HAN.Model
                                 (DEPARTMENTID, MAJORID, ROLEID, PASSWORD, FIRSTNAME, LASTNAME, BIRTHDAY, GENDER, ICN, ADDRESS, STATE, EMAIL)
                                 VALUES
                                 (@DepartmentID, @MajorID, @RoleID, @Password, @FirstName, @LastName, @BirthDay, @Gender, @ICN
-                                    , @Address, @State, @Email)";
+                                    , @Address, @State, @Mail)";
 
             SqlParameter[] sqlParameters = {   new SqlParameter("@DepartmentID", staff.DepartmentID),
                                            new SqlParameter("@MajorID", staff.MajorID),
                                            new SqlParameter("@RoleID", staff.RoleID),
-                                           new SqlParameter("@Password", Model.Bcrypt.CreateMD5(staff.Password)),
+                                           new SqlParameter("@Password",staff.Password),
                                            new SqlParameter("@FirstName", staff.FirstName),
                                            new SqlParameter("@LastName", staff.LastName),
                                            new SqlParameter("@BirthDay", staff.BirthDay),
@@ -87,7 +87,7 @@ namespace DO_AN_CUA_HAN.Model
                                            new SqlParameter("@DepartmentID", staff.DepartmentID),
                                            new SqlParameter("@MajorID", staff.MajorID),
                                            new SqlParameter("@RoleID", staff.RoleID),
-                                           new SqlParameter("@Password", Model.Bcrypt.CreateMD5(staff.Password)),
+                                           new SqlParameter("@Password", staff.Password),
                                            new SqlParameter("@FirstName", staff.FirstName),
                                            new SqlParameter("@LastName", staff.LastName),
                                            new SqlParameter("@BirthDay", staff.BirthDay),

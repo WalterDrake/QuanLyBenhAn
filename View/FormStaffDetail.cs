@@ -148,7 +148,7 @@ namespace DO_AN_CUA_HAN.View
                 // If useraction is add then insert to database else update
                 if ("add".Equals(this.UserAction))
                 {
-                    StaffDetail.Password = StaffDetail.ICN.ToString(); //password mới tạo là cccd
+                    StaffDetail.Password = Model.Bcrypt.CreateMD5(StaffDetail.ICN.ToString()); //password mới tạo là cccd
                     Staff.InsertStaff(StaffDetail);
                 }
                 else if ("edit".Equals(this.UserAction))
@@ -166,7 +166,7 @@ namespace DO_AN_CUA_HAN.View
                     {
                         if (textBoxPassword.Text != "")
                         {
-                            StaffDetail.Password = textBoxPassword.Text;
+                            StaffDetail.Password = Model.Bcrypt.CreateMD5(textBoxPassword.Text);
                         }
                         Staff.UpdateStaff(StaffDetail);
                     }
@@ -324,9 +324,5 @@ namespace DO_AN_CUA_HAN.View
             }
         }
 
-        private void bunifuGradientPanel1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

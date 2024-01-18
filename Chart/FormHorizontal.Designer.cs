@@ -67,7 +67,7 @@
             this.bunifuChartCanvas1.Name = "bunifuChartCanvas1";
             this.bunifuChartCanvas1.ShowXAxis = false;
             this.bunifuChartCanvas1.ShowYAxis = false;
-            this.bunifuChartCanvas1.Size = new System.Drawing.Size(750, 388);
+            this.bunifuChartCanvas1.Size = new System.Drawing.Size(763, 386);
             this.bunifuChartCanvas1.TabIndex = 0;
             this.bunifuChartCanvas1.Title = "";
             this.bunifuChartCanvas1.TitleLineHeight = 1.2D;
