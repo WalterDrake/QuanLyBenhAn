@@ -30,7 +30,8 @@ namespace DO_AN_CUA_HAN.View
 
                 // Add Vietnamese column's name
                 heathFileTable.Columns.Add("Mã bệnh án", typeof(string), "[HEATHFILEID]");
-                heathFileTable.Columns.Add("Mã bệnh nhân", typeof(string), "[PATIENTID]");
+/*                heathFileTable.Columns.Add("Mã bệnh nhân", typeof(string), "[PATIENTID]");
+*/                heathFileTable.Columns.Add("Tên bệnh nhân", typeof(string), "[PATIENT NAME]");
                 heathFileTable.Columns.Add("Ngày lập", typeof(DateTime), "[DATE]");
                 heathFileTable.Columns.Add("Tình trạng bệnh nhân", typeof(string), "[PATIENTSTATE]");
                 heathFileTable.Columns.Add("Tiền sự bệnh lý", typeof(string), "[PREHISTORY]");
@@ -40,7 +41,7 @@ namespace DO_AN_CUA_HAN.View
                 bunifuDataGridViewHF.DataSource = heathFileTable.DefaultView;
 
                 // Hide English columns'name
-                for (int i = 0; i < 7; i++)
+                for (int i = 0; i < 8; i++)
                 {
                     bunifuDataGridViewHF.Columns[i].Visible = false;
                 }
@@ -49,7 +50,7 @@ namespace DO_AN_CUA_HAN.View
             catch
             {
                 bunifuSnackbar1.Show(Form.ActiveForm, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                return;
+                
             }
         }
 
@@ -97,13 +98,13 @@ namespace DO_AN_CUA_HAN.View
                         if (HeathFile.DeleteHeathFile(heathFileID) > 0)
                         {
                             bunifuSnackbar1.Show(Form.ActiveForm, "Xóa bệnh án thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Information, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                            return;
+                            
                         }
                     }
                     catch
                     {
                         bunifuSnackbar1.Show(Form.ActiveForm, "Không thể xóa bệnh án này", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                        return;
+                        
                     }
                 }
 

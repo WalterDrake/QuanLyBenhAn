@@ -46,7 +46,7 @@ namespace DO_AN_CUA_HAN.View
             catch
             {
                 bunifuSnackbar1.Show(Form.ActiveForm, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                return;
+                
             }
         }
         private void refreshDataViewMajor()
@@ -72,7 +72,7 @@ namespace DO_AN_CUA_HAN.View
             catch
             {
                 bunifuSnackbar1.Show(Form.ActiveForm, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                return;
+                
             }
         }
 
@@ -89,13 +89,13 @@ namespace DO_AN_CUA_HAN.View
                         if (Department.DeleteDepartment(departmentID) > 0)
                         {
                             bunifuSnackbar1.Show(Form.ActiveForm, "Xóa phòng ban thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Information, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                            return;
+                            
                         }
                     }
                     catch
                     {
                         bunifuSnackbar1.Show(Form.ActiveForm, "Phòng khoa đã hoặc đang có người công tác", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                        return;
+                        
                     }
                 }
 
@@ -148,13 +148,13 @@ namespace DO_AN_CUA_HAN.View
                         if (Major.DeleteMajor(majorID) > 0)
                         {
                             bunifuSnackbar1.Show(Form.ActiveForm, "Xóa chuyên ngành thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                            return;
+                            
                         }
                     }
                     catch
                     {
                         bunifuSnackbar1.Show(Form.ActiveForm, "Không thể xóa được chuyên ngành này", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                        return;
+                        
                     }
                 }
 

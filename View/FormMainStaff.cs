@@ -45,7 +45,7 @@ namespace DO_AN_CUA_HAN.View
                 bunifuDataGridViewStaff.DataSource = staffTable.DefaultView;
 
                 // Hide English columns'name
-                for (int i = 0; i < 12; i++)
+                for (int i = 0; i < 13; i++)
                 {
                     bunifuDataGridViewStaff.Columns[i].Visible = false;
                 }
@@ -53,7 +53,7 @@ namespace DO_AN_CUA_HAN.View
             catch
             {
                 bunifuSnackbar1.Show(Form.ActiveForm, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                return;
+                
             }
 
         }
@@ -126,7 +126,7 @@ namespace DO_AN_CUA_HAN.View
             catch
             {
                 bunifuSnackbar1.Show(Form.ActiveForm, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                return;
+                
             }
             // Refresh datagridview after delete
             refreshDataViewStaff();
@@ -152,7 +152,7 @@ namespace DO_AN_CUA_HAN.View
         private void searchStaff()
         {
             // Not search it search string is empty
-            if ("".Equals(bunifuTextBoxStaffSearch.Text))
+            if (!"".Equals(bunifuTextBoxStaffSearch.Text))
             {
                 // Search with RowFilter
                 ((DataView)bunifuDataGridViewStaff.DataSource).RowFilter = "[Họ tên] LIKE '*" + bunifuTextBoxStaffSearch.Text.Trim() + "*'"

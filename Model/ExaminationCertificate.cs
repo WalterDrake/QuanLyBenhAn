@@ -59,8 +59,8 @@ namespace DO_AN_CUA_HAN.Model
         public static DataTable GetListEC()
         {
             DataTable dtEC = new DataTable();
-            string sqlSelect = @"SELECT        ECID, PATIENTID, STAFFID, DATE, RESULT, STATE
-                                FROM            EXAMINATIONCERTIFICATE";
+            string sqlSelect = @"SELECT        E.ECID, E.PATIENTID, E.STAFFID, E.DATE, E.RESULT, E.STATE, P.LASTNAME + ' ' + P.FIRSTNAME AS 'PATIENT NAME', s.LASTNAME +' '+s.FIRSTNAME 'STAF NAME'
+                                FROM       EXAMINATIONCERTIFICATE e join PATIENT p on e.PATIENTID = p.PATIENTID join STAFF s on e.STAFFID = s.STAFFID";
             dtEC = SqlResult.ExecuteQuery(sqlSelect);
             //dtEC.Columns[0].ColumnName = "Mã phiếu khám bệnh";
             //dtEC.Columns[1].ColumnName = "Mã bệnh nhân";
@@ -68,6 +68,8 @@ namespace DO_AN_CUA_HAN.Model
             //dtEC.Columns[3].ColumnName = "Ngày lập";
             //dtEC.Columns[4].ColumnName = "Kết quả";
             //dtEC.Columns[5].ColumnName = "Trạng thái";
+            //dtEC.Columns[6].ColumnName = "Tên bệnh nhân"
+            //dtEC.Columns[7].columnName = "Tên nhân viên khám"
             return dtEC;
         }
         public static ExaminationCertificate GetEC(int eCID)

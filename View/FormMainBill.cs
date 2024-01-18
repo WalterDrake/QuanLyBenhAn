@@ -74,7 +74,7 @@ namespace DO_AN_CUA_HAN.View
             catch (SqlException exception)
             {
                 bunifuSnackbar1.Show(Form.ActiveForm,exception.Message, Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, "Thông báo", Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                return;
+                
             }
         }
 
@@ -132,7 +132,7 @@ namespace DO_AN_CUA_HAN.View
                         break;
                     default:
                         bunifuSnackbar1.Show(Form.ActiveForm, "Vui lòng chọn hóa đơn để in!", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                        return;
+                        break;
                 }
 
                 reportForm.Show();

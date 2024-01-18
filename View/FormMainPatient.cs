@@ -65,7 +65,7 @@ namespace DO_AN_CUA_HAN.View
                 catch
                 {
                     bunifuSnackbar1.Show(Form.ActiveForm, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                    return;
+                    
                 }
                     
                 // Refresh datagridview after delete
@@ -105,7 +105,7 @@ namespace DO_AN_CUA_HAN.View
             catch
             {
                 bunifuSnackbar1.Show(Form.ActiveForm, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                return;
+                
             }
         }
 
@@ -178,13 +178,13 @@ namespace DO_AN_CUA_HAN.View
                     else
                     {
                         bunifuSnackbar1.Show(Form.ActiveForm, "Bệnh nhân đã có bệnh án", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                        return;
+                        
                     }
                 }
                 else
                 {
                     bunifuSnackbar1.Show(Form.ActiveForm, "Bệnh nhân chưa nhập viện", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                    return;
+                    
                 }
             }
         }
@@ -206,7 +206,7 @@ namespace DO_AN_CUA_HAN.View
                 else
                 {
                     bunifuSnackbar1.Show(Form.ActiveForm, "Bệnh nhân chưa nhập viện", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                    return;
+                    
                 }
             }
         }
@@ -235,7 +235,7 @@ namespace DO_AN_CUA_HAN.View
                 if (HospitalizationCertificate.IsPatientHadHC(patientID))
                 {
                     bunifuSnackbar1.Show(Form.ActiveForm, "Bệnh nhân đã có giấy nhập viện", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                    return;
+                    
                 }
                 else
                 {
@@ -261,7 +261,7 @@ namespace DO_AN_CUA_HAN.View
                 else
                 {
                     bunifuSnackbar1.Show(Form.ActiveForm, "Bệnh nhân chưa nhập viện", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                    return;
+                    
                 }
             }
         }
@@ -280,7 +280,7 @@ namespace DO_AN_CUA_HAN.View
                 else
                 {
                     bunifuSnackbar1.Show(Form.ActiveForm, "Bệnh nhân chưa nhập viện nên không thể thực hiện phẩu thuật", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                    return;
+                    
                 }
             }
         }
@@ -295,7 +295,7 @@ namespace DO_AN_CUA_HAN.View
                     if (Assignment.IsPatientHadAssignment(patientID))
                     {
                         bunifuSnackbar1.Show(Form.ActiveForm, "Bệnh nhân đã được phân công chăm sóc", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                        return;
+                        
                     }
                     else
                     {
@@ -306,7 +306,7 @@ namespace DO_AN_CUA_HAN.View
                 else
                 {
                     bunifuSnackbar1.Show(Form.ActiveForm, "Bệnh nhân chưa nhập viện", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                    return;
+                    
                 }
             }
         }
@@ -341,7 +341,7 @@ namespace DO_AN_CUA_HAN.View
                 else
                 {
                     bunifuSnackbar1.Show(Form.ActiveForm, "Bệnh nhân chưa nhập viện nên không được phép mượn vật tư", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                    return;
+                    
                 }
             }
         }
@@ -411,7 +411,7 @@ namespace DO_AN_CUA_HAN.View
                 else
                 {
                     bunifuSnackbar1.Show(Form.ActiveForm, "Chỉ thanh toán viện phí cho bệnh nhân nhập viện", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                    return;
+                    
                 }
             }
         }

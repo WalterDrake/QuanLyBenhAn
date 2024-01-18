@@ -52,7 +52,7 @@ namespace DO_AN_CUA_HAN.View
             catch
             {
                 bunifuSnackbar1.Show(Form.ActiveForm, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                return;
+                
             }
         }
         private void searchService()
@@ -102,13 +102,14 @@ namespace DO_AN_CUA_HAN.View
                         if (Service.DeleteService(serviceID) > 0)
                         {
                             bunifuSnackbar1.Show(Form.ActiveForm, "Xóa dịch thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Information, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                            return;
+                            
                         }
                     }
                     catch
                     {
                         bunifuSnackbar1.Show(Form.ActiveForm, "Dịch vụ đã hoặc đang được sử dụng", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                        return;
+                        
+
                     }
                 }
 

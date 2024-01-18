@@ -57,8 +57,8 @@ namespace DO_AN_CUA_HAN.Model
         public static DataTable GetListAssignment()
         {
             DataTable dtAssignment = new DataTable();
-            string sqlSelect = @"SELECT        ASSIGNID, PATIENTID, DATE, DISCHARGEDDATE, HOPITALIZATEDATE
-                                FROM            ASSIGNMENT";
+            string sqlSelect = @"SELECT        ASSIGNID, a.PATIENTID, DATE, DISCHARGEDDATE, HOPITALIZATEDATE, p.LASTNAME +' '+p.FIRSTNAME as 'PATIENT NAME'
+                                FROM            ASSIGNMENT a join PATIENT p on a.PATIENTID = p.PATIENTID";
             dtAssignment = SqlResult.ExecuteQuery(sqlSelect);
             return dtAssignment;
         }

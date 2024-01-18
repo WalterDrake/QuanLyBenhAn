@@ -63,8 +63,8 @@ namespace DO_AN_CUA_HAN.Model
         public static DataTable GetListHeathFile()
         {
             DataTable dtHeathFile = new DataTable();
-            string sqlSelect = @"SELECT        HEATHFILEID, PATIENTID, DATE, PATIENTSTATE, PREHISTORY, DISEASE, TREATMENT
-                                FROM            HEATHFILE";
+            string sqlSelect = @"SELECT        HEATHFILEID, h.PATIENTID, DATE, PATIENTSTATE, PREHISTORY, DISEASE, TREATMENT,p.LASTNAME+' '+p.FIRSTNAME AS 'PATIENT NAME'
+                                FROM            HEATHFILE h join PATIENT p on h.PATIENTID = p.PATIENTID";
             dtHeathFile = SqlResult.ExecuteQuery(sqlSelect);
             //dtHeathFile.Columns[0].ColumnName = "Mã bệnh án";
             //dtHeathFile.Columns[1].ColumnName = "Mã bệnh nhân";
@@ -73,6 +73,7 @@ namespace DO_AN_CUA_HAN.Model
             //dtHeathFile.Columns[4].ColumnName = "Tiền sử bệnh lý";
             //dtHeathFile.Columns[5].ColumnName = "Các bệnh mắc phải";
             //dtHeathFile.Columns[6].ColumnName = "Hướng điều trị";
+            //dtHeathFile.Columns[7].ColumnName = "Tên bệnh nhân";
             return dtHeathFile;
         }
 

@@ -101,14 +101,14 @@ namespace DO_AN_CUA_HAN.View
                         if (PrescriptionDetail.DeletePrescriptionDetail(prescriptionID) > 0 && Prescription.DeletePrescription(prescriptionID) > 0)
                         {
                             bunifuSnackbar1.Show(Form.ActiveForm, "Xóa toa thuốc thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Information, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                            return;
+                            
                         }
 
                     }
                     catch
                     {
                         bunifuSnackbar1.Show(Form.ActiveForm, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                        return;
+                        
                     }
                 }
 
@@ -126,14 +126,16 @@ namespace DO_AN_CUA_HAN.View
 
                 // Add Vietnamese column's name
                 prescriptionTable.Columns.Add("Mã toa thuốc", typeof(string), "[PRESCRIPTIONID]");
-                prescriptionTable.Columns.Add("Mã nhân viên", typeof(string), "[STAFFID]");
-                prescriptionTable.Columns.Add("Mã bệnh nhân", typeof(string), "[PATIENTID]");
+                /*prescriptionTable.Columns.Add("Mã nhân viên", typeof(string), "[STAFFID]");*/
+                prescriptionTable.Columns.Add("Tên nhân viên", typeof(string), "[STAFF NAME]");
+/*                prescriptionTable.Columns.Add("Mã bệnh nhân", typeof(string), "[PATIENTID]");
+*/                prescriptionTable.Columns.Add("Tên bệnh nhân", typeof(string), "[PATIENT NAME]");
                 prescriptionTable.Columns.Add("Ngày lập", typeof(DateTime), "[DATE]");
                 // Set data source to dataview for searching
                 bunifuDataGridViewPrescription.DataSource = prescriptionTable.DefaultView;
 
                 // Hide English columns'name
-                for (int i = 0; i < 4; i++)
+                for (int i = 0; i < 6; i++)
                 {
                     bunifuDataGridViewPrescription.Columns[i].Visible = false;
                 }
@@ -141,7 +143,7 @@ namespace DO_AN_CUA_HAN.View
             catch
             {
                 bunifuSnackbar1.Show(Form.ActiveForm, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                return;
+                
             }
         }
         private void refreshDataViewPrescriptionDetail()
@@ -160,7 +162,7 @@ namespace DO_AN_CUA_HAN.View
                 catch
                 {
                     bunifuSnackbar1.Show(Form.ActiveForm, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                    return;
+                    
                 }
             }
         }

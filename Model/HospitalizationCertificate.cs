@@ -60,8 +60,8 @@ namespace DO_AN_CUA_HAN.Model
         public static DataTable GetListHC()
         {
             DataTable dtHC = new DataTable();
-            string sqlSelect = @"SELECT        HCID, PATIENTID, STAFFID, REASON, DATE, STATE
-                                FROM            HOSPITALIZATIONCERTIFICATE";
+            string sqlSelect = @"SELECT        HCID, h.PATIENTID, h.STAFFID, REASON, DATE, h.STATE, p.LASTNAME+' '+p.FIRSTNAME AS 'PATIENT NAME', s.LASTNAME+' '+s.FIRSTNAME AS 'STAFF NAME'
+                                FROM            HOSPITALIZATIONCERTIFICATE h join PATIENT p on h.PATIENTID = p.PATIENTID join STAFF s on s.STAFFID = h.STAFFID";
             dtHC = SqlResult.ExecuteQuery(sqlSelect);
             //dtHC.Columns[0].ColumnName = "Mã giấy xuất viện";
             //dtHC.Columns[1].ColumnName = "Mã bệnh nhân";
@@ -69,6 +69,8 @@ namespace DO_AN_CUA_HAN.Model
             //dtHC.Columns[3].ColumnName = "Lý do nhập viện";
             //dtHC.Columns[4].ColumnName = "Ngày lập";
             //dtHC.Columns[5].ColumnName = "Trạng thái";
+            //dtHC.Columns[6].ColumnName = "Tên bệnh nhân";
+            //dtHC.Columns[7].ColumnName = "Tên nhân viên";
             return dtHC;
         }
         public static HospitalizationCertificate GetHC(int hCID)

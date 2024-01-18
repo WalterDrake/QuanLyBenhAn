@@ -53,12 +53,13 @@ namespace DO_AN_CUA_HAN.Model
         public static DataTable GetListHospitalBed()
         {
             DataTable dtHB = new DataTable();
-            string sqlSelect = @"SELECT        BEDID,PATIENT, STATE
-                                FROM            HOSPITALBED";
+            string sqlSelect = @"SELECT        BEDID,PATIENT, h.STATE, ISNULL(p.LASTNAME + ' ' + p.FIRSTNAME, '') AS 'PATIENT NAME'
+                                FROM            HOSPITALBED h left join PATIENT p on h.PATIENT = p.PATIENTID";
             dtHB = SqlResult.ExecuteQuery(sqlSelect);
             //dtHB.Columns[0].ColumnName = "Mã giường bệnh";
             //dtHB.Columns[1].ColumnName = "Mã bệnh nhân";
             //dtHB.Columns[2].ColumnName = "Trạng thái";
+            //dtHB.Columns[3].ColumnName = "Tên bệnh nhân";
             return dtHB;
         }
         public static HospitalBed GetHospitalBed(int bedID)

@@ -31,7 +31,9 @@ namespace DO_AN_CUA_HAN.View
                 // Add Vietnamese column's name
                 hcTable.Columns.Add("Mã giấy nhập viện", typeof(string), "[HCID]");
                 hcTable.Columns.Add("Mã bệnh nhân", typeof(string), "[PATIENTID]");
+                hcTable.Columns.Add("Tên bệnh nhân", typeof(string), "[PATIENT NAME]");
                 hcTable.Columns.Add("Mã nhân viên", typeof(string), "[STAFFID]");
+                hcTable.Columns.Add("Tên nhân viên", typeof(string), "[STAFF NAME]");
                 hcTable.Columns.Add("Ngày lập", typeof(DateTime), "[DATE]");
                 hcTable.Columns.Add("Lý do", typeof(string), "[REASON]");
                 hcTable.Columns.Add("Trạng thái", typeof(string), "IIF([STATE] = 0, 'Chưa xác nhận', 'Đã xác nhận')");
@@ -39,7 +41,7 @@ namespace DO_AN_CUA_HAN.View
                 bunifuDataGridViewHC.DataSource = hcTable.DefaultView;
 
                 // Hide English columns'name
-                for (int i = 0; i < 6; i++)
+                for (int i = 0; i < 8; i++)
                 {
                     bunifuDataGridViewHC.Columns[i].Visible = false;
                 }
@@ -48,7 +50,7 @@ namespace DO_AN_CUA_HAN.View
             catch
             {
                 bunifuSnackbar1.Show(Form.ActiveForm, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                return;
+               
             }
         }
 
@@ -106,7 +108,7 @@ namespace DO_AN_CUA_HAN.View
                         if (HospitalizationCertificate.UpdateHC(confirmHC) > 0 && Patient.UpdatePatient(updatePatient) > 0)
                         {
                             bunifuSnackbar1.Show(Form.ActiveForm, "Xác nhận giấy nhập viện thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Information, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                            return;
+                            
                         }
                     }
 
@@ -114,7 +116,7 @@ namespace DO_AN_CUA_HAN.View
                 else
                 {
                     bunifuSnackbar1.Show(Form.ActiveForm, "Giấy nhập viện đã được xác nhận", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                    return;
+                    
                 }
                 refreshDataViewHC();
             }
@@ -135,7 +137,7 @@ namespace DO_AN_CUA_HAN.View
                         if (HospitalizationCertificate.DeleteHC(hcID) > 0)
                         {
                             bunifuSnackbar1.Show(Form.ActiveForm, "Xóa giấy nhập viện thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Information, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                            return;
+                            
                         }
                     }
 
@@ -143,7 +145,7 @@ namespace DO_AN_CUA_HAN.View
                 else
                 {
                     bunifuSnackbar1.Show(Form.ActiveForm, "Không thể xóa giấy nhập viện đã được xác nhận", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                    return;
+                    
                 }
                 refreshDataViewHC();
             }

@@ -31,7 +31,8 @@ namespace DO_AN_CUA_HAN.View
 
                 // Add Vietnamese column's name
                 surgicalTable.Columns.Add("Mã ca phẩu thuật", typeof(string), "[SURGICALID]");
-                surgicalTable.Columns.Add("Mã bệnh nhân", typeof(string), "[PATIENTID]");
+ /*               surgicalTable.Columns.Add("Mã bệnh nhân", typeof(string), "[PATIENTID]");*/
+                surgicalTable.Columns.Add("Tên bệnh nhân", typeof(string), "[PATIENT NAME]");
                 surgicalTable.Columns.Add("Ngày thực hiện", typeof(DateTime), "[DATE]");
                 surgicalTable.Columns.Add("Mô tả", typeof(string), "[DESCRIPTION]");
                 surgicalTable.Columns.Add("Trạng thái", typeof(string), "IIF([STATE] = 0, 'Chưa thực hiện', 'Đã thực hiện')");
@@ -39,7 +40,7 @@ namespace DO_AN_CUA_HAN.View
                 bunifuDataGridViewSurgery.DataSource = surgicalTable.DefaultView;
 
                 // Hide English columns'name
-                for (int i = 0; i < 5; i++)
+                for (int i = 0; i < 6; i++)
                 {
                     bunifuDataGridViewSurgery.Columns[i].Visible = false;
                 }
@@ -47,7 +48,7 @@ namespace DO_AN_CUA_HAN.View
             catch
             {
                 bunifuSnackbar1.Show(Form.ActiveForm, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                return;
+                
             }
         }
         private void refreshDataViewSurgicalDetail()
@@ -65,7 +66,7 @@ namespace DO_AN_CUA_HAN.View
                 catch
                 {
                     bunifuSnackbar1.Show(Form.ActiveForm, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                    return;
+                    
                 }
             }
         }
@@ -94,7 +95,7 @@ namespace DO_AN_CUA_HAN.View
             {
                 // Search with RowFilter
                 ((DataView)bunifuDataGridViewSurgery.DataSource).RowFilter = "[Mã ca phẩu thuật] LIKE '*" + bunifuTextBoxSurgerySearch.Text.Trim() + "*'"
-                                                                + "OR [Mã bệnh nhân] LIKE '*" + bunifuTextBoxSurgerySearch.Text.Trim() + "*'"
+                                                                + "OR [Tên bệnh nhân] LIKE '*" + bunifuTextBoxSurgerySearch.Text.Trim() + "*'"
                                                                 + "OR [Trạng thái] LIKE '*" + bunifuTextBoxSurgerySearch.Text.Trim() + "*'";
                 refreshDataViewSurgicalDetail();
             }
@@ -134,20 +135,20 @@ namespace DO_AN_CUA_HAN.View
                             if (SurgicalDetail.DeleteSurgicalDetail(surgicalID) > 0 && Surgical.DeleteSurgical(surgicalID) > 0)
                             {
                                 bunifuSnackbar1.Show(Form.ActiveForm, "Xóa ca phẩu thuật thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                                return;
+                                
                             }
                         }
                         catch
                         {
                             bunifuSnackbar1.Show(Form.ActiveForm, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                            return;
+                            
                         }
                     }
                 }
                 else
                 {
                     bunifuSnackbar1.Show(Form.ActiveForm, "Không thể xóa ca phẩu thuật đã được thực hiện", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                    return;
+                    
                 }
                 refreshDataViewSurgical();
                 refreshDataViewSurgicalDetail();

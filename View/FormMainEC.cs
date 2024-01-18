@@ -100,13 +100,13 @@ namespace DO_AN_CUA_HAN.View
                         if (ExaminationCertificate.DeleteEC(ecID) > 0)
                         {
                             bunifuSnackbar1.Show(Form.ActiveForm, "Xóa phiếu khám bệnh thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Information, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                            return;
+                            
                         }
                     }
                     else
                     {
                         bunifuSnackbar1.Show(Form.ActiveForm, "Không thể xóa phiếu khám bệnh này", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                        return;
+                        
                     }
                 }
                 refreshDataViewExamination();
@@ -123,7 +123,9 @@ namespace DO_AN_CUA_HAN.View
                 {
                     ((DataView)bunifuDataGridViewEC.DataSource).RowFilter = "[Mã phiếu khám bệnh] LIKE '*" + bunifuTextBoxECSearch.Text.Trim() + "*' OR "
                                                          + "[Mã bệnh nhân] LIKE '*" + bunifuTextBoxECSearch.Text.Trim() + "*' OR "
+                                                         + "[Tên bệnh nhân] LIKE '*" + bunifuTextBoxECSearch.Text.Trim() + "*' OR "
                                                          + "[Mã nhân viên] LIKE '*" + bunifuTextBoxECSearch.Text.Trim() + "*' OR "
+                                                         + "[Tên nhân viên khám] LIKE '*" + bunifuTextBoxECSearch.Text.Trim() + "*' OR "
                                                          + "[Trạng thái] LIKE '*" + bunifuTextBoxECSearch.Text.Trim() + "*'";
                 }
                 else
@@ -134,7 +136,7 @@ namespace DO_AN_CUA_HAN.View
             catch
             {
                 bunifuSnackbar1.Show(Form.ActiveForm, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                return;
+                
             }
         }
 
@@ -169,7 +171,9 @@ namespace DO_AN_CUA_HAN.View
                 // Add Vietnamese column's name
                 examinationTable.Columns.Add("Mã phiếu khám bệnh", typeof(string), "[ECID]");
                 examinationTable.Columns.Add("Mã bệnh nhân", typeof(string), "[PATIENTID]");
+                examinationTable.Columns.Add("Tên bệnh nhân", typeof(string), "[PATIENT NAME]");
                 examinationTable.Columns.Add("Mã nhân viên", typeof(string), "[STAFFID]");
+                examinationTable.Columns.Add("Tên nhân viên khám", typeof(string), "[STAF NAME]");
                 examinationTable.Columns.Add("Ngày lập", typeof(DateTime), "[DATE]");
                 examinationTable.Columns.Add("Kết quả", typeof(string), "[RESULT]");
                 examinationTable.Columns.Add("Trạng thái", typeof(string), "IIF([STATE] = 0, 'Chưa xác nhận', 'Đã xác nhận')");
@@ -177,7 +181,7 @@ namespace DO_AN_CUA_HAN.View
                 bunifuDataGridViewEC.DataSource = examinationTable.DefaultView;
 
                 // Hide English columns'name
-                for (int i = 0; i < 6; i++)
+                for (int i = 0; i < 8; i++)
                 {
                     bunifuDataGridViewEC.Columns[i].Visible = false;
                 }
@@ -186,7 +190,7 @@ namespace DO_AN_CUA_HAN.View
             catch
             {
                 bunifuSnackbar1.Show(Form.ActiveForm, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                return;
+                
             }
         }
 

@@ -56,7 +56,7 @@ namespace DO_AN_CUA_HAN.View
                 else
                 {
                     bunifuSnackbar1.Show(Form.ActiveForm, "Giường bệnh đang được sử dụng", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                    return;
+                    
                 }
                 refreshDataViewBed();
             }
@@ -79,14 +79,14 @@ namespace DO_AN_CUA_HAN.View
                         if (HospitalBed.UpdateHospitalBed(updateHB) > 0)
                         {
                             bunifuSnackbar1.Show(Form.ActiveForm, "Trả giường thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                            return;
+                            
                         }
                     }
                 }
                 else
                 {
                     bunifuSnackbar1.Show(Form.ActiveForm, "Giường bệnh trống", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                    return;
+                    
                 }
                 refreshDataViewBed();
             }
@@ -107,14 +107,15 @@ namespace DO_AN_CUA_HAN.View
                         if (HospitalBed.DeleteHospitalBed(bedID) > 0)
                         {
                             bunifuSnackbar1.Show(Form.ActiveForm, "Xóa giường bệnh thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                            return;
+                            
                         }
                     }
                 }
                 else
                 {
                     bunifuSnackbar1.Show(Form.ActiveForm, "Giường bệnh đã hoặc đang được sử dụng", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                    return;
+                    
+
                 }
                 refreshDataViewBed();
             }
@@ -128,7 +129,7 @@ namespace DO_AN_CUA_HAN.View
                 if (HospitalBed.InsertHospitalBed() > 0)
                 {
                     bunifuSnackbar1.Show(Form.ActiveForm, "Thêm giường bệnh thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                    return;
+                    
                 }
 
             }
@@ -144,14 +145,15 @@ namespace DO_AN_CUA_HAN.View
 
                 // Add Vietnamese column's name
                 bedTable.Columns.Add("Mã giường bệnh", typeof(string), "[BEDID]");
-                bedTable.Columns.Add("Mã bệnh nhân", typeof(string), "[PATIENT]");
+/*                bedTable.Columns.Add("Mã bệnh nhân", typeof(string), "[PATIENT]");
+*/                bedTable.Columns.Add("Tên bệnh nhân", typeof(string), "[PATIENT NAME]");
                 bedTable.Columns.Add("Trạng thái", typeof(string), "IIF([STATE] = 0, 'Trống', 'Có người')");
 
                 // Set data source to dataview for searching
                 bunifuDataGridViewBed.DataSource = bedTable.DefaultView;
 
                 // Hide English columns'name
-                for (int i = 0; i < 3; i++)
+                for (int i = 0; i < 4; i++)
                 {
                     bunifuDataGridViewBed.Columns[i].Visible = false;
                 }
@@ -159,7 +161,7 @@ namespace DO_AN_CUA_HAN.View
             catch
             {
                 bunifuSnackbar1.Show(Form.ActiveForm, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                return;
+                
             }
         }
         //Search in datagridview

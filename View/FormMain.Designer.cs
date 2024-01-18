@@ -35,6 +35,7 @@
             this.bunifuToolTip1 = new Bunifu.UI.WinForms.BunifuToolTip(this.components);
             this.bunifuGradientPanel1_FormMain = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.bunifuShadowPanel2 = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.bunifuLabelInfo = new Bunifu.UI.WinForms.BunifuLabel();
             this.tabMain = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.tabItemBed = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.ItemBed = new Bunifu.UI.WinForms.BunifuLabel();
@@ -106,7 +107,6 @@
             this.Exit = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuLogOut = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuAccount = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.bunifuLabelInfo = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuGradientPanel1_FormMain.SuspendLayout();
             this.bunifuShadowPanel2.SuspendLayout();
             this.tabMain.SuspendLayout();
@@ -319,6 +319,26 @@
             this.bunifuToolTip1.SetToolTip(this.bunifuShadowPanel2, "");
             this.bunifuToolTip1.SetToolTipIcon(this.bunifuShadowPanel2, null);
             this.bunifuToolTip1.SetToolTipTitle(this.bunifuShadowPanel2, "");
+            // 
+            // bunifuLabelInfo
+            // 
+            this.bunifuLabelInfo.AllowParentOverrides = false;
+            this.bunifuLabelInfo.AutoEllipsis = false;
+            this.bunifuLabelInfo.Cursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabelInfo.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabelInfo.Font = new System.Drawing.Font("Bree Serif", 15.75F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabelInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.bunifuLabelInfo.Location = new System.Drawing.Point(31, 54);
+            this.bunifuLabelInfo.Name = "bunifuLabelInfo";
+            this.bunifuLabelInfo.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabelInfo.Size = new System.Drawing.Size(40, 29);
+            this.bunifuLabelInfo.TabIndex = 0;
+            this.bunifuLabelInfo.Text = "text";
+            this.bunifuLabelInfo.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabelInfo.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuToolTip1.SetToolTip(this.bunifuLabelInfo, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.bunifuLabelInfo, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.bunifuLabelInfo, "");
             // 
             // tabMain
             // 
@@ -1922,25 +1942,6 @@
             this.bunifuToolTip1.SetToolTipTitle(this.bunifuAccount, "");
             this.bunifuAccount.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             this.bunifuAccount.Click += new System.EventHandler(this.bunifuAccount_Click);
-            // 
-            // bunifuLabelInfo
-            // 
-            this.bunifuLabelInfo.AllowParentOverrides = false;
-            this.bunifuLabelInfo.AutoEllipsis = false;
-            this.bunifuLabelInfo.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabelInfo.Font = new System.Drawing.Font("Bree Serif", 15.75F, System.Drawing.FontStyle.Bold);
-            this.bunifuLabelInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.bunifuLabelInfo.Location = new System.Drawing.Point(28, 54);
-            this.bunifuLabelInfo.Name = "bunifuLabelInfo";
-            this.bunifuLabelInfo.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabelInfo.Size = new System.Drawing.Size(40, 29);
-            this.bunifuLabelInfo.TabIndex = 0;
-            this.bunifuLabelInfo.Text = "text";
-            this.bunifuLabelInfo.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabelInfo.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            this.bunifuToolTip1.SetToolTip(this.bunifuLabelInfo, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.bunifuLabelInfo, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.bunifuLabelInfo, "");
             // 
             // FormMain
             // 

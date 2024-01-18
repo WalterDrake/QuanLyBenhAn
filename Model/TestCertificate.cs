@@ -55,14 +55,16 @@ namespace DO_AN_CUA_HAN.Model
         public static DataTable GetListTC()
         {
             DataTable dtTC = new DataTable();
-            string sqlSelect = @"SELECT        TCID, PATIENTID, STAFFID, DATE, STATE
-                                FROM            TESTCERTIFICATE";
+            string sqlSelect = @"SELECT        TCID, t.PATIENTID, t.STAFFID, DATE, t.STATE,  p.LASTNAME+' '+p.FIRSTNAME AS 'PATIENT NAME', s.LASTNAME+' '+s.FIRSTNAME AS 'STAFF NAME'
+                                FROM            TESTCERTIFICATE  t join PATIENT p on t.PATIENTID = p.PATIENTID join STAFF s on s.STAFFID = t.STAFFID";
             dtTC = SqlResult.ExecuteQuery(sqlSelect);
             //dtTC.Columns[0].ColumnName = "Mã phiếu xét nghiệm";
             //dtTC.Columns[1].ColumnName = "Mã bệnh nhân";
             //dtTC.Columns[2].ColumnName = "Mã nhân viên";
             //dtTC.Columns[3].ColumnName = "Ngày lập";
             //dtTC.Columns[4].ColumnName = "Trạng thái";
+            //dtTC.Columns[5].ColumnName = "Tên bệnh nhân";
+            //dtTC.Columns[6].ColumnName = "Tên nhân viên";
             return dtTC;
         }
         public static TestCertificate GetTC(int tCID)

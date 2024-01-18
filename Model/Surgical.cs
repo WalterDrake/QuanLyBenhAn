@@ -56,14 +56,15 @@ namespace DO_AN_CUA_HAN.Model
         public static DataTable GetListSurgical()
         {
             DataTable dtS = new DataTable();
-            string sqlSelect = @"SELECT        SURGICALID, PATIENTID, DATE, DESCRIPTION, STATE
-                                FROM            SURGICAL";
+            string sqlSelect = @"SELECT        SURGICALID, s.PATIENTID, DATE, DESCRIPTION, s.STATE, p.LASTNAME +' '+p.FIRSTNAME as 'PATIENT NAME'
+                                FROM            SURGICAL s join PATIENT p on s.PATIENTID = p.PATIENTID";
             dtS = SqlResult.ExecuteQuery(sqlSelect);
             //dtS.Columns[0].ColumnName = "Mã ca phẩu thuật";
             //dtS.Columns[1].ColumnName = "Mã bệnh nhân";
             //dtS.Columns[2].ColumnName = "Ngày thực hiện";
             //dtS.Columns[3].ColumnName = "Mô tả";
             //dtS.Columns[4].ColumnName = "Trạng thái";
+            //dtS.Columns[5].ColumnName = "Tên bệnh nhân";
             return dtS;
         }
         public static Surgical GetSurgical(int surgicalID)

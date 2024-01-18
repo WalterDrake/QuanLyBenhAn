@@ -52,8 +52,8 @@ namespace DO_AN_CUA_HAN.Model
         public static DataTable GetListHN()
         {
             DataTable dtHN = new DataTable();
-            string sqlSelect = @"SELECT        HNID, PATIENTID, STAFFID, DATE, WEIGHT, BLOODPRESSURE, PATIENTSTATE
-                                FROM            HEATHMONITORINGNOTE
+            string sqlSelect = @"SELECT        HNID, h.PATIENTID, h.STAFFID, DATE, WEIGHT, BLOODPRESSURE, PATIENTSTATE, p.LASTNAME+' '+p.FIRSTNAME AS 'PATIENT NAME',s.LASTNAME+' '+s.FIRSTNAME AS 'STAFF NAME'
+                                FROM            HEATHMONITORINGNOTE h join PATIENT p on h.PATIENTID = p.PATIENTID join STAFF s on s.STAFFID = p.PATIENTID
                                 ";
 
             dtHN = SqlResult.ExecuteQuery(sqlSelect);
@@ -64,6 +64,8 @@ namespace DO_AN_CUA_HAN.Model
             //dtHN.Columns[4].ColumnName = "Cân nặng";
             //dtHN.Columns[5].ColumnName = "Huyết áp";
             //dtHN.Columns[6].ColumnName = "Tình trạng bệnh nhân";
+            //dtHN.Columns[7].ColumnName = "Tên bệnh nhân";
+            //dtHN.Columns[8].ColumnName = "Tên nhân viên";
             return dtHN;
         }
 

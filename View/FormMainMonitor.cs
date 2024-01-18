@@ -32,8 +32,10 @@ namespace DO_AN_CUA_HAN.View
 
                 // Add Vietnamese column's name
                 heathNoteTable.Columns.Add("Mã phiếu theo dõi", typeof(string), "[HNID]");
-                heathNoteTable.Columns.Add("Mã bệnh nhân", typeof(string), "[PATIENTID]");
-                heathNoteTable.Columns.Add("Mã nhân viên", typeof(string), "[STAFFID]");
+/*                heathNoteTable.Columns.Add("Mã bệnh nhân", typeof(string), "[PATIENTID]");*/
+                heathNoteTable.Columns.Add("Tên bệnh nhân", typeof(string), "[PATIENT NAME]");
+/*                heathNoteTable.Columns.Add("Mã nhân viên", typeof(string), "[STAFFID]");*/
+                heathNoteTable.Columns.Add("Tên nhân viên", typeof(string), "[STAFF NAME]");
                 heathNoteTable.Columns.Add("Ngày lập", typeof(DateTime), "[DATE]");
                 heathNoteTable.Columns.Add("Cân nặng", typeof(string), "[WEIGHT]");
                 heathNoteTable.Columns.Add("Huyết áp", typeof(string), "[BLOODPRESSURE]");
@@ -42,7 +44,7 @@ namespace DO_AN_CUA_HAN.View
                 bunifuDataGridViewHealthNote.DataSource = heathNoteTable.DefaultView;
 
                 // Hide English columns'name
-                for (int i = 0; i < 7; i++)
+                for (int i = 0; i < 9; i++)
                 {
                     bunifuDataGridViewHealthNote.Columns[i].Visible = false;
                 }
@@ -50,7 +52,7 @@ namespace DO_AN_CUA_HAN.View
             catch
             {
                 bunifuSnackbar1.Show(Form.ActiveForm, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                return;
+                
             }
         }
         //Search in datagridview
@@ -101,13 +103,14 @@ namespace DO_AN_CUA_HAN.View
                         if (HeathMonitoringNote.DeleteHN(heathNoteID) > 0)
                         {
                             bunifuSnackbar1.Show(Form.ActiveForm, "Xóa phiếu theo dõi thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                            return;
+                            
                         }
                     }
                     catch
                     {
                         bunifuSnackbar1.Show(Form.ActiveForm, "Không xóa phiếu theo dõi này", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                        return;
+                        
+
                     }
                 }
 

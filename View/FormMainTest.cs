@@ -31,8 +31,10 @@ namespace DO_AN_CUA_HAN.View
 
                 // Add Vietnamese column's name
                 testTable.Columns.Add("Mã phiếu xét nghiệm", typeof(string), "[TCID]");
-                testTable.Columns.Add("Mã nhân viên", typeof(string), "[STAFFID]");
-                testTable.Columns.Add("Mã bệnh nhân", typeof(string), "[PATIENTID]");
+                /*testTable.Columns.Add("Mã nhân viên", typeof(string), "[STAFFID]");*/
+                testTable.Columns.Add("Tên nhân viên", typeof(string), "[STAFF NAME]");
+/*                testTable.Columns.Add("Mã bệnh nhân", typeof(string), "[PATIENTID]");
+*/                testTable.Columns.Add("Tên bệnh nhân", typeof(string), "[STAFFID]");
                 testTable.Columns.Add("Ngày lập", typeof(DateTime), "[DATE]");
                 testTable.Columns.Add("Trạng thái", typeof(string), "IIF([STATE] = 0, 'Chưa xét nghiệm', 'Đã xét nghiệm')");
 
@@ -40,7 +42,7 @@ namespace DO_AN_CUA_HAN.View
                 bunifuDataGridViewTC.DataSource = testTable.DefaultView;
 
                 // Hide English columns'name
-                for (int i = 0; i < 5; i++)
+                for (int i = 0; i < 7; i++)
                 {
                     bunifuDataGridViewTC.Columns[i].Visible = false;
                 }
@@ -48,7 +50,7 @@ namespace DO_AN_CUA_HAN.View
             catch
             {
                 bunifuSnackbar1.Show(Form.ActiveForm, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                return;
+                
             }
         }
         private void refreshDataViewTestDetail()
@@ -66,7 +68,7 @@ namespace DO_AN_CUA_HAN.View
                 catch
                 {
                     bunifuSnackbar1.Show(Form.ActiveForm, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                    return;
+                    
                 }
             }
         }
@@ -131,13 +133,13 @@ namespace DO_AN_CUA_HAN.View
                         if (TestDetail.DeleteTestDetail(testID) > 0 && TestCertificate.DeleteTC(testID) > 0)
                         {
                             bunifuSnackbar1.Show(Form.ActiveForm, "Xóa phiếu xét nghiệm thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Information, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                            return;
+                            
                         }
                     }
                     catch
                     {
                         bunifuSnackbar1.Show(Form.ActiveForm, "Không thể xóa phiếu xét nghiệm", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                        return;
+                        
                     }
                 }
                 refreshDataViewTest();

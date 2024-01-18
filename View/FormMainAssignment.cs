@@ -33,7 +33,8 @@ namespace DO_AN_CUA_HAN.View
 
                 // Add Vietnamese column's name
                 assignmentTable.Columns.Add("Mã phân công", typeof(string), "[ASSIGNID]");
-                assignmentTable.Columns.Add("Mã bệnh nhân", typeof(string), "[PATIENTID]");
+                /*assignmentTable.Columns.Add("Mã bệnh nhân", typeof(string), "[PATIENTID]");*/
+                assignmentTable.Columns.Add("Tên bệnh nhân", typeof(string), "[PATIENT NAME]");
                 assignmentTable.Columns.Add("Ngày lập", typeof(DateTime), "[DATE]");
                 assignmentTable.Columns.Add("Ngày nhập viện", typeof(DateTime), "[HOPITALIZATEDATE]");
                 assignmentTable.Columns.Add("Ngày xuât viện", typeof(DateTime), "[DISCHARGEDDATE]");
@@ -41,7 +42,7 @@ namespace DO_AN_CUA_HAN.View
                 bunifuDataGridViewAssignment.DataSource = assignmentTable.DefaultView;
 
                 // Hide English columns'name
-                for (int i = 0; i < 5; i++)
+                for (int i = 0; i < 6; i++)
                 {
                     bunifuDataGridViewAssignment.Columns[i].Visible = false;
                 }
@@ -49,7 +50,7 @@ namespace DO_AN_CUA_HAN.View
             catch
             {
                 bunifuSnackbar1.Show(Form.ActiveForm, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                return;
+                
             }
         }
         private void refreshDataViewAssignmentDetail()
@@ -67,7 +68,7 @@ namespace DO_AN_CUA_HAN.View
                 catch
                 {
                     bunifuSnackbar1.Show(Form.ActiveForm, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                    return;
+                    
                 }
             }
         }
@@ -130,13 +131,15 @@ namespace DO_AN_CUA_HAN.View
                         if (AssignmentDetail.DeleteAssignmentDetails(assignID) > 0 && Assignment.DeleteAssignment(assignID) > 0)
                         {
                             bunifuSnackbar1.Show(Form.ActiveForm, "Xóa bảng phân công thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                            return;
+                            
+
                         }
                     }
                     catch
                     {
                         bunifuSnackbar1.Show(Form.ActiveForm, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                        return;
+                        
+
                     }
                 }
                 refreshDataViewAssignment();

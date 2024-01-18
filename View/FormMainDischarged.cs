@@ -32,14 +32,16 @@ namespace DO_AN_CUA_HAN.View
                 // Add Vietnamese column's name
                 dcTable.Columns.Add("Mã giấy xuất viện", typeof(string), "[DCID]");
                 dcTable.Columns.Add("Mã bệnh nhân", typeof(string), "[PATIENTID]");
+                dcTable.Columns.Add("Tên bệnh nhân", typeof(string), "[PATIENT NAME]");
                 dcTable.Columns.Add("Mã nhân viên", typeof(string), "[STAFFID]");
+                dcTable.Columns.Add("Tên nhân viên", typeof(string), "[STAFF NAME]");
                 dcTable.Columns.Add("Ngày lập", typeof(DateTime), "[DATE]");
                 dcTable.Columns.Add("Trạng thái", typeof(string), "IIF([STATE] = 0, 'Chưa xác nhận', 'Đã xác nhận')");
                 // Set data source to dataview for searching
                 bunifuDataGridViewDC.DataSource = dcTable.DefaultView;
 
                 // Hide English columns'name
-                for (int i = 0; i < 5; i++)
+                for (int i = 0; i < 7; i++)
                 {
                     bunifuDataGridViewDC.Columns[i].Visible = false;
                 }
@@ -48,7 +50,8 @@ namespace DO_AN_CUA_HAN.View
             catch
             {
                 bunifuSnackbar1.Show(Form.ActiveForm, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                return;
+                
+
             }
         }
         //Search in datagridview
@@ -111,27 +114,26 @@ namespace DO_AN_CUA_HAN.View
                                 if (DischargeCertificate.UpdateDC(confirmDC) > 0 && Patient.UpdatePatient(updatePatient) > 0)
                                 {
                                     bunifuSnackbar1.Show(Form.ActiveForm, "Xác nhận giấy xuất viện thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Information, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                                    return;
                                 }
                             }
                         }
                         else
                         {
                             bunifuSnackbar1.Show(Form.ActiveForm, "Bệnh nhân chưa thanh toán hóa đơn", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Information, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                            return;
+                            
                         }
                     }
                     else
                     {
                         bunifuSnackbar1.Show(Form.ActiveForm, "Bệnh nhân chưa trả giường", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Information, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                        return;
+                        
                     }
 
                 }
                 else
                 {
                     bunifuSnackbar1.Show(Form.ActiveForm, "Giấy xuất viện đã được xác nhận", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                    return;
+                    
                 }
                 refreshDataViewDC();
             }
@@ -153,7 +155,7 @@ namespace DO_AN_CUA_HAN.View
                         if (DischargeCertificate.DeleteDC(dcID) > 0)
                         {
                             bunifuSnackbar1.Show(Form.ActiveForm, "Xóa giấy xuất viện thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Information, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                            return;
+                            
                         }
                     }
 
@@ -161,7 +163,7 @@ namespace DO_AN_CUA_HAN.View
                 else
                 {
                     bunifuSnackbar1.Show(Form.ActiveForm, "Không thể xóa giấy xuất viện đã được xác nhận", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
-                    return;
+                    
                 }
                 refreshDataViewDC();
             }

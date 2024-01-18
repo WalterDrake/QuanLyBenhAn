@@ -52,13 +52,15 @@ namespace DO_AN_CUA_HAN.Model
         public static DataTable GetListPrescription()
         {
             DataTable dtP = new DataTable();
-            string sqlSelect = @"SELECT        PRESCRIPTIONID, STAFFID, PATIENTID, DATE
-                                FROM            PRESCRIPTION";
+            string sqlSelect = @"SELECT        PRESCRIPTIONID, p.STAFFID, p.PATIENTID, DATE, pa.LASTNAME +' '+pa.FIRSTNAME as 'PATIENT NAME', s.LASTNAME+' '+s.FIRSTNAME as 'STAFF NAME'
+                                FROM            PRESCRIPTION p join PATIENT pa on p.PATIENTID = pa.PATIENTID join STAFF s on s.STAFFID = p.PATIENTID";
             dtP = SqlResult.ExecuteQuery(sqlSelect);
             //dtP.Columns[0].ColumnName = "Mã đơn thuốc";
             //dtP.Columns[1].ColumnName = "Mã nhân viên";
             //dtP.Columns[2].ColumnName = "Mã bệnh nhân";
             //dtP.Columns[3].ColumnName = "Ngày lập";
+            //dtP.Columns[4].ColumnName = "Tên bệnh nhân";
+            //dtP.Columns[5].ColumnName = "Tên nhân viên";
             return dtP;
 
         }

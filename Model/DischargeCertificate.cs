@@ -49,14 +49,16 @@ namespace DO_AN_CUA_HAN.Model
         public static DataTable GetListDC()
         {
             DataTable dtEC = new DataTable();
-            string sqlSelect = @"SELECT        DCID, STAFFID, PATIENTID, DATE, STATE
-                                FROM            DISCHARGEDCERTIFICATE";
+            string sqlSelect = @"SELECT        DCID, d.STAFFID, d.PATIENTID, DATE, d.STATE, p.LASTNAME+' '+p.FIRSTNAME AS 'PATIENT NAME', s.LASTNAME+' '+s.FIRSTNAME AS 'STAFF NAME'
+                                FROM            DISCHARGEDCERTIFICATE d join PATIENT p on d.PATIENTID = p.PATIENTID join STAFF s on s.STAFFID = d.STAFFID";
             dtEC = SqlResult.ExecuteQuery(sqlSelect);
             //dtEC.Columns[0].ColumnName = "Mã giấy xuất viện";
             //dtEC.Columns[1].ColumnName = "Mã nhân viên";
             //dtEC.Columns[2].ColumnName = "Mã bệnh nhân";
             //dtEC.Columns[3].ColumnName = "Ngày lập";
             //dtEC.Columns[4].ColumnName = "Trạng thái";
+            //dtEC.Columns[5].ColumnName = "Tên bệnh nhân";
+            //dtEC.Columns[6].ColumnName = "Tên nhân viên";
             return dtEC;
         }
         public static DischargeCertificate GetDC(int dCID)
